@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-10",
+  "bundle": "com.local.dopafit.discoveryqa",
+  "mainBundle": "com.local.dopafit.rebuild",
+  "isolated": true,
+  "UIFlows": [
+    "Replace7unstarted exercises with3abs preset using confirmation",
+    "Duration sheet13min remains selected, Cancel",
+    "Start; timedPlank20sec; set0 sec disables Log/LogAll; change30sec logs1set",
+    "Finish withHealthOff; summary30sec,0kg; only loggedPlank saved",
+    "Edit savedset30→40sec andSave",
+    "Home Add3preset to7newdraft→10 with confirmation",
+    "Relaunch;10draft persists, Journal reopens saved40sec/0kg"
+  ],
+  "evidence": [
+    "C128",
+    "C129",
+    "C130",
+    "C131",
+    "C132",
+    "C133",
+    "C134"
+  ],
+  "diskAssertions": [
+    "savedPlank40seconds,0reps,completedtrue",
+    "Add keeps exact original7prefix and existing history"
+  ],
+  "mainDataNotMutated": true,
+  "snapshots": [
+    "discovery-qa-state-saved.json",
+    "discovery-qa-state-added.json"
+  ],
+  "cleanup": "Only com.local.dopafit.discoveryqa terminated/uninstalled after snapshots; main app and data preserved.",
+  "cleanupVerified": true
+}

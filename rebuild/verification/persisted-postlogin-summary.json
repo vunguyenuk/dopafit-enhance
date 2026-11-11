@@ -1,0 +1,66 @@
+{
+  "verifiedOn": "2026-11-09",
+  "build": "Debug iOS Simulator",
+  "history": [
+    {
+      "sessionID": "AD9B918A-B0B8-4E46-AB17-9B4E201E418B",
+      "name": "Ngày thân trên",
+      "exercises": [
+        {
+          "exercise": "dumbbell-row",
+          "rir": 3,
+          "sets": [
+            {
+              "reps": 12,
+              "kg": 30
+            }
+          ],
+          "multiplier": 2,
+          "volumeKg": 720
+        }
+      ],
+      "volumeKg": 720
+    },
+    {
+      "sessionID": "4CCE1AAE-3111-4D99-9D29-1A7C7065ED4A",
+      "name": "Ngày thân trên",
+      "exercises": [
+        {
+          "exercise": "incline",
+          "rir": 3,
+          "sets": [
+            {
+              "reps": 6,
+              "kg": 42.5
+            },
+            {
+              "reps": 6,
+              "kg": 42.5
+            },
+            {
+              "reps": 6,
+              "kg": 42.5
+            }
+          ],
+          "multiplier": 1,
+          "volumeKg": 765.0
+        }
+      ],
+      "volumeKg": 765.0
+    }
+  ],
+  "unit": "kg",
+  "experience": "Mới bắt đầu",
+  "gym": [
+    {
+      "name": "Phòng gym",
+      "locationType": "Phòng gym"
+    }
+  ],
+  "draft": {
+    "name": "Ngày thân dưới",
+    "completedSets": 0
+  },
+  "healthWrites": false,
+  "note": "Own rebuild sandbox only. Incline RIR changed from 2 to 3 during UI test. Original app data audited separately."
+}

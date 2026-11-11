@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-11",
+  "sourceMapping": "third_party/zenith-video/zenith-mapping.json",
+  "sourceMappingSHA256": "cf89c1f9bfb253777aa796172fc06b79afdf01a8a141c4e64eca445ff97fae7f",
+  "method": "Visual review of47sources at15/50/85percent; Arnold additionally12frames. Render/crop bounds automated separately. Not biomechanical or licensing certification.",
+  "accepted": {
+    "tbar": {
+      "candidateKey": "tbar",
+      "sourceId": "drv-lever-t-bar-row",
+      "sourceName": "Lever T-Bar Row",
+      "visualIdentity": "Standing straddled lever T-Bar row on foot platform, without chest pad; not chest-supported Machine T Bar.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "incline": {
+      "candidateKey": "incline",
+      "sourceId": "0047",
+      "sourceName": "Barbell Incline Bench Press",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "closebench": {
+      "candidateKey": "closebench",
+      "sourceId": "0030",
+      "sourceName": "Barbell Close Grip Bench Press",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": false
+    },
+    "tricep": {
+      "candidateKey": "tricep",
+      "sourceId": "0200",
+      "sourceName": "Cable Rope Triceps Pushdown",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "squat": {
+      "candidateKey": "squat",
+      "sourceId": "1435",
+      "sourceName": "Barbell Back Squat",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "adductor": {
+      "candidateKey": "adductor",
+      "sourceId": "0598",
+      "sourceName": "Lever Seated Hip Adduction",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "arnold": {
+      "candidateKey": "arnold",
+      "sourceId": "2137",
+      "sourceName": "Dumbbell Arnold Press",
+      "visualIdentity": "Seated Arnold press with palms turning from inward/front-of-chest to outward overhead; 12-frame sequence reviewed.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "machinefly": {
+      "candidateKey": "machinefly",
+      "sourceId": "0602",
+      "sourceName": "Lever Seated Reverse Fly",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "frontraise": {
+      "candidateKey": "frontraise",
+      "sourceId": "0162",
+      "sourceName": "Cable One Arm Front Raise",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "dumbbell-row": {
+      "candidateKey": "bent-over-dumbbell-row",
+      "sourceId": "0293",
+      "sourceName": "Dumbbell Bent-Over Row",
+      "visualIdentity": "Bench-supported unilateral dumbbell row; one hand and same-side knee support bench. Source filename/metadata mislabelled two-arm bent-over row.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "dumbbell-skullcrusher": {
+      "candidateKey": "dumbbell-skullcrusher",
+      "sourceId": "0351",
+      "sourceName": "Dumbbell Lying Triceps Extension",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "ez-curl": {
+      "candidateKey": "ez-curl",
+      "sourceId": "2407",
+      "sourceName": "EZ Bar Biceps Curl",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "dumbbell-curl": {
+      "candidateKey": "dumbbell-curl",
+      "sourceId": "0294",
+      "sourceName": "Dumbbell Biceps Curl",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "dumbbell-shrug": {
+      "candidateKey": "dumbbell-shrug",
+      "sourceId": "0406",
+      "sourceName": "Dumbbell Shrug",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "incline-dumbbell-curl": {
+      "candidateKey": "incline-dumbbell-curl",
+      "sourceId": "0322",
+      "sourceName": "Dumbbell Incline Biceps Curl",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "dumbbell-lateral-raise": {
+      "candidateKey": "dumbbell-lateral-raise",
+      "sourceId": "0334",
+      "sourceName": "Dumbbell Lateral Raise",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "goblet-squat": {
+      "candidateKey": "goblet-squat",
+      "sourceId": "1760",
+      "sourceName": "Dumbbell Goblet Squat",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "discovery-crunch": {
+      "candidateKey": "discovery-crunch",
+      "sourceId": "0274",
+      "sourceName": "Floor Crunch",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "female",
+      "femaleAvailable": false
+    },
+    "discovery-pushup": {
+      "candidateKey": "discovery-pushup",
+      "sourceId": "drv-push-ups",
+      "sourceName": "Push-Up",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "discovery-wristcurl": {
+      "candidateKey": "discovery-wristcurl",
+      "sourceId": "0369",
+      "sourceName": "Dumbbell Over Bench Wrist Curl",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    },
+    "discovery-bodysquat": {
+      "candidateKey": "discovery-bodysquat",
+      "sourceId": "drv-squat",
+      "sourceName": "Squat",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "primaryModel": "male",
+      "femaleAvailable": true
+    }
+  },
+  "rejected": {
+    "discovery-glutebridge": "Source shows forearm-plank hip raise, not supine glute bridge.",
+    "reversefly": "Source uses bilateral cable reverse fly; catalog is single-arm cable reverse fly.",
+    "dumbbell-shoulder-press": "Source is seated shoulder press; current approved catalog guide is standing overhead dumbbell press A6wtbuL. Keep existing exact standing clip.",
+    "rdl": "Source specifically straight-leg deadlift, not verified as Romanian deadlift with knee flexion; keep existing pinned RDL."
+  },
+  "remapped": {
+    "bent-over-dumbbell-row": "dumbbell-row"
+  },
+  "preservedFallbacks": [
+    "rdl -> existing ExerciseDB",
+    "reversefly -> no exact video, no placeholder",
+    "dumbbell-shoulder-press -> existing standing ExerciseDB",
+    "bent-over-dumbbell-row -> existing exact bilateral ExerciseDB",
+    "discovery-glutebridge -> no video"
+  ],
+  "licenseStatus": "Media origin/license unresolved in source repository; existing local-demo scope only, no release/publication authorized."
+}

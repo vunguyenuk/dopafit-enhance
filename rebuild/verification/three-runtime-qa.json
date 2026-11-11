@@ -1,0 +1,33 @@
+{
+  "engine": "170",
+  "scope": "CPU loader/skinning only; no GPU shader or native UI validation",
+  "models": [
+    {
+      "name": "bicep_curl",
+      "clip": "bicep_curl",
+      "duration": 2.5833332538604736,
+      "skinnedMeshes": 1,
+      "implementPrimitives": 4,
+      "pointsChecked": 87575,
+      "pass": true
+    },
+    {
+      "name": "romanian_deadlift",
+      "clip": "romanian_deadlift",
+      "duration": 3.1666667461395264,
+      "skinnedMeshes": 1,
+      "implementPrimitives": 2,
+      "pointsChecked": 87575,
+      "pass": true
+    },
+    {
+      "name": "good_morning",
+      "clip": "good_morning",
+      "duration": 3,
+      "skinnedMeshes": 1,
+      "implementPrimitives": 2,
+      "pointsChecked": 87575,
+      "pass": true
+    }
+  ]
+}

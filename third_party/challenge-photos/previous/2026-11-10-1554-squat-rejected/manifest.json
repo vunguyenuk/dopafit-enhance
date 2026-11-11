@@ -1,0 +1,35 @@
+[
+  {
+    "challenge": "consistent-14",
+    "asset": "challenge-consistent-14",
+    "source": "https://unsplash.com/photos/a-man-doing-push-ups-in-a-gym-qlid9Lys8r0",
+    "photographer": "Gard Pro",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "dd517ceb17a0c12a3fa00bf50b3f083c39e3205cd5fa57cfd3faa39e92f99236",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only."
+  },
+  {
+    "challenge": "upper-28",
+    "asset": "challenge-upper-28",
+    "source": "https://unsplash.com/photos/a-man-in-a-gym-lifting-a-pair-of-dumbbells-Pv97-3sdjdY",
+    "photographer": "Samuel Girven",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "a63fb6d28c2b9ed120909a515520cbdbab3f587db4a13cc3f1a5920db37fe3ed",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only."
+  },
+  {
+    "challenge": "lower-28",
+    "asset": "challenge-lower-28",
+    "source": "https://www.pexels.com/photo/a-man-doing-squats-5327530/",
+    "photographer": "Tima Miroshnichenko",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-11-10",
+    "sha256": "1f183443df552f886cff3f843ca137eb8de2ce853582c2a4f769c6eb722b96ab",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only."
+  }
+]

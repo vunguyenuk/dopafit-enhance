@@ -1,0 +1,17 @@
+{
+  "challenge": "core-30",
+  "asset": "challenge-core-30",
+  "source": "https://www.pexels.com/photo/man-in-gray-shorts-lying-on-black-mat-4047104/",
+  "photographer": "ShotPot",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "27c813bcfaf70f5bb98104e1b8f1fc9e32abdc2c361fcc49b1c22f00828f01f0",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User20:21: select different real source photography; do not desaturate/tint. Actual sit-up on black mat/rubber gym floor, natural light and gray clothing.",
+  "rendering": {
+    "sourceBytesUnmodified": true,
+    "aiGeneratedOrEdited": false,
+    "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+    "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+}

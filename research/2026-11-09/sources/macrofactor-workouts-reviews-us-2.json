@@ -1,0 +1,2568 @@
+{
+  "feed": {
+    "author": {
+      "name": {
+        "label": "iTunes Store"
+      },
+      "uri": {
+        "label": "http://www.apple.com/itunes/"
+      }
+    },
+    "entry": [
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id151105389"
+          },
+          "name": {
+            "label": "ReadSleepWalk"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-06-16T11:45:12-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.2"
+        },
+        "id": {
+          "label": "14190529357"
+        },
+        "title": {
+          "label": "Just started"
+        },
+        "content": {
+          "label": "Just started using this app and already love it. I love how I was able to adjust everything. Tweak things how I wanted. I love how I was able to add the equipment I have in my garage gym and adjust how many days in the rough time Range I wanna be spending and that I can track everything I’m doing. it’s exactly what I was looking for and I already use the MacroFactor macro tracking app so this just makes it even better I was tracking on a word document I printed out on a clipboard, which is great too to keep me off my phone, but this has been awesome.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1340008453"
+          },
+          "name": {
+            "label": "XxDarkIcarusxX"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-06-13T10:52:43-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.2"
+        },
+        "id": {
+          "label": "14178731757"
+        },
+        "title": {
+          "label": "Definitely worth while"
+        },
+        "content": {
+          "label": "I honestly did not expect much from a social media influencers work out app I only used it because there was a free trial on it but I have been absolutely blown away by how useful and convenient it is. When you start you tailor make your session by adding exactly what type of work out space you have and exactly what weights and machines you have access too it then creates a workout plan specifically for you and even provides video AND detailed written instructions on how to do each exercise so your never left confused on how to work something. This is a 10/10 app",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1892241735"
+          },
+          "name": {
+            "label": "thisappkindofsucksreallybadly"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-06-12T10:37:07-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.2.2"
+        },
+        "id": {
+          "label": "14174726686"
+        },
+        "title": {
+          "label": "Lots of current issues, all fixable"
+        },
+        "content": {
+          "label": "The bad: Generally over engineered, unintuitive. Lacks video examples of women performing exercises. Buggy: have lost multiple workout sessions due to workouts getting stuck and unable to complete. Way too many clicks to just see what I did on an exercise last session. Doesn’t tell me the name of the workout in the history logs. Can’t see actual set logs from dashboard. Appears to use some weird rolling window algo to calculate 1rm instead of discrete logged sets so that even when I lift less with the same weight my 1rm goes up for that session. Doesn’t allow you to change your logged set’s weight or reps without resetting rest timer. Exercise naming conventions are precise but hard to recognize on dash board when cutoff: half my exercises just say “Plate-Loaded…” or “Overhand Grip Pin Loaded…” and never get to the only thing I want to see there which is “Shoulder Press” or “Machine Row”. Can’t search for exercises to add to dashboard, must scroll through everything. Impossible to add two of the same exact workout to a single cycle without duplicating it, resulting in duplicating work when adding/removing exercises from that workout. The time estimates for a workout are wildly inaccurate, completely underselling how long a given workout will take. To make a point I plugged in Jeff’s own “45 minute leg routine” and the app guessed it would take 14 minutes. \n\nThe good: sleek ui. Easily swap exercises during a session. Easy to add/remove sets or exercises during a session. Extremely wide and precise available exercise selection. Easily see number of sets per muscle per week",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "1"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id128405687"
+          },
+          "name": {
+            "label": "casualmaleXL"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-06-11T09:50:39-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.2"
+        },
+        "id": {
+          "label": "14170598672"
+        },
+        "title": {
+          "label": "A great app"
+        },
+        "content": {
+          "label": "Was going to the gym for a while but had no direction. Been using this app for many months now and it’s great, it automatically does progression and has a ton of workouts. Not buggy at all and easy enough to understand after you use it for a bit. Have definitely noticed an improvement in my all around physical fitness. The yearly pro upgrade is worth it for me",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id36870687"
+          },
+          "name": {
+            "label": "Rafis29"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-06-05T07:08:25-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.2"
+        },
+        "id": {
+          "label": "14146899250"
+        },
+        "title": {
+          "label": "Best gains"
+        },
+        "content": {
+          "label": "I used to track my stuff in an excel sheet on my phone. This is sooooo much easier for consistency. It blends the details I needed before with a good looking interface and even built in timers/ estimated total workout times. LOVE THIS APP.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id543896635"
+          },
+          "name": {
+            "label": "VinceKovach"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-06-02T13:18:05-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.2.2"
+        },
+        "id": {
+          "label": "14136527729"
+        },
+        "title": {
+          "label": "Canceled"
+        },
+        "content": {
+          "label": "I canceled day one of my two week trail, at the end of that trial I still got a force charged. This app needs reviewed by apple before being allowed to still be on the platform.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id605722704"
+          },
+          "name": {
+            "label": "Pro-kesh"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-20T09:37:06-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.0"
+        },
+        "id": {
+          "label": "14086255609"
+        },
+        "title": {
+          "label": "Best workout app"
+        },
+        "content": {
+          "label": "Up to date features and clean UI without sacrificing advanced tracking functionality",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id41377850"
+          },
+          "name": {
+            "label": "1positivepanda"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-19T15:47:46-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.0"
+        },
+        "id": {
+          "label": "14083608818"
+        },
+        "title": {
+          "label": "No videos?"
+        },
+        "content": {
+          "label": "The descriptions are so long and detailed I get lost and some of the workouts don’t have videos and YouTube vids show different ways of doing them. I a complete beginner so I’m lost. The algorithm picked the workouts for me, I didn’t choose them. Even a diagram would help tbh.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id101543889"
+          },
+          "name": {
+            "label": "Liam.Taylor"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-19T09:08:44-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.0"
+        },
+        "id": {
+          "label": "14082526694"
+        },
+        "title": {
+          "label": "Nearly Perfect"
+        },
+        "content": {
+          "label": "Absolutely love this app. It has everything I need when it comes to gym math, building workouts, and tracking muscle groups. The only thing I wish it had is integration to Strava. I can’t even get my workouts to show up on my Health app to then integrate into Strava. Would love an update for that.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id43312317"
+          },
+          "name": {
+            "label": "CaffinatedGainz"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-16T14:28:27-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "1.2.0"
+        },
+        "id": {
+          "label": "14072438803"
+        },
+        "title": {
+          "label": "Lacking Functionality with Manually Created Programs"
+        },
+        "content": {
+          "label": "Had a lot of great features. Unfortunately, it lacks the one feature that is important to me: while it will automatically adjust weight or rep goals, it doesn’t yet have the ability to automatically adjust RIR or number of sets for exercises in manually created programs.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1539638894"
+          },
+          "name": {
+            "label": "Amir-INFJ"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-13T20:46:04-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.2.0"
+        },
+        "id": {
+          "label": "14062156573"
+        },
+        "title": {
+          "label": "Fantastic app"
+        },
+        "content": {
+          "label": "So far it’s the best workout app I have ever used. The progression bar always being visible is great, making it larger (the screen width) would’ve made it even better. The infographics with how many plates or what kind when clicked on the weight are genius! So helpful! This app really need an Apple Watch companion, it’s the only thing that stops me from recommending it to others. Logging on Apple Watch is so much easier than doing it on the phone. I hope you make an Apple Watch companion with the basic log features.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id24945212"
+          },
+          "name": {
+            "label": "Nepaleselion"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-13T16:52:13-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.2.0"
+        },
+        "id": {
+          "label": "14061619641"
+        },
+        "title": {
+          "label": "No corporate oversight for employee conduct"
+        },
+        "content": {
+          "label": "I am writing this review to advise others about a significant lack of professional accountability in this company's support structure.  I had a distressing experience in the app with a senior agent. I was told by both him and another agent as well as in reddit, that no escalation path exists and there is no supervisor above them to address grievances. It is a major red flag that a company forces customers to communicate solely with the individual they are complaining about with no corporate oversight.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "1"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1476849109"
+          },
+          "name": {
+            "label": "Ggujt"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-11T16:10:24-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14054267307"
+        },
+        "title": {
+          "label": "Unresponsive"
+        },
+        "content": {
+          "label": "The app is unresponsive keeps using equipment I don’t have pretty much not worth anyone’s money chatgbt can do what it does because it doesn’t record properly",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1319502273"
+          },
+          "name": {
+            "label": "TRAKAS¡"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-11T03:18:36-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14052086108"
+        },
+        "title": {
+          "label": "Not user-friendly"
+        },
+        "content": {
+          "label": "This thing is so confusing. It has all them teeth, but no toothbrush.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id117743514"
+          },
+          "name": {
+            "label": "Zacattack303"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-08T21:44:05-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14043936549"
+        },
+        "title": {
+          "label": "Login"
+        },
+        "content": {
+          "label": "Having to re-build my plan and equipment every time I open is very annoying. It doesn’t save any account info when the app closes",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id7878316"
+          },
+          "name": {
+            "label": "Rooster Magillicutty"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-06T12:17:51-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14035521004"
+        },
+        "title": {
+          "label": "Too Rated MacroFactor Workout"
+        },
+        "content": {
+          "label": "Can tell after a few days this app and plan far exceeds those other BS apps on the market.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1011645953"
+          },
+          "name": {
+            "label": "dghggb"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-04T08:37:02-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14027785489"
+        },
+        "title": {
+          "label": "Keep Improving"
+        },
+        "content": {
+          "label": "Coming from a workout tracking app, it takes some getting used to. This is not a workout tracker but an all-in-one coach that actively modifies your reps and weights to prioritize your gains. It’s fantastic but sometimes difficult to remember to do what it says, rather than what you’re capable of. \n\nIt just needs smart watch integration, badly. They also need to continue updating the available machines/workouts with Nippard demonstrations.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id462425272"
+          },
+          "name": {
+            "label": "JoshManga"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-04T06:01:49-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14027303556"
+        },
+        "title": {
+          "label": "Great concept"
+        },
+        "content": {
+          "label": "I love everything about the way this does its workout routines and I like the setup of individual gyms, and I love that all the workouts show Jeff Nippard doing them haha. BUT I need an Apple Watch companion app with the functionality to advance the workout. I record a lot of my workouts on my phone so the phone is usually away from me on my tripod.  Add a companion app and I will re-download this for sure.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id392130150"
+          },
+          "name": {
+            "label": "Zaque33"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-03T06:38:15-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14023785123"
+        },
+        "title": {
+          "label": "I’m all in on MacroFactor!"
+        },
+        "content": {
+          "label": "I started using the MacroFactor (food tracking) app at the beginning of this year when I decided to embark on my first honest-to-God cut in 5 years and I instantly fell in love. Fast forward a few months and I decided to get the MacroFactor Workouts app and being impressed continued! This app is phenomenal! Tracking your workouts, seemingly unlimited machine and setup variations, and so much more. I love the ability to upload/import other programs you have excel/Google Sheets for, the exercise/equipment swap feature, and so much more make this such an amazing app. There are a few changes I’d love to see, but none are enough to hurt the 5-Star review! Highly recommend this app for workout and training tracking/progress. Be prepared to have to edit some of the weights and ranges that are prescribed in your first few weeks but once it learns your strength, etc. Additionally, I HIGHLY recommend coupling this with the nutrition tracking MacroFactor app because the combined price is unbeatable! Highly recommend both across the board!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id34794986"
+          },
+          "name": {
+            "label": "newyork10r"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-28T04:17:46-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14005442931"
+        },
+        "title": {
+          "label": "Interface is needlessly complex"
+        },
+        "content": {
+          "label": "I wanted to like this app but its interface is overly complicated. The design just gets in the way of actually working out.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "1"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id7248022"
+          },
+          "name": {
+            "label": "Vash1053"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-27T20:01:30-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14004474589"
+        },
+        "title": {
+          "label": "Not worth the current price"
+        },
+        "content": {
+          "label": "UI/UX is a mess. No apple watch app. Many exercise videos missing. Overly verbose written instructions. Using RIR system is a very questionable decision for the average lifter. Not worth the current asking price when other competitors simply do everything better.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id914206122"
+          },
+          "name": {
+            "label": "OccMuffins"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-27T03:04:27-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "14001883720"
+        },
+        "title": {
+          "label": "Confusing"
+        },
+        "content": {
+          "label": "I don’t know if it’s because it’s promotional access but I litekay cannot adjust anything with this app. I need to change what I have and there’s no way to do that ever since I got new equipment.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id86215065"
+          },
+          "name": {
+            "label": "tom cruisecontrol"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-21T07:57:00-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.8"
+        },
+        "id": {
+          "label": "13981927603"
+        },
+        "title": {
+          "label": "Best app!!!!"
+        },
+        "content": {
+          "label": "Love the videos and different angles and the adjustments and target suggestions",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id270492801"
+          },
+          "name": {
+            "label": "cesar983"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-18T16:49:14-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13972787030"
+        },
+        "title": {
+          "label": "Bugs"
+        },
+        "content": {
+          "label": "this app has some of the most annoying bugs that have not been addressed. Support basically told me they dont have a fix right now and we’re supposed to wait it out. IF you can ignore those bugs, the apps great and hopefully those issues get patched soon but it is very annoying that support has basically given up trying to help me with this issue",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id720346937"
+          },
+          "name": {
+            "label": "pwestify"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-17T06:15:55-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13967344513"
+        },
+        "title": {
+          "label": "What I was looking for in workout app"
+        },
+        "content": {
+          "label": "Finally, got the right one.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1285320800"
+          },
+          "name": {
+            "label": "91Shayno"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-08T13:14:46-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13936905870"
+        },
+        "title": {
+          "label": "Raving Fan"
+        },
+        "content": {
+          "label": "I am not new to working out and being in the gym. However, I am very new to lifting and what I should be doing. This app and its integration with Macrofactor’s nutrition app makes everything so easy and seamless. I am working towards leaning down and building muscle. I was able to integrate the program I am already working on into the app by making a custom program. This app makes tracking the workouts so easy. On top of that, after you adjust the RIR targets it will automatically coach you as to what you should do for your next set. Well done. I’m so thankful for this app. It gives me a new thing to look forward to when I head in! 5 stars all around.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1909165138"
+          },
+          "name": {
+            "label": "Tokyotexann"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-07T17:20:22-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13933946116"
+        },
+        "title": {
+          "label": "Too many options to choose from"
+        },
+        "content": {
+          "label": "Literally so many machines with no pictures. I have equipment that’s not labeled at my gym and all we have to go by is a tiny grey image? Please add a more detailed view of the machines you have listed.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id944943620"
+          },
+          "name": {
+            "label": "fizzle312"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-01T03:03:31-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13910057271"
+        },
+        "title": {
+          "label": "Needs a few tweaks"
+        },
+        "content": {
+          "label": "Better than other weight lifting apps i tried. I have two other “premium” apps. Though, it does some more options, such as dynamically adjusting workouts. Some weeks i have more free time, would he great if i could have an option to automatically have my workouts tweaked with a new day open. Unless that feature is there and I’m not finding it. Also would be great if we had an option if we want to prioritize certain heavy lifts. Would also be cool if the ai coach could identify muscle imbalances and can suggest to the user if we want to focus on our imbalances.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id26968907"
+          },
+          "name": {
+            "label": "SeffP"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-30T20:35:01-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13905618005"
+        },
+        "title": {
+          "label": "Like it, needs work"
+        },
+        "content": {
+          "label": "I was very excited for this app, but it doesn’t integrate other programs the Jeff Nippard offers. Any time I try to set up a suggested program, it offers only full body or UL. That has me disappointed as I was very hopeful there would be more options. Also some exercises I use frequently or want to use as a substitute do have the video demo. \n\nI do run my own program and like the features it has from sessions to session, such as the suggested weight and reps. I will continue to use this since it’s included with the MacroFactor subscription, but I am hopeful some improvements can be made.  I do believe this app has promise.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id38063188"
+          },
+          "name": {
+            "label": "djcap"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-29T08:42:39-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13900313532"
+        },
+        "title": {
+          "label": "An app for serious gym goers"
+        },
+        "content": {
+          "label": "While it requires spending some time setting it up, once you’ve configured a program that you like it’s so easy to just show up in the gym and hit play.\n\nThe way that notes stick makes it easy to remember and add things that I read on Reddit or TikTok with regard to form.\n\nAnd the super fast swap mechanism makes it easy to keep sessions short even during busy gym time.\n\nI’ve tried all the other apps and this one is by far the best. Thanks for making it, team. It’s clearly made by people who get it.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id87148404"
+          },
+          "name": {
+            "label": "Heboo"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-27T21:22:06-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.7"
+        },
+        "id": {
+          "label": "13894948778"
+        },
+        "title": {
+          "label": "Neat and flexible"
+        },
+        "content": {
+          "label": "I like how it’s easy to swap exercises, dose the math for you when switching between units and machines, plus the simple design of the interface",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id18795505"
+          },
+          "name": {
+            "label": "J3n Zie"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-24T08:26:11-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13882291093"
+        },
+        "title": {
+          "label": "Bad"
+        },
+        "content": {
+          "label": "Nearly unusable as is. First, it created a workout plan with an absurd amount of volume. Second, the smart progression feature is useless. After painstakingly editing all the weight counts for every machine and weight set it still recommends stupid amounts of reps per exercise OUTSIDE of the rep goal window it recommends! Or weight that isn’t within the weight parameters I set. So I had to disable. All said and done what I ended up with after all the editing and feature disabling was just a workout tracker app like Strong but with a far more complicated UI. Not worth it. Really disappointed. I hope this reaches a developer as I have been a long time Jeff Nippard fan and a daily religious macro factor user.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1398627326"
+          },
+          "name": {
+            "label": "SSOL silver"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-23T20:02:09-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13880620063"
+        },
+        "title": {
+          "label": "Best I’ve ever tried"
+        },
+        "content": {
+          "label": "This has all the features I’ve looked for for years including a workout timer and sooooo much other grate features",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id114057398"
+          },
+          "name": {
+            "label": "Meverjjjhg"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-22T08:36:11-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13875475636"
+        },
+        "title": {
+          "label": "Game changer!"
+        },
+        "content": {
+          "label": "I’ve followed Jeff Nippard on YouTube for awhile and I’m super happy he finally released a science-based workout app. The app is awesome and I’ve seen noticeable improvement. Plus it’s just cool to see all the progress in the app! It’s the best combo of workouts and workout tracking!!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id324080737"
+          },
+          "name": {
+            "label": "CWolfetrax"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-21T09:46:38-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13872139471"
+        },
+        "title": {
+          "label": "Great companion to Macrofactor diet app"
+        },
+        "content": {
+          "label": "A great companion to Macrofactor diet. Easy to use, quick to add workouts and good customization. What I like most is that it scales well to training level, where a new trainee has resources like video tutorials and an advanced trainee has access to RPE info. Been training for ~9 years and it’s better than pen and paper and phone notepad in a low-interference way that I like",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id141093298"
+          },
+          "name": {
+            "label": "titgemga"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-21T08:16:27-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13871857073"
+        },
+        "title": {
+          "label": "I want to like this but it needs work!!"
+        },
+        "content": {
+          "label": "While I like a lot about the app, there is more that I don’t like that has me hesitant to switch. Here are the issues I keep running into:\n1) when I try to create a custom exercise I almost always get a message saying “this used to be a custom exercise, but it is no longer on our radar.”  So it will not let me add any data or use it as an exercise. \n2) the naming of exercises is all over the place. \n3) the suggestions for weight and reps often don’t make sense. They will reduce weight it reps even if I was within the set rep goal on the previous workout day or even the previous set. \n4) this is small but there is nothing that tells you that you just set a PR. It’s nice and can be motivating to see that when it happens. \n5) when searching for an exercise and trying to filter them by a specific muscle, it will show you every exercise that has that muscle listed even if it’s listed as a secondary muscle. So when I search for a rear Delt exercise I get just about every back exercise. This makes the filter about worthless. \n\nThere are some other minor issues but these are the main ones that keep me from using this as my main app.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "1"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id106754334"
+          },
+          "name": {
+            "label": "Angent FSH"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-17T20:35:19-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13859840567"
+        },
+        "title": {
+          "label": "Almost perfect!"
+        },
+        "content": {
+          "label": "Switched from Strong after 5 years.\nThe rep expectations are spot on and the program generation is super easy. I also love how easy it is to switch exercises when traveling and hotel gyms don’t have my home gym equipment.\n\nMy only request is that it have an Apple Watch app to make it easy to check reps/weights before a set and mark a set as done.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1401273699"
+          },
+          "name": {
+            "label": "ZooGrowlers"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-17T19:03:25-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13859638555"
+        },
+        "title": {
+          "label": "Incredible"
+        },
+        "content": {
+          "label": "I’ve used several fitness trackers and workout generators and this blows them out of the water. Combine the fact you can upload Jeff Nippard programs seamlessly and this creates the perfect system.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1134838075"
+          },
+          "name": {
+            "label": "Csoucy222"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-17T13:43:02-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13858867859"
+        },
+        "title": {
+          "label": "Everything you need"
+        },
+        "content": {
+          "label": "This app is very in depth. It takes a little while to set up and get comfortable with, but it’s worth it. The programming is quite good and the specificity for equipment is top notch.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1150201431"
+          },
+          "name": {
+            "label": "LordOfGooners"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-16T17:23:20-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13855978108"
+        },
+        "title": {
+          "label": "Lack of integrations"
+        },
+        "content": {
+          "label": "I would probably rate it a 5 star if I was able to actually import workouts and track other things like running",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id22513451"
+          },
+          "name": {
+            "label": "BigBlock409"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-16T16:02:13-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13855785714"
+        },
+        "title": {
+          "label": "Couple suggestions"
+        },
+        "content": {
+          "label": "Long-time customer of MacroFactor, really want to like the Workouts app but find it’s not sticking with me yet. Don’t like that I can’t easily modify a routine once I start it, and also wish the weekly workouts mixed up exercises while still targeting same muscles for consistency. The same exact routine week to week is too boring, for me at least.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1460731634"
+          },
+          "name": {
+            "label": "Deadsaint094"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-15T13:21:46-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13851991644"
+        },
+        "title": {
+          "label": "Rings"
+        },
+        "content": {
+          "label": "It’s an amazing app, but it messes with your workout and Move ring on your Apple Watch, and it will subtract the workout when you hit complete in the app.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id22719016"
+          },
+          "name": {
+            "label": "Btele"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-15T05:46:55-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13850637370"
+        },
+        "title": {
+          "label": "Great!"
+        },
+        "content": {
+          "label": "I like everything about this app. I’ve been weight lifting for about 6 years, and I’m a little older. For me, the auto progression combined with RIR is perfect. I will say it took me a few workouts to learn the lay of the land, but pretty easy for the most part and I think is to be expected. I have also used most of the weight training apps in the App Store for comparison.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id390829876"
+          },
+          "name": {
+            "label": "Rekcasub"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-13T14:44:58-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13845007379"
+        },
+        "title": {
+          "label": "Terrible!"
+        },
+        "content": {
+          "label": "Absolutely hate this app. It is entirely non-intuitive, the workout duration is not accurate, you cannot change the program after you’ve set up the app, and the recommended reps and sets are awful. I can’t believe how disappointed I am in this app.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id107232820"
+          },
+          "name": {
+            "label": "Steve91ihdf"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-12T08:56:51-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13840661984"
+        },
+        "title": {
+          "label": "Gets worse the more you use it"
+        },
+        "content": {
+          "label": "I really liked this program the first week I did it. Now, the suggested workouts are a waste of time. Somehow week over week I’m doing less and less and the workouts aren’t progressing. Sometimes it gives me impossible sets like overhead barbell press at 1lb. The weight progression it recommends often means taking off one weight to rack 6 more so you go down by 2.5 or small increments. I may try using it to track my own lifts but the AI usage here sucks. It’s true of MacroFactor as well where it’s recommended I stay on a 1400 calorie diet for over a year.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1899751100"
+          },
+          "name": {
+            "label": "Trynnagetright"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-11T16:11:59-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13838407114"
+        },
+        "title": {
+          "label": "Great idea could be better"
+        },
+        "content": {
+          "label": "I like the app my only gripe is that there is no cardio in my program and I can’t figure how to get in",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id329598832"
+          },
+          "name": {
+            "label": "NY workout guy"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-10T18:05:53-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13835284116"
+        },
+        "title": {
+          "label": "Best workout app I’ve ever seen!"
+        },
+        "content": {
+          "label": "Makes tracking and keeping up with progress effortless.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id11410752"
+          },
+          "name": {
+            "label": "franzzz65"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-10T17:44:22-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13835233755"
+        },
+        "title": {
+          "label": "Needs Apple Watch support"
+        },
+        "content": {
+          "label": "This really needs Apple Watch support. It’s crazy in 2026 fitness apps don’t support the watch. It’s a really great app but this is a real downer for me.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1788207762"
+          },
+          "name": {
+            "label": "Cadmstr"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-09T15:35:06-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.5"
+        },
+        "id": {
+          "label": "13831609572"
+        },
+        "title": {
+          "label": "Macro factor Workout Tracker"
+        },
+        "content": {
+          "label": "Awesome App with very detailed instructions and how-to videos filmed from 3 viewpoints.  Is far better than hiring a personal trainer.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id8086166"
+          },
+          "name": {
+            "label": "Sarah-Andrée V"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-09T08:25:37-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "1.1.4"
+        },
+        "id": {
+          "label": "13830495935"
+        },
+        "title": {
+          "label": "The perfect workout app"
+        },
+        "content": {
+          "label": "Finally an app\nThat enables easy workout generation and tracking !",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=6737156524&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      }
+    ],
+    "updated": {
+      "label": "2026-11-08T18:05:10-07:00"
+    },
+    "rights": {
+      "label": "Copyright 2008 Apple Inc."
+    },
+    "title": {
+      "label": "iTunes Store: Customer Reviews"
+    },
+    "icon": {
+      "label": "http://itunes.apple.com/favicon.ico"
+    },
+    "link": [
+      {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://music.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=1"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "self",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=2/id=6737156524/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "first",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6737156524/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=6737156524/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "last",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=7/id=6737156524/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=6737156524/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "previous",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6737156524/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=6737156524/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "next",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=3/id=6737156524/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=6737156524/sortBy=mostRecent/json"
+        }
+      }
+    ],
+    "id": {
+      "label": "https://itunes.apple.com/us/rss/customerreviews/page=2/id=6737156524/sortBy=mostRecent/json"
+    }
+  }
+}

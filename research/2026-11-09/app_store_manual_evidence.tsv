@@ -1,0 +1,81 @@
+app	review_id	type	severity	theme	paraphrase_vi	verification_note
+fitbod	14747265724	painpoint	P1	Watch/sync	Người dùng báo bản cập nhật gần đây làm mất đồng bộ Watch và nhịp tim, có ý định hủy thuê bao.	Phản ánh 03/11 ở v8.38.1; chưa tái hiện; không suy ra v8.39.0 còn lỗi.
+fitbod	14743790696	painpoint	P1	Control/data/support	Không đổi được training split, ghi chú máy không hiện/lưu; hỗ trợ tự động không giải quyết được.	Một tài khoản báo 02/11 v8.38.0; cần kiểm tra build mới.
+fitbod	14743554954	painpoint	P1	AI/control	Người tập lâu năm phải dựng lại buổi tập hầu như mỗi lần, làm mất lợi ích tiết kiệm quyết định.	Đánh giá chủ quan về đề xuất; lời giải thích sinh lý của reviewer không được coi là sự thật kỹ thuật.
+fitbod	14699267600	painpoint	P1	Value/progression	Sau hai năm lưu dữ liệu vẫn tự lập chương trình; thông tin Coach bị coi là hiển nhiên, báo cáo thiên về tổng hoạt động hơn tiến bộ từng bài.	Không kiểm chứng lịch sử hai năm hay hiệu quả thuật toán; hữu ích để xác định kỳ vọng premium.
+fitbod	14663218493	painpoint	P1	Return after break	Sau nhiều tuần nghỉ, Coach nhận ra vắng tập nhưng vẫn gợi ý max-effort ở mức đỉnh cũ; người dùng mong buổi quay lại nhẹ dần.	Rủi ro trải nghiệm cần kiểm tra; không kết luận đã có chấn thương.
+fitbod	14737340217	painpoint	P1	Plan preservation	Người dùng báo buổi tự chỉnh bị thay bằng buổi app tạo và mất nhiều routine.	Chưa tái hiện; phân biệt regeneration với xóa dữ liệu vĩnh viễn.
+fitbod	14752520446	painpoint	P1	Offline	Review 4 sao muốn tải video, lịch sử và biểu đồ để tập ở gym sóng yếu; khi offline app báo buổi có thể khác kế hoạch.	Quan sát do người dùng báo, không kết luận app hoàn toàn không hỗ trợ offline.
+fitbod	14738705167	painpoint	P2	Superset timer	Warm-up chỉ có ở một vế superset làm thứ tự và timer khó theo, phải nhảy tay giữa bài.	Tình huống cụ thể v8.38.0 cần regression test.
+fitbod	14729838651	painpoint	P2	Review prompt	Người dùng vẫn thích app nhưng chấm 1 sao vì bị hỏi rating sau mỗi buổi.	Rating thấp phản ánh sự quấy rầy, không đồng nghĩa không thích bài tập.
+fitbod	14750414780	painpoint	P1	Paywall/trial	Người tìm app miễn phí thất vọng khi phải chọn trial hoặc trả tiền và nhập thông tin thanh toán.	Bất mãn do kỳ vọng; không xác nhận có gói miễn phí hay lỗi tính tiền.
+fitbod	14683265369	painpoint	P1	Price clarity	Người dùng báo mức tính tiền sau trial khác mức chồng đang trả và không rõ chuyển Family có mất lịch sử không.	Khoản tiền cụ thể là cáo buộc chưa đối chiếu hóa đơn; không dùng làm giá chuẩn.
+fitbod	14669485752	resolution	P2	Watch recovery	Reviewer cập nhật rằng Watch đã hoạt động lại sau bản sửa, còn thiếu icon trên mặt đồng hồ.	Bằng chứng tích cực rằng một số lỗi Watch đã sửa; không phủ nhận báo cáo phát sinh muộn hơn.
+fitbod	14665968630	positive	N/A	Confidence/decision relief	Người dùng mô tả giảm áp lực không biết tập gì, tự tin hơn sau trial và tiếp tục dùng nhiều năm.	Tự thuật, không xác minh kết quả sức khỏe hay mức tăng tự tin.
+fitbod	14760687255	positive	N/A	Context flexibility	Người đi thuyền dài ngày đánh giá cao bài tập theo dụng cụ sẵn có.	Chứng cứ giá trị theo hoàn cảnh, không phải thử nghiệm hiệu quả tập.
+gravl	14659692075	painpoint	P1	Recovery trust	Người dùng chọn recovery split nhưng vẫn nhận bài cho nhóm cơ vừa tập hôm trước.	12/10 v1.53.4; v1.54 mới phát hành sau review, chưa biết tình trạng hiện tại.
+gravl	14665847909	painpoint	P2	Weight entry	Nhập mức tạ bị báo không khớp dụng cụ, phải thử nhiều số; muốn chọn đĩa để tự cộng.	14/10 v1.53.4; v1.54 có thông báo sửa rounding máy/plate, chưa tái kiểm riêng trường hợp này.
+gravl	14631852755	painpoint	P2	Busy-gym logistics	Người dùng muốn cấu hình loại thanh tạ và gom bài quanh cùng trạm, tránh bỏ ghế rồi quay lại khi gym đông.	Review 4 sao khen nền tảng nhưng chỉ ra khác biệt giữa lập kế hoạch và thực tế gym.
+gravl	14652456645	painpoint	P1	Equipment profile	Review báo danh sách thiết bị gym sai và chạm giới hạn 15 thiết bị tự thêm.	10/10 v1.53.4; giới hạn do reviewer báo, chưa xác nhận còn áp dụng.
+gravl	14575805539	painpoint	P1	Support/catalog	Người dùng thấy thiếu biến thể landmine/kettlebell; AI trả lời khác nhau khi hỏi lặp buổi cũ, ticket bị đóng không lời giải.	21/09 v1.52.1; không gộp toàn bộ thành lỗi hiện tại.
+gravl	14412823414	painpoint	P2	Swap/search	Reviewer 5 sao vẫn báo khi tìm bài thay thế có lúc ảnh chồng hoặc app khựng.	10/08 v1.50; bằng chứng lịch sử, không khẳng định v1.54 lỗi này.
+gravl	14446696350	painpoint	P1	Onboarding	Review 5 sao nhưng nội dung thất vọng vì không hoàn tất được hồ sơ để bắt đầu tập.	Cho thấy không thể dùng số sao làm bộ phân loại cảm xúc duy nhất; 19/08 v1.51.
+gravl	14451466789	painpoint	P1	Injury/context	Người dùng muốn khai báo chấn thương để app hiểu việc giảm tạ là tạm thời.	Yêu cầu tính năng tại 20/08 v1.51; không kết luận bản mới thiếu khả năng này.
+gravl	14655531627	positive	N/A	Form/decision relief	Đánh giá cao phản hồi video về tư thế và mở app là có thể tập ngay.	Tự thuật 11/10 v1.53.4; không xác minh độ chính xác đánh giá tư thế.
+gravl	14591224816	positive	N/A	Progress/change	Người chuyển từ Fitbod cho biết buổi tập thách thức hơn và định mua gói năm.	Không suy ra Gravl hiệu quả hơn Fitbod cho mọi người.
+hevy	14761637754	painpoint	P1	Keyboard/logging	Người dùng báo cập nhật làm keyboard còn mở và dễ bấm nhầm khi xác nhận xong set.	07/11 v3.2.5; bằng chứng rất gần ngày khảo sát, chưa tái hiện.
+hevy	14751931696	painpoint	P2	RPE friction	Màn nhập RPE mới bị chê thêm thao tác bấm và làm sửa mức tạ khó chịu hơn.	04/11 v3.2.4; cần so lại v3.2.5 trước đánh giá lỗi hiện tại.
+hevy	14763109698	painpoint	P2	Search aliases	Tên bài do PT dùng không trùng từ khóa trong app, người dùng không tìm được để ghi log.	07/11 v3.2.5; cơ hội synonym/fuzzy search.
+hevy	14759812474	painpoint	P2	Optional social	Người dùng 5 sao muốn giấu phần social và tùy chỉnh trang đầu để chỉ tập trung tập.	06/11 v3.2.4; sở thích phân khúc, không phải mọi người đều ghét social.
+hevy	14757393536	painpoint	P2	Watch/equipment	Người dùng vẫn yêu thích app nhưng đôi khi Watch và phone lệch trạng thái, muốn đặt trần mức tạ của máy.	06/11 v3.2.4; một tài khoản, chưa xác định nguyên nhân.
+hevy	14748603922	painpoint	P2	Cardio fields	Người dùng muốn ghi độ dốc treadmill thay vì chỉ các thông số hiện có.	03/11 v3.2.4; scope cardio có thể ngoài ưu tiên strength.
+hevy	14761927406	painpoint	P2	New device layout	Review mong tối ưu giao diện cho thiết bị Duo.	07/11 v3.2.5; chưa kiểm tra trên loại thiết bị này, không suy ra hỗ trợ toàn bộ màn hình lỗi.
+hevy	14750894722	positive	N/A	Freemium/history	Người dùng thích tự điền số buổi trước, timer và PR; trả tiền để ủng hộ dù thấy hạn chế bản free ít.	04/11 v3.2.4; bằng chứng mô hình free tạo thiện chí trả tiền.
+hevy	14755530716	positive	N/A	Milestone/identity	Người dùng mừng mốc 150 buổi, thích nhìn lại tiến độ và tự thách thức mình.	05/11 v3.2.4; minh họa vòng lặp thói quen, không phải đo retention.
+hevy	14763138592	positive	N/A	Badges	Review khen badge tạo thêm động lực.	07/11 v3.2.5; một ví dụ tác động phần thưởng nhỏ.
+ladder	14755708009	painpoint	P2	Repeated prompts	Người dùng khó chịu vì phải đánh giá buổi và hỏi bật nhạc lặp lại; muốn tùy chọn không hỏi nữa.	05/11 v4.16.2; phân biệt rating nội bộ buổi tập với App Store review.
+ladder	14729772966	painpoint	P2	Repeated prompts	Ngay cả review 5 sao vẫn chê thao tác rating sau mỗi buổi tốn công.	30/10 v4.16.0; hai review độc lập cùng chủ đề, không xác định tần suất toàn bộ user.
+ladder	14750491197	painpoint	P1	Navigation/value	Người dùng thích bài tập nhưng thấy điều hướng rối đến mức bỏ app để tự tập; giá làm ngưỡng chịu đựng thấp hơn.	04/11 v4.16.1; nhận định chủ quan về UX, không phải quan sát trực tiếp của auditor.
+ladder	14739582977	painpoint	P2	Price anchoring	Reviewer đối chiếu phí tháng với tiền gym và thấy giá trị chưa xứng.	01/11 v4.16.1; đối chiếu giá theo cảm nhận, không khẳng định giá gym phổ biến.
+ladder	14725715214	painpoint	P2	Coaching signal	Người dùng thấy coach nói nhiều nhưng thiếu thông tin mức tạ và kỹ thuật mong muốn.	29/10 v4.15.0; đánh giá một trải nghiệm coach, không đại diện mọi team.
+ladder	14749361812	painpoint	P2	Form visibility	Muốn nhiều góc quay hơn để so tư thế.	04/11 v4.16.1, review 4 sao.
+ladder	14743947301	painpoint	P1	Platform switching	Người dùng yêu app nhưng chuyển sang Pixel rồi không tìm được app Ladder để tiếp tục.	02/11 v4.16.1; cần xác nhận platform qua nguồn chính thức trước làm tuyên bố tuyệt đối.
+ladder	14742749808	painpoint	P2	External workout log	Người dùng muốn log tạ/reps của buổi ngoài Ladder và lớp nhóm vào cùng journal.	02/11 v4.16.1; nhu cầu hybrid, không tự động đồng nghĩa không có bất kỳ import nào.
+ladder	14743137378	painpoint	P1	Session playback	Review 5 sao nhưng nội dung báo buổi liên tục tự pause sau cập nhật.	02/11 v4.16.1; chưa tái hiện trên v4.16.2.
+ladder	14758521291	positive	N/A	Decision relief	Người dùng thích có buổi sẵn mỗi ngày, được chọn coach và đổi bài/ngày khi cần.	06/11 v4.16.2; giá trị là sự kết hợp hướng dẫn và tự chủ.
+ladder	14730408198	positive	N/A	Streak/history	Nhìn chuỗi tập và lịch đã hoàn thành giúp người dùng duy trì đều.	30/10 v4.16.0; tự thuật, không đo tác động nhân quả.
+ladder	14742306586	positive	N/A	Belonging/confidence	Người mới từng ngại tập nơi công cộng cho biết lời động viên của coach và team giúp tự tin.	02/11 v4.16.1; bằng chứng cảm nhận thuộc về cộng đồng.
+macrofactor-workouts	14730988620	painpoint	P1	Entitlement	Người báo có gói năm đang hoạt động nhưng bị yêu cầu đăng ký lại nên không vào được tập.	30/10 v1.4.1; chưa đối chiếu phương thức đăng nhập, bundle hoặc hóa đơn.
+macrofactor-workouts	14702231372	painpoint	P1	Beginner usability	Người ít kinh nghiệm mất nhiều thời gian nhập bù lịch sử và không tìm được cách ưu tiên bài dễ hơn.	23/10 v1.4.1; bằng chứng chi phí học sử dụng cao.
+macrofactor-workouts	14521900335	painpoint	P1	Data access after trial	Người hết truy cập miễn phí báo không xem hoặc tải được lịch sử nếu không trả tiền.	07/09 v1.3.1; không xác định eligibility bundle; không kết luận hãng cố ý giữ dữ liệu.
+macrofactor-workouts	14620535518	painpoint	P1	Load/support	Người dùng không tải được workout và thất vọng vì hỗ trợ không đưa cách khắc phục.	02/10 v1.4.0; chưa tái kiểm trên1.4.3.
+macrofactor-workouts	14442695617	painpoint	P2	Taxonomy/search	Độ chi tiết biến thể bài và dụng cụ khiến tìm bài phổ biến, tạo chương trình và xuất dữ liệu trở nên rối.	18/08 v1.2.4; cách diễn giải framework và nguyên nhân kỹ thuật của reviewer không được xác minh.
+macrofactor-workouts	14616835107	painpoint	P1	Authored-plan control	Review 5 sao nhưng phàn nàn app tự đổi các bài/reps đã nhập khi dùng tính năng hỗ trợ.	01/10 v1.4.0; dấu hiệu kỳ vọng về manual mode chưa rõ, không xác nhận hành vi chính xác.
+macrofactor-workouts	14596403109	painpoint	P2	Split choice	Người tập 6 ngày muốn nhiều kiểu split hơn trong builder thay vì tự xây toàn bộ.	26/09 v1.3.1; danh sách split có thể đã đổi ở1.4.x.
+macrofactor-workouts	14727004646	painpoint	P2	Watch/heart rate	Reviewer xác nhận Watch app đã có nhưng đơn giản, muốn xem nhịp tim để cân nhắc hồi phục giữa set.	29/10 v1.4.1; bằng chứng thay thế kết luận cũ không có Watch app.
+macrofactor-workouts	14513189636	historical	P1	Watch availability	Review tháng9 muốn Watch app trước khi chuyển hoàn toàn sang nền tảng.	Đã lỗi thời về availability so với review29/10; chỉ giữ để hiểu nhu cầu.
+macrofactor-workouts	14628374469	positive	N/A	Bundle/automation	Người chuyển từ spreadsheet đánh giá cao theo dõi tập và dinh dưỡng thuận tiện, mức tạ được gợi ý khi log.	04/10 v1.4.1; không xác nhận nhận diện thức ăn chính xác.
+macrofactor-workouts	14592064173	positive	N/A	Program migration	Người dùng thích đưa chương trình đang theo vào app, có demo cho bài và chương trình tùy thời gian.	25/09 v1.3.1; minh họa giảm chi phí chuyển từ file sang app.
+strong	14747489075	painpoint	P1	History/catalog	Người dùng báo set biến mất khỏi lịch sử và thấy thiếu bài phổ biến.	03/11 v6.5.1; chưa tái hiện; không lấy phát biểu cường điệu số bài làm kích thước thư viện.
+strong	14743894723	painpoint	P2	Notes/template sync	Ghi chú kỹ thuật trong buổi không luôn có tùy chọn cập nhật về template, phải copy tay sau đó.	02/11 v6.5.1; case cụ thể giữa session và template.
+strong	14613344308	painpoint	P1	Watch data loss	Người dùng báo Watch sync làm mất set hoặc không hiện buổi đã kết thúc, phải nhập lại.	30/09 v6.5.0; v6.5.1 có sau review, không mặc định còn lỗi.
+strong	14573900418	painpoint	P1	Watch data loss	Người dùng lâu năm báo đôi lúc buổi hiện synced rồi sau đó lịch sử thiếu toàn bộ hoặc một phần.	20/09 v6.5.0; một báo cáo bổ trợ cùng nhóm vấn đề.
+strong	14564262897	painpoint	P2	Search/value	Người dùng muốn tìm gần đúng, ưu tiên tên khớp và thêm ảnh bài tùy chỉnh; khó thấy giá trị gói Pro.	18/09 v6.5.0; yêu cầu tìm kiếm cụ thể có thể chuyển thành acceptance criteria.
+strong	14705253552	painpoint	P2	Mixed metrics	Review 5 sao muốn ghi farmer carry theo cả mức tạ và thời gian cùng lúc.	24/10 v6.5.1; scope exercise type cụ thể.
+strong	14576481182	positive	N/A	Minimal interaction	Người dùng thích ít thao tác giữa buổi, thấy hình ảnh/animation của app khác không cần thiết.	21/09 v6.5.0; phân khúc ưu tiên tốc độ hơn trang trí.
+strong	14447125651	positive	N/A	Stable freemium	Người dùng lâu năm thấy bản miễn phí với vài template đủ cho nhu cầu kế hoạch đơn giản.	19/08 v6.5.0; số template chuẩn phải theo nguồn hãng, không suy từ reviewer khác.
+boostcamp	14669557830	painpoint	P1	Background persistence	Người trả Pro báo rời app giữa buổi làm mất phần lớn số đã log.	15/10 v266; bản hiện tại268 có sau review, chưa tái hiện.
+boostcamp	14683775147	painpoint	P1	Program editing	Người dùng mất công chỉnh chương trình nhưng thay đổi không được lưu.	18/10 v266; cần phân biệt save failure với nhập sai phạm vi tuần.
+boostcamp	14549384649	painpoint	P1	Undo/error recovery	Lỡ xóa bài giữa buổi và không kịp undo ngắn khiến buổi lẫn tracking tiếp theo khó khôi phục.	14/09 v265; thời lượng undo do reviewer báo chưa đo trực tiếp.
+boostcamp	14543424176	painpoint	P1	Data loss	Người dùng báo mất dữ liệu sau cập nhật dù đã tập một năm.	12/09 v265; chưa kiểm chứng phạm vi server hoặc login account.
+boostcamp	14738336436	painpoint	P1	Late paywall	Người dùng không hài lòng vì nhập hồ sơ xong mới biết chi phí.	01/11 v267; phản ánh minh bạch onboarding, không chứng minh toàn bộ sản phẩm bắt buộc trả phí.
+boostcamp	14754783431	painpoint	P1	Account deletion	Người dùng không tìm được cách xóa tài khoản trong app.	05/11 v267; chưa kiểm chứng đường dẫn; không kết luận vi phạm quy định.
+boostcamp	14568483813	painpoint	P2	Timer regression	Review4 sao chê timer mất nhớ thời gian cũ và nút tắt nhanh, dù vẫn thích khả năng dùng/tạo chương trình.	19/09 v265; chưa tái kiểmv268.
+boostcamp	14650907828	positive	N/A	Useful iteration	Người dùng khen đề xuất bài tương tự khi swap và tự gọn bài sau khi hoàn thành set.	10/10 v266; ví dụ cập nhật tạo lợi ích thực tế.
+boostcamp	14518830708	positive	N/A	Coach programs	Người mới đánh giá cao chương trình theo trình độ giúp giữ kế hoạch đều.	06/09 v265; tự thuật về giá trị chương trình.
+caliber	14673052635	painpoint	P1	Catalog/price fit	Người dùng thấy số bài phù hợp mỗi nhóm cơ ít, phải tự thêm nhiều nên không muốn trả phí.	16/10 v5.17.0; cảm nhận thư viện không đồng nghĩa hãng chỉ có ít bài tổng thể.
+caliber	14578379246	painpoint	P2	Equipment catalog	Người dùng báo thiếu nhiều máy tiêu chuẩn trong lựa chọn bài.	21/09 v5.16.1; chưa kiểm chứng từng máy, cần nghiên cứu gym thật.
+caliber	14503182746	painpoint	P2	Warm-up guidance	Review4 sao muốn có stretching theo buổi để được chỉ dẫn tốt hơn.	02/09 v5.16.0; không khẳng định stretching ngăn được mọi chấn thương.
+caliber	14397406411	historical	P1	Trial expectation	Người dùng nói quảng cáo miễn phí nhưng khi thử bị tính tiền ngay.	06/08 v5.15.1, ngoài90ngày; cáo buộc cần hóa đơn, không dùng làm kết luận thương mại.
+caliber	14481743533	positive	N/A	Human accountability	Người dùng đánh giá giá trị lớn nhất đến từ PT, học cùng và được theo sát hơn là chỉ app lập lịch.	28/08 v5.16.0; phân biệt trải nghiệm coaching với free logger.
+caliber	14625145905	positive	N/A	Instruction/free value	Sau một tháng, người dùng thấy video và mô tả giúp hiểu bài mới, giá trị có thể so với app trả phí.	03/10 v5.16.1; cảm nhận cá nhân.

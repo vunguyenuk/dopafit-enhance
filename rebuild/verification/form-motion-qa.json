@@ -1,0 +1,62 @@
+{
+  "upstream": "be16cb22c4ceb4ad134894250062fd0782410233",
+  "scope": "CPU deformation/contact/grip/balance at default recipe, 33 phases per exercise. Not GPU/performance or complete clinical form verification.",
+  "results": [
+    {
+      "id": "incline-dumbbell-curl",
+      "samples": 33,
+      "minY": 0.0002822276146616648,
+      "maxY": 1.4771177273143317,
+      "failures": []
+    },
+    {
+      "id": "standing-dumbbell-curl",
+      "samples": 33,
+      "minY": 0.00028222761466155377,
+      "maxY": 1.8090316658380092,
+      "failures": []
+    },
+    {
+      "id": "dumbbell-lateral-raise",
+      "samples": 33,
+      "minY": 0.00028222761466155377,
+      "maxY": 1.8090316658380092,
+      "failures": []
+    },
+    {
+      "id": "dumbbell-shoulder-press",
+      "samples": 33,
+      "minY": 0.0002822276146617758,
+      "maxY": 2.1348573586798083,
+      "failures": []
+    },
+    {
+      "id": "goblet-squat",
+      "samples": 33,
+      "minY": 0.00028222761466155377,
+      "maxY": 1.8010315548855147,
+      "failures": []
+    },
+    {
+      "id": "barbell-back-squat",
+      "samples": 33,
+      "minY": 0.00028222761466155377,
+      "maxY": 1.8010315410291933,
+      "failures": []
+    },
+    {
+      "id": "romanian-deadlift",
+      "samples": 33,
+      "minY": 0.00028222761466155377,
+      "maxY": 1.8090316629312113,
+      "failures": []
+    },
+    {
+      "id": "bent-over-dumbbell-row",
+      "samples": 33,
+      "minY": 0.00028222761466155377,
+      "maxY": 1.4768091925952551,
+      "failures": []
+    }
+  ]
+}

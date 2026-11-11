@@ -1,0 +1,504 @@
+{
+  "history": [],
+  "preferences": {},
+  "saved": [],
+  "draft": {
+    "id": "701FE39A-29A7-40AD-AE2A-5CF52F0F5A70",
+    "started": 816019458.316082,
+    "exercises": [
+      {
+        "id": "7B998443-716F-43C5-B74A-AD5CACAB7A33",
+        "restSeconds": 0,
+        "exercise": {
+          "muscles": [
+            "Lưng"
+          ],
+          "timed": false,
+          "convention": "",
+          "equipment": "T-Bar Row",
+          "secondary": [
+            "Tay trước"
+          ],
+          "english": "T-Bar Row",
+          "image": "reference-upper",
+          "defaultSets": 3,
+          "id": "tbar",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "defaultWeight": 42.5,
+          "name": "Kéo lưng với thanh chữ T",
+          "imageRect": [
+            47,
+            330,
+            174,
+            155
+          ],
+          "defaultReps": 6
+        },
+        "sets": [
+          {
+            "id": "C2810F12-7D03-4D5A-9074-8AE3CDE793C7",
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          },
+          {
+            "id": "2A1B34C9-58A4-41B7-955E-9564AB8FA315",
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          },
+          {
+            "id": "9184B98B-0B61-4768-87EA-EF9BD22A2BA4",
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "id": "D10903BB-07D3-4799-AAD4-9FF971D35F78",
+        "exercise": {
+          "muscles": [
+            "Ngực"
+          ],
+          "timed": false,
+          "convention": "Gồm thanh đòn",
+          "equipment": "Tạ đòn",
+          "secondary": [
+            "Vai",
+            "Tay sau"
+          ],
+          "english": "Incline Barbell Bench Press",
+          "image": "reference-upper",
+          "defaultSets": 3,
+          "id": "incline",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "defaultWeight": 42.5,
+          "name": "Đẩy ngực với tạ đòn trên ghế dốc lên",
+          "imageRect": [
+            47,
+            508,
+            174,
+            155
+          ],
+          "defaultReps": 6
+        },
+        "sets": [
+          {
+            "id": "C583F7BA-1E5F-47F8-A6CB-8AF1E2EE5F77",
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          },
+          {
+            "id": "002B2DA9-7D64-4588-B2ED-0424DE065E6C",
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          },
+          {
+            "id": "0F1E4676-8508-4963-99A4-11846444679A",
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          }
+        ],
+        "restSeconds": 0,
+        "notes": ""
+      },
+      {
+        "id": "B145E524-0D09-457F-82E7-1E3DAECE52E2",
+        "exercise": {
+          "muscles": [
+            "Vai"
+          ],
+          "timed": false,
+          "convention": "",
+          "equipment": "Cáp",
+          "secondary": [
+            "Lưng"
+          ],
+          "english": "Cable Face Pull",
+          "image": "reference-upper",
+          "defaultSets": 3,
+          "id": "facepull",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "defaultWeight": 20,
+          "name": "Kéo cáp về mặt",
+          "imageRect": [
+            47,
+            687,
+            174,
+            155
+          ],
+          "defaultReps": 6
+        },
+        "sets": [
+          {
+            "id": "B712859C-1068-4408-B50B-E516625D35A2",
+            "weight": 20,
+            "reps": 6,
+            "completed": false,
+            "seconds": 0,
+            "warmup": false
+          },
+          {
+            "id": "14FD9D2B-08CF-48B4-9220-3CECB6B2E44E",
+            "weight": 20,
+            "reps": 6,
+            "completed": false,
+            "seconds": 0,
+            "warmup": false
+          },
+          {
+            "reps": 6,
+            "id": "B3282EA4-06FB-4125-A317-32B0FD17B7B7",
+            "seconds": 0,
+            "warmup": false,
+            "weight": 20,
+            "completed": false
+          }
+        ],
+        "notes": "",
+        "restSeconds": 0
+      },
+      {
+        "id": "6052712D-E04D-4CD8-A330-6E4C48488007",
+        "exercise": {
+          "imageRect": [
+            47,
+            865,
+            174,
+            155
+          ],
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "image": "reference-upper",
+          "muscles": [
+            "Tay sau"
+          ],
+          "convention": "Gồm thanh đòn",
+          "defaultWeight": 15,
+          "english": "Close Grip Bench Press",
+          "secondary": [
+            "Ngực",
+            "Vai"
+          ],
+          "timed": false,
+          "name": "Đẩy ngực tay hẹp",
+          "id": "closebench",
+          "defaultReps": 15,
+          "equipment": "Tạ đòn",
+          "defaultSets": 3
+        },
+        "sets": [
+          {
+            "reps": 15,
+            "id": "B840076F-7E85-497E-9290-78FC70E264A9",
+            "seconds": 0,
+            "warmup": false,
+            "weight": 15,
+            "completed": false
+          },
+          {
+            "reps": 15,
+            "id": "B37DDC7E-5CB8-45A5-9B6D-37640F5BA908",
+            "seconds": 0,
+            "warmup": false,
+            "weight": 15,
+            "completed": false
+          },
+          {
+            "reps": 15,
+            "id": "C107B037-B18C-45D3-8458-1C9D99EFB46A",
+            "seconds": 0,
+            "warmup": false,
+            "weight": 15,
+            "completed": false
+          }
+        ],
+        "notes": "",
+        "restSeconds": 0
+      },
+      {
+        "restSeconds": 0,
+        "notes": "",
+        "sets": [
+          {
+            "reps": 6,
+            "id": "92086E62-31B4-45D7-B64C-C4E7A7F54164",
+            "seconds": 0,
+            "warmup": false,
+            "weight": 20,
+            "completed": false
+          },
+          {
+            "completed": false,
+            "warmup": false,
+            "reps": 6,
+            "weight": 20,
+            "id": "154252BE-9704-419D-A58A-EE65A7EF4F10",
+            "seconds": 0
+          },
+          {
+            "completed": false,
+            "warmup": false,
+            "reps": 6,
+            "weight": 20,
+            "id": "CCE0A4EF-FAB3-4F29-87C3-90D9807CD1D5",
+            "seconds": 0
+          }
+        ],
+        "id": "213822B8-93E2-46F5-B713-E887BAA744DF",
+        "exercise": {
+          "imageRect": [
+            47,
+            1043,
+            174,
+            155
+          ],
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "image": "reference-upper",
+          "muscles": [
+            "Tay sau"
+          ],
+          "convention": "",
+          "defaultWeight": 20,
+          "english": "Rope Triceps Pushdown",
+          "secondary": [],
+          "timed": false,
+          "name": "Duỗi tay sau với dây thừng cáp",
+          "id": "tricep",
+          "defaultReps": 6,
+          "equipment": "Cáp",
+          "defaultSets": 3
+        }
+      },
+      {
+        "sets": [
+          {
+            "completed": false,
+            "warmup": false,
+            "reps": 6,
+            "weight": 17.5,
+            "id": "1FA69724-DAEB-41C9-9E7A-DCC7332A7192",
+            "seconds": 0
+          },
+          {
+            "seconds": 0,
+            "weight": 17.5,
+            "completed": false,
+            "id": "209C5532-D722-4AB7-9037-031D537A5FE1",
+            "reps": 6,
+            "warmup": false
+          },
+          {
+            "seconds": 0,
+            "weight": 17.5,
+            "completed": false,
+            "id": "E77D73F7-F6B9-4438-8501-F54A70DDF389",
+            "reps": 6,
+            "warmup": false
+          }
+        ],
+        "restSeconds": 0,
+        "id": "778892BC-A83B-47B7-8F3B-BA11AC80C194",
+        "exercise": {
+          "imageRect": [
+            47,
+            1222,
+            174,
+            155
+          ],
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "image": "reference-upper",
+          "muscles": [
+            "Tay trước"
+          ],
+          "convention": "",
+          "defaultWeight": 17.5,
+          "english": "Rope Hammer Curl",
+          "secondary": [],
+          "timed": false,
+          "name": "Cuốn tay kiểu búa với dây thừng cáp",
+          "id": "hammer",
+          "defaultReps": 6,
+          "equipment": "Cáp",
+          "defaultSets": 3
+        },
+        "notes": ""
+      },
+      {
+        "sets": [
+          {
+            "seconds": 0,
+            "weight": 27.5,
+            "completed": false,
+            "id": "9EE00510-F892-4993-858A-5C902C1F93C1",
+            "reps": 15,
+            "warmup": false
+          },
+          {
+            "seconds": 0,
+            "weight": 27.5,
+            "completed": false,
+            "id": "90EEC3D5-AEAF-45C5-A35E-60A17A38655C",
+            "reps": 15,
+            "warmup": false
+          },
+          {
+            "seconds": 0,
+            "weight": 27.5,
+            "completed": false,
+            "id": "B08BE4A4-8ECB-4CC5-B37C-894008240113",
+            "reps": 15,
+            "warmup": false
+          }
+        ],
+        "restSeconds": 0,
+        "id": "45DC0303-3150-4964-A4DE-EACA2C3DAA4A",
+        "exercise": {
+          "imageRect": [
+            47,
+            1400,
+            174,
+            155
+          ],
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "image": "reference-upper",
+          "muscles": [
+            "Lưng"
+          ],
+          "convention": "Gồm thanh đòn",
+          "defaultWeight": 27.5,
+          "english": "Trap Bar Shrug",
+          "secondary": [],
+          "timed": false,
+          "name": "Nhún vai với thanh trap bar",
+          "id": "shrug",
+          "defaultReps": 15,
+          "equipment": "Trap Bar",
+          "defaultSets": 3
+        },
+        "notes": ""
+      }
+    ],
+    "plannedMinutes": 60,
+    "hasStarted": true,
+    "duration": 0,
+    "name": "Ngày thân trên"
+  },
+  "schema": 1,
+  "lowerNext": false,
+  "onboarded": true,
+  "plan": {
+    "unit": "kg",
+    "timedTraining": false,
+    "minutes": 60,
+    "goal": "Khỏe hơn",
+    "warmup": false,
+    "language": "Theo ngôn ngữ của máy",
+    "gender": "Nam",
+    "reminderHour": 18,
+    "split": "Thân trên / Thân dưới",
+    "variability": "Cân bằng",
+    "sound": true,
+    "height": 169,
+    "focus": [],
+    "notificationDays": [],
+    "experience": "Trung bình",
+    "supersets": false,
+    "bodyWeight": 70,
+    "days": 3
+  },
+  "gyms": [
+    {
+      "name": "Phòng gym",
+      "dumbbells": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        40,
+        45,
+        50
+      ],
+      "id": "16BCB717-63BE-429C-B162-15833BAD7D6F",
+      "equipment": [
+        "Tạ đòn",
+        "Bánh tạ",
+        "Cặp tạ đơn",
+        "Ghế tập",
+        "Ghế dốc",
+        "Cáp",
+        "Máy tập",
+        "Dây kháng lực",
+        "Xà đơn",
+        "Tạ chuông",
+        "Trap Bar",
+        "T-Bar Row",
+        "Trọng lượng cơ thể"
+      ],
+      "plates": [
+        1.25,
+        2.5,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "barWeight": 20
+    }
+  ]
+}

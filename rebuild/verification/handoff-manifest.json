@@ -1,0 +1,1633 @@
+{
+  "updated": "2026-11-11",
+  "scope": "140 original evidence states; replacements and current Home redesign are approved exceptions, all parity rows partial.",
+  "originalEvidenceCount": 140,
+  "originalEvidence": [
+    {
+      "id": "R01",
+      "path": "rebuild/audit/R01-welcome.png",
+      "bytes": 190904,
+      "sha256": "6e9a9c8a6d6dea276cb1f8d063b409e0a54ab992ca6ac6e40f6c1da48155983c",
+      "figmaNodeId": "1:29"
+    },
+    {
+      "id": "R02",
+      "path": "rebuild/audit/R02-onboarding-intro.png",
+      "bytes": 165267,
+      "sha256": "c1b269b07f4ff798fb603cde3ec7db8419ef47fa6a597ea28b51cf5b8b3cf2ae",
+      "figmaNodeId": "1:52"
+    },
+    {
+      "id": "R03",
+      "path": "rebuild/audit/R03-goal-options.png",
+      "bytes": 166978,
+      "sha256": "96021394e7c3bfa0c16df193fed0d936a99e23b1cc6702000e63e3648ec5b479",
+      "figmaNodeId": "1:74"
+    },
+    {
+      "id": "R04",
+      "path": "rebuild/audit/R04-obstacles.png",
+      "bytes": 140174,
+      "sha256": "d68b0467f68956b1d2d52e20169a511bed3662fd2b41bae96e6cdece595d2ba3",
+      "figmaNodeId": "1:96"
+    },
+    {
+      "id": "R05",
+      "path": "rebuild/audit/R05-jobs-to-be-done.png",
+      "bytes": 153449,
+      "sha256": "d0932d4c34b30b8a2628765f4ac9f1f2109a92519f16240ba4fa0d4456818002",
+      "figmaNodeId": "1:118"
+    },
+    {
+      "id": "R06",
+      "path": "rebuild/audit/R06-referral-source.png",
+      "bytes": 126658,
+      "sha256": "895b63e5621eda6c8bb1c9746f1244202978d78fb3d7fb5a67c96c124d281e13",
+      "figmaNodeId": "1:140"
+    },
+    {
+      "id": "R07",
+      "path": "rebuild/audit/R07-experience.png",
+      "bytes": 133932,
+      "sha256": "40031723692e5d6901dfe9e870ea22425b0d901f24c036ed0a831bd9c338bf54",
+      "figmaNodeId": "1:169"
+    },
+    {
+      "id": "R08",
+      "path": "rebuild/audit/R08-consistency.png",
+      "bytes": 120023,
+      "sha256": "45ad3f416514b7ba2f6ba8d40396510c85d2c83ac11fce2496d47c8c7ffb2802",
+      "figmaNodeId": "1:191"
+    },
+    {
+      "id": "R09",
+      "path": "rebuild/audit/R09-recent-frequency.png",
+      "bytes": 134183,
+      "sha256": "996e7721737154e798374847fc904940b3df883c5dacb77d6b74adb299741d39",
+      "figmaNodeId": "1:213"
+    },
+    {
+      "id": "R10",
+      "path": "rebuild/audit/R10-body-motivation.png",
+      "bytes": 150032,
+      "sha256": "72455de090f190cb8c0bcd7d200b04649f7b16fea0d11c27381cf3a4a7148578",
+      "figmaNodeId": "1:235"
+    },
+    {
+      "id": "R11",
+      "path": "rebuild/audit/R11-gym-uncertainty.png",
+      "bytes": 151637,
+      "sha256": "098202990d10abc9991c1897dc2f6870025746b08bcfbdf6f4f63523e0187d69",
+      "figmaNodeId": "1:257"
+    },
+    {
+      "id": "R12",
+      "path": "rebuild/audit/R12-form-uncertainty.png",
+      "bytes": 166011,
+      "sha256": "ee865980d02b703627202cdb46fd2b4bd70576127571b461d40f8dbbb530b8c0",
+      "figmaNodeId": "1:279"
+    },
+    {
+      "id": "R13",
+      "path": "rebuild/audit/R13-progression-story.png",
+      "bytes": 173178,
+      "sha256": "3e0e4ad1727df61db0b9f591b182aa5d5d350c17ed058ac578e5c9ee867dd57e",
+      "figmaNodeId": "1:307"
+    },
+    {
+      "id": "R14",
+      "path": "rebuild/audit/R14-consistency-story.png",
+      "bytes": 177089,
+      "sha256": "6b2575bf4fd5032539bf60b8fa0dab323bbb74af28416f670486d40d99fc391d",
+      "figmaNodeId": "1:329"
+    },
+    {
+      "id": "R15",
+      "path": "rebuild/audit/R15-plateau-story.png",
+      "bytes": 174860,
+      "sha256": "852bffd65487d9b8543dc343f838d658585b164def35e31f78c6364ecbc3394a",
+      "figmaNodeId": "1:352"
+    },
+    {
+      "id": "R16",
+      "path": "rebuild/audit/R16-system-value-story.png",
+      "bytes": 156951,
+      "sha256": "81615dc1b64676709db595ad4c5315801bcbd180b02e2e8e12415aa84dccc372",
+      "figmaNodeId": "1:374"
+    },
+    {
+      "id": "R17",
+      "path": "rebuild/audit/R17-personal-plan-story.png",
+      "bytes": 140205,
+      "sha256": "d63854a3e96a4df02aa24722d863ccb0d1f7e65c17494d8f305c1918609f6656",
+      "figmaNodeId": "1:396"
+    },
+    {
+      "id": "R18",
+      "path": "rebuild/audit/R18-progression-value.png",
+      "bytes": 144465,
+      "sha256": "8ff154ec00b959c62300d698081500ef2f960da1669f9e707232732461c4fef9",
+      "figmaNodeId": "1:419"
+    },
+    {
+      "id": "R19",
+      "path": "rebuild/audit/R19-recovery-benefit.png",
+      "bytes": 170942,
+      "sha256": "a594b318df4a9a3b56af4b16d5d180e694f2967014df94b3e8858a8ed1103500",
+      "figmaNodeId": "12:7"
+    },
+    {
+      "id": "R20",
+      "path": "rebuild/audit/R20-health-privacy.png",
+      "bytes": 179301,
+      "sha256": "26d047d182888f7d48ab6cf18105ea1c1ccb49feef7334934feaf969d6851ad1",
+      "figmaNodeId": "12:29"
+    },
+    {
+      "id": "R21",
+      "path": "rebuild/audit/R21-health-connect-or-manual.png",
+      "bytes": 179881,
+      "sha256": "bd05945877c6004e38fa4f507a0c0210a363e6dc73bccab8fe8e4ab934ee8be8",
+      "figmaNodeId": "12:52"
+    },
+    {
+      "id": "R22",
+      "path": "rebuild/audit/R22-age-group.png",
+      "bytes": 123245,
+      "sha256": "f07bee170b028f594dceddc3a58ac5fd36e770dbf7c168d5e63ecb5a0d1be15a",
+      "figmaNodeId": "12:74"
+    },
+    {
+      "id": "R23",
+      "path": "rebuild/audit/R23-gender.png",
+      "bytes": 122722,
+      "sha256": "9934f553d8f28a22f0f993be7574dcfda81e51dd6f792e2b97294d7a7e20bf2b",
+      "figmaNodeId": "12:96"
+    },
+    {
+      "id": "R24",
+      "path": "rebuild/audit/R24-height.png",
+      "bytes": 144619,
+      "sha256": "0c24a308cb444b3548abe1a2e3298ac247c8f449459a84786a67ad94a6ec0bee",
+      "figmaNodeId": "12:117"
+    },
+    {
+      "id": "R25",
+      "path": "rebuild/audit/R25-weight.png",
+      "bytes": 143575,
+      "sha256": "26eb5c1ddd07a7b4154779f37428fc867165410a0183abe6a1616890cbd5654e",
+      "figmaNodeId": "12:146"
+    },
+    {
+      "id": "R26",
+      "path": "rebuild/audit/R26-focus-muscles.png",
+      "bytes": 154783,
+      "sha256": "5efe60ec3fafa9411d07b11119812c98917c1cee53c1763b1c2afb4eddce25d8",
+      "figmaNodeId": "12:168"
+    },
+    {
+      "id": "R27",
+      "path": "rebuild/audit/R27-focus-explanation.png",
+      "bytes": 213468,
+      "sha256": "d98e3e4ee181817b023961f930a5f3a895e31fe1069307dfb7d3aeaa408737a5",
+      "figmaNodeId": "12:189"
+    },
+    {
+      "id": "R28",
+      "path": "rebuild/audit/R28-location.png",
+      "bytes": 163145,
+      "sha256": "d991f4ef176951469250c9408a17da39e88a41c8dad27dce2b398c8665732c1e",
+      "figmaNodeId": "12:211"
+    },
+    {
+      "id": "R29",
+      "path": "rebuild/audit/R29-equipment.png",
+      "bytes": 175682,
+      "sha256": "79bde1c6509ba926ec158731e57a4db828f95e526261d41a4ee2db4143061935",
+      "figmaNodeId": "12:232"
+    },
+    {
+      "id": "R30",
+      "path": "rebuild/audit/R30-days-per-week.png",
+      "bytes": 136754,
+      "sha256": "8f97f60d317f868878a494d3fe14534446f29f19fe823903105f37cb0606116f",
+      "figmaNodeId": "12:254"
+    },
+    {
+      "id": "R31",
+      "path": "rebuild/audit/R31-days-selected.png",
+      "bytes": 142492,
+      "sha256": "f74fe3be726d782ea471467e267e3e23fa65295f1e61937d4067a149bd9daf6d",
+      "figmaNodeId": "12:281"
+    },
+    {
+      "id": "R32",
+      "path": "rebuild/audit/R32-duration.png",
+      "bytes": 144918,
+      "sha256": "d811e31a3cbf197822d886f341527db6928dfa04b403287e0fef74941462b3a8",
+      "figmaNodeId": "12:303"
+    },
+    {
+      "id": "R33",
+      "path": "rebuild/audit/R33-reminder.png",
+      "bytes": 169948,
+      "sha256": "526ac64b18ecb44c71b3016f5163a0525aa7615c9ceb0adfea780a9c35735464",
+      "figmaNodeId": "12:324"
+    },
+    {
+      "id": "R34",
+      "path": "rebuild/audit/R34-other-activity.png",
+      "bytes": 135309,
+      "sha256": "874a4ebf157b3392c6296f0932c7636dc33b8a3ff8937c9662b43e214557909d",
+      "figmaNodeId": "12:346"
+    },
+    {
+      "id": "R35",
+      "path": "rebuild/audit/R35-other-activity-detail.png",
+      "bytes": 140712,
+      "sha256": "308e45be7d010dff98ca8704078b7d94317b1806ebcb57cdad94e05bee410f4d",
+      "figmaNodeId": "12:369"
+    },
+    {
+      "id": "R36",
+      "path": "rebuild/audit/R36-setup-review-top.png",
+      "bytes": 169332,
+      "sha256": "90b8fed93741cdc106ac4d26cea1c7cf115862a2a537d180eb46a54a40085f80",
+      "figmaNodeId": "12:392"
+    },
+    {
+      "id": "R37",
+      "path": "rebuild/audit/R37-review-profile.png",
+      "bytes": 170073,
+      "sha256": "be337119bae1591f85aad432a720732bd4f65f34503786796a9b355964bdfaf9",
+      "figmaNodeId": "12:423"
+    },
+    {
+      "id": "R38",
+      "path": "rebuild/audit/R38-save-setup-sign-in.png",
+      "bytes": 185130,
+      "sha256": "dcd73e9a9aa316645210b66c4bda549c8a653b383e62f81d2a76c57e26a99535",
+      "figmaNodeId": "12:483"
+    },
+    {
+      "id": "R39",
+      "path": "rebuild/audit/R39-plan-ready-after-login.png",
+      "bytes": 233732,
+      "sha256": "975baf48c2ec72d8c78a21dd5de04c53885cda60a6be2137aaae3e4fcd753324",
+      "figmaNodeId": "19:6"
+    },
+    {
+      "id": "R40",
+      "path": "rebuild/audit/R40-weekly-commitment-hold.png",
+      "bytes": 136181,
+      "sha256": "07b9815671d2418f51e750016d883c09cd13e84abcaa250584d24431d080d223",
+      "figmaNodeId": "19:33"
+    },
+    {
+      "id": "R41",
+      "path": "rebuild/audit/R41-pro-introduction.png",
+      "bytes": 206156,
+      "sha256": "1e44ab872a682812e2fb713659a19497063535b746a776d2cadd2033500bccd0",
+      "figmaNodeId": "19:60"
+    },
+    {
+      "id": "R42",
+      "path": "rebuild/audit/R42-home-after-login-plan.png",
+      "bytes": 235947,
+      "sha256": "9e47dd8ae7202628d2492d32ac845140d4ec96ffb61c2fbd73b4b11a238ef9c9",
+      "figmaNodeId": "19:88"
+    },
+    {
+      "id": "R43",
+      "path": "rebuild/audit/R43-dumbbell-row-guide-angles.png",
+      "bytes": 234682,
+      "sha256": "136cbe45604a866341a6b909c6008631bc99b1e960dafc4064d62a11a2f714ff",
+      "figmaNodeId": "19:115"
+    },
+    {
+      "id": "R44",
+      "path": "rebuild/audit/R44-plan-profile-after-login.png",
+      "bytes": 155709,
+      "sha256": "9dfe08d0893e50a6d7f383c8602b5a77558e8e7b0869ef1b92f5b002da25fbcb",
+      "figmaNodeId": "19:142"
+    },
+    {
+      "id": "R45",
+      "path": "rebuild/audit/R45-gym-management-menu.png",
+      "bytes": 127678,
+      "sha256": "4dea9e7540d4aa724d6bf36bf13d06749645934dbf1784f34bdde5d9ef802a32",
+      "figmaNodeId": "19:173"
+    },
+    {
+      "id": "R46",
+      "path": "rebuild/audit/R46-journal-empty-after-login.png",
+      "bytes": 127873,
+      "sha256": "002edb5938fa27ac8462b2b3cab24c2d717dc6286277d153b7f177cc19328e10",
+      "figmaNodeId": "19:200"
+    },
+    {
+      "id": "R47",
+      "path": "rebuild/audit/R47-settings-pro-empty-history.png",
+      "bytes": 138268,
+      "sha256": "5f759d72a58642c5febda0c14b75151916db6a0d4822865a1a111ef6aa85450f",
+      "figmaNodeId": "19:227"
+    },
+    {
+      "id": "R48",
+      "path": "rebuild/audit/R48-english-language-selected.png",
+      "bytes": 93166,
+      "sha256": "949fd3d667d10eba489b2ac8f1489796664468f31199eed41a99721f40e2e2f4",
+      "figmaNodeId": "19:255"
+    },
+    {
+      "id": "R49",
+      "path": "rebuild/audit/R49-workout-home-english.png",
+      "bytes": 199103,
+      "sha256": "cd7a9a830873fc8927bbe7586d600695749ab99b92b8ea82b8b30f2337473708",
+      "figmaNodeId": "19:282"
+    },
+    {
+      "id": "R50",
+      "path": "rebuild/audit/R50-active-workout-english.png",
+      "bytes": 171866,
+      "sha256": "de5fa4df582402b39a4313e45a58ec5f38ff527546b9504a735722622f776bfe",
+      "figmaNodeId": "19:309"
+    },
+    {
+      "id": "R51",
+      "path": "rebuild/audit/R51-dumbbell-row-entry-english.png",
+      "bytes": 146019,
+      "sha256": "5f857fb80e601b5e32a14dd2afae8e208b4f180cffed3a3be75fe5afee7ceeba",
+      "figmaNodeId": "19:340"
+    },
+    {
+      "id": "R52",
+      "path": "rebuild/audit/R52-dumbbell-row-one-set-logged.png",
+      "bytes": 147141,
+      "sha256": "68ecf2787c8e504c5a0fd4db0a60c12c6417ed443fbc02f9582bafc6dca1d49a",
+      "figmaNodeId": "19:367"
+    },
+    {
+      "id": "R53",
+      "path": "rebuild/audit/R53-dumbbell-row-volume-720.png",
+      "bytes": 157644,
+      "sha256": "515ded536e92da2e3290b398db8d111dad78fd54d997bbc0327b5d7b8aceae40",
+      "figmaNodeId": "19:394"
+    },
+    {
+      "id": "R54",
+      "path": "rebuild/audit/R54-completed-dumbbell-row-720.png",
+      "bytes": 96092,
+      "sha256": "b005109f203bfa27b5de189943a204a51be1cb6717e9210bfaf1338f281c8ba0",
+      "figmaNodeId": "19:422"
+    },
+    {
+      "id": "R55",
+      "path": "rebuild/audit/R55-saved-exercise-menu-english.png",
+      "bytes": 124229,
+      "sha256": "ba2423f3a2d55b8a5f68bf04deaf64b4f721f6c2a5d1b99c38a104237e8ebbaf",
+      "figmaNodeId": "19:449"
+    },
+    {
+      "id": "R56",
+      "path": "rebuild/audit/R56-saved-rir-editor.png",
+      "bytes": 115136,
+      "sha256": "952182b932cde3c030ff475528b39e676b00ab260b1412ea4f6930c87dfc182e",
+      "figmaNodeId": "19:476"
+    },
+    {
+      "id": "R57",
+      "path": "rebuild/audit/R57-saved-rir-three-selected.png",
+      "bytes": 113869,
+      "sha256": "42b66bcd8125dc1003444adcf0287a555e7ac4b21ad2ddb6be29b81dd356c98d",
+      "figmaNodeId": "19:507"
+    },
+    {
+      "id": "R58",
+      "path": "rebuild/audit/R58-streak-unlock-english.png",
+      "bytes": 85404,
+      "sha256": "27e689c3cae1250efe05bc7ac22a0dd821d634ff74df3da4230abf3d3aa13b40",
+      "figmaNodeId": "19:534"
+    },
+    {
+      "id": "R59",
+      "path": "rebuild/audit/R59-journal-saved-720.png",
+      "bytes": 135778,
+      "sha256": "886e110edb126303edaec5b3f5a8dc3f4f72c4a0d37b0e08f8c01de6d5577b0f",
+      "figmaNodeId": "19:561"
+    },
+    {
+      "id": "R60",
+      "path": "rebuild/audit/R60-reopened-workout-720.png",
+      "bytes": 106199,
+      "sha256": "de528364b7e8b4c5d53f58cb9b807637c61b5e949ef725e0c3f7a5c82f8d560a",
+      "figmaNodeId": "19:589"
+    },
+    {
+      "id": "R61",
+      "path": "rebuild/audit/R61-reopened-rir-three-persisted.png",
+      "bytes": 134064,
+      "sha256": "79b3ec723798716c98d28f375cefd33068bf81a22c00e6836a39e7e670271be0",
+      "figmaNodeId": "19:616"
+    },
+    {
+      "id": "R62",
+      "path": "rebuild/audit/R62-home-plan-live-recheck.png",
+      "bytes": 199534,
+      "sha256": "90e33ffaea99310af1eb8865be0688c488149ed05cabcfe10424b30f3255376f",
+      "figmaNodeId": "33:515"
+    },
+    {
+      "id": "R63",
+      "path": "rebuild/audit/R63-guide-anatomy-live.png",
+      "bytes": 308740,
+      "sha256": "06c5186babafbbc45f7d20db4a22123b3a63098f35a698ce0d2d242014b404e7",
+      "figmaNodeId": "33:537"
+    },
+    {
+      "id": "R64",
+      "path": "rebuild/audit/R64-recovery-live-front.png",
+      "bytes": 230756,
+      "sha256": "f66ad62e23c44fcbb58951e54e0c1c83896f808bc4123cbb92891f7cbfbde700",
+      "figmaNodeId": "33:558"
+    },
+    {
+      "id": "R65",
+      "path": "rebuild/audit/R65-recovery-live-back.png",
+      "bytes": 235612,
+      "sha256": "b5a04c1a5738a4050983a5700099f837a5ceb3e94e8a95de633e95cd1a856b25",
+      "figmaNodeId": "33:579"
+    },
+    {
+      "id": "R66",
+      "path": "rebuild/audit/R66-recovery-muscle-list-live.png",
+      "bytes": 278312,
+      "sha256": "f43344d65d75a305fb1243670d4980186a8a8739c61ea1c4827118469098f8fe",
+      "figmaNodeId": "33:600"
+    },
+    {
+      "id": "R67",
+      "path": "rebuild/audit/R67-recovery-manual-editor-live.png",
+      "bytes": 265467,
+      "sha256": "07f25b427f1211a1e7d2edbeb52661382b1ba9b06dff60ef892b65603293c10a",
+      "figmaNodeId": "33:620"
+    },
+    {
+      "id": "R68",
+      "path": "rebuild/audit/R68-recovery-secondary-list.png",
+      "bytes": 289643,
+      "sha256": "c51a7a7654574c862e3c9f4ab01833a34636270e7053d624db086021c4d155be",
+      "figmaNodeId": "39:7"
+    },
+    {
+      "id": "R69",
+      "path": "rebuild/audit/R69-recovery-secondary-bottom.png",
+      "bytes": 277932,
+      "sha256": "f2804087e3bd67c414deb79ae1579700d60b4ba48387b21c0596b2c6400f3b06",
+      "figmaNodeId": "39:33"
+    },
+    {
+      "id": "R70",
+      "path": "rebuild/audit/R70-saved-duration-editor.png",
+      "bytes": 178997,
+      "sha256": "03afeb453f74ef5a191d7c009cac81be1d3cb35d7c9b6fc5b180e42e61aca7dd",
+      "figmaNodeId": "39:58"
+    },
+    {
+      "id": "R71",
+      "path": "rebuild/audit/R71-journal-expanded-calendar.png",
+      "bytes": 205308,
+      "sha256": "50b33ddba619afa855705f0c53a9ea9f6509c92ea383c26ebe56e18cdc5a6e68",
+      "figmaNodeId": "41:6"
+    },
+    {
+      "id": "R72",
+      "path": "rebuild/audit/R72-discard-active-workout-confirmation.png",
+      "bytes": 216506,
+      "sha256": "db242dfa2ba32eabeb269a1098b0e0db26160ced617b6a0e83f8fd40c1b5eefc",
+      "figmaNodeId": "46:6"
+    },
+    {
+      "id": "R73",
+      "path": "rebuild/audit/R73-active-workout-superset-menu.png",
+      "bytes": 233324,
+      "sha256": "14ecfe913632107bcc38d27428cc901f42f9eb1c763e2b6d2da65b4457cd19df",
+      "figmaNodeId": "49:6"
+    },
+    {
+      "id": "R74",
+      "path": "rebuild/audit/R74-active-superset-selection-empty.png",
+      "bytes": 183864,
+      "sha256": "997ea16d37283a2833ed6c541986b243ef0296bd716010b7563dc088fb19dc43",
+      "figmaNodeId": "49:29"
+    },
+    {
+      "id": "R75",
+      "path": "rebuild/audit/R75-active-superset-one-selected.png",
+      "bytes": 184089,
+      "sha256": "3918a68ba60ad84c197d019222ce707955085eae504aa886bc8bf53376d8c612",
+      "figmaNodeId": "49:53"
+    },
+    {
+      "id": "R76",
+      "path": "rebuild/audit/R76-active-superset-two-selected.png",
+      "bytes": 185015,
+      "sha256": "c0fc9464e8629b4749df5643789dd5a370296f63fee7a4aa7925e856f028931f",
+      "figmaNodeId": "49:75"
+    },
+    {
+      "id": "R77",
+      "path": "rebuild/audit/R77-superset-saved-reordered.png",
+      "bytes": 226319,
+      "sha256": "319f75661b77f5c1b4b5d0c38b2e36fc39b712fa6df44b6015f6e39021402d5c",
+      "figmaNodeId": "56:948"
+    },
+    {
+      "id": "R78",
+      "path": "rebuild/audit/R78-superset-group-menu.png",
+      "bytes": 176212,
+      "sha256": "b2dd767e9b810b1703e862a62067d3a1c3fb46d5a6d2a78b95488240667c8e7f",
+      "figmaNodeId": "56:973"
+    },
+    {
+      "id": "R79",
+      "path": "rebuild/audit/R79-superset-detached-keeps-order.png",
+      "bytes": 227174,
+      "sha256": "6bf1675c0df7a5ae6dba785746ef31a810065c775e17436377de65b1cd326d14",
+      "figmaNodeId": "56:997"
+    },
+    {
+      "id": "R80",
+      "path": "rebuild/audit/R80-shoulder-guide-anatomy-pair.png",
+      "bytes": 242144,
+      "sha256": "9c4b6ae25fa62151e78bd8ac243cedea1ddcc27e8a38a859bf7a332f8da6fea0",
+      "figmaNodeId": "56:1019"
+    },
+    {
+      "id": "R81",
+      "path": "rebuild/audit/R81-superset-unequal-four-rounds.png",
+      "bytes": 227439,
+      "sha256": "903d52ecf3893da19a1ba2c0c25532bb0c31378e0e2455168af298b79d305de6",
+      "figmaNodeId": "56:1045"
+    },
+    {
+      "id": "R82",
+      "path": "rebuild/audit/R82-original-order-restored-no-groups.png",
+      "bytes": 227102,
+      "sha256": "a33aeaeddf0a9d4768264cbe5718412dfd180819bf9826378db28a99d81fdc5b",
+      "figmaNodeId": "56:1070"
+    },
+    {
+      "id": "D01",
+      "path": "research/2026-11-09/evidence/D01-workout-home.png",
+      "bytes": 203941,
+      "sha256": "1cdc86799f19f1018edf00563e2943f549f133a0d5f89ac2e6f77e06eb158739",
+      "figmaNodeId": "1:448"
+    },
+    {
+      "id": "D02",
+      "path": "research/2026-11-09/evidence/D02-exercise-menu.png",
+      "bytes": 147040,
+      "sha256": "6f5208f9594e30f43ae21b83256b4cc88a505468ad440024602d0943db8b0d3e",
+      "figmaNodeId": "1:469"
+    },
+    {
+      "id": "D03",
+      "path": "research/2026-11-09/evidence/D03-exercise-history-empty.png",
+      "bytes": 88436,
+      "sha256": "a75221ab93c24d7372bddf504e70dcc17afd6b947fc3f1f03c74371a708185e7",
+      "figmaNodeId": "1:489"
+    },
+    {
+      "id": "D04",
+      "path": "research/2026-11-09/evidence/D04-exercise-instructions.png",
+      "bytes": 184977,
+      "sha256": "900b7fb06ade45661fdbf14fa466698874a3aba65647dcb1bdddbdfcda0d78c4",
+      "figmaNodeId": "1:508"
+    },
+    {
+      "id": "D05",
+      "path": "research/2026-11-09/evidence/D05-exercise-muscles.png",
+      "bytes": 135601,
+      "sha256": "531ac265cfeba806df6cb52a1c674b2c4313ab816e0891065e9fd9b5d5ccc0fb",
+      "figmaNodeId": "1:528"
+    },
+    {
+      "id": "D06",
+      "path": "research/2026-11-09/evidence/D06-duration-options.png",
+      "bytes": 93065,
+      "sha256": "7644b7d56670d0651a7271754b135248bed0238be6fd49cdc361fcb8f776d6dc",
+      "figmaNodeId": "1:548"
+    },
+    {
+      "id": "D07",
+      "path": "research/2026-11-09/evidence/D07-gym-selector.png",
+      "bytes": 112974,
+      "sha256": "9ce85a119c72c9fc3a9fc67281c077b6e17b1f069f0abfdbeedeb69dafea7547",
+      "figmaNodeId": "1:574"
+    },
+    {
+      "id": "D08",
+      "path": "research/2026-11-09/evidence/D08-plan-settings-top.png",
+      "bytes": 153097,
+      "sha256": "ee2c3bfc3b85109873b764f52019973ea0c4795ac682823faae4da8880cc686e",
+      "figmaNodeId": "1:593"
+    },
+    {
+      "id": "D09",
+      "path": "research/2026-11-09/evidence/D09-plan-settings-bottom.png",
+      "bytes": 148733,
+      "sha256": "b02435caf036d73a7fc60563e408b1a7c1eb242aa00123cabef2e8cd1c435ce9",
+      "figmaNodeId": "1:613"
+    },
+    {
+      "id": "D10",
+      "path": "research/2026-11-09/evidence/D10-training-split.png",
+      "bytes": 133580,
+      "sha256": "b9641dfa272286cb2667697e53b1166083c9b8ef2b1a4785524cbdf831f43587",
+      "figmaNodeId": "1:633"
+    },
+    {
+      "id": "D11",
+      "path": "research/2026-11-09/evidence/D11-equipment-list.png",
+      "bytes": 142077,
+      "sha256": "4208f9b9392854f0d855c358f55e707ada40a8163f1edf7065b85233d0af3e4a",
+      "figmaNodeId": "1:652"
+    },
+    {
+      "id": "D12",
+      "path": "research/2026-11-09/evidence/D12-dumbbell-increments.png",
+      "bytes": 103500,
+      "sha256": "d6ab17af0c7c7835a105b81fc742097a3653330182d118cd5b0f682b460bddbc",
+      "figmaNodeId": "1:672"
+    },
+    {
+      "id": "D13",
+      "path": "research/2026-11-09/evidence/D13-body-results-before.png",
+      "bytes": 159881,
+      "sha256": "cd48a76cf1b2b4f2d0dfcdc02a7ad90361fca16f946a6f356cce125300bea5d7",
+      "figmaNodeId": "1:697"
+    },
+    {
+      "id": "D14",
+      "path": "research/2026-11-09/evidence/D14-recovery-before.png",
+      "bytes": 139484,
+      "sha256": "a5a2dca63390b3f4f24869e7644caa532e02038d06c906421a5dfd8b6f640313",
+      "figmaNodeId": "1:716"
+    },
+    {
+      "id": "D15",
+      "path": "research/2026-11-09/evidence/D15-weekly-goals-before.png",
+      "bytes": 148577,
+      "sha256": "8f8598a0682644bd450c7c5c8b47d5a2a1cfe86a3782a06c661fb2520b569262",
+      "figmaNodeId": "1:736"
+    },
+    {
+      "id": "D16",
+      "path": "research/2026-11-09/evidence/D16-journal-before.png",
+      "bytes": 122832,
+      "sha256": "4601072d15a45632ab75be6b28e7d774a8375fd611e629465c1eb33a38c9ae57",
+      "figmaNodeId": "1:756"
+    },
+    {
+      "id": "D17",
+      "path": "research/2026-11-09/evidence/D17-active-workout.png",
+      "bytes": 182950,
+      "sha256": "01348e23fc8427295859bc44e8269a46b85c7ecf0f8d17aa2b4c06ee688f32f0",
+      "figmaNodeId": "1:775"
+    },
+    {
+      "id": "D18",
+      "path": "research/2026-11-09/evidence/D18-set-entry-before.png",
+      "bytes": 139677,
+      "sha256": "da330912e342d3e63edd06f0d2127c58daa665d1ea1914372d2351cca68dfb63",
+      "figmaNodeId": "1:795"
+    },
+    {
+      "id": "D19",
+      "path": "research/2026-11-09/evidence/D19-reps-propagate-to-unlogged.png",
+      "bytes": 141873,
+      "sha256": "e4012788bfc16c890f23da4aea569dbafcdb6dc7cb55eb2f46c22df2dc40d5f9",
+      "figmaNodeId": "1:820"
+    },
+    {
+      "id": "D20",
+      "path": "research/2026-11-09/evidence/D20-zero-weight-validation.png",
+      "bytes": 134660,
+      "sha256": "efe88776a4b413c7d4ae7ff573522f0409ec8d7de8abbcf9a1aa3ffbd82bdba8",
+      "figmaNodeId": "1:840"
+    },
+    {
+      "id": "D21",
+      "path": "research/2026-11-09/evidence/D21-barbell-weight-includes-bar.png",
+      "bytes": 155663,
+      "sha256": "20b85af86932f1c1e853e832ddaab48251578f21c5a54758163fcce8b7565e15",
+      "figmaNodeId": "1:860"
+    },
+    {
+      "id": "D22",
+      "path": "research/2026-11-09/evidence/D22-rest-timer-options.png",
+      "bytes": 153928,
+      "sha256": "3806231bc9f6751e84ad4d661868342f13affd36b9822982a082504b649828d4",
+      "figmaNodeId": "1:880"
+    },
+    {
+      "id": "D23",
+      "path": "research/2026-11-09/evidence/D23-instruction-multiple-angles.png",
+      "bytes": 155785,
+      "sha256": "1a3c0783fe336bfc5a6d6fdd108a5082332578acf0911618e835cc51ac3936d0",
+      "figmaNodeId": "1:899"
+    },
+    {
+      "id": "D24",
+      "path": "research/2026-11-09/evidence/D24-session-restored.png",
+      "bytes": 156546,
+      "sha256": "9b4151649b5934d50ec02a20c5b21dc615df7f9b9ee4e8294c58955f3faf5069",
+      "figmaNodeId": "1:919"
+    },
+    {
+      "id": "D25",
+      "path": "research/2026-11-09/evidence/D25-first-set-logged-rest-running.png",
+      "bytes": 149977,
+      "sha256": "757ddae148f474be09de8060c55bfb65e3e1aabb4fe726bee84cbfcd874c0bfa",
+      "figmaNodeId": "1:945"
+    },
+    {
+      "id": "D26",
+      "path": "research/2026-11-09/evidence/D26-rest-timer-paused.png",
+      "bytes": 161508,
+      "sha256": "55be1f7ba273c9de640dac69e31e4682258f0556e1e0ee2b24bf0476eb9679d8",
+      "figmaNodeId": "1:964"
+    },
+    {
+      "id": "D27",
+      "path": "research/2026-11-09/evidence/D27-log-all-confirmation.png",
+      "bytes": 129466,
+      "sha256": "9902099db13f7a2531f6787c1ab84dccf1c4fda6cef3f12d6ce64c5ae6432bdd",
+      "figmaNodeId": "1:983"
+    },
+    {
+      "id": "D28",
+      "path": "research/2026-11-09/evidence/D28-all-three-sets-rir.png",
+      "bytes": 166398,
+      "sha256": "853b7c32e2fbf73df53dfdcded03e38822690368eb3528a42565bb0a3b4e8b32",
+      "figmaNodeId": "1:1002"
+    },
+    {
+      "id": "D29",
+      "path": "research/2026-11-09/evidence/D29-rir-selected.png",
+      "bytes": 167445,
+      "sha256": "9298540981c7285c2c87e1f687866697f83c21b8a70be22f919aea7845351e23",
+      "figmaNodeId": "1:1021"
+    },
+    {
+      "id": "D30",
+      "path": "research/2026-11-09/evidence/D30-exercise-complete-three-sets.png",
+      "bytes": 182051,
+      "sha256": "53bf43db88748f14a707343a599da62d5136b9c7100b750c6be9c40e1ca9b174",
+      "figmaNodeId": "1:1040"
+    },
+    {
+      "id": "D31",
+      "path": "research/2026-11-09/evidence/D31-swap-ranked-alternatives.png",
+      "bytes": 197841,
+      "sha256": "08e11e9144f37c7ba4232fe1e258102dbe1ddb187f4779ab83686551d5b4954e",
+      "figmaNodeId": "1:1065"
+    },
+    {
+      "id": "D32",
+      "path": "research/2026-11-09/evidence/D32-swap-filter.png",
+      "bytes": 115246,
+      "sha256": "89e4955257c5cf7247a10839becbf8b1859369548da0de24600d43159649a917",
+      "figmaNodeId": "1:1085"
+    },
+    {
+      "id": "D33",
+      "path": "research/2026-11-09/evidence/D33-swap-scope-prompt.png",
+      "bytes": 139871,
+      "sha256": "9e4221ce58dae7dea816d6d428f147cc2abf46a2c8bdcbd5323c3b9edb196b69",
+      "figmaNodeId": "1:1104"
+    },
+    {
+      "id": "D34",
+      "path": "research/2026-11-09/evidence/D34-finish-save-summary.png",
+      "bytes": 162079,
+      "sha256": "2c9fe29dbcd74f894909e4eec481d8266edabb3c16e6587122a478f093184c07",
+      "figmaNodeId": "1:1123"
+    },
+    {
+      "id": "D35",
+      "path": "research/2026-11-09/evidence/D35-saved-session-three-sets-765kg.png",
+      "bytes": 105467,
+      "sha256": "0829258128bc79bdc9f5369a814f799075173c5deb062aed0a1bbeeba92f982a",
+      "figmaNodeId": "1:1142"
+    },
+    {
+      "id": "D36",
+      "path": "research/2026-11-09/evidence/D36-week-streak-first-session.png",
+      "bytes": 85287,
+      "sha256": "cf53181665645f71c8ae4f2d9371df2c9816837ae06765e44ebc948541dd5952",
+      "figmaNodeId": "1:1161"
+    },
+    {
+      "id": "D37",
+      "path": "research/2026-11-09/evidence/D37-journal-after-one-session.png",
+      "bytes": 134296,
+      "sha256": "6e3ed3b095c40e3676da83ff79d93b4bd7173cf176779f03657066d5089c42f3",
+      "figmaNodeId": "1:1186"
+    },
+    {
+      "id": "D38",
+      "path": "research/2026-11-09/evidence/D38-weekly-goals-after-three-logged.png",
+      "bytes": 151388,
+      "sha256": "d3f6df793b61c2033478cacb85efd20c6089c1b23c8cf03a457008982ef85208",
+      "figmaNodeId": "1:1205"
+    },
+    {
+      "id": "D39",
+      "path": "research/2026-11-09/evidence/D39-weighted-muscle-sets-explanation.png",
+      "bytes": 153650,
+      "sha256": "ef09d42ee8170dae00f71e66d9607ca7cfb3a01a0c9fca5f26ba41e3ce48bfff",
+      "figmaNodeId": "1:1225"
+    },
+    {
+      "id": "D40",
+      "path": "research/2026-11-09/evidence/D40-recovery-after-session.png",
+      "bytes": 156343,
+      "sha256": "583e7a0fe8ae3fc75ebfd528fe6656c6eba9e33fc16bb08f29049ec08914f6e0",
+      "figmaNodeId": "1:1245"
+    },
+    {
+      "id": "D41",
+      "path": "research/2026-11-09/evidence/D41-recovery-method-disclosure.png",
+      "bytes": 206609,
+      "sha256": "532fcd57107688a084ac69b9156696e70c0d54f219ffd3bbc5f9904f6c42c1f6",
+      "figmaNodeId": "1:1264"
+    },
+    {
+      "id": "D42",
+      "path": "research/2026-11-09/evidence/D42-strength-results-after-one-session.png",
+      "bytes": 158351,
+      "sha256": "7100456e0526b022a49e5699df44d1766c7ba5a32b1cbdd37f933a5af383b585",
+      "figmaNodeId": "1:1284"
+    },
+    {
+      "id": "D43",
+      "path": "research/2026-11-09/evidence/D43-settings-top.png",
+      "bytes": 135013,
+      "sha256": "64066062d338c7f7e044636b00690577ca4f85a91b15b287ad92bbf4478db65a",
+      "figmaNodeId": "1:1310"
+    },
+    {
+      "id": "D44",
+      "path": "research/2026-11-09/evidence/D44-language-options.png",
+      "bytes": 89218,
+      "sha256": "bc55a14719960f51de9ad668a49187172b633882925df4428e49ea3f744fa80b",
+      "figmaNodeId": "1:1330"
+    },
+    {
+      "id": "D45",
+      "path": "research/2026-11-09/evidence/D45-workout-report.png",
+      "bytes": 142870,
+      "sha256": "90efe511fcbf950f05a36883069946beb8ead99cd9f7333a85fd3d534745e25b",
+      "figmaNodeId": "1:1349"
+    },
+    {
+      "id": "D46",
+      "path": "research/2026-11-09/evidence/D46-report-period-context.png",
+      "bytes": 148837,
+      "sha256": "cbf85bf3a36f42cb8d512e2e07be2a9127b0c433b9bc87c41ebfba5fdb8dd9d1",
+      "figmaNodeId": "1:1369"
+    },
+    {
+      "id": "D47",
+      "path": "research/2026-11-09/evidence/D47-report-last-seven-days.png",
+      "bytes": 148110,
+      "sha256": "07c217407113cb347bc3bfba53fb5dc0899fc5da088c6d31aba0358fed548a41",
+      "figmaNodeId": "1:1389"
+    },
+    {
+      "id": "D48",
+      "path": "research/2026-11-09/evidence/D48-health-profile-optional.png",
+      "bytes": 150183,
+      "sha256": "9cffeb50635e8752202ba6b2d41839afd0dc9bc035dbcbd3d8e94f9c330ecc8f",
+      "figmaNodeId": "1:1408"
+    },
+    {
+      "id": "D49",
+      "path": "research/2026-11-09/evidence/D49-saved-session-menu.png",
+      "bytes": 122406,
+      "sha256": "faac5dd26194e0b1b4bebf61cc118b79b31e97f2ab07e89e67094808f620ec1f",
+      "figmaNodeId": "1:1434"
+    },
+    {
+      "id": "D50",
+      "path": "research/2026-11-09/evidence/D50-reopened-saved-session.png",
+      "bytes": 110744,
+      "sha256": "9986827fad3f3b1135f87d3984eeed2e7e2f5231612dacce432ed91f7d3158d3",
+      "figmaNodeId": "1:1453"
+    },
+    {
+      "id": "D51",
+      "path": "research/2026-11-09/evidence/D51-rir-persisted-in-history-menu.png",
+      "bytes": 140943,
+      "sha256": "bffe84ea5d64365ebc1cdb432b0dab644863ea2250b579b1aab336537608e8d6",
+      "figmaNodeId": "1:1472"
+    },
+    {
+      "id": "D52",
+      "path": "research/2026-11-09/evidence/D52-exercise-history-three-sets.png",
+      "bytes": 96668,
+      "sha256": "4bdcfcff1a1b925c1a9512fa7339670c5eae74a9ced63c83cfb60cc94b971cab",
+      "figmaNodeId": "1:1491"
+    },
+    {
+      "id": "D53",
+      "path": "research/2026-11-09/evidence/D53-exercise-trends-and-rounded-axis.png",
+      "bytes": 128034,
+      "sha256": "3fe8a73fe5eef20a21bb0243cc448a69dc20226ad7a95bcc73585907911a1966",
+      "figmaNodeId": "1:1510"
+    },
+    {
+      "id": "D54",
+      "path": "research/2026-11-09/evidence/D54-estimated-one-rm-detail.png",
+      "bytes": 153885,
+      "sha256": "dbb76f2f9cc56daf577f9518b401f447dccebb69a3a8d4a070838436fe0213f0",
+      "figmaNodeId": "1:1529"
+    },
+    {
+      "id": "D55",
+      "path": "research/2026-11-09/evidence/D55-background-return-preserves-view.png",
+      "bytes": 153872,
+      "sha256": "2f02486a39bee7959298f8bfd0b1eb80bfaabc9fb3a3d08d069e74bf8e10770c",
+      "figmaNodeId": "1:1555"
+    },
+    {
+      "id": "D56",
+      "path": "research/2026-11-09/evidence/D56-one-rm-formula-help.png",
+      "bytes": 200509,
+      "sha256": "720afa5b4340c9d7bd2ab73f25637c488fe378e37b94c3442b5b6cfdea2d0e10",
+      "figmaNodeId": "1:1575"
+    },
+    {
+      "id": "D57",
+      "path": "research/2026-11-09/evidence/D57-next-lower-body-workout.png",
+      "bytes": 198244,
+      "sha256": "36b8670b15c8784775108f49b4266c5f05e02fec6d7182676de2ad324bc6c65a",
+      "figmaNodeId": "1:1594"
+    },
+    {
+      "id": "D58",
+      "path": "research/2026-11-09/evidence/D58-workout-actions-superset-refresh.png",
+      "bytes": 137177,
+      "sha256": "20e597c0713d09eeaa8c4b7e7b552e80568c15df028c416f21dfc093f6066ba0",
+      "figmaNodeId": "1:1614"
+    }
+  ],
+  "sourceFiles": {
+    "DopafitRebuild/BodyAndGoalsViews.swift": "9c8d26e90901979cafa0191cbec909e17bfe8ef48208c04602401aceb83007ae",
+    "DopafitRebuild/DailyCheckinModels.swift": "25ddfa5e5c64a30fe236665c2852039e75d7785abf7523f1f02b5160e9d957c4",
+    "DopafitRebuild/Design.swift": "c8cdaa9a629187227329a555066a82ba33f9f37e655f1453c75fb87f30d8f9da",
+    "DopafitRebuild/DopafitApp.swift": "0bbd5f651ae1e2fd2434869c578ebef3fac2cf8b23d6e80f23b039043a31cc43",
+    "DopafitRebuild/ExerciseDBMedia.swift": "ea195108186746d2801c6d8be8e3a3bf44cf6f96017c388cfc31e2a45cec57f8",
+    "DopafitRebuild/ExerciseGuide.swift": "d777b95f04eb70a5fac4dd9f717b8c9dc4b84faa5d17e8b354c0d5e7c3463ee5",
+    "DopafitRebuild/ExerciseLibrary.swift": "d9b64dbc664526df80969e593dfe4c1c3d20175f078719915b364c38a9b18b12",
+    "DopafitRebuild/ExerciseLibraryFilter.swift": "c857b9266b64bf8137035f420c74a6b50a1b2cfef6989ce074860d036a229edd",
+    "DopafitRebuild/ExerciseLoopVideo.swift": "822ca036eb28bdfffc08c7ce8e3fe927d970652de3153dc50fb46deb0f37d056",
+    "DopafitRebuild/ExerciseSetupTips.swift": "ebaeb993647d590adcb5a68c8f26339007a52cd7f1eda23230747a260efa6aeb",
+    "DopafitRebuild/HomeCheckinViews.swift": "cb173e4127ad9fc4426c5e96fd33312a4c00e454e62403bec5c66c2e94ead40a",
+    "DopafitRebuild/MetricDetailView.swift": "95d7b272d4aea475f4963dad9d7c24999fc693410eeb163d72a6aef4198646c2",
+    "DopafitRebuild/Models.swift": "80dd930333d7fd17c085675f01fc01fdfef20887765bfeaea91d087694b45acb",
+    "DopafitRebuild/OnboardingView.swift": "15b1cf275bae7e5b7f2170873244b31e056ff85ed99a57525c4bed4255b99f16",
+    "DopafitRebuild/OpenGymAnimationView.swift": "8c69507f7f2d05d70d85502ba2c49bd8cb481d4dbba1425f43016823b1c018bc",
+    "DopafitRebuild/OpenGymBody.swift": "69ee0e5ef445c4b7044b5528401e083a7acd3b244a74a57db04a339bdfad27a7",
+    "DopafitRebuild/PostSetupFlow.swift": "da92f980d486bd12a1f18ec176e13d375dbe8e23dc126d63286e06852ca2f5b5",
+    "DopafitRebuild/ProgressViews.swift": "06d9f24ff623c5e67b67aadfa582b67f00957bf38098fa4504f30176319d9970",
+    "DopafitRebuild/SavedDurationEditor.swift": "aef53213183da0922c748543d50e324a50d10b8e9131a71bfae3507165c892b3",
+    "DopafitRebuild/SavedSetEditor.swift": "e892eadb32a4f6a8a36e7e788a7fc5175870698422c0980f78b8eda0fb014993",
+    "DopafitRebuild/SettingsViews.swift": "70800f7fe65e6aca9f7a2e5646a1d1989bddade41b346611b7d26862b5f77080",
+    "DopafitRebuild/SetupOnboardingView.swift": "7dd5f1206f51a486d82fb6166c293ae77d056bdb30fad8b647af63f6fd0341aa",
+    "DopafitRebuild/WorkoutDiscoveryModels.swift": "f5630d4e562652834f80ec6c8c6df21d6a020977043b927d7faca204ad1234c1",
+    "DopafitRebuild/WorkoutDiscoveryViews.swift": "600ab6b6669a491324837cc83484cec7562c9642f38a404b0d5069d8e6cf42bc",
+    "DopafitRebuild/WorkoutProgramModels.swift": "44e509caf8b4b73fddbfe9e23312c65aff3a57609457fdfa4aab55d226bf0cfd",
+    "DopafitRebuild/WorkoutProgramViews.swift": "5f02adaf051b35bc191985175863876ebf0753461bad2465fff6a029daf447f9",
+    "DopafitRebuild/WorkoutViews.swift": "f4144e38ab47c1ccf3bcb52c9e1ad78915d6fb11a2196d05b0d08113fa2cac07"
+  },
+  "mediaResources": {
+    "DopafitRebuild/OpenGym3D/index.html": "b358d015d3e4606c6123fa6bc208b0c97c9c421e201c9256c6876a4031f4cdf0",
+    "DopafitRebuild/OpenGym3D/licenses/MakeHuman-CC0.txt": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+    "DopafitRebuild/OpenGym3D/licenses/OpenGym3D-MIT.txt": "292eed4e441413aa627eb1f80276264e24db5d28125c4602d6afceaf97a8d99e",
+    "DopafitRebuild/OpenGym3D/licenses/Three-MIT.txt": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+    "DopafitRebuild/OpenGym3D/models/bicep_curl.glb": "34af136331b2ddc64fe6d67a7e1d0d31a3856afb146ae3ca9857e5b5f097d1ef",
+    "DopafitRebuild/OpenGym3D/models/good_morning.glb": "a01850b0135afb7ebd477911647cb8a6095aec1d1e9486ea119dbdf058423af8",
+    "DopafitRebuild/OpenGym3D/models/muscular_body.glb": "f0238d53971ae0af1d8cadf16bb471abe94dcf3d8378683330e2d933e728f2b9",
+    "DopafitRebuild/OpenGym3D/models/romanian_deadlift.glb": "94b8c6d312822a95da93b52e40121a43f7b1ea89b0d6190e001f75f253b777c7",
+    "DopafitRebuild/OpenGym3D/viewer.js": "00b9357bbb80756ae12620f9f722d53a66a8b0edf68c583488c735161c4941fe",
+    "DopafitRebuild/Form3D/index.html": "41d5de751fc1d2736876bbbfb27dd94362c10f79ea4350833f9740c2d294feb8",
+    "DopafitRebuild/Form3D/licenses/Character-provenance.md": "34f1513e1d15217de8c5cf1d6e9dd9af656fd7bedbd10a8aeb63463198ebf864",
+    "DopafitRebuild/Form3D/licenses/INTEGRATION-NOTICE.txt": "173e421a2f2c84e472844dbcf48abcfdc2ded2e1cda449c379962dd1f802a660",
+    "DopafitRebuild/Form3D/licenses/MakeHuman-CC0.md": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+    "DopafitRebuild/Form3D/licenses/Three-MIT.txt": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "DopafitRebuild/Form3D/neutral.glb": "4504fa119881a2b93f5c3e6c8bdeb0e4ec989ce830145f65c1201e26b6abb441",
+    "DopafitRebuild/Form3D/viewer.js": "a198a10544719c130e2b993378ac490a7307285a477a3cd8c081a75b520a432c",
+    "DopafitRebuild/ExerciseMedia/exercisedb-mapping.json": "7d490e9e11ee69c4015d7c7480b68f5a93644ed93556657cb9996b652e4cda56",
+    "DopafitRebuild/ExerciseMedia/gifs/2dImyQ8.gif": "f7eaa8f4b04e8d492b5077084d3f486521ef33c95187002f967cbf13874b2997",
+    "DopafitRebuild/ExerciseMedia/gifs/3TZduzM.gif": "d05bbfcc6c7283d35069e51cdf56df66e55a5c4182ca192f50750857fdcd7be0",
+    "DopafitRebuild/ExerciseMedia/gifs/6TG6x2w.gif": "150a2bf1f8ef447895faa90855dfb72585ed77a4c6c2f9d3d42e2b4dc5e201e6",
+    "DopafitRebuild/ExerciseMedia/gifs/8DiFDVA.gif": "a90772120baa1d2dabac29f62b2bb1b128a03f936f7e0cc2f7f29f7c1f817a65",
+    "DopafitRebuild/ExerciseMedia/gifs/A6wtbuL.gif": "667ba53e82227da5d825d2249bf849514b79a5c06a280afd9f8cdc619f75ce8b",
+    "DopafitRebuild/ExerciseMedia/gifs/BJ0Hz5L.gif": "68b6a883f0232f4c3ee83f4b1f2e4589f50b0b2dbf57864675e610ecda63a544",
+    "DopafitRebuild/ExerciseMedia/gifs/BLCvwr2.gif": "7e8c7a0a99c61c6b8c17551f377f761c7f11f0be990a1aabaa3388112b502996",
+    "DopafitRebuild/ExerciseMedia/gifs/C0MA9bC.gif": "c53241038bc290424e72086a7fecf1c367ac53a42f4b5844a4b5314abe56dc44",
+    "DopafitRebuild/ExerciseMedia/gifs/DsgkuIt.gif": "68de0e7c7727fa08a203f73b0d2935181a5c6489470d44b9028de4a7d10a17f1",
+    "DopafitRebuild/ExerciseMedia/gifs/HPlPoQA.gif": "b54f7a2caa09011db921732ce57f61bcc09e8ce57557138bb0440db98e82d29e",
+    "DopafitRebuild/ExerciseMedia/gifs/I4hDWkc.gif": "22d3df1d1d7dea5edd61907e431ef6a5c4bf4bd1b6d290981a437576c3833464",
+    "DopafitRebuild/ExerciseMedia/gifs/J6Dx1Mu.gif": "e86e9de6778c660ca101763fbb307c42224e2eeedd28313d527c924d03aabee4",
+    "DopafitRebuild/ExerciseMedia/gifs/NJzBsGJ.gif": "24560aa9a4ba2f3bf7ffda3bd33a6a63127d26cb2f2d77f3a0778d88e1e536a1",
+    "DopafitRebuild/ExerciseMedia/gifs/NbVPDMW.gif": "ec9acaaac38045ea355c51ba61a854d54d31b03744a922eba429935ac10ba90c",
+    "DopafitRebuild/ExerciseMedia/gifs/RaflbWD.gif": "ca90d75252ca5fd5dc9c772e96ced723bf41662dafe76f061952ce300b08cd08",
+    "DopafitRebuild/ExerciseMedia/gifs/TFqbd8t.gif": "b2caf9e3ebea2d5cf7f434f16aee481d529a57b8b5fc3c5de9e913b447eb1b57",
+    "DopafitRebuild/ExerciseMedia/gifs/XlZ4lAC.gif": "7d01b04b09e80504323e66295f757b2f0328dab7a3d71d637a2916d391634a1f",
+    "DopafitRebuild/ExerciseMedia/gifs/Xy4jlWA.gif": "88e53667b5f727a1b44e427dc44c91c0b9757144fb1fb7cd12dcbf8dd4824fbf",
+    "DopafitRebuild/ExerciseMedia/gifs/dU605di.gif": "db25428c5f9de2077427d94742cf5c5e955191459d0d5bc25533005591acf187",
+    "DopafitRebuild/ExerciseMedia/gifs/f7Y9eDZ.gif": "b4bacf1437684442b6957b522312d5c33393e5b6a5d400536c23099828d37869",
+    "DopafitRebuild/ExerciseMedia/gifs/iny3m5y.gif": "c3dde2bfa860d8a141861ee94259e9fafee2096c74cb0553c87a05bae9544b21",
+    "DopafitRebuild/ExerciseMedia/gifs/mpKZGWz.gif": "418001c2b4976b51f859406a0a1ad237cf4b5349ba4ab54c138daa5912493cdd",
+    "DopafitRebuild/ExerciseMedia/gifs/myfUsKf.gif": "67982491ac142252217ee9157cef9c3ed558149157b7a07a99de2b94a2bef8cf",
+    "DopafitRebuild/ExerciseMedia/gifs/oHsrypV.gif": "bdaba331f3282ea7ba1cb6eafcf11b97fbc4e5aa3505e7f10161fce758d3c0ef",
+    "DopafitRebuild/ExerciseMedia/gifs/oR7O9LW.gif": "1da08363a4dbf18da891c56362439e51dca3895d41534cbcd60dc466ce1c4d3e",
+    "DopafitRebuild/ExerciseMedia/gifs/peAeMR3.gif": "5ada10f60a6f83b2d266f1322212fcdb34afba685be2511b48f79084bd4f4758",
+    "DopafitRebuild/ExerciseMedia/gifs/qPEzJjA.gif": "5c6ab66c33ba6361df648f851c1083f3169ec89e750b3bea764de5ca46527298",
+    "DopafitRebuild/ExerciseMedia/gifs/qXTaZnJ.gif": "3c1e29f67ffaae89316c94d7af42fcbe2cbf379967c27c1d30fa0205b6f9ed30",
+    "DopafitRebuild/ExerciseMedia/gifs/trqKQv2.gif": "2b8ce557bd1d27fea19e286672d2ea1f5f887b13c36fd8cfd5be4ee33a8fe1a3",
+    "DopafitRebuild/ExerciseMedia/gifs/u2X71Np.gif": "9d8fb2ebd6d2f7c30aabc9350926d1bfc8077449b6049eff63466c05bf709def",
+    "DopafitRebuild/ExerciseMedia/gifs/wQ2c4XD.gif": "32d2f54834207624b965db5f4f5b875589d608990c3f85d3732062f30c3916b1",
+    "DopafitRebuild/ExerciseMedia/gifs/ykUOVze.gif": "a47fdc5174b3f2003ae89a82d1815951413a0fd7b6f49329637454dc11a72960",
+    "DopafitRebuild/ExerciseMedia/gifs/yn8yg1r.gif": "6a2440b565509a084f97e861dff6a69249f0d52f01730fc628d4698e273b4ea3",
+    "DopafitRebuild/ExerciseMedia/guide-previews/2dImyQ8.mp4": "b6aca13d85b6957b1e09e9dfc5f65c1e7f6a6bb2a08f6ade922dad722dd356cd",
+    "DopafitRebuild/ExerciseMedia/guide-previews/3TZduzM.mp4": "d36b2ac316d618d2929e82aa8abad337c605a6b3595b994a916f64b550534a12",
+    "DopafitRebuild/ExerciseMedia/guide-previews/6TG6x2w.mp4": "de10630fb406debf0d59c0d5d66dfc74311830145cc5b059e8f7d556e7153760",
+    "DopafitRebuild/ExerciseMedia/guide-previews/8DiFDVA.mp4": "2358c2e456356394c3e86046ef221944e122ac7e79ebf43a98bd7444ca8dc81c",
+    "DopafitRebuild/ExerciseMedia/guide-previews/A6wtbuL.mp4": "27601875033987d0a2e7d464e5fae7b59800fa9859236105dbf6834e3b12deb6",
+    "DopafitRebuild/ExerciseMedia/guide-previews/BJ0Hz5L.mp4": "623933bf6b3c1efd000463c10063cf76add409e8098222769b9b8f58832a20e8",
+    "DopafitRebuild/ExerciseMedia/guide-previews/BLCvwr2.mp4": "956930cea4a418d0fd234e1b5cbb834b020c423ededb644963c36d63c53b5e38",
+    "DopafitRebuild/ExerciseMedia/guide-previews/C0MA9bC.mp4": "3d58eba023c46197c15133e377133508dc25d107df0700d1fbbcf8097e958435",
+    "DopafitRebuild/ExerciseMedia/guide-previews/DsgkuIt.mp4": "9a7bf677651b99ba636c23e3bf6c88e7a1fc50e9da62b984ff5166bb5e2eca57",
+    "DopafitRebuild/ExerciseMedia/guide-previews/HPlPoQA.mp4": "4cff03ed7a7715fb60c82c02b2daa45eab65d96c32d2c923ea1399480d2dff5c",
+    "DopafitRebuild/ExerciseMedia/guide-previews/I4hDWkc.mp4": "0f0fcc7a9c9abcc643e550c27a114a9faaf3e78319dc2bd99545d74393452ad4",
+    "DopafitRebuild/ExerciseMedia/guide-previews/J6Dx1Mu.mp4": "b9be32e28b06b057f9f37d0d8c7a32a737b6fbac5d9f187129114b774a53c0f3",
+    "DopafitRebuild/ExerciseMedia/guide-previews/NJzBsGJ.mp4": "26bf2fe7f25789e3c11a1fd74d4270d84144a47c858ea9c393fa843eb7fc4b15",
+    "DopafitRebuild/ExerciseMedia/guide-previews/NbVPDMW.mp4": "ebfec3329fb61427e24b1f24e7a297e4db602245373e1ac38dc674948424f672",
+    "DopafitRebuild/ExerciseMedia/guide-previews/RaflbWD.mp4": "d7d125b82b046dbe41447b8109bb253142f066db6272a59fe618e3a64e3c616a",
+    "DopafitRebuild/ExerciseMedia/guide-previews/TFqbd8t.mp4": "7e4eab76cfe4ac12a0130ff2c2067ebe50dca2e73093469ab68b74f8545087d7",
+    "DopafitRebuild/ExerciseMedia/guide-previews/XlZ4lAC.mp4": "f08fed5b88c4992dbb8be877ebb8a4aedc8d26b7ca7d1958e2beeef09e9a89f8",
+    "DopafitRebuild/ExerciseMedia/guide-previews/Xy4jlWA.mp4": "e848d8266e9f489ad9261ba0d0bf2822fade2074afcc81defea635e8f4bb8285",
+    "DopafitRebuild/ExerciseMedia/guide-previews/dU605di.mp4": "06d827683f2ba5095c7275eb63c9a04301ac9d3b5780985abc2bbd97c6914dd0",
+    "DopafitRebuild/ExerciseMedia/guide-previews/f7Y9eDZ.mp4": "c9242a8e0336eac77630c81c62207f4e921acbef97a79c577a6d46e77d943467",
+    "DopafitRebuild/ExerciseMedia/guide-previews/iny3m5y.mp4": "50eb291792b0dab92ffeb5c7c3458471a2c0af05a1e383772b289f7ea6ddabf3",
+    "DopafitRebuild/ExerciseMedia/guide-previews/mpKZGWz.mp4": "eff9a5ab0d92a1730c9ed4988d7fd84cdad626da9779bd2718f82e8f1ee5b4bc",
+    "DopafitRebuild/ExerciseMedia/guide-previews/myfUsKf.mp4": "29e016e3eb8ff1e0319a2a87dc42559f5b30421a68f69f8a1c493690513196a4",
+    "DopafitRebuild/ExerciseMedia/guide-previews/oHsrypV.mp4": "1205295ae8696a725bbb30d3ba86c419e1adf6f97389c93e7022c599dbdfccf1",
+    "DopafitRebuild/ExerciseMedia/guide-previews/oR7O9LW.mp4": "f57fa2f9b8bfba1b24ef10c42b9996a0806110d4028e254b46bcca959c8127db",
+    "DopafitRebuild/ExerciseMedia/guide-previews/peAeMR3.mp4": "34268eef29e5edbfc74b292897d832b9e6bdd8ceded708013684237507db245d",
+    "DopafitRebuild/ExerciseMedia/guide-previews/qPEzJjA.mp4": "851ce88ddab019c49778f2fb4016f3e807df162af168276cf72228dd224dbeaa",
+    "DopafitRebuild/ExerciseMedia/guide-previews/qXTaZnJ.mp4": "a33465dba472f5d163cff152cd316aaad0119811c4f152ee1900f2a34257985a",
+    "DopafitRebuild/ExerciseMedia/guide-previews/trqKQv2.mp4": "3bfad6f9dea96511b025f87ab8781e286c59388d1762658df1a1dfc9da247280",
+    "DopafitRebuild/ExerciseMedia/guide-previews/u2X71Np.mp4": "bf28f8f85ff8af1bdf25cbf64adb8c6461b6be686d6f6a9190e9913942180590",
+    "DopafitRebuild/ExerciseMedia/guide-previews/wQ2c4XD.mp4": "2b1610a823a83f25b45135966b105e549124db18719fa820a18124f437664837",
+    "DopafitRebuild/ExerciseMedia/guide-previews/ykUOVze.mp4": "3fa289e75a0dc0484aaa302596e5660259bf4815c54aaefaa2285d53c0f16a24",
+    "DopafitRebuild/ExerciseMedia/guide-previews/yn8yg1r.mp4": "9cd81a27d525296fcd339a25f2d4b03f9ddd63e250d14ce6bac87308ec1513b5",
+    "DopafitRebuild/ExerciseMedia/supplemental/plank-guide.mp4": "8d73d9d11c65219684282fae057a5f2286e4b92d16eb3249b37d578b1da7ea6d",
+    "DopafitRebuild/ExerciseMedia/supplemental/plank-thumb.mp4": "a89252630b6fae577b9a33000319839f4d6a24394f30bd239d1f8b764d1ae739",
+    "DopafitRebuild/ExerciseMedia/videos/2dImyQ8.mp4": "1d901bd2abda53d5cbca24f572236b6213c6de8b4a2032532e28c081470953e7",
+    "DopafitRebuild/ExerciseMedia/videos/3TZduzM.mp4": "3f6cb097c25801ca2b6ad8084cfde93429f10e2b5f5abe9f42f1901e7dfe4cfd",
+    "DopafitRebuild/ExerciseMedia/videos/6TG6x2w.mp4": "65e93909f15f151e063795ba164f10a4eacf5d229ea90bf730abc9520f534db2",
+    "DopafitRebuild/ExerciseMedia/videos/8DiFDVA.mp4": "56fa94ad08719c804b7020a0e275deb9b4f58102aa2a91ac26e230bf8673f6ac",
+    "DopafitRebuild/ExerciseMedia/videos/A6wtbuL.mp4": "51535530d3ace11e889159a53369529054b9d6abc34d519095c93246fdcdeb39",
+    "DopafitRebuild/ExerciseMedia/videos/BJ0Hz5L.mp4": "78424c8eb25307d4757c54085213f6356a15ee36b7f02f9db663dc10bd704a13",
+    "DopafitRebuild/ExerciseMedia/videos/BLCvwr2.mp4": "b216638acc826cf46166b4fe8348a6039b8f8dc18d7ea8b4019fc463b67692c7",
+    "DopafitRebuild/ExerciseMedia/videos/C0MA9bC.mp4": "10246557660be3c2efe39d058e19e7039690f1cd67d19b4a3a7a8bcfd9ab8e8a",
+    "DopafitRebuild/ExerciseMedia/videos/DsgkuIt.mp4": "133d56c4812a247d1979c1176f421c892d797df2aa92d377b39a9a3d650b89f9",
+    "DopafitRebuild/ExerciseMedia/videos/HPlPoQA.mp4": "5a59ee4667260015481ad8264107e1e950cfa956680aa011e82a600d94586c8d",
+    "DopafitRebuild/ExerciseMedia/videos/I4hDWkc.mp4": "9e129f75d874d2bb2f767efc1902cdb34efb6e4d843e7bcb81ce319bf3d02613",
+    "DopafitRebuild/ExerciseMedia/videos/J6Dx1Mu.mp4": "fbc10e9c28d5cd942482b06141eb03f317cc1b765c0a8e94067cd9523cbdd33e",
+    "DopafitRebuild/ExerciseMedia/videos/NJzBsGJ.mp4": "9131d4c6329ae74c189e542227f13267b367e0af5d4d23c7134c917fed126184",
+    "DopafitRebuild/ExerciseMedia/videos/NbVPDMW.mp4": "24234d2c68176362a4f1b0c479979d21bd90f475391dd8aa8334809f42a9b7c9",
+    "DopafitRebuild/ExerciseMedia/videos/RaflbWD.mp4": "70bf1d71945c71cf8f31a0b2a8660fb84083a2a31b1ba302104944099ff89209",
+    "DopafitRebuild/ExerciseMedia/videos/TFqbd8t.mp4": "436e46c75ae22a0d654d350be0113feb6b6a482d106ba6940f8c7961b9448538",
+    "DopafitRebuild/ExerciseMedia/videos/XlZ4lAC.mp4": "be1f56b9decd61c33d958e908afaca9621d1232432397d2fdf4869e44470f8ab",
+    "DopafitRebuild/ExerciseMedia/videos/Xy4jlWA.mp4": "bb925f0ff06abb53d3d51ee33b95d4b1c2521e3637343f9ae2cd4ef55773d59c",
+    "DopafitRebuild/ExerciseMedia/videos/dU605di.mp4": "b64109bb25d6361d72cd25670f173efa7d4a192b885a7f2cbbd59b82ebee9f96",
+    "DopafitRebuild/ExerciseMedia/videos/f7Y9eDZ.mp4": "373ad33e00e2ae061841a80a4449e0e6cab65afd36e5f39e9259060759965b54",
+    "DopafitRebuild/ExerciseMedia/videos/iny3m5y.mp4": "4c9458a6f6a94bc5bfcb9713306a8d1040569815a397363d2a1653dc792e001d",
+    "DopafitRebuild/ExerciseMedia/videos/mpKZGWz.mp4": "85affc1043796e1ab1c46ee0a74b9fe4a875f2132b0feee339e3de4ffaaa10c4",
+    "DopafitRebuild/ExerciseMedia/videos/myfUsKf.mp4": "7954e43382981d5dffcec8771aa4af5587dc0e8501b78f130d6e84b9da9ebae8",
+    "DopafitRebuild/ExerciseMedia/videos/oHsrypV.mp4": "e37376e8ca04c98fafb58b8206d2b938e276a84a1e91e4c210b28cc07e389a4c",
+    "DopafitRebuild/ExerciseMedia/videos/oR7O9LW.mp4": "41c5e404732c00e963daf3618ec5fb802f4457ddb40a517379be09dcb1a1b352",
+    "DopafitRebuild/ExerciseMedia/videos/peAeMR3.mp4": "78bebf7c39b48892afce52a35870b66999789835462b9dba83b8fc831667737a",
+    "DopafitRebuild/ExerciseMedia/videos/qPEzJjA.mp4": "8daaddf0cbeccf1cf07b67ff0fa9b5f87978ed3aeb9270e46c45528b12763329",
+    "DopafitRebuild/ExerciseMedia/videos/qXTaZnJ.mp4": "08a08c99836d00fde57c436dec5640e691c6ebd7543a33aa0e50d16c37f4e052",
+    "DopafitRebuild/ExerciseMedia/videos/trqKQv2.mp4": "340c8fcc472ccde4ff982cee72f81023147b4267af8cd2b7a9c9ff3666ae7347",
+    "DopafitRebuild/ExerciseMedia/videos/u2X71Np.mp4": "76137fa04bdbd5b2fa6a26260eb3e477ca62432a397387969cea2174323ea22a",
+    "DopafitRebuild/ExerciseMedia/videos/wQ2c4XD.mp4": "3c5d1fb8a62244930250dc543955ce4f76fa83ab596bd079b10b5bfca4550ef2",
+    "DopafitRebuild/ExerciseMedia/videos/ykUOVze.mp4": "99a680e801749752550d18f70ff126c5d17d07e7d22765aeaac69c3385910b55",
+    "DopafitRebuild/ExerciseMedia/videos/yn8yg1r.mp4": "083ea5ce2b57624a19fbb133bda8df209102531c2b19e4c9dbee8af3c9994d84",
+    "DopafitRebuild/ExerciseMedia/zenith/adductor-f-guide.mp4": "e6c699c317f910e683ce1e8d798ec03a8f0e5fd0fb5c73c535305aaf704fceb2",
+    "DopafitRebuild/ExerciseMedia/zenith/adductor-f-thumb.mp4": "b5d6cd11e25db5591da67a16ff64406d227da0d8e37b448408d09d418a3b8e36",
+    "DopafitRebuild/ExerciseMedia/zenith/adductor-guide.mp4": "3b82188130e663d07384b4e5c9e613c1d3a98eb392c5384d348a3244d26d6fec",
+    "DopafitRebuild/ExerciseMedia/zenith/adductor-thumb.mp4": "a4c8dd991ec029108bb7bd13945b9ec58097bcb6b3dec084eda06df3c1283f46",
+    "DopafitRebuild/ExerciseMedia/zenith/arnold-f-guide.mp4": "091b4e6c668046f2c21110280dc57fc4cc73b285cc2023e4aa898391bdfc67ca",
+    "DopafitRebuild/ExerciseMedia/zenith/arnold-f-thumb.mp4": "67882da0fb591074c5987d632d7670eebbf41965008ebc5e693964cb6393a5d0",
+    "DopafitRebuild/ExerciseMedia/zenith/arnold-guide.mp4": "0c0463831e6b4ea0d5c8a60d156fa42a5b3a437b6895653502feeeb4b018896d",
+    "DopafitRebuild/ExerciseMedia/zenith/arnold-thumb.mp4": "dd2e5d3eccdad9ba24e2e7a20c707c8b44b92d6545d0696e457c8f3eb35c1162",
+    "DopafitRebuild/ExerciseMedia/zenith/closebench-guide.mp4": "bb29fc0c2ef429bd68bc96eb3b5e9064ba93a21034b39dc89afd972fe2efe0dc",
+    "DopafitRebuild/ExerciseMedia/zenith/closebench-thumb.mp4": "8e470c9a655fc1b0536103c232fe647b7f03ae5c24e179e0abc548859038ae52",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-bodysquat-f-guide.mp4": "87d29c0bf5a5512664dfae5f49afd5986cb4f2606608540ca456134e01400731",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-bodysquat-f-thumb.mp4": "55466cf7cf571e708ffdb055d36b9fdc3211c5b7308a29f7a05372ae6dd6aabf",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-bodysquat-guide.mp4": "4659d1e97647903c063545ad504ea28407b6d9b634b6b9c5296a64a2a1b4018a",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-bodysquat-thumb.mp4": "e926507d70a0b50689cdf93992cdde769e57f66cb6f02e727145be4756983044",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-crunch-guide.mp4": "f4f238a74a3a6c9a28f3149fa662695b772ed1f4c07551f24aa1d8a2c9cd1be5",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-crunch-thumb.mp4": "d6d71eee3e0516758a95a62a07f861744e70ed13807cea7f0b3a402a5c02b5bc",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-pushup-f-guide.mp4": "bc3a224e31ebb5d565f66d1e976b25786b78a57186f27ec5943752e6912c6057",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-pushup-f-thumb.mp4": "a748f8224786e3557e68f9df841ae54042e6cf0d302f88a926d66c387840d7d3",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-pushup-guide.mp4": "bbd1ecbd0a47bfb31e2a431fe44155ae92b6f5a31a4f3e41baf5873680e8f23a",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-pushup-thumb.mp4": "e6e04eeb4a0acef99e2d8bf3498c9e3b103d7720dd3d825ffccf1b498484fd4d",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-wristcurl-f-guide.mp4": "751471339e6997bb2f81a92066c0de722f8b5fdbb3819cfd1a07148c429ea517",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-wristcurl-f-thumb.mp4": "e62792e33ca6fddc6d687b49aac0fcb858b93ad567d8471a5ed16e0f0f11437a",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-wristcurl-guide.mp4": "23be1832c79d08c6ab11c83eebf2341602971868ad304b3fadc3ccc8ce734935",
+    "DopafitRebuild/ExerciseMedia/zenith/discovery-wristcurl-thumb.mp4": "178fb01f29873e4426b1757208cfd2f517694e29b6eb33d08c941f889408671a",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-curl-f-guide.mp4": "5a756c0e11126965e3f9da2720eee7973564cb8308fb41552958bd229b675226",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-curl-f-thumb.mp4": "7486bd76bf4284bb169937499b29426e0367ca30a546df294234cc00b85afa43",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-curl-guide.mp4": "8ebe241d04510ef37f613191505a48d9c8c13f23f21ecc9adf76ffe700e2a645",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-curl-thumb.mp4": "a0458eef8f2f9c42844e33d8639c9546e1c4a70f14d4aa1daaee9ce1fb1d8d26",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-lateral-raise-f-guide.mp4": "df86fee814cc88e34dd733139105aa2a96fb13294e6ac7b959522135476404f8",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-lateral-raise-f-thumb.mp4": "0be3ec3f86d6bec235628416bfe9ace803c5bd0bb088928b834ae93e594062f6",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-lateral-raise-guide.mp4": "5fc887787253f5ddde3fc31d304b4fd501a0a3e5f2a2e77af422b6bdde462a83",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-lateral-raise-thumb.mp4": "703122d252f94ec5edacefd6b8aec7d993aaecbd2a4c5b3ecf1ec96273fb6197",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-row-f-guide.mp4": "b48110a0d45cac03b4494cb970aa9299e6d0e227fa8ed93984113daa2f44161e",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-row-f-thumb.mp4": "00b86c5f71b8740fb7bd9323284e2d9f1f4a30ba253c91ccf7aa09d41205e842",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-row-guide.mp4": "ba3de1908a23010c448378711ee7707bdcf77b263b76ef3854b5e465fdacd5b9",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-row-thumb.mp4": "d73419c1377fdb95421be143832176a4b7c1b970f5c05e7bca02b35cfafe5604",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-shrug-f-guide.mp4": "ed8b5bdca31ede1d4d358ad3f386cae9872ca71404cca85a786933804afc0db4",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-shrug-f-thumb.mp4": "7ae81ce0d4defd7ca979c973350ea766612e8c5d56483a6d2ff45a260345b41c",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-shrug-guide.mp4": "89fda3d454a5b5f54e285aa2cf3bc7a112659ccef727b567aa8879e466dec632",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-shrug-thumb.mp4": "3c2e8a8e0ca9ca3fd68365498686b7ebe312d86137dbc75ba89258fa3f691ab4",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-skullcrusher-f-guide.mp4": "080d5627002fe0568d3326e2040a6eb6ee6a7d9eab481ae232ec93851499fefd",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-skullcrusher-f-thumb.mp4": "e4e929ccb9ea7a736710aedfdcafe18c8724447aaad5b5e16d0c45bf02848aa4",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-skullcrusher-guide.mp4": "c5bd53c01921ddf279c6ae82be2dc2a1f7d9850540a2a7d28219812e78185dd9",
+    "DopafitRebuild/ExerciseMedia/zenith/dumbbell-skullcrusher-thumb.mp4": "c29ab33be9e3dc05880244cd98ac82df06f65a771ff68c42bace9330854ff9f2",
+    "DopafitRebuild/ExerciseMedia/zenith/ez-curl-f-guide.mp4": "c48ff84098685315d6aa7ec41449b3e59b7cff5778048a64ae8e3572c52e6f9a",
+    "DopafitRebuild/ExerciseMedia/zenith/ez-curl-f-thumb.mp4": "94a5526ce05cd7918c3b1eb1c69ce994d2deaeee7a39d6503429bb2ef64cce8f",
+    "DopafitRebuild/ExerciseMedia/zenith/ez-curl-guide.mp4": "f2bb008433a1db54e2e84b829ed71c994a1b7a2aba46ced0b9880cc28b05519b",
+    "DopafitRebuild/ExerciseMedia/zenith/ez-curl-thumb.mp4": "79ba6d32cb73393cd697b577b542d2501c79147f8702dadf22f4009f5340551c",
+    "DopafitRebuild/ExerciseMedia/zenith/frontraise-f-guide.mp4": "bae00844baa87be05386e7203742fcce80b27905f7f5ddeb27d2e5bd3067c389",
+    "DopafitRebuild/ExerciseMedia/zenith/frontraise-f-thumb.mp4": "7d3fdf9d0a5406baeec0cb540a38cb99ed2ef46692f46fd16577e73334d88643",
+    "DopafitRebuild/ExerciseMedia/zenith/frontraise-guide.mp4": "34bd88f851f266e8087f5cdeac249cda74a357ad052dde8e38e76deec1cb8fc6",
+    "DopafitRebuild/ExerciseMedia/zenith/frontraise-thumb.mp4": "02b1e1c53e310a44869168b692002bc0bcd103dc912f19918438f19480c70c70",
+    "DopafitRebuild/ExerciseMedia/zenith/goblet-squat-f-guide.mp4": "ef88c79fdbc84a44657b5725433592e53772d73ebdcf179774255f0960bac83a",
+    "DopafitRebuild/ExerciseMedia/zenith/goblet-squat-f-thumb.mp4": "fb44423edc45bda24638b7b64e3df9f717824387a92bc8c969eb4324632399cb",
+    "DopafitRebuild/ExerciseMedia/zenith/goblet-squat-guide.mp4": "dc3a822cb75992f8c9de32abc458bb277843f04ec248918476adf96824ff12a0",
+    "DopafitRebuild/ExerciseMedia/zenith/goblet-squat-thumb.mp4": "4073132357804c9585127b434278fad18d8d963b0d9c92910366c876eaafca69",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-dumbbell-curl-f-guide.mp4": "38dcf4d7f2c331b657b2a5a46fc54d9567bf7b516a446d64b988930bb4a7cf6b",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-dumbbell-curl-f-thumb.mp4": "d086f75b9d857817c37ea0e0b1c766f90db743fb52727666dc0527fc04473ac6",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-dumbbell-curl-guide.mp4": "473cf03527dd8920d8a051805963640a93c491b2c2ca3521e63561b69f596628",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-dumbbell-curl-thumb.mp4": "070db0a559593f621dbd79ce7d5c797a29b4ad4e14f007119b847f51b7551049",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-f-guide.mp4": "9471495384366303fd230a277105a7e526dcc3dadc422895ecf70df1f74338df",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-f-thumb.mp4": "90d2a3a21f046dc20843a1391723c494fa05b90fedfb851a3b2e8f3d6e4cd3dc",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-guide.mp4": "c2f4fb2fe28250305d687b91dbda4e981476ad5e472d372b1a586b676551a32f",
+    "DopafitRebuild/ExerciseMedia/zenith/incline-thumb.mp4": "0853bf5cb3bed40b22d8f531c7fedb5e5f62aa93e1d61d2ffaa8d795d33fbd04",
+    "DopafitRebuild/ExerciseMedia/zenith/machinefly-f-guide.mp4": "f3dadf59936b5698bfcdd7c616920e4a1944d8df15f107a973c5157e64fbb1d7",
+    "DopafitRebuild/ExerciseMedia/zenith/machinefly-f-thumb.mp4": "af1d5bbe530bf980ec26d8c03761b031087e49f878edf328c0f0f87bb32eed8c",
+    "DopafitRebuild/ExerciseMedia/zenith/machinefly-guide.mp4": "98913428eb4baea9d284448da1dd51aad074bff669718744bc5d7d758c796e58",
+    "DopafitRebuild/ExerciseMedia/zenith/machinefly-thumb.mp4": "24cfeb12c98cf671ec64e6568aafed2817a5e9cdc29c8e14a2693e0e9ad3d847",
+    "DopafitRebuild/ExerciseMedia/zenith/squat-f-guide.mp4": "3b6bbf6002e718aac3936c3d97cf9d81633e87701b36d9bda3ba178971088044",
+    "DopafitRebuild/ExerciseMedia/zenith/squat-f-thumb.mp4": "8df5cebe218fc1ea439750fbf7c38c6a4c6623c8c1ece283611eb2a7f70398c0",
+    "DopafitRebuild/ExerciseMedia/zenith/squat-guide.mp4": "dbd59288b34431033111dac8ead257b4850e0c3cad03d486d8e41be61cf5691c",
+    "DopafitRebuild/ExerciseMedia/zenith/squat-thumb.mp4": "5fa8781d0fea9299fd6957ab24323151db4e6fc46f38f98f898eabe294b9c988",
+    "DopafitRebuild/ExerciseMedia/zenith/tbar-f-guide.mp4": "208ac63bf5f32edaefb855b776c17d6a84ad456b5775a1f0db11db2b2d7772cd",
+    "DopafitRebuild/ExerciseMedia/zenith/tbar-f-thumb.mp4": "aba509e6458415c314c2f5c2c179b4bfa00149df54844fdebcb0d3b35d2893c5",
+    "DopafitRebuild/ExerciseMedia/zenith/tbar-guide.mp4": "cbe8503bde95f87c352e66b9320c14259311dd36858cdd982a26b57c55948356",
+    "DopafitRebuild/ExerciseMedia/zenith/tbar-thumb.mp4": "aeda7e169e25c3b46aa02918caebf2f3e9f6c4c974f9bc6066ba651ae38b6a37",
+    "DopafitRebuild/ExerciseMedia/zenith/tricep-f-guide.mp4": "3756970d31d6c82c48157f47b95982d33a6f9cbd5f4997d7251fe3340641d3c3",
+    "DopafitRebuild/ExerciseMedia/zenith/tricep-f-thumb.mp4": "c4b8201f2de52ae74dcffafb94e5a2d303e523121dc2e88c2574dc306d6e8725",
+    "DopafitRebuild/ExerciseMedia/zenith/tricep-guide.mp4": "dce3790a5b120b698b837ba475fc457f6de99eece466e6e07cefde1f03015a7e",
+    "DopafitRebuild/ExerciseMedia/zenith/tricep-thumb.mp4": "dbeeb8847c69d4dee056393d5ab37cee919ffdc5998ca20e457b8bf7e8adf340",
+    "DopafitRebuild/ExerciseMedia/zenith/zenith-manifest.json": "361ab24682e751b02f6f175c0ddba385572ea029906841b1e28af0643f05db31"
+  },
+  "rebuildScreenshots": {
+    "rebuild/verification/C01-guide-muscles.png": "1ff193f730163f97c480031b01c53f54ae9661bafe970ab353e89022509c4b87",
+    "rebuild/verification/C02-guide-equipment.png": "130cc57bc820c862fd60a7033e884737548d04499cb180ebce963eef99f97fce",
+    "rebuild/verification/C03-saved-edit-600.png": "dcae670f9658b1f5862db993bbf7e256e72eaf6362f825a7293086bde01058ed",
+    "rebuild/verification/C04-results.png": "c2d3898cb6e19370ba5a244abf59c45c24c466e0fe3ada48a267b940c6e4660b",
+    "rebuild/verification/C05-recovery.png": "a77b728b21e1103cedbeea2392fee6b961f73277fe01d0439972464e51a04e5f",
+    "rebuild/verification/C06-recovery-detail.png": "8a3ec44b986fd2d4fca2adca7028e593590abae47b63c4a8d34b1ed44e828d02",
+    "rebuild/verification/C07-goals-expanded.png": "4fc36dd511e01481930a1bec1e4c94154b370bbe17a1de7be94cbee9786141ea",
+    "rebuild/verification/C08-recovery-rear.png": "8e48565b03c73b040a0f20ee1361c007f3e36da57d49683a47909b435999c3d7",
+    "rebuild/verification/C09-metric-year.png": "75432aadf22ef758834b21e2153bd238646979265375b0c3302c18f6a8941ea1",
+    "rebuild/verification/C10-recovery-editor.png": "6f7cbdbbf455381ddff720e954682ca9bdd183ce0a050303b7ec4372c26f871d",
+    "rebuild/verification/C100-body-muscle-list.png": "35c8f9d50366a8ec80cde9f7980ad24be735f205fc7d6442d3157baa1395dc72",
+    "rebuild/verification/C101-muscle-detail.png": "7ee7feabd233343913e04a7d7c7e3dc4203a0cba6683b23927c1d9b7dd0a48cc",
+    "rebuild/verification/C102-recovery-editor.png": "5d220c95d95f32e25f48980f50fd0788edabe5fa6bca3389e02b906c59773056",
+    "rebuild/verification/C103-body-recovery-rear-verified.png": "062221c28b283212522656736d0f43438906f3c73478e09c29fa9b3a113aec37",
+    "rebuild/verification/C104-dark-squat-detail-full-context.png": "7d19b9c0864657cbc8cce6393c034a227ff7070630e5583a950bf0ddd961c405",
+    "rebuild/verification/C105-dark-legpress-detail.png": "c4f8146959be9c99acb4ec8eb9d5efdf5253ec2b1e5b6819763df9d2b73964ee",
+    "rebuild/verification/C106-dark-legpress-card.png": "f0dbfdb250fd29597875bd360267b1fe4d5b5591efa00756f9671060130631be",
+    "rebuild/verification/C107-all-challenges-twelve.png": "4e244d841ced13b20217376c71d05e003f3c875f55d6c3e5386e79547157e640",
+    "rebuild/verification/C108-core-challenge-filter.png": "d4dcf07230c5cfbe16bcac316fc02fdc0236c031b5faa228419687174eaf948c",
+    "rebuild/verification/C109-practice-challenge-filter.png": "17e7b1a951f198ccb114f80eaa8e06ece3e9fef80ae90931ed4cba05cd18cebd",
+    "rebuild/verification/C11-secondary-muscles.png": "4d68660633b22a09821eacd15817f7543e455190fd1306f8316f255b63271f10",
+    "rebuild/verification/C110-kegel-detail-before-test.png": "e4624279442f3da4b303c4ab75da84f69aa834803d52d7f267fa6d42175b9e0c",
+    "rebuild/verification/C111-kegel-test-one-day.png": "81361723c58b6e456348f0c1173a2e3105c113ed7b3054a421b3c04fb5b948b9",
+    "rebuild/verification/C112-kegel-test-cleanup.png": "cff598cc005120be4797fde8b68f537594d20c9f69e92a04b215076037a27609",
+    "rebuild/verification/C113-challenge-search-filter-empty.png": "b93739ad1a823303c82f343eda8c21d72e075cf858506af6f75497331a645102",
+    "rebuild/verification/C114-abs-beginner-program.png": "043f9c07d8035be41584aa738c973f7f1456c8172467e145888b857e64433ada",
+    "rebuild/verification/C115-program-add-confirmation.png": "238f985dd81e36d05170e1b9ac4abd9b207b1937d22a28ab30ebfeda7ea69edc",
+    "rebuild/verification/C116-program-replace-confirmation.png": "d4aecd45ffce6fdd826cf89debea35e8bcd43afa4a803dc3727cd187bfdb3421",
+    "rebuild/verification/C117-program-muscle-levels.png": "60aea4b9c05d54493ef1968a659b69a633286458b35eb4f39dee67a943eb9b15",
+    "rebuild/verification/C118-forearms-advanced-program.png": "797fd0d719ce9261b62e465cb3cb4593449c98440d587829222723c4e06ce9bb",
+    "rebuild/verification/C119-program-wristcurl-motion-guide.png": "5cdd398bbefb78513f37a21a48f4fd10fb3dbd41bd655821ffb4e7013dc9dc15",
+    "rebuild/verification/C12-saved-duration-one-minute.png": "01fe25f13b2879809721b7a41500c5e8cc1b4ba4c0d2c863b85fb6eee4b6ba4d",
+    "rebuild/verification/C120-home-button-hierarchy.png": "5b3493828279a69f8da11e16cab6710d7d52e300edead0d56e7f23d09f3197bb",
+    "rebuild/verification/C121-program-filter-hierarchy.png": "aa2c437c9136c39354da58ce3c4480d2d00e9c0c46076bfa8048cc3898ed45ac",
+    "rebuild/verification/C122-neutral-fullbody.png": "4e07d1c5fba48c6691e40dfa2ed6e4f9871de0cb25ff4ef2d5fa93243961a451",
+    "rebuild/verification/C123-neutral-pelvic.png": "d51248bc7374ec5671dd9dbd3bf979aa861cbd37ff4d1b520e3e12072b99dd1e",
+    "rebuild/verification/C124-neutral-core14.png": "0ccfddd4345f290f5842be1de402552b5359f8ca82bf36e79cb2b611fe7cc43a",
+    "rebuild/verification/C125-neutral-activity.png": "03a01a47de556e7848e17c56087e3b94ca0fe6e0c1fd25656a8c7ae2c122ec83",
+    "rebuild/verification/C126-neutral-core30.png": "0209f9eca3f9b5e82aab1c2f47dbc39216e36d3633a40f7c2faedebcfca3ad6d",
+    "rebuild/verification/C127-neutral-mobility.png": "ba948412aac394b857a5f71b8028c028d8365599a036f2e20f56adabf028bb94",
+    "rebuild/verification/C128-qa-program-duration-13.png": "0f73df2375bf52335b76c56a60eb65a4e56c697f9146402ce2260dc302c5e092",
+    "rebuild/verification/C129-qa-zero-seconds-disabled.png": "14b7ad267ca24666ae7846d7205868946ffafc40a9f62fb1f2d7110a678096d8",
+    "rebuild/verification/C13-recovery-pinned-header.png": "da129142fe9ffcd605c484089db48b8b91893d102d0b4784786eb1a331a1de4e",
+    "rebuild/verification/C130-qa-timed-set-logged.png": "88485c0b8a5f39701a357b7bc7ba7b99ac8cd5e9d6bf81fa972dab1dc628b54c",
+    "rebuild/verification/C131-qa-timed-summary-30sec-zero-volume.png": "09779aa7fce8c7637f445d7aec4beca5848bac15a4c0fffb64e1cef3da4b559f",
+    "rebuild/verification/C132-qa-timed-history-edit-40sec.png": "9e5c4887a5097e6e4b61f3785a183eb094e46160d1f36cffe4ec87c7b3c7e646",
+    "rebuild/verification/C133-qa-added-program-relaunch.png": "af0f17a5da64172a75712da2e5674ba1466b6808e7f0dd6c2e0ca19ada4809ac",
+    "rebuild/verification/C134-qa-timed-history-relaunch.png": "78d189358464b8490b226fc68c5925b45595ae5726fcfc14f880fc0ba55bc1e1",
+    "rebuild/verification/C135-program-plank-video-thumbnail.png": "d5168797d58f9fa67434382206f9682f1c47a1f30379c0e9eab647fd70d58cbb",
+    "rebuild/verification/C136-plank-real-video-guide.png": "abe393be998a413502a64f38eecc118ba3d67606a654cf4aa04d39136acefed6",
+    "rebuild/verification/C137-plank-real-video-next-frame.png": "d8bda1ce51009ed23ea5b5ac6667ace36be960ea9d33958eabf6056df97ce4c1",
+    "rebuild/verification/C138-program-three-motion-rows.png": "dea72bbc5316d9dabcee340a591bbaedb247f8548d720dbffa9bda86d44a3ae6",
+    "rebuild/verification/C139-natural-fullbody-catalog.png": "694bc3b6abcd509f69829e11ce8891ac2841c7df1ecc868c2fa1d6c884a7a4c6",
+    "rebuild/verification/C14-expanded-month-calendar.png": "d14f4959b99091cd42270dbb5a4a908560e89400382b7a247c103ad00c0ac6a9",
+    "rebuild/verification/C140-natural-fullbody-detail.png": "c32bb25072ffc2dd87a629a2a5d7364aedd5f90a48ae096153655707280fc6ac",
+    "rebuild/verification/C141-natural-fullbody-landscape-final.png": "b496cbe0df8b90001ba74d83c87475c09a15bd8853ea6634a09f46a0e1067223",
+    "rebuild/verification/C142-natural-activity-final.png": "af87be4453723ef89780d435049a7fb6fe6acf66fde3c8cecdf2130e7a7cb4fa",
+    "rebuild/verification/C143-natural-core-catalog-final.png": "58fda71d85b04c66a5125ce081ceb93c8e25687018d7ebd6e6fa0d5d1a23f223",
+    "rebuild/verification/C144-natural-core14-detail-final.png": "d4da6f3fc973cc53ee13f978b2a07b3dd99255a2b2fc6015a7bf859a714ea813",
+    "rebuild/verification/C145-natural-habits-catalog-final.png": "d71a95925fc70bdb248b1edd9af3ff83056249e0bce33ccfb0fae45636552e1c",
+    "rebuild/verification/C146-natural-mobility-detail-final.png": "dcaba3bcca7655eea08564aba62fa07c5b1850aec1f5c28bdf02b682670d2316",
+    "rebuild/verification/C147-home-final-hierarchy.png": "970c1307dfbd8a03aff3a4d30e1a680b2e1377d57199ecb96b362eb241422bdb",
+    "rebuild/verification/C148-home-after-final-relaunch.png": "a4a960e663509676b579017e38cc57ec8c20db8dc3290633b994c287f88f80de",
+    "rebuild/verification/C149-core30-new-dark-crunch.png": "e60aaf452eff61ee78bb2108a7ad6ccd776986c2b03d8bf0181a9a21060be14d",
+    "rebuild/verification/C15-opengym-recovery-front.png": "5f1161b3d0299d4ad08a3534413e6ea14c077f2d89f6e0d55f894071b09ec136",
+    "rebuild/verification/C150-core30-new-cover-card.png": "c4a80f66bc4f825721686e61d974bb2d3ef04489b53d254e4417aca4cde0106c",
+    "rebuild/verification/C151-core14-side-plank-detail.png": "0ad186e4130ac610c8aea64c0656c6700988ef2b3b33bb8ef253a605708f3b43",
+    "rebuild/verification/C152-core14-side-plank-card.png": "bd165a6e7384fba860f767c71b3a1ee31152de76e0aead954693b2cb82993531",
+    "rebuild/verification/C153-vietnamese-calendar-home.png": "b7e18c784d063132570b4f30e64cedcfb2de824699ad121c0b8311daf62149d5",
+    "rebuild/verification/C154-calendar-trained-day-history.png": "f46199b53f164771546a872c2cba91a56dacb61e919b1c3094aa4d5c5ae33daa",
+    "rebuild/verification/C155-calendar-next-week-empty.png": "eb2762549c241d29fc440ca27e29929e939d214e5745062de47d2a8ffe7029ac",
+    "rebuild/verification/C156-calendar-vietnamese-history-dates.png": "7cc1fd4292b9bd8bf5871d75ce1bf5f1640e6ebbdc94ef98d06c43ee9e36fb2f",
+    "rebuild/verification/C157-calendar-vietnamese-final-home.png": "91089c052803ce358b5f6533cbadd521003c2106d82e7359c0c74915f2a1e12f",
+    "rebuild/verification/C158-program-no-video-no-thumbnail.png": "80c2f81da3fd0d9c30d0813e2b822e05f56086cf64bf18e628db8ee90d6f2cfd",
+    "rebuild/verification/C159-picker-missing-video-text-only.png": "d9b10e96cbe72fa04db9c3b6d2ae07ba97054ddd0051baa548fb3a20f4e5dd07",
+    "rebuild/verification/C16-opengym-recovery-back.png": "2fc7f585754f64d24282bdd41bb78c8eb3e2b55f3f3ba513f9dd7a65bb108598",
+    "rebuild/verification/C160-qa-set-entry-no-model-when-no-clip.png": "944f2d48101d47a4d1c4c928277c57167ba8436fd68f6f4b8c0f99ca4e96a74f",
+    "rebuild/verification/C161-qa-set-entry-exercisedb-video.png": "3ad21ec713e6ffbe82356a89006cf58fd2043d6a7f8dc7f78ee94c86832e5ead",
+    "rebuild/verification/C162-qa-guide-exercisedb-only.png": "f70525f9be079c747587ef285e29faf4d767e347b6da1c738fa58451e1e2cbb4",
+    "rebuild/verification/C163-qa-guide-half-speed.png": "548a9ab2a2a64e906e89e876d91464653650beae0a05889d539e8a10250e5f72",
+    "rebuild/verification/C164-single-arm-row-exercisedb-guide.png": "1b1a4f65a65e489fdf750a86712c2816e3945f53ae9eca0193d3137a8f4e5cc7",
+    "rebuild/verification/C165-compact-calendar-settings.png": "77d874c857d2dc70fb050925501e66681cdac887d80cf8857db6a36a7d1d447a",
+    "rebuild/verification/C166-readiness-menu.png": "ab0cdace138025653a1bc98f2128cca84e74a16407d212af2c87af95431a5b28",
+    "rebuild/verification/C167-duration-shortcut-menu.png": "e358c7966329071f3fcc7b5cb77591483e01416589c9f4b5b415602151a89a09",
+    "rebuild/verification/C168-full-width-row-guide.png": "8ce9b40938215ccc47400f4cd1d53959c83b7fafe435d0d1d85a626bf92e255c",
+    "rebuild/verification/C169-qa-finish-solid-sheet.png": "edbac2bf8c89e8c71aeef6ffb7b882ebdd4f574a5c26c31147dedc5c2fcf1006",
+    "rebuild/verification/C170-qa-full-width-set-video.png": "ee135dcf252f3cc15be4a185043a6b4d2b7f94ce3651ca7eb68b8570dc5230ae",
+    "rebuild/verification/C171-readable-compact-calendar-final.png": "1f03f86d6f7fe2d38300e096526a8570856cfacc1c2091d1263febf271d8740a",
+    "rebuild/verification/C172-zenith-main-home-thumbnails.png": "09903e460ea8eb402a16cd6e9888582ad41252e3d63a6bcc22ede0d8316b36a1",
+    "rebuild/verification/C173-zenith-male-row-guide.png": "3c209024d38ddf7ef0deb443bafcd4d38d882d64113a3b694254dc7b2c32b351",
+    "rebuild/verification/C174-zenith-male-half-speed.png": "096b951a5ee00e1945498a93e93bfc220caebaf53253c47572d50ee88fabda57",
+    "rebuild/verification/C175-zenith-female-qa-home.png": "041ff6a803a9608bae796a9973339d3926c0d7afcb6f2e00db83866fc943a246",
+    "rebuild/verification/C176-zenith-female-row-guide.png": "f8ecd0b1aa7959bd9a7c3677e72fb21c880306d4407c288450226c08b4a06e79",
+    "rebuild/verification/C177-zenith-female-muscles-route.png": "462e696310d5068062f1676e276184e3329e65c9a61fa44491fd9d227feeddec",
+    "rebuild/verification/C178-zenith-female-set-entry.png": "a18b4d53a1c110a67b311e592460486d3c79cc5877c038fb006979c19f747066",
+    "rebuild/verification/C19-opengym-final-front.png": "7d6cdcd0419607c40ddfacd01d30c49ec3de12ea6c3cd9c285b3e557d11af9f6",
+    "rebuild/verification/C20-opengym-muscle-thumbnails.png": "73ba832281791365060c0b4733157eb31b009cc3eaf0afd3c13c00f2b2e55894",
+    "rebuild/verification/C21-opengym-animation-side.png": "6a49a798fd7dae43db59dc1935377c056c41d5627c95400532afc9a7cb6e390e",
+    "rebuild/verification/C22-opengym-animation-back-half-speed.png": "2fd0447690b7f5f13158600f55ba10a6d6dbcdb122ee2909191aa2cf9ccd7ccb",
+    "rebuild/verification/C23-muscular-recovery-front.png": "4aee36ae5bb8afcfa74e7d5da68a630f520b904bc447f61c21d4cccc8eeb0abf",
+    "rebuild/verification/C24-muscular-recovery-back.png": "7928934d8cd57cd5b480bcca4bd7bc89ed2be0dd2487e9d1c958923509a99827",
+    "rebuild/verification/C25-muscular-thumbnails.png": "89c44b9d3ed22107f32de0faec0ff9e2ef129fb701b00ad9699c987d1353c671",
+    "rebuild/verification/C26-muscular-secondary-thumbnails.png": "96d96b55fc7fee8d74b21c848711a283377aaff0d3c1ee68008e40160f807cf2",
+    "rebuild/verification/C27-muscular-rdl-front.png": "0539808a7a3c732ed975e844516203cb6e537a10c7eb9b3e77b2f3d8217af362",
+    "rebuild/verification/C28-muscular-rdl-side.png": "6e09e9d1fef53a1beb698879e55a4aed1d4ca22ef2ced6a7fff2e74abaa51a62",
+    "rebuild/verification/C29-muscular-rdl-back-half-speed.png": "e4ecdcc70316483ed203c9188b4e4c95e997585d029e9bc2ad7e220215725b6c",
+    "rebuild/verification/C30-muscular-goodmorning-side.png": "be6bfa63fcd69a8df6160edbd6ac0f28368f2cc59c581fd4af4694cf611f095f",
+    "rebuild/verification/C31-muscular-curl-side.png": "82105e2df0fd33038138c17057426808a16c4a59e69ce28df3e95635b8c4ad6c",
+    "rebuild/verification/C32-muscular-curl-angle4-speed2.png": "3cddf0ae43154113415b33cd37a4d38e19f4af1aa90ea0cf733882575f9e78b7",
+    "rebuild/verification/C33-discard-confirmation.png": "0639191c90e9060027fa1e2d320b959d333682845272ab50d9e57601fc84eb41",
+    "rebuild/verification/C34-guide-after-loading-placeholder.png": "d51ea1fcffe31bade2b6eab933b4480c42191aa647bbaddd508994087266b933",
+    "rebuild/verification/C35-guide-loading-placeholder.png": "144a4e4dbdc52233b937b8b09502b07cd28d881a0d64a82871213a74d3ed4a98",
+    "rebuild/verification/C36-guide-after-background.png": "bd0f5938d4619c01fe5c7afd3adb7f232b3529502fe92f7ffce2409df9d1dc73",
+    "rebuild/verification/C37-active-superset-menu.png": "83a79f030b21b31ecdca225990c9232b164c242af6575e6a50d3dc5df8762e72",
+    "rebuild/verification/C38-superset-empty.png": "81dd58f60cc51efe11424b29b5ca558a527d6976df0499a25f3d0d54619cb151",
+    "rebuild/verification/C39-superset-one-selected.png": "202fdfe552853bfdc5e6876c19ef202bf576c80a0cf448bb6cb42822f844b27d",
+    "rebuild/verification/C40-superset-two-selected.png": "365c728929b75cc63cd9b349d59babf4c1db457b1a77a0dae15a746c9f7a37fa",
+    "rebuild/verification/C41-native-pulse-before-lighting-fix.png": "9cd6df1f96dc78a24d5f70926496c37aca43767ab877f35b7b2788382677df42",
+    "rebuild/verification/C42-refined-rdl-side-dark.png": "a62d44549fa9370574eb41f3c4809e59b1e8747aa5db971695e66bf4cfefb9f4",
+    "rebuild/verification/C43-refined-rdl-rear-pulse-a.png": "62d1cd0ffc006266300c2b8e8196e1ea80fd4b242f3a5b10155dfb3e006961e6",
+    "rebuild/verification/C44-refined-rdl-rear-pulse-b.png": "f490b52406ce8d89e841b1288b232016ce5c74425f76738450887e878b37f9ab",
+    "rebuild/verification/C45-refined-rdl-side-fit.png": "331d8f1623a901dad64de725c83b2278a95665521a634abdc197fd102cfce479",
+    "rebuild/verification/C46-goodmorning-side-motion-fit.png": "2d1e2a13399755f1ebcb737b429a286d55b5e30014405b402ab93db25b5fcd46",
+    "rebuild/verification/C47-goodmorning-rear-fit.png": "79bad597bd3d1d197e5692ef1168c0dcec9c6ed2320f1bbdaf32fcbeae503999",
+    "rebuild/verification/C48-curl-grip-before-correction.png": "8b92177a894c2b537a6f1f3aa8e0cfc06ccfceb481097264969c9edc74f2d4de",
+    "rebuild/verification/C49-superset-saved-four-rounds.png": "f413787d8d4aa4827290a22ffd0c54373ba18b29bfe90f917120541e6b1a9781",
+    "rebuild/verification/C50-superset-group-actions.png": "5de86547944c9a29e1ba1e97aa9dc3695bf6b93847c82aa5d4cb56568ab92603",
+    "rebuild/verification/C51-group-log-confirmation-local.png": "24c69db1b9dd0e63962c0c5057c8a7f3e03e639a26ab478c37e4cde7d1f3823b",
+    "rebuild/verification/C52-duplicate-group-unlogged.png": "fd22b437825272d873f29304729ccd374c606ede4aac4136dd8ab6d4ab89c484",
+    "rebuild/verification/C53-duplicate-group-logged.png": "d5065a60311735a9d0e2cc6abf8cb2ef93fa5089fb105ea445c9561cecd77b1a",
+    "rebuild/verification/C54-group-test-restored-seven-exercises.png": "43a4aa18aaf4d70ad46c8ace28722ec23c6f5bfa3c99af046f3abca20db9241d",
+    "rebuild/verification/C55-native-pulse-0.png": "c8ad64c1c33ce836e912d4c97ed0f530f25e681597638de0af0cfe5285659a5f",
+    "rebuild/verification/C55-native-pulse-1.png": "1a2f0346d430586f1ff7a7a92ebfbda5048ea19729d28995d11cd811ec0d41a5",
+    "rebuild/verification/C55-native-pulse-2.png": "f0fcc59e559d46920bdc0b054eae8f5d025ff83a455731a28032e57cb77a1f20",
+    "rebuild/verification/C55-native-pulse-3.png": "c622cbba70dd3abfe197e273d3943802931bced67fb4597842852622beafc510",
+    "rebuild/verification/C55-native-pulse-4.png": "a084921df40be1f5c979f253fdd9b0d49dff85e46f5ec1b54165f00bf5ff7a95",
+    "rebuild/verification/C55-native-pulse-5.png": "fdf4489391307b54884f4498ca74ef46bcc800f1302c63623e6e3bbb48ca19a3",
+    "rebuild/verification/C55-native-pulse-6.png": "3caf5bcb2131fba0b999b49ba6d65fb6b7cf92571cc42af5a14e103df628a20e",
+    "rebuild/verification/C56-curl-palm-grip-corrected.png": "9420a7a73f5a4d2bd4e6ddf371277bd5639750a3cbfa3c75099b0c2f199a0080",
+    "rebuild/verification/C57-curl-corrected-side.png": "04f0fa04a03f48e14e1a9217be14cb199b62af156e4ebbc5fc09c53e0d2ebdef",
+    "rebuild/verification/C58-curl-after-tab-return.png": "d8a843b4d72aa2a41c7fe4d06b3063cedc1337ec8bb40e9b7bfa190cb09457e3",
+    "rebuild/verification/C59-native-pulse-final-0.png": "e131a3ae17a8536c39b6bf82179d06ed4142cccdbe63d1b42bc7bf2924028124",
+    "rebuild/verification/C59-native-pulse-final-1.png": "c46715481cf56cc734506479d36a9ed1e89fa71145e139506daf2e26668820de",
+    "rebuild/verification/C59-native-pulse-final-2.png": "edc07c6d82522461fd6196658241d116ddc6625cbca18d511769802eb3bd3151",
+    "rebuild/verification/C59-native-pulse-final-3.png": "d0d9e9dc965ad5fa93a05ac8566ee14a0fa9350ba2bb45db716dd0e405f13d5e",
+    "rebuild/verification/C59-native-pulse-final-4.png": "1d93575a456954b88b0faffede2f230347ccb868607f416b3c5d0db9827007b5",
+    "rebuild/verification/C59-native-pulse-final-5.png": "401fc92970fa9d484aeb216a1583c75ab36747b56535df4809f8ab6fecfa2c9f",
+    "rebuild/verification/C59-native-pulse-final-6.png": "71ae3281dbbfa82f65b694b66e37883d7899e346f79b847b384c9185cf531432",
+    "rebuild/verification/C60-form-rdl-initial.png": "822c51299b70931bc518bcd2cbb664844f341d49f60e5ee3783ea3b8cd6b2121",
+    "rebuild/verification/C61-form-rdl-rear.png": "5b9c0f67822ad6c8f7fedf2f055304acf41ba8842fe07d52eba4bcf1bdf49507",
+    "rebuild/verification/C62-form-rdl-final-rear-a.png": "3bed4544f144f92c1d8a4e5e37a95adc023e45d52a1c14186821f71c09d047f1",
+    "rebuild/verification/C63-form-rdl-final-rear-b.png": "8930f9ce2f0c4226d5854ce278dbbc152e6523381591519808889c024cc3db79",
+    "rebuild/verification/C64-form-rdl-speed-tab-return.png": "2e9545636105932fb4478559e32377e4d5e0e64567eb8ce8348674233371312b",
+    "rebuild/verification/C65-claude-add-fixed.png": "b2c1839dd76ba0694f3ea5ce10a654c896e86ad1e0dd5a8cbd6b07616a541c5b",
+    "rebuild/verification/C66-claude-picker-motion-list.png": "5f1b00426883823fe19350c134df59fc74d445b895f226cfe2cba088b92df407",
+    "rebuild/verification/C67-claude-incline-gif-detail.png": "61238c3f1458fccd0e4afd132fe488a22905d4c8610540d2e16a16dc4cc2d543",
+    "rebuild/verification/C68-claude-combined-filters-empty-selection-kept.png": "0d5a7886d732ff7e0d4e21f216d79091b66356ec490801b1130cfae2923ac988",
+    "rebuild/verification/C69-ladder-roomy-picker-chest.png": "5ac3128d49a29d8beed1c97c9ad37925acc3fc7823a166e57def4a409ffcb09d",
+    "rebuild/verification/C70-challenge-joined-zero-progress.png": "3281c26f5ed54e53d5b101eeea9e37ff689b5c329000a7b62c548d2a4921be35",
+    "rebuild/verification/C71-lime-picker-thin-tick.png": "a9477f5698387ac979cbac1c890840d04a32a5bf1c794d2ea2e6c16300d3f890",
+    "rebuild/verification/C72-picker-filter-panel.png": "f9560cb80011745de1eb28d08315589740e36118ae6140b063ad6a7dc5eb4cc0",
+    "rebuild/verification/C73-calendar-history-two-sessions.png": "3d0b4b9c763591d23a522589d0feceb91739c4cf013c7243c3981b4ff3247b89",
+    "rebuild/verification/C74-calendar-future-empty.png": "a6ba2110091864077f581440533d7a2a6032cc839752113fea950ea827260504",
+    "rebuild/verification/C75-challenge-real-photo-and-workout-video.png": "3c33dc9e2c8f530d4091b54e74da5bfc0b6c3e52b93404b37584834bc0c0cf06",
+    "rebuild/verification/C76-challenge-photo-ready.png": "3c12950d669f6a1359483c075d8c92e978f866940787c4b483d2b82bf08a0b36",
+    "rebuild/verification/C77-challenge-photo-detail.png": "8725a1158826d8f0b19eac4401745a99e2aabb8761739be17e39e1bf50a0a61f",
+    "rebuild/verification/C78-workout-seven-motion-thumbnails.png": "f6e4df21a3eb8e5748c1902c3ac572c760e166ce4bb603dad48f33ee0badd866",
+    "rebuild/verification/C79-compact-calendar.png": "3439aeb3bb223103528839ba8330d3886938b0ff7501c27db61246ab0728c2a5",
+    "rebuild/verification/C80-challenge-visible-movement.png": "5d1e47ae8a1ef1d0cf65d0f5a32fb1e59b8c8dab98d645f8fcec440d6967c0ac",
+    "rebuild/verification/C81-challenge-upper-shoulder-press.png": "6bf413f3b7085d41b2316deae97fa05baa15b0192b7cbd70d40babae1a5c014c",
+    "rebuild/verification/C82-aligned-home-controls-calendar-dot.png": "846d41749fc694514b806d7d6da043b4d91b52bd9dff385f91bdb6d66ef2f184",
+    "rebuild/verification/C83-row-preview-size-cap.png": "27c1b6e2d605c300f5a2946a35a4ea710534858ca82b5f175d5659d10f293d9e",
+    "rebuild/verification/C84-home-core-before-discovery.png": "fdc112ad2b600fce2d6628eca8f1b70d1029f0617c7300a4e143cf4e4575bde1",
+    "rebuild/verification/C85-row-guide-half-speed.png": "6717db7f7443d218ac6ad0799208eb7186ece0c3831c6d50b44fb54317da5e07",
+    "rebuild/verification/C86-compact-calendar-history.png": "e34ddf791d086cdcea8bad08e8d8536c25f4a789603452160003a9c8f8b58394",
+    "rebuild/verification/C87-discovery-after-workout.png": "e24fd0548fa75ff7ed08409cb96482e2b228c842ee1af2fac636dcf59f59d708",
+    "rebuild/verification/C88-challenge-squat-visible.png": "c552191f06450c7ffbd621b63ca78a764274f0b07c667da345b9edcf6e47e9ab",
+    "rebuild/verification/C89-body-results-strength-segments.png": "8695dab545952cb183c7c3eedddbcc47ef3ca597ad074306d9b4610727bc09b4",
+    "rebuild/verification/C90-body-recovery-before-lighting-fix.png": "83a0de37b795c1fb98fa23934a4af8ad3983c377e6bd96ca0ad532825d622895",
+    "rebuild/verification/C91-home-round-add.png": "8565bddec34767044cff327ed53c04db5141d8c76c65407c16f068e1393385c2",
+    "rebuild/verification/C92-dark-challenge-shelf.png": "6735d23ec20472c10a8a7f6758c2913dd21b6455e396f53880ecf26f5464cdc5",
+    "rebuild/verification/C93-dark-pushup-detail.png": "6fddfdc0fda5cbf9759345c33b2ded870b60f67c318859b6b2c52b803a32236b",
+    "rebuild/verification/C94-dark-squat-detail.png": "e74042557038a29cc2e251dfc4048f6c9cc43863d39d103b6b89ab46b3c24b0b",
+    "rebuild/verification/C95-dark-challenges-upper-lower.png": "045e864277bd8bdda27aac79590cea64110c075a0cfa54b7c5f843fb4f62af5c",
+    "rebuild/verification/C96-dark-lower-card.png": "2a5a0fb4222aac1d8fa3d86182d408d2a60e029576385276b0edaa703693bdd0",
+    "rebuild/verification/C97-body-results-lime-active.png": "a71111cb587827775737a747c218ce08a2d46f749c629b007c323d30d4067174",
+    "rebuild/verification/C98-body-recovery-front-lighting.png": "3f66ab0609ab7a959576c13b2048ce10419b9c209e5cc05c830aeecef2bc0007",
+    "rebuild/verification/C99-body-recovery-back.png": "7b204da5daae8f70a7000a3cbf0ff231ef16ac7dc63570dede290adf831905db"
+  },
+  "validation": {
+    "modelChecksPassed": 126,
+    "debugSimulatorBuild": "succeeded, installed and launched; source/resource hashes match installed app",
+    "mediaGate": "33 pinned variants/GIF/small MP4/guide-upscale hashes +13 attributed photo hashes +1 separately licensed Plank video (2 encodes) passed; reviewed Zenith21pins/40motionvariants/80MP4 source+output hashes, installed directory exact",
+    "figmaCards": 140,
+    "figmaImages": 140,
+    "figmaRootGroups": 28,
+    "originalRollbackPending": false,
+    "originalRestore": "R82, exact7original exercises/order, no logging/finish",
+    "latestHomeUI": [
+      "C84 core before discovery, correct5groups, one Add",
+      "C86 history date, return to today",
+      "C87 discovery reachable after workout",
+      "C91 roundAdd52pt; C92/C95/C96darkgymphotos supersede bright iteration; C105/C106reallegpress replaces squat",
+      "C165 compact calendar+settings, C166readiness choices/undo, C167duration+shortening menu; latest larger calendar text supersedes C165 sizes",
+      "C171 final count20/description14/date14pt; supersedes C165 text sizes"
+    ],
+    "latestBodyUI": [
+      "C97strengthsegments/empty1RM/active",
+      "C98front/C103rear lightingcameraonly, anatomy partial",
+      "C100list/C101detail/C102editorCancel, Save not verified"
+    ],
+    "latestGuideUI": [
+      "C168 fullwidthsquare Row guide supersedes220cap; original180px source remains lowres",
+      "C85 halfspeed0.5x",
+      "C119 exact wristcurl program guide",
+      "C136/C137 separate realPlank1080guide playing",
+      "C170 isolatedQA fullwidth Incline setentry; source180px remains lowres",
+      "11/11 Zenith assets replaced21exercise guide videos; video file/crop QA complete; C172–C178 sampled male/femaleRow UIverified"
+    ],
+    "latestDiscoveryUI": [
+      "C107–C113 catalog/filter/manualcheckin/undo/leave",
+      "C114–C118 programs; add/replace confirmations cancelled on main",
+      "C120 home primary/secondary/nav hierarchy",
+      "C121 group underline; switched forearms; Add opened picker then Close",
+      "C141–C146 final natural-source replacements; no tint/desaturation/AI, accepted3 unchanged",
+      "C136/C137 Plank real-video guide playing; C138 complete program row",
+      "C128–C134 isolated QA Replace/Add/timed log/finish/edit/relaunch; QA removed, main preserved",
+      "C147 final Home secondary Add/Start/root-nav distinction",
+      "C149/C150 core30 replaced21:35 with real cottonbro4754028 crunch still; C143 core30 superseded",
+      "C151/C152 core14 replaced21:42 with Li Sun2294363 side-plank photo; C144/C143 core14 superseded",
+      "C153–C157 Vietnamese calendar redesign: Monday-first, actualdates, distincttrained/selected/today, history/weekbrowse/reset; no streak",
+      "C158/C159 missing-clip thumbnail omitted in program/picker, video rows preserved; picker info guide route opened/closed; main draft/history exact pre-task match"
+    ],
+    "fullPixelParity": "not verified; all140 rows partial",
+    "exerciseDBNativeHD": false,
+    "plankVideoNativeHD": true,
+    "plankVideoOutputs": [
+      [
+        320,
+        320
+      ],
+      [
+        1080,
+        1080
+      ]
+    ],
+    "supplementalVideoManifest": "third_party/stock-motion/manifest.json",
+    "sourceGIFPixels": [
+      180,
+      180
+    ],
+    "guideOutputPixels": [
+      720,
+      720
+    ],
+    "guideOutputMeaning": "Lanczos spatial interpolation only; no recovered detail or new poses",
+    "performanceFPSBenchmark": "not measured",
+    "formMeshWork": "paused; exercise guides/setentry now ExerciseDB clips, Body3D unchanged; no mesh/motion edits",
+    "recoverySliderSaveUI": "not verified",
+    "reduceMotionFullUI": "not verified",
+    "smallScreenDynamicTypeVoiceOver": "not fully verified",
+    "openGaps": "rebuild/OPEN-GAPS.md",
+    "currentData": "rebuild/verification/current-test-state.json",
+    "finishSheetUI": "C169 isolatedQA: solid fill, disabledSave0sets, HealthOff, Continue returned without save",
+    "modelCheckMeaning": "126 tests rerun11/11 including overnight DailyCheckin/return ramp/gentle changes; isolated test storage. Not126UIflows."
+  },
+  "dataVerification": {
+    "historyCount": 2,
+    "draftExerciseCount": 7,
+    "completedDraftSets": 0,
+    "historyAndPrescriptionsPreserved": true,
+    "UUIDCaveat": "Latest draft/history compared exactly against current-preservation-baseline.json; source/date in preservation-baseline-note.json. No stale-state restore.",
+    "ownChallengeTest": "Historical10/11 consistent14/pelvic14 QA left/undone; current user enrollments/practices compared with latest baseline and preserved",
+    "isolatedQA": "rebuild/verification/discovery-qa-run.json; timed UI mutation confined to com.local.dopafit.discoveryqa, then removed",
+    "preservationBaseline": "rebuild/verification/current-preservation-baseline.json",
+    "checkinFeeling": "pain",
+    "checkinTimestampChangedDuringConcurrentUserInteraction": false,
+    "checkinTimestampChangedFromLatestBaseline": false
+  },
+  "documents": {
+    "AGENTS.md": "6b268aa4f78e8c6e88697a3fb5e0d963c0e2b1fad2d5c654cf481c2e61c25a90",
+    "CHANGELOG.md": "e22c1b7dcea3e4a5173d3a7f1478f38ff5907222b7de418a2be3db1c12debd67",
+    "rebuild/HANDOFF.md": "3b4774ef049ba8e123bd8f3f328f991343df6439cf21d302ee7c43614154d7cc",
+    "rebuild/OPEN-GAPS.md": "8c9c723088120bff71f29425c3e7244fbc67803be9da3c53cfa52a85fcb87068",
+    "rebuild/EXERCISE-MEDIA.md": "83f6b19c35a453cde9eee000192f6d7d3a5d5d2515ca64912516572735e62eb2",
+    "rebuild/HOME-UX-AUDIT-2026-11-10.md": "844f17e4a4c1ce58069f7e75ce7e2ee74a1eb3ecafe2838446ff38cf71ad61f0",
+    "rebuild/DISCOVERY-FEATURES-2026-11-10.md": "c75a3aba9a91f12b92a638990c42f2330456615ceeb6a47d181132dd2349b57c",
+    "rebuild/style/COLOR-SYSTEM.md": "671afb15584a81a71b485b1a96ced2019755d70e410a388c39c50de04bba59d5",
+    "rebuild/ZENITH-MEDIA-AUDIT-2026-11-11.md": "99b14fcfd4d50dd68d10e1ecbb4cdd0f4bc7a986c72ab74e80e1e0745f28447b"
+  },
+  "compactMediaQA": {
+    "date": "2026-11-10",
+    "bundle": "com.local.dopafit.compactqa",
+    "isolation": "Compiled app copy with separate bundle identifier, ad hoc signing and separate data container",
+    "flows": [
+      "QA start only",
+      "FinishSheet solid background/disabledSave0sets/HealthOff C169",
+      "Continue returns to Active without save",
+      "Incline setentry fullwidth ExerciseDB clip C170, close without logging"
+    ],
+    "completedSets": 0,
+    "history": 0,
+    "cleanupVerified": true,
+    "mainBundle": "com.local.dopafit.rebuild",
+    "mainMutation": "None"
+  },
+  "guideMediaQA": {
+    "date": "2026-11-10",
+    "bundle": "com.local.dopafit.mediaqa",
+    "isolation": "Copy of latest compiled app, Info.plist bundle ID changed and ad-hoc re-signed for Simulator; no main-container reuse",
+    "UIFlows": [
+      "Start disposableQA draft",
+      "Open T-Bar set entry: no clip/model, info route remains (C160)",
+      "Open Incline set entry: ExerciseDB video replaces3D header (C161)",
+      "Open guide fromsetentry: sameExerciseDB video, no angle/model fallback (C162)",
+      "Set speed0.5x and observe (C163)"
+    ],
+    "mutations": "Only QA start/timer;0loggedsets,0history, noHealth",
+    "cleanupVerified": true,
+    "mainBundle": "com.local.dopafit.rebuild",
+    "stateSnapshot": "guide-media-qa-state.json"
+  },
+  "supplementalStockProvenance": {
+    "path": "third_party/stock-motion/manifest.json",
+    "sha256": "0d3fbb7e7d885f8a5d39a13b65e22237ccc19d74cab7a9c6d62d54e3019990ad"
+  },
+  "isolatedQA": {
+    "date": "2026-11-10",
+    "bundle": "com.local.dopafit.discoveryqa",
+    "mainBundle": "com.local.dopafit.rebuild",
+    "isolated": true,
+    "UIFlows": [
+      "Replace7unstarted exercises with3abs preset using confirmation",
+      "Duration sheet13min remains selected, Cancel",
+      "Start; timedPlank20sec; set0 sec disables Log/LogAll; change30sec logs1set",
+      "Finish withHealthOff; summary30sec,0kg; only loggedPlank saved",
+      "Edit savedset30→40sec andSave",
+      "Home Add3preset to7newdraft→10 with confirmation",
+      "Relaunch;10draft persists, Journal reopens saved40sec/0kg"
+    ],
+    "evidence": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "diskAssertions": [
+      "savedPlank40seconds,0reps,completedtrue",
+      "Add keeps exact original7prefix and existing history"
+    ],
+    "mainDataNotMutated": true,
+    "snapshots": [
+      "discovery-qa-state-saved.json",
+      "discovery-qa-state-added.json"
+    ],
+    "cleanup": "Only com.local.dopafit.discoveryqa terminated/uninstalled after snapshots; main app and data preserved.",
+    "cleanupVerified": true
+  },
+  "zenithMedia": {
+    "manifest": "DopafitRebuild/ExerciseMedia/zenith/zenith-manifest.json",
+    "review": "third_party/zenith-video/mapping-review.json",
+    "reviewSHA256": "d590a3549bc9a6ae9f2017212846fde20292f41fab3b912415fd58fc6f0a2ebb",
+    "appPins": 21,
+    "additionalFemaleVariants": 19,
+    "sourceRawCount": 47,
+    "encodedFiles": 80,
+    "sourceCanvasPixels": [
+      1920,
+      1080
+    ],
+    "guidePixels": [
+      720,
+      720
+    ],
+    "thumbnailPixels": [
+      240,
+      240
+    ],
+    "fullDecodeReport": "rebuild/verification/zenith-2026-11-11/output-review.json",
+    "installedDirectoryExact": true,
+    "UIVerification": "C172–C178 male/female Row thumbnails/guides,0.5speed,musclestab and female setentry; sample only",
+    "rights": "Unresolved source-media rights; local demo only",
+    "liveUIRun": {
+      "date": "2026-11-11",
+      "bundle": "com.local.dopafit.zenithqa",
+      "fixture": "female-qa-fixture.json",
+      "isolation": "Compiled app copied with separate bundle ID, ad-hoc signature and separate container; copied local draft with Nữ profile, no history/checkin; main profile kept Nam.",
+      "mainUI": [
+        "C172Home motion thumbnails",
+        "C173maleRow guide fullwidth",
+        "C1740.5x guide shows changed pose"
+      ],
+      "QAUI": [
+        "C175femaleRow thumbnail and fallbackSmith oldclip",
+        "C176femaleRowguide fullwidth",
+        "C177muscles tab preserves femaleguide playback; distinct pose",
+        "C178femaleRow setentry video after QAstart, no log"
+      ],
+      "QACompletedSets": 0,
+      "QAHistory": 0,
+      "HealthWrites": false,
+      "cleanupVerified": true,
+      "mainFullSnapshotUnchanged": true,
+      "limits": "Sampled Row routes and0.5speed, not all21pins UI, no measuredFPS/biomechanics/all lifecycle certification"
+    }
+  },
+  "supersededEvidence": {
+    "C122–C127": "Rejected desaturation experiment; natural source replacements now used",
+    "C140": "Portrait rowing photo clipped hands; replaced by landscape6389079, C141",
+    "C135": "Initial screenshot partially obscures Plank row; full row C138",
+    "C139": "Fullbody thumbnail predates final landscape replacement; other sources still current"
+  }
+}

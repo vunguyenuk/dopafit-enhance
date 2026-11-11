@@ -1,0 +1,201 @@
+import SwiftUI
+import UniformTypeIdentifiers
+
+enum Dopa {
+    static let lime = Color(red:0.71,green:0.96,blue:0.24)
+    static let card = Color(white:0.115)
+    static let raised = Color(white:0.16)
+    static let muted = Color(white:0.59)
+    static let blue = Color(red:0.28,green:0.73,blue:0.94)
+    static let push = Color(red:0.98,green:0.82,blue:0.13)
+    static let pull = Color(red:0.86,green:0.12,blue:0.34)
+    static let legs = Color(red:0.27,green:0.64,blue:0.61)
+}
+struct PillTabs:View {
+    var titles:[String]
+    @Binding var selection:Int
+    var bright=true
+    var body:some View {
+        HStack(spacing:3) {ForEach(titles.indices,id:\.self) { i in
+            Button {selection=i} label:{Text(titles[i]).font(.system(size:13,weight:.medium)).lineLimit(1).minimumScaleFactor(0.8).frame(maxWidth:.infinity).frame(height:31).foregroundStyle(selection==i ? (bright ? Color.black:Dopa.lime):Dopa.muted).background(selection==i ? (bright ? Color.white:Dopa.raised):.clear).clipShape(Capsule())}.buttonStyle(.plain).accessibilityAddTraits(selection==i ? .isSelected:[])
+        }}.padding(3).background(Dopa.card).clipShape(Capsule()).overlay(Capsule().stroke(.white.opacity(0.08)))
+    }
+}
+struct DopaButton: View {
+    var title: String
+    var icon: String? = nil
+    var enabled = true
+    var secondary = false
+    var action: ()->Void
+    var body: some View {
+        Button(action:action) {
+            HStack(spacing:8) {
+                if let icon { Image(systemName:icon) }
+                Text(title).font(.system(size:18,weight:.semibold))
+            }.frame(maxWidth:.infinity).frame(height:52)
+                .foregroundStyle(secondary ? Color.white : Color.black)
+                .background(secondary ? Dopa.raised : Dopa.lime).clipShape(Capsule())
+                .opacity(enabled ? 1 : 0.4)
+        }.buttonStyle(.plain).disabled(!enabled)
+    }
+}
+struct CircleButton: View {
+    var icon: String
+    var tint: Color = .white
+    var action: ()->Void
+    var body: some View {
+        Button(action:action) {
+            Image(systemName:icon).font(.system(size:21,weight:.medium))
+                .foregroundStyle(tint).frame(width:44,height:44)
+                .background(Dopa.raised).clipShape(Circle())
+                .overlay(Circle().stroke(.white.opacity(0.12),lineWidth:1))
+        }.buttonStyle(.plain).accessibilityLabel(icon == "chevron.left" ? "Quay lại" : icon == "xmark" ? "Đóng" : icon)
+    }
+}
+struct ScreenHeader: View {
+    var title:String
+    var back: (()->Void)? = nil
+    var trailingIcon:String? = nil
+    var trailing: (()->Void)? = nil
+    var body: some View {
+        HStack {
+            if let back { CircleButton(icon:"chevron.left",action:back) }
+            else { Color.clear.frame(width:44,height:44) }
+            Spacer(minLength:4)
+            Text(title).font(.system(size:18,weight:.semibold)).lineLimit(1)
+            Spacer(minLength:4)
+            if let trailingIcon { CircleButton(icon:trailingIcon,action:{trailing?()}) }
+            else { Color.clear.frame(width:44,height:44) }
+        }.padding(.horizontal,16).padding(.vertical,10)
+    }
+}
+struct SectionLabel: View {
+    var title:String
+    var body: some View { Text(title.uppercased()).font(.system(size:12,weight:.semibold)).tracking(1).foregroundStyle(Dopa.muted).padding(.top,22).padding(.bottom,8) }
+}
+struct SettingRow: View {
+    var title:String
+    var value:String = ""
+    var icon:String? = nil
+    var chevron = true
+    var action:(()->Void)? = nil
+    var body: some View {
+        Group {
+            if let action {Button(action:action){row}.buttonStyle(.plain)}
+            else {row}
+        }
+    }
+    private var row:some View {
+        HStack(spacing:12) {
+            if let icon {Image(systemName:icon).font(.system(size:20)).frame(width:32)}
+            Text(title).foregroundStyle(.white)
+            Spacer(minLength:4)
+            if !value.isEmpty {Text(value).foregroundStyle(Dopa.muted).multilineTextAlignment(.trailing)}
+            if chevron {Image(systemName:"chevron.right").font(.system(size:13,weight:.bold)).foregroundStyle(Dopa.muted)}
+        }.font(.system(size:17)).padding(.horizontal,16).frame(minHeight:52).contentShape(Rectangle())
+    }
+}
+
+struct GroupCard<Content:View>: View {
+    @ViewBuilder var content:Content
+    var body: some View { VStack(spacing:0){content}.background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:22)) }
+}
+struct InfoCard: View {
+    var title:String
+    var text:String
+    var icon:String = "info.circle"
+    var body: some View {
+        HStack(alignment:.top,spacing:12) {
+            Image(systemName:icon).font(.title3)
+            VStack(alignment:.leading,spacing:6) {
+                Text(title).font(.system(size:17,weight:.semibold))
+                Text(text).font(.system(size:15)).foregroundStyle(Dopa.muted).fixedSize(horizontal:false,vertical:true)
+            }
+        }.padding(16).frame(maxWidth:.infinity,alignment:.leading).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:20))
+    }
+}
+// Reference media are displayed as clipped image regions. Every interactive control is native SwiftUI.
+struct ReferenceCrop: View {
+    var asset:String
+    var rect:[Double]
+    var body: some View {
+        GeometryReader { g in
+            let sx = g.size.width / max(1,rect[2])
+            let sy = g.size.height / max(1,rect[3])
+            Image(asset).resizable()
+                .frame(width:864*sx,height:1896*sy)
+                .offset(x:-rect[0]*sx,y:-rect[1]*sy)
+        }.clipped().accessibilityHidden(true)
+    }
+}
+struct ExerciseThumb: View {
+    var exercise:Exercise
+    var size:CGFloat = 80
+    var body: some View {
+        Group {
+            MuscleGlyph(muscle:exercise.muscles.first ?? "Ngực",secondary:exercise.secondary).padding(3).background(Dopa.card)
+        }.frame(width:size,height:size).clipped().clipShape(RoundedRectangle(cornerRadius:17))
+    }
+}
+struct SheetTitle: View {
+    @Environment(\.dismiss) private var dismiss
+    var title:String
+    var body:some View {
+        HStack { Text(title).font(.system(size:19,weight:.semibold)); Spacer(); CircleButton(icon:"xmark"){dismiss()} }.padding(16)
+    }
+}
+struct ChoiceSheet: View {
+    @Environment(\.dismiss) private var dismiss
+    var title:String
+    var choices:[String]
+    var selected:String
+    var detail:String = ""
+    var onSelect:(String)->Void
+    var body:some View {
+        ScrollView {
+            VStack(alignment:.leading,spacing:14) {
+                SheetTitle(title:title)
+                if !detail.isEmpty { Text(detail).foregroundStyle(Dopa.muted).padding(.horizontal,16) }
+                GroupCard {
+                    ForEach(choices,id:\.self) { item in
+                        Button { onSelect(item); dismiss() } label: {
+                            HStack { Text(item).foregroundStyle(.white); Spacer(); if selected==item { Image(systemName:"checkmark").foregroundStyle(Dopa.lime) } }
+                                .font(.system(size:17)).padding(18).contentShape(Rectangle())
+                        }.buttonStyle(.plain)
+                        if item != choices.last { Divider().padding(.leading,18) }
+                    }
+                }.padding(.horizontal,16)
+            }
+        }.background(.black).presentationDragIndicator(.visible).preferredColorScheme(.dark)
+    }
+}
+struct ArticleSheet: View {
+    var title:String
+    var sections:[(String,String)]
+    var body:some View {
+        ScrollView {
+            VStack(alignment:.leading,spacing:20) {
+                SheetTitle(title:title)
+                ForEach(sections.indices,id:\.self) { i in
+                    VStack(alignment:.leading,spacing:10) {
+                        Text(sections[i].0).font(.system(size:21,weight:.semibold))
+                        Text(sections[i].1).font(.system(size:17)).lineSpacing(6).foregroundStyle(Dopa.muted)
+                    }.padding(.horizontal,24)
+                }
+            }.padding(.bottom,30)
+        }.background(.black).presentationDragIndicator(.visible)
+    }
+}
+struct CSVDocument:FileDocument {
+    static var readableContentTypes:[UTType] { [.commaSeparatedText] }
+    var text:String
+    init(text:String) { self.text=text }
+    init(configuration:ReadConfiguration) throws { text=String(data:configuration.file.regularFileContents ?? Data(),encoding:.utf8) ?? "" }
+    func fileWrapper(configuration:WriteConfiguration) throws -> FileWrapper { FileWrapper(regularFileWithContents:text.data(using:.utf8) ?? Data()) }
+}
+extension TimeInterval {
+    var clock:String {
+        let value=max(0,Int(self))
+        return value>=3600 ? String(format:"%d:%02d:%02d",value/3600,value/60%60,value%60) : String(format:"%02d:%02d",value/60,value%60)
+    }
+}

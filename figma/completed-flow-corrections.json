@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "verifiedOn": "2026-11-09",
+  "method": "Edited through Figma desktop; read back through Figma connector",
+  "texts": [
+    {
+      "id": "19:73",
+      "text": "Xem gói Pro → màn gói ngắn → Home; guide ở R42",
+      "matched": true
+    },
+    {
+      "id": "19:125",
+      "text": "Home sau login → bài Row / cùng guide R42",
+      "matched": true
+    },
+    {
+      "id": "19:128",
+      "text": "Back → Home; chọn tab trong hướng dẫn",
+      "matched": true
+    },
+    {
+      "id": "19:152",
+      "text": "Đóng guide → Home → Kế hoạch của tôi",
+      "matched": true
+    },
+    {
+      "id": "19:155",
+      "text": "Back → Home; chọn mục chỉnh",
+      "matched": true
+    },
+    {
+      "id": "19:213",
+      "text": "Settings → R47; tab buổi → Home",
+      "matched": true
+    },
+    {
+      "id": "19:304",
+      "text": "Locale, plan sau login",
+      "matched": true
+    }
+  ],
+  "allSevenMatched": true,
+  "cards": 119,
+  "imageFills": 119,
+  "rootCount": 22,
+  "missingFonts": 0
+}

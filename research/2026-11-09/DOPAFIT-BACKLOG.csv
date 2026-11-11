@@ -1,0 +1,16 @@
+﻿id,priority,finding,evidence_status,screenshots,acceptance_criteria
+D-A01,P1,Quy ước tạ chưa nhất quán,OBS + rủi ro hiểu sai,D01 D12 D18 D21,Nêu per-dumbbell/tổng gồm đòn/tạ thêm/mức máy theo bài; novice giải thích đúng
+D-A02,P2,Lý do prescription còn chung,OBS + INFER,D01 D18 D21,"Giải thích từ dữ liệu thật, phân biệt cold start và progression"
+D-A03,P2,Preference đối nghịch dùng hai toggle,Rủi ro UI; exclusivity chưa thử,D02 D51,"Chỉ một trạng thái ý định, test bật/đổi/khôi phục"
+D-A04,P2,Dịch hướng dẫn chưa tự nhiên,OBS,D04,Biên tập cùng video bởi người hiểu động tác
+D-A06,P2,Empty history thiếu CTA theo ngữ cảnh,OBS + INFER,D03,Người mới quay lại buổi và hiểu dữ liệu tương lai
+D-A07,P2,Cài đặt dày với người mới,OBS + INFER,D08 D09 D10,"Usability hai nhóm, giữ advanced controls dễ tìm"
+D-A08,P3,Thumbnail nhiều lớp nhỏ,OBS + INFER,D01 D57,Test nhận diện bài/thiết bị trước sau
+D-A09,P3,Locale số và tên chưa thống nhất,OBS,D01 D04 D12 D53,QA vi-VN/en-US số/ngày/unit/export
+D-A10,P1,Ranking swap khác ý định động tác,OBS + cần review chuyên môn,D31 D32,Top alternatives giữ intent hoặc mô tả khác biệt rõ
+D-A11,P2,Empty benchmark 00 lần dưới nhãn 1RM,OBS; chưa xác nhận mapping,D13 D42 D56,Empty state không giả giá trị 0; nêu bài đủ điều kiện
+D-A12,P2,Set quy đổi chưa rõ ở tổng,OBS; không phải duplicate,D38 D39,Giải thích 3 physical sets thành 6 muscle contributions
+D-A13,P2,Recovery cần giới hạn ở mặt ngoài,OBS + INFER,D40 D41,"Nêu ước tính từ set, không diễn đạt như đo sinh lý"
+D-A14,P2,Trục chart mức tạ có nhãn trùng,OBS,D53,"Tick khác nhau có label khác nhau, increments/locale đúng"
+D-A15,P2,Kcal summary thiếu nhãn ước tính,OBS + INFER,D34 D35 D48 D50,Nguồn và giới hạn ước tính rõ tại summary
+D-A16,P2,Kỳ report cần rõ và dependency cần test,OBS + rủi ro đọc sai,D45 D46 D47,Dataset nhiều kỳ: filter/card đúng phạm vi và refresh xác định

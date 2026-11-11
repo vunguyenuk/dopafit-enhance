@@ -1,0 +1,132 @@
+// Hình cơ thể phẳng: bóng người xám đậm, mỗi nhóm cơ là một mảng màu phẳng. Hình tự vẽ cho Dopafit.
+// Toạ độ 200 x 400; dữ liệu chỉ mô tả nửa phải, nửa trái lấy đối xứng qua x=100.
+enum SVGPath {
+    static func parse(_ data:String)->Path {
+        var path=Path()
+        var command:Character="M"
+        var nums:[CGFloat]=[]
+        func flush() {
+            switch command {
+            case "M": if nums.count>=2 {path.move(to:CGPoint(x:nums[0],y:nums[1]))}
+            case "L": if nums.count>=2 {path.addLine(to:CGPoint(x:nums[0],y:nums[1]))}
+            case "C": if nums.count>=6 {path.addCurve(to:CGPoint(x:nums[4],y:nums[5]),control1:CGPoint(x:nums[0],y:nums[1]),control2:CGPoint(x:nums[2],y:nums[3]))}
+            case "Z": path.closeSubpath()
+            default: break
+            }
+            nums=[]
+        }
+        var started=false
+        for token in data.split(separator:" ") {
+            var text=String(token)
+            if let first=text.first, first.isLetter {
+                if started {flush()}
+                started=true
+                command=first
+                text.removeFirst()
+            }
+            if let value=Double(text) {nums.append(CGFloat(value))}
+        }
+        if started {flush()}
+        return path
+    }
+    static func mirrored(_ path:Path)->Path {
+        var both=path
+        both.addPath(path.applying(CGAffineTransform(a:-1,b:0,c:0,d:1,tx:200,ty:0)))
+        return both
+    }
+}
+
+struct MuscleSpec {
+    var back:Bool
+    var parts:[String]
+    var box:CGRect
+}
+
+enum MuscleFigure {
+    static let whole=CGRect(x:-100,y:0,width:400,height:400)
+    static let headData="M100 8 C112 8 118 18 118 30 C118 44 110 54 100 54 C90 54 82 44 82 30 C82 18 88 8 100 8 Z"
+    static let baseData:[(String,String)]=[
+        ("torso","M100 56 L113 56 C122 64 134 67 145 72 L141 104 C139 125 132 145 129 162 C129 175 132 185 135 194 L100 210 Z"),
+        ("arm","M137 72 C150 68 161 78 162 93 C164 110 166 126 169 142 C173 160 178 180 182 198 C185 206 187 217 184 225 C181 230 175 227 173 219 C171 211 170 205 168 199 C162 182 156 164 152 146 C148 132 143 118 138 106 Z"),
+        ("leg","M135 188 C140 215 140 250 133 290 C136 310 135 332 127 372 L131 389 C125 395 112 395 108 389 L111 372 C106 340 105 315 108 292 C104 262 101 235 100 208 L100 198 Z")
+    ]
+    static let frontData:[(String,String)]=[
+        ("neck","M101 57 L111 58 C113 62 117 66 122 68 C114 70 107 70 101 69 Z"),
+        ("trap","M114 59 C122 65 131 68 139 71 L127 72 C121 70 117 66 114 59 Z"),
+        ("chest","M102 76 C112 71 127 72 137 80 C140 90 138 102 131 108 C121 114 109 113 102 107 Z"),
+        ("delt","M140 74 C151 71 160 80 161 94 C161 102 158 108 154 113 C150 102 146 92 141 85 Z"),
+        ("abs","M102 114 L116 113 C118 118 118 123 116 127 L102 128 Z M102 131 L116 130 C118 135 118 140 116 144 L102 145 Z M102 148 L116 147 C117 152 117 157 115 161 L102 162 Z M102 165 L115 164 C116 176 110 194 102 204 Z"),
+        ("side","M121 113 C127 113 132 111 135 108 C134 128 131 148 129 162 C129 172 131 180 132 187 C126 185 121 180 120 172 Z"),
+        ("biceps","M146 108 C152 103 158 106 161 114 C163 124 165 132 165 140 C160 144 155 143 152 139 C150 128 148 118 146 108 Z"),
+        ("forearm","M154 148 C160 145 166 146 170 150 C174 166 178 182 180 196 L170 198 C164 182 158 166 154 148 Z"),
+        ("quad","M105 214 C114 207 126 200 134 196 C139 220 138 252 132 281 C125 288 115 288 109 281 C105 258 103 236 105 214 Z"),
+        ("shin","M110 298 C116 294 126 294 131 298 C133 318 131 340 126 364 L113 364 C108 340 107 318 110 298 Z")
+    ]
+    static let backData:[(String,String)]=[
+        ("trap","M101 57 L113 59 C122 66 131 69 139 72 C129 77 119 86 112 100 L101 124 Z"),
+        ("delt","M140 74 C151 71 160 80 161 94 C161 102 158 108 154 113 C150 102 146 92 141 85 Z"),
+        ("lat","M114 103 C121 94 130 90 138 88 C140 110 135 136 129 158 C121 160 110 157 103 150 L103 128 Z"),
+        ("lowback","M102 155 C110 162 120 164 128 163 C129 173 131 182 133 189 L102 197 Z"),
+        ("triceps","M146 108 C152 103 158 106 161 114 C163 124 165 132 165 140 C160 144 155 143 152 139 C150 128 148 118 146 108 Z"),
+        ("forearm","M154 148 C160 145 166 146 170 150 C174 166 178 182 180 196 L170 198 C164 182 158 166 154 148 Z"),
+        ("glute","M102 201 C112 197 124 195 135 192 C139 206 138 222 133 232 C123 239 111 237 102 230 Z"),
+        ("ham","M104 239 C112 243 124 243 134 238 C137 256 135 272 132 283 C125 288 115 288 109 283 C105 268 104 254 104 239 Z"),
+        ("calf","M109 296 C116 290 127 290 132 296 C135 314 133 334 127 356 L113 356 C107 334 106 314 109 296 Z")
+    ]
+    static let silhouette:Path={
+        var p=SVGPath.parse(headData)
+        for item in baseData {p.addPath(SVGPath.mirrored(SVGPath.parse(item.1)))}
+        return p
+    }()
+    static let front:[(String,Path)]=frontData.map{($0.0,SVGPath.mirrored(SVGPath.parse($0.1)))}
+    static let back:[(String,Path)]=backData.map{($0.0,SVGPath.mirrored(SVGPath.parse($0.1)))}
+    static func spec(_ muscle:String)->MuscleSpec {
+        switch muscle {
+        case "Ngực": return MuscleSpec(back:false,parts:["chest"],box:CGRect(x:30,y:40,width:140,height:140))
+        case "Vai": return MuscleSpec(back:false,parts:["delt"],box:CGRect(x:30,y:40,width:140,height:140))
+        case "Bụng": return MuscleSpec(back:false,parts:["abs"],box:CGRect(x:30,y:75,width:140,height:140))
+        case "Cổ": return MuscleSpec(back:false,parts:["neck","trap"],box:CGRect(x:50,y:5,width:100,height:100))
+        case "Tay trước": return MuscleSpec(back:false,parts:["biceps"],box:CGRect(x:30,y:60,width:140,height:140))
+        case "Cẳng tay": return MuscleSpec(back:false,parts:["forearm"],box:CGRect(x:30,y:100,width:140,height:140))
+        case "Đùi trước": return MuscleSpec(back:false,parts:["quad"],box:CGRect(x:30,y:170,width:140,height:140))
+        case "Cơ khép hông": return MuscleSpec(back:false,parts:["quad"],box:CGRect(x:30,y:170,width:140,height:140))
+        case "Cơ dạng hông": return MuscleSpec(back:true,parts:["glute"],box:CGRect(x:30,y:170,width:140,height:140))
+        case "Lưng": return MuscleSpec(back:true,parts:["lat"],box:CGRect(x:30,y:45,width:140,height:140))
+        case "Cơ thang": return MuscleSpec(back:true,parts:["trap"],box:CGRect(x:30,y:30,width:140,height:140))
+        case "Lưng dưới": return MuscleSpec(back:true,parts:["lowback"],box:CGRect(x:30,y:80,width:140,height:140))
+        case "Tay sau": return MuscleSpec(back:true,parts:["triceps"],box:CGRect(x:30,y:60,width:140,height:140))
+        case "Mông": return MuscleSpec(back:true,parts:["glute"],box:CGRect(x:30,y:150,width:140,height:140))
+        case "Đùi sau": return MuscleSpec(back:true,parts:["ham"],box:CGRect(x:30,y:180,width:140,height:140))
+        case "Bắp chân": return MuscleSpec(back:true,parts:["calf"],box:CGRect(x:30,y:255,width:140,height:140))
+        default: return MuscleSpec(back:false,parts:[],box:whole)
+        }
+    }
+}
+
+// muscle: nhóm cơ chính (tô lime). secondary: nhóm cơ phụ cùng mặt trước/sau (tô lime nhạt). full: vẽ cả người.
+struct MuscleGlyph:View {
+    var muscle:String
+    var full=false
+    var secondary:[String]=[]
+    var body:some View {
+        Canvas { ctx,size in
+            let spec=MuscleFigure.spec(muscle)
+            var soft=Set<String>()
+            for name in secondary {
+                let other=MuscleFigure.spec(name)
+                if other.back==spec.back {soft.formUnion(other.parts)}
+            }
+            let box=full ? MuscleFigure.whole:spec.box
+            let s=min(size.width/box.width,size.height/box.height)
+            let dx=(size.width-box.width*s)/2-box.minX*s
+            let dy=(size.height-box.height*s)/2-box.minY*s
+            let t=CGAffineTransform(a:s,b:0,c:0,d:s,tx:dx,ty:dy)
+            ctx.fill(MuscleFigure.silhouette.applying(t),with:.color(Color(white:0.17)))
+            for item in (spec.back ? MuscleFigure.back:MuscleFigure.front) {
+                let color:Color=spec.parts.contains(item.0) ? Dopa.lime:(soft.contains(item.0) ? Dopa.lime.opacity(0.38):Color(white:0.24))
+                ctx.fill(item.1.applying(t),with:.color(color))
+            }
+        }.accessibilityHidden(true)
+    }
+}
+

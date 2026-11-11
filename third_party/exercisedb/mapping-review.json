@@ -1,0 +1,254 @@
+{
+  "date": "2026-11-10",
+  "source": "https://oss.exercisedb.dev/api/v1/exercises/{exerciseId}",
+  "scope": "27 pinned library variants, plus6 separate preset pins. Initial26 sampled clips reviewed; standingpress A6wtbuL added with official response and bent/extended frame review. No runtime fuzzy matching; source180px, repeated original poses in MP4, not nativeHD.",
+  "removed": {
+    "tbar": "API aaXr7ld is chest-supported Machine T Bar Row, not standing landmine T-Bar guidance",
+    "shrug": "API dG7tG5y is straight Barbell Shrug, not Trap Bar Shrug"
+  },
+  "unmapped": [
+    "tbar",
+    "shrug",
+    "facepull",
+    "reversefly",
+    "bandface"
+  ],
+  "mapping": {
+    "incline": {
+      "exerciseId": "3TZduzM",
+      "name": "barbell incline bench press",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/3TZduzM.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/3TZduzM.mp4"
+    },
+    "tricep": {
+      "exerciseId": "dU605di",
+      "name": "cable pushdown (with rope attachment)",
+      "equipment": [
+        "cable"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/dU605di.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/dU605di.mp4"
+    },
+    "hammer": {
+      "exerciseId": "HPlPoQA",
+      "name": "cable hammer curl (with rope)",
+      "equipment": [
+        "cable"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/HPlPoQA.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/HPlPoQA.mp4"
+    },
+    "dumbbell-shrug": {
+      "exerciseId": "NJzBsGJ",
+      "name": "dumbbell shrug",
+      "equipment": [
+        "dumbbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/NJzBsGJ.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/NJzBsGJ.mp4"
+    },
+    "thruster": {
+      "exerciseId": "f7Y9eDZ",
+      "name": "barbell thruster",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/f7Y9eDZ.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/f7Y9eDZ.mp4"
+    },
+    "goodmorning": {
+      "exerciseId": "XlZ4lAC",
+      "name": "barbell good morning",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/XlZ4lAC.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/XlZ4lAC.mp4"
+    },
+    "kneelsquat": {
+      "exerciseId": "oR7O9LW",
+      "name": "barbell squat (on knees)",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/oR7O9LW.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/oR7O9LW.mp4"
+    },
+    "adductor": {
+      "exerciseId": "oHsrypV",
+      "name": "Machine Seated Hip Adduction",
+      "equipment": [
+        "leverage machine"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/oHsrypV.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/oHsrypV.mp4"
+    },
+    "arnold": {
+      "exerciseId": "Xy4jlWA",
+      "name": "dumbbell arnold press",
+      "equipment": [
+        "dumbbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/Xy4jlWA.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/Xy4jlWA.mp4"
+    },
+    "closebench": {
+      "exerciseId": "J6Dx1Mu",
+      "name": "barbell close-grip bench press",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/J6Dx1Mu.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/J6Dx1Mu.mp4"
+    },
+    "squat": {
+      "exerciseId": "qXTaZnJ",
+      "name": "barbell full squat",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/qXTaZnJ.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/qXTaZnJ.mp4"
+    },
+    "rdl": {
+      "exerciseId": "wQ2c4XD",
+      "name": "barbell romanian deadlift",
+      "equipment": [
+        "barbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/wQ2c4XD.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/wQ2c4XD.mp4"
+    },
+    "calf": {
+      "exerciseId": "ykUOVze",
+      "name": "Machine Standing Calf Raise",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/ykUOVze.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/ykUOVze.mp4"
+    },
+    "bandpress": {
+      "exerciseId": "peAeMR3",
+      "name": "band shoulder press",
+      "equipment": [
+        "resistance band"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/peAeMR3.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/peAeMR3.mp4"
+    },
+    "machinefly": {
+      "exerciseId": "myfUsKf",
+      "name": "Machine Seated Reverse Fly",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/myfUsKf.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/myfUsKf.mp4"
+    },
+    "frontraise": {
+      "exerciseId": "u2X71Np",
+      "name": "cable front raise",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/u2X71Np.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/u2X71Np.mp4"
+    },
+    "smith-bench": {
+      "exerciseId": "trqKQv2",
+      "name": "smith bench press",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/trqKQv2.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/trqKQv2.mp4"
+    },
+    "dumbbell-back-fly": {
+      "exerciseId": "8DiFDVA",
+      "name": "dumbbell rear fly",
+      "equipment": [
+        "dumbbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/8DiFDVA.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/8DiFDVA.mp4"
+    },
+    "dumbbell-skullcrusher": {
+      "exerciseId": "mpKZGWz",
+      "name": "dumbbell lying triceps extension",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/mpKZGWz.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/mpKZGWz.mp4"
+    },
+    "ez-curl": {
+      "exerciseId": "6TG6x2w",
+      "name": "EZ-Bar Curl",
+      "equipment": [
+        "EZ bar"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/6TG6x2w.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/6TG6x2w.mp4"
+    },
+    "dumbbell-curl": {
+      "exerciseId": "NbVPDMW",
+      "name": "dumbbell biceps curl",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/NbVPDMW.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/NbVPDMW.mp4"
+    },
+    "incline-dumbbell-curl": {
+      "exerciseId": "RaflbWD",
+      "name": "dumbbell incline curl",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/RaflbWD.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/RaflbWD.mp4"
+    },
+    "dumbbell-lateral-raise": {
+      "exerciseId": "DsgkuIt",
+      "name": "dumbbell lateral raise",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/DsgkuIt.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/DsgkuIt.mp4"
+    },
+    "goblet-squat": {
+      "exerciseId": "yn8yg1r",
+      "name": "dumbbell goblet squat",
+      "equipment": [],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/yn8yg1r.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/yn8yg1r.mp4"
+    },
+    "bent-over-dumbbell-row": {
+      "exerciseId": "BJ0Hz5L",
+      "name": "dumbbell bent over row",
+      "equipment": [
+        "dumbbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/BJ0Hz5L.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/BJ0Hz5L.mp4"
+    },
+    "dumbbell-row": {
+      "exerciseId": "C0MA9bC",
+      "name": "Dumbbell Single-Arm Bent-Over Row",
+      "equipment": [
+        "dumbbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/C0MA9bC.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/C0MA9bC.mp4"
+    },
+    "dumbbell-shoulder-press": {
+      "exerciseId": "A6wtbuL",
+      "name": "dumbbell standing overhead press",
+      "equipment": [
+        "dumbbell"
+      ],
+      "bundledGIF": "DopafitRebuild/ExerciseMedia/gifs/A6wtbuL.gif",
+      "bundledMP4": "DopafitRebuild/ExerciseMedia/videos/A6wtbuL.mp4"
+    }
+  },
+  "latestGuideUpdate": {
+    "date": "2026-11-10",
+    "localID": "dumbbell-shoulder-press",
+    "providerID": "A6wtbuL",
+    "review": "Viewed0.7s bent-elbow and1.4s overhead-extension poses: standing, two dumbbells, palms forward; matches existing standing shoulder-press renderer. Seated3d7wHyd reviewed but not selected.",
+    "sourceSHA256": "667ba53e82227da5d825d2249bf849514b79a5c06a280afd9f8cdc619f75ce8b",
+    "decodedFrames": 30,
+    "distinctFrames": 10,
+    "nativeHD": false,
+    "sourceAPI": "https://oss.exercisedb.dev/api/v1/exercises/A6wtbuL"
+  }
+}

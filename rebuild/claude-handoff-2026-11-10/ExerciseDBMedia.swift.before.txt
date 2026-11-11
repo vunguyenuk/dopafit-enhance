@@ -1,0 +1,107 @@
+import SwiftUI
+import UIKit
+import ImageIO
+
+// Hình động tác lấy từ ExerciseDB (https://oss.exercisedb.dev), theo yêu cầu người dùng 10/11/2026.
+// Cần mạng ở lần đầu; GIF được lưu đệm trong Caches. Không có mạng hoặc không khớp bài thì màn hướng dẫn dùng hình cũ.
+// LƯU Ý: điều khoản dùng GIF của ExerciseDB cho sản phẩm thương mại CHƯA được xác nhận.
+enum ExerciseDBMedia {
+    // ID đã tra tay qua API tìm kiếm ngày 10/11/2026.
+    static let known:[String:String]=[
+        "tbar":"aaXr7ld","incline":"3TZduzM","tricep":"dU605di","hammer":"HPlPoQA","shrug":"dG7tG5y","dumbbell-shrug":"NJzBsGJ",
+        "thruster":"f7Y9eDZ","goodmorning":"XlZ4lAC","kneelsquat":"oR7O9LW","adductor":"oHsrypV","arnold":"Xy4jlWA"
+    ]
+    // Các bài còn lại: app tự tìm theo tên này và chỉ nhận kết quả chứa đủ mọi từ trong tên.
+    static let queries:[String:String]=[
+        "facepull":"cable face pull","closebench":"barbell close-grip bench press","squat":"barbell full squat","rdl":"barbell romanian deadlift",
+        "calf":"machine standing calf raise","bandpress":"band shoulder press","reversefly":"cable reverse fly","machinefly":"machine seated reverse fly",
+        "bandface":"band face pull","frontraise":"cable front raise","dumbbell-row":"dumbbell one arm row","smith-bench":"smith bench press",
+        "dumbbell-back-fly":"dumbbell rear fly","dumbbell-skullcrusher":"dumbbell lying triceps extension","ez-curl":"ez barbell curl",
+        "dumbbell-curl":"dumbbell biceps curl","incline-dumbbell-curl":"dumbbell incline curl","dumbbell-lateral-raise":"dumbbell lateral raise",
+        "dumbbell-shoulder-press":"dumbbell shoulder press","goblet-squat":"dumbbell goblet squat","bent-over-dumbbell-row":"dumbbell bent over row"
+    ]
+    struct SearchResponse:Decodable {var data:[Item]}
+    struct Item:Decodable {var exerciseId:String;var name:String}
+    static func words(_ text:String)->[String] {
+        text.lowercased().split(whereSeparator:{!$0.isLetter && !$0.isNumber}).map{String($0)}
+    }
+    static var cacheDir:URL {
+        FileManager.default.urls(for:.cachesDirectory,in:.userDomainMask)[0].appendingPathComponent("exercisedb",isDirectory:true)
+    }
+    static func resolveID(_ ex:Exercise) async->String? {
+        if let id=known[ex.id] {return id}
+        let key="exercisedb.id2."+ex.id
+        if let saved=UserDefaults.standard.string(forKey:key) {return saved.isEmpty ? nil:saved}
+        let query=queries[ex.id] ?? ex.english.lowercased()
+        var comps=URLComponents(string:"https://oss.exercisedb.dev/api/v1/exercises/search")
+        comps?.queryItems=[URLQueryItem(name:"search",value:query),URLQueryItem(name:"limit",value:"15")]
+        guard let url=comps?.url else {return nil}
+        guard let result=try? await URLSession.shared.data(from:url) else {return nil}
+        guard let decoded=try? JSONDecoder().decode(SearchResponse.self,from:result.0) else {return nil}
+        // Chọn kết quả trùng nhiều từ nhất; bắt buộc trùng từ đầu (dụng cụ) và từ cuối (động tác), thiếu tối đa một từ.
+        let list=words(query)
+        let need=Set(list)
+        func score(_ item:Item)->Int {need.intersection(Set(words(item.name))).count}
+        let hits=decoded.data.filter{ item in
+            let have=Set(words(item.name))
+            guard let first=list.first,let last=list.last else {return false}
+            return have.contains(first) && have.contains(last) && score(item)>=max(2,need.count-1)
+        }.sorted{ a,b in score(a) != score(b) ? score(a)>score(b):a.name.count<b.name.count }
+        let id=hits.first?.exerciseId
+        if let id {UserDefaults.standard.set(id,forKey:key)}
+        return id
+    }
+    static func gif(for ex:Exercise) async->Data? {
+        guard let id=await resolveID(ex) else {return nil}
+        let file=cacheDir.appendingPathComponent(id+".gif")
+        if let data=try? Data(contentsOf:file) {return data}
+        guard let url=URL(string:"https://static.exercisedb.dev/media/"+id+".gif") else {return nil}
+        guard let result=try? await URLSession.shared.data(from:url) else {return nil}
+        guard (result.1 as? HTTPURLResponse)?.statusCode==200 else {return nil}
+        try? FileManager.default.createDirectory(at:cacheDir,withIntermediateDirectories:true)
+        try? result.0.write(to:file)
+        return result.0
+    }
+}
+
+struct AnimatedGIF:UIViewRepresentable {
+    var data:Data
+    var speed:Float=1
+    final class Coordinator {var key=""}
+    func makeCoordinator()->Coordinator {Coordinator()}
+    func makeUIView(context:Context)->UIImageView {
+        let view=UIImageView()
+        view.contentMode = .scaleAspectFit
+        view.backgroundColor = .white
+        view.clipsToBounds=true
+        view.setContentCompressionResistancePriority(.defaultLow,for:.horizontal)
+        view.setContentCompressionResistancePriority(.defaultLow,for:.vertical)
+        view.setContentHuggingPriority(.defaultLow,for:.horizontal)
+        view.setContentHuggingPriority(.defaultLow,for:.vertical)
+        return view
+    }
+    func updateUIView(_ view:UIImageView,context:Context) {
+        let key="\(data.count)-\(speed)"
+        if context.coordinator.key==key {return}
+        context.coordinator.key=key
+        view.image=AnimatedGIF.image(data,speed:speed)
+    }
+    static func image(_ data:Data,speed:Float)->UIImage? {
+        guard let source=CGImageSourceCreateWithData(data as CFData,nil) else {return nil}
+        var frames:[UIImage]=[]
+        var total:Double=0
+        for i in 0..<CGImageSourceGetCount(source) {
+            guard let frame=CGImageSourceCreateImageAtIndex(source,i,nil) else {continue}
+            frames.append(UIImage(cgImage:frame))
+            var delay:Double=0.1
+            if let props=CGImageSourceCopyPropertiesAtIndex(source,i,nil) as? [CFString:Any],let gif=props[kCGImagePropertyGIFDictionary] as? [CFString:Any] {
+                if let value=gif[kCGImagePropertyGIFUnclampedDelayTime] as? Double,value>0 {delay=value}
+                else if let value=gif[kCGImagePropertyGIFDelayTime] as? Double,value>0 {delay=value}
+            }
+            total+=delay
+        }
+        if frames.isEmpty {return nil}
+        if speed<=0 || frames.count==1 {return frames.first}
+        return UIImage.animatedImage(with:frames,duration:total/Double(speed))
+    }
+}

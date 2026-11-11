@@ -1,0 +1,73 @@
+{
+  "repository": "https://github.com/blwsk/exercise-animations",
+  "commit": "be16cb22c4ceb4ad134894250062fd0782410233",
+  "date": "2026-11-10",
+  "scope": "Local prototype. Model/animation style, existing Dopafit UI retained.",
+  "license": {
+    "characterMesh": "CC0-1.0 declared in figure.json and THIRD_PARTY_ASSETS.md",
+    "runtimeCode": "No root project license at pinned revision; public redistribution not cleared",
+    "atlasEquipment": "Project-authored, no separate license found; release rights unresolved",
+    "three": "MIT"
+  },
+  "sourceCharacterSha256": "abcca3ea712ddadde2a27c1e51a68685d7201d65d4ad49c60c736e7ea1835927",
+  "bundledFiles": [
+    {
+      "path": "DopafitRebuild/Form3D/index.html",
+      "bytes": 455,
+      "sha256": "41d5de751fc1d2736876bbbfb27dd94362c10f79ea4350833f9740c2d294feb8"
+    },
+    {
+      "path": "DopafitRebuild/Form3D/licenses/Character-provenance.md",
+      "bytes": 1314,
+      "sha256": "34f1513e1d15217de8c5cf1d6e9dd9af656fd7bedbd10a8aeb63463198ebf864"
+    },
+    {
+      "path": "DopafitRebuild/Form3D/licenses/INTEGRATION-NOTICE.txt",
+      "bytes": 401,
+      "sha256": "173e421a2f2c84e472844dbcf48abcfdc2ded2e1cda449c379962dd1f802a660"
+    },
+    {
+      "path": "DopafitRebuild/Form3D/licenses/MakeHuman-CC0.md",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+    },
+    {
+      "path": "DopafitRebuild/Form3D/licenses/Three-MIT.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "DopafitRebuild/Form3D/neutral.glb",
+      "bytes": 5995208,
+      "sha256": "4504fa119881a2b93f5c3e6c8bdeb0e4ec989ce830145f65c1201e26b6abb441"
+    },
+    {
+      "path": "DopafitRebuild/Form3D/viewer.js",
+      "bytes": 5654451,
+      "sha256": "a198a10544719c130e2b993378ac490a7307285a477a3cd8c081a75b520a432c"
+    }
+  ],
+  "motionMapping": {
+    "dumbbell-curl": "standing-dumbbell-curl",
+    "rdl": "romanian-deadlift",
+    "squat": "barbell-back-squat",
+    "incline-dumbbell-curl": "incline-dumbbell-curl",
+    "dumbbell-lateral-raise": "dumbbell-lateral-raise",
+    "dumbbell-shoulder-press": "dumbbell-shoulder-press",
+    "goblet-squat": "goblet-squat",
+    "bent-over-dumbbell-row": "bent-over-dumbbell-row"
+  },
+  "retainedOpenGymClip": "goodmorning",
+  "nativeMasks": {
+    "upstream": "10 Dopafit labels map to 11 authored atlas regions; Lưng unions back + lats",
+    "approximateExtras": [
+      "Lưng dưới",
+      "Cơ thang",
+      "Cơ dạng hông",
+      "Cơ khép hông",
+      "Cẳng tay",
+      "Cổ"
+    ]
+  },
+  "qa": "rebuild/verification/form-motion-qa.json"
+}

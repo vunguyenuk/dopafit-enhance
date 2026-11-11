@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+rebuild/*.log
+__pycache__/
+
+# Bản clone repo ngoài (có .git riêng) — không commit, tải lại theo third_party/exercise-animations/UPSTREAM.md
+third_party/exercise-animations/upstream/
+
+# File tạm chờ xóa
+**/_to_delete/

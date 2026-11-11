@@ -1,0 +1,59 @@
+{
+  "repository": "https://github.com/AssiamahS/opengym3d",
+  "commit": "ea3a60130fdcfb3c4771e44d09f84ebab4ee9bae",
+  "archive": "dist/opengym3d-exercise-pack-v1.zip",
+  "archiveSha256": "5ca8389789a63cd5eee7115392c66fcd2a4b945f2a495cbe334cb355441065e3",
+  "license": "MIT (included pack license); MakeHuman model per upstream CC0 statement",
+  "versionNote": "Muscular CC0 mesh refined from pinned v1 retarget; one clip per exercise, planted feet, hinged rest spine, stable grip and procedural implements; 16 soft approximate muscle masks.",
+  "exerciseMapping": {
+    "dumbbell-curl": "bicep_curl",
+    "rdl": "romanian_deadlift",
+    "goodmorning": "good_morning"
+  },
+  "fallback": "Other exercises use a neutral OpenGym3D mesh with muscle highlights, not a mismatched animation.",
+  "upstreamModels": {
+    "bicep_curl.glb": "5feb17ba04c5bc71f3aab87d6af776b28ec25cfa8263497ec3e49f0315777f7b",
+    "romanian_deadlift.glb": "63314a9bd8604f26e37ea0e59245dccb4e02395929e497820a189943fd81d1bc",
+    "squat.glb": "191f78106bf4d7d1f23a2f9cf694f83ae347b887a5c3268b7cf6eff68aba71f5",
+    "good_morning.glb": "aac810e4b60504eaaa34f09c26f07a299aefb3e5784b2e299dfc1fb3a3adbe37"
+  },
+  "models": {
+    "muscular_body.glb": "f0238d53971ae0af1d8cadf16bb471abe94dcf3d8378683330e2d933e728f2b9",
+    "bicep_curl.glb": "34af136331b2ddc64fe6d67a7e1d0d31a3856afb146ae3ca9857e5b5f097d1ef",
+    "romanian_deadlift.glb": "94b8c6d312822a95da93b52e40121a43f7b1ea89b0d6190e001f75f253b777c7",
+    "good_morning.glb": "a01850b0135afb7ebd477911647cb8a6095aec1d1e9486ea119dbdf058423af8"
+  },
+  "staticModel": "muscular_body.glb",
+  "generator": {
+    "name": "MPFB2",
+    "version": "2.0.16",
+    "archiveSha256": "b5cdc8b08147e0c6463e4faa01147491b13a0b062f73415363f029debd11c934",
+    "blender": "4.5.9",
+    "meshLicense": "CC0",
+    "parameters": "generation.json",
+    "retarget": "retarget-report.json"
+  },
+  "refinement": {
+    "blender": "4.0.2",
+    "sourceFolder": "workfiles/retargeted-v1",
+    "neutralSource": "workfiles/refined_source.blend",
+    "script": "scripts/opengym/refine_motion.py",
+    "maskScript": "scripts/opengym/bake_muscle_regions.py",
+    "report": "refinement-report.json",
+    "geometryQA": "geometry-qa.json",
+    "muscleMasks": "muscle-mask-report.json",
+    "inputHashes": {
+      "bicep_curl.glb": "37c518cbf06d376216458b81bb4b422db39479ded3949c1d42ed5a103ec16ae0",
+      "good_morning.glb": "3573ab656ad672ae108518235f7dafe97ad14c70a7889ba324f1a3e98c6b5adb",
+      "muscular_body.glb": "b7fb078fb9e0d214a64d58205f613305a46dc7254c6c1b9102995838289abcd9",
+      "romanian_deadlift.glb": "4e32f80a44a8a749a5c132e4c665ba4283871a82e5ee87bfb81ce68d1429ab2a"
+    },
+    "gripReference": "MCP palm center +12mm normal, not wrist bone tail",
+    "palmOrientation": "Curl supinated; RDL pronated; Good Morning aligned with back rack",
+    "fingerFlexionDegrees": [
+      75,
+      95,
+      65
+    ]
+  }
+}

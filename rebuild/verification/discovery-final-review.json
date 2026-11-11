@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-10",
+  "bundle": "com.local.dopafit.rebuild",
+  "photos": {
+    "noColorFilters": true,
+    "noAIGenerationOrEditing": true,
+    "replacedSourceCount": 6,
+    "acceptedOriginalsPreserved": 3,
+    "fullbody": "C141 landscape6389079; C140 portrait rejected",
+    "activity": "C142",
+    "core": "C143,C144",
+    "habits": "C145,C146",
+    "note": "Challenge photos are illustrations, not exercise technique videos. Natural light can vary; no claim identical photographic exposure.",
+    "core30Latest": {
+      "evidence": [
+        "C149",
+        "C150"
+      ],
+      "source": "cottonbro studio/Pexels4754028",
+      "timestampSeconds": 3,
+      "naturalColors": true,
+      "AIEdits": false,
+      "supersedes": "ShotPot4047104; C143 core30 and C135 program hero old photo"
+    },
+    "core14Latest": {
+      "evidence": [
+        "C151",
+        "C152"
+      ],
+      "source": "Li Sun/Pexels2294363",
+      "naturalColors": true,
+      "AIEdits": false,
+      "supersedes": "Peggy_Marco1634786, C143 core14/C144"
+    }
+  },
+  "video": {
+    "exercise": "discovery-plank",
+    "provider": "Pexels4117854",
+    "guidePlayingFrames": [
+      "C136",
+      "C137"
+    ],
+    "programRows": "C138",
+    "format": "real filmed hold, not anatomical animation",
+    "sourceFPS": 25,
+    "guidePixels": [
+      1080,
+      1080
+    ],
+    "thumbPixels": [
+      320,
+      320
+    ],
+    "seconds": 4,
+    "note": "Other ExerciseDB sources remain180px; no all-library HD or smoothness benchmark claim."
+  },
+  "buttons": "C120,C121,C147; Add neutral capsule, Start lime, root white+smalllimeunderline, group text+underline",
+  "UIQA": "C128–C134 isolated; see discovery-qa-run.json",
+  "remainingExactPresetMotionGaps": [
+    "bodyweight squat",
+    "glute bridge"
+  ],
+  "modelWork": "paused",
+  "originalFigma": "unchanged140states/28rootgroups; all paritypartial"
+}

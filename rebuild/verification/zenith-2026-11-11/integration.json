@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-11",
+  "rawFiles": 47,
+  "reviewedAppPins": 21,
+  "additionalFemaleVariants": 19,
+  "encodedMP4": 80,
+  "fullDecodePassed": 80,
+  "sampledDistinctMotionVariants": 40,
+  "visualContactSheetsReviewed": 6,
+  "modelChecksPassed": 126,
+  "build": "succeeded/installed/launched",
+  "installedZenithFilesExact": 81,
+  "mainSnapshotExact": true,
+  "mainDraftExerciseCount": 7,
+  "mainHistoryCount": 2,
+  "mainLoggedSets": 0,
+  "mainGender": "Nam",
+  "mainCheckin": "pain",
+  "liveUI": "C172–C178:male/femaleRow thumbnails/guide,0.5speed,muscles and female setentry verified; sample only",
+  "next": "No remaining unlock blocker. Keep4library+1preset media gaps and unresolvedlicense/anatomy/FPS checks open.",
+  "rejectedCandidates": [
+    "rdl",
+    "reversefly",
+    "dumbbell-shoulder-press",
+    "discovery-glutebridge"
+  ],
+  "remapped": {
+    "bent-over-dumbbell-row": "dumbbell-row"
+  },
+  "scripts": {
+    "scripts/build-zenith-media.py": "70977c8d618a7bd49e1946559bfee922a19990b8d5362166ea020739871fd8e7",
+    "scripts/check-exercise-media.py": "77417251e157d97f890382122ca7ba10c620ccae08a31eec416e3a54fd0a15c2"
+  },
+  "liveUIRun": "live-ui-run.json",
+  "QACleanupVerified": true,
+  "mainFullSnapshotAfterUIUnchanged": true
+}

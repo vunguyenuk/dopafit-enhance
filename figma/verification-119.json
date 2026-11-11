@@ -1,0 +1,325 @@
+{
+  "cardCount": 119,
+  "imageCount": 119,
+  "roots": [
+    {
+      "id": "1:24",
+      "name": "00 · Onboarding gốc · R01–R06",
+      "x": 0,
+      "y": 0,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:164",
+      "name": "Dopafit gốc R07–R12",
+      "x": 3040,
+      "y": 0,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:302",
+      "name": "Dopafit gốc R13–R18",
+      "x": 6080,
+      "y": 1.1368683772161603e-13,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:443",
+      "name": "Dopafit gốc D01–D06",
+      "x": 0,
+      "y": 2850,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:569",
+      "name": "Dopafit gốc D07–D12",
+      "x": 3040,
+      "y": 2850,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:692",
+      "name": "Dopafit gốc D13–D18",
+      "x": 6080,
+      "y": 2850,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:815",
+      "name": "Dopafit gốc D19–D24",
+      "x": 0,
+      "y": 5700,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:940",
+      "name": "Dopafit gốc D25–D30",
+      "x": 3040,
+      "y": 5700,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1060",
+      "name": "Dopafit gốc D31–D36",
+      "x": 6080,
+      "y": 5700,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1181",
+      "name": "Dopafit gốc D37–D42",
+      "x": 0,
+      "y": 8550,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1305",
+      "name": "Dopafit gốc D43–D48",
+      "x": 3040,
+      "y": 8550,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1429",
+      "name": "Dopafit gốc D49–D54",
+      "x": 6080,
+      "y": 8550,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1550",
+      "name": "Dopafit gốc D55–D58",
+      "x": 0,
+      "y": 11400,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:2",
+      "name": "Dopafit gốc R19–R24",
+      "x": 3040,
+      "y": 11400,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:141",
+      "name": "Dopafit gốc R25–R30",
+      "x": 6080,
+      "y": 11400,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:276",
+      "name": "Dopafit gốc R31–R36",
+      "x": 0,
+      "y": 14250,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:418",
+      "name": "Dopafit gốc R37–R37",
+      "x": 3040,
+      "y": 14250,
+      "width": 2860,
+      "height": 1400
+    },
+    {
+      "id": "12:479",
+      "name": "Dopafit gốc R38 · Lưu thiết lập → Đăng nhập",
+      "x": 6080,
+      "y": 14250,
+      "width": 980,
+      "height": 1400
+    },
+    {
+      "id": "19:2",
+      "name": "Dopafit gốc R39–R44",
+      "x": 0,
+      "y": 17100,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "19:169",
+      "name": "Dopafit gốc R45–R50",
+      "x": 3040,
+      "y": 17100,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "19:336",
+      "name": "Dopafit gốc R51–R56",
+      "x": 6080,
+      "y": 17100,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "19:503",
+      "name": "Dopafit gốc R57–R61",
+      "x": 0,
+      "y": 19950,
+      "width": 2860,
+      "height": 2540
+    }
+  ],
+  "newNotes": [
+    {
+      "id": "19:2",
+      "overflow": [
+        {
+          "id": "19:10",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:37",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:64",
+          "needed": 444,
+          "height": 895
+        },
+        {
+          "id": "19:92",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:119",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:146",
+          "needed": 421,
+          "height": 895
+        }
+      ]
+    },
+    {
+      "id": "19:169",
+      "overflow": [
+        {
+          "id": "19:177",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:204",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:231",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:259",
+          "needed": 398,
+          "height": 895
+        },
+        {
+          "id": "19:286",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:313",
+          "needed": 421,
+          "height": 895
+        }
+      ]
+    },
+    {
+      "id": "19:336",
+      "overflow": [
+        {
+          "id": "19:344",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:371",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:398",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:426",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:453",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:480",
+          "needed": 421,
+          "height": 895
+        }
+      ]
+    },
+    {
+      "id": "19:503",
+      "overflow": [
+        {
+          "id": "19:511",
+          "needed": 398,
+          "height": 895
+        },
+        {
+          "id": "19:538",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:565",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:593",
+          "needed": 421,
+          "height": 895
+        },
+        {
+          "id": "19:620",
+          "needed": 421,
+          "height": 895
+        }
+      ]
+    }
+  ],
+  "missingFonts": [],
+  "duplicates": [],
+  "annotationsCorrected": [
+    "R42 actual guide, not home",
+    "R38 user completed login → R39"
+  ]
+}

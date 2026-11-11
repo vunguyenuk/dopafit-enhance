@@ -1,0 +1,2834 @@
+{
+  "date": "2026-11-11",
+  "license": "Media origin/license unresolved in source repository; existing local-demo scope only, no release/publication authorized.",
+  "repo": "https://github.com/buzops9/exercisedb",
+  "commit": "399a8af3bedd4f5959381ce4dedc28366db387d4",
+  "reviewPath": "third_party/zenith-video/mapping-review.json",
+  "reviewSHA256": "d590a3549bc9a6ae9f2017212846fde20292f41fab3b912415fd58fc6f0a2ebb",
+  "timing": "Original source timing retained; no optical-flow/AI frames.1920x1080 is source canvas, not proof of effective720px anatomy detail.",
+  "clips": {
+    "tbar": {
+      "sourceId": "drv-lever-t-bar-row",
+      "sourceName": "Lever T-Bar Row",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/lever-t-bar-row.mp4",
+      "visualIdentity": "Standing straddled lever T-Bar row on foot platform, without chest pad; not chest-supported Machine T Bar.",
+      "steps": [
+        "Lie prone on the chest pad of the T-bar row machine and grasp the handles.",
+        "Brace your upper body and retract your shoulder blades.",
+        "Pull the handles toward your chest or lower ribs.",
+        "Pause and squeeze your back at the top.",
+        "Lower the weight under control to a full stretch."
+      ],
+      "formCues": [
+        "Pinch shoulder blades",
+        "Drive elbows back",
+        "Keep chest on pad",
+        "Full stretch at bottom"
+      ],
+      "commonMistakes": [
+        "Arching lower back",
+        "Not fully extending arms",
+        "Bouncing weights",
+        "Letting shoulders round forward"
+      ],
+      "breathing": "Exhale as you row up, inhale as you lower down.",
+      "sourcePath": "third_party/zenith-video/raw/lever-t-bar-row.mp4",
+      "sha256Source": "b73050249bf6a0dac281a9b48ad5e9c7945043fc136bb0d55a7d20968de924ea",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        624,
+        40,
+        1144,
+        984
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "tbar-guide.mp4",
+          "sha256": "cbe8503bde95f87c352e66b9320c14259311dd36858cdd982a26b57c55948356",
+          "sourceSquarePixels": 1282,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "tbar-thumb.mp4",
+          "sha256": "aeda7e169e25c3b46aa02918caebf2f3e9f6c4c974f9bc6066ba651ae38b6a37",
+          "sourceSquarePixels": 1236,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/lever-t-bar-row.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/lever-t-bar-row.mp4",
+        "sha256Source": "51d6a8eccbe52ee6018c9791ceb45b3f4a33cc41bb0317ba7541835ee5a5579c",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.6,
+          "frames": 198,
+          "audio": false
+        },
+        "bbox": [
+          672,
+          64,
+          1128,
+          1016
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "tbar-f-guide.mp4",
+            "sha256": "208ac63bf5f32edaefb855b776c17d6a84ad456b5775a1f0db11db2b2d7772cd",
+            "sourceSquarePixels": 1264,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          },
+          {
+            "file": "tbar-f-thumb.mp4",
+            "sha256": "aba509e6458415c314c2f5c2c179b4bfa00149df54844fdebcb0d3b35d2893c5",
+            "sourceSquarePixels": 1220,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "incline": {
+      "sourceId": "0047",
+      "sourceName": "Barbell Incline Bench Press",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/barbell-incline-bench-press.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Set an incline bench and lie back with your eyes under the bar and your feet flat on the floor.",
+        "Grip the bar slightly wider than shoulder width with straight wrists and pull your shoulder blades down and back.",
+        "Unrack the bar and hold it above your upper chest with your arms straight.",
+        "Lower the bar under control to your upper chest, keeping your elbows slightly tucked from straight out.",
+        "Press the bar upward until your arms are straight again, keeping the bar path over your shoulders.",
+        "Rack the bar back onto the supports with control after your final rep."
+      ],
+      "formCues": [
+        "Drive feet into floor",
+        "Keep chest up",
+        "Wrists stacked over elbows",
+        "Press straight up"
+      ],
+      "commonMistakes": [
+        "Flaring the elbows straight out to the sides",
+        "Bouncing the bar off the chest",
+        "Lifting the feet or shifting on the bench",
+        "Lowering the bar to the neck or stomach"
+      ],
+      "breathing": "Inhale as you lower the bar to your chest, and exhale as you press it back up.",
+      "sourcePath": "third_party/zenith-video/raw/barbell-incline-bench-press.mp4",
+      "sha256Source": "1ff6f81704f098a9437cd9bac4ac61a26cbbe2b19987951c3a7d2d89028bf4d1",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        600,
+        40,
+        832,
+        992
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "incline-guide.mp4",
+          "sha256": "c2f4fb2fe28250305d687b91dbda4e981476ad5e472d372b1a586b676551a32f",
+          "sourceSquarePixels": 1112,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "incline-thumb.mp4",
+          "sha256": "0853bf5cb3bed40b22d8f531c7fedb5e5f62aa93e1d61d2ffaa8d795d33fbd04",
+          "sourceSquarePixels": 1072,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/barbell-incline-bench-press.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/barbell-incline-bench-press.mp4",
+        "sha256Source": "3309fa84f284845a8a01cc43e7c9c0f64b22258b38b942b19a2ef4a02b9756c8",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "2997/100",
+          "duration": 6.57324,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          600,
+          32,
+          752,
+          928
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "incline-f-guide.mp4",
+            "sha256": "9471495384366303fd230a277105a7e526dcc3dadc422895ecf70df1f74338df",
+            "sourceSquarePixels": 1040,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "2997/100",
+              "duration": 6.57324,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "incline-f-thumb.mp4",
+            "sha256": "90d2a3a21f046dc20843a1391723c494fa05b90fedfb851a3b2e8f3d6e4cd3dc",
+            "sourceSquarePixels": 1004,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "2997/100",
+              "duration": 6.57324,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "closebench": {
+      "sourceId": "0030",
+      "sourceName": "Barbell Close Grip Bench Press",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/barbell-close-grip-bench-press.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Lie on bench and grasp barbell with close grip.",
+        "Unrack and position bar above lower chest.",
+        "Lower bar slowly, elbows close to sides.",
+        "Touch chest briefly, then press bar to starting position.",
+        "Repeat for reps."
+      ],
+      "formCues": [
+        "Tuck elbows",
+        "Grip just inside shoulder width",
+        "Press through triceps",
+        "Control the descent"
+      ],
+      "commonMistakes": [
+        "Gripping too narrow or wide",
+        "Elbows flaring out",
+        "Bouncing bar on chest"
+      ],
+      "breathing": "Exhale pressing up, inhale lowering bar.",
+      "sourcePath": "third_party/zenith-video/raw/barbell-close-grip-bench-press.mp4",
+      "sha256Source": "6676c47c40ef7d72824f6a54904d0f15004929a71b3960cf0453e3284858f6c4",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.639967,
+        "frames": 199,
+        "audio": false
+      },
+      "bbox": [
+        496,
+        40,
+        984,
+        1008
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "closebench-guide.mp4",
+          "sha256": "bb29fc0c2ef429bd68bc96eb3b5e9064ba93a21034b39dc89afd972fe2efe0dc",
+          "sourceSquarePixels": 1130,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.639967,
+            "frames": 199,
+            "audio": false
+          }
+        },
+        {
+          "file": "closebench-thumb.mp4",
+          "sha256": "8e470c9a655fc1b0536103c232fe647b7f03ae5c24e179e0abc548859038ae52",
+          "sourceSquarePixels": 1090,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.639967,
+            "frames": 199,
+            "audio": false
+          }
+        }
+      ]
+    },
+    "tricep": {
+      "sourceId": "0200",
+      "sourceName": "Cable Rope Triceps Pushdown",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/cable-pushdown-rope-attachment.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Attach a rope to the high pulley and stand facing the machine.",
+        "Grab the rope with both hands, thumbs facing inward.",
+        "Keep elbows tucked at your sides and lean slightly forward.",
+        "Extend your arms down, splitting the rope at the bottom.",
+        "Slowly return to the start without letting elbows flare out."
+      ],
+      "formCues": [
+        "Keep elbows fixed",
+        "Split the rope at the bottom",
+        "Don’t use your shoulders",
+        "Full extension on each rep"
+      ],
+      "commonMistakes": [
+        "Flaring elbows",
+        "Using momentum",
+        "Not fully extending arms"
+      ],
+      "breathing": "Exhale as you push down, inhale as you return.",
+      "sourcePath": "third_party/zenith-video/raw/cable-pushdown-rope-attachment.mp4",
+      "sha256Source": "8d61fd3ef8691a0105d521a19410b378260828e760ca65c119f561ed7cdad304",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "2997/100",
+        "duration": 6.57324,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        760,
+        48,
+        584,
+        1000
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "tricep-guide.mp4",
+          "sha256": "dce3790a5b120b698b837ba475fc457f6de99eece466e6e07cefde1f03015a7e",
+          "sourceSquarePixels": 1122,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "2997/100",
+            "duration": 6.57324,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "tricep-thumb.mp4",
+          "sha256": "dbeeb8847c69d4dee056393d5ab37cee919ffdc5998ca20e457b8bf7e8adf340",
+          "sourceSquarePixels": 1082,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "2997/100",
+            "duration": 6.57324,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/cable-pushdown-rope-attachment.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/cable-pushdown-rope-attachment.mp4",
+        "sha256Source": "c97fcd57c81c9644520bf880314b28c3d0c04565d70ca00e446a23fac981ba8d",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 5.4,
+          "frames": 162,
+          "audio": false
+        },
+        "bbox": [
+          776,
+          48,
+          520,
+          992
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "tricep-f-guide.mp4",
+            "sha256": "3756970d31d6c82c48157f47b95982d33a6f9cbd5f4997d7251fe3340641d3c3",
+            "sourceSquarePixels": 1112,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 5.4,
+              "frames": 162,
+              "audio": false
+            }
+          },
+          {
+            "file": "tricep-f-thumb.mp4",
+            "sha256": "c4b8201f2de52ae74dcffafb94e5a2d303e523121dc2e88c2574dc306d6e8725",
+            "sourceSquarePixels": 1072,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 5.4,
+              "frames": 162,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "squat": {
+      "sourceId": "1435",
+      "sourceName": "Barbell Back Squat",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/classic-barbell-squat.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Position barbell on upper traps, unrack.",
+        "Stand with feet shoulder-width apart.",
+        "Descend into squat keeping back neutral.",
+        "Lower until thighs parallel or below.",
+        "Drive up through heels to standing."
+      ],
+      "formCues": [
+        "Chest up",
+        "Back straight",
+        "Drive through heels",
+        "Knees track over toes"
+      ],
+      "commonMistakes": [
+        "Knees caving in",
+        "Rounding lower back",
+        "Heels lifting off floor"
+      ],
+      "breathing": "Inhale lowering, exhale rising.",
+      "sourcePath": "third_party/zenith-video/raw/classic-barbell-squat.mp4",
+      "sha256Source": "dd26120ac64a3c6609bc541a5d62a6c2fb20eded660d17caf102ea1888bbba26",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        600,
+        64,
+        664,
+        984
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "squat-guide.mp4",
+          "sha256": "dbd59288b34431033111dac8ead257b4850e0c3cad03d486d8e41be61cf5691c",
+          "sourceSquarePixels": 1104,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "squat-thumb.mp4",
+          "sha256": "5fa8781d0fea9299fd6957ab24323151db4e6fc46f38f98f898eabe294b9c988",
+          "sourceSquarePixels": 1064,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/classic-barbell-squat.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/classic-barbell-squat.mp4",
+        "sha256Source": "c62f7f86ad5829f6612a1c381d5cde7613fb58ac3e907db963d4567a877a84ca",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 5.333333,
+          "frames": 160,
+          "audio": false
+        },
+        "bbox": [
+          520,
+          104,
+          704,
+          920
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "squat-f-guide.mp4",
+            "sha256": "3b6bbf6002e718aac3936c3d97cf9d81633e87701b36d9bda3ba178971088044",
+            "sourceSquarePixels": 1032,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 5.333333,
+              "frames": 160,
+              "audio": false
+            }
+          },
+          {
+            "file": "squat-f-thumb.mp4",
+            "sha256": "8df5cebe218fc1ea439750fbf7c38c6a4c6623c8c1ece283611eb2a7f70398c0",
+            "sourceSquarePixels": 994,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 5.333333,
+              "frames": 160,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "adductor": {
+      "sourceId": "0598",
+      "sourceName": "Lever Seated Hip Adduction",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/lever-seated-hip-adduction.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Adjust the seat and pads so your knees line up with the machine's pivot point.",
+        "Sit tall with your back against the pad, place your legs outside the thigh pads, and grab the handles.",
+        "Set your feet flat on the footrests and start with your legs comfortably apart.",
+        "Bring your legs together by pressing inward against the pads.",
+        "Squeeze your inner thighs briefly when the pads come together.",
+        "Return the pads outward slowly until you reach the start position without letting the weight slam."
+      ],
+      "formCues": [
+        "Sit tall",
+        "Control both directions",
+        "Squeeze inner thighs",
+        "Keep hips still"
+      ],
+      "commonMistakes": [
+        "Leaning forward or lifting the lower back off the pad.",
+        "Letting the pads fly open on the way back.",
+        "Using short, bouncing reps instead of controlled motion.",
+        "Turning the feet and knees excessively to force the movement."
+      ],
+      "breathing": "Exhale as you press your legs together, and inhale as you return to the starting position.",
+      "sourcePath": "third_party/zenith-video/raw/lever-seated-hip-adduction.mp4",
+      "sha256Source": "dd07724755bf157c676f02c9a8724e222709cf7c65a830733709fd14c7370c52",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        704,
+        48,
+        592,
+        1000
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "adductor-guide.mp4",
+          "sha256": "3b82188130e663d07384b4e5c9e613c1d3a98eb392c5384d348a3244d26d6fec",
+          "sourceSquarePixels": 1122,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "adductor-thumb.mp4",
+          "sha256": "a4c8dd991ec029108bb7bd13945b9ec58097bcb6b3dec084eda06df3c1283f46",
+          "sourceSquarePixels": 1082,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/lever-seated-hip-adduction.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/lever-seated-hip-adduction.mp4",
+        "sha256Source": "c0a0a6a7f8a6d74adcda678f796ee2d2451819b718c3e286f1a46ea41c0d8f4f",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          624,
+          96,
+          680,
+          944
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "adductor-f-guide.mp4",
+            "sha256": "e6c699c317f910e683ce1e8d798ec03a8f0e5fd0fb5c73c535305aaf704fceb2",
+            "sourceSquarePixels": 1058,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "adductor-f-thumb.mp4",
+            "sha256": "b5d6cd11e25db5591da67a16ff64406d227da0d8e37b448408d09d418a3b8e36",
+            "sourceSquarePixels": 1020,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "arnold": {
+      "sourceId": "2137",
+      "sourceName": "Dumbbell Arnold Press",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-arnold-press.mp4",
+      "visualIdentity": "Seated Arnold press with palms turning from inward/front-of-chest to outward overhead; 12-frame sequence reviewed.",
+      "steps": [
+        "Sit tall on a bench with back support and plant your feet on the floor.",
+        "Hold a dumbbell in each hand in front of your shoulders with palms facing you and elbows bent.",
+        "Brace your midline and press the dumbbells upward while rotating your palms outward.",
+        "Finish overhead with arms straight and palms facing forward.",
+        "Lower the dumbbells under control while rotating your palms back toward you.",
+        "Return to the start with dumbbells in front of your shoulders and repeat."
+      ],
+      "formCues": [
+        "Press and rotate smoothly",
+        "Keep ribs down",
+        "Wrists stacked over elbows",
+        "Finish biceps by ears"
+      ],
+      "commonMistakes": [
+        "Arching the lower back as the dumbbells go overhead",
+        "Letting the elbows flare straight out at the bottom",
+        "Pressing the dumbbells up without rotating the hands",
+        "Lowering the dumbbells too fast and losing control"
+      ],
+      "breathing": "Inhale at the bottom, exhale as you press and rotate overhead, then inhale as you lower back down.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-arnold-press.mp4",
+      "sha256Source": "40e18268aae5e474a508039326a81e97b897cce44d1bc7f1badb4a74dd70b430",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        616,
+        80,
+        640,
+        976
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "arnold-guide.mp4",
+          "sha256": "0c0463831e6b4ea0d5c8a60d156fa42a5b3a437b6895653502feeeb4b018896d",
+          "sourceSquarePixels": 1094,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "arnold-thumb.mp4",
+          "sha256": "dd2e5d3eccdad9ba24e2e7a20c707c8b44b92d6545d0696e457c8f3eb35c1162",
+          "sourceSquarePixels": 1056,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-arnold-press.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-arnold-press.mp4",
+        "sha256Source": "9153a856ab581a631d388383cc863aadecc90a4f5db04ac441a0fa101462c1fd",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          720,
+          56,
+          480,
+          992
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "arnold-f-guide.mp4",
+            "sha256": "091b4e6c668046f2c21110280dc57fc4cc73b285cc2023e4aa898391bdfc67ca",
+            "sourceSquarePixels": 1112,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "arnold-f-thumb.mp4",
+            "sha256": "67882da0fb591074c5987d632d7670eebbf41965008ebc5e693964cb6393a5d0",
+            "sourceSquarePixels": 1072,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "machinefly": {
+      "sourceId": "0602",
+      "sourceName": "Lever Seated Reverse Fly",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/lever-seated-reverse-fly.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Adjust the seat so the handles are about shoulder height when you sit down.",
+        "Sit with your chest against the pad, feet flat on the floor, and grasp the handles with an overhand grip.",
+        "Start with your arms in front of you and keep a soft bend in your elbows.",
+        "Pull the handles out and back in a wide arc until your upper arms line up with your shoulders.",
+        "Squeeze your rear shoulders and upper back at the end of the movement.",
+        "Return the handles slowly to the start without letting the weight slam down."
+      ],
+      "formCues": [
+        "Lead with your elbows",
+        "Keep chest on the pad",
+        "Soft bend in elbows",
+        "Squeeze shoulder blades together"
+      ],
+      "commonMistakes": [
+        "Shrugging the shoulders up toward the ears",
+        "Straightening the elbows and turning it into a press",
+        "Letting the chest come off the pad",
+        "Swinging the handles back with momentum"
+      ],
+      "breathing": "Exhale as you pull the handles back, and inhale as you return to the starting position.",
+      "sourcePath": "third_party/zenith-video/raw/lever-seated-reverse-fly.mp4",
+      "sha256Source": "46610fd85793d5dd395a9acbf1d778a3a2fd95537f65899b79d427b724f20601",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        584,
+        72,
+        760,
+        976
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "machinefly-guide.mp4",
+          "sha256": "98913428eb4baea9d284448da1dd51aad074bff669718744bc5d7d758c796e58",
+          "sourceSquarePixels": 1094,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "machinefly-thumb.mp4",
+          "sha256": "24cfeb12c98cf671ec64e6568aafed2817a5e9cdc29c8e14a2693e0e9ad3d847",
+          "sourceSquarePixels": 1056,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/lever-seated-reverse-fly.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/lever-seated-reverse-fly.mp4",
+        "sha256Source": "749f53e050f415dec647f2158f6f39fa1ad01d2bcebe42a4b4e6b182b0ce10d8",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          640,
+          48,
+          728,
+          1008
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "machinefly-f-guide.mp4",
+            "sha256": "f3dadf59936b5698bfcdd7c616920e4a1944d8df15f107a973c5157e64fbb1d7",
+            "sourceSquarePixels": 1130,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "machinefly-f-thumb.mp4",
+            "sha256": "af1d5bbe530bf980ec26d8c03761b031087e49f878edf328c0f0f87bb32eed8c",
+            "sourceSquarePixels": 1090,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "frontraise": {
+      "sourceId": "0162",
+      "sourceName": "Cable One Arm Front Raise",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/cable-one-arm-forward-raise.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Attach handle to low pulley and stand facing away from machine.",
+        "Grasp handle with one hand, arm by your side.",
+        "With a straight arm, raise it forward to shoulder height.",
+        "Pause briefly at the top.",
+        "Lower back to the start slowly and repeat."
+      ],
+      "formCues": [
+        "Keep core tight",
+        "Lift with shoulder, not hand",
+        "Don't swing",
+        "Control the descent"
+      ],
+      "commonMistakes": [
+        "Using momentum",
+        "Shrugging shoulder",
+        "Overextending at the top"
+      ],
+      "breathing": "Exhale as you lift, inhale as you lower.",
+      "sourcePath": "third_party/zenith-video/raw/cable-one-arm-forward-raise.mp4",
+      "sha256Source": "1f669f510d4f49f7721b4a72176f62d58125699a7eec9f1095ff25fd877946c2",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        736,
+        48,
+        440,
+        992
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "frontraise-guide.mp4",
+          "sha256": "34bd88f851f266e8087f5cdeac249cda74a357ad052dde8e38e76deec1cb8fc6",
+          "sourceSquarePixels": 1112,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "frontraise-thumb.mp4",
+          "sha256": "02b1e1c53e310a44869168b692002bc0bcd103dc912f19918438f19480c70c70",
+          "sourceSquarePixels": 1072,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/cable-one-arm-forward-raise.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/cable-one-arm-forward-raise.mp4",
+        "sha256Source": "3f3bf3436a0d2a2c0e44ce12334b016861d7152b4c8a45714676d274fa0bf74a",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          712,
+          56,
+          504,
+          976
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "frontraise-f-guide.mp4",
+            "sha256": "bae00844baa87be05386e7203742fcce80b27905f7f5ddeb27d2e5bd3067c389",
+            "sourceSquarePixels": 1094,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "frontraise-f-thumb.mp4",
+            "sha256": "7d3fdf9d0a5406baeec0cb540a38cb99ed2ef46692f46fd16577e73334d88643",
+            "sourceSquarePixels": 1056,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566016,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "dumbbell-row": {
+      "sourceId": "0293",
+      "sourceName": "Dumbbell Bent-Over Row",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-bent-over-row.mp4",
+      "visualIdentity": "Bench-supported unilateral dumbbell row; one hand and same-side knee support bench. Source filename/metadata mislabelled two-arm bent-over row.",
+      "steps": [
+        "Stand with feet shoulder-width apart holding dumbbells.",
+        "Hinge at hips, keeping back flat and chest up.",
+        "Let arms hang straight down, palms facing each other.",
+        "Pull dumbbells to your sides, elbows close to body.",
+        "Lower the weights under control to starting position."
+      ],
+      "formCues": [
+        "Flat back",
+        "Lead with elbows",
+        "Engage core",
+        "Squeeze shoulder blades"
+      ],
+      "commonMistakes": [
+        "Rounding the back",
+        "Jerking the weights",
+        "Not fully extending arms",
+        "Using biceps too much"
+      ],
+      "breathing": "Exhale as you row up, inhale as you lower down.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-bent-over-row.mp4",
+      "sha256Source": "9fa938ae3be92d9fee84f6b9154f5402ed209a97f182685c375e4257144f2b71",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        512,
+        168,
+        808,
+        808
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "dumbbell-row-guide.mp4",
+          "sha256": "ba3de1908a23010c448378711ee7707bdcf77b263b76ef3854b5e465fdacd5b9",
+          "sourceSquarePixels": 906,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "dumbbell-row-thumb.mp4",
+          "sha256": "d73419c1377fdb95421be143832176a4b7c1b970f5c05e7bca02b35cfafe5604",
+          "sourceSquarePixels": 874,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-bent-over-row.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-bent-over-row.mp4",
+        "sha256Source": "2e33d744ddef3fdedc8acc367f09179c57547ea52a9e678ee95dd57bddebeb15",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.6,
+          "frames": 198,
+          "audio": false
+        },
+        "bbox": [
+          512,
+          144,
+          800,
+          856
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "dumbbell-row-f-guide.mp4",
+            "sha256": "b48110a0d45cac03b4494cb970aa9299e6d0e227fa8ed93984113daa2f44161e",
+            "sourceSquarePixels": 960,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          },
+          {
+            "file": "dumbbell-row-f-thumb.mp4",
+            "sha256": "00b86c5f71b8740fb7bd9323284e2d9f1f4a30ba253c91ccf7aa09d41205e842",
+            "sourceSquarePixels": 926,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "dumbbell-skullcrusher": {
+      "sourceId": "0351",
+      "sourceName": "Dumbbell Lying Triceps Extension",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-lying-triceps-extension.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Lie flat on a bench holding a dumbbell in each hand, and press the dumbbells above your chest with your palms facing each other.",
+        "Pull your shoulders down into the bench and straighten your wrists so the dumbbells stay stacked over your elbows.",
+        "Bend your elbows and lower the dumbbells toward the sides of your forehead while keeping your upper arms mostly still.",
+        "Stop when your elbows are fully bent and the dumbbells are close to your head.",
+        "Straighten your elbows to drive the dumbbells back to the start position above your chest.",
+        "Repeat each rep without letting your elbows flare wide."
+      ],
+      "formCues": [
+        "Keep elbows tucked",
+        "Upper arms stay still",
+        "Bend only at elbows",
+        "Stack wrists over elbows"
+      ],
+      "commonMistakes": [
+        "Elbows flare out wide as the dumbbells lower.",
+        "Upper arms drift backward or forward during the rep.",
+        "Dumbbells drop too low behind the head instead of beside the forehead.",
+        "Wrists bend back instead of staying straight."
+      ],
+      "breathing": "Inhale as you lower the dumbbells toward your forehead, and exhale as you extend your elbows to raise them back up.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-lying-triceps-extension.mp4",
+      "sha256Source": "55ef9582da5eeacbb0908dc6d7bd333176c881f7d2cb73a097260f012b059e78",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        568,
+        168,
+        816,
+        872
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "dumbbell-skullcrusher-guide.mp4",
+          "sha256": "c5bd53c01921ddf279c6ae82be2dc2a1f7d9850540a2a7d28219812e78185dd9",
+          "sourceSquarePixels": 978,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "dumbbell-skullcrusher-thumb.mp4",
+          "sha256": "c29ab33be9e3dc05880244cd98ac82df06f65a771ff68c42bace9330854ff9f2",
+          "sourceSquarePixels": 942,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-lying-triceps-extension.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-lying-triceps-extension.mp4",
+        "sha256Source": "5ca69a40529c9d75c3c0bed9cdb44f6d4464891fdf781b51b4fc98d7f4b72ac7",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          528,
+          80,
+          800,
+          944
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "dumbbell-skullcrusher-f-guide.mp4",
+            "sha256": "080d5627002fe0568d3326e2040a6eb6ee6a7d9eab481ae232ec93851499fefd",
+            "sourceSquarePixels": 1058,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "dumbbell-skullcrusher-f-thumb.mp4",
+            "sha256": "e4e929ccb9ea7a736710aedfdcafe18c8724447aaad5b5e16d0c45bf02848aa4",
+            "sourceSquarePixels": 1020,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566016,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "ez-curl": {
+      "sourceId": "2407",
+      "sourceName": "EZ Bar Biceps Curl",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/ez-barbell-biceps-curl.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Grip the EZ bar at angled sections, palms facing up.",
+        "Stand tall with arms fully extended and elbows anchored.",
+        "Curl the bar upward, contracting the biceps.",
+        "Pause and squeeze at the top.",
+        "Lower the bar down slowly."
+      ],
+      "formCues": [
+        "Keep elbows stationary",
+        "Use full range of motion",
+        "Don't swing the bar",
+        "Control tempo"
+      ],
+      "commonMistakes": [
+        "Using momentum",
+        "Letting elbows move forward",
+        "Partial reps"
+      ],
+      "breathing": "Exhale as you lift, inhale lowering the bar.",
+      "sourcePath": "third_party/zenith-video/raw/ez-barbell-biceps-curl.mp4",
+      "sha256Source": "f7e09044f3f0d71a26170c54d417831e6e4da8896baa584a2154b6e82539a52e",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.6066,
+        "frames": 198,
+        "audio": false
+      },
+      "bbox": [
+        824,
+        64,
+        504,
+        944
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "ez-curl-guide.mp4",
+          "sha256": "f2bb008433a1db54e2e84b829ed71c994a1b7a2aba46ced0b9880cc28b05519b",
+          "sourceSquarePixels": 1058,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.6066,
+            "frames": 198,
+            "audio": false
+          }
+        },
+        {
+          "file": "ez-curl-thumb.mp4",
+          "sha256": "79ba6d32cb73393cd697b577b542d2501c79147f8702dadf22f4009f5340551c",
+          "sourceSquarePixels": 1020,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.6066,
+            "frames": 198,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/ez-barbell-biceps-curl.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/ez-barbell-biceps-curl.mp4",
+        "sha256Source": "2c750fd3679330662e43d89f47f825857907cbd3e08bafff7db786d837f5e773",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          656,
+          72,
+          648,
+          968
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "ez-curl-f-guide.mp4",
+            "sha256": "c48ff84098685315d6aa7ec41449b3e59b7cff5778048a64ae8e3572c52e6f9a",
+            "sourceSquarePixels": 1086,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "ez-curl-f-thumb.mp4",
+            "sha256": "94a5526ce05cd7918c3b1eb1c69ce994d2deaeee7a39d6503429bb2ef64cce8f",
+            "sourceSquarePixels": 1046,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "dumbbell-curl": {
+      "sourceId": "0294",
+      "sourceName": "Dumbbell Biceps Curl",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-biceps-curl.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Stand tall with a dumbbell in each hand, arms at your sides, and palms facing forward.",
+        "Brace your torso and keep your elbows close to your ribs.",
+        "Curl both dumbbells up toward your shoulders without letting your upper arms swing forward.",
+        "Pause briefly at the top and squeeze your biceps.",
+        "Lower the dumbbells back down under control until your arms are straight."
+      ],
+      "formCues": [
+        "Elbows pinned to sides",
+        "Curl, don't swing",
+        "Squeeze at the top",
+        "Lower with control"
+      ],
+      "commonMistakes": [
+        "Swinging the torso to start the curl",
+        "Letting the elbows drift forward as the weights rise",
+        "Using partial range and not lowering fully",
+        "Bending the wrists back instead of keeping them neutral"
+      ],
+      "breathing": "Exhale as you curl the dumbbells up, and inhale as you lower them back down.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-biceps-curl.mp4",
+      "sha256Source": "a0b63b72251ff8ee8bad80e274ca90481f00503a0f245c9013ea8351d4a70378",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        864,
+        96,
+        456,
+        952
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "dumbbell-curl-guide.mp4",
+          "sha256": "8ebe241d04510ef37f613191505a48d9c8c13f23f21ecc9adf76ffe700e2a645",
+          "sourceSquarePixels": 1068,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "dumbbell-curl-thumb.mp4",
+          "sha256": "a0458eef8f2f9c42844e33d8639c9546e1c4a70f14d4aa1daaee9ce1fb1d8d26",
+          "sourceSquarePixels": 1030,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-biceps-curl.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-biceps-curl.mp4",
+        "sha256Source": "53171e5b9ab6286ac4e1651ac5af5c2c4b58b407beb08b857024c49ddf40bd41",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          864,
+          112,
+          360,
+          920
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "dumbbell-curl-f-guide.mp4",
+            "sha256": "5a756c0e11126965e3f9da2720eee7973564cb8308fb41552958bd229b675226",
+            "sourceSquarePixels": 1032,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "dumbbell-curl-f-thumb.mp4",
+            "sha256": "7486bd76bf4284bb169937499b29426e0367ca30a546df294234cc00b85afa43",
+            "sourceSquarePixels": 994,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "dumbbell-shrug": {
+      "sourceId": "0406",
+      "sourceName": "Dumbbell Shrug",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-shrug.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Stand tall with a dumbbell in each hand at your sides and your feet about hip-width apart.",
+        "Let your arms hang straight with your palms facing your body.",
+        "Lift your shoulders straight up toward your ears without bending your elbows.",
+        "Pause briefly at the top while keeping your torso still.",
+        "Lower your shoulders back down under control to the start position and repeat."
+      ],
+      "formCues": [
+        "Shoulders straight up",
+        "Arms stay long",
+        "Neck relaxed",
+        "Control the lowering"
+      ],
+      "commonMistakes": [
+        "Rolling the shoulders in circles instead of lifting straight up and down.",
+        "Bending the elbows and turning the move into an upright row.",
+        "Leaning the torso back or forward to swing the dumbbells.",
+        "Jutting the head forward as the shoulders rise."
+      ],
+      "breathing": "Exhale as you shrug your shoulders up, and inhale as you lower them back down.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-shrug.mp4",
+      "sha256Source": "79167df756f3a09febe2786c71df09b55d9d94f948a05ff71ae55578202746d0",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        760,
+        104,
+        392,
+        944
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "dumbbell-shrug-guide.mp4",
+          "sha256": "89fda3d454a5b5f54e285aa2cf3bc7a112659ccef727b567aa8879e466dec632",
+          "sourceSquarePixels": 1058,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "dumbbell-shrug-thumb.mp4",
+          "sha256": "3c2e8a8e0ca9ca3fd68365498686b7ebe312d86137dbc75ba89258fa3f691ab4",
+          "sourceSquarePixels": 1020,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-shrug.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-shrug.mp4",
+        "sha256Source": "4970b00eb77f90ac0f4c153a8883b9d174399b5a1c413e9b96c1561304907212",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          800,
+          128,
+          304,
+          888
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "dumbbell-shrug-f-guide.mp4",
+            "sha256": "ed8b5bdca31ede1d4d358ad3f386cae9872ca71404cca85a786933804afc0db4",
+            "sourceSquarePixels": 996,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "dumbbell-shrug-f-thumb.mp4",
+            "sha256": "7ae81ce0d4defd7ca979c973350ea766612e8c5d56483a6d2ff45a260345b41c",
+            "sourceSquarePixels": 960,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "incline-dumbbell-curl": {
+      "sourceId": "0322",
+      "sourceName": "Dumbbell Incline Biceps Curl",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-incline-biceps-curl.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Set the bench to a 45-60 degree incline and sit back with a dumbbell in each hand.",
+        "Let your arms hang fully extended at your sides, elbows near your body.",
+        "Curl the dumbbells up by flexing your elbows, keeping upper arms stationary.",
+        "Pause and squeeze your biceps at the top of the movement.",
+        "Lower the weights under control to the starting position."
+      ],
+      "formCues": [
+        "Keep elbows still",
+        "Let arms fully extend",
+        "Do not swing weights",
+        "Squeeze at the top"
+      ],
+      "commonMistakes": [
+        "Swinging arms for momentum",
+        "Elbows drifting forward",
+        "Partial range of motion"
+      ],
+      "breathing": "Exhale as you curl up, inhale as you lower down.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-incline-biceps-curl.mp4",
+      "sha256Source": "9c1fc8a007caf17173d3ecdabd21484a2d361bf270ccf85d82d65144c0aa6fec",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        624,
+        128,
+        680,
+        888
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "incline-dumbbell-curl-guide.mp4",
+          "sha256": "473cf03527dd8920d8a051805963640a93c491b2c2ca3521e63561b69f596628",
+          "sourceSquarePixels": 996,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "incline-dumbbell-curl-thumb.mp4",
+          "sha256": "070db0a559593f621dbd79ce7d5c797a29b4ad4e14f007119b847f51b7551049",
+          "sourceSquarePixels": 960,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-incline-biceps-curl.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-incline-biceps-curl.mp4",
+        "sha256Source": "48ab58bdbcdb3fd49853a3b11e7bb12aa29552283ebd616426be7bbd41f9adeb",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          624,
+          120,
+          672,
+          912
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "incline-dumbbell-curl-f-guide.mp4",
+            "sha256": "38dcf4d7f2c331b657b2a5a46fc54d9567bf7b516a446d64b988930bb4a7cf6b",
+            "sourceSquarePixels": 1022,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "incline-dumbbell-curl-f-thumb.mp4",
+            "sha256": "d086f75b9d857817c37ea0e0b1c766f90db743fb52727666dc0527fc04473ac6",
+            "sourceSquarePixels": 986,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "dumbbell-lateral-raise": {
+      "sourceId": "0334",
+      "sourceName": "Dumbbell Lateral Raise",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-lateral-raise.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Stand tall with a dumbbell in each hand at your sides, palms facing in.",
+        "Set your shoulders down and brace your midsection.",
+        "Raise both arms out to the sides until your hands reach about shoulder height, keeping a soft bend in your elbows.",
+        "Pause briefly at the top without shrugging your shoulders.",
+        "Lower the dumbbells back to your sides with control."
+      ],
+      "formCues": [
+        "Lead with your elbows",
+        "Stop at shoulder height",
+        "Keep shoulders down",
+        "Soft bend in elbows"
+      ],
+      "commonMistakes": [
+        "Shrugging the shoulders up toward the ears",
+        "Swinging the torso to heave the dumbbells upward",
+        "Lifting the hands well above shoulder height",
+        "Straightening the elbows and turning it into a front swing"
+      ],
+      "breathing": "Exhale as you raise the dumbbells to the sides, and inhale as you lower them back down under control.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-lateral-raise.mp4",
+      "sha256Source": "83a2e1a45c0ab7bf168072ae5e129abb9e0e6324578cc06abe77e07b3408115b",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        624,
+        104,
+        728,
+        928
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "dumbbell-lateral-raise-guide.mp4",
+          "sha256": "5fc887787253f5ddde3fc31d304b4fd501a0a3e5f2a2e77af422b6bdde462a83",
+          "sourceSquarePixels": 1040,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "dumbbell-lateral-raise-thumb.mp4",
+          "sha256": "703122d252f94ec5edacefd6b8aec7d993aaecbd2a4c5b3ecf1ec96273fb6197",
+          "sourceSquarePixels": 1004,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-lateral-raise.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-lateral-raise.mp4",
+        "sha256Source": "71139893d68f7c8692dbc9d9563e1c999ba992e407f66674c59892842cbc2a9f",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.566667,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          640,
+          136,
+          664,
+          904
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "dumbbell-lateral-raise-f-guide.mp4",
+            "sha256": "df86fee814cc88e34dd733139105aa2a96fb13294e6ac7b959522135476404f8",
+            "sourceSquarePixels": 1014,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "dumbbell-lateral-raise-f-thumb.mp4",
+            "sha256": "0be3ec3f86d6bec235628416bfe9ace803c5bd0bb088928b834ae93e594062f6",
+            "sourceSquarePixels": 978,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.566667,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "goblet-squat": {
+      "sourceId": "1760",
+      "sourceName": "Dumbbell Goblet Squat",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-goblet-squat.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Stand tall with your feet about shoulder-width apart and hold one dumbbell vertically at your chest with both hands.",
+        "Brace your midsection and keep your elbows pointed down close to your body.",
+        "Sit your hips down and back while bending your knees, and lower until your thighs are parallel to the floor or slightly lower.",
+        "Keep the dumbbell tight to your chest and your feet flat as your knees track over your toes.",
+        "Drive through your whole foot to stand back up until your hips and knees are fully extended.",
+        "Reset your stance and repeat the next rep."
+      ],
+      "formCues": [
+        "Chest up",
+        "Keep heels down",
+        "Knees track over toes",
+        "Hold the bell close"
+      ],
+      "commonMistakes": [
+        "Letting the dumbbell drift away from the chest",
+        "Heels lifting off the floor at the bottom",
+        "Knees collapsing inward during the squat",
+        "Folding the chest forward instead of staying upright"
+      ],
+      "breathing": "Inhale as you lower into the squat, and exhale as you stand back up.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-goblet-squat.mp4",
+      "sha256Source": "6630a8b65dccb8d08a5fed9cb3e4da69132e55a62e138fa29c8ff9a51e1069ce",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 6.6,
+        "frames": 198,
+        "audio": false
+      },
+      "bbox": [
+        760,
+        64,
+        416,
+        952
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "goblet-squat-guide.mp4",
+          "sha256": "dc3a822cb75992f8c9de32abc458bb277843f04ec248918476adf96824ff12a0",
+          "sourceSquarePixels": 1068,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30/1",
+            "duration": 6.6,
+            "frames": 198,
+            "audio": false
+          }
+        },
+        {
+          "file": "goblet-squat-thumb.mp4",
+          "sha256": "4073132357804c9585127b434278fad18d8d963b0d9c92910366c876eaafca69",
+          "sourceSquarePixels": 1030,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30/1",
+            "duration": 6.6,
+            "frames": 198,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-goblet-squat.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-goblet-squat.mp4",
+        "sha256Source": "21c34c5106e51ed764093a6e871953f862b8ab1b96133d6928c4b6227f1364e7",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "2997/100",
+          "duration": 6.57324,
+          "frames": 197,
+          "audio": false
+        },
+        "bbox": [
+          784,
+          96,
+          368,
+          952
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "goblet-squat-f-guide.mp4",
+            "sha256": "ef88c79fdbc84a44657b5725433592e53772d73ebdcf179774255f0960bac83a",
+            "sourceSquarePixels": 1068,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "2997/100",
+              "duration": 6.57324,
+              "frames": 197,
+              "audio": false
+            }
+          },
+          {
+            "file": "goblet-squat-f-thumb.mp4",
+            "sha256": "fb44423edc45bda24638b7b64e3df9f717824387a92bc8c969eb4324632399cb",
+            "sourceSquarePixels": 1030,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "2997/100",
+              "duration": 6.57324,
+              "frames": 197,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "discovery-crunch": {
+      "sourceId": "0274",
+      "sourceName": "Floor Crunch",
+      "model": "female",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/crunch-floor-female.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Lie on your back with knees bent and feet hip-width apart.",
+        "Place hands lightly behind head or cross over chest.",
+        "Engage core and lift shoulders off the floor.",
+        "Pause briefly at the top of the movement.",
+        "Slowly return to the starting position."
+      ],
+      "formCues": [
+        "Keep chin off chest",
+        "Lower back pressed to floor",
+        "Controlled movement",
+        "Exhale on crunch"
+      ],
+      "commonMistakes": [
+        "Pulling on neck",
+        "Not engaging core",
+        "Using momentum",
+        "Not breathing properly"
+      ],
+      "breathing": "Exhale as you crunch up, inhale as you lower down.",
+      "sourcePath": "third_party/zenith-video/raw/crunch-floor-female.mp4",
+      "sha256Source": "61c58f7aee77e000d6a6d54060c3a11d3d9c91bcb23610a102181f148dec171d",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 5.233333,
+        "frames": 157,
+        "audio": false
+      },
+      "bbox": [
+        280,
+        336,
+        1304,
+        536
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "discovery-crunch-guide.mp4",
+          "sha256": "f4f238a74a3a6c9a28f3149fa662695b772ed1f4c07551f24aa1d8a2c9cd1be5",
+          "sourceSquarePixels": 1462,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30/1",
+            "duration": 5.233333,
+            "frames": 157,
+            "audio": false
+          }
+        },
+        {
+          "file": "discovery-crunch-thumb.mp4",
+          "sha256": "d6d71eee3e0516758a95a62a07f861744e70ed13807cea7f0b3a402a5c02b5bc",
+          "sourceSquarePixels": 1410,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30/1",
+            "duration": 5.233333,
+            "frames": 157,
+            "audio": false
+          }
+        }
+      ]
+    },
+    "discovery-pushup": {
+      "sourceId": "drv-push-ups",
+      "sourceName": "Push-Up",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/push-ups.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Begin in a plank with hands under shoulders.",
+        "Engage core and glutes.",
+        "Lower chest toward floor, elbows at 45 degrees.",
+        "Pause briefly when close to ground.",
+        "Press back up to plank position."
+      ],
+      "formCues": [
+        "Keep body straight",
+        "Engage core",
+        "Elbows 45 degrees",
+        "Lower under control"
+      ],
+      "commonMistakes": [
+        "Letting hips sag",
+        "Flaring elbows too wide",
+        "Incomplete range of motion"
+      ],
+      "breathing": "Inhale as you lower, exhale as you push up.",
+      "sourcePath": "third_party/zenith-video/raw/push-ups.mp4",
+      "sha256Source": "957dc6f62aa47fa550aff7cfabdf1e5390a4a232e94bdbfb71c8aa81cbe12490",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "2997/100",
+        "duration": 6.57324,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        448,
+        264,
+        976,
+        704
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "discovery-pushup-guide.mp4",
+          "sha256": "bbd1ecbd0a47bfb31e2a431fe44155ae92b6f5a31a4f3e41baf5873680e8f23a",
+          "sourceSquarePixels": 1094,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "2997/100",
+            "duration": 6.57324,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "discovery-pushup-thumb.mp4",
+          "sha256": "e6e04eeb4a0acef99e2d8bf3498c9e3b103d7720dd3d825ffccf1b498484fd4d",
+          "sourceSquarePixels": 1056,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "2997/100",
+            "duration": 6.57324,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/push-ups.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/push-ups.mp4",
+        "sha256Source": "e810e7c088db05ba92b66faf62e3b7a741b94c0d2acd5583c2b4e2486910e24e",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.6,
+          "frames": 198,
+          "audio": false
+        },
+        "bbox": [
+          496,
+          216,
+          888,
+          784
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "discovery-pushup-f-guide.mp4",
+            "sha256": "bc3a224e31ebb5d565f66d1e976b25786b78a57186f27ec5943752e6912c6057",
+            "sourceSquarePixels": 996,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          },
+          {
+            "file": "discovery-pushup-f-thumb.mp4",
+            "sha256": "a748f8224786e3557e68f9df841ae54042e6cf0d302f88a926d66c387840d7d3",
+            "sourceSquarePixels": 960,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "discovery-wristcurl": {
+      "sourceId": "0369",
+      "sourceName": "Dumbbell Over Bench Wrist Curl",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-over-bench-wrist-curl.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Sit at a bench and place your forearms on top with your palms facing up.",
+        "Hold a dumbbell in each hand and slide forward until your wrists hang just past the bench edge.",
+        "Let your hands lower to gently stretch your wrists at the bottom.",
+        "Curl your wrists up by lifting your knuckles toward your forearms.",
+        "Squeeze your forearms briefly at the top.",
+        "Lower the dumbbells back down under control until your wrists extend again."
+      ],
+      "formCues": [
+        "Move only your wrists",
+        "Forearms stay glued down",
+        "Curl through full range",
+        "Lower slowly"
+      ],
+      "commonMistakes": [
+        "Lifting the forearms off the bench during the curl.",
+        "Swinging the dumbbells instead of moving only the wrists.",
+        "Using partial range and stopping before the wrists fully lower.",
+        "Bending the elbows to help raise the weight."
+      ],
+      "breathing": "Inhale as you lower your wrists and exhale as you curl them up.",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-over-bench-wrist-curl.mp4",
+      "sha256Source": "acbf4b45d0bce5c8f9907b10e378450934d35afa68760ba1ae7cbbb13571d2df",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "duration": 6.6,
+        "frames": 198,
+        "audio": false
+      },
+      "bbox": [
+        424,
+        144,
+        880,
+        872
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "discovery-wristcurl-guide.mp4",
+          "sha256": "23be1832c79d08c6ab11c83eebf2341602971868ad304b3fadc3ccc8ce734935",
+          "sourceSquarePixels": 986,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30/1",
+            "duration": 6.6,
+            "frames": 198,
+            "audio": false
+          }
+        },
+        {
+          "file": "discovery-wristcurl-thumb.mp4",
+          "sha256": "178fb01f29873e4426b1757208cfd2f517694e29b6eb33d08c941f889408671a",
+          "sourceSquarePixels": 952,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30/1",
+            "duration": 6.6,
+            "frames": 198,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/dumbbell-over-bench-wrist-curl.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/dumbbell-over-bench-wrist-curl.mp4",
+        "sha256Source": "298e16c64c51b04db05684320b70efc601366ebf064b1156c1e896b65f525048",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.6,
+          "frames": 198,
+          "audio": false
+        },
+        "bbox": [
+          544,
+          112,
+          816,
+          936
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "discovery-wristcurl-f-guide.mp4",
+            "sha256": "751471339e6997bb2f81a92066c0de722f8b5fdbb3819cfd1a07148c429ea517",
+            "sourceSquarePixels": 1050,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          },
+          {
+            "file": "discovery-wristcurl-f-thumb.mp4",
+            "sha256": "e62792e33ca6fddc6d687b49aac0fcb858b93ad567d8471a5ed16e0f0f11437a",
+            "sourceSquarePixels": 1012,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          }
+        ]
+      }
+    },
+    "discovery-bodysquat": {
+      "sourceId": "drv-squat",
+      "sourceName": "Squat",
+      "model": "male",
+      "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/squat.mp4",
+      "visualIdentity": "Three source timestamps reviewed for exercise, equipment and body position.",
+      "steps": [
+        "Stand with feet shoulder-width apart and toes slightly outward.",
+        "Brace core and keep chest up.",
+        "Initiate movement by pushing hips back and bending knees.",
+        "Descend until thighs are at least parallel to the floor.",
+        "Push through heels to return to standing."
+      ],
+      "formCues": [
+        "Keep knees tracking toes",
+        "Maintain neutral spine",
+        "Weight on midfoot/heels",
+        "Chest up"
+      ],
+      "commonMistakes": [
+        "Letting knees collapse inward",
+        "Rounding lower back",
+        "Not reaching parallel depth"
+      ],
+      "breathing": "Inhale as you lower down, exhale as you stand up.",
+      "sourcePath": "third_party/zenith-video/raw/squat.mp4",
+      "sha256Source": "24cc1798f059e0e03ab0c483612387c15cba9b5d63ffd3ad28209ca9e4217840",
+      "sourceProbe": {
+        "width": 1920,
+        "height": 1080,
+        "fps": "30000/1001",
+        "duration": 6.573233,
+        "frames": 197,
+        "audio": false
+      },
+      "bbox": [
+        872,
+        120,
+        464,
+        936
+      ],
+      "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+      "outputs": [
+        {
+          "file": "discovery-bodysquat-guide.mp4",
+          "sha256": "4659d1e97647903c063545ad504ea28407b6d9b634b6b9c5296a64a2a1b4018a",
+          "sourceSquarePixels": 1050,
+          "outputPixels": [
+            720,
+            720
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 720,
+            "height": 720,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        },
+        {
+          "file": "discovery-bodysquat-thumb.mp4",
+          "sha256": "e926507d70a0b50689cdf93992cdde769e57f66cb6f02e727145be4756983044",
+          "sourceSquarePixels": 1012,
+          "outputPixels": [
+            240,
+            240
+          ],
+          "spatialUpscale": false,
+          "probe": {
+            "width": 240,
+            "height": 240,
+            "fps": "30000/1001",
+            "duration": 6.573233,
+            "frames": 197,
+            "audio": false
+          }
+        }
+      ],
+      "female": {
+        "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/squat.mp4",
+        "sourcePath": "third_party/zenith-video/raw-female/squat.mp4",
+        "sha256Source": "d3f2a202ecf0d7c24822c3c2c298df82a6bc1f909e9078618254cdfda0c12363",
+        "sourceProbe": {
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "duration": 6.6,
+          "frames": 198,
+          "audio": false
+        },
+        "bbox": [
+          752,
+          120,
+          488,
+          832
+        ],
+        "bboxMethod": "cumulative cropdetect over all decoded frames at480x270; white background threshold22; padding8/12percent",
+        "outputs": [
+          {
+            "file": "discovery-bodysquat-f-guide.mp4",
+            "sha256": "87d29c0bf5a5512664dfae5f49afd5986cb4f2606608540ca456134e01400731",
+            "sourceSquarePixels": 932,
+            "outputPixels": [
+              720,
+              720
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 720,
+              "height": 720,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          },
+          {
+            "file": "discovery-bodysquat-f-thumb.mp4",
+            "sha256": "55466cf7cf571e708ffdb055d36b9fdc3211c5b7308a29f7a05372ae6dd6aabf",
+            "sourceSquarePixels": 900,
+            "outputPixels": [
+              240,
+              240
+            ],
+            "spatialUpscale": false,
+            "probe": {
+              "width": 240,
+              "height": 240,
+              "fps": "30/1",
+              "duration": 6.6,
+              "frames": 198,
+              "audio": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}

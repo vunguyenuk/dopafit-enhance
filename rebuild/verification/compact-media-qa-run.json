@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "bundle": "com.local.dopafit.compactqa",
+  "isolation": "Compiled app copy with separate bundle identifier, ad hoc signing and separate data container",
+  "flows": [
+    "QA start only",
+    "FinishSheet solid background/disabledSave0sets/HealthOff C169",
+    "Continue returns to Active without save",
+    "Incline setentry fullwidth ExerciseDB clip C170, close without logging"
+  ],
+  "completedSets": 0,
+  "history": 0,
+  "cleanupVerified": true,
+  "mainBundle": "com.local.dopafit.rebuild",
+  "mainMutation": "None"
+}

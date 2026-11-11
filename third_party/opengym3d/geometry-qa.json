@@ -1,0 +1,90 @@
+[
+  {
+    "id": "muscular_body",
+    "sha256": "f0238d53971ae0af1d8cadf16bb471abe94dcf3d8378683330e2d933e728f2b9",
+    "framesChecked": 1,
+    "vertices": 17515,
+    "maxEdgeMeters": 0.08200483068781024,
+    "lowestBodyZMeters": -3.65329015039606e-07,
+    "maxFootDriftMeters": 0,
+    "maxGripDistanceMeters": 0,
+    "gripReference": "MCP palm center +12mm palm normal; wrist tail is not grip center",
+    "maxFingertipToHandleAxisMeters": 0,
+    "loopSeamMeters": 0.0,
+    "maxFrameStepMeters": 0,
+    "props": 0,
+    "meshObjects": [
+      "OpenGymMuscularHuman",
+      "Icosphere"
+    ],
+    "failures": [],
+    "pass": true
+  },
+  {
+    "id": "bicep_curl",
+    "sha256": "34af136331b2ddc64fe6d67a7e1d0d31a3856afb146ae3ca9857e5b5f097d1ef",
+    "framesChecked": 63,
+    "vertices": 17515,
+    "maxEdgeMeters": 0.08236779809305478,
+    "lowestBodyZMeters": -0.011126052588224411,
+    "maxFootDriftMeters": 0,
+    "maxGripDistanceMeters": 3.670293939556208e-06,
+    "gripReference": "MCP palm center +12mm palm normal; wrist tail is not grip center",
+    "maxFingertipToHandleAxisMeters": 0.03781011632694497,
+    "loopSeamMeters": 0.0028475141389962925,
+    "maxFrameStepMeters": 0.06347169765871853,
+    "props": 2,
+    "meshObjects": [
+      "OpenGymMuscularHuman",
+      "Dumbbell.L",
+      "Dumbbell.R",
+      "Icosphere"
+    ],
+    "failures": [],
+    "pass": true
+  },
+  {
+    "id": "romanian_deadlift",
+    "sha256": "94b8c6d312822a95da93b52e40121a43f7b1ea89b0d6190e001f75f253b777c7",
+    "framesChecked": 77,
+    "vertices": 17515,
+    "maxEdgeMeters": 0.08236788448461774,
+    "lowestBodyZMeters": -0.011132009327411652,
+    "maxFootDriftMeters": 5.671046079476606e-06,
+    "maxGripDistanceMeters": 0.0010438505333466666,
+    "gripReference": "MCP palm center +12mm palm normal; wrist tail is not grip center",
+    "maxFingertipToHandleAxisMeters": 0.03848629752077804,
+    "loopSeamMeters": 0.002364910621294643,
+    "maxFrameStepMeters": 0.025149325793373593,
+    "props": 1,
+    "meshObjects": [
+      "OpenGymMuscularHuman",
+      "Barbell",
+      "Icosphere"
+    ],
+    "failures": [],
+    "pass": true
+  },
+  {
+    "id": "good_morning",
+    "sha256": "a01850b0135afb7ebd477911647cb8a6095aec1d1e9486ea119dbdf058423af8",
+    "framesChecked": 73,
+    "vertices": 17515,
+    "maxEdgeMeters": 0.08609212283380173,
+    "lowestBodyZMeters": -0.011132283136248589,
+    "maxFootDriftMeters": 5.1843451183308376e-06,
+    "maxGripDistanceMeters": 4.947894400937458e-06,
+    "gripReference": "MCP palm center +12mm palm normal; wrist tail is not grip center",
+    "maxFingertipToHandleAxisMeters": 0.03788287021993232,
+    "loopSeamMeters": 0.002274101432346354,
+    "maxFrameStepMeters": 0.02572786324600435,
+    "props": 1,
+    "meshObjects": [
+      "OpenGymMuscularHuman",
+      "Barbell",
+      "Icosphere"
+    ],
+    "failures": [],
+    "pass": true
+  }
+]

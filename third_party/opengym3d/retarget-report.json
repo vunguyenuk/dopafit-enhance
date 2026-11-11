@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bicep_curl",
+    "frames": [
+      0,
+      62
+    ],
+    "bones": 163,
+    "translations": "new skeleton except scaled root",
+    "finiteTransforms": true
+  },
+  {
+    "id": "romanian_deadlift",
+    "frames": [
+      0,
+      76
+    ],
+    "bones": 163,
+    "translations": "new skeleton except scaled root",
+    "finiteTransforms": true
+  },
+  {
+    "id": "good_morning",
+    "frames": [
+      0,
+      72
+    ],
+    "bones": 163,
+    "translations": "new skeleton except scaled root",
+    "finiteTransforms": true
+  }
+]

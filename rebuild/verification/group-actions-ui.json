@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-10",
+  "originalEvidence": [
+    "R77",
+    "R78",
+    "R79",
+    "R81",
+    "R82"
+  ],
+  "simulatorEvidence": [
+    "C49",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C54"
+  ],
+  "observedUI": [
+    "Save group of3+4sets shows4rounds",
+    "group menu contains3actions",
+    "Log confirmation Cancel leaves completed sets unchanged",
+    "Duplicate adds2unlogged exercises with a new group",
+    "Log duplicate group marks3+4sets complete",
+    "Detach keeps logged sets/order",
+    "Remove both temporary duplicate exercises, detach initial group"
+  ],
+  "cleanup": {
+    "draftExerciseCount": 7,
+    "completedSets": 6,
+    "historyCount": 2,
+    "groups": 0,
+    "temporaryCurlRemoved": true
+  },
+  "parityCaveat": "Original duplicate/log actions were not executed; confirmation, insertion and completion reset rules remain local. Original detach/order and max-round label observed. Circuit round execution still incomplete."
+}

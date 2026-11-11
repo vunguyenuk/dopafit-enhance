@@ -1,0 +1,134 @@
+import SwiftUI
+
+struct WorkoutWeekCalendar:View {
+    @EnvironmentObject var store:AppStore
+    @Binding var selected:Date
+    private var calendar:Calendar {WorkoutCalendarLogic.calendar()}
+    private var days:[Date] {WorkoutCalendarLogic.week(containing:selected)}
+    private var trained:Set<Date> {WorkoutCalendarLogic.trainingDays(store.data.history,in:days)}
+    private var label:String {let f=DateFormatter();f.locale=Locale(identifier:store.english ? "en_US":"vi_VN");f.dateFormat="EEEE, d MMMM";return f.string(from:selected).prefix(1).uppercased()+f.string(from:selected).dropFirst()}
+    var body:some View {
+        VStack(alignment:.leading,spacing:8){
+            HStack(spacing:4){
+                VStack(alignment:.leading,spacing:4){
+                    HStack(spacing:6){Text(store.t("Tuần này","This week")).font(.system(size:15,weight:.semibold));Text("\(trained.count)/\(max(1,store.data.plan.days)) "+store.t("ngày tập","training days")).font(.system(size:15,weight:.semibold)).foregroundStyle(Dopa.lime)}
+                    Button{selected=Date()}label:{HStack(spacing:4){Text(label);if !calendar.isDateInToday(selected){Image(systemName:"arrow.uturn.backward").font(.system(size:10))}}}.font(.system(size:12)).foregroundStyle(Dopa.muted).frame(minHeight:24,alignment:.leading).contentShape(Rectangle()).accessibilityLabel(label+", "+store.t("Về hôm nay","Back to today"))
+                }.frame(maxWidth:.infinity,alignment:.leading)
+                Button{shift(-7)}label:{Image(systemName:"chevron.left").frame(width:44,height:44)}.accessibilityLabel(store.t("Tuần trước","Previous week"))
+                Button{shift(7)}label:{Image(systemName:"chevron.right").frame(width:44,height:44)}.accessibilityLabel(store.t("Tuần sau","Next week"))
+            }.foregroundStyle(Dopa.muted)
+            HStack(spacing:2){
+                ForEach(days,id:\.self){date in
+                    let on=calendar.isDate(date,inSameDayAs:selected),today=calendar.isDateInToday(date),done=trained.contains(calendar.startOfDay(for:date))
+                    Button{selected=date}label:{
+                        VStack(spacing:4){
+                            Text((store.english ? ["Su","Mo","Tu","We","Th","Fr","Sa"]:["CN","T2","T3","T4","T5","T6","T7"])[calendar.component(.weekday,from:date)-1]).font(.system(size:11,weight:.medium)).foregroundStyle(Dopa.muted)
+                            Text("\(calendar.component(.day,from:date))").font(.system(size:18,weight:.semibold)).foregroundStyle(on ? .black:.white).frame(width:36,height:36).background(on ? Dopa.lime:Color.clear).clipShape(Circle()).overlay(Circle().stroke(today && !on ? Dopa.lime:Color.clear,lineWidth:1))
+                            Circle().fill(done ? Dopa.lime:Color.clear).frame(width:3,height:3)
+                        }.frame(maxWidth:.infinity).frame(minHeight:56).contentShape(Rectangle())
+                    }.buttonStyle(.plain).accessibilityLabel(date.formatted(date:.complete,time:.omitted)+(done ? store.t(", đã tập",", trained"):"")+(today ? store.t(", hôm nay",", today"):"")).accessibilityAddTraits(on ? .isSelected:[]).accessibilityRemoveTraits(on ? []:.isSelected)
+                }
+            }
+        }.padding(.horizontal,12).padding(.vertical,8).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+    }
+    func shift(_ count:Int){selected=calendar.date(byAdding:.day,value:count,to:selected) ?? selected}
+}
+struct WorkoutSuggestions:View {
+    @EnvironmentObject var store:AppStore
+    var onChoose:(String)->Void
+    var body:some View {
+        VStack(alignment:.leading,spacing:12){
+            HStack{Text(store.t("Nhóm cơ gợi ý","Suggested muscles")).font(.system(size:20,weight:.semibold));Spacer()}
+            Text(store.t("Khám phá thêm bài theo nhóm cơ.","Explore more exercises by muscle group.")).font(.system(size:13)).foregroundStyle(Dopa.muted)
+            ScrollView(.horizontal,showsIndicators:false){HStack(spacing:12){ForEach(store.suggestedMuscles,id:\.self){muscle in
+                Button{onChoose(muscle)}label:{
+                    VStack(spacing:8){MuscleGlyph(muscle:muscle).frame(width:72,height:66);Text(muscle).font(.system(size:13,weight:.medium)).foregroundStyle(.white)}.padding(10).frame(width:96).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:12))
+                }.buttonStyle(.plain).accessibilityLabel("Tìm bài cho "+muscle)
+            }}}
+            if store.suggestedMuscles.isEmpty{Text("Các nhóm cơ đã tập gần đây. Bạn vẫn có thể tìm bài trong thư viện.").font(.system(size:14)).foregroundStyle(Dopa.muted)}
+        }.padding(.top,8)
+    }
+}
+struct WorkoutChallengeShelf:View {
+    @EnvironmentObject var store:AppStore
+    @State private var selected:WorkoutChallenge?=nil
+    var onBrowse:(String?)->Void
+    var body:some View {
+        VStack(alignment:.leading,spacing:14){
+            Text(store.t("Thử thách","Challenges")).font(.system(size:20,weight:.semibold))
+            ScrollView(.horizontal,showsIndicators:false){HStack(spacing:14){ForEach(WorkoutChallenge.all){challenge in
+                Button{selected=challenge}label:{card(challenge)}.buttonStyle(.plain)
+            }}.scrollTargetLayout()}.scrollTargetBehavior(.viewAligned)
+        }.padding(.top,8).sheet(item:$selected){challenge in ChallengeDetail(challenge:challenge,onBrowse:onBrowse).environmentObject(store)}
+    }
+    func card(_ challenge:WorkoutChallenge)->some View {
+        let enrollment=store.activeEnrollment(challenge.id)
+        let count=enrollment.map{WorkoutCalendarLogic.progress(challenge,enrollment:$0,history:store.data.history).count} ?? 0
+        return VStack(alignment:.leading,spacing:0){
+            ChallengePhoto(challengeID:challenge.id).frame(width:260,height:164)
+                .overlay(alignment:.topLeading){Text("\(challenge.days) ngày").font(.system(size:12,weight:.semibold)).foregroundStyle(.white).padding(.horizontal,8).padding(.vertical,5).background(.black.opacity(0.65)).clipShape(Capsule()).padding(12)}
+            VStack(alignment:.leading,spacing:6){
+                HStack(spacing:8){Text(challenge.title).font(.system(size:20,weight:.bold)).foregroundStyle(.white).lineLimit(1);Spacer(minLength:0);Image(systemName:enrollment == nil ? "arrow.up.right":"checkmark.circle").foregroundStyle(Dopa.lime)}
+                Text(enrollment == nil ? challenge.summary:"\(count)/\(challenge.targetDays) ngày đã tập").font(.system(size:13)).foregroundStyle(enrollment == nil ? Dopa.muted:Dopa.lime).lineLimit(1)
+            }.padding(12).frame(width:260,alignment:.leading)
+        }.frame(width:260).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14)).overlay(RoundedRectangle(cornerRadius:14).stroke(enrollment == nil ? Dopa.stroke:Dopa.lime.opacity(0.6),lineWidth:1))
+
+
+    }
+}
+struct ChallengeDetail:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) private var dismiss
+    var challenge:WorkoutChallenge
+    var onBrowse:(String?)->Void
+    @State private var confirmLeave=false
+    var enrollment:ChallengeEnrollment? {store.activeEnrollment(challenge.id)}
+    var progress:Set<Date> {enrollment.map{WorkoutCalendarLogic.progress(challenge,enrollment:$0,history:store.data.history)} ?? []}
+    var body:some View {
+        VStack(spacing:0){
+            SheetTitle(title:"Thử thách")
+            ScrollView{VStack(alignment:.leading,spacing:20){
+                ChallengePhoto(challengeID:challenge.id).frame(height:220).clipShape(RoundedRectangle(cornerRadius:12))
+                Text(challenge.title).font(.system(size:29,weight:.bold))
+                Text(challenge.subtitle).font(.system(size:17)).foregroundStyle(Dopa.muted)
+                HStack{Label("\(challenge.days) ngày",systemImage:"calendar");Spacer();Text("\(progress.count)/\(challenge.targetDays) ngày đã tập").foregroundStyle(Dopa.lime)}.font(.system(size:14,weight:.semibold))
+                ProgressView(value:min(1,Double(progress.count)/Double(challenge.targetDays))).tint(Dopa.lime)
+                Text(enrollment == nil ? "Tham gia để bắt đầu tính tiến độ từ hôm nay. Các buổi hoàn tất được ghi trong app sẽ cập nhật tự động.":"Mỗi ngày có ít nhất một bài phù hợp đã ghi set được tính một lần. Buổi tập trước khi tham gia không được tính.").font(.system(size:15)).foregroundStyle(Dopa.muted)
+                if let enrollment {
+                    let calendar=WorkoutCalendarLogic.calendar(),start=calendar.startOfDay(for:enrollment.started)
+                    LazyVGrid(columns:Array(repeating:GridItem(.flexible()),count:7),spacing:12){ForEach(0..<challenge.days,id:\.self){offset in
+                        let date=calendar.date(byAdding:.day,value:offset,to:start)!,done=progress.contains(date)
+                        VStack(spacing:5){Text("\(offset+1)").font(.system(size:15,weight:.semibold)).frame(width:34,height:34).background(done ? Dopa.lime:Dopa.raised).foregroundStyle(done ? .black:.white).clipShape(Circle());if done{Image(systemName:"checkmark").font(.system(size:9)).foregroundStyle(Dopa.lime)}else{Color.clear.frame(height:9)}}
+                    }}
+                    Button("Rời thử thách"){confirmLeave=true}.font(.system(size:14)).foregroundStyle(Dopa.muted).padding(.top,8)
+                }
+            }.padding(20)}
+            VStack(spacing:10){
+                if enrollment==nil{DopaButton(title:"Tham gia thử thách"){store.joinChallenge(challenge.id)}}
+                else{DopaButton(title:progress.count>=challenge.targetDays ? "Đã đạt mục tiêu · Xem bài":"Xem bài tập gợi ý"){let muscle=challenge.muscles.first;dismiss();DispatchQueue.main.asyncAfter(deadline:.now()+0.35){onBrowse(muscle)}}}
+            }.padding(20)
+        }.background(Dopa.background).presentationDragIndicator(.visible)
+        .alert("Rời thử thách?",isPresented:$confirmLeave){Button("Tiếp tục",role:.cancel){};Button("Rời thử thách",role:.destructive){store.leaveChallenge(challenge.id)}}message:{Text("Lịch sử tập của bạn vẫn được giữ lại.")}
+    }
+}
+
+/// Image and text have separate bounds so captions cannot hide the movement.
+private struct ChallengePhoto:View {
+    var challengeID:String
+    var body:some View {
+        GeometryReader{proxy in
+            Image("challenge-"+challengeID).resizable().scaledToFill()
+                .offset(y:challengeID=="lower-28" ? -16:0)
+                .frame(width:proxy.size.width,height:proxy.size.height,alignment:challengeID=="upper-28" ? .top:.center).clipped()
+        }.background(Dopa.background).accessibilityHidden(true)
+    }
+}
+private extension WorkoutChallenge {
+    var summary:String {
+        switch id {
+        case "upper-28":return "Thân trên · 8 ngày tập"
+        case "lower-28":return "Chân & mông · 8 ngày tập"
+        default:return "Toàn thân · 6 ngày tập"
+        }
+    }
+}

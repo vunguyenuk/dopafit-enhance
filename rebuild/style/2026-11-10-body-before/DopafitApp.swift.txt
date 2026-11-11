@@ -1,0 +1,76 @@
+import SwiftUI
+
+@main struct DopafitApp: App {
+    @StateObject private var store=AppStore()
+    var body:some Scene {
+        WindowGroup {
+            RootView().environmentObject(store).preferredColorScheme(.dark).tint(Dopa.lime).foregroundStyle(Color.white).font(.system(size:17))
+        }
+    }
+}
+struct RootView:View {
+    @EnvironmentObject var store:AppStore
+    var body:some View {
+        Group {
+            if store.data.onboarded {
+                MainTabs()
+            } else if ProcessInfo.processInfo.arguments.contains("--audit-post-setup") {
+                PostSetupFlow { store.data.onboarded=true;store.persist() }
+            } else { OnboardingView() }
+        }.background(Dopa.background)
+    }
+}
+struct MainTabs:View {
+    @EnvironmentObject var store:AppStore
+    var body:some View {
+        VStack(spacing:0) {
+            ZStack {
+                ForEach(AppTab.allCases,id:\.rawValue) { tab in
+                    NavigationStack {
+                        tabContent(tab).frame(maxWidth:.infinity,maxHeight:.infinity).background(Dopa.background)
+                            .toolbar(.hidden,for:.navigationBar)
+                    }.opacity(store.tab==tab ? 1:0).allowsHitTesting(store.tab==tab)
+                        .accessibilityHidden(store.tab != tab)
+                }
+            }
+            tabBar
+        }.background(Dopa.background.ignoresSafeArea())
+            .toolbar(.hidden,for:.navigationBar)
+            .fullScreenCover(isPresented:$store.showingActive) { ActiveWorkoutView().environmentObject(store) }
+            .sheet(item:$store.lastSaved) { session in CompletedView(session:session).environmentObject(store) }
+            .overlay(alignment:.top) {
+                if let toast=store.toast {
+                    Text(toast).font(.callout).padding(14).background(Dopa.raised).clipShape(Capsule()).padding(.top,10)
+                        .onAppear { DispatchQueue.main.asyncAfter(deadline:.now()+3) { store.toast=nil } }
+                }
+            }
+        .onChange(of:store.tab) { _,_ in store.persist() }
+    }
+    @ViewBuilder func tabContent(_ tab:AppTab)->some View {
+        switch tab {
+        case .workout: WorkoutHome()
+        case .body: BodyView()
+        case .goals: GoalsView()
+        case .journal: JournalView()
+        }
+    }
+    var tabBar:some View {
+        HStack(spacing:0) {
+            tab(.workout,"dumbbell.fill","Buổi tập","Workout")
+            tab(.body,"figure.stand","Cơ thể","Body")
+            tab(.goals,"target","Mục tiêu","Goals")
+            tab(.journal,"calendar","Nhật ký","Log")
+        }.padding(5).frame(height:64).background(Dopa.card.opacity(0.98))
+            .clipShape(Capsule()).overlay(Capsule().stroke(.white.opacity(0.12),lineWidth:1))
+            .padding(.horizontal,20).padding(.bottom,4).background(Dopa.background.opacity(0.96))
+    }
+    func tab(_ id:AppTab,_ icon:String,_ vi:String,_ en:String)->some View {
+        Button { store.tab=id } label: {
+            VStack(spacing:3) {
+                Image(systemName:icon).font(.system(size:22,weight:.medium)).frame(height:25)
+                Text(store.t(vi,en)).font(.system(size:12,weight:store.tab==id ? .bold:.medium))
+            }.frame(maxWidth:.infinity).frame(height:54).foregroundStyle(store.tab==id ? Color.white : Dopa.muted)
+                .background(store.tab==id ? Dopa.lime.opacity(0.10) : .clear).clipShape(Capsule())
+        }.buttonStyle(.plain).accessibilityIdentifier("tab.\(id.rawValue)")
+    }
+}

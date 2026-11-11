@@ -1,0 +1,17 @@
+{
+  "challenge": "core-14",
+  "asset": "challenge-core-14",
+  "source": "https://pixabay.com/photos/stretch-warm-up-sports-muscles-1634786/",
+  "photographer": "Peggy_Marco",
+  "license": "https://pixabay.com/service/license-summary/",
+  "downloaded": "2026-11-10",
+  "sha256": "a5a444dd533d9b8fa1c5dd741a20543622640a8fd69b772be50b7d45cd947cb4",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User20:21: select different real source photography; do not desaturate/tint. High-plank core support on dark rubber floor, full posture; not a technical forearm-plank guide.",
+  "rendering": {
+    "sourceBytesUnmodified": true,
+    "aiGeneratedOrEdited": false,
+    "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+    "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-10",
+  "localID": "discovery-plank",
+  "provider": "Pexels",
+  "providerID": "4117854",
+  "sourcePage": "https://www.pexels.com/video/a-one-legged-man-planking-on-the-gym-floor-4117854/",
+  "sourceVideo": "https://videos.pexels.com/video-files/4117854/4117854-uhd_2160_3840_25fps.mp4",
+  "author": "ShotPot",
+  "license": "https://www.pexels.com/license/",
+  "sourcePath": "third_party/stock-motion/plank-4117854-source.mp4",
+  "sourceSHA256": "a2e6b6d75eebf056b5e092417bc45090bda94111efbcc7952f561f94f7f1f3f2",
+  "sourceProbe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 2160,
+        "height": 3840,
+        "avg_frame_rate": "25/1",
+        "nb_frames": "234"
+      }
+    ],
+    "format": {
+      "duration": "9.360000",
+      "size": "28079521"
+    }
+  },
+  "clipStartSeconds": 1,
+  "clipDurationSeconds": 4,
+  "cropPixels": [
+    2160,
+    2160,
+    0,
+    1300
+  ],
+  "nativeHD": true,
+  "processing": "Crop unused ceiling and downsample. Muted original poses/time, no color grading, AI or motion interpolation. Same source segment in thumbnail/guide.",
+  "identityReview": "Reviewed source1/4/7seconds: body supported on both forearms and toes, unweighted front plank. Athlete has a prosthetic leg; not a leg-raise variant. Natural filmed isometric hold; camera/body micro-motion, not an anatomical animation.",
+  "rejected": {
+    "ExerciseDB VBAWRPG": "Added plate visible on back, weighted variation; do not map to this bodyweight exercise.",
+    "Pexels31035751": "Up-down plank, not isometric forearm hold.",
+    "Pexels6388429": "Push-ups despite plank title.",
+    "wger458": "Static illustration/layers only; do not call it a video."
+  },
+  "outputs": [
+    {
+      "path": "DopafitRebuild/ExerciseMedia/supplemental/plank-guide.mp4",
+      "sha256": "8d73d9d11c65219684282fae057a5f2286e4b92d16eb3249b37d578b1da7ea6d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1080,
+            "height": 1080,
+            "avg_frame_rate": "25/1",
+            "nb_frames": "100"
+          }
+        ],
+        "format": {
+          "duration": "4.000000",
+          "size": "986535"
+        }
+      }
+    },
+    {
+      "path": "DopafitRebuild/ExerciseMedia/supplemental/plank-thumb.mp4",
+      "sha256": "a89252630b6fae577b9a33000319839f4d6a24394f30bd239d1f8b764d1ae739",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 320,
+            "height": 320,
+            "avg_frame_rate": "25/1",
+            "nb_frames": "100"
+          }
+        ],
+        "format": {
+          "duration": "4.000000",
+          "size": "165767"
+        }
+      }
+    }
+  ]
+}

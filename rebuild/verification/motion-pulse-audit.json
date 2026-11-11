@@ -1,0 +1,57 @@
+{
+  "updated": "2026-11-10",
+  "originalFigmaCount": 134,
+  "figmaInventoryReadThisTurn": true,
+  "originalAccountPendingMutation": "R77 temporary superset must be removed after Mac unlock; screenshot not saved",
+  "defectsFound": [
+    "two clips were simultaneously driving one rig",
+    "hinge feet slid below initial floor",
+    "rounded spine after retarget",
+    "Good Morning hand crossed chest",
+    "finger bend sign flipped between frames",
+    "no active muscle pulse",
+    "guide media height fixed330 and speed formatting differed from original"
+  ],
+  "implemented": [
+    "one synchronized body+implements clip",
+    "planted ankle IK",
+    "neutral rest-spine hinge",
+    "back-rack arm IK, stable closed fingers",
+    "16 soft mask attributes on skin only",
+    "phase-linked orange pulse in Three; 1.8s native pulse",
+    "Reduce Motion keeps steady highlight; inactive clip speed0",
+    "guide media ratio1.09 based on R43/R63; top safe area, VI decimal comma, rounded thumbnails, D05 divider",
+    "R43 visible instruction text restored; unseen remainder still unknown",
+    "Shared native/Three charcoal #303b46 and orange #ff820a palette"
+  ],
+  "validation": {
+    "modelChecks": 61,
+    "geometryFrames": 214,
+    "geometryReport": "third_party/opengym3d/geometry-qa.json",
+    "threeCPU": "rebuild/verification/three-runtime-qa.json",
+    "renderScope": "Blender renders, not simulator screenshots",
+    "maxFootDriftMeters": 5.671046079476606e-06,
+    "maxGripDistanceMeters": 0.0010434986778020993,
+    "maxLoopSeamMeters": 0.003022174907182513,
+    "maxFrameStepMeters": 0.06801369586618665,
+    "lowestBodyZMeters": -0.011132283136248589,
+    "limits": "15mm floor tolerance; whole-body bounds/edge/motion thresholds are not self-collision/anatomy proof",
+    "debugBuildInstallLaunch": "passed; latest source/resources installed, history2/draft7 preserved"
+  },
+  "nativeUI": "BLOCKED: Mac locked. Pulse/GPU/layout change NOT visually verified. C23-C40 are prior version evidence.",
+  "open": [
+    "GPU pulse and masks at each angle",
+    "fingers/props self-intersections at intermediate frames",
+    "same viewport visual parity",
+    "original group menu/ungroup/round execution",
+    "24 exercise animations missing",
+    "private backend/auth/Health/Watch missing"
+  ],
+  "models": {
+    "muscular_body.glb": "f0238d53971ae0af1d8cadf16bb471abe94dcf3d8378683330e2d933e728f2b9",
+    "bicep_curl.glb": "e8f481f8e619f9acf978239a4a76e441d6a5f52c0f72396d2279c993e66f026b",
+    "romanian_deadlift.glb": "b869da58c68e829cc6f59bb4bb3e03cc1e139dda8ed8a685309bbdfa65b62a76",
+    "good_morning.glb": "4fd5392c0b39f4a83be4f6d25b00550376618f8084a65782615ceb2e261c7347"
+  },
+  "currentScopeNote": "HistoricalOpenGym audit; Form rework paused. Guide now exactrenderer-first then spatially-upscaled180pExerciseDB; see HANDOFF/EXERCISE-MEDIA. Do not interpret old Mac-lock/hash status as current build state."
+}

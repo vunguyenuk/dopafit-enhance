@@ -1,0 +1,40 @@
+import SwiftUI
+
+/// Hour/minute wheels observed in original R70. Edits remain local until Done.
+struct SavedDurationEditor:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var sessionID:UUID
+    @State private var hours=0
+    @State private var minutes=0
+    var total:Int {hours*60+minutes}
+    var body:some View {
+        VStack(alignment:.leading,spacing:18) {
+            HStack(alignment:.top) {
+                VStack(alignment:.leading,spacing:7) {
+                    Text(store.t("Sửa thời lượng buổi tập","Edit workout duration")).font(.dopa(size:20,weight:.semibold))
+                    Text(store.t("Buổi tập kéo dài bao lâu?","How long was your workout?")).font(.dopa(size:16)).foregroundStyle(Dopa.muted)
+                }
+                Spacer()
+                CircleButton(icon:"xmark"){dismiss()}
+            }
+            VStack(spacing:12) {
+                Text(hours==0 ? "\(minutes)p":"\(hours)g \(minutes)p").font(Dopa.metricFont(43)).padding(.top,22)
+                HStack(spacing:8) {
+                    Picker("Giờ",selection:$hours){ForEach(0..<24,id:\.self){Text("\($0) giờ").tag($0)}}
+                    Picker("Phút",selection:$minutes){ForEach(0..<60,id:\.self){Text("\($0) phút").tag($0)}}
+                }.pickerStyle(.wheel).frame(height:185).clipped()
+            }.padding(.horizontal,12).frame(maxWidth:.infinity)
+                .background(RadialGradient(colors:[Dopa.lime.opacity(0.10),.black],center:.top,startRadius:0,endRadius:260))
+                .clipShape(RoundedRectangle(cornerRadius:14))
+            DopaButton(title:store.t("Xong","Done"),enabled:total>0){
+                if store.updateSavedDuration(sessionID:sessionID,hours:hours,minutes:minutes){dismiss()}
+            }
+        }.padding(18).dopaSheet().presentationDetents([.height(460)]).presentationDragIndicator(.hidden)
+            .onAppear {
+                let duration=store.data.history.first{$0.id==sessionID}?.duration ?? 0
+                let value=min(1439,max(0,Int(duration/60)))
+                hours=value/60;minutes=value%60
+            }
+    }
+}

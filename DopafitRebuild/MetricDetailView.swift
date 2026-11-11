@@ -1,0 +1,63 @@
+import SwiftUI
+import Charts
+
+struct TrendPoint:Identifiable {
+    var id=UUID()
+    var date:Date
+    var value:Double
+}
+struct MetricDetailView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var title:String
+    var unit:String
+    var points:[TrendPoint]
+    @State private var period=1
+    @State private var selectedDate:Date?=nil
+    var range:ClosedRange<Date> {
+        let cal=Calendar.current
+        let start:Date
+        switch period {
+        case 0:start=cal.dateInterval(of:.weekOfYear,for:Date())!.start
+        case 1:start=cal.date(byAdding:.month,value:-1,to:Date())!
+        case 2:start=cal.date(byAdding:.month,value:-6,to:Date())!
+        default:start=cal.date(byAdding:.year,value:-1,to:Date())!
+        }
+        return start...Date()
+    }
+    var shown:[TrendPoint]{points.filter{range.contains($0.date)}.sorted{$0.date<$1.date}}
+    var selected:TrendPoint? {guard let selectedDate else{return nil};return shown.min{abs($0.date.timeIntervalSince(selectedDate))<abs($1.date.timeIntervalSince(selectedDate))}}
+    var body:some View {
+        VStack(spacing:0) {
+            ScreenHeader(title:title,back:{dismiss()})
+            ScrollView {
+                VStack(alignment:.leading,spacing:24) {
+                    PillTabs(titles:[store.t("Tuần","Week"),store.t("Tháng","Month"),store.t("6 tháng","6 months"),store.t("Năm","Year")],selection:$period)
+                    Text(title.uppercased()+" ▪").font(.dopa(size:11,weight:.semibold)).tracking(1).foregroundStyle(Dopa.muted)
+                    HStack(alignment:.firstTextBaseline,spacing:5) {Text(AppStore.number(selected?.value ?? shown.map(\.value).max() ?? 0)).font(Dopa.metricFont(43));Text(unit).font(.dopa(size:14)).foregroundStyle(Dopa.muted)}
+                    Text(selected?.date.formatted(date:.abbreviated,time:.omitted) ?? range.lowerBound.formatted(date:.abbreviated,time:.omitted)+" – "+range.upperBound.formatted(date:.abbreviated,time:.omitted)).font(.dopa(size:13)).foregroundStyle(Dopa.muted)
+                    if shown.isEmpty {InfoCard(title:store.t("Chưa có dữ liệu trong khoảng này","No data in this period"),text:store.t("Chọn khoảng khác để xem các set đã lưu.","Choose another period to view your logged sets."),icon:"chart.xyaxis.line")}
+                    else {
+                        Chart(shown) { point in
+                            LineMark(x:.value("Ngày",point.date),y:.value(title,point.value)).foregroundStyle(Dopa.lime)
+                            PointMark(x:.value("Ngày",point.date),y:.value(title,point.value)).foregroundStyle(Dopa.lime).symbolSize(65)
+                            if let selected {RuleMark(x:.value("Ngày",selected.date)).foregroundStyle(Dopa.muted.opacity(0.45)).lineStyle(StrokeStyle(dash:[3,3]))}
+                        }.chartXScale(domain:range).chartYScale(domain:chartRange).chartXSelection(value:$selectedDate)
+                            .chartYAxis {AxisMarks(position:.trailing) { _ in AxisGridLine(stroke:StrokeStyle(lineWidth:0.5,dash:[2,3]));AxisValueLabel()}}
+                            .frame(height:230).accessibilityLabel("\(title), \(shown.count) buổi")
+                    }
+                    GroupCard {SettingRow(title:store.t("Kỷ lục cá nhân","Personal record"),value:AppStore.number(points.map(\.value).max() ?? 0),chevron:false)}
+                    GroupCard {SettingRow(title:store.t("Mức trung bình của bạn","Your average"),value:shown.isEmpty ? "—":AppStore.number(shown.reduce(0){$0+$1.value}/Double(shown.count)),chevron:false)}
+                    Text(title).font(.dopa(size:18,weight:.semibold)).padding(.top,8)
+                    Text(explanation).font(.dopa(size:16)).foregroundStyle(Dopa.muted).lineSpacing(6)
+                }.padding(16)
+            }
+        }.background(Dopa.background).toolbar(.hidden,for:.navigationBar).onChange(of:period){_,_ in selectedDate=nil}
+    }
+    var chartRange:ClosedRange<Double> {let lo=shown.map(\.value).min() ?? 0;let hi=shown.map(\.value).max() ?? 0;let pad=max(2,(hi-lo)*0.15);return max(0,lo-pad)...max(lo+pad,hi+pad)}
+    var explanation:String {
+        if title.contains("1RM") {return "1RM ước tính là mức tạ bạn có thể nâng đúng một lần, tính từ set nặng nhất của bạn trong ngày. Nó giúp so sánh sức mạnh giữa những ngày tập số lần khác nhau. Set khởi động không được tính."}
+        if title=="Mức tạ" {return "Mức tạ cao nhất trong một set chính của mỗi buổi. Mức tạ được hiển thị theo quy ước của bài tập: gồm thanh đòn, mỗi tay hoặc mỗi quả tạ."}
+        return "Tổng số lần × mức tạ của các set chính đã ghi. Với bài có quy ước mỗi bên, tổng khối lượng bao gồm cả hai bên. Set khởi động không được cộng."
+    }
+}

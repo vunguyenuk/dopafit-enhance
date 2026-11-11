@@ -1,0 +1,38 @@
+[
+  {
+    "challenge": "consistent-14",
+    "asset": "challenge-consistent-14",
+    "source": "https://unsplash.com/photos/man-doing-push-up-on-sand-NCT95XyPJPo",
+    "photographer": "Annie Spratt",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "b990eaec567503445efe5a81c823475160ac8ed652d371a6194d9519a21d4560",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "previousSource": "https://unsplash.com/photos/a-woman-lifting-a-black-dumbbell-in-a-gym-O1iH3EmWvbM",
+    "reason": "Visible exercise posture; no caption over the person"
+  },
+  {
+    "challenge": "upper-28",
+    "asset": "challenge-upper-28",
+    "source": "https://unsplash.com/photos/a-man-in-a-gym-lifting-a-pair-of-dumbbells-Pv97-3sdjdY",
+    "photographer": "Samuel Girven",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "a63fb6d28c2b9ed120909a515520cbdbab3f587db4a13cc3f1a5920db37fe3ed",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "previousSource": "https://unsplash.com/photos/a-man-doing-a-squat-with-a-barbell-Hfc8VGI2ekU",
+    "reason": "Visible exercise posture; no caption over the person"
+  },
+  {
+    "challenge": "lower-28",
+    "asset": "challenge-lower-28",
+    "source": "https://unsplash.com/photos/a-woman-squatting-on-the-floor-in-a-gym-snM3yEpvklU",
+    "photographer": "SUNDAY II SUNDAY",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "7c50cc3cb31380d5f2058b275599eafb8b2d8f54d70db288c9276dc0d2a0f7f8",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "previousSource": "https://unsplash.com/photos/woman-lifting-dumbbell-in-gym-rQHMG2OMRg0",
+    "reason": "Recognizable bodyweight squat, focal crop keeps head, hip and bent knees visible"
+  }
+]

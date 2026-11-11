@@ -1,0 +1,60 @@
+{
+  "checkedOn": "2026-11-11",
+  "bundle": "com.local.dopafit.rebuild",
+  "draftName": "Ngày thân trên",
+  "draftID": "F0A0CDDB-D394-4F1A-B558-DF0F78E59EB3",
+  "draftHasStarted": false,
+  "draftExerciseCount": 7,
+  "draftExerciseIDs": [
+    "dumbbell-row",
+    "smith-bench",
+    "dumbbell-back-fly",
+    "dumbbell-skullcrusher",
+    "ez-curl",
+    "closebench",
+    "bent-over-dumbbell-row"
+  ],
+  "draftCompletedSets": 0,
+  "draftGroups": 0,
+  "historyCount": 2,
+  "challengeEnrollments": [
+    {
+      "left": 815988800.380166,
+      "challengeID": "consistent-14",
+      "id": "1FC29B17-16D4-4F1B-84A7-C0846FEA147E",
+      "started": 815980796.107369
+    },
+    {
+      "left": 816007189.834267,
+      "challengeID": "pelvic-14",
+      "id": "31D9E976-0907-4310-B574-617C396CB129",
+      "started": 816007153.372618
+    },
+    {
+      "challengeID": "mobility-28",
+      "id": "B12C6A40-C561-4AB8-8495-D03682120A02",
+      "started": 816021708.416132
+    },
+    {
+      "started": 816022743.350579,
+      "challengeID": "upper-28",
+      "id": "F2D0D72B-3CF1-4C7B-918A-F29C8018F715"
+    },
+    {
+      "started": 816023404.07809,
+      "challengeID": "core-14",
+      "id": "CAC45458-148C-4592-8AEB-A20BB6050031"
+    }
+  ],
+  "challengePractices": [],
+  "original": "Restored R82;140original states/28Figma root groups",
+  "note": "Read-only checkpoint of latest user state; use current preservation-baseline-note.json. Earlier snapshots historical, never restored. No main workout logged during media validation.",
+  "activeChallengeEnrollments": 3,
+  "checkinFeeling": "pain",
+  "checkinTimestampUnchangedFromPreservationBaseline": true,
+  "historyUnchangedFromBeforePickerTest": true,
+  "orderAndPrescriptionsUnchangedFromBeforePickerTest": false,
+  "historyUnchangedFromPreservationBaseline": true,
+  "draftUnchangedFromPreservationBaseline": true,
+  "preservationBaseline": "rebuild/verification/current-preservation-baseline.json"
+}

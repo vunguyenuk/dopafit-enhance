@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-11",
+  "source": "zenith-2026-11-11/main-state-before.json",
+  "reason": "Latest observed user state before Zenith integration,7notstarted/paincheckin. Old10/11baseline archived. This is a read-only comparison; never restore into app.",
+  "draftExercises": 7,
+  "hasStarted": false,
+  "history": 2,
+  "completedSets": 0
+}

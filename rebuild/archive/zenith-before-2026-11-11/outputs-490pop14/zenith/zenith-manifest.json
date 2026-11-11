@@ -1,0 +1,801 @@
+{
+ "license": "KHÔNG RÕ — tác giả kho buzops9/exercisedb (free-exercise-db-with-videos) tự ghi mua lại video qua quảng cáo, không rõ nguồn gốc. Chỉ dùng demo; user cam kết mua license trước khi phát hành.",
+ "repo": "https://github.com/buzops9/exercisedb",
+ "commit": "399a8af3bedd4f5959381ce4dedc28366db387d4",
+ "clips": {
+  "tbar": {
+   "sourceId": "drv-lever-t-bar-row",
+   "sourceName": "Lever T-Bar Row",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/lever-t-bar-row.mp4",
+   "bbox": [
+    624,
+    40,
+    1144,
+    1016
+   ],
+   "sha256Source": "b73050249bf6a0dac281a9b48ad5e9c7945043fc136bb0d55a7d20968de924ea",
+   "steps": [
+    "Lie prone on the chest pad of the T-bar row machine and grasp the handles.",
+    "Brace your upper body and retract your shoulder blades.",
+    "Pull the handles toward your chest or lower ribs.",
+    "Pause and squeeze your back at the top.",
+    "Lower the weight under control to a full stretch."
+   ],
+   "formCues": [
+    "Pinch shoulder blades",
+    "Drive elbows back",
+    "Keep chest on pad",
+    "Full stretch at bottom"
+   ],
+   "commonMistakes": [
+    "Arching lower back",
+    "Not fully extending arms",
+    "Bouncing weights",
+    "Letting shoulders round forward"
+   ],
+   "breathing": "Exhale as you row up, inhale as you lower down."
+  },
+  "incline": {
+   "sourceId": "0047",
+   "sourceName": "Barbell Incline Bench Press",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/barbell-incline-bench-press.mp4",
+   "bbox": [
+    584,
+    40,
+    848,
+    1000
+   ],
+   "sha256Source": "1ff6f81704f098a9437cd9bac4ac61a26cbbe2b19987951c3a7d2d89028bf4d1",
+   "steps": [
+    "Set an incline bench and lie back with your eyes under the bar and your feet flat on the floor.",
+    "Grip the bar slightly wider than shoulder width with straight wrists and pull your shoulder blades down and back.",
+    "Unrack the bar and hold it above your upper chest with your arms straight.",
+    "Lower the bar under control to your upper chest, keeping your elbows slightly tucked from straight out.",
+    "Press the bar upward until your arms are straight again, keeping the bar path over your shoulders.",
+    "Rack the bar back onto the supports with control after your final rep."
+   ],
+   "formCues": [
+    "Drive feet into floor",
+    "Keep chest up",
+    "Wrists stacked over elbows",
+    "Press straight up"
+   ],
+   "commonMistakes": [
+    "Flaring the elbows straight out to the sides",
+    "Bouncing the bar off the chest",
+    "Lifting the feet or shifting on the bench",
+    "Lowering the bar to the neck or stomach"
+   ],
+   "breathing": "Inhale as you lower the bar to your chest, and exhale as you press it back up."
+  },
+  "closebench": {
+   "sourceId": "0030",
+   "sourceName": "Barbell Close Grip Bench Press",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/barbell-close-grip-bench-press.mp4",
+   "bbox": [
+    480,
+    48,
+    1000,
+    1008
+   ],
+   "sha256Source": "6676c47c40ef7d72824f6a54904d0f15004929a71b3960cf0453e3284858f6c4",
+   "steps": [
+    "Lie on bench and grasp barbell with close grip.",
+    "Unrack and position bar above lower chest.",
+    "Lower bar slowly, elbows close to sides.",
+    "Touch chest briefly, then press bar to starting position.",
+    "Repeat for reps."
+   ],
+   "formCues": [
+    "Tuck elbows",
+    "Grip just inside shoulder width",
+    "Press through triceps",
+    "Control the descent"
+   ],
+   "commonMistakes": [
+    "Gripping too narrow or wide",
+    "Elbows flaring out",
+    "Bouncing bar on chest"
+   ],
+   "breathing": "Exhale pressing up, inhale lowering bar."
+  },
+  "tricep": {
+   "sourceId": "0200",
+   "sourceName": "Cable Rope Triceps Pushdown",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/cable-pushdown-rope-attachment.mp4",
+   "bbox": [
+    760,
+    40,
+    584,
+    1008
+   ],
+   "sha256Source": "8d61fd3ef8691a0105d521a19410b378260828e760ca65c119f561ed7cdad304",
+   "steps": [
+    "Attach a rope to the high pulley and stand facing the machine.",
+    "Grab the rope with both hands, thumbs facing inward.",
+    "Keep elbows tucked at your sides and lean slightly forward.",
+    "Extend your arms down, splitting the rope at the bottom.",
+    "Slowly return to the start without letting elbows flare out."
+   ],
+   "formCues": [
+    "Keep elbows fixed",
+    "Split the rope at the bottom",
+    "Don’t use your shoulders",
+    "Full extension on each rep"
+   ],
+   "commonMistakes": [
+    "Flaring elbows",
+    "Using momentum",
+    "Not fully extending arms"
+   ],
+   "breathing": "Exhale as you push down, inhale as you return."
+  },
+  "squat": {
+   "sourceId": "1435",
+   "sourceName": "Barbell Back Squat",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/classic-barbell-squat.mp4",
+   "bbox": [
+    608,
+    64,
+    648,
+    984
+   ],
+   "sha256Source": "dd26120ac64a3c6609bc541a5d62a6c2fb20eded660d17caf102ea1888bbba26",
+   "steps": [
+    "Position barbell on upper traps, unrack.",
+    "Stand with feet shoulder-width apart.",
+    "Descend into squat keeping back neutral.",
+    "Lower until thighs parallel or below.",
+    "Drive up through heels to standing."
+   ],
+   "formCues": [
+    "Chest up",
+    "Back straight",
+    "Drive through heels",
+    "Knees track over toes"
+   ],
+   "commonMistakes": [
+    "Knees caving in",
+    "Rounding lower back",
+    "Heels lifting off floor"
+   ],
+   "breathing": "Inhale lowering, exhale rising."
+  },
+  "rdl": {
+   "sourceId": "0116",
+   "sourceName": "Barbell Straight Leg Deadlift",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/barbell-straight-leg-deadlift.mp4",
+   "bbox": [
+    672,
+    48,
+    568,
+    976
+   ],
+   "sha256Source": "76056e077fa4017ae19c0239e1e7e9e260d1f474acd53baf691958ada1736960",
+   "steps": [
+    "Stand tall with your feet hip-width apart and hold the barbell in front of your thighs with straight arms.",
+    "Soften your knees slightly and brace your midsection.",
+    "Push your hips back and lower the bar down your legs while keeping your back flat and your legs nearly straight.",
+    "Lower until the bar reaches mid-shin or until you feel a strong hamstring stretch without losing your back position.",
+    "Drive your hips forward and stand tall, keeping the bar close to your legs the whole way up.",
+    "Finish with your hips locked out and shoulders stacked over your hips."
+   ],
+   "formCues": [
+    "Hips back, not down",
+    "Keep the bar close",
+    "Soft knees, flat back",
+    "Stand tall and squeeze glutes"
+   ],
+   "commonMistakes": [
+    "Bending the knees into a squat as the bar lowers",
+    "Letting the bar drift forward away from the legs",
+    "Rounding the lower back near the bottom",
+    "Jerking the bar off the bottom instead of lifting smoothly"
+   ],
+   "breathing": "Inhale and brace before hinging down, then exhale as you drive your hips forward to stand up."
+  },
+  "adductor": {
+   "sourceId": "0598",
+   "sourceName": "Lever Seated Hip Adduction",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/lever-seated-hip-adduction.mp4",
+   "bbox": [
+    704,
+    40,
+    592,
+    1016
+   ],
+   "sha256Source": "dd07724755bf157c676f02c9a8724e222709cf7c65a830733709fd14c7370c52",
+   "steps": [
+    "Adjust the seat and pads so your knees line up with the machine's pivot point.",
+    "Sit tall with your back against the pad, place your legs outside the thigh pads, and grab the handles.",
+    "Set your feet flat on the footrests and start with your legs comfortably apart.",
+    "Bring your legs together by pressing inward against the pads.",
+    "Squeeze your inner thighs briefly when the pads come together.",
+    "Return the pads outward slowly until you reach the start position without letting the weight slam."
+   ],
+   "formCues": [
+    "Sit tall",
+    "Control both directions",
+    "Squeeze inner thighs",
+    "Keep hips still"
+   ],
+   "commonMistakes": [
+    "Leaning forward or lifting the lower back off the pad.",
+    "Letting the pads fly open on the way back.",
+    "Using short, bouncing reps instead of controlled motion.",
+    "Turning the feet and knees excessively to force the movement."
+   ],
+   "breathing": "Exhale as you press your legs together, and inhale as you return to the starting position."
+  },
+  "arnold": {
+   "sourceId": "2137",
+   "sourceName": "Dumbbell Arnold Press",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-arnold-press.mp4",
+   "bbox": [
+    592,
+    80,
+    696,
+    976
+   ],
+   "sha256Source": "40e18268aae5e474a508039326a81e97b897cce44d1bc7f1badb4a74dd70b430",
+   "steps": [
+    "Sit tall on a bench with back support and plant your feet on the floor.",
+    "Hold a dumbbell in each hand in front of your shoulders with palms facing you and elbows bent.",
+    "Brace your midline and press the dumbbells upward while rotating your palms outward.",
+    "Finish overhead with arms straight and palms facing forward.",
+    "Lower the dumbbells under control while rotating your palms back toward you.",
+    "Return to the start with dumbbells in front of your shoulders and repeat."
+   ],
+   "formCues": [
+    "Press and rotate smoothly",
+    "Keep ribs down",
+    "Wrists stacked over elbows",
+    "Finish biceps by ears"
+   ],
+   "commonMistakes": [
+    "Arching the lower back as the dumbbells go overhead",
+    "Letting the elbows flare straight out at the bottom",
+    "Pressing the dumbbells up without rotating the hands",
+    "Lowering the dumbbells too fast and losing control"
+   ],
+   "breathing": "Inhale at the bottom, exhale as you press and rotate overhead, then inhale as you lower back down."
+  },
+  "reversefly": {
+   "sourceId": "0154",
+   "sourceName": "Cable Crossover Reverse Fly",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/cable-crossover-reverse-fly.mp4",
+   "bbox": [
+    400,
+    24,
+    1136,
+    1032
+   ],
+   "sha256Source": "2c46bb99cbc4dc1b4c2271cdbc8b521faeaad56fce15ce806dfa300905d1114f",
+   "steps": [
+    "Set both cable handles to the low pulleys and stand centered between them.",
+    "Grab the left handle in your right hand and the right handle in your left hand, then step forward to create tension.",
+    "Hinge forward slightly with a soft bend in your knees and keep your chest up and back flat.",
+    "Start with your arms angled down and crossed in front of you, elbows slightly bent.",
+    "Pull both arms out and back in a wide arc until your hands reach about shoulder height.",
+    "Squeeze your rear shoulders and upper back at the end position.",
+    "Return the handles slowly to the start without shrugging or changing your torso position."
+   ],
+   "formCues": [
+    "Lead with your elbows",
+    "Keep a soft elbow bend",
+    "Chest up, back flat",
+    "Don't shrug your shoulders"
+   ],
+   "commonMistakes": [
+    "Standing fully upright and turning it into a row",
+    "Bending and straightening the elbows during the rep",
+    "Shrugging the shoulders up toward the ears",
+    "Swinging the torso to move the handles"
+   ],
+   "breathing": "Inhale as you return the handles to the start, and exhale as you pull your arms out and back."
+  },
+  "machinefly": {
+   "sourceId": "0602",
+   "sourceName": "Lever Seated Reverse Fly",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/lever-seated-reverse-fly.mp4",
+   "bbox": [
+    600,
+    72,
+    744,
+    976
+   ],
+   "sha256Source": "46610fd85793d5dd395a9acbf1d778a3a2fd95537f65899b79d427b724f20601",
+   "steps": [
+    "Adjust the seat so the handles are about shoulder height when you sit down.",
+    "Sit with your chest against the pad, feet flat on the floor, and grasp the handles with an overhand grip.",
+    "Start with your arms in front of you and keep a soft bend in your elbows.",
+    "Pull the handles out and back in a wide arc until your upper arms line up with your shoulders.",
+    "Squeeze your rear shoulders and upper back at the end of the movement.",
+    "Return the handles slowly to the start without letting the weight slam down."
+   ],
+   "formCues": [
+    "Lead with your elbows",
+    "Keep chest on the pad",
+    "Soft bend in elbows",
+    "Squeeze shoulder blades together"
+   ],
+   "commonMistakes": [
+    "Shrugging the shoulders up toward the ears",
+    "Straightening the elbows and turning it into a press",
+    "Letting the chest come off the pad",
+    "Swinging the handles back with momentum"
+   ],
+   "breathing": "Exhale as you pull the handles back, and inhale as you return to the starting position."
+  },
+  "frontraise": {
+   "sourceId": "0162",
+   "sourceName": "Cable One Arm Front Raise",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/cable-one-arm-forward-raise.mp4",
+   "bbox": [
+    736,
+    40,
+    440,
+    1008
+   ],
+   "sha256Source": "1f669f510d4f49f7721b4a72176f62d58125699a7eec9f1095ff25fd877946c2",
+   "steps": [
+    "Attach handle to low pulley and stand facing away from machine.",
+    "Grasp handle with one hand, arm by your side.",
+    "With a straight arm, raise it forward to shoulder height.",
+    "Pause briefly at the top.",
+    "Lower back to the start slowly and repeat."
+   ],
+   "formCues": [
+    "Keep core tight",
+    "Lift with shoulder, not hand",
+    "Don't swing",
+    "Control the descent"
+   ],
+   "commonMistakes": [
+    "Using momentum",
+    "Shrugging shoulder",
+    "Overextending at the top"
+   ],
+   "breathing": "Exhale as you lift, inhale as you lower."
+  },
+  "bent-over-dumbbell-row": {
+   "sourceId": "0293",
+   "sourceName": "Dumbbell Bent-Over Row",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-bent-over-row.mp4",
+   "bbox": [
+    504,
+    168,
+    816,
+    808
+   ],
+   "sha256Source": "9fa938ae3be92d9fee84f6b9154f5402ed209a97f182685c375e4257144f2b71",
+   "steps": [
+    "Stand with feet shoulder-width apart holding dumbbells.",
+    "Hinge at hips, keeping back flat and chest up.",
+    "Let arms hang straight down, palms facing each other.",
+    "Pull dumbbells to your sides, elbows close to body.",
+    "Lower the weights under control to starting position."
+   ],
+   "formCues": [
+    "Flat back",
+    "Lead with elbows",
+    "Engage core",
+    "Squeeze shoulder blades"
+   ],
+   "commonMistakes": [
+    "Rounding the back",
+    "Jerking the weights",
+    "Not fully extending arms",
+    "Using biceps too much"
+   ],
+   "breathing": "Exhale as you row up, inhale as you lower down."
+  },
+  "dumbbell-skullcrusher": {
+   "sourceId": "0351",
+   "sourceName": "Dumbbell Lying Triceps Extension",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-lying-triceps-extension.mp4",
+   "bbox": [
+    568,
+    168,
+    816,
+    880
+   ],
+   "sha256Source": "55ef9582da5eeacbb0908dc6d7bd333176c881f7d2cb73a097260f012b059e78",
+   "steps": [
+    "Lie flat on a bench holding a dumbbell in each hand, and press the dumbbells above your chest with your palms facing each other.",
+    "Pull your shoulders down into the bench and straighten your wrists so the dumbbells stay stacked over your elbows.",
+    "Bend your elbows and lower the dumbbells toward the sides of your forehead while keeping your upper arms mostly still.",
+    "Stop when your elbows are fully bent and the dumbbells are close to your head.",
+    "Straighten your elbows to drive the dumbbells back to the start position above your chest.",
+    "Repeat each rep without letting your elbows flare wide."
+   ],
+   "formCues": [
+    "Keep elbows tucked",
+    "Upper arms stay still",
+    "Bend only at elbows",
+    "Stack wrists over elbows"
+   ],
+   "commonMistakes": [
+    "Elbows flare out wide as the dumbbells lower.",
+    "Upper arms drift backward or forward during the rep.",
+    "Dumbbells drop too low behind the head instead of beside the forehead.",
+    "Wrists bend back instead of staying straight."
+   ],
+   "breathing": "Inhale as you lower the dumbbells toward your forehead, and exhale as you extend your elbows to raise them back up."
+  },
+  "ez-curl": {
+   "sourceId": "2407",
+   "sourceName": "EZ Bar Biceps Curl",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/ez-barbell-biceps-curl.mp4",
+   "bbox": [
+    816,
+    56,
+    512,
+    960
+   ],
+   "sha256Source": "f7e09044f3f0d71a26170c54d417831e6e4da8896baa584a2154b6e82539a52e",
+   "steps": [
+    "Grip the EZ bar at angled sections, palms facing up.",
+    "Stand tall with arms fully extended and elbows anchored.",
+    "Curl the bar upward, contracting the biceps.",
+    "Pause and squeeze at the top.",
+    "Lower the bar down slowly."
+   ],
+   "formCues": [
+    "Keep elbows stationary",
+    "Use full range of motion",
+    "Don't swing the bar",
+    "Control tempo"
+   ],
+   "commonMistakes": [
+    "Using momentum",
+    "Letting elbows move forward",
+    "Partial reps"
+   ],
+   "breathing": "Exhale as you lift, inhale lowering the bar."
+  },
+  "dumbbell-curl": {
+   "sourceId": "0294",
+   "sourceName": "Dumbbell Biceps Curl",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-biceps-curl.mp4",
+   "bbox": [
+    872,
+    96,
+    440,
+    952
+   ],
+   "sha256Source": "a0b63b72251ff8ee8bad80e274ca90481f00503a0f245c9013ea8351d4a70378",
+   "steps": [
+    "Stand tall with a dumbbell in each hand, arms at your sides, and palms facing forward.",
+    "Brace your torso and keep your elbows close to your ribs.",
+    "Curl both dumbbells up toward your shoulders without letting your upper arms swing forward.",
+    "Pause briefly at the top and squeeze your biceps.",
+    "Lower the dumbbells back down under control until your arms are straight."
+   ],
+   "formCues": [
+    "Elbows pinned to sides",
+    "Curl, don't swing",
+    "Squeeze at the top",
+    "Lower with control"
+   ],
+   "commonMistakes": [
+    "Swinging the torso to start the curl",
+    "Letting the elbows drift forward as the weights rise",
+    "Using partial range and not lowering fully",
+    "Bending the wrists back instead of keeping them neutral"
+   ],
+   "breathing": "Exhale as you curl the dumbbells up, and inhale as you lower them back down."
+  },
+  "dumbbell-shrug": {
+   "sourceId": "0406",
+   "sourceName": "Dumbbell Shrug",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-shrug.mp4",
+   "bbox": [
+    760,
+    96,
+    392,
+    952
+   ],
+   "sha256Source": "79167df756f3a09febe2786c71df09b55d9d94f948a05ff71ae55578202746d0",
+   "steps": [
+    "Stand tall with a dumbbell in each hand at your sides and your feet about hip-width apart.",
+    "Let your arms hang straight with your palms facing your body.",
+    "Lift your shoulders straight up toward your ears without bending your elbows.",
+    "Pause briefly at the top while keeping your torso still.",
+    "Lower your shoulders back down under control to the start position and repeat."
+   ],
+   "formCues": [
+    "Shoulders straight up",
+    "Arms stay long",
+    "Neck relaxed",
+    "Control the lowering"
+   ],
+   "commonMistakes": [
+    "Rolling the shoulders in circles instead of lifting straight up and down.",
+    "Bending the elbows and turning the move into an upright row.",
+    "Leaning the torso back or forward to swing the dumbbells.",
+    "Jutting the head forward as the shoulders rise."
+   ],
+   "breathing": "Exhale as you shrug your shoulders up, and inhale as you lower them back down."
+  },
+  "incline-dumbbell-curl": {
+   "sourceId": "0322",
+   "sourceName": "Dumbbell Incline Biceps Curl",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-incline-biceps-curl.mp4",
+   "bbox": [
+    624,
+    128,
+    712,
+    888
+   ],
+   "sha256Source": "9c1fc8a007caf17173d3ecdabd21484a2d361bf270ccf85d82d65144c0aa6fec",
+   "steps": [
+    "Set the bench to a 45-60 degree incline and sit back with a dumbbell in each hand.",
+    "Let your arms hang fully extended at your sides, elbows near your body.",
+    "Curl the dumbbells up by flexing your elbows, keeping upper arms stationary.",
+    "Pause and squeeze your biceps at the top of the movement.",
+    "Lower the weights under control to the starting position."
+   ],
+   "formCues": [
+    "Keep elbows still",
+    "Let arms fully extend",
+    "Do not swing weights",
+    "Squeeze at the top"
+   ],
+   "commonMistakes": [
+    "Swinging arms for momentum",
+    "Elbows drifting forward",
+    "Partial range of motion"
+   ],
+   "breathing": "Exhale as you curl up, inhale as you lower down."
+  },
+  "dumbbell-lateral-raise": {
+   "sourceId": "0334",
+   "sourceName": "Dumbbell Lateral Raise",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-lateral-raise.mp4",
+   "bbox": [
+    624,
+    104,
+    728,
+    928
+   ],
+   "sha256Source": "83a2e1a45c0ab7bf168072ae5e129abb9e0e6324578cc06abe77e07b3408115b",
+   "steps": [
+    "Stand tall with a dumbbell in each hand at your sides, palms facing in.",
+    "Set your shoulders down and brace your midsection.",
+    "Raise both arms out to the sides until your hands reach about shoulder height, keeping a soft bend in your elbows.",
+    "Pause briefly at the top without shrugging your shoulders.",
+    "Lower the dumbbells back to your sides with control."
+   ],
+   "formCues": [
+    "Lead with your elbows",
+    "Stop at shoulder height",
+    "Keep shoulders down",
+    "Soft bend in elbows"
+   ],
+   "commonMistakes": [
+    "Shrugging the shoulders up toward the ears",
+    "Swinging the torso to heave the dumbbells upward",
+    "Lifting the hands well above shoulder height",
+    "Straightening the elbows and turning it into a front swing"
+   ],
+   "breathing": "Exhale as you raise the dumbbells to the sides, and inhale as you lower them back down under control."
+  },
+  "dumbbell-shoulder-press": {
+   "sourceId": "0289",
+   "sourceName": "Seated Dumbbell Shoulder Press",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-bench-seated-press.mp4",
+   "bbox": [
+    632,
+    24,
+    608,
+    1040
+   ],
+   "sha256Source": "19a5abb57f831fce30124ff9dadc7205060a8d5524de5a396f8c1e5864a7a616",
+   "steps": [
+    "Sit on a bench with back support and feet flat.",
+    "Hold dumbbells at shoulder height, elbows bent.",
+    "Press dumbbells overhead until arms are extended.",
+    "Pause briefly at the top.",
+    "Lower dumbbells to starting position."
+   ],
+   "formCues": [
+    "Keep back pressed to pad",
+    "Do not arch lower back",
+    "Press overhead",
+    "Elbows under wrists"
+   ],
+   "commonMistakes": [
+    "Arching back excessively",
+    "Lowering weights too fast",
+    "Letting elbows drop too low",
+    "Pressing weights out in front"
+   ],
+   "breathing": "Exhale as you press up, inhale as you lower down."
+  },
+  "goblet-squat": {
+   "sourceId": "1760",
+   "sourceName": "Dumbbell Goblet Squat",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-goblet-squat.mp4",
+   "bbox": [
+    752,
+    80,
+    416,
+    952
+   ],
+   "sha256Source": "6630a8b65dccb8d08a5fed9cb3e4da69132e55a62e138fa29c8ff9a51e1069ce",
+   "steps": [
+    "Stand tall with your feet about shoulder-width apart and hold one dumbbell vertically at your chest with both hands.",
+    "Brace your midsection and keep your elbows pointed down close to your body.",
+    "Sit your hips down and back while bending your knees, and lower until your thighs are parallel to the floor or slightly lower.",
+    "Keep the dumbbell tight to your chest and your feet flat as your knees track over your toes.",
+    "Drive through your whole foot to stand back up until your hips and knees are fully extended.",
+    "Reset your stance and repeat the next rep."
+   ],
+   "formCues": [
+    "Chest up",
+    "Keep heels down",
+    "Knees track over toes",
+    "Hold the bell close"
+   ],
+   "commonMistakes": [
+    "Letting the dumbbell drift away from the chest",
+    "Heels lifting off the floor at the bottom",
+    "Knees collapsing inward during the squat",
+    "Folding the chest forward instead of staying upright"
+   ],
+   "breathing": "Inhale as you lower into the squat, and exhale as you stand back up."
+  },
+  "discovery-crunch": {
+   "sourceId": "0274",
+   "sourceName": "Floor Crunch",
+   "model": "female",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/female/crunch-floor-female.mp4",
+   "bbox": [
+    240,
+    320,
+    1344,
+    552
+   ],
+   "sha256Source": "61c58f7aee77e000d6a6d54060c3a11d3d9c91bcb23610a102181f148dec171d",
+   "steps": [
+    "Lie on your back with knees bent and feet hip-width apart.",
+    "Place hands lightly behind head or cross over chest.",
+    "Engage core and lift shoulders off the floor.",
+    "Pause briefly at the top of the movement.",
+    "Slowly return to the starting position."
+   ],
+   "formCues": [
+    "Keep chin off chest",
+    "Lower back pressed to floor",
+    "Controlled movement",
+    "Exhale on crunch"
+   ],
+   "commonMistakes": [
+    "Pulling on neck",
+    "Not engaging core",
+    "Using momentum",
+    "Not breathing properly"
+   ],
+   "breathing": "Exhale as you crunch up, inhale as you lower down."
+  },
+  "discovery-pushup": {
+   "sourceId": "drv-push-ups",
+   "sourceName": "Push-Up",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/push-ups.mp4",
+   "bbox": [
+    448,
+    280,
+    968,
+    696
+   ],
+   "sha256Source": "957dc6f62aa47fa550aff7cfabdf1e5390a4a232e94bdbfb71c8aa81cbe12490",
+   "steps": [
+    "Begin in a plank with hands under shoulders.",
+    "Engage core and glutes.",
+    "Lower chest toward floor, elbows at 45 degrees.",
+    "Pause briefly when close to ground.",
+    "Press back up to plank position."
+   ],
+   "formCues": [
+    "Keep body straight",
+    "Engage core",
+    "Elbows 45 degrees",
+    "Lower under control"
+   ],
+   "commonMistakes": [
+    "Letting hips sag",
+    "Flaring elbows too wide",
+    "Incomplete range of motion"
+   ],
+   "breathing": "Inhale as you lower, exhale as you push up."
+  },
+  "discovery-wristcurl": {
+   "sourceId": "0369",
+   "sourceName": "Dumbbell Over Bench Wrist Curl",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-over-bench-wrist-curl.mp4",
+   "bbox": [
+    416,
+    144,
+    888,
+    880
+   ],
+   "sha256Source": "acbf4b45d0bce5c8f9907b10e378450934d35afa68760ba1ae7cbbb13571d2df",
+   "steps": [
+    "Sit at a bench and place your forearms on top with your palms facing up.",
+    "Hold a dumbbell in each hand and slide forward until your wrists hang just past the bench edge.",
+    "Let your hands lower to gently stretch your wrists at the bottom.",
+    "Curl your wrists up by lifting your knuckles toward your forearms.",
+    "Squeeze your forearms briefly at the top.",
+    "Lower the dumbbells back down under control until your wrists extend again."
+   ],
+   "formCues": [
+    "Move only your wrists",
+    "Forearms stay glued down",
+    "Curl through full range",
+    "Lower slowly"
+   ],
+   "commonMistakes": [
+    "Lifting the forearms off the bench during the curl.",
+    "Swinging the dumbbells instead of moving only the wrists.",
+    "Using partial range and stopping before the wrists fully lower.",
+    "Bending the elbows to help raise the weight."
+   ],
+   "breathing": "Inhale as you lower your wrists and exhale as you curl them up."
+  },
+  "discovery-bodysquat": {
+   "sourceId": "drv-squat",
+   "sourceName": "Squat",
+   "model": "male",
+   "sourceURL": "https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/squat.mp4",
+   "bbox": [
+    872,
+    112,
+    472,
+    944
+   ],
+   "sha256Source": "24cc1798f059e0e03ab0c483612387c15cba9b5d63ffd3ad28209ca9e4217840",
+   "steps": [
+    "Stand with feet shoulder-width apart and toes slightly outward.",
+    "Brace core and keep chest up.",
+    "Initiate movement by pushing hips back and bending knees.",
+    "Descend until thighs are at least parallel to the floor.",
+    "Push through heels to return to standing."
+   ],
+   "formCues": [
+    "Keep knees tracking toes",
+    "Maintain neutral spine",
+    "Weight on midfoot/heels",
+    "Chest up"
+   ],
+   "commonMistakes": [
+    "Letting knees collapse inward",
+    "Rounding lower back",
+    "Not reaching parallel depth"
+   ],
+   "breathing": "Inhale as you lower down, exhale as you stand up."
+  }
+ }
+}

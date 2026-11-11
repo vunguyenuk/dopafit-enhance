@@ -1,0 +1,336 @@
+{
+  "date": "2026-11-10",
+  "clips": [
+    {
+      "id": "3TZduzM",
+      "sourceSHA256": "d05bbfcc6c7283d35069e51cdf56df66e55a5c4182ca192f50750857fdcd7be0",
+      "videoSHA256": "3f6cb097c25801ca2b6ad8084cfde93429f10e2b5f5abe9f42f1901e7dfe4cfd",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "6TG6x2w",
+      "sourceSHA256": "150a2bf1f8ef447895faa90855dfb72585ed77a4c6c2f9d3d42e2b4dc5e201e6",
+      "videoSHA256": "65e93909f15f151e063795ba164f10a4eacf5d229ea90bf730abc9520f534db2",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "8DiFDVA",
+      "sourceSHA256": "a90772120baa1d2dabac29f62b2bb1b128a03f936f7e0cc2f7f29f7c1f817a65",
+      "videoSHA256": "56fa94ad08719c804b7020a0e275deb9b4f58102aa2a91ac26e230bf8673f6ac",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "BJ0Hz5L",
+      "sourceSHA256": "68b6a883f0232f4c3ee83f4b1f2e4589f50b0b2dbf57864675e610ecda63a544",
+      "videoSHA256": "78424c8eb25307d4757c54085213f6356a15ee36b7f02f9db663dc10bd704a13",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "C0MA9bC",
+      "sourceSHA256": "c53241038bc290424e72086a7fecf1c367ac53a42f4b5844a4b5314abe56dc44",
+      "videoSHA256": "10246557660be3c2efe39d058e19e7039690f1cd67d19b4a3a7a8bcfd9ab8e8a",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "DsgkuIt",
+      "sourceSHA256": "68de0e7c7727fa08a203f73b0d2935181a5c6489470d44b9028de4a7d10a17f1",
+      "videoSHA256": "133d56c4812a247d1979c1176f421c892d797df2aa92d377b39a9a3d650b89f9",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "HPlPoQA",
+      "sourceSHA256": "b54f7a2caa09011db921732ce57f61bcc09e8ce57557138bb0440db98e82d29e",
+      "videoSHA256": "5a59ee4667260015481ad8264107e1e950cfa956680aa011e82a600d94586c8d",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "J6Dx1Mu",
+      "sourceSHA256": "e86e9de6778c660ca101763fbb307c42224e2eeedd28313d527c924d03aabee4",
+      "videoSHA256": "fbc10e9c28d5cd942482b06141eb03f317cc1b765c0a8e94067cd9523cbdd33e",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "NJzBsGJ",
+      "sourceSHA256": "24560aa9a4ba2f3bf7ffda3bd33a6a63127d26cb2f2d77f3a0778d88e1e536a1",
+      "videoSHA256": "9131d4c6329ae74c189e542227f13267b367e0af5d4d23c7134c917fed126184",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "NbVPDMW",
+      "sourceSHA256": "ec9acaaac38045ea355c51ba61a854d54d31b03744a922eba429935ac10ba90c",
+      "videoSHA256": "24234d2c68176362a4f1b0c479979d21bd90f475391dd8aa8334809f42a9b7c9",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "RaflbWD",
+      "sourceSHA256": "ca90d75252ca5fd5dc9c772e96ced723bf41662dafe76f061952ce300b08cd08",
+      "videoSHA256": "70bf1d71945c71cf8f31a0b2a8660fb84083a2a31b1ba302104944099ff89209",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "XlZ4lAC",
+      "sourceSHA256": "7d01b04b09e80504323e66295f757b2f0328dab7a3d71d637a2916d391634a1f",
+      "videoSHA256": "be1f56b9decd61c33d958e908afaca9621d1232432397d2fdf4869e44470f8ab",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "Xy4jlWA",
+      "sourceSHA256": "88e53667b5f727a1b44e427dc44c91c0b9757144fb1fb7cd12dcbf8dd4824fbf",
+      "videoSHA256": "bb925f0ff06abb53d3d51ee33b95d4b1c2521e3637343f9ae2cd4ef55773d59c",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "dU605di",
+      "sourceSHA256": "db25428c5f9de2077427d94742cf5c5e955191459d0d5bc25533005591acf187",
+      "videoSHA256": "b64109bb25d6361d72cd25670f173efa7d4a192b885a7f2cbbd59b82ebee9f96",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "f7Y9eDZ",
+      "sourceSHA256": "b4bacf1437684442b6957b522312d5c33393e5b6a5d400536c23099828d37869",
+      "videoSHA256": "373ad33e00e2ae061841a80a4449e0e6cab65afd36e5f39e9259060759965b54",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 4.5,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "mpKZGWz",
+      "sourceSHA256": "418001c2b4976b51f859406a0a1ad237cf4b5349ba4ab54c138daa5912493cdd",
+      "videoSHA256": "85affc1043796e1ab1c46ee0a74b9fe4a875f2132b0feee339e3de4ffaaa10c4",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "myfUsKf",
+      "sourceSHA256": "67982491ac142252217ee9157cef9c3ed558149157b7a07a99de2b94a2bef8cf",
+      "videoSHA256": "7954e43382981d5dffcec8771aa4af5587dc0e8501b78f130d6e84b9da9ebae8",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "oHsrypV",
+      "sourceSHA256": "bdaba331f3282ea7ba1cb6eafcf11b97fbc4e5aa3505e7f10161fce758d3c0ef",
+      "videoSHA256": "e37376e8ca04c98fafb58b8206d2b938e276a84a1e91e4c210b28cc07e389a4c",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "oR7O9LW",
+      "sourceSHA256": "1da08363a4dbf18da891c56362439e51dca3895d41534cbcd60dc466ce1c4d3e",
+      "videoSHA256": "41c5e404732c00e963daf3618ec5fb802f4457ddb40a517379be09dcb1a1b352",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "peAeMR3",
+      "sourceSHA256": "5ada10f60a6f83b2d266f1322212fcdb34afba685be2511b48f79084bd4f4758",
+      "videoSHA256": "78bebf7c39b48892afce52a35870b66999789835462b9dba83b8fc831667737a",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "qXTaZnJ",
+      "sourceSHA256": "3c1e29f67ffaae89316c94d7af42fcbe2cbf379967c27c1d30fa0205b6f9ed30",
+      "videoSHA256": "08a08c99836d00fde57c436dec5640e691c6ebd7543a33aa0e50d16c37f4e052",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "trqKQv2",
+      "sourceSHA256": "2b8ce557bd1d27fea19e286672d2ea1f5f887b13c36fd8cfd5be4ee33a8fe1a3",
+      "videoSHA256": "340c8fcc472ccde4ff982cee72f81023147b4267af8cd2b7a9c9ff3666ae7347",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "u2X71Np",
+      "sourceSHA256": "9d8fb2ebd6d2f7c30aabc9350926d1bfc8077449b6049eff63466c05bf709def",
+      "videoSHA256": "76137fa04bdbd5b2fa6a26260eb3e477ca62432a397387969cea2174323ea22a",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "wQ2c4XD",
+      "sourceSHA256": "32d2f54834207624b965db5f4f5b875589d608990c3f85d3732062f30c3916b1",
+      "videoSHA256": "3c5d1fb8a62244930250dc543955ce4f76fa83ab596bd079b10b5bfca4550ef2",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "ykUOVze",
+      "sourceSHA256": "a47fdc5174b3f2003ae89a82d1815951413a0fd7b6f49329637454dc11a72960",
+      "videoSHA256": "99a680e801749752550d18f70ff126c5d17d07e7d22765aeaac69c3385910b55",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "yn8yg1r",
+      "sourceSHA256": "6a2440b565509a084f97e861dff6a69249f0d52f01730fc628d4698e273b4ea3",
+      "videoSHA256": "083ea5ce2b57624a19fbb133bda8df209102531c2b19e4c9dbee8af3c9994d84",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF, original poses. CFR duplicates frames, no interpolated anatomy."
+    },
+    {
+      "id": "iny3m5y",
+      "sourceSHA256": "c3dde2bfa860d8a141861ee94259e9fafee2096c74cb0553c87a05bae9544b21",
+      "videoSHA256": "4c9458a6f6a94bc5bfcb9713306a8d1040569815a397363d2a1653dc792e001d",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF original180px poses. CFR duplicates frames, no invented anatomy."
+    },
+    {
+      "id": "TFqbd8t",
+      "sourceSHA256": "b2caf9e3ebea2d5cf7f434f16aee481d529a57b8b5fc3c5de9e913b447eb1b57",
+      "videoSHA256": "436e46c75ae22a0d654d350be0113feb6b6a482d106ba6940f8c7961b9448538",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF original180px poses. CFR duplicates frames, no invented anatomy."
+    },
+    {
+      "id": "I4hDWkc",
+      "sourceSHA256": "22d3df1d1d7dea5edd61907e431ef6a5c4bf4bd1b6d290981a437576c3833464",
+      "videoSHA256": "9e129f75d874d2bb2f767efc1902cdb34efb6e4d843e7bcb81ce319bf3d02613",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF original180px poses. CFR duplicates frames, no invented anatomy."
+    },
+    {
+      "id": "2dImyQ8",
+      "sourceSHA256": "f7eaa8f4b04e8d492b5077084d3f486521ef33c95187002f967cbf13874b2997",
+      "videoSHA256": "1d901bd2abda53d5cbca24f572236b6213c6de8b4a2032532e28c081470953e7",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF original180px poses. CFR duplicates frames, no invented anatomy."
+    },
+    {
+      "id": "BLCvwr2",
+      "sourceSHA256": "7e8c7a0a99c61c6b8c17551f377f761c7f11f0be990a1aabaa3388112b502996",
+      "videoSHA256": "b216638acc826cf46166b4fe8348a6039b8f8dc18d7ea8b4019fc463b67692c7",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "GIF original180px poses. CFR duplicates frames, no invented anatomy."
+    },
+    {
+      "id": "qPEzJjA",
+      "sourceSHA256": "5c6ab66c33ba6361df648f851c1083f3169ec89e750b3bea764de5ca46527298",
+      "videoSHA256": "8daaddf0cbeccf1cf07b67ff0fa9b5f87978ed3aeb9270e46c45528b12763329",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 5.0,
+      "source": "GIF original180px poses. CFR duplicates frames, no invented anatomy."
+    },
+    {
+      "id": "A6wtbuL",
+      "sourceSHA256": "667ba53e82227da5d825d2249bf849514b79a5c06a280afd9f8cdc619f75ce8b",
+      "videoSHA256": "51535530d3ace11e889159a53369529054b9d6abc34d519095c93246fdcdeb39",
+      "width": 180,
+      "height": 180,
+      "fps": "30/1",
+      "seconds": 3.0,
+      "source": "ExerciseDB GIF original180px poses; CFR duplicates original frames, not nativeHD or new motion."
+    }
+  ],
+  "limitation": "Free upstream GIFs are 180px; MP4 removes main-thread GIF decoding but cannot create missing resolution or source motion frames."
+}

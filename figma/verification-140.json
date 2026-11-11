@@ -1,0 +1,971 @@
+{
+  "cards": [
+    {
+      "id": "1:29",
+      "name": "R01 — Màn chào — theo dõi từng buổi",
+      "parent": "1:24"
+    },
+    {
+      "id": "1:52",
+      "name": "R02 — Giới thiệu — ghi từng set",
+      "parent": "1:24"
+    },
+    {
+      "id": "1:74",
+      "name": "R03 — Mục tiêu tập luyện",
+      "parent": "1:24"
+    },
+    {
+      "id": "1:96",
+      "name": "R04 — Rào cản tập luyện",
+      "parent": "1:24"
+    },
+    {
+      "id": "1:118",
+      "name": "R05 — Nhu cầu sử dụng Dopafit",
+      "parent": "1:24"
+    },
+    {
+      "id": "1:140",
+      "name": "R06 — Nguồn biết đến Dopafit",
+      "parent": "1:24"
+    },
+    {
+      "id": "1:169",
+      "name": "R07 — Kinh nghiệm tập luyện",
+      "parent": "1:164"
+    },
+    {
+      "id": "1:191",
+      "name": "R08 — Tình trạng tập gần đây",
+      "parent": "1:164"
+    },
+    {
+      "id": "1:213",
+      "name": "R09 — Tần suất bốn tuần qua",
+      "parent": "1:164"
+    },
+    {
+      "id": "1:235",
+      "name": "R10 — Pain point — thay đổi vóc dáng",
+      "parent": "1:164"
+    },
+    {
+      "id": "1:257",
+      "name": "R11 — Pain point — không biết tập gì",
+      "parent": "1:164"
+    },
+    {
+      "id": "1:279",
+      "name": "R12 — Pain point — không chắc form",
+      "parent": "1:164"
+    },
+    {
+      "id": "1:307",
+      "name": "R13 — Câu chuyện — tập theo cảm giác",
+      "parent": "1:302"
+    },
+    {
+      "id": "1:329",
+      "name": "R14 — Câu chuyện — bỏ lỡ buổi tập",
+      "parent": "1:302"
+    },
+    {
+      "id": "1:352",
+      "name": "R15 — Câu chuyện — plateau",
+      "parent": "1:302"
+    },
+    {
+      "id": "1:374",
+      "name": "R16 — Lời hứa — một hệ thống tập",
+      "parent": "1:302"
+    },
+    {
+      "id": "1:396",
+      "name": "R17 — Lợi ích — plan cá nhân",
+      "parent": "1:302"
+    },
+    {
+      "id": "1:419",
+      "name": "R18 — Lợi ích — khi nào tăng tạ",
+      "parent": "1:302"
+    },
+    {
+      "id": "1:448",
+      "name": "D01 — Buổi tập — thân trên",
+      "parent": "1:443"
+    },
+    {
+      "id": "1:469",
+      "name": "D02 — Menu bài tập",
+      "parent": "1:443"
+    },
+    {
+      "id": "1:489",
+      "name": "D03 — Lịch sử bài — chưa có dữ liệu",
+      "parent": "1:443"
+    },
+    {
+      "id": "1:508",
+      "name": "D04 — Hướng dẫn — cách tập T-Bar",
+      "parent": "1:443"
+    },
+    {
+      "id": "1:528",
+      "name": "D05 — Hướng dẫn — nhóm cơ",
+      "parent": "1:443"
+    },
+    {
+      "id": "1:548",
+      "name": "D06 — Chọn thời lượng",
+      "parent": "1:443"
+    },
+    {
+      "id": "1:574",
+      "name": "D07 — Chọn phòng tập",
+      "parent": "1:569"
+    },
+    {
+      "id": "1:593",
+      "name": "D08 — Kế hoạch — phần trên",
+      "parent": "1:569"
+    },
+    {
+      "id": "1:613",
+      "name": "D09 — Kế hoạch — phần dưới",
+      "parent": "1:569"
+    },
+    {
+      "id": "1:633",
+      "name": "D10 — Chia buổi tập",
+      "parent": "1:569"
+    },
+    {
+      "id": "1:652",
+      "name": "D11 — Dụng cụ phòng tập",
+      "parent": "1:569"
+    },
+    {
+      "id": "1:672",
+      "name": "D12 — Nấc tạ đơn",
+      "parent": "1:569"
+    },
+    {
+      "id": "1:697",
+      "name": "D13 — Cơ thể — kết quả trước tập",
+      "parent": "1:692"
+    },
+    {
+      "id": "1:716",
+      "name": "D14 — Cơ thể — hồi phục trước tập",
+      "parent": "1:692"
+    },
+    {
+      "id": "1:736",
+      "name": "D15 — Mục tiêu tuần — trước tập",
+      "parent": "1:692"
+    },
+    {
+      "id": "1:756",
+      "name": "D16 — Nhật ký — trước tập",
+      "parent": "1:692"
+    },
+    {
+      "id": "1:775",
+      "name": "D17 — Buổi tập đang chạy",
+      "parent": "1:692"
+    },
+    {
+      "id": "1:795",
+      "name": "D18 — Nhập set — T-Bar",
+      "parent": "1:692"
+    },
+    {
+      "id": "1:820",
+      "name": "D19 — Nhập set — chỉnh reps",
+      "parent": "1:815"
+    },
+    {
+      "id": "1:840",
+      "name": "D20 — Nhập set — tạ bằng 0",
+      "parent": "1:815"
+    },
+    {
+      "id": "1:860",
+      "name": "D21 — Nhập set — incline barbell",
+      "parent": "1:815"
+    },
+    {
+      "id": "1:880",
+      "name": "D22 — Popover thời gian nghỉ",
+      "parent": "1:815"
+    },
+    {
+      "id": "1:899",
+      "name": "D23 — Nhập set — timer đã bật",
+      "parent": "1:815"
+    },
+    {
+      "id": "1:919",
+      "name": "D24 — Khôi phục buổi dở",
+      "parent": "1:815"
+    },
+    {
+      "id": "1:945",
+      "name": "D25 — Set đầu đã ghi — timer chạy",
+      "parent": "1:940"
+    },
+    {
+      "id": "1:964",
+      "name": "D26 — Timer nghỉ — tạm dừng",
+      "parent": "1:940"
+    },
+    {
+      "id": "1:983",
+      "name": "D27 — Xác nhận ghi tất cả",
+      "parent": "1:940"
+    },
+    {
+      "id": "1:1002",
+      "name": "D28 — Cả ba set đã ghi — hỏi RIR",
+      "parent": "1:940"
+    },
+    {
+      "id": "1:1021",
+      "name": "D29 — RIR đã chọn 2",
+      "parent": "1:940"
+    },
+    {
+      "id": "1:1040",
+      "name": "D30 — Danh sách — bài đã hoàn tất",
+      "parent": "1:940"
+    },
+    {
+      "id": "1:1065",
+      "name": "D31 — Đổi bài — gợi ý Hợp nhất",
+      "parent": "1:1060"
+    },
+    {
+      "id": "1:1085",
+      "name": "D32 — Lọc và sắp xếp bài thay",
+      "parent": "1:1060"
+    },
+    {
+      "id": "1:1104",
+      "name": "D33 — Cập nhật kế hoạch sau swap",
+      "parent": "1:1060"
+    },
+    {
+      "id": "1:1123",
+      "name": "D34 — Kết thúc và lưu — xác nhận",
+      "parent": "1:1060"
+    },
+    {
+      "id": "1:1142",
+      "name": "D35 — Tổng kết buổi đã lưu",
+      "parent": "1:1060"
+    },
+    {
+      "id": "1:1161",
+      "name": "D36 — Mở khóa chuỗi tuần",
+      "parent": "1:1060"
+    },
+    {
+      "id": "1:1186",
+      "name": "D37 — Nhật ký — sau một buổi",
+      "parent": "1:1181"
+    },
+    {
+      "id": "1:1205",
+      "name": "D38 — Mục tiêu tuần — tổng sau tập",
+      "parent": "1:1181"
+    },
+    {
+      "id": "1:1225",
+      "name": "D39 — Mục tiêu — chi tiết cơ đẩy",
+      "parent": "1:1181"
+    },
+    {
+      "id": "1:1245",
+      "name": "D40 — Hồi phục — sau buổi thử",
+      "parent": "1:1181"
+    },
+    {
+      "id": "1:1264",
+      "name": "D41 — Hồi phục — phương pháp",
+      "parent": "1:1181"
+    },
+    {
+      "id": "1:1284",
+      "name": "D42 — Kết quả — sau một buổi",
+      "parent": "1:1181"
+    },
+    {
+      "id": "1:1310",
+      "name": "D43 — Cài đặt",
+      "parent": "1:1305"
+    },
+    {
+      "id": "1:1330",
+      "name": "D44 — Chọn ngôn ngữ",
+      "parent": "1:1305"
+    },
+    {
+      "id": "1:1349",
+      "name": "D45 — Báo cáo — nội dung khi cuộn",
+      "parent": "1:1305"
+    },
+    {
+      "id": "1:1369",
+      "name": "D46 — Báo cáo — kỳ tuần trước",
+      "parent": "1:1305"
+    },
+    {
+      "id": "1:1389",
+      "name": "D47 — Báo cáo — 7 ngày gần nhất",
+      "parent": "1:1305"
+    },
+    {
+      "id": "1:1408",
+      "name": "D48 — Hồ sơ sức khỏe",
+      "parent": "1:1305"
+    },
+    {
+      "id": "1:1434",
+      "name": "D49 — Menu buổi đã lưu",
+      "parent": "1:1429"
+    },
+    {
+      "id": "1:1453",
+      "name": "D50 — Chi tiết buổi mở lại",
+      "parent": "1:1429"
+    },
+    {
+      "id": "1:1472",
+      "name": "D51 — Menu bài trong lịch sử",
+      "parent": "1:1429"
+    },
+    {
+      "id": "1:1491",
+      "name": "D52 — Lịch sử bài — có dữ liệu",
+      "parent": "1:1429"
+    },
+    {
+      "id": "1:1510",
+      "name": "D53 — Xu hướng bài tập",
+      "parent": "1:1429"
+    },
+    {
+      "id": "1:1529",
+      "name": "D54 — Chi tiết 1RM bài tập",
+      "parent": "1:1429"
+    },
+    {
+      "id": "1:1555",
+      "name": "D55 — Quay lại app sau background",
+      "parent": "1:1550"
+    },
+    {
+      "id": "1:1575",
+      "name": "D56 — Trợ giúp công thức 1RM",
+      "parent": "1:1550"
+    },
+    {
+      "id": "1:1594",
+      "name": "D57 — Buổi kế tiếp — thân dưới",
+      "parent": "1:1550"
+    },
+    {
+      "id": "1:1614",
+      "name": "D58 — Menu cấp buổi",
+      "parent": "1:1550"
+    },
+    {
+      "id": "12:7",
+      "name": "R19 — Lợi ích — hồi phục nhóm cơ",
+      "parent": "12:2"
+    },
+    {
+      "id": "12:29",
+      "name": "R20 — Quyền riêng tư Apple Health",
+      "parent": "12:2"
+    },
+    {
+      "id": "12:52",
+      "name": "R21 — Apple Health hoặc nhập tay",
+      "parent": "12:2"
+    },
+    {
+      "id": "12:74",
+      "name": "R22 — Nhóm tuổi",
+      "parent": "12:2"
+    },
+    {
+      "id": "12:96",
+      "name": "R23 — Giới tính",
+      "parent": "12:2"
+    },
+    {
+      "id": "12:117",
+      "name": "R24 — Chiều cao và đơn vị",
+      "parent": "12:2"
+    },
+    {
+      "id": "12:146",
+      "name": "R25 — Cân nặng và đơn vị",
+      "parent": "12:141"
+    },
+    {
+      "id": "12:168",
+      "name": "R26 — Nhóm cơ ưu tiên",
+      "parent": "12:141"
+    },
+    {
+      "id": "12:189",
+      "name": "R27 — Giải thích giới hạn ưu tiên",
+      "parent": "12:141"
+    },
+    {
+      "id": "12:211",
+      "name": "R28 — Nơi tập luyện",
+      "parent": "12:141"
+    },
+    {
+      "id": "12:232",
+      "name": "R29 — Dụng cụ onboarding",
+      "parent": "12:141"
+    },
+    {
+      "id": "12:254",
+      "name": "R30 — Số buổi mỗi tuần — chưa chọn",
+      "parent": "12:141"
+    },
+    {
+      "id": "12:281",
+      "name": "R31 — Số buổi — lịch ba ngày",
+      "parent": "12:276"
+    },
+    {
+      "id": "12:303",
+      "name": "R32 — Thời lượng mỗi buổi",
+      "parent": "12:276"
+    },
+    {
+      "id": "12:324",
+      "name": "R33 — Xin nhắc ngày tập",
+      "parent": "12:276"
+    },
+    {
+      "id": "12:346",
+      "name": "R34 — Vận động ngoài buổi tập",
+      "parent": "12:276"
+    },
+    {
+      "id": "12:369",
+      "name": "R35 — Chi tiết hoạt động khác",
+      "parent": "12:276"
+    },
+    {
+      "id": "12:392",
+      "name": "R36 — Xem lại thiết lập — đầu trang",
+      "parent": "12:276"
+    },
+    {
+      "id": "12:423",
+      "name": "R37 — Xem lại — hồ sơ chưa nhập số đo",
+      "parent": "12:418"
+    },
+    {
+      "id": "12:483",
+      "name": "R38 — Lưu thiết lập — yêu cầu đăng nhập",
+      "parent": "12:479"
+    },
+    {
+      "id": "19:173",
+      "name": "R45 — Quản lý nơi tập cuối cùng",
+      "parent": "19:172"
+    },
+    {
+      "id": "19:200",
+      "name": "R46 — Nhật ký trống sau đăng nhập",
+      "parent": "19:172"
+    },
+    {
+      "id": "19:227",
+      "name": "R47 — Settings — Pro và export trống",
+      "parent": "19:172"
+    },
+    {
+      "id": "19:255",
+      "name": "R48 — Chọn English",
+      "parent": "19:254"
+    },
+    {
+      "id": "19:282",
+      "name": "R49 — Workout home — English",
+      "parent": "19:254"
+    },
+    {
+      "id": "19:309",
+      "name": "R50 — Buổi tập đang chạy — English",
+      "parent": "19:254"
+    },
+    {
+      "id": "19:6",
+      "name": "R39 — Plan đã xong",
+      "parent": "19:5"
+    },
+    {
+      "id": "19:33",
+      "name": "R40 — Lời hứa với chính mình",
+      "parent": "19:5"
+    },
+    {
+      "id": "19:60",
+      "name": "R41 — Giới thiệu Dopafit Pro",
+      "parent": "19:5"
+    },
+    {
+      "id": "19:88",
+      "name": "R42 — Hướng dẫn bài đầu sau đăng nhập",
+      "parent": "19:87"
+    },
+    {
+      "id": "19:115",
+      "name": "R43 — Hướng dẫn Dumbbell Row — các góc",
+      "parent": "19:87"
+    },
+    {
+      "id": "19:142",
+      "name": "R44 — Thiết lập plan sau đăng nhập",
+      "parent": "19:87"
+    },
+    {
+      "id": "19:340",
+      "name": "R51 — Dumbbell Row — per side/per arm",
+      "parent": "19:339"
+    },
+    {
+      "id": "19:367",
+      "name": "R52 — Đã ghi một set Dumbbell Row",
+      "parent": "19:339"
+    },
+    {
+      "id": "19:394",
+      "name": "R53 — Xác nhận lưu — volume 720 kg",
+      "parent": "19:339"
+    },
+    {
+      "id": "19:422",
+      "name": "R54 — Kết quả Dumbbell Row 720 kg",
+      "parent": "19:421"
+    },
+    {
+      "id": "19:449",
+      "name": "R55 — Menu bài trong buổi đã lưu",
+      "parent": "19:421"
+    },
+    {
+      "id": "19:476",
+      "name": "R56 — RIR cho buổi đã lưu",
+      "parent": "19:421"
+    },
+    {
+      "id": "19:507",
+      "name": "R57 — RIR đã chọn 3",
+      "parent": "19:506"
+    },
+    {
+      "id": "19:534",
+      "name": "R58 — Mở khóa chuỗi tuần — English",
+      "parent": "19:506"
+    },
+    {
+      "id": "19:561",
+      "name": "R59 — Nhật ký có buổi 720 kg",
+      "parent": "19:506"
+    },
+    {
+      "id": "19:589",
+      "name": "R60 — Mở lại buổi Dumbbell Row",
+      "parent": "19:588"
+    },
+    {
+      "id": "19:616",
+      "name": "R61 — RIR 3 vẫn còn sau mở lại",
+      "parent": "19:588"
+    },
+    {
+      "id": "33:515",
+      "name": "R62 — Home — đối chiếu trực tiếp lần hai",
+      "parent": "33:510"
+    },
+    {
+      "id": "33:537",
+      "name": "R63 — Guide — anatomy trong vùng media",
+      "parent": "33:510"
+    },
+    {
+      "id": "33:558",
+      "name": "R64 — Hồi phục — mặt trước khi đối chiếu",
+      "parent": "33:510"
+    },
+    {
+      "id": "33:579",
+      "name": "R65 — Hồi phục — mặt sau đã xoay",
+      "parent": "33:510"
+    },
+    {
+      "id": "33:600",
+      "name": "R66 — Hồi phục nhóm cơ — danh sách thật",
+      "parent": "33:510"
+    },
+    {
+      "id": "33:620",
+      "name": "R67 — Chỉnh mức hồi phục — slider",
+      "parent": "33:510"
+    },
+    {
+      "id": "39:7",
+      "name": "R68 — Hồi phục — chuyển sang nhóm cơ phụ",
+      "parent": "39:2"
+    },
+    {
+      "id": "39:33",
+      "name": "R69 — Hồi phục — đủ sáu cơ phụ ở cuối danh sách",
+      "parent": "39:2"
+    },
+    {
+      "id": "39:58",
+      "name": "R70 — Buổi đã lưu — sửa thời lượng bằng bánh xe",
+      "parent": "39:2"
+    },
+    {
+      "id": "41:6",
+      "name": "R71 — Nhật ký — lịch tháng mở rộng",
+      "parent": "41:2"
+    },
+    {
+      "id": "46:6",
+      "name": "R72 — Buổi đang tập — xác nhận bỏ buổi",
+      "parent": "46:2"
+    },
+    {
+      "id": "49:6",
+      "name": "R73 — Buổi đang tập — menu superset/circuit",
+      "parent": "49:2"
+    },
+    {
+      "id": "49:29",
+      "name": "R74 — Chọn superset — chưa chọn bài",
+      "parent": "49:2"
+    },
+    {
+      "id": "49:53",
+      "name": "R75 — Chọn superset — một bài",
+      "parent": "49:2"
+    },
+    {
+      "id": "49:75",
+      "name": "R76 — Chọn superset — hai bài",
+      "parent": "49:2"
+    },
+    {
+      "id": "56:948",
+      "name": "R77 — Superset đã lưu — gom bài không liền",
+      "parent": "56:944"
+    },
+    {
+      "id": "56:973",
+      "name": "R78 — Menu nhóm superset",
+      "parent": "56:944"
+    },
+    {
+      "id": "56:997",
+      "name": "R79 — Tách superset — giữ thứ tự hiện tại",
+      "parent": "56:944"
+    },
+    {
+      "id": "56:1019",
+      "name": "R80 — Hướng dẫn vai — video sau khi tải",
+      "parent": "56:944"
+    },
+    {
+      "id": "56:1045",
+      "name": "R81 — Superset set không đều — bốn vòng",
+      "parent": "56:944"
+    },
+    {
+      "id": "56:1070",
+      "name": "R82 — Khôi phục buổi gốc — không còn nhóm",
+      "parent": "56:944"
+    }
+  ],
+  "cardCount": 140,
+  "uniqueIDs": 140,
+  "imageCount": 140,
+  "roots": [
+    {
+      "id": "1:24",
+      "name": "00 · Onboarding gốc · R01–R06",
+      "x": 0,
+      "y": 0,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:164",
+      "name": "Dopafit gốc R07–R12",
+      "x": 3040,
+      "y": 0,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:302",
+      "name": "Dopafit gốc R13–R18",
+      "x": 6080,
+      "y": 1.1368683772161603e-13,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:443",
+      "name": "Dopafit gốc D01–D06",
+      "x": 0,
+      "y": 2850,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:569",
+      "name": "Dopafit gốc D07–D12",
+      "x": 3040,
+      "y": 2850,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:692",
+      "name": "Dopafit gốc D13–D18",
+      "x": 6080,
+      "y": 2850,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:815",
+      "name": "Dopafit gốc D19–D24",
+      "x": 0,
+      "y": 5700,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:940",
+      "name": "Dopafit gốc D25–D30",
+      "x": 3040,
+      "y": 5700,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1060",
+      "name": "Dopafit gốc D31–D36",
+      "x": 6080,
+      "y": 5700,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1181",
+      "name": "Dopafit gốc D37–D42",
+      "x": 0,
+      "y": 8550,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1305",
+      "name": "Dopafit gốc D43–D48",
+      "x": 3040,
+      "y": 8550,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1429",
+      "name": "Dopafit gốc D49–D54",
+      "x": 6080,
+      "y": 8550,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "1:1550",
+      "name": "Dopafit gốc D55–D58",
+      "x": 0,
+      "y": 11400,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:2",
+      "name": "Dopafit gốc R19–R24",
+      "x": 3040,
+      "y": 11400,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:141",
+      "name": "Dopafit gốc R25–R30",
+      "x": 6080,
+      "y": 11400,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:276",
+      "name": "Dopafit gốc R31–R36",
+      "x": 0,
+      "y": 14250,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "12:418",
+      "name": "Dopafit gốc R37–R37",
+      "x": 3040,
+      "y": 14250,
+      "width": 2860,
+      "height": 1400
+    },
+    {
+      "id": "12:479",
+      "name": "Dopafit gốc R38 · Lưu thiết lập → Đăng nhập",
+      "x": 6080,
+      "y": 14250,
+      "width": 980,
+      "height": 1400
+    },
+    {
+      "id": "19:169",
+      "name": "Dopafit gốc R45–R50",
+      "x": 3040,
+      "y": 17100,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "19:2",
+      "name": "Dopafit gốc R39–R44",
+      "x": 0,
+      "y": 17100,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "19:336",
+      "name": "Dopafit gốc R51–R56",
+      "x": 6080,
+      "y": 17100,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "19:503",
+      "name": "Dopafit gốc R57–R61",
+      "x": 0,
+      "y": 19950,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "33:510",
+      "name": "Dopafit gốc R62–R67",
+      "x": 3040,
+      "y": 19950,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "39:2",
+      "name": "Dopafit gốc R68–R70",
+      "x": 6080,
+      "y": 19950,
+      "width": 2860,
+      "height": 1400
+    },
+    {
+      "id": "41:2",
+      "name": "Dopafit gốc R71 · Lịch tháng mở rộng",
+      "x": 0,
+      "y": 22800,
+      "width": 980,
+      "height": 1400
+    },
+    {
+      "id": "46:2",
+      "name": "Dopafit gốc R72 · Xác nhận bỏ buổi",
+      "x": 3040,
+      "y": 22800,
+      "width": 980,
+      "height": 1400
+    },
+    {
+      "id": "49:2",
+      "name": "Dopafit gốc R73–R76 · Superset trong buổi đang tập",
+      "x": 6080,
+      "y": 22800,
+      "width": 2860,
+      "height": 2540
+    },
+    {
+      "id": "56:944",
+      "name": "Dopafit gốc R77–R82 · Superset và khôi phục",
+      "x": 0,
+      "y": 25650,
+      "width": 2860,
+      "height": 2540
+    }
+  ],
+  "newCards": [
+    {
+      "id": "56:948",
+      "name": "R77 — Superset đã lưu — gom bài không liền",
+      "textCount": 22,
+      "imageCount": 1
+    },
+    {
+      "id": "56:973",
+      "name": "R78 — Menu nhóm superset",
+      "textCount": 21,
+      "imageCount": 1
+    },
+    {
+      "id": "56:997",
+      "name": "R79 — Tách superset — giữ thứ tự hiện tại",
+      "textCount": 19,
+      "imageCount": 1
+    },
+    {
+      "id": "56:1019",
+      "name": "R80 — Hướng dẫn vai — video sau khi tải",
+      "textCount": 23,
+      "imageCount": 1
+    },
+    {
+      "id": "56:1045",
+      "name": "R81 — Superset set không đều — bốn vòng",
+      "textCount": 22,
+      "imageCount": 1
+    },
+    {
+      "id": "56:1070",
+      "name": "R82 — Khôi phục buổi gốc — không còn nhóm",
+      "textCount": 22,
+      "imageCount": 1
+    }
+  ]
+}

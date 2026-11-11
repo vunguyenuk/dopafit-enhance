@@ -1,0 +1,456 @@
+{
+  "date": "2026-11-11",
+  "variants": [
+    {
+      "localID": "tbar",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tbar-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "tbar",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tbar-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "incline",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "incline",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "closebench",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/closebench-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/closebench-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/closebench-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "tricep",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tricep-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "tricep",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tricep-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "squat",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/squat-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "squat",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/squat-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "adductor",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/adductor-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "adductor",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/adductor-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "arnold",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/arnold-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "arnold",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/arnold-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "machinefly",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/machinefly-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "machinefly",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/machinefly-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "frontraise",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/frontraise-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "frontraise",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/frontraise-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-row",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-row-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-row-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-row-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-row",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-row-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-row-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-row-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-skullcrusher",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-skullcrusher",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "ez-curl",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/ez-curl-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "ez-curl",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/ez-curl-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-curl",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-curl",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-shrug",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-shrug",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "incline-dumbbell-curl",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "incline-dumbbell-curl",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-lateral-raise",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "dumbbell-lateral-raise",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "goblet-squat",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "goblet-squat",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-crunch",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-crunch-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-crunch-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-crunch-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-pushup",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-pushup",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-wristcurl",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-wristcurl",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-bodysquat",
+      "model": "male",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-male-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-male-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-male-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    },
+    {
+      "localID": "discovery-bodysquat",
+      "model": "female",
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-female-guide-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-female-guide-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-female-guide-2.jpg"
+      ],
+      "sampledDistinctFrames": 3,
+      "decodeBothOutputs": "passed"
+    }
+  ],
+  "meaning": "Full decoding of80MP4,3sampled poses per40variants. Source anatomy/provenance not certified.",
+  "visualReview": {
+    "contactSheetsReviewed": 6,
+    "sampledVariants": 40,
+    "sampledTimes": [
+      0.15,
+      0.5,
+      0.85
+    ],
+    "result": "No body/implement cutoff seen in sampled guide frames. Bounds calculated over every decoded source frame. Not a biomechanics certification."
+  }
+}

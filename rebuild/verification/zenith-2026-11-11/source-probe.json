@@ -1,0 +1,757 @@
+{
+  "date": "2026-11-11",
+  "sources": [
+    {
+      "localID": "tbar",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/lever-t-bar-row.mp4",
+      "sourceSHA256": "b73050249bf6a0dac281a9b48ad5e9c7945043fc136bb0d55a7d20968de924ea",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tbar-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "tbar",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/lever-t-bar-row.mp4",
+      "sourceSHA256": "51d6a8eccbe52ee6018c9791ceb45b3f4a33cc41bb0317ba7541835ee5a5579c",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tbar-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tbar-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "incline",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/barbell-incline-bench-press.mp4",
+      "sourceSHA256": "1ff6f81704f098a9437cd9bac4ac61a26cbbe2b19987951c3a7d2d89028bf4d1",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "incline",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/barbell-incline-bench-press.mp4",
+      "sourceSHA256": "3309fa84f284845a8a01cc43e7c9c0f64b22258b38b942b19a2ef4a02b9756c8",
+      "width": 1920,
+      "height": 1080,
+      "fps": "2997/100",
+      "duration": 6.57324,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "closebench",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/barbell-close-grip-bench-press.mp4",
+      "sourceSHA256": "6676c47c40ef7d72824f6a54904d0f15004929a71b3960cf0453e3284858f6c4",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.639967,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/closebench-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/closebench-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/closebench-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "tricep",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/cable-pushdown-rope-attachment.mp4",
+      "sourceSHA256": "8d61fd3ef8691a0105d521a19410b378260828e760ca65c119f561ed7cdad304",
+      "width": 1920,
+      "height": 1080,
+      "fps": "2997/100",
+      "duration": 6.57324,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tricep-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "tricep",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/cable-pushdown-rope-attachment.mp4",
+      "sourceSHA256": "c97fcd57c81c9644520bf880314b28c3d0c04565d70ca00e446a23fac981ba8d",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 5.4,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/tricep-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/tricep-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "squat",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/classic-barbell-squat.mp4",
+      "sourceSHA256": "dd26120ac64a3c6609bc541a5d62a6c2fb20eded660d17caf102ea1888bbba26",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/squat-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "squat",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/classic-barbell-squat.mp4",
+      "sourceSHA256": "c62f7f86ad5829f6612a1c381d5cde7613fb58ac3e907db963d4567a877a84ca",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 5.333333,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/squat-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/squat-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "rdl",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/barbell-straight-leg-deadlift.mp4",
+      "sourceSHA256": "76056e077fa4017ae19c0239e1e7e9e260d1f474acd53baf691958ada1736960",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/rdl-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/rdl-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/rdl-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "rdl",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/barbell-straight-leg-deadlift.mp4",
+      "sourceSHA256": "a2043b5f72c313ea58fdb20369ae9867a645ae16e8e59007790f52130da0e96f",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/rdl-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/rdl-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/rdl-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "adductor",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/lever-seated-hip-adduction.mp4",
+      "sourceSHA256": "dd07724755bf157c676f02c9a8724e222709cf7c65a830733709fd14c7370c52",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/adductor-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "adductor",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/lever-seated-hip-adduction.mp4",
+      "sourceSHA256": "c0a0a6a7f8a6d74adcda678f796ee2d2451819b718c3e286f1a46ea41c0d8f4f",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/adductor-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/adductor-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "arnold",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-arnold-press.mp4",
+      "sourceSHA256": "40e18268aae5e474a508039326a81e97b897cce44d1bc7f1badb4a74dd70b430",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/arnold-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "arnold",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-arnold-press.mp4",
+      "sourceSHA256": "9153a856ab581a631d388383cc863aadecc90a4f5db04ac441a0fa101462c1fd",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/arnold-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/arnold-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "reversefly",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/cable-crossover-reverse-fly.mp4",
+      "sourceSHA256": "2c46bb99cbc4dc1b4c2271cdbc8b521faeaad56fce15ce806dfa300905d1114f",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/reversefly-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/reversefly-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/reversefly-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "reversefly",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/cable-crossover-reverse-fly.mp4",
+      "sourceSHA256": "d716e36a24a393c90b0b16b8f280c896211070a28886f9962a243b47a0566c5f",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/reversefly-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/reversefly-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/reversefly-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "machinefly",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/lever-seated-reverse-fly.mp4",
+      "sourceSHA256": "46610fd85793d5dd395a9acbf1d778a3a2fd95537f65899b79d427b724f20601",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/machinefly-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "machinefly",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/lever-seated-reverse-fly.mp4",
+      "sourceSHA256": "749f53e050f415dec647f2158f6f39fa1ad01d2bcebe42a4b4e6b182b0ce10d8",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/machinefly-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/machinefly-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "frontraise",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/cable-one-arm-forward-raise.mp4",
+      "sourceSHA256": "1f669f510d4f49f7721b4a72176f62d58125699a7eec9f1095ff25fd877946c2",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/frontraise-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "frontraise",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/cable-one-arm-forward-raise.mp4",
+      "sourceSHA256": "3f3bf3436a0d2a2c0e44ce12334b016861d7152b4c8a45714676d274fa0bf74a",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/frontraise-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/frontraise-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "bent-over-dumbbell-row",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-bent-over-row.mp4",
+      "sourceSHA256": "9fa938ae3be92d9fee84f6b9154f5402ed209a97f182685c375e4257144f2b71",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/bent-over-dumbbell-row-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/bent-over-dumbbell-row-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/bent-over-dumbbell-row-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "bent-over-dumbbell-row",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-bent-over-row.mp4",
+      "sourceSHA256": "2e33d744ddef3fdedc8acc367f09179c57547ea52a9e678ee95dd57bddebeb15",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/bent-over-dumbbell-row-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/bent-over-dumbbell-row-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/bent-over-dumbbell-row-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-skullcrusher",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-lying-triceps-extension.mp4",
+      "sourceSHA256": "55ef9582da5eeacbb0908dc6d7bd333176c881f7d2cb73a097260f012b059e78",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-skullcrusher",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-lying-triceps-extension.mp4",
+      "sourceSHA256": "5ca69a40529c9d75c3c0bed9cdb44f6d4464891fdf781b51b4fc98d7f4b72ac7",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-skullcrusher-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "ez-curl",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/ez-barbell-biceps-curl.mp4",
+      "sourceSHA256": "f7e09044f3f0d71a26170c54d417831e6e4da8896baa584a2154b6e82539a52e",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.6066,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/ez-curl-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "ez-curl",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/ez-barbell-biceps-curl.mp4",
+      "sourceSHA256": "2c750fd3679330662e43d89f47f825857907cbd3e08bafff7db786d837f5e773",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/ez-curl-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/ez-curl-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-curl",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-biceps-curl.mp4",
+      "sourceSHA256": "a0b63b72251ff8ee8bad80e274ca90481f00503a0f245c9013ea8351d4a70378",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-curl",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-biceps-curl.mp4",
+      "sourceSHA256": "53171e5b9ab6286ac4e1651ac5af5c2c4b58b407beb08b857024c49ddf40bd41",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-curl-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-shrug",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-shrug.mp4",
+      "sourceSHA256": "79167df756f3a09febe2786c71df09b55d9d94f948a05ff71ae55578202746d0",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-shrug",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-shrug.mp4",
+      "sourceSHA256": "4970b00eb77f90ac0f4c153a8883b9d174399b5a1c413e9b96c1561304907212",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shrug-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "incline-dumbbell-curl",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-incline-biceps-curl.mp4",
+      "sourceSHA256": "9c1fc8a007caf17173d3ecdabd21484a2d361bf270ccf85d82d65144c0aa6fec",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "incline-dumbbell-curl",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-incline-biceps-curl.mp4",
+      "sourceSHA256": "48ab58bdbcdb3fd49853a3b11e7bb12aa29552283ebd616426be7bbd41f9adeb",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/incline-dumbbell-curl-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-lateral-raise",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-lateral-raise.mp4",
+      "sourceSHA256": "83a2e1a45c0ab7bf168072ae5e129abb9e0e6324578cc06abe77e07b3408115b",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-lateral-raise",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-lateral-raise.mp4",
+      "sourceSHA256": "71139893d68f7c8692dbc9d9563e1c999ba992e407f66674c59892842cbc2a9f",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-lateral-raise-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-shoulder-press",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-bench-seated-press.mp4",
+      "sourceSHA256": "19a5abb57f831fce30124ff9dadc7205060a8d5524de5a396f8c1e5864a7a616",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shoulder-press-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shoulder-press-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shoulder-press-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "dumbbell-shoulder-press",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-bench-seated-press.mp4",
+      "sourceSHA256": "a16b1bc2f0e70eb70dcfae6bb34f8e9009407e48791ca105c76d584b2549ccf3",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.566667,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shoulder-press-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shoulder-press-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/dumbbell-shoulder-press-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "goblet-squat",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-goblet-squat.mp4",
+      "sourceSHA256": "6630a8b65dccb8d08a5fed9cb3e4da69132e55a62e138fa29c8ff9a51e1069ce",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "goblet-squat",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-goblet-squat.mp4",
+      "sourceSHA256": "21c34c5106e51ed764093a6e871953f862b8ab1b96133d6928c4b6227f1364e7",
+      "width": 1920,
+      "height": 1080,
+      "fps": "2997/100",
+      "duration": 6.57324,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/goblet-squat-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-crunch",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw/crunch-floor-female.mp4",
+      "sourceSHA256": "61c58f7aee77e000d6a6d54060c3a11d3d9c91bcb23610a102181f148dec171d",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 5.233333,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-crunch-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-crunch-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-crunch-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-pushup",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/push-ups.mp4",
+      "sourceSHA256": "957dc6f62aa47fa550aff7cfabdf1e5390a4a232e94bdbfb71c8aa81cbe12490",
+      "width": 1920,
+      "height": 1080,
+      "fps": "2997/100",
+      "duration": 6.57324,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-pushup",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/push-ups.mp4",
+      "sourceSHA256": "e810e7c088db05ba92b66faf62e3b7a741b94c0d2acd5583c2b4e2486910e24e",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-pushup-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-glutebridge",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw/hip-raise-bridge.mp4",
+      "sourceSHA256": "49575f925de2b0cd34e4b617d70173e625b2d6db354f7a6a2d0a7255249084f9",
+      "width": 1920,
+      "height": 1080,
+      "fps": "2997/100",
+      "duration": 6.639973,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-glutebridge-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-glutebridge-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-glutebridge-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-wristcurl",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/dumbbell-over-bench-wrist-curl.mp4",
+      "sourceSHA256": "acbf4b45d0bce5c8f9907b10e378450934d35afa68760ba1ae7cbbb13571d2df",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-wristcurl",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/dumbbell-over-bench-wrist-curl.mp4",
+      "sourceSHA256": "298e16c64c51b04db05684320b70efc601366ebf064b1156c1e896b65f525048",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-wristcurl-female-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-bodysquat",
+      "model": "male",
+      "sourcePath": "third_party/zenith-video/raw/squat.mp4",
+      "sourceSHA256": "24cc1798f059e0e03ab0c483612387c15cba9b5d63ffd3ad28209ca9e4217840",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30000/1001",
+      "duration": 6.573233,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-male-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-male-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-male-2.jpg"
+      ],
+      "audio": false
+    },
+    {
+      "localID": "discovery-bodysquat",
+      "model": "female",
+      "sourcePath": "third_party/zenith-video/raw-female/squat.mp4",
+      "sourceSHA256": "d3f2a202ecf0d7c24822c3c2c298df82a6bc1f909e9078618254cdfda0c12363",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "duration": 6.6,
+      "frames": [
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-female-0.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-female-1.jpg",
+        "rebuild/verification/zenith-2026-11-11/discovery-bodysquat-female-2.jpg"
+      ],
+      "audio": false
+    }
+  ]
+}

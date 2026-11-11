@@ -1,0 +1,14 @@
+import {build} from '../../third_party/exercise-animations/upstream/node_modules/esbuild/lib/main.js';
+import {readFileSync,writeFileSync,mkdirSync,copyFileSync} from 'node:fs';
+import path from 'node:path';
+const root=process.cwd(), upstream=path.join(root,'third_party/exercise-animations/upstream');
+const bins={name:'bundled-binary',setup(b){b.onResolve({filter:/\.bin\?url$/},a=>({path:path.resolve(a.resolveDir,a.path.replace('?url','')),namespace:'binary'}));b.onLoad({filter:/.*/,namespace:'binary'},a=>({contents:`export default ${JSON.stringify('data:application/octet-stream;base64,'+readFileSync(a.path).toString('base64'))}`,loader:'js'}));}};
+const shared={bundle:true,plugins:[bins],nodePaths:[path.join(upstream,'node_modules')],logLevel:'warning'};
+await build({...shared,entryPoints:['scripts/form/viewer-entry.ts'],format:'iife',minify:true,outfile:'DopafitRebuild/Form3D/viewer.js'});
+await build({...shared,entryPoints:['scripts/form/export-neutral.ts'],platform:'node',format:'esm',outfile:'.build/form-export-neutral.mjs'});
+await build({...shared,entryPoints:['scripts/form/qa-motion.ts'],platform:'node',format:'esm',outfile:'.build/form-qa-motion.mjs'});
+copyFileSync(path.join(upstream,'node_modules/three/LICENSE'),'DopafitRebuild/Form3D/licenses/Three-MIT.txt');
+copyFileSync(path.join(upstream,'THIRD_PARTY_ASSETS.md'),'DopafitRebuild/Form3D/licenses/Character-provenance.md');
+copyFileSync(path.join(upstream,'assets/source/makehuman/LICENSE.ASSETS.md'),'DopafitRebuild/Form3D/licenses/MakeHuman-CC0.md');
+writeFileSync('DopafitRebuild/Form3D/licenses/INTEGRATION-NOTICE.txt','Local prototype of Form at be16cb22c4ceb4ad134894250062fd0782410233 (https://github.com/blwsk/exercise-animations). Character mesh is declared CC0-1.0 by upstream. No root license for project-specific runtime code was present in this revision. Do not redistribute/publish this bundled runtime until the project code and authored atlas/equipment rights are clarified. Three.js retains its MIT license.\n');
+console.log('Offline Form viewer bundled; no CDN/runtime network.');

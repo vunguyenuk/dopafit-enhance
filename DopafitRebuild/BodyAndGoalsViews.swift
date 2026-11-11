@@ -1,0 +1,225 @@
+import SwiftUI
+
+struct BodyView:View {
+    @EnvironmentObject var store:AppStore
+    @State private var tab=0
+    @State private var help=""
+    @State private var allMuscles=false
+    @State private var health=false
+    @State private var rear=false
+    var lastDays:String {guard let date=store.data.history.map(\.started).max() else{return "–"};return String(max(0,Calendar.current.dateComponents([.day],from:date,to:Date()).day ?? 0))}
+    var ready:Int {Catalog.recoveryMuscles.filter{store.muscleRecovery($0)>=90}.count}
+    var body:some View {
+        VStack(spacing:0){
+            PillTabs(titles:[store.t("Kết quả","Results"),store.t("Hồi phục","Recovery")],selection:$tab,bright:false,controlHeight:38).padding(.horizontal,16).padding(.top,14).padding(.bottom,16)
+            ScrollView {
+                VStack(alignment:.leading,spacing:24){if tab==1 {recovery} else {results}}
+                    .padding(.horizontal,16).padding(.bottom,24)
+            }.id(tab)
+        }.background(Dopa.background)
+            .navigationDestination(isPresented:$allMuscles){RecoveryMusclesView()}
+            .sheet(isPresented:$health){HealthConnectionView()}
+            .sheet(isPresented:Binding(get:{!help.isEmpty},set:{if !$0{help=""}})){
+                ArticleSheet(title:help=="recovery" ? "Hồi phục cơ bắp":help=="strength" ? "Sức mạnh tổng":"1RM ước tính",sections:help=="recovery" ? [("Từ các buổi bạn ghi","Nhóm cơ chính và cơ hỗ trợ nhận mức đóng góp khác nhau. Khi thời gian trôi qua, các nhóm cơ dần hồi phục."),("Dùng để tham khảo","Hãy điều chỉnh buổi tập theo cảm nhận, giấc ngủ và tình trạng cơ thể của bạn.")] : [("Bài đo sức mạnh","Các set chính có tạ của bài đo giúp theo dõi tiến bộ. Ghi thêm buổi tập để có dữ liệu so sánh."),("1RM ước tính","Mức tạ bạn có thể nâng một lần, ước tính từ set có nhiều lần. Set khởi động không được tính.")])
+            }
+    }
+    var recovery:some View {
+        VStack(spacing:22) {
+            HStack(alignment:.top) {
+                VStack(spacing:10){Text(lastDays).font(Dopa.metricFont(40));Text(store.data.history.isEmpty ? "CHƯA CÓ BUỔI TẬP":"NGÀY TỪ BUỔI TẬP GẦN NHẤT").font(.dopa(size:10,weight:.semibold)).tracking(0.5).foregroundStyle(Dopa.muted).multilineTextAlignment(.center)}.frame(maxWidth:.infinity)
+                Button{allMuscles=true}label:{VStack(spacing:10){HStack(spacing:8){Text("\(ready)").font(Dopa.metricFont(40));Image(systemName:"chevron.right").font(.title3).foregroundStyle(Dopa.lime)};Text("NHÓM CƠ ĐÃ HỒI PHỤC").font(.dopa(size:10,weight:.semibold)).tracking(0.5).foregroundStyle(Dopa.muted)}}.buttonStyle(.plain).frame(maxWidth:.infinity)
+            }.padding(16).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+            if store.data.history.isEmpty {Text("Ghi một buổi tập, bản đồ sẽ cho thấy nhóm cơ nào cần nghỉ.").font(.dopa(size:15)).foregroundStyle(Dopa.muted)}
+            else if store.data.dismissedTips?.contains("recovery") != true {
+                VStack(alignment:.leading,spacing:12) {
+                    Text("Hồi phục").dopaSection()
+                    Text("Theo dõi mức hồi phục ước tính từ các buổi bạn đã ghi. Kết hợp với cảm nhận thực tế để chọn nhóm cơ cho buổi tiếp theo.").font(.dopa(size:16)).foregroundStyle(Dopa.muted)
+                    HStack{Button("Tìm hiểu thêm"){help="recovery"}.foregroundStyle(Dopa.muted).frame(minHeight:44);Spacer();Button("Đã hiểu"){store.dismissTip("recovery")}.foregroundStyle(Dopa.lime).padding(.horizontal,14).frame(height:40).background(Dopa.raised).clipShape(Capsule())}.font(.dopa(size:15,weight:.medium)).padding(.top,5)
+                }.padding(18).frame(maxWidth:.infinity,alignment:.leading).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+            }
+            ZStack(alignment:.bottomLeading) {
+                OpenGymBodyView(heat:Dictionary(uniqueKeysWithValues:(Catalog.recoveryMuscles+Catalog.recoverySecondaryMuscles).map{($0,(100-store.muscleRecovery($0))/100)}),rear:rear).frame(height:390).frame(maxWidth:.infinity)
+                CircleButton(icon:"arrow.triangle.2.circlepath"){rear.toggle()}.accessibilityLabel(rear ? "Xem mặt trước":"Xem mặt sau")
+            }
+            HStack(spacing:14){legend("Cần nghỉ",.orange);legend("Đang hồi",Color(red:0.65,green:0.31,blue:0.22));legend("Đã hồi phục",Dopa.raised)}
+            Text("Nhóm cơ hôm nay: "+Set((store.data.draft?.exercises ?? []).flatMap{$0.exercise.muscles}).sorted().joined(separator:", ")).font(.dopa(size:12)).foregroundStyle(Dopa.muted).frame(maxWidth:.infinity,alignment:.leading)
+            DopaButton(title:"Xem tất cả nhóm cơ",icon:"chevron.right",secondary:true){allMuscles=true}
+        }
+    }
+    var results:some View {
+        VStack(alignment:.leading,spacing:24) {
+            HStack{Text("Sức mạnh tổng").dopaSection();Spacer();Button{help="strength"}label:{Image(systemName:"info.circle").foregroundStyle(Dopa.muted).frame(width:44,height:44)}.accessibilityLabel("Về sức mạnh tổng");Image(systemName:"chevron.right").font(.caption).foregroundStyle(Dopa.muted)}
+            StrengthScoreBar().accessibilityLabel("Điểm sức mạnh đang khóa")
+            let logged=store.data.history.filter{$0.completedSets>0}.count
+            Text(logged>=3 ? "Đã đủ 3 buổi để tính điểm sức mạnh":"Đã ghi \(logged)/3 buổi · còn \(3-logged) buổi để mở khóa điểm").font(.dopa(size:13)).foregroundStyle(logged>0 ? Dopa.lime:Dopa.muted)
+            HStack{Text("Bài đo sức mạnh").dopaSection();Spacer();Button{help="1rm"}label:{Image(systemName:"info.circle").foregroundStyle(Dopa.muted).frame(width:44,height:44)}.accessibilityLabel("Về bài đo sức mạnh và 1RM")}
+            // Bài đo: các bài đã ghi set (mới nhất trước, tối đa 4) để người mới thấy kết quả ngay từ buổi 1.
+            let benchmarkIDs=store.data.history.flatMap{s in s.exercises.filter{$0.sets.contains{$0.completed && !$0.warmup && $0.weight>0} && !$0.exercise.timed}.map(\.exercise.id)}.reduce(into:[String]()){list,id in if !list.contains(id) && list.count<4 {list.append(id)}}
+            let benchmark=store.data.history.flatMap(\.exercises).filter{benchmarkIDs.contains($0.exercise.id)}
+            if benchmark.isEmpty {
+                VStack(alignment:.leading,spacing:17){Text("1RM ước tính").font(.dopa(size:17));HStack(alignment:.firstTextBaseline,spacing:6){Text("—").font(Dopa.metricFont(44));Text(store.unit).font(.dopa(size:15)).foregroundStyle(Dopa.muted)};VStack(spacing:12){Image(systemName:"chart.xyaxis.line").font(.dopa(size:28)).foregroundStyle(Dopa.muted);Text("Chưa có dữ liệu bài đo").font(.dopa(size:15)).foregroundStyle(Dopa.muted)}.frame(maxWidth:.infinity).frame(height:120);Text("Mức tạ tốt nhất của các bài đo sẽ hiện ở đây khi bạn ghi chúng.").font(.dopa(size:14)).foregroundStyle(Dopa.muted)}.padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+            } else {
+                ForEach(Array(Set(benchmark.map{$0.exercise.id})).sorted(),id:\.self) { id in
+                    if let ex=benchmark.first(where:{$0.exercise.id==id}) {NavigationLink{ExerciseHistoryView(exercise:ex.exercise)}label:{GroupCard{SettingRow(title:ex.exercise.name,value:store.weight(benchmark.filter{$0.exercise.id==id}.flatMap(\.sets).map(\.estimatedMax).max() ?? 0)+" "+store.unit)}}.buttonStyle(.plain)}
+                }
+            }
+            Text("Thành phần cơ thể").dopaSection()
+            if store.data.dismissedTips?.contains("health") != true {
+                VStack(alignment:.leading,spacing:14) {
+                    HStack{Label("Kết nối Apple Health?",systemImage:"heart").font(.dopa(size:17,weight:.medium));Spacer();Button{store.dismissTip("health")}label:{Image(systemName:"xmark").foregroundStyle(Dopa.muted).frame(width:32,height:32)}}
+                    Text("Lưu mỗi buổi tập bạn hoàn thành vào Apple Health, cùng các hoạt động khác của bạn.").font(.dopa(size:15)).foregroundStyle(Dopa.muted)
+                    DopaButton(title:"Kết nối với Apple Health",icon:"heart"){health=true}
+                }.padding(16).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+            }
+            NavigationLink{HealthProfileView()}label:{SettingRow(title:"Hồ sơ sức khỏe",icon:"person")}.buttonStyle(.plain)
+        }
+    }
+    func legend(_ text:String,_ color:Color)->some View {HStack(spacing:5){Circle().fill(color).frame(width:8,height:8);Text(text).font(.dopa(size:11)).foregroundStyle(Dopa.muted)}}
+}
+
+struct RecoveryMusclesView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    @State private var selected:String?=nil
+    @State private var editing=false
+    var body:some View {
+        VStack(spacing:18) {
+            HStack{CircleButton(icon:"chevron.left"){dismiss()};Spacer();Text("Hồi phục nhóm cơ").font(.dopa(size:19,weight:.semibold));Spacer();Button("Sửa"){editing=true}.foregroundStyle(Dopa.lime).frame(width:52,height:44).background(Dopa.card).clipShape(Capsule())}.padding(.horizontal,16)
+            ScrollView {
+                VStack(alignment:.leading,spacing:24) {
+                    recoveryGroup("Nhóm cơ chính",muscles:Catalog.recoveryMuscles)
+                    recoveryGroup("Nhóm cơ phụ",muscles:Catalog.recoverySecondaryMuscles)
+                }.padding(.horizontal,16).padding(.bottom,25)
+            }
+        }.background(Dopa.background).toolbar(.hidden,for:.navigationBar)
+            .navigationDestination(isPresented:$editing){RecoveryEditor()}
+            .sheet(isPresented:Binding(get:{selected != nil},set:{if !$0{selected=nil}})) {if let muscle=selected {RecoveryMuscleDetail(muscle:muscle)}}
+    }
+    func recoveryGroup(_ title:String,muscles:[String])->some View {
+        VStack(alignment:.leading,spacing:18) {
+            SectionLabel(title:title)
+            GroupCard {ForEach(muscles,id:\.self){muscle in
+                Button{selected=muscle}label:{HStack(spacing:14){MuscleThumbnail(muscle:muscle);VStack(alignment:.leading,spacing:6){Text(muscle).font(.dopa(size:20,weight:.semibold));Text(lastExercise(muscle)).font(.dopa(size:14)).foregroundStyle(Dopa.muted).lineLimit(2)};Spacer();Text("\(Int(store.muscleRecovery(muscle)))%").font(.dopa(size:20,weight:.semibold)).foregroundStyle(store.muscleRecovery(muscle)>=100 ? .white:.orange)}.padding(16).foregroundStyle(.white)}.buttonStyle(.plain)
+                if muscle != muscles.last {Divider().padding(.horizontal,16)}
+            }}
+        }
+    }
+    func lastExercise(_ muscle:String)->String {
+        for session in store.data.history.sorted(by:{$0.started>$1.started}) {
+            if let item=session.exercises.first(where:{$0.exercise.muscles.contains(muscle)||$0.exercise.secondary.contains(muscle)}) {
+                let hours=max(0,Int(Date().timeIntervalSince(session.started)/3600))
+                let age=hours==0 ? "dưới 1 giờ trước":"\(hours) giờ trước"
+                return item.exercise.name+", "+age
+            }
+        }
+        return "Chưa tập gần đây"
+    }
+}
+struct MuscleThumbnail:View {
+    var muscle:String
+    var body:some View {OpenGymMuscleImage(muscle:muscle).frame(width:46,height:46).clipped()}
+}
+struct RecoveryEditor:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    @State private var values:[String:Double]=[:]
+    @State private var initial:[String:Double]=[:]
+    var body:some View {
+        VStack(spacing:16) {
+            ScreenHeader(title:"Chỉnh mức hồi phục",back:{dismiss()},trailingIcon:"xmark",trailing:{dismiss()})
+            ScrollView {VStack(alignment:.leading,spacing:18){
+                Text("Chỉnh theo cảm giác thực tế của bạn. Bài tập hôm nay sẽ ưu tiên nhóm cơ đã hồi phục và bỏ qua nhóm cơ ở 0%.").foregroundStyle(Dopa.muted).font(.dopa(size:16))
+                SectionLabel(title:"Nhóm cơ chính")
+                GroupCard {ForEach(Catalog.recoveryMuscles,id:\.self){muscle in
+                    HStack(spacing:14){MuscleThumbnail(muscle:muscle);VStack(spacing:12){HStack{Text(muscle).font(.dopa(size:19,weight:.semibold));Spacer();Text("\(Int(values[muscle] ?? 100))%").font(.dopa(size:19,weight:.semibold))};Slider(value:Binding(get:{values[muscle] ?? 100},set:{values[muscle]=$0}),in:0...100,step:1).tint(Dopa.lime).accessibilityLabel("Hồi phục \(muscle)")}}.padding(16)
+                    if muscle != Catalog.recoveryMuscles.last {Divider().padding(.horizontal,16)}
+                }}
+            }.padding(.horizontal,16)}
+            DopaButton(title:"Lưu",enabled:values != initial){store.adjustRecovery(values);dismiss()}.padding(.horizontal,16).padding(.bottom,12)
+        }.background(Dopa.background).toolbar(.hidden,for:.navigationBar).onAppear{values=Dictionary(uniqueKeysWithValues:Catalog.recoveryMuscles.map{($0,Double(Int(store.muscleRecovery($0))))});initial=values}
+    }
+}
+struct RecoveryMuscleDetail:View {
+    @EnvironmentObject var store:AppStore
+    var muscle:String
+    var records:[WorkoutSession]{store.data.history.filter{$0.exercises.contains{$0.exercise.muscles.contains(muscle)||$0.exercise.secondary.contains(muscle)}}}
+    var body:some View {
+        ScrollView {VStack(alignment:.leading,spacing:20){SheetTitle(title:muscle);Text("\(Int(store.muscleRecovery(muscle)))%").font(Dopa.metricFont(50));Text(store.muscleRecovery(muscle)>=90 ? "Đã hồi phục":"Đang hồi phục").foregroundStyle(Dopa.muted);Text("Các buổi gần đây").font(.title3.bold());if records.isEmpty{Text("Chưa ghi buổi tập cho nhóm cơ này.").foregroundStyle(Dopa.muted)};ForEach(records.prefix(5)){s in SessionCard(session:s)}}.padding(20)}.dopaSheet().presentationDetents([.medium,.large])
+    }
+}
+
+struct GoalGroup {
+    var title:String
+    var muscles:[String]
+    var targets:[Double]
+    var color:Color
+    var target:Double {targets.reduce(0,+)}
+}
+struct GoalsView:View {
+    @EnvironmentObject var store:AppStore
+    @State private var expanded:Set<Int>=[]
+    @State private var help=false
+    let groups=[GoalGroup(title:"Cơ nhóm đẩy",muscles:["Ngực","Vai","Tay sau"],targets:[7,12,8],color:Dopa.push),GoalGroup(title:"Cơ nhóm kéo",muscles:["Lưng","Tay trước"],targets:[7,7],color:Dopa.pull),GoalGroup(title:"Cơ chân",muscles:["Đùi trước","Đùi sau","Mông","Bắp chân"],targets:[7,6,7,4],color:Dopa.legs)]
+    var total:Double {groups.reduce(0){sum,g in sum+g.muscles.reduce(0){$0+store.muscleSets($1)}}}
+    var weekLabel:String {let interval=Calendar.current.dateInterval(of:.weekOfYear,for:Date())!;return interval.start.formatted(.dateTime.day().month(.abbreviated))+" – "+interval.end.addingTimeInterval(-1).formatted(.dateTime.day().month(.abbreviated))}
+    var body:some View {
+        ScrollView {
+            VStack(alignment:.leading,spacing:22) {
+                if store.data.dismissedTips?.contains("goals") != true {
+                    VStack(alignment:.leading,spacing:9) {HStack{Text("Mới: mục tiêu set").font(.dopa(size:17,weight:.semibold));Spacer();Button{store.dismissTip("goals")}label:{Image(systemName:"xmark").foregroundStyle(Dopa.muted).frame(width:32,height:32)}};Text("Mỗi tuần, mỗi nhóm cơ có một số set cần đạt, tính từ mục tiêu, số buổi mỗi tuần và độ dài buổi tập của bạn.").font(.dopa(size:15)).foregroundStyle(Dopa.muted);Button("Tìm hiểu thêm"){help=true}.font(.dopa(size:14,weight:.medium)).foregroundStyle(Dopa.lime)}.padding(16).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+                }
+                VStack(alignment:.leading,spacing:5){Text("Mục tiêu set tuần").dopaTitle(29);Text(weekLabel).font(.dopa(size:13)).foregroundStyle(Dopa.muted)}
+                ZStack {
+                    ForEach(groups.indices,id:\.self){i in
+                        let value=groups[i].muscles.reduce(0){$0+store.muscleSets($1)}
+                        Circle().trim(from:CGFloat(i)/3+0.012,to:CGFloat(i+1)/3-0.012).stroke(groups[i].color.opacity(0.3),style:StrokeStyle(lineWidth:14,lineCap:.round)).rotationEffect(.degrees(-90))
+                        Circle().trim(from:CGFloat(i)/3+0.012,to:CGFloat(i)/3+0.012+CGFloat(min(1,value/groups[i].target))*(1/3-0.024)).stroke(groups[i].color,style:StrokeStyle(lineWidth:14,lineCap:.round)).rotationEffect(.degrees(-90))
+                    }
+                    VStack(spacing:6){Text("\(Int(total/65*100))%").font(Dopa.metricFont(38));Text("\(AppStore.number(total)) / 65 set").font(.dopa(size:15)).foregroundStyle(Dopa.muted)}
+                }.frame(width:200,height:200).frame(maxWidth:.infinity).padding(.vertical,5)
+                ForEach(groups.indices,id:\.self){index in goalCard(index)}
+                Text("Lịch sử").dopaSection().padding(.top,8)
+                HStack {ForEach((1...4).reversed(),id:\.self){week in
+                    let date=Calendar.current.date(byAdding:.weekOfYear,value:-week,to:Date())!
+                    let interval=Calendar.current.dateInterval(of:.weekOfYear,for:date)!
+                    let value=store.data.history.filter{interval.contains($0.started)}.flatMap(\.exercises).reduce(0.0){sum,ex in sum+Double(ex.sets.filter{$0.completed && !$0.warmup}.count)*Double(ex.exercise.muscles.count)+Double(ex.sets.filter{$0.completed && !$0.warmup}.count)*Double(ex.exercise.secondary.count)*0.5}
+                    VStack(spacing:7){SmallGoalRing(value:value/65,color:Dopa.legs,size:48);Text("\(Int(value/65*100))%").font(.dopa(size:13));Text(date.formatted(.dateTime.day().month())).font(.dopa(size:10)).foregroundStyle(Dopa.muted)}.frame(maxWidth:.infinity)
+                }}.padding(16).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+            }.padding(16)
+        }.background(Dopa.background).sheet(isPresented:$help){ArticleSheet(title:"Mục tiêu set tuần",sections:[("Cách tính","Mỗi set chính đóng góp 1 set cho cơ chính và 0,5 set cho cơ hỗ trợ. Set khởi động không tính vào mục tiêu."),("Theo dõi tiến độ","Ghi các set đã tập để cập nhật tiến độ. Số set còn lại hiển thị ở từng nhóm cơ.")])}
+    }
+    func goalCard(_ index:Int)->some View {
+        let group=groups[index];let value=group.muscles.reduce(0){$0+store.muscleSets($1)}
+        return VStack(spacing:15) {
+            Button{if expanded.contains(index){expanded.remove(index)}else{expanded.insert(index)}}label:{HStack(spacing:12){SmallGoalRing(value:value/group.target,color:group.color,size:32);VStack(alignment:.leading,spacing:4){Text(group.title).font(.dopa(size:18,weight:.semibold));Text("\(AppStore.number(value)) / \(AppStore.number(group.target)) set").font(.dopa(size:13)).foregroundStyle(Dopa.muted)};Spacer();VStack(alignment:.trailing,spacing:3){Text(AppStore.number(max(0,group.target-value))).font(.dopa(size:16,weight:.semibold));Text("còn lại").font(.dopa(size:11)).foregroundStyle(Dopa.muted)};Image(systemName:expanded.contains(index) ? "chevron.down":"chevron.right").font(.caption).foregroundStyle(Dopa.muted)}}.buttonStyle(.plain)
+            if expanded.contains(index) {
+                Divider()
+                ForEach(group.muscles.indices,id:\.self){i in let muscle=group.muscles[i];let count=store.muscleSets(muscle);HStack(spacing:12){SmallGoalRing(value:count/group.targets[i],color:group.color,size:28);VStack(alignment:.leading,spacing:4){Text(muscle).font(.dopa(size:16));Text("\(AppStore.number(count)) / \(AppStore.number(group.targets[i])) set").font(.dopa(size:12)).foregroundStyle(Dopa.muted)};Spacer();VStack(alignment:.trailing,spacing:3){Text(AppStore.number(max(0,group.targets[i]-count)));Text("còn lại").font(.dopa(size:10)).foregroundStyle(Dopa.muted)}}}
+                Divider();Text("Cơ chính = 1 set\nCơ phụ = 0,5 set").font(.dopa(size:12)).foregroundStyle(Dopa.muted).frame(maxWidth:.infinity,alignment:.leading)
+            }
+        }.padding(16).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+    }
+}
+struct SmallGoalRing:View {
+    var value:Double
+    var color:Color
+    var size:CGFloat
+    var body:some View {ZStack{Circle().stroke(color.opacity(0.25),lineWidth:5);Circle().trim(from:0,to:min(1,max(0,value))).stroke(color,style:StrokeStyle(lineWidth:5,lineCap:.round)).rotationEffect(.degrees(-90))}.frame(width:size,height:size)}
+}
+
+/// Locked-score artwork observed in the user's original Dopafit screenshot.
+private struct StrengthScoreBar:View {
+    var body:some View {
+        HStack(spacing:10){
+            Image(systemName:"lock.fill").font(.dopa(size:16)).foregroundStyle(Dopa.muted).frame(width:18)
+            ForEach(0..<10,id:\.self){_ in StrengthScoreSegment().fill(Dopa.raised).frame(maxWidth:.infinity).frame(height:36)}
+        }.frame(height:40).accessibilityElement(children:.ignore)
+    }
+}
+private struct StrengthScoreSegment:Shape {
+    func path(in rect:CGRect)->Path {
+        var p=Path();let slant=rect.width*0.3
+        p.move(to:CGPoint(x:slant,y:0));p.addLine(to:CGPoint(x:rect.width,y:0))
+        p.addLine(to:CGPoint(x:rect.width-slant,y:rect.height));p.addLine(to:CGPoint(x:0,y:rect.height));p.closeSubpath();return p
+    }
+}

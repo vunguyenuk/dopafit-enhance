@@ -1,0 +1,2568 @@
+{
+  "feed": {
+    "author": {
+      "name": {
+        "label": "iTunes Store"
+      },
+      "uri": {
+        "label": "http://www.apple.com/itunes/"
+      }
+    },
+    "entry": [
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id375434943"
+          },
+          "name": {
+            "label": "zva7"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-04T23:06:34-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "14029905909"
+        },
+        "title": {
+          "label": "Well worth it"
+        },
+        "content": {
+          "label": "Great app that has helped me tremendously in achieving my fitness goals, and the customer service is excellent. They genuinely care.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id750382770"
+          },
+          "name": {
+            "label": "Spanglorious"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-05-01T17:58:58-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "14018307767"
+        },
+        "title": {
+          "label": "Coach Jordan"
+        },
+        "content": {
+          "label": "Have had a wonderful experience working with Coach Jordan over the last three months. He clearly knows a considerable amount about strength training and he approaches his role and shares his expertise without a hint of arrogance. I made clear my goals to him at the outset of our time together and he built a program that seamlessly aligns. Beyond the actual programming, he has helped tailor my diet to increased protein and carbs intake that reinforce my goals. He checks in almost daily on how I’m doing (even on weekends), some of which delves into training but a lot of which is a more personal, friendly check-in to see how I’m feel and how the day has gone. Suffice it to say that I’ve re-upped for another six months because I’ve so thoroughly enjoyed Coach Jordan’s guidance, friendship, and teaching.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id48971966"
+          },
+          "name": {
+            "label": "psc0tt"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-28T22:44:51-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "14008194291"
+        },
+        "title": {
+          "label": "unintuitive"
+        },
+        "content": {
+          "label": "let me lookup workouts without having to be interrogated. ridiculous that i have to answer 15+ questions, make an account, and still not be able to intuitively find exercises that workout the muscle groups i want",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id534412300"
+          },
+          "name": {
+            "label": "KMc2016"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-28T14:19:22-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "14007097194"
+        },
+        "title": {
+          "label": "Game Changer for me!!!"
+        },
+        "content": {
+          "label": "This app has made a huge difference for me! In years gone by, I’d start working out without knowing what I was doing, see no results because I had no plan AND didn’t know what I was doing. \nI started with the free version and liked the ability to research, plan, watch videos, and proceed. Then I began to consider the coaching option. I was assigned Michael P as my coach and he has made all the difference for me. We discussed my history, health, and goals. He has assigned great weekly workouts and I have seen fabulous changes…physically and mentally. I am sticking with my health journey more consistently than ever before. Thank you Caliber and thank you Coach Michael!!!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id207166044"
+          },
+          "name": {
+            "label": ".Mic."
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-25T08:37:07-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13995837310"
+        },
+        "title": {
+          "label": "Highly Recommend!"
+        },
+        "content": {
+          "label": "I am so happy that I listened to Chris when we discussed the plans being offered.  I was new to weight training.  I wanted to get started but didn’t know how and didn’t want to risk injury.  I signed up for the highest level to have the regular zoom meetings with my coach in the beginning then stepped down afterwards to the lower level which is only messaging.  My coach Taryn is amazing.  I explained how often and how much time I could commit.  She sets up everything from my calorie count with macros and workouts 3x week.  She gives advice and words of encouragement.  Even listens and gives recommendations when I am down.  I have lost 33# and highly recommend to spend the extra time and money to step forward as she is the reason my body  and overall health has improved.  You are worth it!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id740133252"
+          },
+          "name": {
+            "label": "King from MD"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-22T13:04:35-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13986276661"
+        },
+        "title": {
+          "label": "Great app to get fit"
+        },
+        "content": {
+          "label": "This is an app that is great for beginners and intermediate. I use this app for a live exercises to go from a chubby 259 to a fit 230!  It is definitely worth the download.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id128268139"
+          },
+          "name": {
+            "label": "45b"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-19T19:25:30-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13976825828"
+        },
+        "title": {
+          "label": "Amazingly helpful and easy!!"
+        },
+        "content": {
+          "label": "This app is so easy to use and extremely helpful. I previously created my own workout routine which took hours. I stumbled upon this app and my home workout has stepped up exponentially. It’s easy to track my progress and adjust the workout plans. Exercises can be removed and/or added to the plans. It has options to enter the type of equipment available whether exercising at home and/or a gym. And a huge bonus, it is free! It also has the option to upgrade to a personal coach who not only provides training input but also nutrition. I have not done this but it is available.   I HIGHLY recommend this to anyone who is interested in amping up their workout routine.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id16124963"
+          },
+          "name": {
+            "label": "TMcFitness"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-17T04:15:44-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13966993925"
+        },
+        "title": {
+          "label": "Great app!"
+        },
+        "content": {
+          "label": "Functional, well equipped exercise selections and training tools.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1812769214"
+          },
+          "name": {
+            "label": "Bigg Dogg Starus"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-04-04T04:00:49-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13921155932"
+        },
+        "title": {
+          "label": "Legit"
+        },
+        "content": {
+          "label": "This app has helped me hit milestones and motivates me like nothing else ever has!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1752425250"
+          },
+          "name": {
+            "label": "mitchmedic911"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-30T19:41:15-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13905504378"
+        },
+        "title": {
+          "label": "Meh"
+        },
+        "content": {
+          "label": "Workout tracking is good, chronometer sync is awesome… the fact that they consistently drop your strength score week to week to upsell coaching is annoying af. At what it costs they could at least be honest and not try to shove coaching down your throat. Strong is what I switched to same type of tracking, $99 for lifetime access, no upsells… yeah. Caliber could be very good if it did what it does without trying to make it look like you’re constantly back tracking just to push their $200+ coaching.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id210194500"
+          },
+          "name": {
+            "label": "amwwesty"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-20T13:41:36-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13869196311"
+        },
+        "title": {
+          "label": "Highly recommend"
+        },
+        "content": {
+          "label": "I highly recommend Caliber. The value is incredible. The results I’ve seen, combined with the level of support and guidance I receive, far exceed what I pay. I especially appreciate that the program includes nutrition guidance alongside workouts, which takes the guesswork out of building muscle and losing fat. The app is super easy to use. I’m addicted to seeing the amount of weight I can lift increase as time passes. \n\nI can’t say enough good things about my coach, Anika. She’s consistently encouraging in a way that feels genuine and motivating. Whenever I share what I’m struggling with, she truly listens and responds with practical, actionable advice that helps me keep moving forward. Her support has made a huge difference in my progress and consistency.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id478032324"
+          },
+          "name": {
+            "label": "sangarita71"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-19T08:18:19-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13864849542"
+        },
+        "title": {
+          "label": "Good, only using free version"
+        },
+        "content": {
+          "label": "App is great just for logging weight and reps digitally and customize workouts. Great and broad selection of exercises.\nMy one and only gripe is the way that from an user interface point, the exercise complete and the timer buttons get mixed up --this is to say I often intuitively hit\nComplete when I want to get the timer going in between sets. Seeing as you only press the complete button once and the timer button 2-4 times, it would make more sense to make the timer button more visible (I. E. Red lol) and the complete button a little less so. Great job otherwise.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1225931947"
+          },
+          "name": {
+            "label": "AmberGR0828"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-17T08:06:43-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13857936918"
+        },
+        "title": {
+          "label": "Phenomenal Support"
+        },
+        "content": {
+          "label": "For years, I’ve looked for one place where I could find physical training support, nutritional guidance, and accountability. Caliber has provided that in a way that is completely tailored to my needs. My trainer, Regina, is amazing. She adapts my nutrition and training so that it is incorporated into my life seamlessly. She’s able to adapt my training when I travel, she encourages me to enjoy celebrations while being mindful of my goals, and motivates me to continue making progress every day. She has helped me become a stronger and healthier person both mentally and physically. I’m very thankful I found Caliber!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id154498666"
+          },
+          "name": {
+            "label": "Zeewho"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-16T11:29:26-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13855083591"
+        },
+        "title": {
+          "label": "Awesome app,"
+        },
+        "content": {
+          "label": "Lots of exercise are missing instructions video and please add 4 day split upper and lower body.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1230380200"
+          },
+          "name": {
+            "label": "Doug Williams 04"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-13T08:11:58-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13843943300"
+        },
+        "title": {
+          "label": "Not a physiologically grounded training program"
+        },
+        "content": {
+          "label": "I had an introduction call to see whether the training program was the right fit for me. During this call I was told repeatedly that the program would be adjusted based on my specific needs and goals. I then signed up and paid for the first month and was connected with a trainer. We had a kickoff call and I was very explicit about my goals. On the call she mentioned a few things that were irrelevant to my specific situation but I kind of rushed it off like standard protocol. However the following day she delivered a training program that was clearly not aligned with what I was looking to accomplish. There also was information that was not appropriate, as it aligned more with cultural norms than scientific evidence. It is my expectation as an athlete to treat my body with the utmost diligence and what was being suggested would have been remarkably harmful. I push back but it was clear that their philosophy was rooted in something other than physiological adaption. Their program may be OK for somebody who is needing to lose a significant amount of weight or is currently inactive, but if you are reasonably healthy and understand how your body uniquely works then I would seriously suggest not risking this program. I also had to email three times in order for them to process the refund.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "1"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1358002893"
+          },
+          "name": {
+            "label": "JY2025"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-11T20:38:46-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13839009308"
+        },
+        "title": {
+          "label": "It's good for tracking"
+        },
+        "content": {
+          "label": "It keeps good record of progress. And has a good library of moves (though if you want in depth core moves with the kettle ball it's very lacking. \nMy biggest gripe is the assessment, aka strength score. My weight is going up, because presumably I'm putting on muscle, but even though I'm increasing my weights or reps every workout, my strength score goes down and it says it's because my weight went up. Like it went up less than a pound. So that kinda craps on your motivation, which I think would be the last thing an app like this would strive for.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1655220086"
+          },
+          "name": {
+            "label": "HellYea077"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-03-06T22:36:36-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.2"
+        },
+        "id": {
+          "label": "13822196393"
+        },
+        "title": {
+          "label": "Highly recommend"
+        },
+        "content": {
+          "label": "I’ve been using this app for 3 weeks now and so far hasn’t failed me yet. It’s got everything I need in the free version alone. Track weights, reps and it’s got a rest timer. Wrote a decent workout plan for me in less than 5 minutes and I’ve been using it the whole time and already seeing progress. It just asks you a few basic questions about your body and your goals and then poof, your plan comes to life just like that. And as you progress you can even edit your workouts however you want. Add more, switch out the ones you don’t like for different ones. Literally anything. And that’s all in the free version. You can get premium if you want lessons or an online coach if you want but I already had some experience so I didn’t need it. But it’s there. Great app. I love it. 5 stars.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id151830479"
+          },
+          "name": {
+            "label": "MJP62946"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-28T10:21:28-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.1"
+        },
+        "id": {
+          "label": "13799453586"
+        },
+        "title": {
+          "label": "Good people in this company"
+        },
+        "content": {
+          "label": "Do not be afraid to try this app and company.  I had a very positive experience with them.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id41137667"
+          },
+          "name": {
+            "label": "Hairless_Hero"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-25T04:00:25-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.1"
+        },
+        "id": {
+          "label": "13787260753"
+        },
+        "title": {
+          "label": "Functional and easy"
+        },
+        "content": {
+          "label": "Caliber is very functional and easy to use. Of all the fitness apps I have tried it is probably the best bang for you buck in terms of usability, features, and cost. The recent Strava integration is a big help.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id125739360"
+          },
+          "name": {
+            "label": "KPL Boulder"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-18T16:01:56-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.0"
+        },
+        "id": {
+          "label": "13764275663"
+        },
+        "title": {
+          "label": "Excellent Program & App"
+        },
+        "content": {
+          "label": "I’ve had a terrific experience using Caliber over the past few months. The app itself is one of the things I appreciate most—it’s simple, elegant, and highly functional without unnecessary bells and whistles that can turn fitness into a time sink. Everything feels purposeful and easy to use.\n\nMy trainer, Tara, has been outstanding. She quickly understood my goals and created customized programs that were exactly what I needed. I have a modest home gym (dumbbells, bands, mat, step, BOSU, balance ball), and she designed workouts that made great use of my equipment along with bodyweight exercises. The programs are well-paced, achievable, and don’t require a huge time commitment, which makes it realistic to stay consistent. I typically complete four workouts per week and supplement with hiking, biking, and walking.\n\nOne of the biggest benefits was the accountability—knowing a professional was following my progress, making thoughtful tweaks, and offering encouragement when needed. Tara struck the perfect balance: supportive and responsive without over-communicating. I’ve seen noticeable results in strength, balance, and overall fitness, which was exactly my goal as I focus on staying healthy and strong as I age.\n\nI think Caliber’s premium coaching is an excellent option for people who prefer working out at home, don’t have easy access to a gym, or want expert guidance combined with time efficiency. If you’re looking for a customized program, professional accountability, and clean, well-designed technology, Caliber is one of the best platforms out there.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id184649245"
+          },
+          "name": {
+            "label": "Patrickd26"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-16T06:10:44-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.0"
+        },
+        "id": {
+          "label": "13755558680"
+        },
+        "title": {
+          "label": "6 month Caliber subscriber"
+        },
+        "content": {
+          "label": "I’ve been a paid subscriber for about 6 months.   I’ve gotten a lot of value from the weekly check-ins and direction with nutrition.  \n\nTanner has been the best at keeping me on track and accountable.  If you’re struggling with your routine I would highly recommend investing in yourself with Caliber.  I don’t think most people would need the level of check-ins that I’m doing, but being a 50+ year old, I needed a true reset and different mindset to work from.  Tanner has allowed me to question current habits, push further ahead each week, and he’s instilling in me that this is a way to change how you live for the long haul. \n\nI’ve been very impressed and look forward to doing this on my own someday because it’s so routine.   For now, though… I’m a committed customer!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id530771155"
+          },
+          "name": {
+            "label": "Bryson Handy"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-14T06:35:15-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.12.0"
+        },
+        "id": {
+          "label": "13748424615"
+        },
+        "title": {
+          "label": "Amazing App, even free version"
+        },
+        "content": {
+          "label": "This is an absolutely amazing app. I have been using it for years now and have gone from gym beginner to something of an intermediate. There are so many features, and I’ve used the free version for my entire usage of the app. It’s so cool to see how you progress, which muscles you hit in each exercise, and last week’s weight on this week’s exercises for comparisons. 100% recommend!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id291145789"
+          },
+          "name": {
+            "label": "mills1030"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-13T07:15:17-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.12.0"
+        },
+        "id": {
+          "label": "13744934670"
+        },
+        "title": {
+          "label": "Cardio isn’t free"
+        },
+        "content": {
+          "label": "Concept seemed great, but you can’t log any cardio workouts on the free version so it’s useless to me. The home page is way too busy and it’s hard to figure out how to add a workout in the first place. I like the idea of the various communities but I wish you could make your own for anyone to join. The busy interface mixed with the lack of cardio options on the free version makes it not worth it in my opinion.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id241201332"
+          },
+          "name": {
+            "label": "Ronzo82"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-11T07:20:45-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.12.0"
+        },
+        "id": {
+          "label": "13737930697"
+        },
+        "title": {
+          "label": "Deceptive marketing"
+        },
+        "content": {
+          "label": "Another scammy app. Advertises that it’s free, but you only get a 7-day free trial. Maybe be more truthful in your marketing. Scam artist",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1125652205"
+          },
+          "name": {
+            "label": "RedFox12."
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-05T15:49:23-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13717354467"
+        },
+        "title": {
+          "label": "Great App but failed to deliver the forgot password emails"
+        },
+        "content": {
+          "label": "It was great at first until I was logged out and have not been able to get back in since the forgot password email has failed to send, which made me lose all of my workout plans putting a delay in my workouts due to me having to re plan everything.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id220397663"
+          },
+          "name": {
+            "label": "Stackle2"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-05T11:44:09-07:00"
+        },
+        "im:rating": {
+          "label": "2"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13716747196"
+        },
+        "title": {
+          "label": "Meh"
+        },
+        "content": {
+          "label": "Bought it then found better elsewhere.   Could be amazing but some glaring flaws, notably almost all of them are mentioned ad nauseam in the customer suggestion area.  Some of my most frustrating points- constantly accidentally ending my workout without trying to, having to constantly edit and add weights instead of it having a baseline button that fills in last workouts numbers that I can make adjustments to, and for the love of god, your strength balance visual is worthless, inaccurate, and pisses me off.  It says I’ve only worked one muscle group, been using this for 3 months and it used to work but after an update it erased my progress and now just says I only do pecs and back.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id24261086"
+          },
+          "name": {
+            "label": "Edenyelv"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-03T14:54:33-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13709886271"
+        },
+        "title": {
+          "label": "Highly Recommend"
+        },
+        "content": {
+          "label": "I am very happy with Caliber. I tried several gym memberships which inevitably did not work out due to time constraints for certain classes. With Caliber, I can use my own neighborhood gym but I get personal training right when I can do it. Great decision!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1886104443"
+          },
+          "name": {
+            "label": "Radicaldany"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-02-01T08:51:29-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13701529812"
+        },
+        "title": {
+          "label": "SCAM APP"
+        },
+        "content": {
+          "label": "Absolutely DO NOT DOWNLOAD THIS ABSOLUTE GARBAGE APP!! Trust me you’ll thank me later",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1396706650"
+          },
+          "name": {
+            "label": "N11111111dbsjnwgsjs"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-30T13:32:49-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13694391956"
+        },
+        "title": {
+          "label": "Paywall"
+        },
+        "content": {
+          "label": "All features are behind a paywall.\n\nEdit Response to developer: That is blatantly untrue. Anytime you try do anything in the app you are prompted with upgrade to plus.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id209791670"
+          },
+          "name": {
+            "label": "ezbakemethlab"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-27T12:49:33-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13682787536"
+        },
+        "title": {
+          "label": "1 year with coach Tim!"
+        },
+        "content": {
+          "label": "I worked with coach Tim for the past year! He was great, asked me my goals, tailored a plan for my goals, answered my questions and taught me everything i needed to know to be on my own. Including nutrition. He gave me new workouts every 6 weeks, adjusted my macros and answered every question i had. I was able to chat with him as needed and he gave me a video review each week. I saw real progress and did reach my goals! I will continue using caliber and come back to caliber and coach tim in the future if i want more coaching. Definitely worth the money! And it was very affordable. Highly recommend coach Tim!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1003880218"
+          },
+          "name": {
+            "label": "butter the scorceror"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-25T06:48:19-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13674265734"
+        },
+        "title": {
+          "label": "Lies"
+        },
+        "content": {
+          "label": "This is not free like your add says.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id18047439"
+          },
+          "name": {
+            "label": "AML-Dad"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-23T14:56:58-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13667991967"
+        },
+        "title": {
+          "label": "Captain"
+        },
+        "content": {
+          "label": "As an airline pilot for a major US airline, I travel a lot!\nIt’s a sedentary job but demands both mental and physical fitness. \nI was looking for a fitness app I could use on the road in hotel gyms with limited equipment and home at the local gym. The Caliber app has so many exercises available so I can modify the plan when needed. \nEverything is built in!\nA video with correct form, timers, sets, reps, weight, history etc.\nMy trainer/coach, Westley is awesome! He builds the workout plans, gives me tips and feedback on my form all with the right amount of accountability and encouragement. He looks at my diet too. I always appreciate his messages both written and video in the app and I always feel like he’s invested in my plan.\nI’ve put on a bunch of muscle since starting with Caliber. My Caliber “Strength Score” keeps going up and I just hit intermediate level which feels good. \nI’ve come along way since my first meeting with Wesley. Thanks to him and Caliber I’m in the best shape of my adult life.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id216186049"
+          },
+          "name": {
+            "label": "Python1994"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-23T13:44:42-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.11.1"
+        },
+        "id": {
+          "label": "13667809166"
+        },
+        "title": {
+          "label": "Perfect"
+        },
+        "content": {
+          "label": "Exactly what I need. And free. Can’t beat it.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id26090153"
+          },
+          "name": {
+            "label": "snookie1"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-20T07:28:42-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.10.1"
+        },
+        "id": {
+          "label": "13655695569"
+        },
+        "title": {
+          "label": "Too hard to look at"
+        },
+        "content": {
+          "label": "Requires a lot of personal information to even see what it’s like. Deleted.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id110095361"
+          },
+          "name": {
+            "label": "Mister Anders0n"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-15T15:16:16-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.1"
+        },
+        "id": {
+          "label": "13637839686"
+        },
+        "title": {
+          "label": "Great for all skill levels"
+        },
+        "content": {
+          "label": "I have been using Caliber for about a year now. It has been easy to use and tremendously helpful to track all my exercises. I have been consistently increasing my reps and weight like never before.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id158199688"
+          },
+          "name": {
+            "label": "Best game on Facebook"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-14T15:38:49-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.1"
+        },
+        "id": {
+          "label": "13634176456"
+        },
+        "title": {
+          "label": "The perfect app"
+        },
+        "content": {
+          "label": "This is genuinely the most useful and easy to use workout app I’ve used. Even the free plan is great",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id26618897"
+          },
+          "name": {
+            "label": "Rossta22"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-13T14:49:35-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.1"
+        },
+        "id": {
+          "label": "13630300601"
+        },
+        "title": {
+          "label": "Great program for tailored strength training"
+        },
+        "content": {
+          "label": "I am about to finish the three month Caliber program with Brian. I have known for a while that I needed to mix in more strength training to my workout regime to avoid injury and support overall longevity, just didn’t know how and wanted it to be tailored to my needs. It has been great working with Brian and using the app to evolve my exercises over time and stay accountable. Love the easy messaging on any questions and the eye on nutrition. Would definitely recommend.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1555329443"
+          },
+          "name": {
+            "label": "Lele74922"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-13T09:00:23-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.1"
+        },
+        "id": {
+          "label": "13629340060"
+        },
+        "title": {
+          "label": "Put me on a good start"
+        },
+        "content": {
+          "label": "This app has help me build a healthy lifestyle by putting in a good workout routine and a calorie deficit.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id175368441"
+          },
+          "name": {
+            "label": "jjhawq"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-08T15:34:53-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13611027173"
+        },
+        "title": {
+          "label": "Great app! Completely changed how I approach my fitness plan."
+        },
+        "content": {
+          "label": "This app is very thorough and well done. The instructions are great, it helps you make a plan that fits your life, and then implement it. I’ve made more progress at the gym in 8 weeks than ever in my life. It’s like having a trainer in your pocket.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id571440395"
+          },
+          "name": {
+            "label": "BustaRocks"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-08T09:06:53-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13609933947"
+        },
+        "title": {
+          "label": "Why does this keep happening"
+        },
+        "content": {
+          "label": "I love your app mostly. I am very new to your app and strength training, I come from a yoga/ Pilates background. The frustration that I have with the app is that I will be working out and accidentally go back to find something I saw before, or accidentally close the window, and I can’t get back to my exercise program. It’s closed out. I have to create a flexible workout with those exercises to complete my program? There has to be a better way.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1003204741"
+          },
+          "name": {
+            "label": "cidbedbs"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-07T12:56:21-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13606714012"
+        },
+        "title": {
+          "label": "False advertising and waste of time"
+        },
+        "content": {
+          "label": "Not free saw a ad saying it was",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id112003154"
+          },
+          "name": {
+            "label": "Stone57778"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-01-02T05:21:53-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13585168390"
+        },
+        "title": {
+          "label": "Great app!"
+        },
+        "content": {
+          "label": "I like that you get a lot of features before having to pay for premium.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1076061260"
+          },
+          "name": {
+            "label": "JennaChandra"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-31T15:29:57-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13578788627"
+        },
+        "title": {
+          "label": "Love the app and Coach Tara!"
+        },
+        "content": {
+          "label": "Coach Tara is helping me meet my fitness goals!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id18110753"
+          },
+          "name": {
+            "label": "Exdie1179"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-30T20:40:45-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13575536906"
+        },
+        "title": {
+          "label": "Best Results so Far!"
+        },
+        "content": {
+          "label": "I’ve really been enjoying this app. Both the function of the app and the coaching feature. The app function is pretty straight forward, with good descriptions and videos to help make sure you’re doing the exercises correctly. The tracking function is intuitive and helpful. Additionally the library of lessons is super informative and useful.  However my most favorite part of this app is the coaching feature with an actual person. I’ve worked with multiple trainers over the years and I’ve had the most success with my strength and longevity goals working with my coach at Caliber.  The coach I have been working with has had the best insight on my personal capabilities and limitations. He is super experienced and super thoughtful when giving advice and developing my program. I highly recommend this app, and especially for the coaching feature.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id38966927"
+          },
+          "name": {
+            "label": "Chrisser21"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-26T14:24:15-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.10.0"
+        },
+        "id": {
+          "label": "13558597586"
+        },
+        "title": {
+          "label": "Exceptional Programming and Value"
+        },
+        "content": {
+          "label": "I’ve tried numerous apps/programs over the years, many of which were far more expensive than Caliber, and Caliber is by far the best.  The app is great.  The coaches are great.  Perhaps most importantly, the culture is great.  Caliber is clearly committed to working with its customers to help them achieve their best results—not simply in generating revenue or viral instagram posts.  With Caliber you get concierge level service from coaches who really know what they’re doing for less than the price of an elite gym membership BEFORE you add personal training to the tab.  You will not find a better”bang for your buck” anywhere.  HIGHLY recommend.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1076009537"
+          },
+          "name": {
+            "label": "CarterFamily0530"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-21T06:47:52-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "5.9.0"
+        },
+        "id": {
+          "label": "13538878184"
+        },
+        "title": {
+          "label": "Misleading"
+        },
+        "content": {
+          "label": "It stated that it was a free app. But what it meant was you can download the app for free and if you want to use it, buy it. This had a lot of potential but I can’t purchase a $72 subscription right now. If this was truly free it would have been great.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id24479704"
+          },
+          "name": {
+            "label": "Frustrated Reviewer 2"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-17T10:10:49-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.9.0"
+        },
+        "id": {
+          "label": "13524646441"
+        },
+        "title": {
+          "label": "Excellent Personal Training Experience"
+        },
+        "content": {
+          "label": "Do not sleep on this app or the personal training! TLDR: I’m a  woman who is reasonably experienced with strength training and this app and my trainer moved me to a whole new level without injury.\n\n I’m a 62 y.o. woman who has participated in conventional exercise methods since the 1980’s (looking at you Jane Fonda and your leg warmers).  I’ve found it overwhelming to find an app that can get me to my goals without injury or starving myself.  I was skeptical of Caliber.  Seemed too simple.  But I was not making much progress with the expensive training/nutrition plans “geared to the needs of women” or the less expensive plan created by a celebrity body-builder type (who also moonlighted as a governor at one time). Caliber and Coach Brittany helped me lose the inches off my waist that I’ve been stuck with for years. I’ve also visibly rebuilt muscle in 12 weeks. No small feat at my age.  The idea of progressive overload is straightforward and there a ton of exercises to choose from. You can go it alone easily or get whatever guidance you need from a professional coach.  Either way, the app does most of  the thinking for you - so, you can just show up and exercise.  Highly recommend.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id154556256"
+          },
+          "name": {
+            "label": "M. Steffes"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-17T05:12:34-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.9.0"
+        },
+        "id": {
+          "label": "13523719939"
+        },
+        "title": {
+          "label": "Exceptional Experience"
+        },
+        "content": {
+          "label": "This app is perfect for anyone seeking structure, guidance and effectiveness for strength training. \n\nI am 61 and have always had a workout routine but this definitely took me up a notch! \n\nBethany Toma has been my personal trainer through the app and she has been phenomenal in customizing, consistent communication, professionalism, accountability and encouragement along the way.\n\nMy strength has increased exponentially and I am very happy with the overall progress I’ve made!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id290560801"
+          },
+          "name": {
+            "label": "Wasabiprobablyidsay"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-11T06:14:58-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.9.0"
+        },
+        "id": {
+          "label": "13501228555"
+        },
+        "title": {
+          "label": "Great no frills app"
+        },
+        "content": {
+          "label": "Has everything I need. Haven’t tried the personal training.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id41080822"
+          },
+          "name": {
+            "label": "Easy Company"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2025-12-05T10:39:02-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "5.8.1"
+        },
+        "id": {
+          "label": "13478775873"
+        },
+        "title": {
+          "label": "3 Months Turnaround!"
+        },
+        "content": {
+          "label": "i’m closing in on my first three month program, and could not be any happier with my results. For the first time, I feel emboldened to continue a fitness program and see how far I can go. I imagine this app shares a lot of interface similarities with other fitness apps., But the difference maker for me was the human aspect through the personal coaching. After a brief phone call with a representative, I was assigned Mario as a personal coach and he has been integral to the success this program. Mario has shown great communication skills and his approach is realistic practical and understanding. All of those attributes have helped contribute to all the gains I’ve seen. Obviously, this is all balanced by the consistency to a commitment on my behalf to feel better in my body, so that will always be the ultimate determining factor: you get what you put in. This app and it’s training staff are fully capable to help you get there, you just have to answer the call.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1482405410&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      }
+    ],
+    "updated": {
+      "label": "2026-11-08T18:05:11-07:00"
+    },
+    "rights": {
+      "label": "Copyright 2008 Apple Inc."
+    },
+    "title": {
+      "label": "iTunes Store: Customer Reviews"
+    },
+    "icon": {
+      "label": "http://itunes.apple.com/favicon.ico"
+    },
+    "link": [
+      {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://music.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=1"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "self",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=2/id=1482405410/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "first",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1482405410/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=1482405410/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "last",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=10/id=1482405410/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=1482405410/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "previous",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1482405410/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=1482405410/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "next",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=3/id=1482405410/sortby=mostrecent/xml?urlDesc=/customerreviews/page=2/id=1482405410/sortBy=mostRecent/json"
+        }
+      }
+    ],
+    "id": {
+      "label": "https://itunes.apple.com/us/rss/customerreviews/page=2/id=1482405410/sortBy=mostRecent/json"
+    }
+  }
+}

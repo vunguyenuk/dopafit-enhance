@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-10",
+  "pins": [
+    {
+      "localID": "discovery-deadbug",
+      "providerID": "iny3m5y",
+      "name": "dead bug",
+      "sourceSHA256": "c3dde2bfa860d8a141861ee94259e9fafee2096c74cb0553c87a05bae9544b21",
+      "decodedFrames": 30,
+      "distinctDecodedFrames": 10,
+      "visualReview": "Reviewed0.7s pose and official instructions/equipment. Exact movement; raw provider GIF retained.",
+      "nativeHD": false
+    },
+    {
+      "localID": "discovery-crunch",
+      "providerID": "TFqbd8t",
+      "name": "crunch floor",
+      "sourceSHA256": "b2caf9e3ebea2d5cf7f434f16aee481d529a57b8b5fc3c5de9e913b447eb1b57",
+      "decodedFrames": 30,
+      "distinctDecodedFrames": 10,
+      "visualReview": "Reviewed0.7s pose and official instructions/equipment. Exact movement; raw provider GIF retained.",
+      "nativeHD": false
+    },
+    {
+      "localID": "discovery-pushup",
+      "providerID": "I4hDWkc",
+      "name": "push-up",
+      "sourceSHA256": "22d3df1d1d7dea5edd61907e431ef6a5c4bf4bd1b6d290981a437576c3833464",
+      "decodedFrames": 30,
+      "distinctDecodedFrames": 10,
+      "visualReview": "Reviewed0.7s pose and official instructions/equipment. Exact movement; raw provider GIF retained.",
+      "nativeHD": false
+    },
+    {
+      "localID": "discovery-wristcurl",
+      "providerID": "2dImyQ8",
+      "name": "dumbbell seated palms up wrist curl",
+      "sourceSHA256": "f7eaa8f4b04e8d492b5077084d3f486521ef33c95187002f967cbf13874b2997",
+      "decodedFrames": 30,
+      "distinctDecodedFrames": 10,
+      "visualReview": "Reviewed0.7s pose and official instructions/equipment. Exact movement; raw provider GIF retained.",
+      "nativeHD": false
+    },
+    {
+      "localID": "discovery-reversewristcurl",
+      "providerID": "BLCvwr2",
+      "name": "dumbbell reverse wrist curl",
+      "sourceSHA256": "7e8c7a0a99c61c6b8c17551f377f761c7f11f0be990a1aabaa3388112b502996",
+      "decodedFrames": 30,
+      "distinctDecodedFrames": 10,
+      "visualReview": "Reviewed0.7s pose and official instructions/equipment. Exact movement; raw provider GIF retained.",
+      "nativeHD": false
+    },
+    {
+      "localID": "discovery-farmercarry",
+      "providerID": "qPEzJjA",
+      "name": "farmers walk",
+      "sourceSHA256": "5c6ab66c33ba6361df648f851c1083f3169ec89e750b3bea764de5ca46527298",
+      "decodedFrames": 50,
+      "distinctDecodedFrames": 24,
+      "visualReview": "Reviewed0.7s pose and official instructions/equipment. Exact movement; raw provider GIF retained.",
+      "nativeHD": false
+    }
+  ],
+  "rejected": {
+    "u0cNiij": "Metadata says low glute bridge on floor but visible GIF is supported reverse plank; not mapped to lying glute bridge.",
+    "6YUfHPL": "Metadata says bodyweight squat but visible GIF is standing quadriceps stretch with foot on bench; not mapped.",
+    "plank": "Only weighted/twisting/other variants located; no exact unweighted forearm plank pinned."
+  },
+  "fallback": "Three unmatched custom program guides retain clearly labelled static group photo; no substitute motion.",
+  "license": "ExerciseDB OSS non-commercial prototype with existing AscendAPI credit, source180px not nativeHD; no AI interpolation."
+}

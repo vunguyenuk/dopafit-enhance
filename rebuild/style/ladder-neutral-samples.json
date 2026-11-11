@@ -1,0 +1,132 @@
+{
+  "134" : [
+    {
+      "color" : "#101010",
+      "sampleCount" : 57738
+    },
+    {
+      "color" : "#000000",
+      "sampleCount" : 33791
+    },
+    {
+      "color" : "#3E3E3E",
+      "sampleCount" : 4801
+    },
+    {
+      "color" : "#121212",
+      "sampleCount" : 3838
+    },
+    {
+      "color" : "#020202",
+      "sampleCount" : 1801
+    },
+    {
+      "color" : "#060606",
+      "sampleCount" : 1798
+    }
+  ],
+  "139" : [
+    {
+      "color" : "#000002",
+      "sampleCount" : 85679
+    },
+    {
+      "color" : "#181418",
+      "sampleCount" : 4645
+    },
+    {
+      "color" : "#3E3E3E",
+      "sampleCount" : 4600
+    },
+    {
+      "color" : "#1E1A1E",
+      "sampleCount" : 3351
+    },
+    {
+      "color" : "#171217",
+      "sampleCount" : 3221
+    },
+    {
+      "color" : "#140F14",
+      "sampleCount" : 1975
+    }
+  ],
+  "140" : [
+    {
+      "color" : "#000002",
+      "sampleCount" : 79540
+    },
+    {
+      "color" : "#140F14",
+      "sampleCount" : 9883
+    },
+    {
+      "color" : "#1E1A1E",
+      "sampleCount" : 7762
+    },
+    {
+      "color" : "#3E3E3E",
+      "sampleCount" : 4441
+    },
+    {
+      "color" : "#201C20",
+      "sampleCount" : 1511
+    },
+    {
+      "color" : "#010102",
+      "sampleCount" : 1299
+    }
+  ],
+  "160" : [
+    {
+      "color" : "#000000",
+      "sampleCount" : 99965
+    },
+    {
+      "color" : "#141414",
+      "sampleCount" : 10158
+    },
+    {
+      "color" : "#3E3E3E",
+      "sampleCount" : 4814
+    },
+    {
+      "color" : "#010101",
+      "sampleCount" : 1605
+    },
+    {
+      "color" : "#020202",
+      "sampleCount" : 628
+    },
+    {
+      "color" : "#151515",
+      "sampleCount" : 305
+    }
+  ],
+  "167" : [
+    {
+      "color" : "#101010",
+      "sampleCount" : 106118
+    },
+    {
+      "color" : "#3E3E3E",
+      "sampleCount" : 4803
+    },
+    {
+      "color" : "#1E1E1E",
+      "sampleCount" : 4453
+    },
+    {
+      "color" : "#292929",
+      "sampleCount" : 1961
+    },
+    {
+      "color" : "#121212",
+      "sampleCount" : 1648
+    },
+    {
+      "color" : "#0F0F0F",
+      "sampleCount" : 635
+    }
+  ]
+}

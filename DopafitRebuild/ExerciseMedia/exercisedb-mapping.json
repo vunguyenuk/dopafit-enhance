@@ -1,0 +1,708 @@
+{
+  "incline": {
+    "exerciseId": "3TZduzM",
+    "name": "barbell incline bench press",
+    "gifUrl": "https://static.exercisedb.dev/media/3TZduzM.gif",
+    "targetMuscles": [
+      "pectorals"
+    ],
+    "bodyParts": [
+      "chest"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "deltoids",
+      "triceps"
+    ],
+    "instructions": [
+      "Step:1 Angle the bench to roughly 45 degrees.",
+      "Step:2 Get onto the bench with your feet planted.",
+      "Step:3 Brace the torso and align the wrists with the forearms.",
+      "Step:4 Press the weight or handles away while keeping your trunk braced.",
+      "Step:5 Keep the wrists stacked and use a shoulder path that feels natural.",
+      "Step:6 Lower the weight to its starting height under control before pressing again."
+    ]
+  },
+  "tricep": {
+    "exerciseId": "dU605di",
+    "name": "cable pushdown (with rope attachment)",
+    "gifUrl": "https://static.exercisedb.dev/media/dU605di.gif",
+    "targetMuscles": [
+      "triceps"
+    ],
+    "bodyParts": [
+      "upper arms"
+    ],
+    "equipments": [
+      "cable"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "instructions": [
+      "Step:1 Connect a rope attachment to a high pulley on a cable machine.",
+      "Step:2 Face the machine with your feet about shoulder width and a slight bend in your knees.",
+      "Step:3 Stand far enough from the stack for the cable to stay taut.",
+      "Step:4 Keep your elbows near your ribs and straighten your arms against the cable.",
+      "Step:5 Keep the elbows close to the body instead of letting the shoulders swing.",
+      "Step:6 Ease back to the start before repeating."
+    ]
+  },
+  "hammer": {
+    "exerciseId": "HPlPoQA",
+    "name": "cable hammer curl (with rope)",
+    "gifUrl": "https://static.exercisedb.dev/media/HPlPoQA.gif",
+    "targetMuscles": [
+      "biceps"
+    ],
+    "bodyParts": [
+      "upper arms"
+    ],
+    "equipments": [
+      "cable"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "instructions": [
+      "Step:1 Stand upright with your feet about shoulder width and a slight bend in your knees.",
+      "Step:2 Take hold of the cable rope attachment with palms facing up, palms facing each other, and your arms straight.",
+      "Step:3 Set the shoulders and upper arms before bending the elbows.",
+      "Step:4 Curl with palms facing each other and elbows near your sides; avoid rocking back.",
+      "Step:5 Keep the palms facing each other and the wrists straight.",
+      "Step:6 Lower until the elbows are nearly straight, keeping the upper arms still."
+    ]
+  },
+  "dumbbell-shrug": {
+    "exerciseId": "NJzBsGJ",
+    "name": "dumbbell shrug",
+    "gifUrl": "https://static.exercisedb.dev/media/NJzBsGJ.gif",
+    "targetMuscles": [
+      "trapezius"
+    ],
+    "bodyParts": [
+      "back"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "secondaryMuscles": [
+      "deltoids"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width and hold a dumbbell in each hand with your palms facing your body.",
+      "Step:2 Maintain straight arms and let the dumbbells hang by your sides.",
+      "Step:3 Let the arms hang long and keep the head neutral.",
+      "Step:4 Lift your shoulders toward your ears without bending the elbows or rolling the shoulders.",
+      "Step:5 Lift and lower vertically without circling the shoulders.",
+      "Step:6 Bring the weight or body back to its starting position without rushing."
+    ]
+  },
+  "thruster": {
+    "exerciseId": "f7Y9eDZ",
+    "name": "barbell thruster",
+    "gifUrl": "https://static.exercisedb.dev/media/f7Y9eDZ.gif",
+    "targetMuscles": [
+      "deltoids"
+    ],
+    "bodyParts": [
+      "shoulders"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "instructions": [
+      "Step:1 Begin by standing with your feet about shoulder width, holding a barbell at shoulder height with palms facing down.",
+      "Step:2 Before moving, lower into a squat position by bending your knees and pushing your hips back.",
+      "Step:3 Rack the weight securely and brace before dropping into the squat.",
+      "Step:4 Stand from the squat and use that leg drive to press the weight overhead.",
+      "Step:5 Let the leg drive start the press while keeping the ribs from flaring.",
+      "Step:6 Return along the same path at a controlled pace."
+    ]
+  },
+  "goodmorning": {
+    "exerciseId": "XlZ4lAC",
+    "name": "barbell good morning",
+    "gifUrl": "https://static.exercisedb.dev/media/XlZ4lAC.gif",
+    "targetMuscles": [
+      "hamstrings"
+    ],
+    "bodyParts": [
+      "upper legs"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "erector spinae"
+    ],
+    "instructions": [
+      "Step:1 Begin by standing with your feet about shoulder width and the barbell resting on your upper back.",
+      "Step:2 With your back straight and your core engaged, hinge forward at the hips, pushing your buttocks back as if you were trying to touch the wall behind you with your glutes.",
+      "Step:3 Unlock the knees and brace the abdomen before moving the hips back.",
+      "Step:4 Push the hips back while keeping the load close and the spine steady.",
+      "Step:5 Keep the weight close to the legs and stop when the back would begin to round.",
+      "Step:6 Drive the hips forward to stand tall without leaning back at the top."
+    ]
+  },
+  "kneelsquat": {
+    "exerciseId": "oR7O9LW",
+    "name": "barbell squat (on knees)",
+    "gifUrl": "https://static.exercisedb.dev/media/oR7O9LW.gif",
+    "targetMuscles": [
+      "quadriceps"
+    ],
+    "bodyParts": [
+      "upper legs"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "instructions": [
+      "Step:1 Begin by kneeling on the ground with your knees about hip width and your toes pointing forward.",
+      "Step:2 Set a barbell across your shoulders, gripping it with palms facing down and your hands just beyond shoulder width.",
+      "Step:3 Brace the abdomen and spread pressure across the whole foot.",
+      "Step:4 Bend at the hips and knees to lower, keeping your feet grounded and knees tracking with the toes.",
+      "Step:5 Drive upward with the chest and hips rising together; keep the knees from collapsing inward.",
+      "Step:6 Stand fully, reset your footing and breathing, then begin the next descent."
+    ]
+  },
+  "adductor": {
+    "exerciseId": "oHsrypV",
+    "name": "Machine Seated Hip Adduction",
+    "gifUrl": "https://static.exercisedb.dev/media/oHsrypV.gif",
+    "targetMuscles": [
+      "adductors"
+    ],
+    "bodyParts": [
+      "upper legs"
+    ],
+    "equipments": [
+      "leverage machine"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "instructions": [
+      "Step:1 Fit the seat to your body, then settle into the machine.",
+      "Step:2 Set your feet on the footrests and Hold the handles for stability.",
+      "Step:3 Square the pelvis before moving the working leg.",
+      "Step:4 Draw the working leg inward against resistance without leaning sideways.",
+      "Step:5 Move only as far as the pelvis can remain steady.",
+      "Step:6 Ease back to the start before repeating."
+    ]
+  },
+  "arnold": {
+    "exerciseId": "Xy4jlWA",
+    "name": "dumbbell arnold press",
+    "gifUrl": "https://static.exercisedb.dev/media/Xy4jlWA.gif",
+    "targetMuscles": [
+      "deltoids"
+    ],
+    "bodyParts": [
+      "shoulders"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "pectorals"
+    ],
+    "instructions": [
+      "Step:1 Take a seat on a bench with back support and hold a dumbbell in each hand at shoulder level, palms facing your body and elbows bent.",
+      "Step:2 Press the dumbbells upward until your arms are straight and your palms are facing forward.",
+      "Step:3 Brace the torso and align the wrists with the forearms.",
+      "Step:4 Press the weight or handles away while keeping your trunk braced.",
+      "Step:5 Keep the wrists stacked and use a shoulder path that feels natural.",
+      "Step:6 Lower the weight to its starting height under control before pressing again."
+    ]
+  },
+  "closebench": {
+    "exerciseId": "J6Dx1Mu",
+    "name": "barbell close-grip bench press",
+    "gifUrl": "https://static.exercisedb.dev/media/J6Dx1Mu.gif",
+    "targetMuscles": [
+      "triceps"
+    ],
+    "bodyParts": [
+      "upper arms"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "pectorals",
+      "deltoids"
+    ],
+    "instructions": [
+      "Step:1 Settle onto a bench with your feet planted and your back pressed against the bench.",
+      "Step:2 Hold the barbell with a close grip, slightly narrower than about shoulder width.",
+      "Step:3 Brace the torso and align the wrists with the forearms.",
+      "Step:4 Press the weight or handles away while keeping your trunk braced.",
+      "Step:5 Keep the wrists stacked and use a shoulder path that feels natural.",
+      "Step:6 Lower the weight to its starting height under control before pressing again."
+    ]
+  },
+  "squat": {
+    "exerciseId": "qXTaZnJ",
+    "name": "barbell full squat",
+    "gifUrl": "https://static.exercisedb.dev/media/qXTaZnJ.gif",
+    "targetMuscles": [
+      "glutes"
+    ],
+    "bodyParts": [
+      "upper legs"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "quadriceps",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width, toes slightly turned out.",
+      "Step:2 Rest the bar across the upper back and take a secure grip.",
+      "Step:3 Brace the abdomen and spread pressure across the whole foot.",
+      "Step:4 Bend at the hips and knees to lower, keeping your feet grounded and knees tracking with the toes.",
+      "Step:5 Drive upward with the chest and hips rising together; keep the knees from collapsing inward.",
+      "Step:6 Stand fully, reset your footing and breathing, then begin the next descent."
+    ]
+  },
+  "rdl": {
+    "exerciseId": "wQ2c4XD",
+    "name": "barbell romanian deadlift",
+    "gifUrl": "https://static.exercisedb.dev/media/wQ2c4XD.gif",
+    "targetMuscles": [
+      "glutes"
+    ],
+    "bodyParts": [
+      "upper legs"
+    ],
+    "equipments": [
+      "barbell"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "erector spinae"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width and your toes pointing forward.",
+      "Step:2 Take hold of the barbell with palms facing down, hands just beyond shoulder width.",
+      "Step:3 Unlock the knees and brace the abdomen before moving the hips back.",
+      "Step:4 Send your hips back with a soft knee bend, lowering the load close to your legs until the hamstrings stretch.",
+      "Step:5 Keep the weight close to the legs and stop when the back would begin to round.",
+      "Step:6 Drive the hips forward to stand tall without leaning back at the top."
+    ]
+  },
+  "calf": {
+    "exerciseId": "ykUOVze",
+    "name": "Machine Standing Calf Raise",
+    "gifUrl": "https://static.exercisedb.dev/media/ykUOVze.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "bandpress": {
+    "exerciseId": "peAeMR3",
+    "name": "band shoulder press",
+    "gifUrl": "https://static.exercisedb.dev/media/peAeMR3.gif",
+    "bodyParts": [
+      "shoulders"
+    ],
+    "equipments": [
+      "resistance band"
+    ],
+    "targetMuscles": [
+      "deltoids"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "upper back"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width and place the band under your feet.",
+      "Step:2 Take hold of the band with your palms facing forward and raise your hands to shoulder height, elbows bent.",
+      "Step:3 Brace the torso and align the wrists with the forearms.",
+      "Step:4 Press the weight or handles away while keeping your trunk braced.",
+      "Step:5 Control the band on the way back instead of letting it snap you into position.",
+      "Step:6 Lower the weight to its starting height under control before pressing again."
+    ]
+  },
+  "machinefly": {
+    "exerciseId": "myfUsKf",
+    "name": "Machine Seated Reverse Fly",
+    "gifUrl": "https://static.exercisedb.dev/media/myfUsKf.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "frontraise": {
+    "exerciseId": "u2X71Np",
+    "name": "cable front raise",
+    "gifUrl": "https://static.exercisedb.dev/media/u2X71Np.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "smith-bench": {
+    "exerciseId": "trqKQv2",
+    "name": "smith bench press",
+    "gifUrl": "https://static.exercisedb.dev/media/trqKQv2.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "dumbbell-back-fly": {
+    "exerciseId": "8DiFDVA",
+    "name": "dumbbell rear fly",
+    "gifUrl": "https://static.exercisedb.dev/media/8DiFDVA.gif",
+    "bodyParts": [
+      "shoulders"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "targetMuscles": [
+      "deltoids"
+    ],
+    "secondaryMuscles": [
+      "trapezius",
+      "rhomboids"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width and hold a dumbbell in each hand.",
+      "Step:2 Bend your knees slightly and hinge forward at the hips, with your spine steady.",
+      "Step:3 Keep a soft elbow bend and set the shoulders before moving the arms.",
+      "Step:4 With a soft bend in the elbows, sweep your arms together in a wide arc.",
+      "Step:5 Keep the elbow angle nearly unchanged through the arc.",
+      "Step:6 Open the arms back along the same arc without dropping the load."
+    ]
+  },
+  "dumbbell-skullcrusher": {
+    "exerciseId": "mpKZGWz",
+    "name": "dumbbell lying triceps extension",
+    "gifUrl": "https://static.exercisedb.dev/media/mpKZGWz.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "ez-curl": {
+    "exerciseId": "6TG6x2w",
+    "name": "EZ-Bar Curl",
+    "gifUrl": "https://static.exercisedb.dev/media/6TG6x2w.gif",
+    "bodyParts": [
+      "upper arms"
+    ],
+    "equipments": [
+      "EZ bar"
+    ],
+    "targetMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "instructions": [
+      "Step:1 Stand tall with your feet about shoulder width and hold the ez barbell with palms facing up.",
+      "Step:2 Hold your elbows near your torso and your upper arms stationary throughout the movement.",
+      "Step:3 Set the shoulders and upper arms before bending the elbows.",
+      "Step:4 Bend your elbows to bring the weight toward your shoulders without swinging your torso.",
+      "Step:5 Keep the torso quiet and let the elbow bend lift the weight.",
+      "Step:6 Lower until the elbows are nearly straight, keeping the upper arms still."
+    ]
+  },
+  "dumbbell-curl": {
+    "exerciseId": "NbVPDMW",
+    "name": "dumbbell biceps curl",
+    "gifUrl": "https://static.exercisedb.dev/media/NbVPDMW.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "incline-dumbbell-curl": {
+    "exerciseId": "RaflbWD",
+    "name": "dumbbell incline curl",
+    "gifUrl": "https://static.exercisedb.dev/media/RaflbWD.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "dumbbell-lateral-raise": {
+    "exerciseId": "DsgkuIt",
+    "name": "dumbbell lateral raise",
+    "gifUrl": "https://static.exercisedb.dev/media/DsgkuIt.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "goblet-squat": {
+    "exerciseId": "yn8yg1r",
+    "name": "dumbbell goblet squat",
+    "gifUrl": "https://static.exercisedb.dev/media/yn8yg1r.gif",
+    "instructions": [],
+    "equipments": [],
+    "targetMuscles": [],
+    "secondaryMuscles": []
+  },
+  "bent-over-dumbbell-row": {
+    "exerciseId": "BJ0Hz5L",
+    "name": "dumbbell bent over row",
+    "gifUrl": "https://static.exercisedb.dev/media/BJ0Hz5L.gif",
+    "bodyParts": [
+      "back"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "targetMuscles": [
+      "upper back"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "forearms"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width, knees soft, and hold a dumbbell in each hand with your palms facing your body.",
+      "Step:2 Bend forward at the hips, with your spine steady and your core engaged.",
+      "Step:3 Set the torso and allow the arms to reach forward without rounding excessively.",
+      "Step:4 Draw your elbows back and bring the handle or weight toward your torso.",
+      "Step:5 Bring the elbows back without jerking the torso.",
+      "Step:6 Reach the arms forward again without letting the torso lurch."
+    ]
+  },
+  "dumbbell-row": {
+    "exerciseId": "C0MA9bC",
+    "name": "Dumbbell Single-Arm Bent-Over Row",
+    "gifUrl": "https://static.exercisedb.dev/media/C0MA9bC.gif",
+    "bodyParts": [
+      "back"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "targetMuscles": [
+      "upper back"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "forearms"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width, holding a dumbbell in one hand with your palm facing your body.",
+      "Step:2 Bend your knees slightly and hinge forward at the hips, with your spine steady and your core engaged.",
+      "Step:3 Set the torso and allow the arms to reach forward without rounding excessively.",
+      "Step:4 Draw your elbows back and bring the handle or weight toward your torso.",
+      "Step:5 Keep both shoulders level and resist turning toward the working arm.",
+      "Step:6 Reach the arms forward again without letting the torso lurch; switch sides when the set calls for it."
+    ]
+  },
+  "discovery-deadbug": {
+    "exerciseId": "iny3m5y",
+    "name": "dead bug",
+    "gifUrl": "https://static.exercisedb.dev/media/iny3m5y.gif",
+    "targetMuscles": [
+      "abdominals"
+    ],
+    "bodyParts": [
+      "waist"
+    ],
+    "equipments": [
+      "bodyweight"
+    ],
+    "secondaryMuscles": [
+      "hip flexors",
+      "erector spinae"
+    ],
+    "instructions": [
+      "Step:1 Settle onto your back with your arms extended toward the ceiling.",
+      "Step:2 Before moving, bend your knees and lift your legs off the ground, creating a 90-degree angle at your hips and knees.",
+      "Step:3 Brace the trunk lightly before moving a limb.",
+      "Step:4 Move the working arm or leg while keeping the trunk steady and the breathing even.",
+      "Step:5 Keep the pelvis from rocking as the arm or leg moves.",
+      "Step:6 Reset your posture before changing sides or beginning the next rep."
+    ]
+  },
+  "discovery-crunch": {
+    "exerciseId": "TFqbd8t",
+    "name": "crunch floor",
+    "gifUrl": "https://static.exercisedb.dev/media/TFqbd8t.gif",
+    "targetMuscles": [
+      "abdominals"
+    ],
+    "bodyParts": [
+      "waist"
+    ],
+    "equipments": [
+      "bodyweight"
+    ],
+    "secondaryMuscles": [
+      "hip flexors"
+    ],
+    "instructions": [
+      "Step:1 Settle onto your back with your knees bent and feet planted.",
+      "Step:2 Set your hands behind your head with your elbows pointing outwards.",
+      "Step:3 Set the pelvis and keep the neck relaxed before curling upward.",
+      "Step:4 Curl your rib cage toward your pelvis, letting the abdominals move the torso.",
+      "Step:5 Leave a little space between the chin and chest; keep the movement in the torso.",
+      "Step:6 Lower the shoulders or torso with control before the next curl."
+    ]
+  },
+  "discovery-pushup": {
+    "exerciseId": "I4hDWkc",
+    "name": "push-up",
+    "gifUrl": "https://static.exercisedb.dev/media/I4hDWkc.gif",
+    "targetMuscles": [
+      "pectorals"
+    ],
+    "bodyParts": [
+      "chest"
+    ],
+    "equipments": [
+      "bodyweight"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "deltoids",
+      "core"
+    ],
+    "instructions": [
+      "Step:1 Begin in a high plank position with your hands just beyond shoulder width and your feet together.",
+      "Step:2 Brace your trunk and lower your body toward the ground by bending your elbows, keeping your body in a straight line.",
+      "Step:3 Brace the abdomen and glutes so the shoulders, hips and ankles move together.",
+      "Step:4 Bend your elbows to lower your chest while keeping your body in one line.",
+      "Step:5 Keep the head in line with the spine as the elbows bend.",
+      "Step:6 Press back to straight arms, keeping the body line intact."
+    ]
+  },
+  "discovery-wristcurl": {
+    "exerciseId": "2dImyQ8",
+    "name": "dumbbell seated palms up wrist curl",
+    "gifUrl": "https://static.exercisedb.dev/media/2dImyQ8.gif",
+    "targetMuscles": [
+      "forearms"
+    ],
+    "bodyParts": [
+      "lower arms"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "deltoids"
+    ],
+    "instructions": [
+      "Step:1 Plant both feet while seated on a bench; hold a dumbbell in each hand, palms facing up.",
+      "Step:2 Set your forearms on your thighs, letting your wrists hang off the edge.",
+      "Step:3 Keep the elbows relaxed so the small muscles of the hand or forearm take the load.",
+      "Step:4 Move through the wrists or fingers while the forearms stay supported and still.",
+      "Step:5 Use a small, smooth range without swinging the elbows.",
+      "Step:6 Ease back to the start without letting the load fall from your hands."
+    ]
+  },
+  "discovery-reversewristcurl": {
+    "exerciseId": "BLCvwr2",
+    "name": "dumbbell reverse wrist curl",
+    "gifUrl": "https://static.exercisedb.dev/media/BLCvwr2.gif",
+    "targetMuscles": [
+      "forearms"
+    ],
+    "bodyParts": [
+      "lower arms"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "brachialis"
+    ],
+    "instructions": [
+      "Step:1 Take a seat on a bench or chair with your feet planted.",
+      "Step:2 Take a dumbbell in each hand with palms facing down.",
+      "Step:3 Keep the elbows relaxed so the small muscles of the hand or forearm take the load.",
+      "Step:4 Move through the wrists or fingers while the forearms stay supported and still.",
+      "Step:5 Use a small, smooth range without swinging the elbows.",
+      "Step:6 Ease back to the start without letting the load fall from your hands."
+    ]
+  },
+  "discovery-farmercarry": {
+    "exerciseId": "qPEzJjA",
+    "name": "farmers walk",
+    "gifUrl": "https://static.exercisedb.dev/media/qPEzJjA.gif",
+    "targetMuscles": [
+      "quadriceps"
+    ],
+    "bodyParts": [
+      "upper legs"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "secondaryMuscles": [
+      "calves",
+      "forearms",
+      "core"
+    ],
+    "instructions": [
+      "Step:1 Stand tall with a dumbbell in each hand, palms facing your sides.",
+      "Step:2 Keep your spine in a comfortable neutral position and your shoulders back.",
+      "Step:3 Stand tall with the load secure and the shoulders level.",
+      "Step:4 Walk at a controlled pace, keeping your shoulders level and your steps even.",
+      "Step:5 Keep steps even and avoid leaning away from the load.",
+      "Step:6 Stop before posture breaks down, set the load down safely, and reset for the next walk."
+    ]
+  },
+  "dumbbell-shoulder-press": {
+    "exerciseId": "A6wtbuL",
+    "name": "dumbbell standing overhead press",
+    "gifUrl": "https://static.exercisedb.dev/media/A6wtbuL.gif",
+    "targetMuscles": [
+      "deltoids"
+    ],
+    "bodyParts": [
+      "shoulders"
+    ],
+    "equipments": [
+      "dumbbell"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "upper back"
+    ],
+    "instructions": [
+      "Step:1 Stand and set your feet about shoulder width, holding a dumbbell in each hand at shoulder level with your palms facing forward.",
+      "Step:2 Press the dumbbells upward until your arms are straight overhead.",
+      "Step:3 Brace the torso and align the wrists with the forearms.",
+      "Step:4 Press the weight or handles away while keeping your trunk braced.",
+      "Step:5 Keep the wrists stacked and use a shoulder path that feels natural.",
+      "Step:6 Lower the weight to its starting height under control before pressing again."
+    ]
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "date": "2026-11-10",
+  "bundle": "com.local.dopafit.rebuild",
+  "simulator": "54B67C9B-28C9-4698-98A3-968BA4AB75B6",
+  "resourceFiles": [
+    {
+      "path": "OpenGym3D/index.html",
+      "sha256": "b358d015d3e4606c6123fa6bc208b0c97c9c421e201c9256c6876a4031f4cdf0"
+    },
+    {
+      "path": "OpenGym3D/licenses/MakeHuman-CC0.txt",
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+    },
+    {
+      "path": "OpenGym3D/licenses/OpenGym3D-MIT.txt",
+      "sha256": "292eed4e441413aa627eb1f80276264e24db5d28125c4602d6afceaf97a8d99e"
+    },
+    {
+      "path": "OpenGym3D/licenses/Three-MIT.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "path": "OpenGym3D/models/bicep_curl.glb",
+      "sha256": "34af136331b2ddc64fe6d67a7e1d0d31a3856afb146ae3ca9857e5b5f097d1ef"
+    },
+    {
+      "path": "OpenGym3D/models/good_morning.glb",
+      "sha256": "a01850b0135afb7ebd477911647cb8a6095aec1d1e9486ea119dbdf058423af8"
+    },
+    {
+      "path": "OpenGym3D/models/muscular_body.glb",
+      "sha256": "f0238d53971ae0af1d8cadf16bb471abe94dcf3d8378683330e2d933e728f2b9"
+    },
+    {
+      "path": "OpenGym3D/models/romanian_deadlift.glb",
+      "sha256": "94b8c6d312822a95da93b52e40121a43f7b1ea89b0d6190e001f75f253b777c7"
+    },
+    {
+      "path": "OpenGym3D/viewer.js",
+      "sha256": "00b9357bbb80756ae12620f9f722d53a66a8b0edf68c583488c735161c4941fe"
+    },
+    {
+      "path": "Form3D/index.html",
+      "sha256": "41d5de751fc1d2736876bbbfb27dd94362c10f79ea4350833f9740c2d294feb8"
+    },
+    {
+      "path": "Form3D/licenses/Character-provenance.md",
+      "sha256": "34f1513e1d15217de8c5cf1d6e9dd9af656fd7bedbd10a8aeb63463198ebf864"
+    },
+    {
+      "path": "Form3D/licenses/INTEGRATION-NOTICE.txt",
+      "sha256": "173e421a2f2c84e472844dbcf48abcfdc2ded2e1cda449c379962dd1f802a660"
+    },
+    {
+      "path": "Form3D/licenses/MakeHuman-CC0.md",
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+    },
+    {
+      "path": "Form3D/licenses/Three-MIT.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "Form3D/neutral.glb",
+      "sha256": "4504fa119881a2b93f5c3e6c8bdeb0e4ec989ce830145f65c1201e26b6abb441"
+    },
+    {
+      "path": "Form3D/viewer.js",
+      "sha256": "a198a10544719c130e2b993378ac490a7307285a477a3cd8c081a75b520a432c"
+    },
+    {
+      "path": "ExerciseMedia/exercisedb-mapping.json",
+      "sha256": "7d490e9e11ee69c4015d7c7480b68f5a93644ed93556657cb9996b652e4cda56"
+    },
+    {
+      "path": "ExerciseMedia/gifs/2dImyQ8.gif",
+      "sha256": "f7eaa8f4b04e8d492b5077084d3f486521ef33c95187002f967cbf13874b2997"
+    },
+    {
+      "path": "ExerciseMedia/gifs/3TZduzM.gif",
+      "sha256": "d05bbfcc6c7283d35069e51cdf56df66e55a5c4182ca192f50750857fdcd7be0"
+    },
+    {
+      "path": "ExerciseMedia/gifs/6TG6x2w.gif",
+      "sha256": "150a2bf1f8ef447895faa90855dfb72585ed77a4c6c2f9d3d42e2b4dc5e201e6"
+    },
+    {
+      "path": "ExerciseMedia/gifs/8DiFDVA.gif",
+      "sha256": "a90772120baa1d2dabac29f62b2bb1b128a03f936f7e0cc2f7f29f7c1f817a65"
+    },
+    {
+      "path": "ExerciseMedia/gifs/A6wtbuL.gif",
+      "sha256": "667ba53e82227da5d825d2249bf849514b79a5c06a280afd9f8cdc619f75ce8b"
+    },
+    {
+      "path": "ExerciseMedia/gifs/BJ0Hz5L.gif",
+      "sha256": "68b6a883f0232f4c3ee83f4b1f2e4589f50b0b2dbf57864675e610ecda63a544"
+    },
+    {
+      "path": "ExerciseMedia/gifs/BLCvwr2.gif",
+      "sha256": "7e8c7a0a99c61c6b8c17551f377f761c7f11f0be990a1aabaa3388112b502996"
+    },
+    {
+      "path": "ExerciseMedia/gifs/C0MA9bC.gif",
+      "sha256": "c53241038bc290424e72086a7fecf1c367ac53a42f4b5844a4b5314abe56dc44"
+    },
+    {
+      "path": "ExerciseMedia/gifs/DsgkuIt.gif",
+      "sha256": "68de0e7c7727fa08a203f73b0d2935181a5c6489470d44b9028de4a7d10a17f1"
+    },
+    {
+      "path": "ExerciseMedia/gifs/HPlPoQA.gif",
+      "sha256": "b54f7a2caa09011db921732ce57f61bcc09e8ce57557138bb0440db98e82d29e"
+    },
+    {
+      "path": "ExerciseMedia/gifs/I4hDWkc.gif",
+      "sha256": "22d3df1d1d7dea5edd61907e431ef6a5c4bf4bd1b6d290981a437576c3833464"
+    },
+    {
+      "path": "ExerciseMedia/gifs/J6Dx1Mu.gif",
+      "sha256": "e86e9de6778c660ca101763fbb307c42224e2eeedd28313d527c924d03aabee4"
+    },
+    {
+      "path": "ExerciseMedia/gifs/NJzBsGJ.gif",
+      "sha256": "24560aa9a4ba2f3bf7ffda3bd33a6a63127d26cb2f2d77f3a0778d88e1e536a1"
+    },
+    {
+      "path": "ExerciseMedia/gifs/NbVPDMW.gif",
+      "sha256": "ec9acaaac38045ea355c51ba61a854d54d31b03744a922eba429935ac10ba90c"
+    },
+    {
+      "path": "ExerciseMedia/gifs/RaflbWD.gif",
+      "sha256": "ca90d75252ca5fd5dc9c772e96ced723bf41662dafe76f061952ce300b08cd08"
+    },
+    {
+      "path": "ExerciseMedia/gifs/TFqbd8t.gif",
+      "sha256": "b2caf9e3ebea2d5cf7f434f16aee481d529a57b8b5fc3c5de9e913b447eb1b57"
+    },
+    {
+      "path": "ExerciseMedia/gifs/XlZ4lAC.gif",
+      "sha256": "7d01b04b09e80504323e66295f757b2f0328dab7a3d71d637a2916d391634a1f"
+    },
+    {
+      "path": "ExerciseMedia/gifs/Xy4jlWA.gif",
+      "sha256": "88e53667b5f727a1b44e427dc44c91c0b9757144fb1fb7cd12dcbf8dd4824fbf"
+    },
+    {
+      "path": "ExerciseMedia/gifs/dU605di.gif",
+      "sha256": "db25428c5f9de2077427d94742cf5c5e955191459d0d5bc25533005591acf187"
+    },
+    {
+      "path": "ExerciseMedia/gifs/f7Y9eDZ.gif",
+      "sha256": "b4bacf1437684442b6957b522312d5c33393e5b6a5d400536c23099828d37869"
+    },
+    {
+      "path": "ExerciseMedia/gifs/iny3m5y.gif",
+      "sha256": "c3dde2bfa860d8a141861ee94259e9fafee2096c74cb0553c87a05bae9544b21"
+    },
+    {
+      "path": "ExerciseMedia/gifs/mpKZGWz.gif",
+      "sha256": "418001c2b4976b51f859406a0a1ad237cf4b5349ba4ab54c138daa5912493cdd"
+    },
+    {
+      "path": "ExerciseMedia/gifs/myfUsKf.gif",
+      "sha256": "67982491ac142252217ee9157cef9c3ed558149157b7a07a99de2b94a2bef8cf"
+    },
+    {
+      "path": "ExerciseMedia/gifs/oHsrypV.gif",
+      "sha256": "bdaba331f3282ea7ba1cb6eafcf11b97fbc4e5aa3505e7f10161fce758d3c0ef"
+    },
+    {
+      "path": "ExerciseMedia/gifs/oR7O9LW.gif",
+      "sha256": "1da08363a4dbf18da891c56362439e51dca3895d41534cbcd60dc466ce1c4d3e"
+    },
+    {
+      "path": "ExerciseMedia/gifs/peAeMR3.gif",
+      "sha256": "5ada10f60a6f83b2d266f1322212fcdb34afba685be2511b48f79084bd4f4758"
+    },
+    {
+      "path": "ExerciseMedia/gifs/qPEzJjA.gif",
+      "sha256": "5c6ab66c33ba6361df648f851c1083f3169ec89e750b3bea764de5ca46527298"
+    },
+    {
+      "path": "ExerciseMedia/gifs/qXTaZnJ.gif",
+      "sha256": "3c1e29f67ffaae89316c94d7af42fcbe2cbf379967c27c1d30fa0205b6f9ed30"
+    },
+    {
+      "path": "ExerciseMedia/gifs/trqKQv2.gif",
+      "sha256": "2b8ce557bd1d27fea19e286672d2ea1f5f887b13c36fd8cfd5be4ee33a8fe1a3"
+    },
+    {
+      "path": "ExerciseMedia/gifs/u2X71Np.gif",
+      "sha256": "9d8fb2ebd6d2f7c30aabc9350926d1bfc8077449b6049eff63466c05bf709def"
+    },
+    {
+      "path": "ExerciseMedia/gifs/wQ2c4XD.gif",
+      "sha256": "32d2f54834207624b965db5f4f5b875589d608990c3f85d3732062f30c3916b1"
+    },
+    {
+      "path": "ExerciseMedia/gifs/ykUOVze.gif",
+      "sha256": "a47fdc5174b3f2003ae89a82d1815951413a0fd7b6f49329637454dc11a72960"
+    },
+    {
+      "path": "ExerciseMedia/gifs/yn8yg1r.gif",
+      "sha256": "6a2440b565509a084f97e861dff6a69249f0d52f01730fc628d4698e273b4ea3"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/2dImyQ8.mp4",
+      "sha256": "b6aca13d85b6957b1e09e9dfc5f65c1e7f6a6bb2a08f6ade922dad722dd356cd"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/3TZduzM.mp4",
+      "sha256": "d36b2ac316d618d2929e82aa8abad337c605a6b3595b994a916f64b550534a12"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/6TG6x2w.mp4",
+      "sha256": "de10630fb406debf0d59c0d5d66dfc74311830145cc5b059e8f7d556e7153760"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/8DiFDVA.mp4",
+      "sha256": "2358c2e456356394c3e86046ef221944e122ac7e79ebf43a98bd7444ca8dc81c"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/A6wtbuL.mp4",
+      "sha256": "27601875033987d0a2e7d464e5fae7b59800fa9859236105dbf6834e3b12deb6"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/BJ0Hz5L.mp4",
+      "sha256": "623933bf6b3c1efd000463c10063cf76add409e8098222769b9b8f58832a20e8"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/BLCvwr2.mp4",
+      "sha256": "956930cea4a418d0fd234e1b5cbb834b020c423ededb644963c36d63c53b5e38"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/C0MA9bC.mp4",
+      "sha256": "3d58eba023c46197c15133e377133508dc25d107df0700d1fbbcf8097e958435"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/DsgkuIt.mp4",
+      "sha256": "9a7bf677651b99ba636c23e3bf6c88e7a1fc50e9da62b984ff5166bb5e2eca57"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/HPlPoQA.mp4",
+      "sha256": "4cff03ed7a7715fb60c82c02b2daa45eab65d96c32d2c923ea1399480d2dff5c"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/I4hDWkc.mp4",
+      "sha256": "0f0fcc7a9c9abcc643e550c27a114a9faaf3e78319dc2bd99545d74393452ad4"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/J6Dx1Mu.mp4",
+      "sha256": "b9be32e28b06b057f9f37d0d8c7a32a737b6fbac5d9f187129114b774a53c0f3"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/NJzBsGJ.mp4",
+      "sha256": "26bf2fe7f25789e3c11a1fd74d4270d84144a47c858ea9c393fa843eb7fc4b15"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/NbVPDMW.mp4",
+      "sha256": "ebfec3329fb61427e24b1f24e7a297e4db602245373e1ac38dc674948424f672"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/RaflbWD.mp4",
+      "sha256": "d7d125b82b046dbe41447b8109bb253142f066db6272a59fe618e3a64e3c616a"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/TFqbd8t.mp4",
+      "sha256": "7e4eab76cfe4ac12a0130ff2c2067ebe50dca2e73093469ab68b74f8545087d7"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/XlZ4lAC.mp4",
+      "sha256": "f08fed5b88c4992dbb8be877ebb8a4aedc8d26b7ca7d1958e2beeef09e9a89f8"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/Xy4jlWA.mp4",
+      "sha256": "e848d8266e9f489ad9261ba0d0bf2822fade2074afcc81defea635e8f4bb8285"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/dU605di.mp4",
+      "sha256": "06d827683f2ba5095c7275eb63c9a04301ac9d3b5780985abc2bbd97c6914dd0"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/f7Y9eDZ.mp4",
+      "sha256": "c9242a8e0336eac77630c81c62207f4e921acbef97a79c577a6d46e77d943467"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/iny3m5y.mp4",
+      "sha256": "50eb291792b0dab92ffeb5c7c3458471a2c0af05a1e383772b289f7ea6ddabf3"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/mpKZGWz.mp4",
+      "sha256": "eff9a5ab0d92a1730c9ed4988d7fd84cdad626da9779bd2718f82e8f1ee5b4bc"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/myfUsKf.mp4",
+      "sha256": "29e016e3eb8ff1e0319a2a87dc42559f5b30421a68f69f8a1c493690513196a4"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/oHsrypV.mp4",
+      "sha256": "1205295ae8696a725bbb30d3ba86c419e1adf6f97389c93e7022c599dbdfccf1"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/oR7O9LW.mp4",
+      "sha256": "f57fa2f9b8bfba1b24ef10c42b9996a0806110d4028e254b46bcca959c8127db"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/peAeMR3.mp4",
+      "sha256": "34268eef29e5edbfc74b292897d832b9e6bdd8ceded708013684237507db245d"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/qPEzJjA.mp4",
+      "sha256": "851ce88ddab019c49778f2fb4016f3e807df162af168276cf72228dd224dbeaa"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/qXTaZnJ.mp4",
+      "sha256": "a33465dba472f5d163cff152cd316aaad0119811c4f152ee1900f2a34257985a"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/trqKQv2.mp4",
+      "sha256": "3bfad6f9dea96511b025f87ab8781e286c59388d1762658df1a1dfc9da247280"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/u2X71Np.mp4",
+      "sha256": "bf28f8f85ff8af1bdf25cbf64adb8c6461b6be686d6f6a9190e9913942180590"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/wQ2c4XD.mp4",
+      "sha256": "2b1610a823a83f25b45135966b105e549124db18719fa820a18124f437664837"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/ykUOVze.mp4",
+      "sha256": "3fa289e75a0dc0484aaa302596e5660259bf4815c54aaefaa2285d53c0f16a24"
+    },
+    {
+      "path": "ExerciseMedia/guide-previews/yn8yg1r.mp4",
+      "sha256": "9cd81a27d525296fcd339a25f2d4b03f9ddd63e250d14ce6bac87308ec1513b5"
+    },
+    {
+      "path": "ExerciseMedia/supplemental/plank-guide.mp4",
+      "sha256": "8d73d9d11c65219684282fae057a5f2286e4b92d16eb3249b37d578b1da7ea6d"
+    },
+    {
+      "path": "ExerciseMedia/supplemental/plank-thumb.mp4",
+      "sha256": "a89252630b6fae577b9a33000319839f4d6a24394f30bd239d1f8b764d1ae739"
+    },
+    {
+      "path": "ExerciseMedia/videos/2dImyQ8.mp4",
+      "sha256": "1d901bd2abda53d5cbca24f572236b6213c6de8b4a2032532e28c081470953e7"
+    },
+    {
+      "path": "ExerciseMedia/videos/3TZduzM.mp4",
+      "sha256": "3f6cb097c25801ca2b6ad8084cfde93429f10e2b5f5abe9f42f1901e7dfe4cfd"
+    },
+    {
+      "path": "ExerciseMedia/videos/6TG6x2w.mp4",
+      "sha256": "65e93909f15f151e063795ba164f10a4eacf5d229ea90bf730abc9520f534db2"
+    },
+    {
+      "path": "ExerciseMedia/videos/8DiFDVA.mp4",
+      "sha256": "56fa94ad08719c804b7020a0e275deb9b4f58102aa2a91ac26e230bf8673f6ac"
+    },
+    {
+      "path": "ExerciseMedia/videos/A6wtbuL.mp4",
+      "sha256": "51535530d3ace11e889159a53369529054b9d6abc34d519095c93246fdcdeb39"
+    },
+    {
+      "path": "ExerciseMedia/videos/BJ0Hz5L.mp4",
+      "sha256": "78424c8eb25307d4757c54085213f6356a15ee36b7f02f9db663dc10bd704a13"
+    },
+    {
+      "path": "ExerciseMedia/videos/BLCvwr2.mp4",
+      "sha256": "b216638acc826cf46166b4fe8348a6039b8f8dc18d7ea8b4019fc463b67692c7"
+    },
+    {
+      "path": "ExerciseMedia/videos/C0MA9bC.mp4",
+      "sha256": "10246557660be3c2efe39d058e19e7039690f1cd67d19b4a3a7a8bcfd9ab8e8a"
+    },
+    {
+      "path": "ExerciseMedia/videos/DsgkuIt.mp4",
+      "sha256": "133d56c4812a247d1979c1176f421c892d797df2aa92d377b39a9a3d650b89f9"
+    },
+    {
+      "path": "ExerciseMedia/videos/HPlPoQA.mp4",
+      "sha256": "5a59ee4667260015481ad8264107e1e950cfa956680aa011e82a600d94586c8d"
+    },
+    {
+      "path": "ExerciseMedia/videos/I4hDWkc.mp4",
+      "sha256": "9e129f75d874d2bb2f767efc1902cdb34efb6e4d843e7bcb81ce319bf3d02613"
+    },
+    {
+      "path": "ExerciseMedia/videos/J6Dx1Mu.mp4",
+      "sha256": "fbc10e9c28d5cd942482b06141eb03f317cc1b765c0a8e94067cd9523cbdd33e"
+    },
+    {
+      "path": "ExerciseMedia/videos/NJzBsGJ.mp4",
+      "sha256": "9131d4c6329ae74c189e542227f13267b367e0af5d4d23c7134c917fed126184"
+    },
+    {
+      "path": "ExerciseMedia/videos/NbVPDMW.mp4",
+      "sha256": "24234d2c68176362a4f1b0c479979d21bd90f475391dd8aa8334809f42a9b7c9"
+    },
+    {
+      "path": "ExerciseMedia/videos/RaflbWD.mp4",
+      "sha256": "70bf1d71945c71cf8f31a0b2a8660fb84083a2a31b1ba302104944099ff89209"
+    },
+    {
+      "path": "ExerciseMedia/videos/TFqbd8t.mp4",
+      "sha256": "436e46c75ae22a0d654d350be0113feb6b6a482d106ba6940f8c7961b9448538"
+    },
+    {
+      "path": "ExerciseMedia/videos/XlZ4lAC.mp4",
+      "sha256": "be1f56b9decd61c33d958e908afaca9621d1232432397d2fdf4869e44470f8ab"
+    },
+    {
+      "path": "ExerciseMedia/videos/Xy4jlWA.mp4",
+      "sha256": "bb925f0ff06abb53d3d51ee33b95d4b1c2521e3637343f9ae2cd4ef55773d59c"
+    },
+    {
+      "path": "ExerciseMedia/videos/dU605di.mp4",
+      "sha256": "b64109bb25d6361d72cd25670f173efa7d4a192b885a7f2cbbd59b82ebee9f96"
+    },
+    {
+      "path": "ExerciseMedia/videos/f7Y9eDZ.mp4",
+      "sha256": "373ad33e00e2ae061841a80a4449e0e6cab65afd36e5f39e9259060759965b54"
+    },
+    {
+      "path": "ExerciseMedia/videos/iny3m5y.mp4",
+      "sha256": "4c9458a6f6a94bc5bfcb9713306a8d1040569815a397363d2a1653dc792e001d"
+    },
+    {
+      "path": "ExerciseMedia/videos/mpKZGWz.mp4",
+      "sha256": "85affc1043796e1ab1c46ee0a74b9fe4a875f2132b0feee339e3de4ffaaa10c4"
+    },
+    {
+      "path": "ExerciseMedia/videos/myfUsKf.mp4",
+      "sha256": "7954e43382981d5dffcec8771aa4af5587dc0e8501b78f130d6e84b9da9ebae8"
+    },
+    {
+      "path": "ExerciseMedia/videos/oHsrypV.mp4",
+      "sha256": "e37376e8ca04c98fafb58b8206d2b938e276a84a1e91e4c210b28cc07e389a4c"
+    },
+    {
+      "path": "ExerciseMedia/videos/oR7O9LW.mp4",
+      "sha256": "41c5e404732c00e963daf3618ec5fb802f4457ddb40a517379be09dcb1a1b352"
+    },
+    {
+      "path": "ExerciseMedia/videos/peAeMR3.mp4",
+      "sha256": "78bebf7c39b48892afce52a35870b66999789835462b9dba83b8fc831667737a"
+    },
+    {
+      "path": "ExerciseMedia/videos/qPEzJjA.mp4",
+      "sha256": "8daaddf0cbeccf1cf07b67ff0fa9b5f87978ed3aeb9270e46c45528b12763329"
+    },
+    {
+      "path": "ExerciseMedia/videos/qXTaZnJ.mp4",
+      "sha256": "08a08c99836d00fde57c436dec5640e691c6ebd7543a33aa0e50d16c37f4e052"
+    },
+    {
+      "path": "ExerciseMedia/videos/trqKQv2.mp4",
+      "sha256": "340c8fcc472ccde4ff982cee72f81023147b4267af8cd2b7a9c9ff3666ae7347"
+    },
+    {
+      "path": "ExerciseMedia/videos/u2X71Np.mp4",
+      "sha256": "76137fa04bdbd5b2fa6a26260eb3e477ca62432a397387969cea2174323ea22a"
+    },
+    {
+      "path": "ExerciseMedia/videos/wQ2c4XD.mp4",
+      "sha256": "3c5d1fb8a62244930250dc543955ce4f76fa83ab596bd079b10b5bfca4550ef2"
+    },
+    {
+      "path": "ExerciseMedia/videos/ykUOVze.mp4",
+      "sha256": "99a680e801749752550d18f70ff126c5d17d07e7d22765aeaac69c3385910b55"
+    },
+    {
+      "path": "ExerciseMedia/videos/yn8yg1r.mp4",
+      "sha256": "083ea5ce2b57624a19fbb133bda8df209102531c2b19e4c9dbee8af3c9994d84"
+    }
+  ],
+  "compiledAssetsSHA256": "83f63967b6d9d46c8383a3ed5fb50c7196e9e59227f82e445288ab4bf91420cd",
+  "allMatched": true,
+  "meaning": "Source folder resources and compiled image catalog match installed app; does not certify visual correctness."
+}

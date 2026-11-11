@@ -1,0 +1,38 @@
+[
+  {
+    "challenge": "consistent-14",
+    "asset": "challenge-consistent-14",
+    "source": "https://www.pexels.com/photo/a-woman-doing-push-ups-6739040/",
+    "photographer": "Polina Tankilevitch",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-11-10",
+    "sha256": "147d566acd9ec54e7277a077d9f533b569712ae048966d88d964b54d5edcda98",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "previousSource": "https://unsplash.com/photos/a-woman-lifting-a-black-dumbbell-in-a-gym-O1iH3EmWvbM",
+    "reason": "Bright neutral background, subject centered, exercise equipment/posture visible. Original photo, UI-only crop, no AI edit."
+  },
+  {
+    "challenge": "upper-28",
+    "asset": "challenge-upper-28",
+    "source": "https://www.pexels.com/photo/sportswoman-working-out-with-dumbbell-on-light-background-6974859/",
+    "photographer": "Vika Glitter",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-11-10",
+    "sha256": "dfc22a54a7130cd2ba48addc68c6609bd11a7b12d0df2a57365f8be7c295ffc3",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "previousSource": "https://unsplash.com/photos/a-man-doing-a-squat-with-a-barbell-Hfc8VGI2ekU",
+    "reason": "Bright neutral background, subject centered, exercise equipment/posture visible. Original photo, UI-only crop, no AI edit."
+  },
+  {
+    "challenge": "lower-28",
+    "asset": "challenge-lower-28",
+    "source": "https://unsplash.com/photos/a-woman-squatting-on-the-floor-in-a-gym-snM3yEpvklU",
+    "photographer": "SUNDAY II SUNDAY",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "7c50cc3cb31380d5f2058b275599eafb8b2d8f54d70db288c9276dc0d2a0f7f8",
+    "use": "Illustrative stock photography, not an app coach/endorsement",
+    "previousSource": "https://unsplash.com/photos/woman-lifting-dumbbell-in-gym-rQHMG2OMRg0",
+    "reason": "Recognizable bodyweight squat, focal crop keeps head, hip and bent knees visible"
+  }
+]

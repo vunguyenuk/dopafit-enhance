@@ -1,0 +1,767 @@
+{
+  "gyms": [
+    {
+      "equipment": [
+        "Trap Bar",
+        "Ghế dốc",
+        "Bánh tạ",
+        "Ghế tập",
+        "Tạ chuông",
+        "Trọng lượng cơ thể",
+        "Cáp",
+        "T-Bar Row",
+        "Máy tập",
+        "Xà đơn",
+        "Dây kháng lực",
+        "Tạ đòn",
+        "Cặp tạ đơn"
+      ],
+      "plates": [
+        1.25,
+        2.5,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "locationType": "Phòng gym",
+      "name": "Phòng gym",
+      "dumbbells": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        40,
+        45,
+        50
+      ],
+      "id": "BEA7E5DB-A345-4FE0-80DE-6E43B262ADCF",
+      "barWeight": 20
+    }
+  ],
+  "plan": {
+    "equipmentPreference": "Không ưu tiên",
+    "supersets": false,
+    "notificationDays": [],
+    "bodyWeight": 68,
+    "unit": "kg",
+    "experience": "Mới bắt đầu",
+    "split": "Thân trên / Thân dưới",
+    "otherActivity": "Không có gì khác",
+    "variability": "Cân bằng",
+    "timedTraining": false,
+    "warmup": false,
+    "sound": true,
+    "ageGroup": "25–34",
+    "trainingDays": [
+      2,
+      4,
+      6
+    ],
+    "height": 168,
+    "focus": [],
+    "gender": "Nam",
+    "minutes": 60,
+    "language": "Theo ngôn ngữ của máy",
+    "goal": "Khỏe hơn",
+    "days": 3,
+    "reminderHour": 18
+  },
+  "history": [
+    {
+      "finished": 815911538.42686,
+      "exercises": [
+        {
+          "notes": "",
+          "sets": [
+            {
+              "id": "532E7780-0210-4C7E-8498-EE9AC82F2E63",
+              "seconds": 0,
+              "reps": 12,
+              "weight": 30,
+              "completed": true,
+              "warmup": false
+            }
+          ],
+          "id": "B2C10922-4AA4-4707-9198-E13D835A554D",
+          "exercise": {
+            "defaultReps": 12,
+            "image": "reference-beginner-upper",
+            "name": "Kéo lưng với tạ đơn",
+            "equipment": "Cặp tạ đơn",
+            "defaultWeight": 30,
+            "repsConvention": "Mỗi bên",
+            "defaultSets": 3,
+            "instructions": [
+              "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+              "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+              "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+            ],
+            "muscles": [
+              "Lưng"
+            ],
+            "volumeMultiplier": 2,
+            "id": "dumbbell-row",
+            "secondary": [
+              "Tay trước"
+            ],
+            "english": "Dumbbell Row",
+            "imageRect": [
+              47,
+              330,
+              174,
+              155
+            ],
+            "convention": "Mỗi tay",
+            "timed": false
+          },
+          "rir": 3,
+          "restSeconds": 0
+        }
+      ],
+      "hasStarted": true,
+      "id": "AD9B918A-B0B8-4E46-AB17-9B4E201E418B",
+      "duration": 60,
+      "name": "Ngày thân trên",
+      "plannedMinutes": 60,
+      "started": 815911509.73647
+    },
+    {
+      "finished": 815904185.606978,
+      "exercises": [
+        {
+          "notes": "",
+          "sets": [
+            {
+              "completed": true,
+              "reps": 6,
+              "weight": 42.5,
+              "warmup": false,
+              "id": "204087FA-A059-47E9-92A2-50C0D8B5C322",
+              "seconds": 0
+            },
+            {
+              "completed": true,
+              "reps": 6,
+              "weight": 42.5,
+              "warmup": false,
+              "id": "5065E49C-7581-4D2F-A862-B177D93C17B9",
+              "seconds": 0
+            },
+            {
+              "completed": true,
+              "reps": 6,
+              "weight": 42.5,
+              "warmup": false,
+              "id": "5A66486D-F5C0-4061-A9B1-749F8705ED84",
+              "seconds": 0
+            }
+          ],
+          "id": "C832E40E-B15C-4518-B265-B6DB6B62F1AF",
+          "exercise": {
+            "defaultReps": 6,
+            "image": "reference-upper",
+            "name": "Đẩy ngực với tạ đòn trên ghế dốc lên",
+            "equipment": "Tạ đòn",
+            "defaultWeight": 42.5,
+            "defaultSets": 3,
+            "instructions": [
+              "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+              "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+              "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+            ],
+            "muscles": [
+              "Ngực"
+            ],
+            "secondary": [
+              "Vai",
+              "Tay sau"
+            ],
+            "id": "incline",
+            "english": "Incline Barbell Bench Press",
+            "imageRect": [
+              47,
+              508,
+              174,
+              155
+            ],
+            "convention": "Gồm thanh đòn",
+            "timed": false
+          },
+          "rir": 3,
+          "restSeconds": 120
+        }
+      ],
+      "hasStarted": true,
+      "duration": 733.6707490682602,
+      "id": "4CCE1AAE-3111-4D99-9D29-1A7C7065ED4A",
+      "name": "Ngày thân trên",
+      "plannedMinutes": 60,
+      "started": 815903451.936229
+    }
+  ],
+  "preferences": {},
+  "onboarded": true,
+  "draft": {
+    "exercises": [
+      {
+        "restSeconds": 0,
+        "exercise": {
+          "defaultReps": 12,
+          "image": "reference-beginner-upper",
+          "equipment": "Cặp tạ đơn",
+          "name": "Kéo lưng với tạ đơn",
+          "defaultWeight": 30,
+          "repsConvention": "Mỗi bên",
+          "defaultSets": 3,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "muscles": [
+            "Lưng"
+          ],
+          "volumeMultiplier": 2,
+          "secondary": [
+            "Tay trước"
+          ],
+          "id": "dumbbell-row",
+          "imageRect": [
+            47,
+            330,
+            174,
+            155
+          ],
+          "english": "Dumbbell Row",
+          "convention": "Mỗi tay",
+          "timed": false
+        },
+        "sets": [
+          {
+            "weight": 30,
+            "reps": 12,
+            "id": "AEA2E375-3096-4660-816B-AA9F3BEF73ED",
+            "completed": false,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "weight": 30,
+            "reps": 12,
+            "id": "AC923CC1-FA2E-49DB-9B04-F67036F2A157",
+            "completed": false,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "weight": 30,
+            "reps": 12,
+            "id": "069858B2-D4DB-4F07-9325-8D0B856C54BA",
+            "completed": false,
+            "warmup": false,
+            "seconds": 0
+          }
+        ],
+        "notes": "",
+        "id": "6CD2689F-2458-4BA8-A214-457A11449695"
+      },
+      {
+        "restSeconds": 0,
+        "exercise": {
+          "defaultReps": 12,
+          "image": "reference-beginner-upper",
+          "equipment": "Máy tập",
+          "name": "Đẩy ngực trên ghế với máy Smith",
+          "defaultWeight": 30,
+          "defaultSets": 3,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "muscles": [
+            "Ngực"
+          ],
+          "secondary": [
+            "Vai",
+            "Tay sau"
+          ],
+          "id": "smith-bench",
+          "imageRect": [
+            47,
+            508,
+            174,
+            155
+          ],
+          "english": "Smith Machine Bench Press",
+          "convention": "",
+          "timed": false
+        },
+        "sets": [
+          {
+            "weight": 30,
+            "reps": 12,
+            "id": "105E8925-7056-4C8A-B923-8BF8E3A360AA",
+            "completed": false,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "weight": 30,
+            "reps": 12,
+            "id": "1E384B3C-CE4E-4163-979B-6ABFFA29C27F",
+            "completed": false,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "weight": 30,
+            "reps": 12,
+            "id": "A636ED9C-5193-4FD7-8444-57CBC03382AE",
+            "completed": false,
+            "warmup": false,
+            "seconds": 0
+          }
+        ],
+        "notes": "",
+        "id": "0AC39A3E-79C0-4DD1-BFDB-FC062F25C7D8"
+      },
+      {
+        "notes": "",
+        "exercise": {
+          "defaultReps": 12,
+          "image": "reference-beginner-upper",
+          "equipment": "Cặp tạ đơn",
+          "name": "Ép vai sau với tạ đơn",
+          "defaultWeight": 15,
+          "defaultSets": 3,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "muscles": [
+            "Vai"
+          ],
+          "secondary": [
+            "Lưng"
+          ],
+          "id": "dumbbell-back-fly",
+          "imageRect": [
+            47,
+            687,
+            174,
+            155
+          ],
+          "english": "Dumbbell Back Fly",
+          "convention": "",
+          "timed": false
+        },
+        "id": "C3368581-B5CC-479A-9295-80F61F5ED60F",
+        "sets": [
+          {
+            "weight": 15,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "61D4DD69-2250-4F34-A31B-3FB3432BD27D",
+            "seconds": 0
+          },
+          {
+            "weight": 15,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "14623862-D648-4A6F-9F72-D0818AEF5C81",
+            "seconds": 0
+          },
+          {
+            "weight": 15,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "153D1204-586E-4DE1-81CE-ED7086280850",
+            "seconds": 0
+          }
+        ],
+        "restSeconds": 0
+      },
+      {
+        "notes": "",
+        "exercise": {
+          "defaultReps": 12,
+          "image": "reference-beginner-upper",
+          "equipment": "Cặp tạ đơn",
+          "name": "Duỗi tay sau với tạ đơn khi nằm",
+          "defaultWeight": 12.5,
+          "defaultSets": 3,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "muscles": [
+            "Tay sau"
+          ],
+          "secondary": [],
+          "id": "dumbbell-skullcrusher",
+          "imageRect": [
+            47,
+            865,
+            174,
+            155
+          ],
+          "english": "Dumbbell Skullcrusher",
+          "convention": "",
+          "timed": false
+        },
+        "id": "0310D3BE-8A69-4293-9502-57918ABF3B82",
+        "sets": [
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "868D494B-06FC-4CDE-8199-928C42596E88",
+            "seconds": 0
+          },
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "9C270641-F9D2-433E-9364-9B1C3A3D9BBB",
+            "seconds": 0
+          },
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "0C8CCB2D-B5EA-474C-8DFE-C8F61AD82298",
+            "seconds": 0
+          }
+        ],
+        "restSeconds": 0
+      },
+      {
+        "notes": "",
+        "exercise": {
+          "equipment": "Tạ đòn",
+          "image": "reference-beginner-upper",
+          "imageRect": [
+            47,
+            1043,
+            174,
+            155
+          ],
+          "defaultReps": 12,
+          "timed": false,
+          "id": "ez-curl",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Cuốn tay với thanh EZ",
+          "convention": "Gồm thanh đòn",
+          "defaultSets": 3,
+          "english": "EZ-Bar Curl",
+          "muscles": [
+            "Tay trước"
+          ],
+          "secondary": [],
+          "defaultWeight": 12.5
+        },
+        "id": "839E0C70-1166-4C10-9640-81F6364A3356",
+        "sets": [
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "C3EB1EDB-07A9-409F-A238-D36B6345A640",
+            "seconds": 0
+          },
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "3570292F-B5EC-4397-8A7E-C68D8E6436FF",
+            "seconds": 0
+          },
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "16E065EA-C366-4882-A76A-62C737CF423F",
+            "seconds": 0
+          }
+        ],
+        "restSeconds": 0
+      },
+      {
+        "notes": "",
+        "exercise": {
+          "equipment": "Cặp tạ đơn",
+          "image": "reference-beginner-upper",
+          "imageRect": [
+            47,
+            1222,
+            174,
+            155
+          ],
+          "defaultReps": 15,
+          "timed": false,
+          "id": "dumbbell-curl",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Cuốn tay trước với tạ đơn",
+          "convention": "",
+          "defaultSets": 3,
+          "english": "Dumbbell Bicep Curl",
+          "muscles": [
+            "Tay trước"
+          ],
+          "secondary": [],
+          "defaultWeight": 12.5
+        },
+        "id": "BC158382-C40A-4591-933E-533FA07F7E03",
+        "sets": [
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 15,
+            "id": "F5980379-DD24-4219-B7FA-3FE63D8C69F0",
+            "seconds": 0
+          },
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 15,
+            "id": "F7434D3F-203B-472C-A2D9-182AE59F29B0",
+            "seconds": 0
+          },
+          {
+            "weight": 12.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 15,
+            "id": "09B753E7-C8DB-449D-B6D4-5912FE298589",
+            "seconds": 0
+          }
+        ],
+        "restSeconds": 0
+      },
+      {
+        "notes": "",
+        "exercise": {
+          "equipment": "Cặp tạ đơn",
+          "image": "reference-beginner-upper",
+          "imageRect": [
+            47,
+            1400,
+            174,
+            155
+          ],
+          "defaultReps": 15,
+          "timed": false,
+          "id": "dumbbell-shrug",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Nhún vai với tạ đơn",
+          "convention": "",
+          "defaultSets": 3,
+          "english": "Dumbbell Shrug",
+          "muscles": [
+            "Lưng"
+          ],
+          "secondary": [],
+          "defaultWeight": 22.5
+        },
+        "id": "F18DF6FB-1130-4B20-9EBB-1F32894CC143",
+        "sets": [
+          {
+            "weight": 22.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 15,
+            "id": "1C57E946-0363-44B2-A388-9D835F92D7C2",
+            "seconds": 0
+          },
+          {
+            "weight": 22.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 15,
+            "id": "FF36438D-8093-45EE-8E3B-3BCDAA8A44B8",
+            "seconds": 0
+          },
+          {
+            "weight": 22.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 15,
+            "id": "D73B13A6-87C4-4E77-9A82-1C4320015378",
+            "seconds": 0
+          }
+        ],
+        "restSeconds": 0
+      },
+      {
+        "notes": "",
+        "exercise": {
+          "equipment": "Cặp tạ đơn",
+          "image": "reference-beginner-upper",
+          "imageRect": [
+            47,
+            330,
+            174,
+            155
+          ],
+          "defaultReps": 12,
+          "timed": false,
+          "id": "dumbbell-row",
+          "volumeMultiplier": 2,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Kéo lưng với tạ đơn",
+          "convention": "Mỗi tay",
+          "defaultSets": 3,
+          "english": "Dumbbell Row",
+          "repsConvention": "Mỗi bên",
+          "muscles": [
+            "Lưng"
+          ],
+          "secondary": [
+            "Tay trước"
+          ],
+          "defaultWeight": 30
+        },
+        "id": "42D2EFDE-A948-4A99-AC4C-39E89EBD32A2",
+        "sets": [
+          {
+            "weight": 30,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "BDA607DC-FA81-4C27-8D57-F66453DBACB8",
+            "seconds": 0
+          },
+          {
+            "weight": 30,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "51AF4333-F21B-471F-BB0A-746BE331AD53",
+            "seconds": 0
+          },
+          {
+            "weight": 30,
+            "completed": false,
+            "warmup": false,
+            "reps": 12,
+            "id": "6ECFBA9C-9DA9-4FC0-A8DF-0080C4B7A8B8",
+            "seconds": 0
+          }
+        ],
+        "restSeconds": 0
+      },
+      {
+        "restSeconds": 0,
+        "notes": "",
+        "exercise": {
+          "equipment": "Tạ đòn",
+          "image": "reference-upper",
+          "imageRect": [
+            47,
+            508,
+            174,
+            155
+          ],
+          "defaultReps": 6,
+          "timed": false,
+          "id": "incline",
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Đẩy ngực với tạ đòn trên ghế dốc lên",
+          "convention": "Gồm thanh đòn",
+          "defaultSets": 3,
+          "english": "Incline Barbell Bench Press",
+          "muscles": [
+            "Ngực"
+          ],
+          "secondary": [
+            "Vai",
+            "Tay sau"
+          ],
+          "defaultWeight": 42.5
+        },
+        "sets": [
+          {
+            "weight": 42.5,
+            "completed": false,
+            "warmup": false,
+            "reps": 6,
+            "id": "649BF6AD-2808-4D51-96E6-36AB0C4ED6A4",
+            "seconds": 0
+          },
+          {
+            "warmup": false,
+            "seconds": 0,
+            "weight": 42.5,
+            "reps": 6,
+            "completed": false,
+            "id": "E77C0643-7ACA-468A-9EB0-2B206EA32671"
+          },
+          {
+            "warmup": false,
+            "seconds": 0,
+            "weight": 42.5,
+            "reps": 6,
+            "completed": false,
+            "id": "45CC10AC-33F0-4C51-B095-BAB33BE69D9F"
+          }
+        ],
+        "id": "6600449C-5AF6-4CC5-9E11-9B6F208DBBD8"
+      }
+    ],
+    "hasStarted": false,
+    "duration": 0,
+    "id": "BF17FE05-19F9-46B0-9CCC-5E900D027829",
+    "plannedMinutes": 60,
+    "name": "Ngày thân trên",
+    "started": 815974233.053861
+  },
+  "schema": 1,
+  "saved": [],
+  "lowerNext": false
+}

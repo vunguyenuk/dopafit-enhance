@@ -1,0 +1,572 @@
+{
+  "draft": {
+    "hasStarted": false,
+    "plannedMinutes": 60,
+    "id": "E0B7B0F7-4AEC-49BD-8305-7A889F0CEC60",
+    "name": "Ngày thân dưới",
+    "started": 816009475.570945,
+    "duration": 0,
+    "exercises": [
+      {
+        "exercise": {
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Squat kết hợp đẩy tạ qua đầu",
+          "defaultWeight": 42.5,
+          "convention": "Gồm thanh đòn",
+          "english": "Barbell Thruster",
+          "image": "reference-lower",
+          "equipment": "Tạ đòn",
+          "secondary": [
+            "Vai"
+          ],
+          "defaultReps": 6,
+          "muscles": [
+            "Đùi trước",
+            "Mông"
+          ],
+          "timed": false,
+          "id": "thruster",
+          "imageRect": [
+            47,
+            608,
+            155,
+            155
+          ],
+          "defaultSets": 3
+        },
+        "restSeconds": 0,
+        "id": "51509676-A256-42AD-BE7E-F6EBE26E9D7D",
+        "sets": [
+          {
+            "warmup": false,
+            "weight": 42.5,
+            "reps": 6,
+            "id": "9AAB7BA2-17DB-46B2-8C3B-78D6365EFCE8",
+            "completed": false,
+            "seconds": 0
+          },
+          {
+            "warmup": false,
+            "weight": 42.5,
+            "reps": 6,
+            "id": "7AC9B643-16EE-4E4A-A6A0-C1E50E002942",
+            "completed": false,
+            "seconds": 0
+          },
+          {
+            "completed": false,
+            "weight": 42.5,
+            "id": "6180CADF-969A-4443-9B15-59AC05CDE7C5",
+            "warmup": false,
+            "seconds": 0,
+            "reps": 6
+          }
+        ],
+        "notes": ""
+      },
+      {
+        "sets": [
+          {
+            "completed": false,
+            "weight": 32.5,
+            "id": "33494FFA-C371-4D6B-A369-1FA2B5FC417F",
+            "warmup": false,
+            "seconds": 0,
+            "reps": 15
+          },
+          {
+            "completed": false,
+            "weight": 32.5,
+            "id": "69C860E1-0328-490F-A8F8-42EFF4691CA4",
+            "warmup": false,
+            "seconds": 0,
+            "reps": 15
+          },
+          {
+            "completed": false,
+            "weight": 32.5,
+            "id": "67156C72-DFDC-4FFA-855F-AED36CB68845",
+            "warmup": false,
+            "seconds": 0,
+            "reps": 15
+          },
+          {
+            "reps": 15,
+            "warmup": false,
+            "seconds": 0,
+            "completed": false,
+            "weight": 32.5,
+            "id": "43F48BEF-E016-41A6-9822-41B1B1890F14"
+          }
+        ],
+        "exercise": {
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Squat tạ sau",
+          "defaultWeight": 32.5,
+          "convention": "Gồm thanh đòn",
+          "english": "Barbell Back Squat",
+          "image": "reference-lower",
+          "equipment": "Tạ đòn",
+          "secondary": [
+            "Mông"
+          ],
+          "defaultReps": 15,
+          "muscles": [
+            "Đùi trước"
+          ],
+          "timed": false,
+          "id": "squat",
+          "imageRect": [
+            47,
+            779,
+            155,
+            155
+          ],
+          "defaultSets": 4
+        },
+        "restSeconds": 0,
+        "notes": "",
+        "id": "D6B57049-CB30-443D-8046-4B67CAF36CAF"
+      },
+      {
+        "id": "BFEF9E69-82D0-4F8B-91D3-B0C7BDB1AB6F",
+        "sets": [
+          {
+            "reps": 6,
+            "warmup": false,
+            "seconds": 0,
+            "completed": false,
+            "weight": 40,
+            "id": "CC23D85F-E5D4-4CA0-9A64-00FBEAC27134"
+          },
+          {
+            "reps": 6,
+            "warmup": false,
+            "seconds": 0,
+            "completed": false,
+            "weight": 40,
+            "id": "6FB408FF-79A8-4A5D-AE46-3069FA85F20F"
+          },
+          {
+            "reps": 6,
+            "warmup": false,
+            "seconds": 0,
+            "completed": false,
+            "weight": 40,
+            "id": "4A65E712-CF3C-4AF2-8AE8-0FFCD1E28BE5"
+          }
+        ],
+        "exercise": {
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "name": "Deadlift kiểu Romania",
+          "defaultWeight": 40,
+          "convention": "Gồm thanh đòn",
+          "english": "Romanian Deadlift",
+          "image": "reference-lower",
+          "equipment": "Tạ đòn",
+          "secondary": [
+            "Mông",
+            "Lưng"
+          ],
+          "defaultReps": 6,
+          "muscles": [
+            "Đùi sau"
+          ],
+          "timed": false,
+          "id": "rdl",
+          "imageRect": [
+            47,
+            949,
+            155,
+            155
+          ],
+          "defaultSets": 3
+        },
+        "restSeconds": 0,
+        "notes": ""
+      },
+      {
+        "id": "80AD789A-094D-4795-BD29-BBE12B934EF6",
+        "sets": [
+          {
+            "id": "61649AEE-DAAE-4A35-B01A-E526D408D6C2",
+            "weight": 32.5,
+            "completed": false,
+            "reps": 15,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "id": "95C55A2F-96CF-4A0B-BE24-EE3B0F7D3FD7",
+            "weight": 32.5,
+            "completed": false,
+            "reps": 15,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "id": "E8FAC3D9-0D55-41B6-BAFD-E33F8965F547",
+            "weight": 32.5,
+            "completed": false,
+            "reps": 15,
+            "warmup": false,
+            "seconds": 0
+          },
+          {
+            "id": "6D2B5ECA-0551-4C3E-9803-29E1F040E847",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 32.5,
+            "reps": 15
+          }
+        ],
+        "restSeconds": 0,
+        "notes": "",
+        "exercise": {
+          "muscles": [
+            "Đùi sau"
+          ],
+          "defaultReps": 15,
+          "english": "Barbell Good Morning",
+          "defaultSets": 4,
+          "name": "Good morning – gập hông với tạ",
+          "defaultWeight": 32.5,
+          "equipment": "Tạ đòn",
+          "imageRect": [
+            47,
+            1119,
+            174,
+            155
+          ],
+          "id": "goodmorning",
+          "image": "reference-lower",
+          "convention": "Gồm thanh đòn",
+          "timed": false,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "secondary": [
+            "Mông",
+            "Lưng"
+          ]
+        }
+      },
+      {
+        "id": "CA2D4F95-D943-476F-9C21-023468F6CB6A",
+        "sets": [
+          {
+            "id": "6187F37E-0EB4-4A38-8286-6DA0D40DCF2E",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 27.5,
+            "reps": 6
+          },
+          {
+            "id": "05E3121E-DB90-44E5-B844-99835741C0D6",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 27.5,
+            "reps": 6
+          },
+          {
+            "id": "5ECCA15B-695A-468E-87FD-59DE130EBE43",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 27.5,
+            "reps": 6
+          }
+        ],
+        "restSeconds": 0,
+        "notes": "",
+        "exercise": {
+          "muscles": [
+            "Mông"
+          ],
+          "defaultReps": 6,
+          "english": "Kneeling Squat",
+          "defaultSets": 3,
+          "name": "Squat quỳ gối",
+          "defaultWeight": 27.5,
+          "equipment": "Tạ đòn",
+          "imageRect": [
+            47,
+            1291,
+            155,
+            155
+          ],
+          "id": "kneelsquat",
+          "image": "reference-lower",
+          "convention": "Gồm thanh đòn",
+          "timed": false,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "secondary": [
+            "Đùi trước"
+          ]
+        }
+      },
+      {
+        "id": "7ECC0C02-FF80-428D-9413-13F2F1F94C63",
+        "sets": [
+          {
+            "id": "70E56183-0A4F-462F-A1F7-CA5AF085E234",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 37.5,
+            "reps": 15
+          },
+          {
+            "id": "17AB7F19-7CC6-4F0A-978C-FC3AFB888AB2",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 37.5,
+            "reps": 15
+          },
+          {
+            "id": "376237C2-8B42-4147-82C8-D644332C32B7",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 37.5,
+            "reps": 15
+          }
+        ],
+        "restSeconds": 0,
+        "notes": "",
+        "exercise": {
+          "muscles": [
+            "Đùi trước"
+          ],
+          "defaultReps": 15,
+          "english": "Machine Hip Adduction",
+          "defaultSets": 3,
+          "name": "Khép hông với máy",
+          "defaultWeight": 37.5,
+          "equipment": "Máy tập",
+          "imageRect": [
+            47,
+            1460,
+            174,
+            148
+          ],
+          "id": "adductor",
+          "image": "reference-lower",
+          "convention": "",
+          "timed": false,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "secondary": []
+        }
+      },
+      {
+        "id": "4BA4D0CA-8538-489F-8024-B89EC27250AE",
+        "sets": [
+          {
+            "id": "55BD1BDB-6118-402B-90D7-06C9F8EA84E3",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 30,
+            "reps": 15
+          },
+          {
+            "id": "7D0680AA-82CE-4BB7-ABF3-265BE1397CC6",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 30,
+            "reps": 15
+          },
+          {
+            "id": "DC728A44-9891-4007-8EC8-9E262C0BCD9D",
+            "seconds": 0,
+            "completed": false,
+            "warmup": false,
+            "weight": 30,
+            "reps": 15
+          }
+        ],
+        "restSeconds": 0,
+        "notes": "",
+        "exercise": {
+          "muscles": [
+            "Bắp chân"
+          ],
+          "defaultReps": 15,
+          "english": "Standing Calf Raise",
+          "defaultSets": 3,
+          "name": "Nhón bắp chân đứng",
+          "defaultWeight": 30,
+          "equipment": "Máy tập",
+          "imageRect": [
+            47,
+            1222,
+            174,
+            155
+          ],
+          "id": "calf",
+          "image": "reference-lower",
+          "convention": "",
+          "timed": false,
+          "instructions": [
+            "Chuẩn bị tư thế vững chắc và điều chỉnh dụng cụ phù hợp.",
+            "Thực hiện động tác chậm, có kiểm soát theo hướng dẫn minh họa.",
+            "Giữ thân người ổn định, thở đều và trở về vị trí bắt đầu."
+          ],
+          "secondary": []
+        }
+      }
+    ]
+  },
+  "gyms": [
+    {
+      "plates": [
+        1.25,
+        2.5,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "name": "Phòng gym",
+      "dumbbells": [
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        17.5,
+        20,
+        22.5,
+        25,
+        27.5,
+        30,
+        32.5,
+        35,
+        40,
+        45,
+        50
+      ],
+      "equipment": [
+        "Tạ đòn",
+        "Bánh tạ",
+        "Cặp tạ đơn",
+        "Ghế tập",
+        "Ghế dốc",
+        "Cáp",
+        "Máy tập",
+        "Dây kháng lực",
+        "Xà đơn",
+        "Tạ chuông",
+        "Trap Bar",
+        "T-Bar Row",
+        "Trọng lượng cơ thể"
+      ],
+      "barWeight": 20,
+      "id": "D7B320AD-41BB-4D16-9BCD-FB3C64327DC8"
+    }
+  ],
+  "schema": 1,
+  "lowerNext": true,
+  "plan": {
+    "supersets": false,
+    "height": 169,
+    "reminderHour": 18,
+    "bodyWeight": 70,
+    "warmup": false,
+    "sound": true,
+    "goal": "Khỏe hơn",
+    "variability": "Cân bằng",
+    "language": "Theo ngôn ngữ của máy",
+    "experience": "Trung bình",
+    "gender": "Nam",
+    "split": "Thân trên / Thân dưới",
+    "unit": "kg",
+    "minutes": 60,
+    "timedTraining": false,
+    "notificationDays": [],
+    "days": 3,
+    "focus": []
+  },
+  "onboarded": true,
+  "history": [
+    {
+      "hasStarted": true,
+      "started": 816009328.202474,
+      "id": "BA804B9A-A4D3-4354-9EC3-2E4D197C6E42",
+      "name": "Bụng · Người mới",
+      "finished": 816009475.569707,
+      "plannedMinutes": 13,
+      "duration": 147.3672330379486,
+      "exercises": [
+        {
+          "notes": "",
+          "id": "B4356891-1006-47EE-8CFA-C388108657F8",
+          "exercise": {
+            "instructions": [
+              "Đặt khuỷu tay dưới vai, giữ thân người thành đường thẳng.",
+              "Giữ cơ bụng vừa phải và thở đều; không võng lưng.",
+              "Hạ gối xuống nếu cần để giữ tư thế thoải mái."
+            ],
+            "name": "Plank trên cẳng tay",
+            "defaultWeight": 0,
+            "convention": "",
+            "english": "Forearm Plank",
+            "equipment": "Trọng lượng cơ thể",
+            "image": "challenge-core-14",
+            "defaultReps": 10,
+            "secondary": [],
+            "muscles": [
+              "Bụng"
+            ],
+            "timed": true,
+            "id": "discovery-plank",
+            "imageRect": [],
+            "defaultSets": 2
+          },
+          "restSeconds": 60,
+          "sets": [
+            {
+              "completed": true,
+              "id": "62F23B1F-DF75-4849-90FB-C7C4FBFAE821",
+              "warmup": false,
+              "reps": 0,
+              "seconds": 40,
+              "weight": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "preferences": {},
+  "saved": []
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "screen": "R39",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"ae28b98ea89dd2be01bf0292844228b9cd73b552\",\"sizeBytes\":233732,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:9\"}"
+  },
+  {
+    "screen": "R40",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"99312eebc6e0213cffd50f627020ac23e5d03368\",\"sizeBytes\":136181,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:36\"}"
+  },
+  {
+    "screen": "R41",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"2d822e09235f66ad8ea41943056c5f446d425d99\",\"sizeBytes\":206156,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:63\"}"
+  },
+  {
+    "screen": "R42",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"6af2cca73d5806122f6f6159de3e3aa3f89507bc\",\"sizeBytes\":235947,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:91\"}"
+  },
+  {
+    "screen": "R43",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"c6c040af6048330f1cf19bc1efecab312446ac1a\",\"sizeBytes\":234682,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:118\"}"
+  },
+  {
+    "screen": "R44",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"4b5c71fb7203caf5d3e820599d113147a6b2b80a\",\"sizeBytes\":155709,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:145\"}"
+  },
+  {
+    "screen": "R45",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"0f86c82ec9a63522a98b14155da96ca090a71ffa\",\"sizeBytes\":127678,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:176\"}"
+  },
+  {
+    "screen": "R46",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"a3eede2603197fa1a54b3f9e0a606bdf33fec52f\",\"sizeBytes\":127873,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:203\"}"
+  },
+  {
+    "screen": "R47",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"d88e206d01519cd0721fb29bc1a093494652c347\",\"sizeBytes\":138268,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:230\"}"
+  },
+  {
+    "screen": "R48",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"4834c4d71d272b620c2bbc5c7c2d786bcc30f341\",\"sizeBytes\":93166,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:258\"}"
+  },
+  {
+    "screen": "R49",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"87c34906b18ecc300892696492b154c7887442fa\",\"sizeBytes\":199103,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:285\"}"
+  },
+  {
+    "screen": "R50",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"2d14d318c338124006e8200e035ce94abad24d88\",\"sizeBytes\":171866,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:312\"}"
+  },
+  {
+    "screen": "R51",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"c78dbfaf788d478e09862ea1bbe4c5a47f22c58f\",\"sizeBytes\":146019,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:343\"}"
+  },
+  {
+    "screen": "R52",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"49cc3fea299b9c2d1c8c61f549729916f4bb722b\",\"sizeBytes\":147141,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:370\"}"
+  },
+  {
+    "screen": "R53",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"d65440293c181d853db5206e9a852208809f0c7c\",\"sizeBytes\":157644,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:397\"}"
+  },
+  {
+    "screen": "R54",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"6ec6f78bb48400b9f66ce308ebd7207de9d08a8f\",\"sizeBytes\":96092,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:425\"}"
+  },
+  {
+    "screen": "R55",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"1eb1dfac1cd536aa5c2addb2a5aa4bc2bcb8b8fa\",\"sizeBytes\":124229,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:452\"}"
+  },
+  {
+    "screen": "R56",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"bd51d4ca80fc622c78eea43635b5fd70dd6dcccd\",\"sizeBytes\":115136,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:479\"}"
+  },
+  {
+    "screen": "R57",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"814e0ed6934cc668cebf2bbe1dadf20f980a8b3c\",\"sizeBytes\":113869,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:510\"}"
+  },
+  {
+    "screen": "R58",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"24d26d03ecdf2d0f3406a375bf2d4edad6fadbd5\",\"sizeBytes\":85404,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:537\"}"
+  },
+  {
+    "screen": "R59",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"a2dc3f4951a4f75107d5911b90d9140d656723f0\",\"sizeBytes\":135778,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:564\"}"
+  },
+  {
+    "screen": "R60",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"b36b343dd6366a21d198dab61df1af8aaa73c6db\",\"sizeBytes\":106199,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:592\"}"
+  },
+  {
+    "screen": "R61",
+    "status": 200,
+    "result": "{\"success\":true,\"imageHash\":\"aaa6bf25de7f7e74a5d6ba761675290ce688a72b\",\"sizeBytes\":134064,\"contentType\":\"image/jpeg\",\"placedOnNodeId\":\"19:619\"}"
+  }
+]

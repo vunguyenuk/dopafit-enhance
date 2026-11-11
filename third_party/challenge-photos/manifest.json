@@ -1,0 +1,255 @@
+[
+ {
+  "challenge": "consistent-14",
+  "asset": "challenge-consistent-14",
+  "source": "https://unsplash.com/photos/a-man-doing-push-ups-in-a-gym-qlid9Lys8r0",
+  "photographer": "Gard Pro",
+  "license": "https://unsplash.com/license",
+  "downloaded": "2026-11-10",
+  "sha256": "dd517ceb17a0c12a3fa00bf50b3f083c39e3205cd5fa57cfd3faa39e92f99236",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "upper-28",
+  "asset": "challenge-upper-28",
+  "source": "https://unsplash.com/photos/a-man-in-a-gym-lifting-a-pair-of-dumbbells-Pv97-3sdjdY",
+  "photographer": "Samuel Girven",
+  "license": "https://unsplash.com/license",
+  "downloaded": "2026-11-10",
+  "sha256": "a63fb6d28c2b9ed120909a515520cbdbab3f587db4a13cc3f1a5920db37fe3ed",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "lower-28",
+  "asset": "challenge-lower-28",
+  "source": "https://www.pexels.com/photo/woman-using-leg-press-machine-28076/",
+  "photographer": "Scott Webb",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "aa04c2d66984d1bf588de11a5c63d060e3c7690c8cc41b9a726057a9594fd2ea",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User15:54: replace squat that resembles middle shoulder-press card. Actual leg press photo with bent knees/feet on platform, diagonal composition and dark gym. Original photographed stock published2016, corroborating2015 NikonD300 metadata; no AI generation or AI editing. SwiftUI center crop only.",
+  "published": "2016-01-04",
+  "corroboratingSource": "https://pixabay.com/photos/training-press-legs-workout-828760/",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "physique-28",
+  "asset": "challenge-physique-28",
+  "source": "https://www.pexels.com/photo/a-man-using-barbell-11433060/",
+  "photographer": "Marius Aholou",
+  "license": "https://www.pexels.com/license/",
+  "published": "2022-03-10",
+  "downloaded": "2026-11-10",
+  "sha256": "e88a5bc6bae566834f3ad5fd7e8e8e706d6fb77a01a21662c3af83c1d33b88ee",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "fullbody-28",
+  "asset": "challenge-fullbody-28",
+  "source": "https://www.pexels.com/photo/a-man-using-a-rowing-machine-6389079/",
+  "photographer": "Tima Miroshnichenko",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "1d1deef34a5def842ae7c08091b29874c191e177dc313b493f2e5d63b7707096",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Natural source colors, dark gym rowing action. Landscape source chosen after portrait6389080 clipped the hands in wide cards; no color filter or AI edit.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "calisthenics-28",
+  "asset": "challenge-calisthenics-28",
+  "source": "https://www.pexels.com/photo/man-doing-pull-ups-7672092/",
+  "photographer": "cottonbro studio",
+  "license": "https://www.pexels.com/license/",
+  "published": "2021-04-27",
+  "downloaded": "2026-11-10",
+  "sha256": "7ba1bc035d87517220933da91ef3860966c260719b84877cc640d75ddba35914",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "pelvic-14",
+  "asset": "challenge-pelvic-14",
+  "source": "https://www.pexels.com/photo/a-bearded-man-in-black-tank-top-sitting-while-meditating-6944388/",
+  "photographer": "Mikhail Nilov",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "91e0d40f98e03cbf1bf01bd078b7d2cf8c2454263b771947103ee24e791e1479",
+  "use": "Illustrative real stock photo; no coach endorsement. Seated relaxation illustration, not an external demonstration of pelvic contraction.",
+  "reason": "User20:21: select different real source photography; do not desaturate/tint. Seated relaxation, natural skin and black clothing against charcoal; illustrative, not a visible Kegel contraction.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "dumbbell-30",
+  "asset": "challenge-dumbbell-30",
+  "source": "https://www.pexels.com/photo/muscular-man-exercises-his-biceps-with-dumbbell-18060118/",
+  "photographer": "@marcuschanmedia | IG",
+  "license": "https://www.pexels.com/license/",
+  "published": "2023-08-20",
+  "downloaded": "2026-11-10",
+  "sha256": "5cdbc6cad6eb2794ac094d2c95b86b64b5c99112d2b65368495a3fafb4199e3e",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "activity-30",
+  "asset": "challenge-activity-30",
+  "source": "https://www.pexels.com/photo/man-exercising-on-rowing-machine-in-gym-setting-29526375/",
+  "photographer": "foad shariyati",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "bff07e12849cf58e03f2261ce76a25cd01939dd607252b33bb3705be8a2e78ff",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User20:21: select different real source photography; do not desaturate/tint. Cable rowing in charcoal gym, natural skin and black clothing; activity challenge counts strength sessions too.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "core-30",
+  "asset": "challenge-core-30",
+  "source": "https://www.pexels.com/video/a-woman-doing-an-exercise-on-a-mat-4754028/",
+  "photographer": "cottonbro studio",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "e6840633422f42887fb446ff632b5b56b66035cd030acbec684417b206b60a77",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User21:35 requested a different core30 cover. Real filmed crunch in a dark gym, natural skin/gray-black clothing; no tint, saturation change or AI.",
+  "rendering": {
+   "sourceBytesUnmodified": false,
+   "reason": "JPEG frame extraction and downsample from real video; original source retained with hash. Natural colors unchanged.",
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none",
+   "crop": "Existing SwiftUI centered aspect-fill; no UI layout changes."
+  },
+  "mediaType": "Still frame from real filmed stock video",
+  "sourceVideo": {
+   "url": "https://videos.pexels.com/video-files/4754028/4754028-uhd_4096_2160_25fps.mp4",
+   "path": "third_party/challenge-photos/sources/core30-4754028.mp4",
+   "sha256": "93b66e923df1fdeb2d337c19cd5676ef4bc776112e1d62924e9148b26cac2b47",
+   "timestampSeconds": 3,
+   "extraction": "ffmpeg -ss 3 -i SOURCE -frames:v 1 -vf scale=1600:-1 -q:v 2 OUTPUT.jpg; no color filters, AI, generative edits or motion interpolation"
+  }
+ },
+ {
+  "challenge": "mobility-28",
+  "asset": "challenge-mobility-28",
+  "source": "https://www.pexels.com/photo/back-view-of-man-posing-shirtless-showing-muscles-8874398/",
+  "photographer": "Mike Jones",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "2ca2b0cd2bd6e0b3cb7ca8d365acc1887075d738518549ff13ec28728f4b71d6",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User20:21: select different real source photography; do not desaturate/tint. Upper-body stretch with hands behind head, natural skin against black backdrop, no colored lights.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "core-14",
+  "asset": "challenge-core-14",
+  "source": "https://www.pexels.com/photo/man-doing-yoga-2294363/",
+  "photographer": "Li Sun",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "17920ac2204010adbd24c33ad591bc003bc74af638f5f514df7980f661aa38e9",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "User21:42 requested a different core14 cover. Real side-plank athlete, entire pose visible, neutral dark-gray indoor gym and natural skin colors. No AI/tint/desaturation.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural source colors",
+   "crop": "Existing centered SwiftUI aspect-fill; no layout change."
+  },
+  "downloadURL": "https://images.pexels.com/photos/2294363/pexels-photo-2294363.jpeg?w=1600"
+ },
+ {
+  "challenge": "program-forearms",
+  "asset": "discovery-grip",
+  "source": "https://www.pexels.com/photo/person-holding-barbell-841130/",
+  "photographer": "Victor Freitas",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-10",
+  "sha256": "c536620257eb55f7346cc974d2a12fdee24283312e72705a00b4ea04ec0c0199",
+  "use": "Illustrative real stock photo; no coach endorsement.",
+  "reason": "Actual photographed hands gripping barbell in dark gym; no AI generation/editing. Different from bicep cover.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors, user correction20:21 supersedes saturation experiment",
+   "crop": "SwiftUI focal crop; mobility aspectFit"
+  }
+ },
+ {
+  "challenge": "program-glutes",
+  "asset": "program-glutes",
+  "source": "https://www.pexels.com/photo/focused-woman-exercising-in-a-dark-gym-setting-31028213/",
+  "photographer": "TMA Management (@modelstma)",
+  "license": "https://www.pexels.com/license/",
+  "downloaded": "2026-11-11",
+  "sha256": "a6bfa3d38085b21ea817fef9b3ea217cfb3c48cac9d5c33a83720b3811049e30",
+  "use": "Illustrative real stock photo for the Mông program tab; no coach endorsement.",
+  "reason": "User 08:15: Chân and Mông both used challenge-lower-28; needs a distinct photo in the same dark tone. Hip thrust machine = glute-specific.",
+  "rendering": {
+   "sourceBytesUnmodified": true,
+   "aiGeneratedOrEdited": false,
+   "colorFilters": "none; natural original colors",
+   "crop": "SwiftUI focal crop (center)"
+  }
+ }
+]

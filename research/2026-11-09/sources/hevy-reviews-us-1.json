@@ -1,0 +1,2568 @@
+{
+  "feed": {
+    "author": {
+      "name": {
+        "label": "iTunes Store"
+      },
+      "uri": {
+        "label": "http://www.apple.com/itunes/"
+      }
+    },
+    "entry": [
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id586691620"
+          },
+          "name": {
+            "label": "Iskdold"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T13:14:33-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14763138592"
+        },
+        "title": {
+          "label": "Perfect tracker"
+        },
+        "content": {
+          "label": "Very nice tracker, the badges lowk give a good motivation boost",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1287669521"
+          },
+          "name": {
+            "label": "SurgiBlue"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T13:04:14-07:00"
+        },
+        "im:rating": {
+          "label": "3"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14763109698"
+        },
+        "title": {
+          "label": "Hard to find exercises"
+        },
+        "content": {
+          "label": "My trainer uses terms that chat GPT finds but the app doesn’t find so I get very confused trying to track.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1943348007"
+          },
+          "name": {
+            "label": "Nutella46283"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T12:21:35-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762988150"
+        },
+        "title": {
+          "label": "Beginner Friendly"
+        },
+        "content": {
+          "label": "I’m new to workouts and it’s amazing for consistency and very convenient",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id969560862"
+          },
+          "name": {
+            "label": "samuel.shanju"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T12:19:03-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762980802"
+        },
+        "title": {
+          "label": "Great for consistency"
+        },
+        "content": {
+          "label": "I appreciate that I can simply arrive and begin at the gym. I avoid having to consider anything; I just start working. The routine is already set for what I need to do. It resembles a trainer that is simple to sustain.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id464899122"
+          },
+          "name": {
+            "label": "dobo42"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T12:17:57-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762977535"
+        },
+        "title": {
+          "label": "Clean interface, great volume tracking, smooth Apple sync"
+        },
+        "content": {
+          "label": "I’ve logged 75 workouts on Hevy and it’s become an essential part of my daily training. It makes logging high-volume lifting, sets, and personal records effortless. It syncs great with Apple Health to log workout duration and routines. Highly recommend it to anyone serious about tracking their progress in the gym!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1925232652"
+          },
+          "name": {
+            "label": "Tren Stowers"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T11:57:54-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762918327"
+        },
+        "title": {
+          "label": "Hevy 5⭐️"
+        },
+        "content": {
+          "label": "AMAZING APP",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id148636168"
+          },
+          "name": {
+            "label": "Bigsouth620"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T10:09:50-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762582888"
+        },
+        "title": {
+          "label": "Simple and intuitive"
+        },
+        "content": {
+          "label": "I was looking for something that was easy to use and would become a tool, not a chore to use. This app is super intuitive and has become apart of my workouts.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1358677592"
+          },
+          "name": {
+            "label": "Jddavis112"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T09:58:18-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762544655"
+        },
+        "title": {
+          "label": "Easy to use and motivating!"
+        },
+        "content": {
+          "label": "I started using Hevy about six months ago, and I’ve been telling everyone I know about it! It’s easy to use and beats carrying paper or a notebook around the gym.\n\nI create three or four workout routines each month, follow them, and adjust for the following month based on my needs and progress. Hevy makes planning and tracking everything so easy. Seeing my gains in the app and the changes in the mirror has been amazing. Highly recommend!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id730272268"
+          },
+          "name": {
+            "label": "givemecheez"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T09:26:22-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762437805"
+        },
+        "title": {
+          "label": "Yup"
+        },
+        "content": {
+          "label": "Amazing app.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id194699606"
+          },
+          "name": {
+            "label": "Amy917494"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T09:02:23-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14762355404"
+        },
+        "title": {
+          "label": "Great"
+        },
+        "content": {
+          "label": "Very useful app",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id150560274"
+          },
+          "name": {
+            "label": "JaysonPrice"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T07:19:16-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761989464"
+        },
+        "title": {
+          "label": "New to working out"
+        },
+        "content": {
+          "label": "Super easy to use and track, and it shows you how to do each exercise which helps with the gym anxiety. I love workout out now",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id310813341"
+          },
+          "name": {
+            "label": "Miharleybabe"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T07:11:48-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761962200"
+        },
+        "title": {
+          "label": "Love this app!"
+        },
+        "content": {
+          "label": "Sounds corny, but this is a game changer.  Keeps track of my sessions and keeps me competing against myself.  Real motivation and progress tracking.  Love it!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id500059412"
+          },
+          "name": {
+            "label": "Alejandro McCray"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T07:02:18-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761927406"
+        },
+        "title": {
+          "label": "OPTIMIZE."
+        },
+        "content": {
+          "label": "Please PLEASE for the love of Steve Jobs fix the optimization for the Duo… ain’t no way it’s taken THIS long",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id40339047"
+          },
+          "name": {
+            "label": "Alexandra123!"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T06:39:00-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761842173"
+        },
+        "title": {
+          "label": "Thank you Hevy!"
+        },
+        "content": {
+          "label": "Hevy has helped me become someone who goes to the gym without fear or anxiety. Not only does it allow me to track my progress on exercises I’m familiar with, the tutorial feature shows me how to do new exercises. Hevy has removed any intimidation factor attached  to the gym for me!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1256462797"
+          },
+          "name": {
+            "label": "HenryHMH31"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T06:31:39-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761815362"
+        },
+        "title": {
+          "label": "Great app"
+        },
+        "content": {
+          "label": "Excellent free version it’ll be better if there are more variety of exercises eg. There is only overhead extension cable version I can’t find with other handle for both hands not single arm and we can add exercises I think I comes with premium. Nonetheless, great app",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id85051709"
+          },
+          "name": {
+            "label": "ThaSmoothness"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T05:42:46-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761637754"
+        },
+        "title": {
+          "label": "Unusable now"
+        },
+        "content": {
+          "label": "App worked great until recent updates. Now it’s unusable inside the app to confirm you completed a set. Keyboard stays up, clicking wrong buttons. Just revert the most recent changes. App sucks now.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1056575729"
+          },
+          "name": {
+            "label": "Kicella"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T04:46:07-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761443100"
+        },
+        "title": {
+          "label": "Love this app"
+        },
+        "content": {
+          "label": "Myself and my fiancé are so glad we found this app. There was no way o was going to carry around a pen and book to keep track of progress. We made new fitness goals ao we were going to need to be able to track our progress. We LOVE this app.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1788478701"
+          },
+          "name": {
+            "label": "NotShonO"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T04:34:23-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14761404618"
+        },
+        "title": {
+          "label": "Surprisingly pleased"
+        },
+        "content": {
+          "label": "Usually these workout apps are a joke.  But I’m honestly impressed w Hevy.  Easy to use. Easy to navigate and great for beginners. Love how the body in the app lights up blue as you complete your exercise.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id433895265"
+          },
+          "name": {
+            "label": "clb49r"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-07T04:26:26-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14761379173"
+        },
+        "title": {
+          "label": "Great App for tracking lifts"
+        },
+        "content": {
+          "label": "This app has been exactly what I was looking for to track my lifts for progressive overload. I upgraded to paid so I could add more workouts but the free version gives you enough for a full week of workouts. Much cheaper than some of the trainer apps out there.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1005170581"
+          },
+          "name": {
+            "label": "daksol"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T22:46:13-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14760491341"
+        },
+        "title": {
+          "label": "Favorite gym app."
+        },
+        "content": {
+          "label": "I’ve had many gym apps over my 7 years of lifting and this one is by far the best. Everything you can imagine they have and if they don’t they make it super easy and simple to create one. It marks your progress and shows where you need to improve. This app has it all.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1120133044"
+          },
+          "name": {
+            "label": "BlueW26"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T22:16:56-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14760425230"
+        },
+        "title": {
+          "label": "Slick, easy, organized"
+        },
+        "content": {
+          "label": "I love that I can see which muscle groups I’ve worked in the little human diagram.  I also love all the summaries.  Everything is customizable and easy to work with.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id111630127"
+          },
+          "name": {
+            "label": "Chugs tfgjkkhg"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T19:44:25-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14760070347"
+        },
+        "title": {
+          "label": "Awesome app"
+        },
+        "content": {
+          "label": "Has everything you need to track your workouts.  Works really well.  Highly recommended.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1928163206"
+          },
+          "name": {
+            "label": "Saik016"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T19:34:47-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14760045723"
+        },
+        "title": {
+          "label": "Amazing"
+        },
+        "content": {
+          "label": "App is extremely functional and useful. The tracking features are amazing and progress is shown very clearly. The social aspect is very great as well and brings a competitive nature to the app, encouraging gym goers to work harder. Highly recommend this app as it’s the best workout app I have ever used.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id591482531"
+          },
+          "name": {
+            "label": "Soc00"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T18:08:16-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14759813571"
+        },
+        "title": {
+          "label": "Great app!"
+        },
+        "content": {
+          "label": "Amazing app, easy to use, recommend it!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id176992069"
+          },
+          "name": {
+            "label": "IsItDaveOrDavid"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T18:07:53-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14759812474"
+        },
+        "title": {
+          "label": "Good workout tracker"
+        },
+        "content": {
+          "label": "Easy to create workouts and custom exercises not in the library. Like the different note options. Don’t care much about the social components so wish it was possible to turn off or hide that on the home page and be able to customize the home page.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id23790469"
+          },
+          "name": {
+            "label": "gyugkjkghghh"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T18:03:20-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14759800076"
+        },
+        "title": {
+          "label": "Hevy review"
+        },
+        "content": {
+          "label": "Good app free plan for tracking would recommend lots of choice and good diagrams and summaries for free plan love this app",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id26301094"
+          },
+          "name": {
+            "label": "Jaymander"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T15:18:56-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14759350946"
+        },
+        "title": {
+          "label": "Love it"
+        },
+        "content": {
+          "label": "Super easy to use, keep track of prior lifts, and has a little visual for every lift. Wonderful app, and free!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id371712535"
+          },
+          "name": {
+            "label": "ConvectiveCore"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T14:52:19-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14759280864"
+        },
+        "title": {
+          "label": "Really good app"
+        },
+        "content": {
+          "label": "Does everything I want very well",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id219768921"
+          },
+          "name": {
+            "label": "Huey Go Lightly"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T14:41:33-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14759252554"
+        },
+        "title": {
+          "label": "Fantastic tool and training journal."
+        },
+        "content": {
+          "label": "Great app. Very intuitive and useful. Worth more than most pay apps.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id640736275"
+          },
+          "name": {
+            "label": "hshzkk"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T12:15:18-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14758860075"
+        },
+        "title": {
+          "label": "Helpful, fun"
+        },
+        "content": {
+          "label": "It keeps my workouts fun tracking my PR’s and breaking them, this is what I needed as I hit a wall with my current workouts, the only thing I don’t like is the weekly break down of lifts and muscle groups could be much more streamline. Overall, very helpful and worth it in my opinion,",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id483553524"
+          },
+          "name": {
+            "label": "iiScYth"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T11:32:06-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14758739139"
+        },
+        "title": {
+          "label": "Love this App"
+        },
+        "content": {
+          "label": "It’s gets a 5/5 stars no matter what but can we get an iPhone Duo up date for at least the front screen ?",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id118660672"
+          },
+          "name": {
+            "label": "Chrissy curl"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T11:07:38-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14758668405"
+        },
+        "title": {
+          "label": "Easy workout tracker"
+        },
+        "content": {
+          "label": "Love this app!  Use it to track progressive overload weight lifting.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id532805964"
+          },
+          "name": {
+            "label": "BuddyGrey"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T10:36:39-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14758577384"
+        },
+        "title": {
+          "label": "Great App"
+        },
+        "content": {
+          "label": "Awesome App!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id49776278"
+          },
+          "name": {
+            "label": "itsalexnextdoor"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T09:32:38-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14758380527"
+        },
+        "title": {
+          "label": "The workout app out there!"
+        },
+        "content": {
+          "label": "I’ve been using it for over 2 years, recommended to all my friends and gym buddies. We love comparing workouts and encouraging each other!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id571781974"
+          },
+          "name": {
+            "label": "1000111100111000111100"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T09:17:59-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14758334018"
+        },
+        "title": {
+          "label": "Best app ever"
+        },
+        "content": {
+          "label": "Just goated",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1664329684"
+          },
+          "name": {
+            "label": "Cr7portugal26"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T07:55:00-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14758061120"
+        },
+        "title": {
+          "label": "Amazing app"
+        },
+        "content": {
+          "label": "Great app. Allowed me to hit many PRs and overall better my performance",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id625755515"
+          },
+          "name": {
+            "label": "GAce1010"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T07:43:40-07:00"
+        },
+        "im:rating": {
+          "label": "4"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14758022699"
+        },
+        "title": {
+          "label": "Incredible app!"
+        },
+        "content": {
+          "label": "i've tried a lot of workout tracker apps. this is by far the best. it has almost everything you'd want. the only thing i'd add is some sort of programable \"coach\". i do olympic weightlifting and it would be useful to have one folder that changes week to week based on how you want to peak. or more weightlifting specific features. not big deal. b it amazing app otherwise!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id36097734"
+          },
+          "name": {
+            "label": "-Donnation-"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T06:46:54-07:00"
+        },
+        "im:rating": {
+          "label": "1"
+        },
+        "im:version": {
+          "label": "3.2.5"
+        },
+        "id": {
+          "label": "14757827165"
+        },
+        "title": {
+          "label": "Update this for the Duo"
+        },
+        "content": {
+          "label": "Come on guys, give us an update for the Duo.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "1"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id293150012"
+          },
+          "name": {
+            "label": "Vballtrainer"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T06:13:04-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14757708975"
+        },
+        "title": {
+          "label": "Love this app"
+        },
+        "content": {
+          "label": "I’ve tried several other apps and this is by far the easiest to use and has tons of different exercises to choose from. Quick and easy to create work plans and adjust the workout on the fly.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1383485952"
+          },
+          "name": {
+            "label": "pro3Richard"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T05:25:14-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14757543664"
+        },
+        "title": {
+          "label": "Love this app"
+        },
+        "content": {
+          "label": "Its extremely easy to track all your workouts, how much you lift and your routine. The best part for me is how it syncs with everything strava, health, anything and this is the free version. \n\nThank you Hevy for helping me stay consistent in the GYM, true game changer for me.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1947042927"
+          },
+          "name": {
+            "label": "Yousufalghoul81"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T05:06:44-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14757480948"
+        },
+        "title": {
+          "label": "Hevy"
+        },
+        "content": {
+          "label": "Very good app track workouts",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id36954501"
+          },
+          "name": {
+            "label": "wahkeema"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T04:40:05-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14757393536"
+        },
+        "title": {
+          "label": "Loving it so far"
+        },
+        "content": {
+          "label": "I started using HEVY earlier this year and have noticed a more improvement of my routines and physical appearance. People ask what I’ve been doing a lot. Sometimes the syncing between my watch and phone gets wonky in the app and I wish you could set the limit that a particular machine could do but other than that, I love it.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id26612622"
+          },
+          "name": {
+            "label": "streitth"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T03:43:57-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14757220319"
+        },
+        "title": {
+          "label": "⭐️⭐️⭐️⭐️⭐️ Great App for Tracking Workouts!"
+        },
+        "content": {
+          "label": "I recently logged my 100th workout in Hevy, and I genuinely enjoy using the app. It’s easy to track my exercises, weights, reps, and progress without making the process unnecessarily complicated. I especially appreciate being able to see how much stronger I’ve gotten over time. It’s straightforward, useful, and does exactly what I need it to do. Definitely worth the subscription!",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id918009713"
+          },
+          "name": {
+            "label": "Steady Now"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T02:59:11-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14757096130"
+        },
+        "title": {
+          "label": "Want Results?"
+        },
+        "content": {
+          "label": "TRACK! You can only improve what you measure.  Want the best tool to measure and track ? HEVY \n\nNow get on with it.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1052489309"
+          },
+          "name": {
+            "label": "3althawadi"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-06T00:39:18-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14756762533"
+        },
+        "title": {
+          "label": "AMAZING"
+        },
+        "content": {
+          "label": "fantastic app! helps track workouts & progress",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1643780116"
+          },
+          "name": {
+            "label": "fa1zeyy"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-05T22:32:10-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14756492444"
+        },
+        "title": {
+          "label": "very good"
+        },
+        "content": {
+          "label": "boss app",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1511088955"
+          },
+          "name": {
+            "label": "Himothy135"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-05T22:09:14-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14756445092"
+        },
+        "title": {
+          "label": "Been using it for a year"
+        },
+        "content": {
+          "label": "I like how clean and easy this app is. There is a social media side to it as well. You can get your friends to lock in with you. Been using it for a year and i really like it",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1465174217"
+          },
+          "name": {
+            "label": "Bosf96"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-05T21:47:47-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14756401379"
+        },
+        "title": {
+          "label": "Great"
+        },
+        "content": {
+          "label": "Genial",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id152204911"
+          },
+          "name": {
+            "label": "Juancho!!"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-05T20:42:21-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14756264676"
+        },
+        "title": {
+          "label": "Love this app"
+        },
+        "content": {
+          "label": "If you like a structured routine while keeping track of your progress through detailed data, then this app is for you! 10/10",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      },
+      {
+        "author": {
+          "uri": {
+            "label": "https://itunes.apple.com/us/reviews/id1217902294"
+          },
+          "name": {
+            "label": "K80Sarge"
+          },
+          "label": ""
+        },
+        "updated": {
+          "label": "2026-11-05T20:26:13-07:00"
+        },
+        "im:rating": {
+          "label": "5"
+        },
+        "im:version": {
+          "label": "3.2.4"
+        },
+        "id": {
+          "label": "14756229968"
+        },
+        "title": {
+          "label": "Handy app to track progress"
+        },
+        "content": {
+          "label": "I’m technologically inept, so I was hesitant to use. My husband insisted I try and I have found it to be user friendly. It is convenient to track progress.",
+          "attributes": {
+            "type": "text"
+          }
+        },
+        "link": {
+          "attributes": {
+            "rel": "related",
+            "href": "https://itunes.apple.com/us/review?id=1458862350&type=Purple%20Software"
+          }
+        },
+        "im:voteSum": {
+          "label": "0"
+        },
+        "im:contentType": {
+          "attributes": {
+            "term": "Application",
+            "label": "Application"
+          }
+        },
+        "im:voteCount": {
+          "label": "0"
+        }
+      }
+    ],
+    "updated": {
+      "label": "2026-11-08T18:05:10-07:00"
+    },
+    "rights": {
+      "label": "Copyright 2008 Apple Inc."
+    },
+    "title": {
+      "label": "iTunes Store: Customer Reviews"
+    },
+    "icon": {
+      "label": "http://itunes.apple.com/favicon.ico"
+    },
+    "link": [
+      {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://music.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=1"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "self",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1458862350/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "first",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1458862350/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=1458862350/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "last",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=10/id=1458862350/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=1458862350/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "previous",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1458862350/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=1458862350/sortBy=mostRecent/json"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "next",
+          "href": "https://itunes.apple.com/us/rss/customerreviews/page=2/id=1458862350/sortby=mostrecent/xml?urlDesc=/customerreviews/page=1/id=1458862350/sortBy=mostRecent/json"
+        }
+      }
+    ],
+    "id": {
+      "label": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1458862350/sortBy=mostRecent/json"
+    }
+  }
+}

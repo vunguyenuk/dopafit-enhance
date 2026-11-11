@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-10",
+  "sourceDocs": "https://oss.exercisedb.dev/docs",
+  "sourceOpenAPI": "third_party/exercisedb/openapi-2026-11-10.json",
+  "confirmedSourcePixels": [
+    180,
+    180
+  ],
+  "rowSourceFrames": 12,
+  "rowSourceSeconds": 3,
+  "rowTruePoseRate": 4,
+  "sourceDescriptionMentions180p": true,
+  "sourceRestrictions": "Non-commercial/prototype allowed; AscendAPI attribution required; paid RapidAPI plan for commercial use.",
+  "guideChanges": "Exact existing3D renderer first; lowres preview220pt in<=300ptmedia;26guide-only720px Lanczos4x/unsharp0.35, originalposes/timing. Thumbnail retains180pixel MP4.",
+  "nativeHD": false,
+  "performanceFPSBenchmark": "not measured",
+  "visualEvidence": [
+    "C83-row-preview-size-cap.png",
+    "C85-row-guide-half-speed.png"
+  ],
+  "unresolved": "Native HD source and true more motion samples;4fpssource cannot be made true30fps just by CFR repeat."
+}

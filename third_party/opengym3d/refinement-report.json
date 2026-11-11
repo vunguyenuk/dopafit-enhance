@@ -1,0 +1,53 @@
+[
+  {
+    "id": "bicep_curl",
+    "frames": [
+      0,
+      62
+    ],
+    "maxAnkleTargetErrorMeters": 5.7077149500627844e-06,
+    "maxGripTargetErrorMeters": 0,
+    "props": 2,
+    "fixes": [
+      "planted feet",
+      "wrist follows forearm",
+      "closed fingers",
+      "implements",
+      "softened pec surface/custom normals reset"
+    ]
+  },
+  {
+    "id": "romanian_deadlift",
+    "frames": [
+      0,
+      76
+    ],
+    "maxAnkleTargetErrorMeters": 8.365372711023594e-07,
+    "maxGripTargetErrorMeters": 0,
+    "props": 1,
+    "fixes": [
+      "planted feet",
+      "wrist follows forearm",
+      "closed fingers",
+      "implements",
+      "softened pec surface/custom normals reset"
+    ]
+  },
+  {
+    "id": "good_morning",
+    "frames": [
+      0,
+      72
+    ],
+    "maxAnkleTargetErrorMeters": 7.493450893612336e-07,
+    "maxGripTargetErrorMeters": 2.001212633774606e-06,
+    "props": 1,
+    "fixes": [
+      "planted feet",
+      "wrist follows forearm",
+      "closed fingers",
+      "implements",
+      "softened pec surface/custom normals reset"
+    ]
+  }
+]

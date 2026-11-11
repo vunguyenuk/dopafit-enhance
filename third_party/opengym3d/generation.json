@@ -1,0 +1,37 @@
+{
+  "generator": "MPFB2",
+  "version": "2.0.16",
+  "macro": {
+    "gender": 1.0,
+    "age": 0.5,
+    "muscle": 1.0,
+    "weight": 0.55,
+    "proportions": 0.5,
+    "height": 0.5,
+    "cupsize": 0.0,
+    "firmness": 0.5,
+    "race": {
+      "asian": 0.33,
+      "caucasian": 0.33,
+      "african": 0.33
+    }
+  },
+  "detailTargets": {
+    "torso/torso-muscle-pectoral-incr": 0.65,
+    "torso/torso-muscle-dorsi-incr": 0.55,
+    "stomach/stomach-tone-incr": 1.0,
+    "arms/l-upperarm-shoulder-muscle-incr": 0.55,
+    "arms/l-upperarm-muscle-incr": 0.55,
+    "arms/l-lowerarm-muscle-incr": 0.35,
+    "legs/l-upperleg-muscle-incr": 0.45,
+    "legs/l-lowerleg-muscle-incr": 0.45,
+    "arms/r-upperarm-shoulder-muscle-incr": 0.55,
+    "arms/r-upperarm-muscle-incr": 0.55,
+    "arms/r-lowerarm-muscle-incr": 0.35,
+    "legs/r-upperleg-muscle-incr": 0.45,
+    "legs/r-lowerleg-muscle-incr": 0.45
+  },
+  "vertices": 13298,
+  "polygons": 13222,
+  "bones": 163
+}

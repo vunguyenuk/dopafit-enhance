@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-10",
+  "scope": "User supplied21:50 reference; SwiftUI calendar layout/localization only",
+  "primaryAndFont": "Original Dopafit lime and SF preserved",
+  "calendar": "Monday-first T2–CN; actual day numbers, local device dates; Vietnamese visible and AX labels",
+  "metric": "Unique trained days / weekly goal, no new daily streak",
+  "states": {
+    "done": "lime fill + check",
+    "selected": "lime outline; white outline when also done",
+    "today": "separate Hôm nay label and weekday accent",
+    "empty": "neutral numbered circle"
+  },
+  "uiVerified": [
+    "C153: current week1/3, dates9–15, today10, trained9",
+    "C154: selecting9opens2sessions whileweeklycount1",
+    "C155: next week16–22 empty0/3; headerreturntoday",
+    "C156: final localized9tháng11,2026historydates; previousweek2–8empty0/3 observed viaAX",
+    "C157: finalheaderresetto10andoriginal7draftHome"
+  ],
+  "dataMutations": "None; selected date is View state. No logs, joins, Health or draft changes.",
+  "validation": "Debug build/install/launch + asset gates and read-only installed/data hash verification; model logic unchanged,109 prior checks not rerun",
+  "limitations": [
+    "DynamicType and smaller screens not fully tested",
+    "Full VoiceOver, English and DST/month-year UI not fully tested"
+  ]
+}

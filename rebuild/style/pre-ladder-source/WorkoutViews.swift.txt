@@ -1,0 +1,516 @@
+import SwiftUI
+import AVKit
+
+struct ExercisePreview:View {
+    var exercise:Exercise
+    var angle=0
+    var pulse=false
+    var body:some View {
+        OpenGymBodyView(heat:OpenGymMedia.heat(for:exercise),angle:angle,pulse:pulse).allowsHitTesting(false).frame(maxWidth:.infinity,maxHeight:.infinity).background(Dopa.card)
+    }
+}
+
+struct WorkoutHome:View {
+    @EnvironmentObject var store:AppStore
+    @State private var sheet=""
+    @State private var menuExercise:WorkoutExercise?
+    @State private var detail:WorkoutExercise?
+    var body:some View {
+        VStack(spacing:0) {
+            ScrollView {
+                VStack(alignment:.leading,spacing:20) {
+                    NavigationLink { PlanSettingsView() } label: {
+                        HStack(spacing:8) { Circle().fill(.white.opacity(0.9)).frame(width:31,height:31); Text(store.t("Kế hoạch của tôi","My Plan")).font(.system(size:18,weight:.semibold)); Image(systemName:"chevron.right").font(.system(size:13)) }.foregroundStyle(.white)
+                    }.padding(.bottom,12)
+                    HStack(alignment:.top) {
+                        VStack(alignment:.leading,spacing:9) {
+                            Text(store.t(store.data.draft?.name ?? "Ngày thân trên",store.data.lowerNext ? "Lower Body Day":"Upper Body Day")).font(.system(size:29,weight:.bold))
+                            Text("\(store.data.draft?.exercises.count ?? 0) "+store.t(store.data.lowerNext ? "bài tập • 5 nhóm cơ":"bài tập • 6 nhóm cơ",store.data.lowerNext ? "exercises • 5 muscle groups":"exercises • 6 muscle groups")).font(.system(size:16)).foregroundStyle(Dopa.muted)
+                        }
+                        Spacer(minLength:4)
+                        Button { sheet="switch" } label: { Label(store.t("Đổi buổi","Switch"),systemImage:"arrow.left.arrow.right").font(.system(size:16,weight:.medium)).padding(.horizontal,12).padding(.vertical,13).foregroundStyle(Dopa.lime).background(Dopa.lime.opacity(0.15)).clipShape(Capsule()) }
+                        Button { sheet="actions" } label: { Image(systemName:"ellipsis").font(.title2).foregroundStyle(Dopa.lime).frame(width:25,height:44) }
+                    }
+                    HStack(spacing:8) {
+                        pill("\((store.data.draft?.plannedMinutes ?? store.data.plan.minutes) == 60 ? store.t("1 giờ","1 hour") : "\(store.data.draft?.plannedMinutes ?? store.data.plan.minutes) "+store.t("phút","min"))"){sheet="duration"}
+                        pill(store.currentGym.name){sheet="gym"}
+                        Spacer(minLength:4)
+                        Button { sheet="add" } label: { Label(store.t("Thêm bài","Add"),systemImage:"plus").font(.system(size:15,weight:.semibold)).foregroundStyle(Dopa.lime).padding(.horizontal,13).frame(height:38).background(Dopa.lime.opacity(0.15)).clipShape(Capsule()) }.accessibilityLabel(store.t("Thêm bài tập","Add Exercise"))
+                    }.padding(.bottom,4)
+                    if store.data.history.isEmpty {
+                        VStack(alignment:.leading,spacing:10){
+                            Text(store.t("MỨC TẠ KHỞI ĐẦU","STARTING WEIGHTS")).font(.system(size:12,weight:.semibold)).foregroundStyle(Dopa.muted)
+                            Text(store.t("Mức tạ hôm nay là ước lượng từ câu trả lời của bạn. Mỗi lần bạn chỉnh trong lúc tập, các buổi sau sẽ sát với sức của bạn hơn.","Today's weights are estimated from your answers. Adjust them as you train so future workouts fit you better.")).font(.system(size:17)).fixedSize(horizontal:false,vertical:true)
+                        }.padding(16).frame(maxWidth:.infinity,alignment:.leading).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:24))
+                    }
+                    LazyVStack(spacing:8) {
+                        ForEach(store.data.draft?.exercises ?? []) { ex in
+                            ExerciseRow(item:ex,onOpen:{detail=ex},onMenu:{menuExercise=ex})
+                        }
+                    }
+                    Button { sheet="add" } label: { Label(store.t("Thêm bài tập","Add Exercise"),systemImage:"plus").font(.system(size:17,weight:.semibold)).foregroundStyle(Dopa.lime).frame(maxWidth:.infinity).padding(20).background(Dopa.card).clipShape(Capsule()) }
+                    if !store.data.saved.isEmpty {
+                        Text(store.t("Buổi tập đã lưu","Saved Workouts")).font(.title2.bold()).padding(.top,12)
+                        ForEach(store.data.saved) { saved in
+                            Button { store.loadTemplate(saved.id) } label: {
+                                Label(saved.name,systemImage:"bookmark").frame(maxWidth:.infinity,alignment:.leading).padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:18))
+                            }.foregroundStyle(.white)
+                        }
+                    }
+                }.padding(.horizontal,16).padding(.top,12).padding(.bottom,20)
+            }
+            HStack(spacing:10){
+                Button{sheet="add"}label:{Image(systemName:"plus").font(.system(size:22,weight:.semibold)).foregroundStyle(Dopa.lime).frame(width:52,height:52).background(Dopa.raised).clipShape(Circle())}.accessibilityLabel(store.t("Thêm bài tập","Add Exercise")).accessibilityIdentifier("workout.add")
+                DopaButton(title:store.t((store.data.draft?.completedSets ?? 0) > 0 ? "Tiếp tục buổi tập":"Bắt đầu buổi tập","Start Workout")) {store.start()}.accessibilityIdentifier("workout.start")
+            }.padding(.horizontal,20).padding(.bottom,10)
+        }
+        .sheet(isPresented:Binding(get:{!sheet.isEmpty},set:{if !$0 {sheet=""}})) { homeSheet }
+        .sheet(item:$menuExercise) { ex in ExerciseMenu(item:ex) }
+        .navigationDestination(isPresented:Binding(get:{detail != nil},set:{if !$0{detail=nil}})) {if let ex=detail {ExerciseGuide(exercise:ex.exercise).id(ex.id)}}
+    }
+    func pill(_ text:String,action:@escaping()->Void)->some View {
+        Button(action:action) { HStack(spacing:4){Text(text);Image(systemName:"chevron.down").font(.system(size:10))}.font(.system(size:16)).foregroundStyle(.white).padding(.horizontal,14).padding(.vertical,12).background(Dopa.raised).clipShape(Capsule()) }
+    }
+    @ViewBuilder var homeSheet:some View {
+        switch sheet {
+        case "duration":
+            DurationSheet()
+        case "gym": GymSelector()
+        case "switch":
+            ChoiceSheet(title:store.t("Đổi buổi tập","Switch Workout"),choices:["Ngày thân trên","Ngày thân dưới","Toàn thân"],selected:store.data.draft?.name ?? "") { choice in
+                store.makeDraft(lower:choice=="Ngày thân dưới")
+                if choice=="Toàn thân" {store.data.draft=WorkoutSession(name:choice,exercises:Array((Catalog.upper+Catalog.lower).enumerated().filter{$0.offset%2==0}.prefix(7).map{WorkoutExercise($0.element)}));store.persist()}
+            }.presentationDetents([.medium])
+        case "add": ExercisePicker(title:"Thêm bài tập",multiple:true) { store.addExercise($0);sheet="" }
+        case "actions":
+            VStack {SheetTitle(title:""); GroupCard {
+                SettingRow(title:"Lưu buổi tập",icon:"bookmark"){store.saveTemplate();sheet="";store.toast="Đã lưu buổi tập"}
+                Divider()
+                SettingRow(title:"Ghép superset/circuit",icon:"arrow.triangle.2.circlepath"){sheet="superset"}
+                Divider()
+                SettingRow(title:"Làm mới buổi tập",icon:"arrow.clockwise"){store.makeDraft();sheet=""}
+            }.padding(16)}.presentationDetents([.height(270)]).background(.black)
+        case "superset": SupersetSheet()
+        default: EmptyView()
+        }
+    }
+}
+struct ExerciseRow:View {
+    @EnvironmentObject var store:AppStore
+    var item:WorkoutExercise
+    var onOpen:()->Void
+    var onMenu:()->Void
+    var body:some View {
+        HStack(spacing:20) {
+            Button(action:onOpen) {
+                HStack(spacing:20) {
+                    ExerciseThumb(exercise:item.exercise)
+                    VStack(alignment:.leading,spacing:5) {
+                        Text(store.english ? item.exercise.english:item.exercise.name).font(.system(size:18,weight:.medium)).foregroundStyle(.white).multilineTextAlignment(.leading)
+                        if item.supersetID != nil {Text("SUPERSET").font(.system(size:10,weight:.bold)).foregroundStyle(Dopa.lime)}
+                        if item.doneCount>0 { Text("Đã ghi \(item.doneCount)/\(item.sets.count) set").font(.system(size:15)).foregroundStyle(Dopa.blue) }
+                        else if let set=item.sets.first { Text("\(item.sets.count) set · \(set.reps) "+store.t("lần","reps")+" · \(store.weight(set.weight)) \(store.unit)").font(.system(size:15)).foregroundStyle(Dopa.muted) }
+                    }.frame(maxWidth:.infinity,alignment:.leading)
+                }.contentShape(Rectangle())
+            }.buttonStyle(.plain)
+            Button(action:onMenu){Image(systemName:"ellipsis").font(.system(size:22)).foregroundStyle(Dopa.muted).frame(width:28,height:48)}
+        }.padding(.vertical,1).frame(minHeight:86)
+    }
+}
+struct ActiveWorkoutView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    @State private var menu:WorkoutExercise?
+    @State private var finish=false
+    @State private var add=false
+    @State private var confirmDiscard=false
+    @State private var selectingSuperset=false
+    @State private var selected:Set<UUID>=[]
+    @State private var groupMenu:UUID?=nil
+    @State private var confirmGroupLog=false
+    var body:some View {
+        NavigationStack {
+            VStack(spacing:0) {
+                activeHeader
+                ScrollView {
+                    VStack(alignment:.leading,spacing:16) {
+                        if !selectingSuperset {
+                            Button{add=true}label:{Label("Thêm bài tập",systemImage:"plus").font(.system(size:15,weight:.semibold)).padding(.horizontal,14).frame(height:38).background(Dopa.lime.opacity(0.15)).clipShape(Capsule())}.foregroundStyle(Dopa.lime).frame(maxWidth:.infinity,alignment:.trailing)
+                        }
+                        ForEach(store.data.draft?.exercises ?? []) { item in
+                            if selectingSuperset {selectionRow(item)}else{
+                                if let group=item.supersetID,isFirstMember(item,of:group){
+                                    HStack{Text(groupTitle(group));Spacer();Button{groupMenu=group}label:{Image(systemName:"ellipsis").frame(width:44,height:32)}}.font(.system(size:15,weight:.medium)).foregroundStyle(Dopa.muted).padding(.top,12)
+                                }
+                                normalRow(item)
+                            }
+                        }
+                        if !selectingSuperset {
+                            Button{add=true}label:{Label("Thêm bài tập",systemImage:"plus").frame(maxWidth:.infinity).padding(20).background(Dopa.card).clipShape(Capsule())}.foregroundStyle(Dopa.lime)
+                        }
+                    }.padding(.horizontal,16).padding(.bottom,selectingSuperset ? 24:100)
+                }
+                if !selectingSuperset {
+                    Button { finish=true } label: {
+                        Image(systemName:"stop.fill").font(.system(size:24)).foregroundStyle(.black).frame(width:64,height:64).background(Dopa.lime).clipShape(Circle())
+                    }.accessibilityLabel("Kết thúc buổi tập").padding(.bottom,16)
+                }
+            }.background(.black).toolbar(.hidden,for:.navigationBar)
+                .sheet(item:$menu) { ExerciseMenu(item:$0) }
+                .sheet(isPresented:$add){ExercisePicker(title:"Thêm bài tập",multiple:true){store.addExercise($0);add=false}}
+                .sheet(isPresented:$finish){FinishSheet().environmentObject(store).presentationDetents([.height(360)])}
+                .sheet(isPresented:Binding(get:{groupMenu != nil},set:{if !$0{groupMenu=nil}})){
+                    if let group=groupMenu{groupActions(group)}
+                }
+        }.interactiveDismissDisabled()
+            .alert(store.t("Bỏ buổi tập này?","Discard this workout?"),isPresented:$confirmDiscard) {
+                Button(store.t("Tập tiếp","Keep training"),role:.cancel) {}
+                Button(store.t("Bỏ buổi tập","Discard workout"),role:.destructive) {store.discardWorkout();dismiss()}
+            } message: {Text(store.t("Mọi thứ trong buổi này sẽ không được lưu.","Everything in this workout will not be saved."))}
+            .tint(Dopa.lime)
+    }
+    var activeHeader:some View {
+        HStack {
+            if selectingSuperset {
+                Button(store.t("Hủy","Cancel")){selected=[];selectingSuperset=false}.foregroundStyle(Dopa.lime).frame(width:44,height:44)
+            }else{CircleButton(icon:"xmark"){confirmDiscard=true}}
+            Spacer()
+            TimelineView(.periodic(from:.now,by:1)) { _ in
+                HStack(spacing:8){Circle().fill(Dopa.lime).frame(width:8,height:8);Text(store.data.draft?.elapsed.clock ?? "00:00").font(.system(size:28,weight:.semibold)).monospacedDigit()}
+            }
+            Spacer()
+            if selectingSuperset {
+                Button(store.t("Lưu","Save")){
+                    if store.groupDraftExercises(selected){selected=[];selectingSuperset=false}
+                }.disabled(selected.count<2).foregroundStyle(selected.count>=2 ? Dopa.lime:Dopa.muted).frame(width:44,height:44)
+            }else{
+                Button{add=true}label:{Image(systemName:"plus").font(.system(size:22)).frame(width:44,height:44).foregroundStyle(Dopa.lime)}.accessibilityLabel("Thêm bài tập").accessibilityIdentifier("active.add")
+                Menu {Button {selected=[];selectingSuperset=true} label:{Label(store.t("Ghép superset/circuit","Create superset/circuit"),systemImage:"link")}}
+                label:{Image(systemName:"ellipsis").font(.title2).frame(width:44,height:44).foregroundStyle(.white)}
+            }
+        }.font(.system(size:17,weight:.medium)).padding(16)
+    }
+    func isFirstMember(_ item:WorkoutExercise,of group:UUID)->Bool {store.data.draft?.exercises.first{$0.supersetID==group}?.id==item.id}
+    func groupTitle(_ group:UUID)->String {
+        let members=store.data.draft?.exercises.filter{$0.supersetID==group} ?? []
+        let name=members.count==2 ? "Superset":"Circuit"
+        return name+" · \(members.map{$0.sets.count}.max() ?? 0) vòng"
+    }
+    func groupActions(_ group:UUID)->some View {
+        VStack(spacing:14){
+            HStack{Spacer();Text("Superset").font(.system(size:19,weight:.semibold));Spacer();CircleButton(icon:"xmark"){groupMenu=nil}}
+            VStack(spacing:0){
+                Button{confirmGroupLog=true}label:{Label("Ghi mọi bài trong superset",systemImage:"checkmark.circle").frame(maxWidth:.infinity,alignment:.leading).padding(18)}
+                Divider().padding(.leading,55)
+                Button{store.duplicateDraftGroup(group);groupMenu=nil}label:{Label("Nhân đôi superset",systemImage:"plus.square.on.square").frame(maxWidth:.infinity,alignment:.leading).padding(18)}
+            }.background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:22))
+            Button{store.detachDraftGroup(group);groupMenu=nil}label:{Label("Tách superset",systemImage:"rectangle.split.1x2").frame(maxWidth:.infinity,alignment:.leading).padding(18)}.foregroundStyle(.pink).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:22))
+        }.font(.system(size:17,weight:.medium)).foregroundStyle(.white).padding(16).background(.black).presentationDetents([.height(310)])
+            .alert("Ghi mọi bài trong superset?",isPresented:$confirmGroupLog){
+                Button("Ghi mọi bài"){store.logDraftGroup(group);groupMenu=nil}
+                Button("Hủy",role:.cancel){}
+            } message:{Text("Tất cả set hợp lệ trong nhóm sẽ được ghi.")}
+    }
+    func prescription(_ item:WorkoutExercise)->String {
+        "\(item.sets.count) set · \(item.sets.first?.reps ?? 0) lần · \(store.weight(item.sets.first?.weight ?? 0)) \(store.unit)"
+    }
+    func selectionRow(_ item:WorkoutExercise)->some View {
+        Button{if selected.contains(item.id){selected.remove(item.id)}else{selected.insert(item.id)}}label:{
+            HStack(spacing:14){
+                ExerciseThumb(exercise:item.exercise,size:64)
+                VStack(alignment:.leading,spacing:6){Text(store.t(item.exercise.name,item.exercise.english)).font(.system(size:18,weight:.medium));Text(prescription(item)).font(.system(size:15)).foregroundStyle(Dopa.muted)}.frame(maxWidth:.infinity,alignment:.leading)
+                Image(systemName:selected.contains(item.id) ? "checkmark.square.fill":"square").font(.system(size:21)).foregroundStyle(selected.contains(item.id) ? Dopa.lime:Dopa.muted)
+            }.foregroundStyle(.white).contentShape(Rectangle()).padding(.vertical,2)
+        }.buttonStyle(.plain).accessibilityValue(selected.contains(item.id) ? "Đã chọn":"Chưa chọn")
+    }
+    func normalRow(_ item:WorkoutExercise)->some View {
+        HStack(spacing:18) {
+            NavigationLink { ExerciseDetail(id:item.id) } label: {
+                HStack(spacing:18) {
+                    ExerciseThumb(exercise:item.exercise)
+                    VStack(alignment:.leading,spacing:6) {
+                        Text(store.t(item.exercise.name,item.exercise.english)).font(.system(size:18,weight:.medium)).foregroundStyle(.white)
+                        Text(item.doneCount>0 ? "Đã ghi \(item.doneCount)/\(item.sets.count) set":prescription(item)).font(.system(size:15)).foregroundStyle(item.doneCount>0 ? Dopa.blue:Dopa.muted)
+                    }.frame(maxWidth:.infinity,alignment:.leading)
+                }
+            }.buttonStyle(.plain)
+            Button{menu=item}label:{Image(systemName:"ellipsis").foregroundStyle(Dopa.muted).frame(width:30,height:50)}
+        }.padding(.vertical,2)
+    }
+}
+struct ExerciseDetail:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var id:UUID
+    @State private var sheet=""
+    @State private var logAll=false
+    @State private var dontAsk=false
+    @State private var ownerTab:AppTab?=nil
+    @FocusState private var editing:Bool
+    var item:WorkoutExercise { store.data.draft?.exercises.first{$0.id==id} ?? WorkoutExercise(Catalog.upper[0]) }
+    var allDone:Bool {item.doneCount==item.sets.count && !item.sets.isEmpty}
+    var body:some View {
+        VStack(spacing:0) {
+            ScrollView {
+                VStack(alignment:.leading,spacing:20) {
+                    ZStack(alignment:.topTrailing) {
+                        VStack(spacing:0) {
+                            ExercisePreview(exercise:item.exercise,pulse:ownerTab==store.tab).frame(height:250)
+                            HStack(alignment:.center,spacing:8) {
+                                Text(store.english ? item.exercise.english:item.exercise.name).font(.system(size:28,weight:.bold)).fixedSize(horizontal:false,vertical:true)
+                                Spacer(minLength:0)
+                                Button{sheet="guide"}label:{Label("Hướng dẫn",systemImage:"play.fill").font(.system(size:14,weight:.medium)).foregroundStyle(.white).padding(10).background(Dopa.raised).clipShape(Capsule())}
+                            }.padding(.horizontal,16).padding(.top,8)
+                        }
+                        CircleButton(icon:"xmark"){dismiss()}.padding(16)
+                    }
+                    ScrollView(.horizontal,showsIndicators:false) {
+                        HStack(spacing:8) {
+                            inlineTool("timer",item.restSeconds>0 ? "Nghỉ "+TimeInterval(item.restSeconds).clock:"Nghỉ Tắt"){sheet="timer"}
+                            inlineTool("chart.xyaxis.line","Lịch sử"){sheet="history"}
+                            if item.exercise.equipment=="Tạ đòn" || item.exercise.equipment=="Trap Bar"{inlineTool("circle.grid.2x1","Tính bánh tạ"){sheet="plates"}}
+                            inlineTool("arrow.left.arrow.right","Đổi bài"){sheet="swap"}
+                        }.padding(.horizontal,16)
+                    }
+                    VStack(spacing:22) {
+                        ForEach(Array(item.sets.enumerated()),id:\.element.id) { index,set in
+                            let next=item.sets.firstIndex(where:{!$0.completed})==index
+                            HStack(alignment:.top,spacing:12) {
+                                Button{editing=false;store.logSet(exercise:id,set:set.id,toggle:true)}label:{
+                                    ZStack{Hexagon().fill(set.completed ? Dopa.blue:next ? Color.black:Dopa.raised);Hexagon().stroke(set.completed ? Dopa.blue:next ? .white:Dopa.raised,lineWidth:1.5);if set.completed{Image(systemName:"checkmark").font(.system(size:16,weight:.bold))}else{Text(set.warmup ? "W":"\(index+1)").font(.system(size:16,weight:.medium))}}.foregroundStyle(next || set.completed ? .white:Dopa.muted).frame(width:28,height:32).padding(.top,18)
+                                }.buttonStyle(.plain)
+                                VStack(spacing:5) {
+                                fieldBox(label:store.t("Số lần","Reps"),active:next,done:set.completed){
+                                    TextField("6",value:Binding(get:{set.reps},set:{value in
+                                        store.mutateExercise(id) { ex in
+                                            guard index<ex.sets.count else{return}
+                                            ex.sets[index].reps=value
+                                            if index==0{for j in ex.sets.indices where !ex.sets[j].completed{ex.sets[j].reps=value}}
+                                        }
+                                    }),format:.number).keyboardType(.numberPad).focused($editing)
+                                }
+                                if next,let convention=item.exercise.repsConvention {Text(store.t(convention,"Per side")).font(.system(size:12)).foregroundStyle(Dopa.muted)}
+                                }
+                                VStack(spacing:5) {
+                                    fieldBox(label:store.t("Tạ","Weight")+" (\(store.unit))",active:next,done:set.completed){
+                                        TextField("0",value:Binding(get:{store.displayWeight(set.weight)},set:{value in store.mutateExercise(id){ex in guard index<ex.sets.count else{return};ex.sets[index].weight=store.kilograms(value)}}),format:.number.precision(.fractionLength(0...2))).keyboardType(.decimalPad).focused($editing)
+                                    }
+                                    if next && !item.exercise.convention.isEmpty{Text(store.t(item.exercise.convention,item.exercise.id=="dumbbell-row" ? "Per arm":item.exercise.convention=="Gồm thanh đòn" ? "Includes bar":"Per dumbbell")).font(.system(size:12)).foregroundStyle(Dopa.muted)}
+                                }
+                            }.contextMenu {
+                                Button(set.warmup ? "Set chính":"Set khởi động"){store.mutateExercise(id){$0.sets[index].warmup.toggle()}}
+                                Button("Xóa set",role:.destructive){store.mutateExercise(id){$0.sets.remove(at:index)}}
+                            }
+                        }
+                        Button{store.mutateExercise(id){ex in var set=ex.sets.last ?? LoggedSet();set.id=UUID();set.completed=false;ex.sets.append(set)}}label:{HStack(spacing:14){ZStack{Hexagon().stroke(Dopa.lime,lineWidth:1.5).frame(width:28,height:32);Image(systemName:"plus").font(.system(size:22))};Text("Thêm set").font(.system(size:19,weight:.semibold));Spacer()}.foregroundStyle(Dopa.lime)}.padding(.top,1)
+                    }.padding(.horizontal,16)
+                    if allDone{rirPicker.padding(.horizontal,20)}
+                }.padding(.bottom,20)
+            }.scrollDismissesKeyboard(.interactively)
+            if store.timerExercise==id && (store.timerEnd != nil || store.pausedRest != nil){restBar}
+            HStack(spacing:8) {
+                if allDone{DopaButton(title:"Xong"){dismiss()}}
+                else {
+                    DopaButton(title:"Ghi tất cả",secondary:true){editing=false;if dontAsk{store.logAll(id)}else{logAll=true}}
+                    DopaButton(title:"Ghi set",enabled:validNext){editing=false;if let next=item.sets.first(where:{!$0.completed}){store.logSet(exercise:id,set:next.id)}}
+                }
+            }.padding(.horizontal,16).padding(.vertical,12)
+        }.background(.black).toolbar(.hidden,for:.navigationBar)
+            .onAppear{ownerTab=store.tab}
+            .alert("Ghi cả \(item.sets.count) set?",isPresented:$logAll){
+                Button("Ghi tất cả set"){store.logAll(id)}
+                Button("Ghi và không hỏi lại"){dontAsk=true;store.logAll(id)}
+                Button("Huỷ",role:.cancel){}
+            }
+            .sheet(isPresented:Binding(get:{!sheet.isEmpty},set:{if !$0{sheet=""}})){detailSheet}
+    }
+    func fieldBox<Content:View>(label:String,active:Bool,done:Bool,@ViewBuilder content:()->Content)->some View{
+        VStack(alignment:.leading,spacing:0){
+            if active{Text(label).font(.system(size:12)).foregroundStyle(.white)}
+            content().font(.system(size:28,weight:.semibold)).foregroundStyle(done ? Dopa.blue:active ? .white:Dopa.muted)
+        }.padding(.horizontal,12).frame(maxWidth:.infinity,alignment:.leading).frame(height:62)
+            .background(active ? Color.black:Dopa.card).clipShape(RoundedRectangle(cornerRadius:18))
+            .overlay(RoundedRectangle(cornerRadius:18).stroke(active ? .white:.white.opacity(0.09),lineWidth:active ? 1.5:1))
+    }
+    func inlineTool(_ icon:String,_ label:String,action:@escaping()->Void)->some View {
+        Button(action:action){Label(label,systemImage:icon).font(.system(size:15,weight:.medium)).foregroundStyle(.white).padding(.horizontal,13).padding(.vertical,12).background(Dopa.card).clipShape(Capsule()).overlay(Capsule().stroke(.white.opacity(0.1)))}
+    }
+    var validNext:Bool { guard let s=item.sets.first(where:{!$0.completed})else{return false};return s.reps>0 && (s.weight>0 || item.exercise.equipment=="Dây kháng lực" || item.exercise.equipment=="Trọng lượng cơ thể") }
+    func tool(_ icon:String,_ label:String,action:@escaping()->Void)->some View {
+        Button(action:action){VStack(spacing:7){Image(systemName:icon).font(.system(size:21));Text(label).font(.system(size:12))}.foregroundStyle(.white).frame(maxWidth:.infinity)}
+    }
+    var rirPicker:some View {
+        VStack(alignment:.leading,spacing:12) {
+            Text("Set cuối").font(.system(size:14,weight:.medium)).foregroundStyle(Dopa.muted)
+            Text("Bạn còn làm thêm được mấy lần nữa?").font(.system(size:18,weight:.semibold))
+            HStack(spacing:8) {
+                ForEach([4,3,2,1,0],id:\.self){n in
+                    Button{store.mutateExercise(id){$0.rir=n}}label:{Text(n==4 ? "4+":"\(n)").font(.system(size:20,weight:.semibold)).frame(maxWidth:.infinity).frame(height:48).background(item.rir==n ? Dopa.lime:Dopa.raised).foregroundStyle(item.rir==n ? .black:.white).clipShape(Capsule())}
+                }
+            }
+            if let rir=item.rir {Text(rir==0 ? "Không làm thêm được lần nào":"Làm thêm được \(rir) lần").foregroundStyle(Dopa.muted).font(.system(size:14))}
+        }.padding(.top,12)
+    }
+    var restBar:some View {
+        HStack {
+            Image(systemName:"timer")
+            TimelineView(.periodic(from:.now,by:1)){_ in Text(TimeInterval(store.pausedRest ?? max(0,Int(store.timerEnd?.timeIntervalSinceNow ?? 0))).clock).font(.system(size:28,weight:.semibold)).monospacedDigit()}
+            Spacer()
+            Button {
+                if let end=store.timerEnd {store.pausedRest=max(0,Int(end.timeIntervalSinceNow));store.timerEnd=nil}
+                else if let paused=store.pausedRest {store.timerEnd=Date().addingTimeInterval(Double(paused));store.pausedRest=nil}
+            }label:{Image(systemName:store.timerEnd == nil ? "play.fill":"pause.fill").font(.title2)}
+            Button{store.timerEnd=nil;store.pausedRest=nil}label:{Image(systemName:"xmark").font(.title3)}.padding(.leading,16)
+        }.padding(18).foregroundStyle(.white).background(Dopa.raised).clipShape(RoundedRectangle(cornerRadius:22)).padding(.horizontal,20)
+    }
+    @ViewBuilder var detailSheet:some View {
+        switch sheet {
+        case "guide": ExerciseGuide(exercise:item.exercise,modal:true)
+        case "history": NavigationStack{ExerciseHistoryView(exercise:item.exercise)}
+        case "swap": ExercisePicker(title:"Đổi bài tập",replacement:true,replacing:item.exercise){new in store.swap(id,for:new);sheet="scope"}
+        case "scope": SwapScopeSheet(original:item.exercise){sheet=""}
+        case "timer": RestSettings(exerciseID:id)
+        case "plates": PlateCalculator(target:item.sets.first?.weight ?? 0)
+        default: ExerciseMenu(item:item)
+        }
+    }
+}
+struct ExerciseMenu:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var item:WorkoutExercise
+    @State private var sub=""
+    var body:some View {
+        ScrollView {
+            VStack(spacing:14) {
+                SheetTitle(title:item.exercise.name)
+                GroupCard {
+                    SettingRow(title:"Video và hướng dẫn",icon:"play.fill"){sub="guide"}
+                    Divider().padding(.leading,50)
+                    SettingRow(title:"Lịch sử bài tập",icon:"calendar"){sub="history"}
+                    Divider().padding(.leading,50)
+                    SettingRow(title:"Đổi bài tập",icon:"arrow.left.arrow.right"){sub="swap"}
+                }
+                GroupCard {
+                    preferenceRow("Gợi ý bài này thường hơn",value:1,icon:"arrow.up")
+                    Divider().padding(.leading,50)
+                    preferenceRow("Gợi ý bài này ít hơn",value:-1,icon:"arrow.down")
+                    Divider().padding(.leading,50)
+                    SettingRow(title:"Không gợi ý bài này nữa",icon:"nosign"){store.setPreference(item.exercise.id,-2);dismiss()}
+                }
+                Button(role:.destructive){store.removeExercise(item.id);dismiss()}label:{Label("Xóa bài khỏi buổi tập",systemImage:"minus.circle").frame(maxWidth:.infinity,alignment:.leading).padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:20))}
+            }.padding(.horizontal,16).padding(.bottom,20)
+        }.background(.black).presentationDetents([.medium,.large]).presentationDragIndicator(.visible)
+            .sheet(isPresented:Binding(get:{!sub.isEmpty},set:{if !$0{sub=""}})){
+                if sub=="guide" {ExerciseGuide(exercise:item.exercise,modal:true)}
+                else if sub=="history" {NavigationStack{ExerciseHistoryView(exercise:item.exercise)}}
+                else {ExercisePicker(title:"Đổi bài tập",replacement:true,replacing:item.exercise){ex in store.swap(item.id,for:ex);sub="";dismiss()}}
+            }
+    }
+    func preferenceRow(_ title:String,value:Int,icon:String)->some View {
+        Toggle(isOn:Binding(get:{store.data.preferences[item.exercise.id]==value},set:{store.setPreference(item.exercise.id,$0 ? value:0)})){
+            Label(title,systemImage:icon).font(.system(size:17))
+        }.tint(Dopa.lime).padding(16)
+    }
+}
+struct SwapScopeSheet:View {
+    @EnvironmentObject var store:AppStore
+    var original:Exercise
+    var done:()->Void
+    var body:some View {
+        VStack(spacing:16) {
+            SheetTitle(title:"Cập nhật kế hoạch")
+            Text("Bạn vừa đổi bài tập. Lần sau bạn muốn Dopafit gợi ý bài này thế nào?").foregroundStyle(Dopa.muted).padding(.horizontal,20)
+            ForEach([("Gợi ý bài này ít hơn",-1),("Không gợi ý bài này nữa",-2),("Lý do khác",0)],id:\.0){label,value in
+                Button{store.setPreference(original.id,value);done()}label:{Text(label).foregroundStyle(.white).frame(maxWidth:.infinity).padding(18).background(Dopa.card).clipShape(Capsule())}
+            }.padding(.horizontal,20)
+            DopaButton(title:"Bỏ qua",secondary:true,action:done).padding(20)
+        }.background(.black).presentationDetents([.medium])
+    }
+}
+struct RestSettings:View {
+    @EnvironmentObject var store:AppStore
+    var exerciseID:UUID
+    @State private var seconds=120
+    @State private var warmup=false
+    var current:WorkoutExercise? {store.data.draft?.exercises.first{$0.id==exerciseID}}
+    var selectedRest:Int {warmup ? current?.warmupRestSeconds ?? current?.restSeconds ?? 0:current?.restSeconds ?? 0}
+    func setRest(_ value:Int) {store.mutateExercise(exerciseID){if warmup{$0.warmupRestSeconds=value}else{$0.restSeconds=value}}}
+    var body:some View {
+        VStack(spacing:24) {
+            SheetTitle(title:"Thời gian nghỉ")
+            Picker("Loại set",selection:$warmup){Text("Set chính").tag(false);Text("Khởi động").tag(true)}.pickerStyle(.segmented).padding(.horizontal,20).onChange(of:warmup){_,_ in seconds=selectedRest>0 ? selectedRest:120}
+            Toggle("Bật thời gian nghỉ",isOn:Binding(get:{selectedRest>0},set:{setRest($0 ? seconds:0)})).tint(Dopa.lime).padding(20)
+            Picker("Thời gian",selection:$seconds){ForEach(stride(from:5,through:300,by:5).map{$0},id:\.self){s in Text(TimeInterval(s).clock).tag(s)}}.pickerStyle(.wheel).frame(height:150)
+                .onChange(of:seconds){_,v in if selectedRest>0{setRest(v)}}
+        }.background(.black).presentationDetents([.height(420)]).onAppear{seconds=selectedRest>0 ? selectedRest:120}
+    }
+}
+struct DurationSheet:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    @State private var minutes=60
+    var body:some View {
+        VStack(spacing:20) {
+            SheetTitle(title:"Thời lượng buổi tập")
+            HStack {ForEach([15,30,45,60,90],id:\.self){n in Button{minutes=n}label:{Text(n==60 ? "1 giờ":"\(n)p").font(.system(size:16,weight:.semibold)).frame(maxWidth:.infinity).frame(height:52).background(minutes==n ? Dopa.lime:Dopa.raised).foregroundStyle(minutes==n ? .black:.white).clipShape(Capsule())}}}.padding(.horizontal,16)
+            DopaButton(title:"Chỉ cho buổi này"){store.data.draft?.plannedMinutes=minutes;store.persist();dismiss()}.padding(.horizontal,20)
+            DopaButton(title:"Đặt làm mặc định",secondary:true){store.data.draft?.plannedMinutes=minutes;store.changePlan{$0.minutes=minutes};dismiss()}.padding(.horizontal,20)
+        }.background(.black).presentationDetents([.height(320)]).onAppear{minutes=store.data.plan.minutes}
+    }
+}
+struct SupersetSheet:View {
+    @EnvironmentObject var store:AppStore
+    @State private var selected:Set<UUID>=[]
+    @Environment(\.dismiss) var dismiss
+    var body:some View {
+        VStack {SheetTitle(title:"Ghép superset/circuit");ScrollView {ForEach(store.data.draft?.exercises ?? []){ex in Button{if selected.contains(ex.id){selected.remove(ex.id)}else{selected.insert(ex.id)}}label:{HStack{Text(ex.exercise.name);Spacer();Image(systemName:selected.contains(ex.id) ? "checkmark.circle.fill":"circle")}.foregroundStyle(.white).padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:18))}.padding(.horizontal,16)}}
+            DopaButton(title:"Ghép \(selected.count) bài",enabled:selected.count>1){
+                if store.groupDraftExercises(selected){store.toast="Đã ghép superset";dismiss()}
+            }.padding(20)
+        }.background(.black)
+    }
+}
+struct FinishSheet:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var body:some View {
+        VStack(spacing:20) {
+            Text("Kết thúc và lưu buổi tập?").font(.system(size:23,weight:.bold)).padding(.top,28)
+            HStack {stat("Thời gian",store.data.draft?.elapsed.clock ?? "00:00");stat("Bài tập","\(store.data.draft?.completedExercises.count ?? 0)");stat("Khối lượng",store.weight(store.data.draft?.volume ?? 0)+" "+store.unit)}.padding(.horizontal,20)
+            HStack {Image(systemName:"heart.fill");Text("Đồng bộ với Apple Health");Spacer();Text("Tắt").foregroundStyle(Dopa.muted)}.font(.system(size:15)).padding(.horizontal,24)
+            HStack {DopaButton(title:"Tiếp tục",secondary:true){dismiss()};DopaButton(title:"Lưu buổi tập",enabled:(store.data.draft?.completedSets ?? 0)>0){dismiss();DispatchQueue.main.asyncAfter(deadline:.now()+0.3){_ = store.finish()}}}.padding(.horizontal,20)
+        }.background(.black)
+    }
+    func stat(_ label:String,_ value:String)->some View {VStack(spacing:8){Text(value).font(.system(size:22,weight:.semibold));Text(label).font(.system(size:12)).foregroundStyle(Dopa.muted)}.frame(maxWidth:.infinity)}
+}
+
+
+struct Hexagon:Shape {
+    func path(in rect:CGRect)->Path {
+        Path{p in for i in 0..<6{let angle=Double(i)*Double.pi/3-Double.pi/2;let point=CGPoint(x:rect.midX+cos(angle)*rect.width/2,y:rect.midY+sin(angle)*rect.height/2);if i==0{p.move(to:point)}else{p.addLine(to:point)}};p.closeSubpath()}
+    }
+}
+struct PlateCalculator:View {
+    @EnvironmentObject var store:AppStore
+    var target:Double
+    @State private var value=0.0
+    var plates:[Double]{
+        var remaining=max(0,(store.kilograms(value)-store.currentGym.barWeight)/2)
+        var result:[Double]=[]
+        for plate in store.currentGym.plates.sorted(by:>){while remaining+0.0001>=plate && result.count<30{result.append(plate);remaining-=plate}}
+        return result
+    }
+    var body:some View {
+        VStack(spacing:24){
+            SheetTitle(title:"Tính bánh tạ")
+            TextField("Tổng mức tạ",value:$value,format:.number).keyboardType(.decimalPad).font(.system(size:48,weight:.bold)).multilineTextAlignment(.center).foregroundStyle(.white)
+            Text("\(store.unit) · Gồm thanh đòn \(store.weight(store.currentGym.barWeight)) \(store.unit)").foregroundStyle(Dopa.muted)
+            Text("Mỗi bên thanh đòn").font(.title3.bold())
+            HStack(spacing:8){ForEach(Array(plates.enumerated()),id:\.offset){_,p in Text(store.weight(p)).font(.system(size:18,weight:.bold)).padding(12).frame(height:90).background(Dopa.lime).foregroundStyle(.black).clipShape(RoundedRectangle(cornerRadius:8))}}
+            let loaded=store.currentGym.barWeight+plates.reduce(0,+)*2
+            Text("Tổng lắp được: \(store.weight(loaded)) \(store.unit)").foregroundStyle(Dopa.muted)
+            Spacer()
+        }.padding(20).background(.black).onAppear{value=store.displayWeight(target)}
+    }
+}

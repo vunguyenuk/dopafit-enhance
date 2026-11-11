@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-11",
+  "bundle": "com.local.dopafit.zenithqa",
+  "fixture": "female-qa-fixture.json",
+  "isolation": "Compiled app copied with separate bundle ID, ad-hoc signature and separate container; copied local draft with Nữ profile, no history/checkin; main profile kept Nam.",
+  "mainUI": [
+    "C172Home motion thumbnails",
+    "C173maleRow guide fullwidth",
+    "C1740.5x guide shows changed pose"
+  ],
+  "QAUI": [
+    "C175femaleRow thumbnail and fallbackSmith oldclip",
+    "C176femaleRowguide fullwidth",
+    "C177muscles tab preserves femaleguide playback; distinct pose",
+    "C178femaleRow setentry video after QAstart, no log"
+  ],
+  "QACompletedSets": 0,
+  "QAHistory": 0,
+  "HealthWrites": false,
+  "cleanupVerified": true,
+  "mainFullSnapshotUnchanged": true,
+  "limits": "Sampled Row routes and0.5speed, not all21pins UI, no measuredFPS/biomechanics/all lifecycle certification"
+}

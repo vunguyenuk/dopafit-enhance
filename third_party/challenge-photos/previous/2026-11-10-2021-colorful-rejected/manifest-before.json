@@ -1,0 +1,246 @@
+[
+  {
+    "challenge": "consistent-14",
+    "asset": "challenge-consistent-14",
+    "source": "https://unsplash.com/photos/a-man-doing-push-ups-in-a-gym-qlid9Lys8r0",
+    "photographer": "Gard Pro",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "dd517ceb17a0c12a3fa00bf50b3f083c39e3205cd5fa57cfd3faa39e92f99236",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 1,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "upper-28",
+    "asset": "challenge-upper-28",
+    "source": "https://unsplash.com/photos/a-man-in-a-gym-lifting-a-pair-of-dumbbells-Pv97-3sdjdY",
+    "photographer": "Samuel Girven",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "a63fb6d28c2b9ed120909a515520cbdbab3f587db4a13cc3f1a5920db37fe3ed",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Latest user direction 15:23: dark gym backgrounds, centered athlete, visible movement; upper restores the exact accepted Samuel Girven photo. Unedited source; crop in SwiftUI only.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 1,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "lower-28",
+    "asset": "challenge-lower-28",
+    "source": "https://www.pexels.com/photo/woman-using-leg-press-machine-28076/",
+    "photographer": "Scott Webb",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-11-10",
+    "sha256": "aa04c2d66984d1bf588de11a5c63d060e3c7690c8cc41b9a726057a9594fd2ea",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "User15:54: replace squat that resembles middle shoulder-press card. Actual leg press photo with bent knees/feet on platform, diagonal composition and dark gym. Original photographed stock published2016, corroborating2015 NikonD300 metadata; no AI generation or AI editing. SwiftUI center crop only.",
+    "published": "2016-01-04",
+    "corroboratingSource": "https://pixabay.com/photos/training-press-legs-workout-828760/",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 1,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "physique-28",
+    "asset": "challenge-physique-28",
+    "source": "https://www.pexels.com/photo/a-man-using-barbell-11433060/",
+    "photographer": "Marius Aholou",
+    "license": "https://www.pexels.com/license/",
+    "published": "2022-03-10",
+    "downloaded": "2026-11-10",
+    "sha256": "e88a5bc6bae566834f3ad5fd7e8e8e706d6fb77a01a21662c3af83c1d33b88ee",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "fullbody-28",
+    "asset": "challenge-fullbody-28",
+    "source": "https://www.pexels.com/photo/intense-kettlebell-workout-in-low-light-30191517/",
+    "photographer": "Arturo Albarran",
+    "license": "https://www.pexels.com/license/",
+    "published": "2025-01-11",
+    "downloaded": "2026-11-10",
+    "sha256": "038e9be4d88d3596f533a5fbeffae080ddab0ae32caab64bc90cedd57d3df428",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Real photographed kettlebell workout, cameraILCE6000/taken2025-01-09 from source metadata. Black backdrop instead of rejected window background; no AI generation/editing.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "calisthenics-28",
+    "asset": "challenge-calisthenics-28",
+    "source": "https://www.pexels.com/photo/man-doing-pull-ups-7672092/",
+    "photographer": "cottonbro studio",
+    "license": "https://www.pexels.com/license/",
+    "published": "2021-04-27",
+    "downloaded": "2026-11-10",
+    "sha256": "7ba1bc035d87517220933da91ef3860966c260719b84877cc640d75ddba35914",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "pelvic-14",
+    "asset": "challenge-pelvic-14",
+    "source": "https://www.pexels.com/photo/woman-doing-yoga-260368/",
+    "photographer": "Pixabay",
+    "license": "https://www.pexels.com/license/",
+    "published": "2016-12-20",
+    "downloaded": "2026-11-10",
+    "sha256": "3ea88f927f81042b230121021a242cc2ba97ad6ae43f8dffca85019b6dd44327",
+    "use": "Illustrative real stock photo; no coach endorsement. Seated relaxation illustration, not an external demonstration of pelvic contraction.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "dumbbell-30",
+    "asset": "challenge-dumbbell-30",
+    "source": "https://www.pexels.com/photo/muscular-man-exercises-his-biceps-with-dumbbell-18060118/",
+    "photographer": "@marcuschanmedia | IG",
+    "license": "https://www.pexels.com/license/",
+    "published": "2023-08-20",
+    "downloaded": "2026-11-10",
+    "sha256": "5cdbc6cad6eb2794ac094d2c95b86b64b5c99112d2b65368495a3fafb4199e3e",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "activity-30",
+    "asset": "challenge-activity-30",
+    "source": "https://www.pexels.com/photo/woman-in-gray-tank-top-riding-yellow-and-black-stationary-bike-11870826/",
+    "photographer": "Yuliya Mulyukina",
+    "license": "https://www.pexels.com/license/",
+    "published": "2022-04-19",
+    "downloaded": "2026-11-10",
+    "sha256": "cf436498b03cea4124c27459be061c1ce6bc47562da03ee26efe8bdedc2ce3d1",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "core-30",
+    "asset": "challenge-core-30",
+    "source": "https://www.pexels.com/photo/woman-doing-sit-ups-3076516/",
+    "photographer": "Jonathan Borba",
+    "license": "https://www.pexels.com/license/",
+    "published": "2019-10-14",
+    "downloaded": "2026-11-10",
+    "sha256": "ca8ca384ad84e1e84c44012b9d15cf1c75cb93f5323a59bf6355b7e698a3852a",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "mobility-28",
+    "asset": "challenge-mobility-28",
+    "source": "https://www.pexels.com/photo/woman-in-black-activewear-exercising-7690842/",
+    "photographer": "cottonbro studio",
+    "license": "https://www.pexels.com/license/",
+    "published": "2021-04-28",
+    "downloaded": "2026-11-10",
+    "sha256": "b5b63bb2acec2e3be79f9565929a41335ee5edc6df20b7198a64fcbcfebbbe17",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Photographed real person, dark setting, no AI generation/editing. Source original bytes; focal crop in SwiftUI.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "core-14",
+    "asset": "challenge-core-14",
+    "source": "https://unsplash.com/photos/man-doing-push-ups-in-a-dimly-lit-gym-uhilWzMiJGs",
+    "photographer": "Anastase Maragos",
+    "license": "https://unsplash.com/license",
+    "downloaded": "2026-11-10",
+    "sha256": "6b3291ac48e5fd2c779bf16629f1342fdbc7a35376e30514a995d7cd2878c869",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Actual stock photography in dark gym, no AI generation/editing; SwiftUI crop only.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  },
+  {
+    "challenge": "program-forearms",
+    "asset": "discovery-grip",
+    "source": "https://www.pexels.com/photo/person-holding-barbell-841130/",
+    "photographer": "Victor Freitas",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-11-10",
+    "sha256": "c536620257eb55f7346cc974d2a12fdee24283312e72705a00b4ea04ec0c0199",
+    "use": "Illustrative real stock photo; no coach endorsement.",
+    "reason": "Actual photographed hands gripping barbell in dark gym; no AI generation/editing. Different from bicep cover.",
+    "rendering": {
+      "sourceBytesUnmodified": true,
+      "aiGeneratedOrEdited": false,
+      "saturation": 0.12,
+      "implementation": "DiscoveryPhoto, SwiftUI rendering only; source SHA unchanged",
+      "crop": "aspectFit on black for mobility; focal aspectFill for other covers"
+    }
+  }
+]

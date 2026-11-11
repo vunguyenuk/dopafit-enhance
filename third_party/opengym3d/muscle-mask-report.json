@@ -1,0 +1,90 @@
+[
+  {
+    "file": "bicep_curl.glb",
+    "skinnedPrimitives": 1,
+    "verticesAbove15Percent": {
+      "Bụng": 356,
+      "Mông": 273,
+      "Đùi sau": 216,
+      "Đùi trước": 642,
+      "Lưng dưới": 218,
+      "Ngực": 591,
+      "Tay sau": 296,
+      "Tay trước": 420,
+      "Vai": 524,
+      "Lưng": 420,
+      "Bắp chân": 770,
+      "Cơ thang": 272,
+      "Cơ dạng hông": 351,
+      "Cơ khép hông": 477,
+      "Cẳng tay": 728,
+      "Cổ": 422
+    }
+  },
+  {
+    "file": "good_morning.glb",
+    "skinnedPrimitives": 1,
+    "verticesAbove15Percent": {
+      "Bụng": 356,
+      "Mông": 273,
+      "Đùi sau": 216,
+      "Đùi trước": 642,
+      "Lưng dưới": 218,
+      "Ngực": 591,
+      "Tay sau": 296,
+      "Tay trước": 420,
+      "Vai": 524,
+      "Lưng": 420,
+      "Bắp chân": 770,
+      "Cơ thang": 272,
+      "Cơ dạng hông": 351,
+      "Cơ khép hông": 477,
+      "Cẳng tay": 728,
+      "Cổ": 422
+    }
+  },
+  {
+    "file": "muscular_body.glb",
+    "skinnedPrimitives": 1,
+    "verticesAbove15Percent": {
+      "Bụng": 356,
+      "Mông": 273,
+      "Đùi sau": 216,
+      "Đùi trước": 642,
+      "Lưng dưới": 218,
+      "Ngực": 591,
+      "Tay sau": 296,
+      "Tay trước": 420,
+      "Vai": 524,
+      "Lưng": 420,
+      "Bắp chân": 770,
+      "Cơ thang": 272,
+      "Cơ dạng hông": 351,
+      "Cơ khép hông": 477,
+      "Cẳng tay": 728,
+      "Cổ": 422
+    }
+  },
+  {
+    "file": "romanian_deadlift.glb",
+    "skinnedPrimitives": 1,
+    "verticesAbove15Percent": {
+      "Bụng": 356,
+      "Mông": 273,
+      "Đùi sau": 216,
+      "Đùi trước": 642,
+      "Lưng dưới": 218,
+      "Ngực": 591,
+      "Tay sau": 296,
+      "Tay trước": 420,
+      "Vai": 524,
+      "Lưng": 420,
+      "Bắp chân": 770,
+      "Cơ thang": 272,
+      "Cơ dạng hông": 351,
+      "Cơ khép hông": 477,
+      "Cẳng tay": 728,
+      "Cổ": 422
+    }
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-10",
+  "bundle": "com.local.dopafit.mediaqa",
+  "isolation": "Copy of latest compiled app, Info.plist bundle ID changed and ad-hoc re-signed for Simulator; no main-container reuse",
+  "UIFlows": [
+    "Start disposableQA draft",
+    "Open T-Bar set entry: no clip/model, info route remains (C160)",
+    "Open Incline set entry: ExerciseDB video replaces3D header (C161)",
+    "Open guide fromsetentry: sameExerciseDB video, no angle/model fallback (C162)",
+    "Set speed0.5x and observe (C163)"
+  ],
+  "mutations": "Only QA start/timer;0loggedsets,0history, noHealth",
+  "cleanupVerified": true,
+  "mainBundle": "com.local.dopafit.rebuild",
+  "stateSnapshot": "guide-media-qa-state.json"
+}

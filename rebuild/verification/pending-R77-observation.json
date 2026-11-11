@@ -1,0 +1,18 @@
+{
+  "id": "R77",
+  "name": "Superset đã lưu — gom và đổi thứ tự",
+  "purpose": "Xác minh kết quả Save hai bài không liền nhau",
+  "entry": "Mở lại R74, chọn Kéo lưng với máy (1) + Đẩy vai với tạ đơn (3), Lưu",
+  "exit": "Ellipsis nhóm để audit tiếp; tháo nhóm/chỉnh vòng chưa quan sát vì Mac khóa",
+  "primary": "Header Superset ·2vòng, nhóm Row+Shoulder thành hai bài đầu",
+  "secondary": "Ellipsis nhóm riêng; ký hiệu vòng trên thumbnail; Hammerstrength từ2→3, bài khác giữ thứ tự",
+  "dependencies": "Group membership, reordered draft, set counts; timer và session vẫn đang chạy",
+  "note": "Bằng chứng bổ sung sauR76: đã Save nhóm thử trong tài khoản test, không log set/finish. Mac khóa khi bấm menu nhóm; nhóm còn nguyên, chưa rollback. Cần tháo nhóm và trả thứ tự Row→Hammer→Shoulder khi mở khóa. Chỉ quan sát cặp2set+2set, chưa suy số vòng cho set không đều.",
+  "group": "00g — Superset sau Save và rollback đang chờ",
+  "path": "rebuild/audit/R77-superset-saved-reordered.png",
+  "evidenceStatus": "Resolved: recaptured10/11 after unlock; R78menu/R79detach/R81unequal/R82rollback saved locally; Figma import pending.",
+  "rollback": "R82 observed original seven exercises, original order and no groups. No set log/finish.",
+  "latestStatus": "resolved R82; originals R77–R82 published and verified140cards/28rootgroups",
+  "originalRollbackPending": false,
+  "publicationEvidence": "figma/verification-140.json"
+}
