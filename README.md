@@ -1,64 +1,116 @@
-# Dopafit — audit bản gốc và iOS rebuild
+# Dopafit Rebuild
 
-Ngày đối chiếu: 09/11/2026. Người dùng mục tiêu: cả người mới và người tập gym đều.
+A SwiftUI rebuild of Dopafit, a gym app, plus a long list of things we added on top.
 
-Project SwiftUI chạy cục bộ, dựng lại các màn và tác vụ đã quan sát từ Dopafit. Đây là bản tái dựng để đối chiếu và tiếp tục phát triển; chưa đạt tương đương hoàn toàn với app gốc. Không có source/backend, thư viện media hay thuật toán độc quyền của Dopafit.
+The original question was simple: what would it take for a workout app to actually stick with the people who usually give up on the gym? Beginners who don't know what a cable machine is for. People coming back after a month off. People who walk in tired, sore, or with twenty minutes to spare, and find the plan doesn't care. This project is where we've been answering that question in code.
 
-## Tiếp tục bằng tài khoản Codex khác
+Fair warning before you dig in: this is a working prototype, not a shipping product. Read the "What this isn't" section before you show it to anyone.
 
-Đọc [AGENTS.md](AGENTS.md), [changelog](CHANGELOG.md), [bàn giao](rebuild/HANDOFF.md), [đối chiếu từng màn](rebuild/SCREEN-COVERAGE.md) và [các khoảng trống](rebuild/OPEN-GAPS.md). Matrix có 134trạng thái gốc/Figma/source/evidence; chưa có trạng thái nào được gán pixel parity hoàn chỉnh.
+The app's interface is in Vietnamese (English is partial), so the on-screen labels are given in brackets below.
 
-## Mở và chạy
+## What the app does
 
-Mở `Dopafit.xcodeproj`, chọn scheme **Dopafit**, destination **iPhone 18 Pro Max**, rồi Run. Project đã được mở trong Xcode trên máy này và đã cài lên simulator iOS 27.3.
+The core idea is that **today's workout should bend to today**. On the Workout tab (*Buổi tập*) you get a plan for the day, and a few ways to change it without starting over:
+
+- **"How are you today?"** (*Hôm nay bạn thế nào?*) One tap. *Tired* drops a set and takes about 10% off the weights. *Something hurts* asks where (neck, shoulder, elbow, wrist, lower back, knee) and swaps or lightens the exercises that load that spot. *Short on time* trims the session to 15, 20, 30 or 45 minutes. Every change can be undone, and the rows that changed are highlighted in lime so you can see what moved.
+- **A one-line reason.** Under the workout name there's a short note explaining the plan, like "Back and chest recovered · weights held". No black-box progression.
+- **Machine taken?** (*Máy đang có người*) Open the ⋯ menu on any exercise and swap it for a same-muscle alternative, preferring different equipment, in one tap.
+- **Missed a session?** If yesterday was a planned training day and you skipped it, Home asks whether you want the full session today or a 20-minute version.
+- **Coming back after a break.** Two weeks or more off and the weights drop to about 75%, then climb back over two weeks instead of throwing you straight in at your old numbers.
+
+And for the people the gym tends to lose:
+
+- **Beginners** get video for most exercises, a "set up before you start" card for machines and benches, a short list of common mistakes, starting weights estimated from onboarding, and a three-session warm-up period. The Body tab shows real numbers from the first logged workout instead of a locked screen.
+- **Home workouts.** Add an "At home" (*Ở nhà*) location (dumbbells up to 20 kg, bands, bodyweight) and the generator swaps anything you can't do for something you can.
+- **Gentle mode** (*Chế độ nhẹ nhàng*) for older lifters or anyone low on energy: at most five exercises, two sets each, longer rest, no barbells.
+- **Text size** (*Cỡ chữ*: Vừa, Lớn, Rất lớn) applies across the whole app.
+- **Female demo videos** are used automatically when the profile is set to female and a female version exists.
+
+The rest is the usual gym-app furniture: set logging with timers and RIR, supersets, a plate calculator, exercise history, weekly set goals by muscle group, recovery, a training log with a calendar, challenges, programs by muscle group, kg/lb, and CSV export.
+
+## Getting started
+
+You need the Xcode beta that ships the iOS 27 simulator. Nothing else: no CocoaPods, no packages to install.
+
+1. Open `Dopafit.xcodeproj`.
+2. Pick the **Dopafit** scheme and an **iPhone 18 Pro Max** simulator.
+3. Hit Run.
+
+Or from the terminal:
 
 ```sh
-./scripts/run-simulator.sh
-./scripts/check-models.sh
+./scripts/run-simulator.sh   # build, install and launch (keeps your saved data)
+./scripts/check-models.sh    # run the model checks
 ```
 
-Hai script dùng Xcode tại `/Users/vunguyen/Desktop/Xcode-beta.app`. Có thể đổi qua biến `DOPAFIT_XCODE`; script không đổi `xcode-select` toàn máy. `DOPAFIT_SIMULATOR` đặt UDID khác. Không cần package bên ngoài.
+Both scripts look for Xcode at `/Users/vunguyen/Desktop/Xcode-beta.app`. Point them elsewhere with `DOPAFIT_XCODE`, and pick a different simulator with `DOPAFIT_SIMULATOR` (a UDID). They don't touch your global `xcode-select`.
 
-Launch argument `--demo` vào thẳng bốn tab và giữ lịch sử. `--audit-setup` mở từ phần onboarding R19; `--audit-post-setup` mở chuỗi plan/cam kết/Pro để kiểm thử; không xóa lịch sử. Chạy không argument để dùng trạng thái đã lưu. Trong Cài đặt có **Xem lại thiết lập**.
+A few launch arguments are handy when testing:
 
-## Tài liệu và Figma
-
-- [Figma — ảnh Dopafit gốc và chú thích](https://www.figma.com/design/2lNpfPEq2wVnGk07bVLghz/Dopafit?node-id=1-24): 134ảnh trạng thái đã nhập; 58 ảnh D01–D58 và 76ảnh R01–R76. Ảnh giữ nguyên; tên, mục đích, luồng, yếu tố chính/phụ và phụ thuộc là text sửa được. Không có ảnh rebuild hoặc Fitbod trong canvas này.
-- [Danh mục nguồn ảnh](figma/complete-inventory.json), [kiểm chứng canvas](figma/published-verification.json).
-- [Nghiên cứu Fitbod, thị trường Mỹ, đối thủ và pain point](research/2026-11-09/REPORT.md).
-- [Audit bốn tab và vòng tập](research/2026-11-09/DOPAFIT-AUDIT.md).
-- [Audit onboarding bổ sung](rebuild/ONBOARDING-AUDIT.md).
-- [Audit sau đăng nhập và phần mới bổ sung vào app](rebuild/POSTLOGIN-AUDIT.md).
-- [Rà soát và sửa các UI/chức năng thiếu trên simulator](rebuild/SIMULATOR-GAP-FIXES.md).
-- [Phạm vi tương đương và phần còn thiếu](rebuild/PARITY.md).
-- [Kiểm thử](rebuild/VERIFICATION.md).
-
-## Cấu trúc
-
-| File | Vai trò |
+| Argument | What it does |
 |---|---|
-| `Models.swift` | Set, buổi tập, kế hoạch, gym, lịch sử, JSON persistence, quy tắc sinh buổi cục bộ |
-| `Design.swift` | Màu, nút, card, hàng cài đặt, vùng ảnh tham chiếu, CSV |
-| `OnboardingView.swift` | Chào, mục tiêu, câu hỏi, pain point và câu chuyện R01–R18 |
-| `SetupOnboardingView.swift` | Hồ sơ nhập tay, focus, nơi tập, lịch, nhắc nhở, xem lại và đăng nhập entry R19–R38 |
-| `PostSetupFlow.swift` | Plan đã xong, giữ để hứa 2 giây, Pro introduction tham chiếu |
-| `WorkoutViews.swift` | Home, tập, nhập set, timer, RIR, đổi bài, guide, superset |
-| `ProgressViews.swift` | Nhật ký, chi tiết buổi, lịch sử bài, trend và report |
-| `OpenGymBody.swift` / `OpenGymAnimationView.swift` | Mesh cơ thể, thumbnail SceneKit, chuyển động offline WKWebView/Three.js |
-| `ExerciseGuide.swift` | Ba tab Cách tập/Nhóm cơ/Dụng cụ, media/speed hook |
-| `BodyAndGoalsViews.swift` | Kết quả, hồi phục/list/chi tiết cơ và mục tiêu ba nhóm màu |
-| `MetricDetailView.swift` | Biểu đồ có ngày thật, chọn điểm, khoảng thời gian, PR/trung bình |
-| `SavedSetEditor.swift` | Thêm/sửa/xóa set và bài trong buổi đã lưu |
-| `SettingsViews.swift` | Plan, gym/nấc tạ, hồ sơ, export, locale, notification/Health entry |
+| `--demo` | Skips onboarding and drops you into the four tabs with sample history |
+| `--audit-setup` | Starts at the profile/setup part of onboarding |
+| `--audit-post-setup` | Opens the plan summary, commitment and Pro screens |
 
-## Dữ liệu và media
+Run without arguments to use whatever state is already saved. Settings also has a **Review setup** (*Xem lại thiết lập*) entry.
 
-State lưu dưới Application Support/DopafitRebuild/state.json trong sandbox app, sau mỗi thay đổi quan trọng, bằng ghi atomic. Cài đè build giữ dữ liệu. Xuất CSV dùng kg làm đơn vị dữ liệu chuẩn; UI có kg/lb.
+**Adding a Swift file?** Run `python3 scripts/generate_project.py` afterwards, or Xcode won't see it.
 
-Bộ cơ thể/thumbnail/preview hiện dùng model nam có cơ dựng bằng MakeHuman/MPFB trên nền tảng OpenGym3D theo yêu cầu người dùng. Ba clip v1 được retarget đúng mapping (curl/RDL/good morning), phát offline bằng Three.js trong WKWebView, có4góc và tốc độ;24bài còn lại có minh họa nhóm cơ. Đây là asset thay thế, không phải mesh/video private của Dopafit. Một số narrative/chart/Pro/location illustration vẫn là ảnh tham chiếu. Xem [nguồn asset](rebuild/ASSET-PROVENANCE.md) và [trạng thái tích hợp/QA](rebuild/OPENGYM-INTEGRATION.md).
+## How the code is laid out
 
-`python3 scripts/check-opengym-assets.py` kiểm SHA, GLB geometry/weights/animation và notices. `./scripts/build-opengym-viewer.sh` chỉ cần khi sửa viewer; dependency npm được pin, JS đã bundle sẵn để app chạy offline. `python3 scripts/prepare_opengym_assets.py` chỉ stage upstream vào.build, không ghi đè model cơ bắp. Source Blender được giữ trong third_party để chỉnh tiếp. Original Figma không chứa screenshot simulator.
+Everything lives in `DopafitRebuild/`. The main files:
 
-Remotion public là framework video, không cung cấp riêng source/media Dopafit. AVPlayer hook vẫn nhận MP4 riêng nếu được cấp và thêm vào target resources. Project generator tự bundle Swift, Assets.xcassets và thư mục OpenGym3D.
+| File | What's in it |
+|---|---|
+| `Models.swift` | Sets, sessions, plans, gyms, history, saving to disk, and the workout generator |
+| `DailyCheckinModels.swift` | The "how are you today" rules, the return-from-break ramp, missed sessions, the busy-machine swap |
+| `Design.swift` | Colors, fonts (including the text-size scale), buttons, cards, sheets |
+| `WorkoutViews.swift` | Home, the active workout, set entry, timers, swaps, supersets |
+| `HomeCheckinViews.swift` | The check-in, pain and time sheets, the reason line, the missed-session card |
+| `WorkoutDiscoveryViews.swift` | Week calendar, muscle suggestions, challenges |
+| `WorkoutProgramViews.swift` | Programs by muscle group |
+| `ExerciseLibrary.swift` | The exercise picker and its filters |
+| `ExerciseGuide.swift`, `ExerciseSetupTips.swift` | Exercise guide, setup tips and common mistakes |
+| `ExerciseDBMedia.swift`, `ExerciseLoopVideo.swift` | Which video to show for which exercise, and the looping player |
+| `BodyAndGoalsViews.swift` | Body tab (results, recovery) and Goals tab |
+| `ProgressViews.swift`, `MetricDetailView.swift` | Log, session detail, charts |
+| `SettingsViews.swift` | Plan settings, gyms, profile, export, reminders |
+| `OnboardingView.swift`, `SetupOnboardingView.swift`, `PostSetupFlow.swift` | Onboarding from welcome to the Pro screen |
 
-Các phép sinh buổi, tăng tạ, hồi phục và kcal là mô hình cục bộ được ghi rõ trong source/tài liệu, không phải thuật toán gốc được trích xuất. Không có cloud sync, đăng nhập thật, subscription, Apple Watch hoặc Health workout writing trong bản này.
+Model checks live in `tests/ModelChecks.swift`. They cover the rules (progression, check-ins, undo, deload, gentle mode and so on), not the UI.
+
+## Data
+
+App state is saved as JSON under Application Support (`DopafitRebuild/state.json`) inside the app sandbox, written atomically after every meaningful change. Reinstalling a build keeps your data. Weights are stored in kg; the UI can show lb. New fields are optional so older saved files keep loading.
+
+## Media, and where it came from
+
+Exercise video comes from three places, picked in this order:
+
+1. **A real-person plank video** from Pexels.
+2. **3D demo clips for 21 exercises** (19 with a female version) from [free-exercise-db-with-videos](https://github.com/buzops9/exercisedb). Cropped to square and compressed by `scripts/build-zenith-media.py`.
+3. **ExerciseDB clips** for the rest. These are low resolution (180 px).
+
+Exercises with no correct video are hidden from the library, programs and generated workouts, but kept in your history.
+
+Photos on the challenge and program cards are real stock photos from Unsplash and Pexels, used unedited. Sources, photographers and hashes are listed in `third_party/challenge-photos/manifest.json`.
+
+> ⚠️ **The 3D demo clips are not licensed.** The repo they came from is MIT for code and text, but its author says he bought the videos from an Instagram ad and doesn't know who made them. We're using them for a demo only. Buy a proper license, or replace them, before this goes anywhere public. The raw 1080p downloads in `third_party/zenith-video/raw*` shouldn't be pushed to a public repo either.
+
+`third_party/exercise-animations/upstream/` is a separate clone of [blwsk/exercise-animations](https://github.com/blwsk/exercise-animations) and is ignored by git. See `third_party/exercise-animations/UPSTREAM.md` for how to fetch it again.
+
+## What this isn't
+
+- **It's not the original Dopafit.** We don't have its source, backend, video library or algorithms. Screens were rebuilt from screenshots of the original app (they're in [Figma](https://www.figma.com/design/2lNpfPEq2wVnGk07bVLghz/Dopafit?node-id=1-24)), and a lot has changed since on purpose.
+- **The training logic is ours.** Workout generation, progression, recovery, calorie estimates and the pain rules are simple local rules written for this project. The joint-load mapping behind "something hurts" is a best guess and should be reviewed by someone with a physio or coaching background.
+- **It's not medical advice.** The pain option only swaps or lightens exercises. Sharp pain, numbness or swelling means stop and see a doctor, and the app says so.
+- **Some things just aren't built:** real sign-in, subscriptions, cloud sync, Apple Watch, and writing workouts to Apple Health (the app only reads height and weight).
+
+## If you're picking this up
+
+Start with [AGENTS.md](AGENTS.md), then the top of [CHANGELOG.md](CHANGELOG.md). After that, [rebuild/HANDOFF.md](rebuild/HANDOFF.md), [rebuild/SCREEN-COVERAGE.md](rebuild/SCREEN-COVERAGE.md) and [rebuild/OPEN-GAPS.md](rebuild/OPEN-GAPS.md). The changelog is the honest record. Every entry says what changed, how it was checked and what's still unverified. Please keep it that way.
+
+The research behind the product decisions is in [research/2026-11-09/REPORT.md](research/2026-11-09/REPORT.md), covering the US market, competitors and why people quit. The original-app audits are under `rebuild/`.
+
+The older Vietnamese README is kept at `rebuild/archive/README-vi-2026-11-11.md`.
