@@ -1,0 +1,320 @@
+import SwiftUI
+
+struct JournalView:View {
+    @EnvironmentObject var store:AppStore
+    @State private var month=Date()
+    @State private var selectedDay:Date?=nil
+    @State private var calendarExpanded=false
+    @State private var add=false
+    @State private var durationSession:WorkoutSession?=nil
+    @State private var removeSession:WorkoutSession?=nil
+    var shown:[WorkoutSession] {store.data.history.filter{session in if let selectedDay{return Calendar.current.isDate(session.started,inSameDayAs:selectedDay)};return Calendar.current.isDate(session.started,equalTo:month,toGranularity:.month)}}
+    var body:some View {
+        ScrollView {
+            VStack(alignment:.leading,spacing:24) {
+                HStack {Spacer();Text(store.t("Nhật ký","Log")).font(.dopa(size:21,weight:.semibold));Spacer();NavigationLink{SettingsView()}label:{Image(systemName:"gearshape").font(.dopa(size:24)).foregroundStyle(Dopa.lime).frame(width:44,height:44).background(Dopa.raised).clipShape(Circle())}.accessibilityLabel(store.t("Cài đặt","Settings"))}
+                HStack {stat("SỐ BUỔI TẬP","\(store.data.history.count)");stat("CỘT MỐC","⬡  ⬡  ⬡")}
+                HStack {stat("MỤC TIÊU TUẦN","\(store.weekDays)/\(store.data.plan.days) ngày");stat("CHUỖI HIỆN TẠI",store.weekDays>=store.data.plan.days ? "1 tuần":"0 tuần")}
+                HStack {Text("Lịch tập").dopaSection();Spacer();Button{withAnimation(.easeInOut(duration:0.2)){calendarExpanded.toggle()}}label:{HStack(spacing:5){Text("Tháng \(Calendar.current.component(.month,from:month))");Image(systemName:calendarExpanded ? "chevron.up":"chevron.down").font(.caption)}}.foregroundStyle(Dopa.lime).accessibilityLabel(calendarExpanded ? "Thu gọn lịch tháng":"Mở rộng lịch tháng")}
+                calendarWeek
+                HStack {Text("Các buổi đã tập").dopaSection();Spacer();Button{add=true}label:{Image(systemName:"plus").font(.title2).foregroundStyle(Dopa.lime)}}
+                if shown.isEmpty {InfoCard(title:"Chưa có buổi tập",text:"Buổi tập bạn ghi sẽ xuất hiện ở đây.",icon:"calendar")}
+                ForEach(shown){session in
+                    ZStack(alignment:.topTrailing) {
+                        NavigationLink {SessionDetailView(sessionID:session.id)}label:{SessionCard(session:session)}.buttonStyle(.plain)
+                        Menu {
+                            Button("Lưu thành buổi tập mới"){store.data.saved.append(SavedWorkout(name:session.name,exercises:session.exercises));store.persist();store.toast="Đã lưu buổi tập"}
+                            Button("Sửa thời lượng buổi tập"){durationSession=session}
+                            Button("Xóa buổi tập",role:.destructive){removeSession=session}
+                        }label:{Image(systemName:"ellipsis").foregroundStyle(Dopa.muted).frame(width:44,height:44)}.accessibilityLabel("Tùy chọn buổi đã lưu").padding(.top,36).padding(.trailing,8)
+                    }
+                }
+            }.padding(.horizontal,16).padding(.top,10).padding(.bottom,30)
+        }.sheet(item:$durationSession){SavedDurationEditor(sessionID:$0.id)}
+        .alert("Xóa buổi tập?",isPresented:Binding(get:{removeSession != nil},set:{if !$0{removeSession=nil}})){
+            Button("Xóa",role:.destructive){if let id=removeSession?.id{store.data.history.removeAll{$0.id==id};store.persist()};removeSession=nil}
+            Button("Huỷ",role:.cancel){removeSession=nil}
+        }.sheet(isPresented:$add){
+            VStack(spacing:24){SheetTitle(title:"Thêm buổi tập");Text("Tạo một buổi để ghi lại bài và các set bạn đã tập.").foregroundStyle(Dopa.muted).padding();DopaButton(title:"Tạo buổi tập"){store.makeDraft();add=false;store.start()}.padding(20)}.dopaSheet().presentationDetents([.medium]).background(Dopa.background)
+        }
+    }
+    func stat(_ title:String,_ value:String)->some View {VStack(spacing:10){Text(title).font(.dopa(size:11,weight:.semibold)).tracking(1).foregroundStyle(Dopa.muted);Text(value).font(.dopa(size:22,weight:.medium))}.frame(maxWidth:.infinity).padding(.vertical,4)}
+    var calendarWeek:some View {
+        let cal=Calendar.current
+        let monthStart=cal.dateInterval(of:.month,for:month)!.start
+        // Tuần bắt đầu thứ Hai, giống lịch tuần ở tab Buổi tập.
+        let mondayIndex:(Date)->Int={(cal.component(.weekday,from:$0)+5)%7}
+        let leading=mondayIndex(monthStart)
+        let monthDays=cal.range(of:.day,in:.month,for:month)!.count
+        let count=calendarExpanded ? ((leading+monthDays+6)/7)*7:7
+        let start=calendarExpanded ? cal.date(byAdding:.day,value:-leading,to:monthStart)!:cal.date(byAdding:.day,value:-mondayIndex(month),to:cal.startOfDay(for:month))!
+        return VStack(spacing:12) {
+            HStack(spacing:0){ForEach(0..<7,id:\.self){index in Text(["T2","T3","T4","T5","T6","T7","CN"][index]).font(.dopa(size:12,weight:.medium)).foregroundStyle(index==mondayIndex(Date()) ? Dopa.lime:Dopa.muted).frame(maxWidth:.infinity)}}
+            LazyVGrid(columns:Array(repeating:GridItem(.flexible(),spacing:0),count:7),spacing:8) {
+                ForEach(0..<count,id:\.self){offset in
+                    let day=cal.date(byAdding:.day,value:offset,to:start)!
+                    let sessions=store.data.history.filter{cal.isDate($0.started,inSameDayAs:day)}
+                    let today=cal.isDateInToday(day)
+                    let future=cal.startOfDay(for:day)>cal.startOfDay(for:Date())
+                    let inMonth=cal.isDate(day,equalTo:month,toGranularity:.month)
+                    Button{if !sessions.isEmpty{selectedDay=(selectedDay.map{cal.isDate($0,inSameDayAs:day)} ?? false) ? nil:day}}label:{
+                        VStack(spacing:5) {
+                            Text("\(cal.component(.day,from:day))").font(.dopa(size:19,weight:.semibold)).foregroundStyle(!sessions.isEmpty ? .black:(future || !inMonth ? Dopa.muted.opacity(0.45):.white)).frame(width:36,height:36).background(sessions.isEmpty ? .clear:Dopa.lime).clipShape(Circle()).overlay(Circle().stroke(today ? Dopa.lime:.clear,lineWidth:2))
+                            Text(sessions.isEmpty ? " ":"\(Int(sessions.reduce(0){$0+$1.duration}/60))p").font(.dopa(size:10)).foregroundStyle(Dopa.muted)
+                        }.frame(maxWidth:.infinity).frame(height:52)
+                    }.buttonStyle(.plain).allowsHitTesting(!sessions.isEmpty).accessibilityLabel(day.formatted(date:.complete,time:.omitted)+(sessions.isEmpty ? "":" · \(sessions.count) buổi tập"))
+                }
+            }
+        }.padding(14).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+    }
+}
+struct SessionCard:View {
+    @EnvironmentObject var store:AppStore
+    var session:WorkoutSession
+    private var dayLabel:String {
+        let formatter=DateFormatter();formatter.locale=Locale(identifier:store.english ? "en_US":"vi_VN")
+        formatter.dateFormat=store.english ? "MMM d, yyyy":"d 'tháng' M, yyyy"
+        return formatter.string(from:session.started)
+    }
+    var body:some View {
+        VStack(alignment:.leading,spacing:16) {
+            HStack {Text(dayLabel).font(.dopa(size:12,weight:.semibold)).foregroundStyle(Dopa.muted);Spacer();Label(session.duration.clock,systemImage:"timer").font(.dopa(size:14)).foregroundStyle(Dopa.muted)}
+            Text(session.name).font(.dopa(size:22,weight:.semibold))
+            HStack(spacing:16){Label("\(session.completedExercises.count)",systemImage:"dumbbell.fill");Label("\(store.weight(session.volume)) \(store.unit)",systemImage:"scalemass.fill");Label("\(session.calories) kcal",systemImage:"flame.fill")}.font(.dopa(size:15,weight:.semibold))
+            Text(session.completedExercises.map{$0.exercise.name}.joined(separator:" · ")).font(.dopa(size:14)).foregroundStyle(Dopa.muted).lineLimit(2)
+        }.padding(18).frame(maxWidth:.infinity,alignment:.leading).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+    }
+}
+struct SessionDetailView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var sessionID:UUID
+    @State private var duration=false
+    @State private var remove=false
+    @State private var add=false
+    @State private var pending:WorkoutExercise?=nil
+    @State private var edit:WorkoutExercise?=nil
+    @State private var historyExercise:Exercise?=nil
+    @State private var guideExercise:Exercise?=nil
+    var session:WorkoutSession? {store.data.history.first{$0.id==sessionID}}
+    var body:some View {
+        VStack(spacing:0){
+            ScreenHeader(title:session?.started.formatted(date:.abbreviated,time:.shortened) ?? "Buổi tập",back:{dismiss()})
+            if let s=session {
+                ScrollView {
+                    VStack(alignment:.leading,spacing:24) {
+                        Text(s.name).dopaTitle(28).frame(maxWidth:.infinity).padding(.top,24)
+                        Text(s.duration.clock).font(.dopa(size:18)).foregroundStyle(Dopa.muted).frame(maxWidth:.infinity)
+                        HStack {summary("NĂNG LƯỢNG","\(s.calories) kcal");summary("TỔNG KHỐI LƯỢNG","\(store.weight(s.volume)) \(store.unit)")}
+                        HStack{Text("\(s.completedExercises.count) bài tập").dopaTitle(25);Spacer();Button{add=true}label:{Image(systemName:"plus").font(.title2).foregroundStyle(Dopa.lime).frame(width:44,height:44)}.accessibilityLabel("Thêm bài vào buổi đã lưu");Menu {Button("Sửa thời lượng buổi tập"){duration=true};Button("Lưu thành buổi tập mới"){store.data.saved.append(SavedWorkout(name:s.name,exercises:s.exercises));store.persist();store.toast="Đã lưu buổi tập"};Button("Xóa buổi tập",role:.destructive){remove=true}}label:{Image(systemName:"ellipsis").font(.title2).foregroundStyle(Dopa.lime)}}
+                        ForEach(s.exercises){ex in SavedExerciseRow(sessionID:s.id,item:ex,onNavigate:{route in if route=="history"{historyExercise=ex.exercise}else{guideExercise=ex.exercise}}) }
+                    }.padding(20)
+                }
+            }
+        }.background(Dopa.background).toolbar(.hidden,for:.navigationBar)
+            .navigationDestination(isPresented:Binding(get:{historyExercise != nil},set:{if !$0{historyExercise=nil}})){if let exercise=historyExercise{ExerciseHistoryView(exercise:exercise)}}
+            .navigationDestination(isPresented:Binding(get:{guideExercise != nil},set:{if !$0{guideExercise=nil}})){if let exercise=guideExercise{ExerciseGuide(exercise:exercise)}}
+            .sheet(isPresented:$add,onDismiss:{if let pending{edit=pending;self.pending=nil}}){ExercisePicker(title:"Thêm bài tập"){ex in pending=WorkoutExercise(ex);add=false}}
+            .sheet(item:$edit){SavedSetEditor(sessionID:sessionID,item:$0)}
+            .alert("Xóa buổi tập?",isPresented:$remove){Button("Xóa",role:.destructive){store.data.history.removeAll{$0.id==sessionID};store.persist();dismiss()};Button("Huỷ",role:.cancel){}}
+            .sheet(isPresented:$duration){SavedDurationEditor(sessionID:sessionID)}
+    }
+    func summary(_ title:String,_ value:String)->some View{VStack(spacing:10){Text(title).font(.dopa(size:11,weight:.semibold)).tracking(1).foregroundStyle(Dopa.muted);Text(value).font(.dopa(size:22,weight:.semibold))}.frame(maxWidth:.infinity)}
+}
+struct CompletedView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var session:WorkoutSession
+    var current:WorkoutSession { store.data.history.first{$0.id==session.id} ?? session }
+    var body:some View {
+        VStack {
+            SheetTitle(title:session.started.formatted(date:.abbreviated,time:.shortened))
+            ScrollView {
+                VStack(spacing:24){
+                    Image(systemName:"checkmark.circle.fill").font(.dopa(size:48)).foregroundStyle(Dopa.lime)
+                    Text(session.name).dopaTitle(28)
+                    Text(session.duration.clock).foregroundStyle(Dopa.muted)
+                    HStack{metric("\(session.calories) kcal","NĂNG LƯỢNG");metric("\(store.weight(session.volume)) \(store.unit)","TỔNG KHỐI LƯỢNG")}
+                    ForEach(current.exercises){ex in SavedExerciseRow(sessionID:current.id,item:ex) }
+                    InfoCard(title:"Mở khóa chuỗi tuần của bạn",text:"Bạn đã tập \(store.weekDays)/\(store.data.plan.days) ngày trong tuần này.",icon:"flame.fill")
+                }.padding(20)
+            }
+            DopaButton(title:"Xong"){dismiss()}.padding(20)
+        }.background(Dopa.background)
+    }
+    func metric(_ value:String,_ label:String)->some View{VStack(spacing:8){Text(label).font(.dopa(size:10,weight:.semibold)).foregroundStyle(Dopa.muted);Text(value).font(.dopa(size:22,weight:.semibold))}.frame(maxWidth:.infinity)}
+}
+struct SavedExerciseRow:View {
+    @EnvironmentObject var store:AppStore
+    var sessionID:UUID
+    var item:WorkoutExercise
+    var onNavigate:((String)->Void)?=nil
+    @State private var actions=false
+    @State private var editing=false
+    @State private var pendingRoute:String?=nil
+    var body:some View {
+        HStack(alignment:.top,spacing:14) {
+            ExerciseThumb(exercise:item.exercise,size:65)
+            Button{editing=true}label:{VStack(alignment:.leading,spacing:7) {
+                Text(store.t(item.exercise.name,item.exercise.english)).font(.dopa(size:18,weight:.medium))
+                ForEach(item.sets) { set in Text("\(item.exercise.timed ? set.seconds:set.reps) "+(item.exercise.timed ? store.t("giây","sec"):store.t("lần","reps"))+(set.weight>0 ? " × \(store.weight(set.weight)) \(store.unit)":"")).font(.dopa(size:16)).foregroundStyle(Dopa.muted) }
+                if let rir=item.rir {Text(store.t("Làm thêm được \(rir) lần","\(rir) reps to spare")).font(.footnote).foregroundStyle(Dopa.blue)}
+            }.frame(maxWidth:.infinity,alignment:.leading).foregroundStyle(.white)}.buttonStyle(.plain).accessibilityLabel("Sửa set \(item.exercise.name)")
+            Button { actions=true } label:{Image(systemName:"ellipsis").font(.title2).foregroundStyle(Dopa.muted).frame(width:44,height:44)}.accessibilityLabel(store.t("Tùy chọn bài tập đã lưu","Saved exercise options"))
+        }.sheet(isPresented:$actions,onDismiss:{if let pendingRoute{onNavigate?(pendingRoute);self.pendingRoute=nil}}) {
+            SavedExerciseMenu(sessionID:sessionID,exerciseID:item.id,onNavigate:onNavigate == nil ? nil:{route in pendingRoute=route;actions=false})
+        }
+            .sheet(isPresented:$editing){SavedSetEditor(sessionID:sessionID,item:item)}
+    }
+}
+struct SavedExerciseMenu:View {
+    @EnvironmentObject var store:AppStore
+    var sessionID:UUID
+    var exerciseID:UUID
+    var onNavigate:((String)->Void)?=nil
+    @State private var editRIR=false
+    @State private var detent=PresentationDetent.height(530)
+    var item:WorkoutExercise? {store.data.history.first{$0.id==sessionID}?.exercises.first{$0.id==exerciseID}}
+    var body:some View {
+        NavigationStack {
+            if let item {
+                VStack(spacing:16) {
+                    SheetTitle(title:store.t(item.exercise.name,item.exercise.english))
+                    GroupCard {
+                        if let onNavigate {
+                            SettingRow(title:store.t("Hướng dẫn","Video / How to"),icon:"play.circle"){onNavigate("guide")}
+                            SettingRow(title:store.t("Lịch sử","History"),icon:"clock"){onNavigate("history")}
+                        } else {
+                            NavigationLink { ExerciseGuide(exercise:item.exercise).onAppear{detent = .large} } label:{SettingRow(title:store.t("Hướng dẫn","Video / How to"),icon:"play.circle")}
+                            NavigationLink { ExerciseHistoryView(exercise:item.exercise).onAppear{detent = .large} } label:{SettingRow(title:store.t("Lịch sử","History"),icon:"clock")}
+                        }
+                        SettingRow(title:store.t("Số lần có thể làm thêm","Reps in reserve"),value:item.rir.map{store.t("Làm thêm được \($0) lần","\($0) reps to spare")} ?? "",icon:"gauge.with.dots.needle.33percent") { editRIR=true }
+                    }.padding(.horizontal,16)
+                    GroupCard {
+                        Toggle(store.t("Gợi ý bài này nhiều hơn","Suggest this more often"),isOn:Binding(get:{store.data.preferences[item.exercise.id]==1},set:{store.setPreference(item.exercise.id,$0 ? 1:0)})).tint(Dopa.lime).padding(16)
+                        Divider().padding(.leading,16)
+                        Toggle(store.t("Gợi ý bài này ít hơn","Suggest this less often"),isOn:Binding(get:{store.data.preferences[item.exercise.id] == -1},set:{store.setPreference(item.exercise.id,$0 ? -1:0)})).tint(Dopa.lime).padding(16)
+                        SettingRow(title:store.t("Không gợi ý bài này nữa","Stop recommending"),icon:"nosign") {store.setPreference(item.exercise.id,-2)}
+                    }.padding(.horizontal,16)
+                    Spacer(minLength:0)
+                }.background(Dopa.background)
+            }
+        }.dopaSheet().presentationDetents([.height(530),.large],selection:$detent).sheet(isPresented:$editRIR) { SavedRIREditor(sessionID:sessionID,exerciseID:exerciseID) }
+    }
+}
+struct SavedRIREditor:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var sessionID:UUID
+    var exerciseID:UUID
+    @State private var value:Int?=nil
+    var body:some View {
+        VStack(alignment:.leading,spacing:24) {
+            SheetTitle(title:store.t("Đánh giá set cuối","Rate your last set"))
+            Text(store.t("Sau set cuối, bạn có thể làm thêm bao nhiêu lần?","After your last set, how many more reps could you do?")).font(.dopa(size:22,weight:.semibold))
+            Text(store.t("Chọn theo cảm nhận ở cuối set vừa tập.","Choose how the last set felt.")).foregroundStyle(Dopa.muted)
+            HStack(spacing:8) {ForEach(Array((0...4).reversed()),id:\.self) { n in Button {value=n} label:{Text(n==4 ? "4+":"\(n)").font(.dopa(size:23,weight:.semibold)).frame(maxWidth:.infinity).frame(height:58).background(value==n ? Color.white:Dopa.raised).foregroundStyle(value==n ? .black:.white).clipShape(RoundedRectangle(cornerRadius:10))}.accessibilityLabel("RIR \(n)")}}
+            HStack {Text(store.t("Quá dễ","Too easy"));Spacer();Text(store.t("Hết sức","Max effort"))}.font(.caption).foregroundStyle(Dopa.muted)
+            if let value {Text(store.t(value==0 ? "Không làm thêm được lần nào":"Làm thêm được \(value) lần",value==0 ? "No reps left":"\(value) reps to spare")).foregroundStyle(Dopa.muted)}
+            DopaButton(title:store.t("Xong","Done"),enabled:value != nil) {store.updateSavedRIR(sessionID:sessionID,exerciseID:exerciseID,value:value);dismiss()}
+        }.padding(20).dopaSheet().presentationDetents([.height(420)]).onAppear {value=store.data.history.first{$0.id==sessionID}?.exercises.first{$0.id==exerciseID}?.rir}
+    }
+}
+struct ExerciseHistoryView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var exercise:Exercise
+    @State private var trends=false
+    var records:[(WorkoutSession,WorkoutExercise)]{store.exerciseHistory(exercise.id)}
+    var body:some View {
+        VStack(spacing:20) {
+            ScreenHeader(title:exercise.name,back:{dismiss()})
+            PillTabs(titles:[store.t("Kết quả","Results"),store.t("Xu hướng","Trends")],selection:Binding(get:{trends ? 1:0},set:{trends=$0==1}),bright:false).padding(.horizontal,20)
+            ScrollView {
+                VStack(spacing:14) {
+                    if records.isEmpty {VStack(spacing:18){Image(systemName:"calendar").font(.dopa(size:42));Text("Chưa có lịch sử bài tập").font(.title3.bold());Text("Ghi bài này trong buổi tập để xem kết quả của bạn.").foregroundStyle(Dopa.muted).multilineTextAlignment(.center)}.padding(.top,90)}
+                    else if trends {
+                        metricCard("1RM ước tính",metric:0)
+                        metricCard("Mức tạ",metric:1)
+                        metricCard("Khối lượng",metric:2)
+                    } else {
+                        ForEach(records,id:\.0.id){s,ex in
+                            VStack(alignment:.leading,spacing:14){Text(s.started.formatted(date:.complete,time:.omitted)).foregroundStyle(Dopa.muted);ForEach(Array(ex.sets.enumerated()),id:\.element.id){i,set in HStack{Text("Set \(i+1)").foregroundStyle(Dopa.muted);Text("\(ex.exercise.timed ? set.seconds:set.reps) "+(ex.exercise.timed ? "giây":"lần")+(set.weight>0 ? " · \(store.weight(set.weight)) \(store.unit)":"")).fontWeight(.semibold)}}}.frame(maxWidth:.infinity,alignment:.leading).padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+                        }
+                    }
+                }.padding(.horizontal,20).padding(.bottom,30)
+            }
+        }.background(Dopa.background).toolbar(.hidden,for:.navigationBar)
+    }
+    func metricCard(_ title:String,metric:Int)->some View {
+        let points=records.reversed().map { session,item in
+            let work=item.sets.filter{$0.completed && !$0.warmup}
+            return TrendPoint(date:session.started,value:store.displayWeight(metric==0 ? work.map(\.estimatedMax).max() ?? 0:metric==1 ? work.map(\.weight).max() ?? 0:item.volume))
+        }
+        let value=metric==2 ? points.reduce(0){$0+$1.value}:points.map(\.value).max() ?? 0
+        return TrendCard(title:title,value:value,unit:store.unit,values:points.map(\.value),points:points)
+    }
+}
+struct TrendCard:View {
+    var title:String
+    var value:Double
+    var unit:String
+    var values:[Double]
+    var points:[TrendPoint]=[]
+    var body:some View {
+        NavigationLink { MetricDetailView(title:title,unit:unit,points:points) } label:{
+            VStack(alignment:.leading,spacing:20){
+                HStack{Text(title).font(.dopa(size:17,weight:.medium));Spacer();Image(systemName:"chevron.right").foregroundStyle(Dopa.muted)}
+                HStack(alignment:.firstTextBaseline,spacing:4){Text(AppStore.number(value)).font(Dopa.metricFont(44));Text(unit).font(.dopa(size:14)).foregroundStyle(Dopa.muted)}
+                MiniChart(values:values).frame(height:150)
+            }.padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14)).foregroundStyle(.white)
+        }.buttonStyle(.plain)
+    }
+}
+struct MiniChart:View {
+    var values:[Double]
+    var body:some View {
+        GeometryReader{g in
+            let lo=max(0,(values.min() ?? 0)-2)
+            let hi=max(lo+4,(values.max() ?? 0)+2)
+            ZStack(alignment:.topLeading){
+                ForEach(0..<5){i in
+                    Path{p in let y=CGFloat(i)*g.size.height/4;p.move(to:CGPoint(x:0,y:y));p.addLine(to:CGPoint(x:g.size.width-24,y:y))}.stroke(.white.opacity(0.12),style:StrokeStyle(lineWidth:1,dash:[2,3]))
+                    Text(AppStore.number(hi-Double(i)*(hi-lo)/4)).font(.dopa(size:10)).foregroundStyle(Dopa.muted).position(x:g.size.width-9,y:CGFloat(i)*g.size.height/4)
+                }
+                if !values.isEmpty {
+                    Path{p in for(i,v) in values.enumerated(){let x=values.count==1 ? g.size.width/2:CGFloat(i)*(g.size.width-35)/CGFloat(values.count-1);let y=g.size.height*(1-CGFloat((v-lo)/(hi-lo)));if i==0{p.move(to:CGPoint(x:x,y:y))}else{p.addLine(to:CGPoint(x:x,y:y))}}}.stroke(Dopa.lime,lineWidth:2)
+                    ForEach(Array(values.enumerated()),id:\.offset){i,v in
+                        Circle().fill(Dopa.lime).frame(width:9,height:9).shadow(color:Dopa.lime.opacity(0.4),radius:7).position(x:values.count==1 ? g.size.width/2:CGFloat(i)*(g.size.width-35)/CGFloat(values.count-1),y:g.size.height*(1-CGFloat((v-lo)/(hi-lo))))
+                    }
+                }
+            }
+        }
+    }
+}
+struct WorkoutReportView:View {
+    @EnvironmentObject var store:AppStore
+    @State private var days=7
+    var sessions:[WorkoutSession]{store.data.history.filter{Date().timeIntervalSince($0.started)<Double(days)*86400}}
+    var body:some View {
+        ScrollView {
+            VStack(alignment:.leading,spacing:26){
+                SheetTitle(title:"Báo cáo tập luyện")
+                Picker("Khoảng thời gian",selection:$days){Text("7 ngày qua").tag(7);Text("30 ngày qua").tag(30);Text("6 tháng").tag(180);Text("Năm").tag(365)}.pickerStyle(.segmented)
+                if sessions.isEmpty{InfoCard(title:"Chưa có buổi tập nào trong khoảng này",text:"Chọn khoảng khác hoặc thêm buổi bạn đã tập.",icon:"calendar")}
+                else{
+                    Text("Buổi tập đã ghi").dopaSection()
+                    Text("\(sessions.count) buổi").font(Dopa.metricFont(44))
+                    MiniChart(values:sessions.map{Double($0.completedSets)}).frame(height:140)
+                }
+                Text("Sức mạnh cơ bắp").dopaSection()
+                if !sessions.flatMap(\.exercises).isEmpty{TrendCard(title:"1RM ước tính tốt nhất mỗi tuần",value:store.displayWeight(sessions.flatMap(\.exercises).flatMap(\.sets).map(\.estimatedMax).max() ?? 0),unit:store.unit,values:sessions.map{store.displayWeight($0.exercises.flatMap(\.sets).map(\.estimatedMax).max() ?? 0)},points:sessions.map{TrendPoint(date:$0.started,value:store.displayWeight($0.exercises.flatMap(\.sets).map(\.estimatedMax).max() ?? 0))})}else{InfoCard(title:"Chưa có số đo sức mạnh",text:"Set có tạ của bài đẩy, kéo và squat trong khoảng này sẽ hiện ở đây.",icon:"chart.line.uptrend.xyaxis")}
+                Text("Khối lượng theo nhóm cơ").dopaSection()
+                ForEach(Catalog.muscleNames.filter{muscle in sessions.flatMap(\.exercises).contains{$0.exercise.muscles.contains(muscle)}},id:\.self){m in
+                    let volume=sessions.flatMap(\.exercises).filter{$0.exercise.muscles.contains(m)}.reduce(0){$0+$1.volume}
+                    VStack(alignment:.leading,spacing:16){Text(m.uppercased()).font(.dopa(size:12,weight:.semibold));HStack{Text("Tổng khối lượng").foregroundStyle(Dopa.muted);Spacer();Text("\(store.weight(volume)) \(store.unit)").font(.dopa(size:23,weight:.medium))};MiniChart(values:sessions.map{s in store.displayWeight(s.exercises.filter{$0.exercise.muscles.contains(m)}.reduce(0){$0+$1.volume})}).frame(height:150)}.padding(18).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+                }
+            }.padding(20)
+        }.background(Dopa.background)
+    }
+}

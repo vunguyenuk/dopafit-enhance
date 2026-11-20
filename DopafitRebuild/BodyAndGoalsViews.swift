@@ -37,11 +37,21 @@ struct BodyView:View {
                     HStack{Button("Tìm hiểu thêm"){help="recovery"}.foregroundStyle(Dopa.muted).frame(minHeight:44);Spacer();Button("Đã hiểu"){store.dismissTip("recovery")}.foregroundStyle(Dopa.lime).padding(.horizontal,14).frame(height:40).background(Dopa.raised).clipShape(Capsule())}.font(.dopa(size:15,weight:.medium)).padding(.top,5)
                 }.padding(18).frame(maxWidth:.infinity,alignment:.leading).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
             }
-            ZStack(alignment:.bottomLeading) {
-                OpenGymBodyView(heat:Dictionary(uniqueKeysWithValues:(Catalog.recoveryMuscles+Catalog.recoverySecondaryMuscles).map{($0,(100-store.muscleRecovery($0))/100)}),rear:rear).frame(height:390).frame(maxWidth:.infinity)
-                CircleButton(icon:"arrow.triangle.2.circlepath"){rear.toggle()}.accessibilityLabel(rear ? "Xem mặt trước":"Xem mặt sau")
+            // 3 mức khớp chú thích: cần nghỉ (cam), đang hồi (nâu), đã hồi phục (không tô).
+            let heat=Dictionary(uniqueKeysWithValues:(Catalog.recoveryMuscles+Catalog.recoverySecondaryMuscles).map{m in
+                let r=store.muscleRecovery(m);return (m,r<50 ? 1.0:r<90 ? 0.45:0.0)})
+            ZStack(alignment:.bottom) {
+                Group {
+                    if MuscleBody.shared != nil {MuscleBody3DView(heat:heat,rear:rear)}
+                    else {OpenGymBodyView(heat:heat,rear:rear,interactive:true)}
+                }.frame(height:420).frame(maxWidth:.infinity)
+                HStack {
+                    CircleButton(icon:"arrow.triangle.2.circlepath"){rear.toggle()}.accessibilityLabel(rear ? "Xem mặt trước":"Xem mặt sau")
+                    Spacer()
+                    Label("Kéo để xoay",systemImage:"hand.draw").font(.dopa(size:12)).foregroundStyle(Dopa.muted).accessibilityHidden(true)
+                }
             }
-            HStack(spacing:14){legend("Cần nghỉ",.orange);legend("Đang hồi",Color(red:0.65,green:0.31,blue:0.22));legend("Đã hồi phục",Dopa.raised)}
+            HStack(spacing:14){legend("Cần nghỉ",Dopa.lime);legend("Đang hồi",Dopa.lime.opacity(0.45));legend("Đã hồi phục",Dopa.raised)}
             Text("Nhóm cơ hôm nay: "+Set((store.data.draft?.exercises ?? []).flatMap{$0.exercise.muscles}).sorted().joined(separator:", ")).font(.dopa(size:12)).foregroundStyle(Dopa.muted).frame(maxWidth:.infinity,alignment:.leading)
             DopaButton(title:"Xem tất cả nhóm cơ",icon:"chevron.right",secondary:true){allMuscles=true}
         }

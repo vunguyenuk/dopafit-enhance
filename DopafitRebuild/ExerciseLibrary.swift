@@ -114,6 +114,8 @@ struct MuscleGlyph:View {
     var muscle:String
     var full=false
     var secondary:[String]=[]
+    /// Màu tô nhóm cơ. Mặc định lime; Nhật ký dùng màu nhóm đẩy/kéo/chân như app gốc.
+    var tint:Color=Dopa.lime
     var body:some View {
         Canvas { ctx,size in
             let spec=MuscleFigure.spec(muscle)
@@ -129,7 +131,7 @@ struct MuscleGlyph:View {
             let t=CGAffineTransform(a:s,b:0,c:0,d:s,tx:dx,ty:dy)
             ctx.fill(MuscleFigure.silhouette.applying(t),with:.color(Color(white:0.17)))
             for item in (spec.back ? MuscleFigure.back:MuscleFigure.front) {
-                let color:Color=spec.parts.contains(item.0) ? Dopa.lime:(soft.contains(item.0) ? Dopa.lime.opacity(0.38):Color(white:0.24))
+                let color:Color=spec.parts.contains(item.0) ? tint:(soft.contains(item.0) ? tint.opacity(0.38):Color(white:0.24))
                 ctx.fill(item.1.applying(t),with:.color(color))
             }
         }.accessibilityHidden(true)

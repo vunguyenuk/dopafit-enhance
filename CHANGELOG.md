@@ -1,5 +1,60 @@
 # Changelog Dopafit rebuild
 
+## 2026-11-17 22:45 (Claude) — Nhật ký: lịch tháng tô màu nhóm cơ; kiểm thêm
+
+- Đối chiếu lịch tháng gốc: ngày đã tập là vòng tròn màu nhóm cơ (buổi kéo: nền đỏ sẫm + viền đỏ), không phải nền lime chữ đen. Đã đổi trong JournalView.calendarWeek (tô `groupColor` 32% + viền cùng màu, hôm nay vẫn viền lime). Ô ngày cao 60pt.
+- Đã kiểm trên simulator: đặt tên "Vu Nguyen" → đầu trang hiện "VN Vu Nguyen" (sau khi mở lại app); lịch tháng ngày 9 hiện đỏ như gốc.
+- Đã so thêm với app gốc: Cài đặt khớp; bấm vào tên/ảnh đại diện ở app gốc không mở gì (bản dựng mở hộp đặt tên vì chưa có tài khoản).
+- Chưa kiểm: giao diện tiếng Anh, nhật ký trống, huy hiệu cấp 2+.
+
+## 2026-11-17 22:30 (Claude) — Nhật ký theo giao diện app gốc
+
+Đối chiếu iPhone thật (iPhone Mirroring, app gốc) với bản build trên simulator, tab Nhật ký thiếu nhiều phần. Đã bổ sung (ProgressViews.swift, ExerciseLibrary.swift, Models.swift):
+- Đầu trang: ảnh đại diện + tên ở giữa (gốc lấy tên tài khoản). Bản dựng chưa có tài khoản nên thêm `plan.displayName` (optional), bấm vào để đặt tên; chưa có tên thì hiện "Nhật ký" + icon người.
+- Cột mốc: thay "⬡ ⬡ ⬡" bằng 3 huy hiệu lục giác (Khối lượng 25K lb, Số buổi tập 3, Calo 1K — đúng Cấp 1 của gốc), bấm mở màn Cột mốc: thẻ giới thiệu đóng được, mỗi dòng huy hiệu + "Cấp N" + thanh tiến độ "giá trị / mốc". Khối lượng tính bằng lb như gốc. Các cấp sau (50K, 10 buổi, 5K kcal…) là ngưỡng tự đặt, CHƯA thấy trên app gốc.
+- Danh sách buổi đã tập thành dòng thời gian như gốc: hình nhóm cơ chính trong vòng màu (đẩy vàng / kéo đỏ / chân xanh ngọc, cùng màu tab Mục tiêu) + đường nối; ngày "THỨ 2, 9 THÁNG 11" và thời lượng "2:04" nằm trên thẻ; thẻ phủ nhẹ màu nhóm cơ. MuscleGlyph thêm tham số `tint` (mặc định lime, các chỗ khác không đổi). SessionCard thêm `showsHeader` (mặc định true cho Cơ thể/Buổi tập).
+- Chi tiết buổi: tiêu đề ngày tiếng Việt "Thứ 2, 9 thg 11, 17:05" (trước bị tiếng Anh "Nov 9, 2026 at 5:05 PM"); nút ••• lime tròn góc phải thay cho menu cạnh "N bài tập"; hình nhóm cơ trên tên buổi; thời lượng có icon đồng hồ dạng "0:01:00".
+Giữ nguyên: lịch tuần bắt đầu T2 (đã duyệt 21:50 10/11), dữ liệu main/history.
+Kiểm: build Xcode thành công, đã xem trên simulator Nhật ký, Cột mốc, chi tiết buổi. Chưa kiểm: đổi tên, tiếng Anh, nhiều cấp huy hiệu, nhật ký trống.
+
+## 2026-11-12 12:02 (Claude) — Vùng cơ: lớp phủ lime mờ thay cho tô màu đặc
+
+User chọn giữ bề mặt kim loại bóng + dáng fitness; chê vùng tô màu "như một phần cơ thể, không thật", muốn lớp phủ màu chính, không đậm.
+- MuscleBody3D.swift: ảnh màu thân không đổi theo mức hồi phục; vùng cần nghỉ/đang hồi chỉ là lớp phát sáng lime (Dopa.lime) độ mạnh 0,5 / 0,22, làm mờ viền (CoreImage, sigma 22) nên tan dần như ánh sáng; nhấp nháy 0,45–1,0 (đo trên simulator: độ sáng đổi ~20%).
+- BodyAndGoalsViews.swift: chú thích "Cần nghỉ" lime, "Đang hồi" lime nhạt.
+Đã xem trên simulator mặt sau (Mông lime, Đùi sau lime nhạt). Đầu giữ trứng trơn (user không chọn).
+
+## 2026-11-12 11:20 (Claude) — Dáng fitness thay vì giải phẫu
+
+User: "giống giải phẫu hơn là fitness". Sửa:
+- build-muscle-body.py: nắn dáng chữ V sau khi gán UV (ARM_GROW 0,16 bắp tay to, SHOULDER 0,11 vai rộng, WAIST 0,07 eo thon, CHEST 1,4 cm ngực dày, LEGS_IN 8,5 cm hai chân khép gọn); khối cơ phồng tối đa 1,6 cm.
+- build-muscle-textures.py: chỉ còn rãnh giữa các nhóm cơ lớn (bỏ đường nhỏ trong cẳng tay, sườn, đùi sau…), bụng giữ múi; ống chân liền bắp chân, cổ liền cơ thang (SEAM_GROUP); vòm cơ căng đầy hơn.
+Dữ liệu đã tạo xong; CHƯA build vào app vì máy khóa màn hình — mở Xcode bấm Run là có.
+
+## 2026-11-12 11:10 (Claude) — Khối cơ tự nhiên hơn; nhấp nháy rõ hơn
+
+User: "không được tự nhiên" (mông thành 2 gối chồng, đùi sau thành thanh rời). Sửa build-muscle-textures.py:
+- Rãnh 2 cấp: giữa hai nhóm cơ khác nhau rõ; giữa các mảnh trong cùng nhóm chỉ mờ, nông (bụng rõ múi hơn: MINOR).
+- Mỗi nhóm cơ là một vòm liền, tròn đều (không bằng phẳng như gối), làm mịn rộng hơn; viền mảnh bo tròn hơn; lấp lỗ trống ở đầu gối. Độ phồng tối đa 1,3 cm.
+- MuscleBody3D.swift: màu nền vùng cơ tối hơn, phát sáng đưa lên cam rực -> nhịp sáng/tối rõ (trước chỉ đổi ~8% vì màu cam đã sáng tối đa).
+Đã thấy khối cơ mới trên simulator (mặt sau). Build màu/nhấp nháy cuối CHƯA xem lại được (máy khóa màn hình).
+
+## 2026-11-12 10:55 (Claude) — Vẽ lại hình nộm: có khối cơ, đường chia mượt
+
+User chê bản trước "không có cơ bắp, như người bị nứt vỡ". Sửa:
+- build-muscle-textures.py: vẽ từng mảnh cơ riêng (giữ 6 múi bụng, các đầu đùi…), bỏ mảnh gai đầu gối/cổ chân, làm tròn viền mọi mảnh (hết răng cưa), rãnh chỉ ở chỗ hai mảnh gặp nhau, đầu/tay/bàn chân trơn. Mới: muscle-height.png = vòm từng mảnh cơ.
+- build-muscle-body.py: đắp khối cơ thật lên thân 3D (đẩy bề mặt tối đa 1,4 cm theo vòm), tính lại pháp tuyến.
+- MuscleBody3D.swift: đèn chính đặt chéo từ trên để cơ đổ bóng; giảm ánh sáng môi trường.
+Đã thấy bản có khối cơ trên simulator; lần build chỉnh đèn cuối CHƯA xem lại được (máy khóa màn hình).
+
+## 2026-11-12 (Claude) — Bản đồ hồi phục 3D kiểu giáp kim loại ("iron")
+
+Theo ảnh tham chiếu của user (giống 2 ảnh body-idle/body-active trên landing page cũ, vốn chỉ là ảnh phẳng mặt trước nên không xoay được):
+- MuscleBody3D.swift viết lại vật liệu: PBR (metalness 0,45, roughness 0,3), ảnh môi trường tự tạo cho phản chiếu, đèn chính + viền xanh lạnh. Thân xám kim loại [96,101,108], rãnh panel tối giữa các nhóm cơ (normal map lõm), cơ cần nghỉ cam sáng [255,122,26], đang hồi nâu đỏ; phát sáng mạnh hơn ở rãnh, nhấp nháy chu kỳ 1,6 s (emission 0,05→1,5).
+- Đầu chiếu thành khối trứng không mặt (scripts/build-muscle-body.py), UV đầu trỏ vào vùng trơn nên không có rãnh.
+- Mới: scripts/build-muscle-textures.py → BodyShapes/muscle-id.png, muscle-seam.png, muscle-normal.png + danh sách `ids` trong muscle-body.json.
+Build/Run đạt; đã thấy trên simulator mặt trước và mặt sau (Mông cam, Đùi sau nâu). Biên độ nhấp nháy mới tăng ở lần build cuối, CHƯA kiểm lại vì máy khóa màn hình. Còn lại: dữ liệu thử Mông 0% / Đùi sau 74% chưa đưa về 100%; chưa có vòng HUD lime + vạch quét; CADisplayLink chưa dừng khi view bị gỡ.
+
 ## 2026-11-11 08:46 (Claude) — Lịch tuần gọn 1 dòng; thống nhất kiểu chữ/khung giữa các tab
 
 - **Lịch tuần (thay mục 08:40):** user muốn mọi tuần gọn như tuần này. Bỏ dòng khoảng ngày và nút “Hôm nay”; tuần cũ “n/3 ngày tập”, tuần tương lai “Tuần tới/Sau N tuần”, chỉ 1 dòng + 2 mũi tên. Bấm dòng tiêu đề để về hôm nay (id calendar.today, VoiceOver đọc khoảng ngày + gợi ý “Về hôm nay”). Đã thấy trên simulator.
@@ -451,3 +506,9 @@ Thêm mục ngày/lượt mới ở đầu: yêu cầu → phát hiện original
 
 
 Bằng chứng ảnh nguồn cuối: C141 toàn thân ngang; C142 vận động; C143 hai ảnh core; C144 core14 thấy tư thế; C145 Kegel/giãn cơ; C146 giãn cơ chi tiết. C147 Home phân cấp Add/Start/tab. Tất cả là ảnh rebuild cục bộ, không thêm vào bảng Figma original.
+
+## 2026-11-12 — Bản đồ hồi phục: một mô hình 3D xoay tự do
+- Tab Cơ thể > Hồi phục dùng lại một mô hình 3D duy nhất (bỏ bản 2D thử nghiệm, đã chuyển vào `_to_delete/muscle-map-2d`).
+- Kéo ngang để xoay quanh thân, kéo dọc để nghiêng lên/xuống (giới hạn khoảng ±70°), chạm hai lần để về vị trí ban đầu. Nút xoay chuyển mặt trước/sau có hiệu ứng. Kéo trong vùng mô hình không cuộn trang.
+- Màu tô theo 3 mức khớp chú thích: hồi phục dưới 50% tô cam, 50–89% tô nâu, từ 90% trở lên không tô (trước đây tô nhạt dần nên nhìn như hồng nhạt).
+- Các chỗ khác dùng mô hình 3D (thiết lập, giới thiệu, buổi tập) giữ nguyên cách hiển thị.

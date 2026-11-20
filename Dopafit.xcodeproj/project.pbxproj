@@ -1,80 +1,392 @@
 // !$*UTF8*$!
-{archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
-FAAB06DC306F695FA08A42FD = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BodyAndGoalsViews.swift"; sourceTree = "<group>"; };
-4BCC792FD0F4B461253C0837 = {isa = PBXBuildFile; fileRef = FAAB06DC306F695FA08A42FD; };
-AD95A5EE4676E2F42FCAC5E1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyCheckinModels.swift"; sourceTree = "<group>"; };
-71A05536C72620A0859EE598 = {isa = PBXBuildFile; fileRef = AD95A5EE4676E2F42FCAC5E1; };
-7BFC85AB89462BC2D13BE166 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design.swift"; sourceTree = "<group>"; };
-0E82DBB9AA15037B7895F1C6 = {isa = PBXBuildFile; fileRef = 7BFC85AB89462BC2D13BE166; };
-8AFC99F520658FC9593D3D3B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DopafitApp.swift"; sourceTree = "<group>"; };
-22A280F177701C86C145D7A8 = {isa = PBXBuildFile; fileRef = 8AFC99F520658FC9593D3D3B; };
-E92A46B77228409D337CC1DB = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseDBMedia.swift"; sourceTree = "<group>"; };
-B0E608CB270CFFEB42FBF63B = {isa = PBXBuildFile; fileRef = E92A46B77228409D337CC1DB; };
-AFFC6E01B0A663B8B1729A32 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseGuide.swift"; sourceTree = "<group>"; };
-61A1238D8BD561E588687634 = {isa = PBXBuildFile; fileRef = AFFC6E01B0A663B8B1729A32; };
-944BD3B24462EE975CC5A3A7 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseLibrary.swift"; sourceTree = "<group>"; };
-321CE85A255E886A67189ED6 = {isa = PBXBuildFile; fileRef = 944BD3B24462EE975CC5A3A7; };
-23764EC8FB34F4BE1E88AE5B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseLibraryFilter.swift"; sourceTree = "<group>"; };
-BF2155FB8AAE8879971B6C36 = {isa = PBXBuildFile; fileRef = 23764EC8FB34F4BE1E88AE5B; };
-5622FBA58AE515377F1BD861 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseLoopVideo.swift"; sourceTree = "<group>"; };
-66053C5CD3A5980514A913C2 = {isa = PBXBuildFile; fileRef = 5622FBA58AE515377F1BD861; };
-A9B358285B443DA0EFBFD776 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseSetupTips.swift"; sourceTree = "<group>"; };
-2217CB57532455E804C230EB = {isa = PBXBuildFile; fileRef = A9B358285B443DA0EFBFD776; };
-50B0029CCA2164F06F6365B3 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCheckinViews.swift"; sourceTree = "<group>"; };
-0C02BA11CA490D0C3B9B3616 = {isa = PBXBuildFile; fileRef = 50B0029CCA2164F06F6365B3; };
-74C8995FCA3A7C2A88D42494 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricDetailView.swift"; sourceTree = "<group>"; };
-EDA59EBE428A46C4C6D7F253 = {isa = PBXBuildFile; fileRef = 74C8995FCA3A7C2A88D42494; };
-1B0C8FAFE1B09544C5912233 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models.swift"; sourceTree = "<group>"; };
-C28E3B592A560C32484F497E = {isa = PBXBuildFile; fileRef = 1B0C8FAFE1B09544C5912233; };
-C29620B927AEC396B51ACC99 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingView.swift"; sourceTree = "<group>"; };
-EE889E69E94AF6444BD44845 = {isa = PBXBuildFile; fileRef = C29620B927AEC396B51ACC99; };
-C499E284B8542A77A8FD2428 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenGymAnimationView.swift"; sourceTree = "<group>"; };
-38ACAD9AFD02ACD80A611B83 = {isa = PBXBuildFile; fileRef = C499E284B8542A77A8FD2428; };
-291A3F1FCF84690F79C882B5 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenGymBody.swift"; sourceTree = "<group>"; };
-DF958E3559419D1E83756435 = {isa = PBXBuildFile; fileRef = 291A3F1FCF84690F79C882B5; };
-CCB57C75A8DDD00E36F3AB1E = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostSetupFlow.swift"; sourceTree = "<group>"; };
-73B763495A75F4BC45E3225D = {isa = PBXBuildFile; fileRef = CCB57C75A8DDD00E36F3AB1E; };
-2DE6302C44AB9134E9CDF391 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgressViews.swift"; sourceTree = "<group>"; };
-98189D11A8034F82BB78B4D6 = {isa = PBXBuildFile; fileRef = 2DE6302C44AB9134E9CDF391; };
-557EF6218B091416934B3038 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedDurationEditor.swift"; sourceTree = "<group>"; };
-461209F5E045B3FF08710BDD = {isa = PBXBuildFile; fileRef = 557EF6218B091416934B3038; };
-CAEB1DE640F22F52440257A0 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedSetEditor.swift"; sourceTree = "<group>"; };
-111B55C485AB1ED30064F300 = {isa = PBXBuildFile; fileRef = CAEB1DE640F22F52440257A0; };
-33115AC021DF097397B1AF65 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViews.swift"; sourceTree = "<group>"; };
-847156A937AEAD783D918287 = {isa = PBXBuildFile; fileRef = 33115AC021DF097397B1AF65; };
-116422A4A524AED97594B8A4 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetupOnboardingView.swift"; sourceTree = "<group>"; };
-5CF989A2968D4A1E0F1C8701 = {isa = PBXBuildFile; fileRef = 116422A4A524AED97594B8A4; };
-662326E093ABBB4284936320 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutDiscoveryModels.swift"; sourceTree = "<group>"; };
-F39D889D8481EA92F0913DD8 = {isa = PBXBuildFile; fileRef = 662326E093ABBB4284936320; };
-8E827A42B837E24D9E93D4D0 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutDiscoveryViews.swift"; sourceTree = "<group>"; };
-1911E7D2316FC71AF9B67C7C = {isa = PBXBuildFile; fileRef = 8E827A42B837E24D9E93D4D0; };
-0889FC6C3F0F2E6B4DAC8522 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutProgramModels.swift"; sourceTree = "<group>"; };
-49F88F970CC67726A378A8A9 = {isa = PBXBuildFile; fileRef = 0889FC6C3F0F2E6B4DAC8522; };
-A3670BAB2B720B5BB8AD0340 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutProgramViews.swift"; sourceTree = "<group>"; };
-FA50F1822A68C955D45D615F = {isa = PBXBuildFile; fileRef = A3670BAB2B720B5BB8AD0340; };
-F0C44555BD3D49D897FA3177 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutViews.swift"; sourceTree = "<group>"; };
-11A296DD559D076D023BE030 = {isa = PBXBuildFile; fileRef = F0C44555BD3D49D897FA3177; };
-5B04B2273026590A440D27C9 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
-222F0DBFFE5EB23DCD3FD16F = {isa = PBXBuildFile; fileRef = 5B04B2273026590A440D27C9; };
-ED9EF3DA002EFDF7708FB458 = {isa = PBXFileReference; lastKnownFileType = folder; path = "OpenGym3D"; sourceTree = "<group>"; };
-FC0A0BDBC0387026D4FF7238 = {isa = PBXBuildFile; fileRef = ED9EF3DA002EFDF7708FB458; };
-E257808908FED967C19C9EB9 = {isa = PBXFileReference; lastKnownFileType = folder; path = "Form3D"; sourceTree = "<group>"; };
-B272D38A3900596941B6779A = {isa = PBXBuildFile; fileRef = E257808908FED967C19C9EB9; };
-F529AB2141064E664D8563FC = {isa = PBXFileReference; lastKnownFileType = folder; path = "ExerciseMedia"; sourceTree = "<group>"; };
-D3AB5DE64B677639C2BAFDEF = {isa = PBXBuildFile; fileRef = F529AB2141064E664D8563FC; };
-38A007151ABE87CC01A5B6E9 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Dopafit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-F27FEDE2220BCD326AEE3E86 = {isa = PBXGroup; children = (FAAB06DC306F695FA08A42FD,AD95A5EE4676E2F42FCAC5E1,7BFC85AB89462BC2D13BE166,8AFC99F520658FC9593D3D3B,E92A46B77228409D337CC1DB,AFFC6E01B0A663B8B1729A32,944BD3B24462EE975CC5A3A7,23764EC8FB34F4BE1E88AE5B,5622FBA58AE515377F1BD861,A9B358285B443DA0EFBFD776,50B0029CCA2164F06F6365B3,74C8995FCA3A7C2A88D42494,1B0C8FAFE1B09544C5912233,C29620B927AEC396B51ACC99,C499E284B8542A77A8FD2428,291A3F1FCF84690F79C882B5,CCB57C75A8DDD00E36F3AB1E,2DE6302C44AB9134E9CDF391,557EF6218B091416934B3038,CAEB1DE640F22F52440257A0,33115AC021DF097397B1AF65,116422A4A524AED97594B8A4,662326E093ABBB4284936320,8E827A42B837E24D9E93D4D0,0889FC6C3F0F2E6B4DAC8522,A3670BAB2B720B5BB8AD0340,F0C44555BD3D49D897FA3177,5B04B2273026590A440D27C9,ED9EF3DA002EFDF7708FB458,E257808908FED967C19C9EB9,F529AB2141064E664D8563FC); path = DopafitRebuild; sourceTree = "<group>"; };
-FBDC4F23F93125BBEEAE800C = {isa = PBXGroup; children = (38A007151ABE87CC01A5B6E9); name = Products; sourceTree = "<group>"; };
-B28B7AF69320201D1CF206EB = {isa = PBXGroup; children = (F27FEDE2220BCD326AEE3E86,FBDC4F23F93125BBEEAE800C); sourceTree = "<group>"; };
-BCE16DD0260827ECF338C787 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (4BCC792FD0F4B461253C0837,71A05536C72620A0859EE598,0E82DBB9AA15037B7895F1C6,22A280F177701C86C145D7A8,B0E608CB270CFFEB42FBF63B,61A1238D8BD561E588687634,321CE85A255E886A67189ED6,BF2155FB8AAE8879971B6C36,66053C5CD3A5980514A913C2,2217CB57532455E804C230EB,0C02BA11CA490D0C3B9B3616,EDA59EBE428A46C4C6D7F253,C28E3B592A560C32484F497E,EE889E69E94AF6444BD44845,38ACAD9AFD02ACD80A611B83,DF958E3559419D1E83756435,73B763495A75F4BC45E3225D,98189D11A8034F82BB78B4D6,461209F5E045B3FF08710BDD,111B55C485AB1ED30064F300,847156A937AEAD783D918287,5CF989A2968D4A1E0F1C8701,F39D889D8481EA92F0913DD8,1911E7D2316FC71AF9B67C7C,49F88F970CC67726A378A8A9,FA50F1822A68C955D45D615F,11A296DD559D076D023BE030); runOnlyForDeploymentPostprocessing = 0; };
-0189424A5A60FED329FA868E = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (222F0DBFFE5EB23DCD3FD16F,FC0A0BDBC0387026D4FF7238,B272D38A3900596941B6779A,D3AB5DE64B677639C2BAFDEF); runOnlyForDeploymentPostprocessing = 0; };
-7561BFB015D8F536760CB671 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
-35A20ECBF919CB3B6B068418 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; ENABLE_USER_SCRIPT_SANDBOXING = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
-42917DDFF83DA28196DB8C92 = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 5.0; ENABLE_USER_SCRIPT_SANDBOXING = YES; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release; };
-7C89CD62163FD7E2E1465297 = {isa = XCConfigurationList; buildConfigurations = (35A20ECBF919CB3B6B068418,42917DDFF83DA28196DB8C92); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-39FC68D9BFCBF6ABD18D37E3 = {isa = XCBuildConfiguration; buildSettings = {PRODUCT_BUNDLE_IDENTIFIER = com.local.dopafit.rebuild; PRODUCT_NAME = Dopafit; INFOPLIST_FILE = DopafitRebuild/Info.plist; GENERATE_INFOPLIST_FILE = NO; TARGETED_DEVICE_FAMILY = 1; CODE_SIGN_STYLE = Automatic; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ENABLE_PREVIEWS = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
-77B89AD0826472B9F432A982 = {isa = XCBuildConfiguration; buildSettings = {PRODUCT_BUNDLE_IDENTIFIER = com.local.dopafit.rebuild; PRODUCT_NAME = Dopafit; INFOPLIST_FILE = DopafitRebuild/Info.plist; GENERATE_INFOPLIST_FILE = NO; TARGETED_DEVICE_FAMILY = 1; CODE_SIGN_STYLE = Automatic; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; ENABLE_PREVIEWS = YES; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release; };
-8A7B4673EE7E4581B91FBC4C = {isa = XCConfigurationList; buildConfigurations = (39FC68D9BFCBF6ABD18D37E3,77B89AD0826472B9F432A982); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
-0E8A3AD980EC179856012B7E = {isa = PBXNativeTarget; buildConfigurationList = 8A7B4673EE7E4581B91FBC4C; buildPhases = (BCE16DD0260827ECF338C787,7561BFB015D8F536760CB671,0189424A5A60FED329FA868E); buildRules = (); dependencies = (); name = Dopafit; productName = Dopafit; productReference = 38A007151ABE87CC01A5B6E9; productType = "com.apple.product-type.application"; };
-98F54143AB4E86B28C3AFEE0 = {isa = PBXProject; attributes = {LastUpgradeCheck = 2700;}; buildConfigurationList = 7C89CD62163FD7E2E1465297; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; knownRegions = (en,vi,Base); mainGroup = B28B7AF69320201D1CF206EB; productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E); };
-}; rootObject = 98F54143AB4E86B28C3AFEE0;}
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C02BA11CA490D0C3B9B3616 /* HomeCheckinViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B0029CCA2164F06F6365B3 /* HomeCheckinViews.swift */; };
+		0E82DBB9AA15037B7895F1C6 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFC85AB89462BC2D13BE166 /* Design.swift */; };
+		111B55C485AB1ED30064F300 /* SavedSetEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEB1DE640F22F52440257A0 /* SavedSetEditor.swift */; };
+		11A296DD559D076D023BE030 /* WorkoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C44555BD3D49D897FA3177 /* WorkoutViews.swift */; };
+		1911E7D2316FC71AF9B67C7C /* WorkoutDiscoveryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E827A42B837E24D9E93D4D0 /* WorkoutDiscoveryViews.swift */; };
+		2217CB57532455E804C230EB /* ExerciseSetupTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B358285B443DA0EFBFD776 /* ExerciseSetupTips.swift */; };
+		222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B04B2273026590A440D27C9 /* Assets.xcassets */; };
+		22A280F177701C86C145D7A8 /* DopafitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFC99F520658FC9593D3D3B /* DopafitApp.swift */; };
+		2D9EAB585001045B1340E3C0 /* MuscleBody3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EBFA54421CD1F29ED703FF /* MuscleBody3D.swift */; };
+		321CE85A255E886A67189ED6 /* ExerciseLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BD3B24462EE975CC5A3A7 /* ExerciseLibrary.swift */; };
+		38ACAD9AFD02ACD80A611B83 /* OpenGymAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C499E284B8542A77A8FD2428 /* OpenGymAnimationView.swift */; };
+		461209F5E045B3FF08710BDD /* SavedDurationEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557EF6218B091416934B3038 /* SavedDurationEditor.swift */; };
+		49F88F970CC67726A378A8A9 /* WorkoutProgramModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889FC6C3F0F2E6B4DAC8522 /* WorkoutProgramModels.swift */; };
+		4BCC792FD0F4B461253C0837 /* BodyAndGoalsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAB06DC306F695FA08A42FD /* BodyAndGoalsViews.swift */; };
+		5CF989A2968D4A1E0F1C8701 /* SetupOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116422A4A524AED97594B8A4 /* SetupOnboardingView.swift */; };
+		61A1238D8BD561E588687634 /* ExerciseGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFC6E01B0A663B8B1729A32 /* ExerciseGuide.swift */; };
+		66053C5CD3A5980514A913C2 /* ExerciseLoopVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5622FBA58AE515377F1BD861 /* ExerciseLoopVideo.swift */; };
+		71A05536C72620A0859EE598 /* DailyCheckinModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95A5EE4676E2F42FCAC5E1 /* DailyCheckinModels.swift */; };
+		73B763495A75F4BC45E3225D /* PostSetupFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB57C75A8DDD00E36F3AB1E /* PostSetupFlow.swift */; };
+		847156A937AEAD783D918287 /* SettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33115AC021DF097397B1AF65 /* SettingsViews.swift */; };
+		98189D11A8034F82BB78B4D6 /* ProgressViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE6302C44AB9134E9CDF391 /* ProgressViews.swift */; };
+		9D5EB286515F20ACCD5E2051 /* BodyShapes in Resources */ = {isa = PBXBuildFile; fileRef = 8882E18CED1FC72AB7606E1C /* BodyShapes */; };
+		B0E608CB270CFFEB42FBF63B /* ExerciseDBMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92A46B77228409D337CC1DB /* ExerciseDBMedia.swift */; };
+		B272D38A3900596941B6779A /* Form3D in Resources */ = {isa = PBXBuildFile; fileRef = E257808908FED967C19C9EB9 /* Form3D */; };
+		BF2155FB8AAE8879971B6C36 /* ExerciseLibraryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23764EC8FB34F4BE1E88AE5B /* ExerciseLibraryFilter.swift */; };
+		C28E3B592A560C32484F497E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0C8FAFE1B09544C5912233 /* Models.swift */; };
+		D3AB5DE64B677639C2BAFDEF /* ExerciseMedia in Resources */ = {isa = PBXBuildFile; fileRef = F529AB2141064E664D8563FC /* ExerciseMedia */; };
+		DF958E3559419D1E83756435 /* OpenGymBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291A3F1FCF84690F79C882B5 /* OpenGymBody.swift */; };
+		EDA59EBE428A46C4C6D7F253 /* MetricDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C8995FCA3A7C2A88D42494 /* MetricDetailView.swift */; };
+		EE889E69E94AF6444BD44845 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29620B927AEC396B51ACC99 /* OnboardingView.swift */; };
+		F39D889D8481EA92F0913DD8 /* WorkoutDiscoveryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662326E093ABBB4284936320 /* WorkoutDiscoveryModels.swift */; };
+		FA50F1822A68C955D45D615F /* WorkoutProgramViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3670BAB2B720B5BB8AD0340 /* WorkoutProgramViews.swift */; };
+		FC0A0BDBC0387026D4FF7238 /* OpenGym3D in Resources */ = {isa = PBXBuildFile; fileRef = ED9EF3DA002EFDF7708FB458 /* OpenGym3D */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0889FC6C3F0F2E6B4DAC8522 /* WorkoutProgramModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgramModels.swift; sourceTree = "<group>"; };
+		116422A4A524AED97594B8A4 /* SetupOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupOnboardingView.swift; sourceTree = "<group>"; };
+		1B0C8FAFE1B09544C5912233 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		23764EC8FB34F4BE1E88AE5B /* ExerciseLibraryFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibraryFilter.swift; sourceTree = "<group>"; };
+		291A3F1FCF84690F79C882B5 /* OpenGymBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGymBody.swift; sourceTree = "<group>"; };
+		2DE6302C44AB9134E9CDF391 /* ProgressViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViews.swift; sourceTree = "<group>"; };
+		33115AC021DF097397B1AF65 /* SettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViews.swift; sourceTree = "<group>"; };
+		38A007151ABE87CC01A5B6E9 /* Dopafit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Dopafit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48EBFA54421CD1F29ED703FF /* MuscleBody3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleBody3D.swift; sourceTree = "<group>"; };
+		50B0029CCA2164F06F6365B3 /* HomeCheckinViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCheckinViews.swift; sourceTree = "<group>"; };
+		557EF6218B091416934B3038 /* SavedDurationEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDurationEditor.swift; sourceTree = "<group>"; };
+		5622FBA58AE515377F1BD861 /* ExerciseLoopVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLoopVideo.swift; sourceTree = "<group>"; };
+		5B04B2273026590A440D27C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		662326E093ABBB4284936320 /* WorkoutDiscoveryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDiscoveryModels.swift; sourceTree = "<group>"; };
+		74C8995FCA3A7C2A88D42494 /* MetricDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricDetailView.swift; sourceTree = "<group>"; };
+		7BFC85AB89462BC2D13BE166 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		8882E18CED1FC72AB7606E1C /* BodyShapes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BodyShapes; sourceTree = "<group>"; };
+		8AFC99F520658FC9593D3D3B /* DopafitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopafitApp.swift; sourceTree = "<group>"; };
+		8E827A42B837E24D9E93D4D0 /* WorkoutDiscoveryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDiscoveryViews.swift; sourceTree = "<group>"; };
+		944BD3B24462EE975CC5A3A7 /* ExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibrary.swift; sourceTree = "<group>"; };
+		A3670BAB2B720B5BB8AD0340 /* WorkoutProgramViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgramViews.swift; sourceTree = "<group>"; };
+		A9B358285B443DA0EFBFD776 /* ExerciseSetupTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSetupTips.swift; sourceTree = "<group>"; };
+		AD95A5EE4676E2F42FCAC5E1 /* DailyCheckinModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckinModels.swift; sourceTree = "<group>"; };
+		AFFC6E01B0A663B8B1729A32 /* ExerciseGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseGuide.swift; sourceTree = "<group>"; };
+		C29620B927AEC396B51ACC99 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C499E284B8542A77A8FD2428 /* OpenGymAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGymAnimationView.swift; sourceTree = "<group>"; };
+		CAEB1DE640F22F52440257A0 /* SavedSetEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSetEditor.swift; sourceTree = "<group>"; };
+		CCB57C75A8DDD00E36F3AB1E /* PostSetupFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSetupFlow.swift; sourceTree = "<group>"; };
+		E257808908FED967C19C9EB9 /* Form3D */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Form3D; sourceTree = "<group>"; };
+		E92A46B77228409D337CC1DB /* ExerciseDBMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDBMedia.swift; sourceTree = "<group>"; };
+		ED9EF3DA002EFDF7708FB458 /* OpenGym3D */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenGym3D; sourceTree = "<group>"; };
+		F0C44555BD3D49D897FA3177 /* WorkoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViews.swift; sourceTree = "<group>"; };
+		F529AB2141064E664D8563FC /* ExerciseMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ExerciseMedia; sourceTree = "<group>"; };
+		FAAB06DC306F695FA08A42FD /* BodyAndGoalsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyAndGoalsViews.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7561BFB015D8F536760CB671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B28B7AF69320201D1CF206EB = {
+			isa = PBXGroup;
+			children = (
+				F27FEDE2220BCD326AEE3E86 /* DopafitRebuild */,
+				FBDC4F23F93125BBEEAE800C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F27FEDE2220BCD326AEE3E86 /* DopafitRebuild */ = {
+			isa = PBXGroup;
+			children = (
+				FAAB06DC306F695FA08A42FD /* BodyAndGoalsViews.swift */,
+				AD95A5EE4676E2F42FCAC5E1 /* DailyCheckinModels.swift */,
+				7BFC85AB89462BC2D13BE166 /* Design.swift */,
+				8AFC99F520658FC9593D3D3B /* DopafitApp.swift */,
+				E92A46B77228409D337CC1DB /* ExerciseDBMedia.swift */,
+				AFFC6E01B0A663B8B1729A32 /* ExerciseGuide.swift */,
+				944BD3B24462EE975CC5A3A7 /* ExerciseLibrary.swift */,
+				23764EC8FB34F4BE1E88AE5B /* ExerciseLibraryFilter.swift */,
+				5622FBA58AE515377F1BD861 /* ExerciseLoopVideo.swift */,
+				A9B358285B443DA0EFBFD776 /* ExerciseSetupTips.swift */,
+				50B0029CCA2164F06F6365B3 /* HomeCheckinViews.swift */,
+				74C8995FCA3A7C2A88D42494 /* MetricDetailView.swift */,
+				1B0C8FAFE1B09544C5912233 /* Models.swift */,
+				48EBFA54421CD1F29ED703FF /* MuscleBody3D.swift */,
+				C29620B927AEC396B51ACC99 /* OnboardingView.swift */,
+				C499E284B8542A77A8FD2428 /* OpenGymAnimationView.swift */,
+				291A3F1FCF84690F79C882B5 /* OpenGymBody.swift */,
+				CCB57C75A8DDD00E36F3AB1E /* PostSetupFlow.swift */,
+				2DE6302C44AB9134E9CDF391 /* ProgressViews.swift */,
+				557EF6218B091416934B3038 /* SavedDurationEditor.swift */,
+				CAEB1DE640F22F52440257A0 /* SavedSetEditor.swift */,
+				33115AC021DF097397B1AF65 /* SettingsViews.swift */,
+				116422A4A524AED97594B8A4 /* SetupOnboardingView.swift */,
+				662326E093ABBB4284936320 /* WorkoutDiscoveryModels.swift */,
+				8E827A42B837E24D9E93D4D0 /* WorkoutDiscoveryViews.swift */,
+				0889FC6C3F0F2E6B4DAC8522 /* WorkoutProgramModels.swift */,
+				A3670BAB2B720B5BB8AD0340 /* WorkoutProgramViews.swift */,
+				F0C44555BD3D49D897FA3177 /* WorkoutViews.swift */,
+				5B04B2273026590A440D27C9 /* Assets.xcassets */,
+				ED9EF3DA002EFDF7708FB458 /* OpenGym3D */,
+				E257808908FED967C19C9EB9 /* Form3D */,
+				F529AB2141064E664D8563FC /* ExerciseMedia */,
+				8882E18CED1FC72AB7606E1C /* BodyShapes */,
+			);
+			path = DopafitRebuild;
+			sourceTree = "<group>";
+		};
+		FBDC4F23F93125BBEEAE800C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38A007151ABE87CC01A5B6E9 /* Dopafit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E8A3AD980EC179856012B7E /* Dopafit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7B4673EE7E4581B91FBC4C /* Build configuration list for PBXNativeTarget "Dopafit" */;
+			buildPhases = (
+				BCE16DD0260827ECF338C787 /* Sources */,
+				7561BFB015D8F536760CB671 /* Frameworks */,
+				0189424A5A60FED329FA868E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dopafit;
+			productName = Dopafit;
+			productReference = 38A007151ABE87CC01A5B6E9 /* Dopafit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2730;
+			};
+			buildConfigurationList = 7C89CD62163FD7E2E1465297 /* Build configuration list for PBXProject "Dopafit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				vi,
+				Base,
+			);
+			mainGroup = B28B7AF69320201D1CF206EB;
+			productRefGroup = FBDC4F23F93125BBEEAE800C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E8A3AD980EC179856012B7E /* Dopafit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0189424A5A60FED329FA868E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222F0DBFFE5EB23DCD3FD16F /* Assets.xcassets in Resources */,
+				FC0A0BDBC0387026D4FF7238 /* OpenGym3D in Resources */,
+				B272D38A3900596941B6779A /* Form3D in Resources */,
+				D3AB5DE64B677639C2BAFDEF /* ExerciseMedia in Resources */,
+				9D5EB286515F20ACCD5E2051 /* BodyShapes in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCE16DD0260827ECF338C787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCC792FD0F4B461253C0837 /* BodyAndGoalsViews.swift in Sources */,
+				71A05536C72620A0859EE598 /* DailyCheckinModels.swift in Sources */,
+				0E82DBB9AA15037B7895F1C6 /* Design.swift in Sources */,
+				22A280F177701C86C145D7A8 /* DopafitApp.swift in Sources */,
+				B0E608CB270CFFEB42FBF63B /* ExerciseDBMedia.swift in Sources */,
+				61A1238D8BD561E588687634 /* ExerciseGuide.swift in Sources */,
+				321CE85A255E886A67189ED6 /* ExerciseLibrary.swift in Sources */,
+				BF2155FB8AAE8879971B6C36 /* ExerciseLibraryFilter.swift in Sources */,
+				66053C5CD3A5980514A913C2 /* ExerciseLoopVideo.swift in Sources */,
+				2217CB57532455E804C230EB /* ExerciseSetupTips.swift in Sources */,
+				0C02BA11CA490D0C3B9B3616 /* HomeCheckinViews.swift in Sources */,
+				EDA59EBE428A46C4C6D7F253 /* MetricDetailView.swift in Sources */,
+				C28E3B592A560C32484F497E /* Models.swift in Sources */,
+				2D9EAB585001045B1340E3C0 /* MuscleBody3D.swift in Sources */,
+				EE889E69E94AF6444BD44845 /* OnboardingView.swift in Sources */,
+				38ACAD9AFD02ACD80A611B83 /* OpenGymAnimationView.swift in Sources */,
+				DF958E3559419D1E83756435 /* OpenGymBody.swift in Sources */,
+				73B763495A75F4BC45E3225D /* PostSetupFlow.swift in Sources */,
+				98189D11A8034F82BB78B4D6 /* ProgressViews.swift in Sources */,
+				461209F5E045B3FF08710BDD /* SavedDurationEditor.swift in Sources */,
+				111B55C485AB1ED30064F300 /* SavedSetEditor.swift in Sources */,
+				847156A937AEAD783D918287 /* SettingsViews.swift in Sources */,
+				5CF989A2968D4A1E0F1C8701 /* SetupOnboardingView.swift in Sources */,
+				F39D889D8481EA92F0913DD8 /* WorkoutDiscoveryModels.swift in Sources */,
+				1911E7D2316FC71AF9B67C7C /* WorkoutDiscoveryViews.swift in Sources */,
+				49F88F970CC67726A378A8A9 /* WorkoutProgramModels.swift in Sources */,
+				FA50F1822A68C955D45D615F /* WorkoutProgramViews.swift in Sources */,
+				11A296DD559D076D023BE030 /* WorkoutViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		35A20ECBF919CB3B6B068418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		39FC68D9BFCBF6ABD18D37E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DopafitRebuild/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.dopafit.rebuild;
+				PRODUCT_NAME = Dopafit;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		42917DDFF83DA28196DB8C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		77B89AD0826472B9F432A982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DopafitRebuild/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.dopafit.rebuild;
+				PRODUCT_NAME = Dopafit;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C89CD62163FD7E2E1465297 /* Build configuration list for PBXProject "Dopafit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A20ECBF919CB3B6B068418 /* Debug */,
+				42917DDFF83DA28196DB8C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A7B4673EE7E4581B91FBC4C /* Build configuration list for PBXNativeTarget "Dopafit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FC68D9BFCBF6ABD18D37E3 /* Debug */,
+				77B89AD0826472B9F432A982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}

@@ -1,0 +1,31 @@
+{
+ "vertexCount": 58180,
+ "indexCount": 321072,
+ "height": 1.8191305386828598,
+ "texture": 2048,
+ "scale": 1137.0,
+ "frontCenter": 512.0,
+ "backCenter": 1536.0,
+ "baseline": 2019.0,
+ "layout": "float32 position[v*3], float32 normal[v*3], float32 uv[v*2], uint32 index[i]",
+ "source": "Thân: MakeHuman CC0 (Form3D/neutral.glb). Hình cơ: react-native-body-highlighter 3.2.0, MIT.",
+ "ids": [
+  "chest",
+  "obliques",
+  "abs",
+  "biceps",
+  "triceps",
+  "neck",
+  "trapezius",
+  "deltoids",
+  "adductors",
+  "quadriceps",
+  "tibialis",
+  "calves",
+  "forearm",
+  "upper-back",
+  "lower-back",
+  "gluteal",
+  "hamstring"
+ ]
+}

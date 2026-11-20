@@ -2,7 +2,7 @@ from pathlib import Path
 import hashlib
 def uid(s):return hashlib.sha1(s.encode()).hexdigest()[:24].upper()
 files=sorted(Path('DopafitRebuild').glob('*.swift'))
-resources=['Assets.xcassets','OpenGym3D','Form3D','ExerciseMedia']
+resources=['Assets.xcassets','OpenGym3D','Form3D','ExerciseMedia','BodyShapes']
 objects={}
 def add(key,body):objects[uid(key)]=body;return uid(key)
 refs=[]

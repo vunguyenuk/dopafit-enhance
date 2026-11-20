@@ -8,32 +8,57 @@ struct JournalView:View {
     @State private var add=false
     @State private var durationSession:WorkoutSession?=nil
     @State private var removeSession:WorkoutSession?=nil
+    @State private var renaming=false
+    @State private var nameDraft=""
+    var profileName:String? {let n=store.data.plan.displayName?.trimmingCharacters(in:.whitespacesAndNewlines) ?? "";return n.isEmpty ? nil:n}
     var shown:[WorkoutSession] {store.data.history.filter{session in if let selectedDay{return Calendar.current.isDate(session.started,inSameDayAs:selectedDay)};return Calendar.current.isDate(session.started,equalTo:month,toGranularity:.month)}}
     var body:some View {
         ScrollView {
             VStack(alignment:.leading,spacing:24) {
-                HStack {Spacer();Text(store.t("Nhật ký","Log")).font(.dopa(size:21,weight:.semibold));Spacer();NavigationLink{SettingsView()}label:{Image(systemName:"gearshape").font(.dopa(size:24)).foregroundStyle(Dopa.lime).frame(width:44,height:44).background(Dopa.raised).clipShape(Circle())}.accessibilityLabel(store.t("Cài đặt","Settings"))}
-                HStack {stat("SỐ BUỔI TẬP","\(store.data.history.count)");stat("CỘT MỐC","⬡  ⬡  ⬡")}
+                HStack {
+                    Color.clear.frame(width:44,height:44)
+                    Spacer(minLength:4)
+                    // Giống app gốc: ảnh đại diện + tên ở giữa. Bấm để đặt tên (bản gốc lấy tên từ tài khoản).
+                    Button{nameDraft=profileName ?? "";renaming=true}label:{HStack(spacing:10){ProfileAvatar(name:profileName,size:34);Text(profileName ?? store.t("Nhật ký","Log")).font(.dopa(size:18,weight:.semibold)).lineLimit(1)}}.buttonStyle(.plain).accessibilityLabel(store.t("Hồ sơ","Profile")+(profileName.map{": "+$0} ?? "")).accessibilityHint(store.t("Đổi tên hiển thị","Change display name"))
+                    Spacer(minLength:4)
+                    NavigationLink{SettingsView()}label:{Image(systemName:"gearshape").font(.dopa(size:24)).foregroundStyle(Dopa.lime).frame(width:44,height:44).background(Dopa.raised).clipShape(Circle())}.accessibilityLabel(store.t("Cài đặt","Settings"))}
+                HStack {
+                    stat("SỐ BUỔI TẬP","\(store.data.history.count)")
+                    NavigationLink{MilestonesView()}label:{
+                        VStack(spacing:8){Text("CỘT MỐC").font(.dopa(size:11,weight:.semibold)).tracking(1).foregroundStyle(Dopa.muted);HStack(spacing:6){ForEach(Milestone.all(store)){m in MilestoneBadge(milestone:m,size:30)}}}.frame(maxWidth:.infinity).padding(.vertical,4)
+                    }.buttonStyle(.plain).accessibilityLabel(store.t("Cột mốc","Milestones"))
+                }
                 HStack {stat("MỤC TIÊU TUẦN","\(store.weekDays)/\(store.data.plan.days) ngày");stat("CHUỖI HIỆN TẠI",store.weekDays>=store.data.plan.days ? "1 tuần":"0 tuần")}
                 HStack {Text("Lịch tập").dopaSection();Spacer();Button{withAnimation(.easeInOut(duration:0.2)){calendarExpanded.toggle()}}label:{HStack(spacing:5){Text("Tháng \(Calendar.current.component(.month,from:month))");Image(systemName:calendarExpanded ? "chevron.up":"chevron.down").font(.caption)}}.foregroundStyle(Dopa.lime).accessibilityLabel(calendarExpanded ? "Thu gọn lịch tháng":"Mở rộng lịch tháng")}
                 calendarWeek
                 HStack {Text("Các buổi đã tập").dopaSection();Spacer();Button{add=true}label:{Image(systemName:"plus").font(.title2).foregroundStyle(Dopa.lime)}}
                 if shown.isEmpty {InfoCard(title:"Chưa có buổi tập",text:"Buổi tập bạn ghi sẽ xuất hiện ở đây.",icon:"calendar")}
                 ForEach(shown){session in
+                    // Dòng thời gian như app gốc: hình nhóm cơ chính có vòng màu + đường nối, ngày ghi phía trên thẻ.
+                    HStack(alignment:.top,spacing:12) {
+                        VStack(spacing:6){SessionMuscleBadge(session:session,size:46);Rectangle().fill(Dopa.stroke).frame(width:2).frame(maxHeight:.infinity)}.frame(width:46)
+                        VStack(alignment:.leading,spacing:10) {
+                            HStack {Text(SessionDates.timeline(session.started,english:store.english)).font(.dopa(size:13,weight:.semibold)).tracking(0.6).foregroundStyle(Dopa.muted);Spacer();Label(SessionDates.shortClock(session.duration),systemImage:"timer").font(.dopa(size:15,weight:.medium)).foregroundStyle(.white)}.padding(.top,4)
                     ZStack(alignment:.topTrailing) {
-                        NavigationLink {SessionDetailView(sessionID:session.id)}label:{SessionCard(session:session)}.buttonStyle(.plain)
+                        NavigationLink {SessionDetailView(sessionID:session.id)}label:{SessionCard(session:session,showsHeader:false)}.buttonStyle(.plain)
                         Menu {
                             Button("Lưu thành buổi tập mới"){store.data.saved.append(SavedWorkout(name:session.name,exercises:session.exercises));store.persist();store.toast="Đã lưu buổi tập"}
                             Button("Sửa thời lượng buổi tập"){durationSession=session}
                             Button("Xóa buổi tập",role:.destructive){removeSession=session}
-                        }label:{Image(systemName:"ellipsis").foregroundStyle(Dopa.muted).frame(width:44,height:44)}.accessibilityLabel("Tùy chọn buổi đã lưu").padding(.top,36).padding(.trailing,8)
+                        }label:{Image(systemName:"ellipsis").foregroundStyle(Dopa.muted).frame(width:44,height:44)}.accessibilityLabel("Tùy chọn buổi đã lưu").padding(.top,6).padding(.trailing,6)
                     }
+                        }
+                    }.fixedSize(horizontal:false,vertical:true)
                 }
             }.padding(.horizontal,16).padding(.top,10).padding(.bottom,30)
         }.sheet(item:$durationSession){SavedDurationEditor(sessionID:$0.id)}
         .alert("Xóa buổi tập?",isPresented:Binding(get:{removeSession != nil},set:{if !$0{removeSession=nil}})){
             Button("Xóa",role:.destructive){if let id=removeSession?.id{store.data.history.removeAll{$0.id==id};store.persist()};removeSession=nil}
             Button("Huỷ",role:.cancel){removeSession=nil}
+        }.alert(store.t("Tên hiển thị","Display name"),isPresented:$renaming){
+            TextField(store.t("Tên của bạn","Your name"),text:$nameDraft)
+            Button(store.t("Lưu","Save")){let n=nameDraft.trimmingCharacters(in:.whitespacesAndNewlines);store.data.plan.displayName=n.isEmpty ? nil:n;store.persist()}
+            Button(store.t("Huỷ","Cancel"),role:.cancel){}
         }.sheet(isPresented:$add){
             VStack(spacing:24){SheetTitle(title:"Thêm buổi tập");Text("Tạo một buổi để ghi lại bài và các set bạn đã tập.").foregroundStyle(Dopa.muted).padding();DopaButton(title:"Tạo buổi tập"){store.makeDraft();add=false;store.start()}.padding(20)}.dopaSheet().presentationDetents([.medium]).background(Dopa.background)
         }
@@ -59,9 +84,11 @@ struct JournalView:View {
                     let inMonth=cal.isDate(day,equalTo:month,toGranularity:.month)
                     Button{if !sessions.isEmpty{selectedDay=(selectedDay.map{cal.isDate($0,inSameDayAs:day)} ?? false) ? nil:day}}label:{
                         VStack(spacing:5) {
-                            Text("\(cal.component(.day,from:day))").font(.dopa(size:19,weight:.semibold)).foregroundStyle(!sessions.isEmpty ? .black:(future || !inMonth ? Dopa.muted.opacity(0.45):.white)).frame(width:36,height:36).background(sessions.isEmpty ? .clear:Dopa.lime).clipShape(Circle()).overlay(Circle().stroke(today ? Dopa.lime:.clear,lineWidth:2))
+                            // Như app gốc: ngày đã tập tô màu nhóm cơ chính của buổi (kéo đỏ, đẩy vàng, chân xanh ngọc) + viền cùng màu.
+                            let tint=sessions.first?.groupColor ?? Dopa.lime
+                            Text("\(cal.component(.day,from:day))").font(.dopa(size:19,weight:.semibold)).foregroundStyle(future || !inMonth ? Dopa.muted.opacity(0.45):.white).frame(width:40,height:40).background(sessions.isEmpty ? .clear:tint.opacity(0.32)).clipShape(Circle()).overlay(Circle().stroke(today ? Dopa.lime:(sessions.isEmpty ? .clear:tint),lineWidth:2))
                             Text(sessions.isEmpty ? " ":"\(Int(sessions.reduce(0){$0+$1.duration}/60))p").font(.dopa(size:10)).foregroundStyle(Dopa.muted)
-                        }.frame(maxWidth:.infinity).frame(height:52)
+                        }.frame(maxWidth:.infinity).frame(height:60)
                     }.buttonStyle(.plain).allowsHitTesting(!sessions.isEmpty).accessibilityLabel(day.formatted(date:.complete,time:.omitted)+(sessions.isEmpty ? "":" · \(sessions.count) buổi tập"))
                 }
             }
@@ -71,6 +98,8 @@ struct JournalView:View {
 struct SessionCard:View {
     @EnvironmentObject var store:AppStore
     var session:WorkoutSession
+    /// Nhật ký đã ghi ngày/thời lượng phía trên thẻ nên tắt dòng này.
+    var showsHeader=true
     private var dayLabel:String {
         let formatter=DateFormatter();formatter.locale=Locale(identifier:store.english ? "en_US":"vi_VN")
         formatter.dateFormat=store.english ? "MMM d, yyyy":"d 'tháng' M, yyyy"
@@ -78,11 +107,13 @@ struct SessionCard:View {
     }
     var body:some View {
         VStack(alignment:.leading,spacing:16) {
-            HStack {Text(dayLabel).font(.dopa(size:12,weight:.semibold)).foregroundStyle(Dopa.muted);Spacer();Label(session.duration.clock,systemImage:"timer").font(.dopa(size:14)).foregroundStyle(Dopa.muted)}
-            Text(session.name).font(.dopa(size:22,weight:.semibold))
+            if showsHeader {HStack {Text(dayLabel).font(.dopa(size:12,weight:.semibold)).foregroundStyle(Dopa.muted);Spacer();Label(session.duration.clock,systemImage:"timer").font(.dopa(size:14)).foregroundStyle(Dopa.muted)}}
+            Text(session.name).font(.dopa(size:22,weight:.semibold)).padding(.trailing,showsHeader ? 0:36)
             HStack(spacing:16){Label("\(session.completedExercises.count)",systemImage:"dumbbell.fill");Label("\(store.weight(session.volume)) \(store.unit)",systemImage:"scalemass.fill");Label("\(session.calories) kcal",systemImage:"flame.fill")}.font(.dopa(size:15,weight:.semibold))
             Text(session.completedExercises.map{$0.exercise.name}.joined(separator:" · ")).font(.dopa(size:14)).foregroundStyle(Dopa.muted).lineLimit(2)
-        }.padding(18).frame(maxWidth:.infinity,alignment:.leading).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14))
+        }.padding(18).frame(maxWidth:.infinity,alignment:.leading)
+        .background(ZStack{Dopa.card;LinearGradient(colors:[session.groupColor.opacity(0.20),.clear],startPoint:.bottomLeading,endPoint:.topTrailing)})
+        .clipShape(RoundedRectangle(cornerRadius:14))
     }
 }
 struct SessionDetailView:View {
@@ -99,14 +130,21 @@ struct SessionDetailView:View {
     var session:WorkoutSession? {store.data.history.first{$0.id==sessionID}}
     var body:some View {
         VStack(spacing:0){
-            ScreenHeader(title:session?.started.formatted(date:.abbreviated,time:.shortened) ?? "Buổi tập",back:{dismiss()})
+            HStack {
+                CircleButton(icon:"chevron.left"){dismiss()}.accessibilityLabel(store.t("Quay lại","Back"))
+                Spacer(minLength:4)
+                Text(session.map{SessionDates.detail($0.started,english:store.english)} ?? "Buổi tập").font(.dopa(size:17,weight:.semibold)).lineLimit(1)
+                Spacer(minLength:4)
+                Menu {Button("Sửa thời lượng buổi tập"){duration=true};Button("Lưu thành buổi tập mới"){if let s=session{store.data.saved.append(SavedWorkout(name:s.name,exercises:s.exercises));store.persist();store.toast="Đã lưu buổi tập"}};Button("Xóa buổi tập",role:.destructive){remove=true}}label:{Image(systemName:"ellipsis").font(.dopa(size:20,weight:.bold)).foregroundStyle(Dopa.lime).frame(width:44,height:44).background(Dopa.raised).clipShape(Circle())}.accessibilityLabel("Tùy chọn buổi tập")
+            }.padding(.horizontal,16).padding(.vertical,10)
             if let s=session {
                 ScrollView {
                     VStack(alignment:.leading,spacing:24) {
-                        Text(s.name).dopaTitle(28).frame(maxWidth:.infinity).padding(.top,24)
-                        Text(s.duration.clock).font(.dopa(size:18)).foregroundStyle(Dopa.muted).frame(maxWidth:.infinity)
+                        SessionMuscleBadge(session:s,size:44,ring:false)
+                        Text(s.name).dopaTitle(28).frame(maxWidth:.infinity).padding(.top,-8)
+                        Label(SessionDates.longClock(s.duration),systemImage:"clock").font(.dopa(size:16,weight:.semibold)).foregroundStyle(Dopa.muted).frame(maxWidth:.infinity)
                         HStack {summary("NĂNG LƯỢNG","\(s.calories) kcal");summary("TỔNG KHỐI LƯỢNG","\(store.weight(s.volume)) \(store.unit)")}
-                        HStack{Text("\(s.completedExercises.count) bài tập").dopaTitle(25);Spacer();Button{add=true}label:{Image(systemName:"plus").font(.title2).foregroundStyle(Dopa.lime).frame(width:44,height:44)}.accessibilityLabel("Thêm bài vào buổi đã lưu");Menu {Button("Sửa thời lượng buổi tập"){duration=true};Button("Lưu thành buổi tập mới"){store.data.saved.append(SavedWorkout(name:s.name,exercises:s.exercises));store.persist();store.toast="Đã lưu buổi tập"};Button("Xóa buổi tập",role:.destructive){remove=true}}label:{Image(systemName:"ellipsis").font(.title2).foregroundStyle(Dopa.lime)}}
+                        HStack{Text("\(s.completedExercises.count) bài tập").dopaTitle(25);Spacer();Button{add=true}label:{Image(systemName:"plus").font(.title2).foregroundStyle(Dopa.lime).frame(width:44,height:44)}.accessibilityLabel("Thêm bài vào buổi đã lưu")}
                         ForEach(s.exercises){ex in SavedExerciseRow(sessionID:s.id,item:ex,onNavigate:{route in if route=="history"{historyExercise=ex.exercise}else{guideExercise=ex.exercise}}) }
                     }.padding(20)
                 }
@@ -316,5 +354,188 @@ struct WorkoutReportView:View {
                 }
             }.padding(20)
         }.background(Dopa.background)
+    }
+}
+
+// MARK: - Nhật ký giống app gốc (17/11/2026): hồ sơ, cột mốc, dòng thời gian buổi tập
+
+/// Màu nhóm cơ dùng chung với tab Mục tiêu: đẩy vàng, kéo đỏ, chân xanh ngọc; còn lại lime.
+enum MuscleGroupColor {
+    static func of(_ muscle:String)->Color {
+        switch muscle {
+        case "Ngực","Vai","Tay sau": return Dopa.push
+        case "Lưng","Tay trước","Cơ thang","Lưng dưới": return Dopa.pull
+        case "Đùi trước","Đùi sau","Mông","Bắp chân": return Dopa.legs
+        default: return Dopa.lime
+        }
+    }
+}
+
+extension WorkoutSession {
+    /// Điểm nhóm cơ theo số set đã làm: cơ chính 1, cơ phụ 0,5 (cùng cách tính với Mục tiêu set).
+    private var muscleScores:[String:Double] {
+        var scores:[String:Double]=[:]
+        let source=completedExercises.isEmpty ? exercises:completedExercises
+        for ex in source {
+            let sets=Double(max(ex.doneCount,completedExercises.isEmpty ? 1:0))
+            for m in ex.exercise.muscles {scores[m,default:0]+=sets}
+            for m in ex.exercise.secondary {scores[m,default:0]+=sets*0.5}
+        }
+        return scores
+    }
+    var dominantMuscle:String? {muscleScores.max{a,b in a.value==b.value ? a.key>b.key:a.value<b.value}?.key}
+    var supportingMuscles:[String] {let top=dominantMuscle;return muscleScores.filter{$0.key != top && $0.value>0}.map(\.key)}
+    var groupColor:Color {dominantMuscle.map(MuscleGroupColor.of) ?? Dopa.lime}
+}
+
+struct SessionMuscleBadge:View {
+    var session:WorkoutSession
+    var size:CGFloat=46
+    var ring=true
+    var body:some View {
+        let color=session.groupColor
+        Group {
+            if let muscle=session.dominantMuscle {
+                MuscleGlyph(muscle:muscle,secondary:session.supportingMuscles,tint:color).padding(size*0.08)
+            } else {Image(systemName:"dumbbell.fill").font(.system(size:size*0.36)).foregroundStyle(Dopa.muted)}
+        }
+        .frame(width:ring ? size-8:size,height:ring ? size-8:size)
+        .background(Color(white:0.13)).clipShape(RoundedRectangle(cornerRadius:ring ? (size-8)/2:9))
+        .frame(width:size,height:size)
+        .overlay{if ring {Circle().stroke(color,lineWidth:2.5)}}
+        .accessibilityLabel(session.dominantMuscle.map{"Nhóm cơ chính: \($0)"} ?? "Buổi tập")
+    }
+}
+
+struct ProfileAvatar:View {
+    var name:String?
+    var size:CGFloat=34
+    var initials:String {
+        guard let name else {return ""}
+        let parts=name.split(separator:" ").suffix(2)
+        return parts.compactMap{$0.first.map(String.init)}.joined().uppercased()
+    }
+    var body:some View {
+        ZStack {
+            Circle().fill(Dopa.raised)
+            if initials.isEmpty {Image(systemName:"person.fill").font(.system(size:size*0.48)).foregroundStyle(Dopa.muted)}
+            else {Text(initials).font(.dopa(size:size*0.4,weight:.semibold)).foregroundStyle(Dopa.lime)}
+        }.frame(width:size,height:size).overlay(Circle().stroke(Dopa.stroke,lineWidth:1)).accessibilityHidden(true)
+    }
+}
+
+enum SessionDates {
+    private static func weekday(_ date:Date,english:Bool)->String {
+        let w=Calendar.current.component(.weekday,from:date)
+        return english ? ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][w-1] : (w==1 ? "CN":"Thứ \(w)")
+    }
+    /// "THỨ 2, 9 THÁNG 11" — nhãn trên thẻ trong dòng thời gian.
+    static func timeline(_ date:Date,english:Bool)->String {
+        let c=Calendar.current.dateComponents([.day,.month],from:date)
+        if english {let f=DateFormatter();f.locale=Locale(identifier:"en_US");f.dateFormat="MMM d";return "\(weekday(date,english:true)), \(f.string(from:date))".uppercased()}
+        return "\(weekday(date,english:false)), \(c.day!) tháng \(c.month!)".uppercased()
+    }
+    /// "Thứ 2, 9 thg 11, 16:44" — tiêu đề màn chi tiết.
+    static func detail(_ date:Date,english:Bool)->String {
+        let f=DateFormatter();f.locale=Locale(identifier:english ? "en_US":"vi_VN")
+        f.dateFormat=english ? "MMM d, h:mm a":"d 'thg' M, HH:mm"
+        return "\(weekday(date,english:english)), \(f.string(from:date))"
+    }
+    /// 124 giây → "2:04"; trên 1 giờ → "1:02:04".
+    static func shortClock(_ t:TimeInterval)->String {
+        let v=max(0,Int(t))
+        return v>=3600 ? String(format:"%d:%02d:%02d",v/3600,v/60%60,v%60):String(format:"%d:%02d",v/60,v%60)
+    }
+    /// Luôn đủ giờ: "0:02:04".
+    static func longClock(_ t:TimeInterval)->String {let v=max(0,Int(t));return String(format:"%d:%02d:%02d",v/3600,v/60%60,v%60)}
+}
+
+/// Ba cột mốc giống app gốc: Khối lượng (lb), Số buổi tập, Calo. App gốc Cấp 1 = 25K lb / 3 buổi / 1K kcal;
+/// các cấp sau là ngưỡng tự đặt cục bộ (chưa thấy trên app gốc).
+struct Milestone:Identifiable {
+    let id:String
+    let title:String
+    let unit:String
+    let value:Double
+    let tiers:[Double]
+    var levelIndex:Int {tiers.firstIndex{value<$0} ?? tiers.count-1}
+    var level:Int {levelIndex+1}
+    var target:Double {tiers[levelIndex]}
+    var progress:Double {target>0 ? min(1,value/target):0}
+    @MainActor static func all(_ store:AppStore)->[Milestone] {
+        let volumeLb=store.data.history.reduce(0){$0+$1.volume}*2.2046226218
+        let kcal=Double(store.data.history.reduce(0){$0+$1.calories})
+        return [
+            Milestone(id:"volume",title:store.t("Khối lượng","Volume"),unit:"lb",value:volumeLb,tiers:[25_000,50_000,100_000,250_000,500_000,1_000_000]),
+            Milestone(id:"sessions",title:store.t("Số buổi tập","Workouts"),unit:store.t("buổi","workouts"),value:Double(store.data.history.count),tiers:[3,10,25,50,100,250,500]),
+            Milestone(id:"calories",title:store.t("Calo","Calories"),unit:"kcal",value:kcal,tiers:[1_000,5_000,10_000,25_000,50_000,100_000])
+        ]
+    }
+    static func compact(_ v:Double)->String {
+        if v>=1_000_000 {let x=v/1_000_000;return (x.rounded()==x ? String(Int(x)):String(format:"%.1f",x))+"M"}
+        if v>=1_000 {let x=v/1_000;return (x.rounded()==x ? String(Int(x)):String(format:"%.1f",x))+"K"}
+        return String(Int(v))
+    }
+    static func grouped(_ v:Double,english:Bool)->String {
+        let f=NumberFormatter();f.numberStyle = .decimal;f.maximumFractionDigits=0;f.locale=Locale(identifier:english ? "en_US":"vi_VN")
+        return f.string(from:NSNumber(value:v.rounded(.down))) ?? String(Int(v))
+    }
+}
+
+/// Huy hiệu lục giác kim loại: Cấp 1 đồng, 2 bạc, 3 vàng, từ 4 bạch kim. Nhãn là mốc của cấp hiện tại.
+struct MilestoneBadge:View {
+    var milestone:Milestone
+    var size:CGFloat=30
+    var metal:[Color] {
+        switch milestone.level {
+        case 1: return [Color(red:0.80,green:0.60,blue:0.45),Color(red:0.42,green:0.28,blue:0.20)]
+        case 2: return [Color(white:0.88),Color(white:0.45)]
+        case 3: return [Color(red:0.98,green:0.84,blue:0.42),Color(red:0.62,green:0.45,blue:0.12)]
+        default: return [Color(red:0.82,green:0.92,blue:0.95),Color(red:0.40,green:0.52,blue:0.58)]
+        }
+    }
+    var body:some View {
+        ZStack {
+            Hexagon().fill(LinearGradient(colors:metal,startPoint:.top,endPoint:.bottom))
+            Hexagon().fill(Color(white:0.16)).padding(size*0.12)
+            Hexagon().stroke(LinearGradient(colors:metal,startPoint:.top,endPoint:.bottom),lineWidth:max(1,size*0.03)).padding(size*0.18)
+            Text(Milestone.compact(milestone.target))
+                .font(.system(size:size*(milestone.id=="sessions" ? 0.42:0.3),weight:.heavy,design:.rounded))
+                .foregroundStyle(LinearGradient(colors:metal,startPoint:.top,endPoint:.bottom)).minimumScaleFactor(0.5).padding(size*0.2)
+        }.frame(width:size,height:size*1.08).accessibilityHidden(true)
+    }
+}
+struct MilestonesView:View {
+    @EnvironmentObject var store:AppStore
+    @Environment(\.dismiss) var dismiss
+    var body:some View {
+        VStack(spacing:0) {
+            ScreenHeader(title:store.t("Cột mốc","Milestones"),back:{dismiss()})
+            ScrollView {
+                VStack(alignment:.leading,spacing:0) {
+                    if store.data.dismissedTips?.contains("milestones") != true {
+                        HStack(alignment:.top) {
+                            VStack(alignment:.leading,spacing:6){Text(store.t("Cột mốc","Milestones")).font(.dopa(size:18,weight:.semibold));Text(store.t("Mỗi khi việc tập luyện chạm một cột mốc, bạn nhận thêm một huy hiệu mới.","Each time your training hits a milestone, you earn a new badge.")).font(.dopa(size:14)).foregroundStyle(Dopa.muted)}
+                            Spacer()
+                            Button{store.data.dismissedTips=(store.data.dismissedTips ?? [])+["milestones"];store.persist()}label:{Image(systemName:"xmark").foregroundStyle(Dopa.lime).frame(width:44,height:44)}.accessibilityLabel(store.t("Đóng","Close"))
+                        }.padding(.leading,16).padding(.vertical,8).background(Dopa.card).clipShape(RoundedRectangle(cornerRadius:14)).padding(.bottom,16)
+                    }
+                    let items=Milestone.all(store)
+                    ForEach(Array(items.enumerated()),id:\.element.id){index,m in
+                        HStack(spacing:18) {
+                            VStack(spacing:6){MilestoneBadge(milestone:m,size:50);Text(store.t("Cấp \(m.level)","Level \(m.level)")).font(.dopa(size:11,weight:.medium)).foregroundStyle(Dopa.muted)}
+                            VStack(alignment:.leading,spacing:10) {
+                                Text(m.title).font(.dopa(size:17,weight:.medium))
+                                ZStack(alignment:.leading) {
+                                    GeometryReader{g in Capsule().fill(Dopa.raised);Capsule().fill(Color(white:0.36)).frame(width:max(28,g.size.width*m.progress))}
+                                    Text("\(Milestone.grouped(m.value,english:store.english)) / \(Milestone.compact(m.target)) \(m.unit)").font(.dopa(size:13,weight:.semibold)).padding(.horizontal,12)
+                                }.frame(height:26)
+                            }
+                        }.padding(.vertical,16).accessibilityElement(children:.ignore).accessibilityLabel("\(m.title), cấp \(m.level), \(Milestone.grouped(m.value,english:store.english)) trên \(Milestone.compact(m.target)) \(m.unit)")
+                        if index<items.count-1 {Divider().overlay(Dopa.stroke)}
+                    }
+                }.padding(.horizontal,16).padding(.bottom,30)
+            }
+        }.background(Dopa.background).toolbar(.hidden,for:.navigationBar)
     }
 }

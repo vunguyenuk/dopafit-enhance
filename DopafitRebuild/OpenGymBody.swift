@@ -91,10 +91,16 @@ private struct OpenGymMesh {
 }
 
 enum OpenGymBodyScene {
-    static func scene(heat:[String:Double],rear:Bool=false,focus:String?=nil,angle:Int=0)->SCNScene {
+    static func scene(heat:[String:Double],rear:Bool=false,focus:String?=nil,angle:Int=0,turnable:Bool=false)->SCNScene {
         let scene=SCNScene();scene.background.contents=UIColor.clear
         if let mesh=OpenGymMesh.shared {
-            let body=SCNNode(geometry:mesh.geometry(heat:heat));body.name="body";scene.rootNode.addChildNode(body)
+            let body=SCNNode(geometry:mesh.geometry(heat:heat));body.name="body"
+            if turnable {
+                // tilt (nghiêng lên/xuống) chứa spin (xoay quanh thân); tâm xoay ở giữa người.
+                let tilt=SCNNode();tilt.name="tilt";tilt.position=SCNVector3(0,mesh.modelHeight/2,0)
+                let spin=SCNNode();spin.name="spin";body.position=SCNVector3(0,-mesh.modelHeight/2,0)
+                spin.addChildNode(body);tilt.addChildNode(spin);scene.rootNode.addChildNode(tilt)
+            } else {scene.rootNode.addChildNode(body)}
         }
         let camera=SCNNode();camera.name="camera";camera.camera=SCNCamera();camera.camera?.usesOrthographicProjection=true
         let backMuscles=["Lưng","Lưng dưới","Mông","Đùi sau","Tay sau","Cơ thang","Bắp chân"]
@@ -123,7 +129,7 @@ enum OpenGymBodyScene {
         return scene
     }
     static func setPulse(_ scene:SCNScene?,enabled:Bool) {
-        guard let body=scene?.rootNode.childNode(withName:"body",recursively:false) else{return}
+        guard let body=scene?.rootNode.childNode(withName:"body",recursively:true) else{return}
         body.removeAction(forKey:"musclePulse")
         let materials=(body.geometry?.materials ?? []).map{($0,CGFloat(Double($0.name ?? "0") ?? 0))}
         for (material,level) in materials{material.emission.intensity=level*0.04;material.diffuse.intensity=1}
@@ -150,21 +156,63 @@ struct OpenGymBodyView:UIViewRepresentable {
     var rear=false
     var angle=0
     var pulse=false
+    /// Kéo ngang để xoay quanh thân, kéo dọc để nghiêng lên/xuống, chạm hai lần để về mặt trước.
+    var interactive=false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.scenePhase) private var phase
-    final class Coordinator {var key="";var pulsing=false}
+    final class Coordinator:NSObject,UIGestureRecognizerDelegate {
+        var key="";var pulsing=false
+        var yaw:Float=0;var pitch:Float=0;var rear=false
+        weak var view:SCNView?
+        var spin:SCNNode?{view?.scene?.rootNode.childNode(withName:"spin",recursively:true)}
+        var tilt:SCNNode?{view?.scene?.rootNode.childNode(withName:"tilt",recursively:true)}
+        func apply(animated:Bool) {
+            SCNTransaction.begin();SCNTransaction.animationDuration=animated ? 0.45:0
+            SCNTransaction.animationTimingFunction=CAMediaTimingFunction(name:.easeInEaseOut)
+            spin?.eulerAngles=SCNVector3(0,yaw,0);tilt?.eulerAngles=SCNVector3(pitch,0,0)
+            SCNTransaction.commit()
+        }
+        @objc func pan(_ g:UIPanGestureRecognizer) {
+            guard let view else{return}
+            let t=g.translation(in:view);g.setTranslation(.zero,in:view)
+            yaw+=Float(t.x)*0.011
+            pitch=max(-1.25,min(1.25,pitch+Float(t.y)*0.011))
+            apply(animated:false)
+        }
+        @objc func reset(_ g:UITapGestureRecognizer) {yaw=rear ? .pi:0;pitch=0;apply(animated:true)}
+        func gestureRecognizer(_ g:UIGestureRecognizer,shouldBeRequiredToFailBy other:UIGestureRecognizer)->Bool {
+            // Trong vùng mô hình, kéo là để xoay chứ không cuộn trang.
+            g is UIPanGestureRecognizer && other is UIPanGestureRecognizer && other.view !== g.view
+        }
+    }
     func makeCoordinator()->Coordinator{Coordinator()}
-    func makeUIView(context:Context)->SCNView {let view=SCNView();view.backgroundColor = .clear;view.autoenablesDefaultLighting=false;view.allowsCameraControl=true;view.preferredFramesPerSecond=30;return view}
+    func makeUIView(context:Context)->SCNView {
+        let view=SCNView();view.backgroundColor = .clear;view.autoenablesDefaultLighting=false;view.preferredFramesPerSecond=30
+        view.allowsCameraControl = !interactive
+        context.coordinator.view=view
+        if interactive {
+            let pan=UIPanGestureRecognizer(target:context.coordinator,action:#selector(Coordinator.pan(_:)));pan.delegate=context.coordinator;view.addGestureRecognizer(pan)
+            let tap=UITapGestureRecognizer(target:context.coordinator,action:#selector(Coordinator.reset(_:)));tap.numberOfTapsRequired=2;view.addGestureRecognizer(tap)
+            view.accessibilityHint="Kéo ngang hoặc dọc để xoay mô hình, chạm hai lần để về vị trí ban đầu"
+        }
+        return view
+    }
     func updateUIView(_ view:SCNView,context:Context) {
-        let key=heat.keys.sorted().map{"\($0):\(Int((heat[$0] ?? 0)*100))"}.joined()+String(rear)+String(angle)
-        let changed=context.coordinator.key != key
-        context.coordinator.key=key
+        let c=context.coordinator
+        let key=heat.keys.sorted().map{"\($0):\(Int((heat[$0] ?? 0)*100))"}.joined()+String(interactive ? false:rear)+String(angle)
+        let changed=c.key != key
+        c.key=key
         let pulsing=pulse && !reduceMotion && phase == .active
         view.accessibilityValue=heat.keys.filter{(heat[$0] ?? 0)>0}.sorted().joined(separator:", ")
-        if changed{view.scene=OpenGymBodyScene.scene(heat:heat,rear:rear,angle:angle);view.pointOfView=view.scene?.rootNode.childNode(withName:"camera",recursively:false)}
-        if changed || pulsing != context.coordinator.pulsing{OpenGymBodyScene.setPulse(view.scene,enabled:pulsing)}
-        context.coordinator.pulsing=pulsing;view.isPlaying=pulsing
-        view.accessibilityLabel=rear ? "Mô hình cơ thể mặt sau":"Mô hình cơ thể mặt trước"
+        if changed {
+            view.scene=OpenGymBodyScene.scene(heat:heat,rear:interactive ? false:rear,angle:angle,turnable:interactive)
+            view.pointOfView=view.scene?.rootNode.childNode(withName:"camera",recursively:false)
+            if interactive {c.apply(animated:false)}
+        }
+        if interactive && c.rear != rear {c.rear=rear;c.yaw=rear ? .pi:0;c.pitch=0;c.apply(animated:!reduceMotion)}
+        if changed || pulsing != c.pulsing{OpenGymBodyScene.setPulse(view.scene,enabled:pulsing)}
+        c.pulsing=pulsing;view.isPlaying=pulsing
+        view.accessibilityLabel=interactive ? "Mô hình cơ thể 3D" : rear ? "Mô hình cơ thể mặt sau":"Mô hình cơ thể mặt trước"
     }
 }
 struct OpenGymMuscleImage:View {

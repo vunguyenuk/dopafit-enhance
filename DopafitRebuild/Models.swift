@@ -96,6 +96,8 @@ struct PlanSettings: Codable {
     /// "Vừa" / "Lớn" / "Rất lớn" — cỡ chữ toàn app. Optional để snapshot cũ đọc được.
     var textSize: String? = nil
     var sound = true
+    /// Tên hiện ở đầu Nhật ký (app gốc lấy từ tài khoản). Optional để snapshot cũ đọc được.
+    var displayName: String? = nil
     var gender = "Nam"
     var height: Double = 169
     var bodyWeight: Double = 70
