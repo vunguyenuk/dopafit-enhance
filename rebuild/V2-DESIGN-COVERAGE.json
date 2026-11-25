@@ -1,0 +1,961 @@
+{
+  "updated": "2026-11-25",
+  "scope": "Existing DopafitV2 project; approved visual redesign, not original parity certification",
+  "reference_figma_section": "248:3230",
+  "reference_figma_commitment": "248:3218",
+  "reference_user_image": "FORMe phone mockup supplied 2026-11-24",
+  "screens": [
+    {
+      "id": "V2-WELCOME",
+      "name": "Màn chào",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-2026-11-24/C190-welcome-final.png",
+        "rebuild/verification/v2-2026-11-24/C195-main-v2-installed.png",
+        "rebuild/verification/v2-vietnamese-blender-2026-11-24/C212-vietnamese-welcome.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C225-main-hero-action.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C303-main-installed.png"
+      ],
+      "ui_verification": "CTA enters desires; final main V2 welcome observed after install without reset/demo. Baseline JSON semantically unchanged. Latestuser16:35 approvedAI: C212fictionalVietnamese welcomehero, sharedidentitywithnewcutouts. Notstockphotograph. User17:49rejectedC212uprightpose; revisedhero-action.png maininstalled/buildpassed. PostinstallUIpendingMaclockedagain; see final-qa/ui-run. FinalC225 observedaftersecondmanualunlock: mainwelcomeactionpose naturalangledcurl/gazedown, face/weight/nativeheading/CTAunclipped atsampledviewport. QAremoved; mainJSONsemanticallyunchanged. Priorpendinglocksuperseded. Final25/11 main installed/observed noreset/demo, fullJSON equals freshpreinstall. QA0historyremoved. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-DESIRE",
+      "name": "Điều mong muốn",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/OnboardingParts.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-2026-11-24/C191-desire-final.png",
+        "rebuild/verification/v2-desire-grid-2026-11-24/C198-grid-empty-final.png",
+        "rebuild/verification/v2-desire-grid-2026-11-24/C199-grid-selected-final.png",
+        "rebuild/verification/v2-desire-grid-2026-11-24/C197-grid-back-retains-choice.png",
+        "rebuild/verification/v2-plate-loader-2026-11-24/C211-main-desire-final.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C222-desire-vietnamese-final.png",
+        "rebuild/verification/v2-physique-2026-11-25/C273-female-desire-clean.png"
+      ],
+      "ui_verification": "Latest15:52 user reference supersedes C191 text rows: illustrated 2x2 grid, dark/neutral/lime/SF. Empty disables Next; select/deselect, 2-choice limit and third-choice replacement, Next→Goal→Back retained selection verified in isolated QA. Final geometry empty/selected shown. Generated reference-derived illustrations; not stock or byte-identical extraction. Smaller viewport/accessibility still partial. Latest16:17 real photographed alpha cutouts supersede generated sprite; main C211 with refined sleep pillowmask. Empty/firstselection/Next rechecked; earlier max2behavior unchanged. Latestuser16:35 overridesstock: fictionalVietnamese cutouts, seatedlowerbackpose nowprovided. Inlinefirstpassobserved beforeenlargedsleepcrop; plannedC213capture abortedbylock; finalUIpendingunlock in this run. LatestC222finalsleepcrop+VietnameseAIcutouts observed;disabled0→selected1→NextGoal verified. Priorunlockgap superseded. Female illustration sheet wired to first sex choice. C273 before tiny2ptnative edge mask; male originalAI set retained. No realstock claim.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-GOAL",
+      "name": "Mục tiêu chính",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/OnboardingPortraitSteps.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-2026-11-24/C192-goal-real-photos.png",
+        "rebuild/verification/v2-plate-loader-2026-11-24/C209-goal-selected-final.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C223-goals-vietnamese.png",
+        "rebuild/verification/v2-physique-2026-11-25/C264-female-goals.png"
+      ],
+      "ui_verification": "Latest16:17 four real photographed cutouts, explicit select+Next. Final strengthselected→strengthEcho verified in isolatedQA; muscleEcho5slots verified main. Lean/healthroutes not retested. Latest16:35–16:37 user requests samefictionalVietnamese identity. Newassets bundled, buildpassed; updatedUIstatus in v2-vietnamese-blender-2026-11-24/ui-run.json. LatestC223all4VietnameseAIportraits;HealthselectandNext→correct3slotEchoverified. Latest25/11: Latest 25/11: unified four-person goal sprite replaces differing portrait crops. Same fictional identity, head-to-waist framing, distinct action/build. Build passed; native final sprite UI awaits unlock. Latest25/11: distinct flex/curl/tape/stretch actions for male/female. Male bulk reduced after firstpassC266; femaleC264 live; same132ptrows.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-PROMISE",
+      "name": "Giữ để hứa",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/OnboardingParts.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-2026-11-24/C184-promise-back-reset.png",
+        "rebuild/verification/v2-physique-2026-11-25/C280-commitment-audit.png",
+        "rebuild/verification/v2-physique-2026-11-25/C281-commitment-to-reminder.png",
+        "rebuild/verification/v2-count-promise-2026-11-25/C418-promise-before.png",
+        "rebuild/verification/v2-count-promise-2026-11-25/promise-wave-keeps-ui.mp4",
+        "rebuild/verification/v2-count-promise-2026-11-25/C419-reminder-after-wave.png"
+      ],
+      "ui_verification": "Local date change; 450ms release stays; 1300ms hold advances; back preserves date and resets; repeat advances once. C194 samples app textScale1.2. Latest25/11: Latest flow sample retained tomorrow selection, 1300ms hold→wave→new reminder. QA state confirms firstDay/hour persisted after local save. No new FPS or interruption certification. C280/C281 confirms actual1300mshold→wave→first-session reminder; QA notification skipped; route proceeds to local save and Pro. Latest25/11 17:42: stable promise underlay retains heading/calendar through clear DistortionWave overlay, then reminder. Native video verified. Confirm via AX action, not new physical hold-duration audit; package unchanged.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-REMINDER",
+      "name": "Nhắc buổi đầu",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-2026-11-24/C183-reminder-after-hold.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C250-reminder-selected.png"
+      ],
+      "ui_verification": "Destination after completed hold observed; no notification authorization or scheduling executed. Latest25/11: New notification preview + five time buttons + skip. Native selection/hold transition and Next→save observed on isolated QA, notification permission deliberately bypassed only in designqa. Stores firstDay/hour. Final preview now uses actual plan duration; past-hour validation implemented, broader OS permission/delivery still unknown.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-HOME",
+      "name": "Buổi tập hôm nay",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/WorkoutTab.swift",
+        "DopafitV2/DopafitV2/ContextStory.swift",
+        "DopafitV2/DopafitV2/Media.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-2026-11-24/C189-home-final.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C314-home-real-video.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C324-main-updated-preserved.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C325-home-before.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C327-home-compact-final.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C328-home-duration-30.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C329-home-full-gym.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C331-home-start-workout.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C332-home-tired-single-explanation.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C335-home-empty-final.png",
+        "rebuild/verification/v2-home-mobbin-2026-11-25/C336-main-home-final.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/ui-run.json",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C438-home-before.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C441-rebuild-home-reference.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C442-home-blocks-after.png"
+      ],
+      "ui_verification": "Real stock hero and unclipped chips; name opens correct guide and closes; Start opens Active. QA demo data only, no log/finish. Latest25/11: Filmed hero with caption below, actual plan prescriptions unchanged. Unplanned same-muscle/same-gear hero explicitly labelled illustration. Requested later Mobbin Home text/layout redesign pending unavailable connection. Latest25/11 11:36 supersedes waiting-for-Mobbin: fourqueries/23previews read, Bevel+Withings compact summary with smaller native video and concise reason applied. C336 final main3exercise rows firstview; same data as C325. Existing menus,Add/guide,Start and tired/Undo sampled; emptydisabledC335. Main savedJSON exact turnstart/fresh;QA0history removed. Broader accessibility/smallviewport/FPS/allbranches remain partial. See v2-home-mobbin/ui-run.json. Superseding final25/11 20:48: Final main Home push day observed; priority arms/chest matches actual exercise list, no unrelated back priority. Main profile/history preserved, sole sawPro flag changed from viewing/closing introduction. Latest25/11 pain/home/gift refinement: Actual plan/controls in neutralCard; WeekStripcard and individualexercise surfaces. LiveRebuild read-only reference. Durationmenu opens/dismisses, values/routes unchanged. No challenge/datebrowse port claimed.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-ECHO",
+      "name": "Lắp tạ",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/PlateLoaderCard.swift",
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-plate-loader-2026-11-24/C202-full-24kg.png",
+        "rebuild/verification/v2-plate-loader-2026-11-24/C210-packed-8kg-final.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C215-blender-8kg.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C216-blender-full-24kg.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C224-blender-three-full-12kg.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C350-plates-full-tall.png"
+      ],
+      "ui_verification": "Native contiguous plates;0/4/8/24,fulltapreset,drag0→8→4 sampled; finalarrow/seam rendering8kg. Equipmenthero generatedillustration, people stock separate. Source and userbefore caveats inui-run. Latest16:36 userrequestsBlender: replacesSwiftUIellipses with17offlineCyclesrenders fromeditableblend; hashes/boundschecked, newUIawaitsunlock; see latestui-run. Latestpostunlock C214–C216/C224 liveBlender:6slots0→8→4→24→reset0,Health3slots→clamp12; no render/countmismatch. 5slotfullgesture/accessibilitypartial. Final25/11 user requested taller card/larger equipment/shorter bare sleeve: scene380pt,hero160-210pt,1080x800Cycles renders/camera1.08centered; sleeve410mm. Native0/4/16/20kg andfull->0reset observed. Gesture math/limits unchanged, no new drag audit.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-TRANSFORMATION",
+      "name": "Minh họa hướng vóc dáng",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingPortraitSteps.swift",
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/AlignedPortrait.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-plate-loader-2026-11-24/C204-transformation-real-photos.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C217-vietnamese-target-pair.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C233-transformation-new-physiques.png",
+        "rebuild/verification/v2-physique-2026-11-25/C271-merged-current-to-comparison.png",
+        "rebuild/verification/v2-physique-2026-11-25/C265-female-round-to-balanced.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C305-comparison-natural-arms.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C383-male-round-balanced.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C384-female-round-balanced.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C385-duplicate-cell-single.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C386-female-trained-balanced-single.png"
+      ],
+      "ui_verification": "Replaces sexquestion; stockmodels explicitly illustrative, no genuinebeforeafter claim. Echo→Transformation→Activity verifiedQA/main. Goal-specificstrength/muscle samples, remainingbranches partial. Latest16:35–16:37 user requests samefictionalVietnamese identity. Newassets bundled, buildpassed; updatedUIstatus in v2-vietnamese-blender-2026-11-24/ui-run.json. LatestC217VietnameseAIpair/explicitlabel→Activityverified. Latest25/11: C233 shows distinct soft/muscular bodies with matching identity, pose, clothing and canvas; both cards now equal width/height. Later compact framing/copy polish awaits final UI. No client result or promised four-week physique. Latest25/11: selected current shape directly feeds left; round→balanced native sample; distinct new male/female illustrative actors with natural anatomy, not client outcomes. Latest25/11: Round current to moderate target same pose/scale, natural arms. No real client before/after claim. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1. Latest25/11 chart-motion: Shared resolver now uses new body-defined cell3; earlier maintain/samecell singleportrait logic preserved. Comparison matrix checks from prior run not rerun here. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-ACTIVITY",
+      "name": "Mức độ vận động",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingPortraitSteps.swift",
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-plate-loader-2026-11-24/C205-activity-light.png",
+        "rebuild/verification/v2-plate-loader-2026-11-24/C206-activity-high.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C218-activity-walk.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C219-activity-seated.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C220-activity-run.png",
+        "rebuild/verification/v2-final-qa-2026-11-24/C221-activity-lift.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C234-activity-light.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C235-activity-moderate.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C236-activity-sedentary.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C237-activity-high.png"
+      ],
+      "ui_verification": "Fourstopnativeadjustable slider changes real cutout/copy; all4levels observed; Next→Age→Back retainsmoderate. Main light destination observed. Optionalprofile legacyCodable/4roundtrips checked; fullfinish/settingspersistUI not tested. Latest16:35–16:37 user requests samefictionalVietnamese identity. Newassets bundled, buildpassed; updatedUIstatus in v2-vietnamese-blender-2026-11-24/ui-run.json. LatestC218–C221all4VietnameseAIimagesandcopy shown;NextAge/Back retainsHigh. Priorlockgap superseded. Latest25/11: Four new full-activity cells from one coherent sheet; seated desk/chair/feet, walking, running and curl all shown whole. Native slider selection/descriptions and Next to experience observed. Activity optional persistence included in QA JSON. Latestreview: nil selection now initializes to displayed light default; editingApply and persisted QA profile light verified. Cancel uses profile snapshot.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-FOCUS",
+      "name": "Vùng cơ ưu tiên",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/BodyMap.swift"
+      ],
+      "evidence": [],
+      "ui_verification": "Uses existing flat front/back map and actual muscle slugs; up to three selections, whole-body clears list, priority changes ordering within daily split. Final native check awaits unlock.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-CURRENT-SHAPE",
+      "name": "Vóc dáng hiện tại",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/AlignedPortrait.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C229-current-shape-final.png",
+        "rebuild/verification/v2-physique-2026-11-25/C272-current-five-faceless-final.png",
+        "rebuild/verification/v2-physique-2026-11-25/C271-merged-current-to-comparison.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C387-current-physique-female.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C388-current-physique-female-lower.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C389-current-physique-male.png"
+      ],
+      "ui_verification": "Four distinct physique silhouettes from one sheet; identical neck-to-thigh crop. Empty disables Next, selected soft enables and flows to target. Latest25/11: face-free single current-body question with5choices includinground; duplicate belly question removed; selected current supplies comparison left. C272 final layout; C271 route; all31source variants not certified. Latest25/11: Shared male sheet changed; face-free crop/mapping retained. New current-choice list not retapped in this pass. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1. Latest25/11 chart-motion: Defined cell3 uses same dedicated portrait/framing and torso crop as target; source mapping, not every currentshape live re-audited. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-TARGET-SHAPE",
+      "name": "Vóc dáng hướng tới",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/AlignedPortrait.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C230-target-shape-final.png",
+        "rebuild/verification/v2-physique-2026-11-25/C269-target-natural.png",
+        "rebuild/verification/v2-physique-2026-11-25/C270-target-moderately-trained.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C304-target-natural-arms.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C396-male-defined-target.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C397-female-defined-target.png"
+      ],
+      "ui_verification": "Qualitative four-stop selector; tap changed balanced→muscular, next uses chosen physique. Final source defaults match goal; maintain/exact same appearance and health-balanced show a single meaningful portrait instead of duplicating two identical bodies. Final branch UI pending unlock. No inferred body-fat percentage. All four endpoint UI branches not fully audited. New realistic Vietnamese actor, moderate body targets, balanced default. Same camera/pose/cell framing. Sample balanced/moretrained/Back; not measured bodyfat. Latest25/11: Male six-cell sheet edited to reduce disproportionate arms; same mapping/pose/scale. C304 muscular goal sampled. All cells/sex variants not exhaustively retapped. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1. Latest25/11 chart-motion: Defined cell3 uses dedicated1024×1536 truealpha fictionalAI portraits, moderate torso definition/natural arms; native Nam/Nữ targetsample. Other cells unchanged. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-WEIGHT-GOAL",
+      "name": "Cân nặng mục tiêu",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/OnboardingParts.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C231-weight-goal-lb.png"
+      ],
+      "ui_verification": "Native ruler drag changed stored kg; kg→lb showed matching conversion/current/delta. QA chosen 42kg is a synthetic drag result, not a suggested target. Model conversion/persistence checked.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-BELLY",
+      "name": "Mô tả vùng bụng",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C232-belly-choices.png"
+      ],
+      "ui_verification": "Three uniform side-profile illustrations plus skip. Disabled empty→selected enabled→comparison observed. Descriptive only, no alcohol/stress diagnosis. Latest25/11 user explicitly removed duplicate belly question. Its choices merged into current shape, raw legacy field only retained for decoding. Do not restore separate question.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ],
+      "lifecycle": "removed_from_new_flow",
+      "superseded_by": "V2-CURRENT-SHAPE"
+    },
+    {
+      "id": "V2-INTENSITY",
+      "name": "Mức tập ưa thích",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/Models.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C238-intensity-empty.png",
+        "rebuild/verification/v2-physique-2026-11-25/C283-selected-tick-icon.png"
+      ],
+      "ui_verification": "Three level cards, empty disabled→easy enables→journey; actual easy cap2/steady cap3 verified by V2 model tests and generated overview. Selected items have blacktick in lime circle via shared ChoiceRadio. C283 native selected state. Latest25/11: removed UI/route by explicit user because duplicates plate loading; historical captures retained. Saved intensity/model/Settings remain. level→recent route and echo retained modelchecked74. No current intensity UI to retest. Final25/11 C289directlevel→history verifies absence; archivedUI no longercurrent. Saved intensity/Settings/models retained.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ],
+      "lifecycle": "removed_from_new_flow",
+      "removed_by_user": "2026-11-25",
+      "superseded_by": "V2-ECHO"
+    },
+    {
+      "id": "V2-JOURNEY",
+      "name": "Hành trình tập trước đây",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/OnboardingParts.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C239-training-journey.png"
+      ],
+      "ui_verification": "Four distinct curves; returning leads to break question. Back preserves selection and duration. Other conditional routes model checked.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-BREAK",
+      "name": "Thời gian nghỉ tập",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingPortraitSteps.swift",
+        "DopafitV2/DopafitV2/Models.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C240-training-break-selected.png"
+      ],
+      "ui_verification": "Three single-choice rows and fixed Next informed by prior CalAI/Ladder references. Optional only returning branch. Select months1to3, Back→return retained; existing15% return rule unchanged.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-INJURIES",
+      "name": "Chỗ đau gần đây",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/Models.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C241-injuries.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C291-joint-icons.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C306-red-joint-markers-selected.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C319-joint-glow-wave-phase-a.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C320-joint-glow-wave-phase-b.png"
+      ],
+      "ui_verification": "Explicit none vs selected part, including ankle. Shoulder selection deselects none; None clears selection. Existing local filter extended conservatively to ankle/legs, no clinical validation. Latest25/11: new native region-specific JointGlyph paths replace wrong exercisepose/shoe symbols; None checkmarkshield. Selectionfilter unchanged; buildpassed, selected/empty nativeQA pendingMacunlock. Final25/11 C291–293: native regionglyphs allvisible; knee+ankle selection andNoneclear verified. Latest25/11: Seven red region markers and shoulder selected observed before pulse; two expanding fading waves observed large. Small-marker pulse source/build; system ReduceMotion not toggled live.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-OBSTACLES",
+      "name": "Rào cản tập luyện",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C242-obstacles-max-three.png"
+      ],
+      "ui_verification": "Six options; select3 shows3/3; fourth ignored; deselect3→skip observed. Up to2 follow-up stories remains existing route.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-POTENTIAL",
+      "name": "Tiềm năng và thói quen",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/ChartReveal.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C243-potential.png",
+        "rebuild/verification/v2-physique-2026-11-25/C278-potential-chart-audit.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C297-potential-plan-preview.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C322-potential-four-sessions-final.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C323-potential-next-reward.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C405-potential-final-visibility.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/potential-chart-motion-final.mp4",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C401-reduce-motion.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/chart-reduce-motion.mp4"
+      ],
+      "ui_verification": "Native illustrative growth curve + three concrete habits. No fabricated89% statistic or guaranteed results. Offline C243 review found description overlap; source now wraps rows in explicit fixed intrinsic-height VStack and uses a shorter graph. Final visual recheck pending unlock. C278 final paragraph stack observed without olderC243overlap. Curve is illustrative, no89%claim. Latest25/11: curve removed; real planned-set preview from previewPlan/weightunit plus same3behaviors/Next. Ladder+Runna researchmanifest. Buildpassed, finalnativeUI/beforeafter pendingMacunlock; C278 is priorstate. Final25/11 C297: plannedsetpreview and all3habits/CTA fit sampleiPhone. Curve removed. Ladder/Runna references, selfcontained beforeafterHTML verified; no fake recordedsets/outcome. Latest25/11: Latest direct user reference supersedes C297 set-table: no top-right dumbbell, four labelled illustrative progression points, endpointglow and three icon habits. Example load/unit derives from previewPlan, never recorded progress. Next->reward verified. Latest25/11 chart-motion: Finite line/fill/marker reveal; numbers/labels stable; live ReduceMotion shows final chart immediately and restoredoff. Final viewport modifier still shows complete chart. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-REWARD",
+      "name": "Phần thưởng cá nhân",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/AlignedPortrait.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C244-reward-selected.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C295-reward-selected-tick.png",
+        "rebuild/verification/v2-calendar-reward-2026-11-25/C337-reward-selected.png",
+        "rebuild/verification/v2-calendar-reward-2026-11-25/C342-main-installed.png"
+      ],
+      "ui_verification": "Six distinct actions from one consistent upper-body sheet. Gift selection persists and is displayed on plan ready. Native Next to place verified. Latest25/11: decorative SF icons removed peruser, photo/caption/selectedtick retained. Buildpassed, finalnativeQA pendingMacunlock. Final25/11 C294–295: female cards omit decorative icons, gift tick/Next verified. Other choices unchanged; not allsex/reward routes certified. Latest25/11: bounded rounded contentShape and noninteractive portrait/tick prevent sheet crop intercepting selection. All6nativeAX choices and deselect/Skip label sampled C337; coordinate input could not be certified. Main update pending unfinished onboarding. Final12:26 supersedes pendinginstall: user approved restart; same finalQA binary installedmain/C342welcome. Main515byteJSON exact,0history,QAremoved. Inner new screens sampledQA only.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-SCHEDULE",
+      "name": "Nhịp và thời lượng tập",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/OnboardingParts.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C245-schedule-four-days.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C300-calendar-five-75.png"
+      ],
+      "ui_verification": "Calendar number and split respond to slider; chose4days/60minute time budget. Generated6-exercise/2set plan34minute estimate honestly reflects easy volume. Latest25/11: five real authored Blender renders2…6 replace flat calendar,230pt. Existing2…6/duration30/45/60/75 retained. Buildpassed/hashchecked; finalnative2/3/6/duration/Back pendingMacunlock. Final25/11: calendar renders2…6 plus physical Blender leaf flip16frames per adjacenttransition, reverseforlower. Native video3→6→2→5; settles5/75; Back/place/reenter retains. ReduceMotion usesstaticselecteddigit; settingnot UItested/no measuredFPS.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-BUILDING",
+      "name": "Tổng hợp plan",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C246-plan-summary-progress.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C351-plan-review.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C382-plan-loading-ready.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/plan-loading-ui.mp4",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/ui-run.json"
+      ],
+      "ui_verification": "Plan built synchronously at schedule continue; checklist counts actual selected-profile summary lines, no simulated remote percentage. Native advance to direction observed. Latest25/11: Repeated generic AI photo removed; actual selection checklist retained. Native automatic completion not retapped after this source-only layout change. Final25/11 supersedes staged checklist/automatic completion: local computation already synchronous. Actual4choice summary grid and explicit Xem kế hoạch button. Nativebutton->forecast observed, no fake4/4timer. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1. Superseding final25/11 20:48: Native loading0→ready/button enabled, schedule preview does not persist before final Save; local staged reveal, not server progress.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-FORECAST",
+      "name": "Đường hướng cân nặng",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/OnboardingChoices.swift",
+        "DopafitV2/DopafitV2/ChartReveal.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C247-weight-direction.png",
+        "rebuild/verification/v2-physique-2026-11-25/C279-weight-chart-audit.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C307-forecast-maintenance-short.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C309-forecast-reduction-short.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C345-forecast-after.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C352-maintain-weight.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C354-increase-weight.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C406-weight-chart-final-visibility.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/weight-chart-motion.mp4"
+      ],
+      "ui_verification": "Displays selected current/target values and illustrative up/down/flat trend. No invented goal date or medical promises. QA decreasing branch observed; other directions source/model scope only. C279 shows actual chosen70→67kg; no guaranteed date or outcome. Native Next→ready→overview checked. Latest25/11: Short copy, maintenance value without flat curve;70->67 illustrative curve. C308 actual Next goes direct overview. Final25/11 MobbinBitePal/CalAI: contained card, labelled endpoint values, actual delta, subtlefill; no dated forecast or measured intermediate points.70->68down and70->72up sampled; maintaining70 singlevalue retained. Next->overview observed. Latest25/11 chart-motion: 70→68kg direction reveal, no invented intermediate measurements/date. Final viewport modifier native checked. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-READY",
+      "name": "Plan đã sẵn sàng",
+      "implementation": "removed_from_new_flow",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C248-plan-ready.png"
+      ],
+      "ui_verification": "Selected goal illustrations, actual plan name/count/minutes/days, saved gift reward. No fake client six-month before-after result. Latest25/11 user removed duplicated ready/body-pair screen. Step/view/preview/footer removed; forecast->overview model checked and C308 tapped. Do not restore.",
+      "open_gaps": []
+    },
+    {
+      "id": "V2-OVERVIEW",
+      "name": "Tổng quan tuần đầu",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/Onboarding.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C249-plan-overview.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C302-reassure-crop-fixed.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C308-direct-overview-filmed-hero.png",
+        "rebuild/verification/v2-calendar-reward-2026-11-25/C340-plan-real-video.png",
+        "rebuild/verification/v2-calendar-reward-2026-11-25/C342-main-installed.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C353-overview-concise.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C390-plan-caption-above.png"
+      ],
+      "ui_verification": "Real generated first-session exercise list, set/rep/load, unique gear count2 and actual≈34minute estimate. Continue to commitment observed; native guide editing not added. Final25/11 contextual AIphotos bysex/place sourcewired tooverview/building/story. Nativeplacesall6 and malereassurecropverified; overviewitself not retapped afterphotochange. Latest25/11: Forecast Next directly lands here; no repeated ready body pair. Actual plan filmed incline hero, named below video; duplicate footer metrics removed. Latest25/11: QA smallGym3/45 overview now uses actual userfolder DBbench footage labelled Minh họa when chest work+dumbbells in plan and no planned filmed pin. No wrong pushup guide mapping, no prescription/library change. C340/C341. Main install pending user reply. Final12:26 supersedes pendinginstall: user approved restart; same finalQA binary installedmain/C342welcome. Main515byteJSON exact,0history,QAremoved. Inner new screens sampledQA only. Final25/11 shorter Tuần đầu của bạn title, removes repeated ready label/equipment prose/duplicate minutes.3actual metrics and full exercise list retained; real planned filmed incline video/caption retained. Native sampled. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-PRO-PLANS",
+      "name": "Chọn gói Pro",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ProPaywall.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C257-pro-plans-final.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C258-pro-demo-exit-home.png",
+        "rebuild/verification/v2-physique-2026-11-25/C275-pro-plans-audit.png",
+        "rebuild/verification/v2-physique-2026-11-25/C282-onboarding-save-to-pro.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C347-gift-closed.png"
+      ],
+      "ui_verification": "Annual/monthly rows and clear hero action crop; selecting month and demo confirmation granted only local flag, returned Home; QA JSON demoProPlan=month. No StoreKit/purchase. C275 and C282: annual/monthly UI and actual local-onboarding save→Pro entry. StoreKit remains demo only. Final25/11 Dùng thử3ngày now enters gift rather than immediate demo-activate alert; plan selection/prices preserved. Native route checked without Pro activation. Latest25/11 15:22: see progress-journal ui-run; normalized body cells/maintain; same resolver target/comparison; known female hero source;4stage loading recorded; overview caption above video/gap12/lineSpacing1.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-PRO-GIFT",
+      "name": "Hộp quà và animation mở quà",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ProPaywall.swift",
+        "DopafitV2/DopafitV2/ProGiftVisual.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C252-pro-gift.png",
+        "rebuild/verification/v2-physique-2026-11-25/C276-pro-gift-audit.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C347-gift-closed.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C348-gift-unboxing.png",
+        "rebuild/verification/v2-count-promise-2026-11-25/C421-gift-idle.png",
+        "rebuild/verification/v2-count-promise-2026-11-25/gift-idle-unbox.mp4",
+        "rebuild/verification/v2-count-promise-2026-11-25/gift-preview.mp4",
+        "rebuild/verification/v2-count-promise-2026-11-25/C423-main-gift-installed.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/native-gift-loop-open.mp4",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C434-gift-reduce-motion.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/native-gift-final-player.mp4",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C443-gift-low-angle.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C445-gift-reduce-motion-final.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/ui-run.json"
+      ],
+      "ui_verification": "First close of plans opens full-screen gift; Open advances to offer. Local generated gift asset, same dark/lime/SF. C276 real close-on-first-plans→gift route observed, no transaction. Final25/11 gift entry via trial or previous eligible close. New editable Blender base/lid assets; native eased lift/rotation+light+sparkles then offer after1.1s. Mid-unbox captured. ReduceMotion alternate source-inspected only. Latest25/11 17:42:2.3s closed-box shrink/shake/swell/glow loop, explicit tap charge180ms→spring lid/sparkles→offer after950ms native-recorded. Reuses Blender assets. Gift RM/inactive static source-only. No attached video reference to frame-match; uses described motion. Latest25/11 reference found/audited: Downloads918523286542495952 video0–3s.48idle+21open realBlenderframes384px,2sloop/0.875sopen+lightfan. Current source build-pass; native verification/install pending Mac unlock, previous UI videos refer oldflatmotion. Adapted model/colors/route, not exact shot copy. Superseding final25/11 20:48: Actual user-reference video found/audited0–3s.69Blenderframes, authored24fps; native closed anticipation loop→explicitOpen→lid/lightfan→offer recorded. RM static/Open→offer sampled/restoredoff. Inactive/FPS/memory unmeasured; not frame-identical. Latest25/11 pain/home/gift refinement: 93frame drop24→idle48→explicitopen21. Nearfrontcamera, lidexitsframe, stronger perspectivewhite-limeburst. FinalCADisplayLink firsttickframe stepping/predecode/completion/clip fixes UIImageViewlastframeflash/overflow. Nativefall/impact/rebound/loop/press/lidflight/light/offer andRM tested; no sourceframeidentical/FPS/memory/fullbackground certification.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-PRO-OFFER",
+      "name": "Ưu đãi năm",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ProPaywall.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C254-pro-offer-final.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C255-pro-demo-confirmation.png",
+        "rebuild/verification/v2-comparison-flow-2026-11-24/C256-pro-offer-expired.png",
+        "rebuild/verification/v2-physique-2026-11-25/C277-pro-offer-audit.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C349-offer-opened.png",
+        "rebuild/verification/v2-count-promise-2026-11-25/C422-gift-offer-after-open.png",
+        "rebuild/verification/v2-count-promise-2026-11-25/qa-before-gift-open.json",
+        "rebuild/verification/v2-count-promise-2026-11-25/qa-after-gift-open.json",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C427-offer-balanced.png"
+      ],
+      "ui_verification": "Final card fully visible,39.99/year and actual persisted15min deadline. Reinstall/relaunch retained deadline. QA-only expired-date fixture shows00:00/disabled CTA. Demo confirmation/cancel/restore-unconnected observed; no paid entitlement claim. C277 actual gift→open→offer with persisted deadline; no fake purchase/restore entitlement. Final25/11 reached automatically after unboxing; existing local15minute expiry/39.99annual demo retained, no activation/purchase. QAisProfalse. Latest25/11 17:42: native explicit gift-open→offer; expiry absent during idle, created only after open sequence. QAisProfalse/history0. Main state semantically unchanged after install/demo page navigation. No purchase/Pro activation/StoreKit validation. Latest25/11 compact horizontal discount badge and reserved closebutton space source/build-pass, native balanced-layout pending Mac unlock. Superseding final25/11 20:48: Native compact −50%/divider/Pro·Năm balance observed. Existing expiry retained, demo no purchase/Pro activation.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-SEX",
+      "name": "Nam hoặc Nữ đầu onboarding",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ExperienceStep.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-physique-2026-11-25/C263-sex-empty.png",
+        "rebuild/verification/v2-physique-2026-11-25/C284-main-first-sex-question.png",
+        "rebuild/verification/v2-physique-2026-11-25/C274-female-incline-guide.png"
+      ],
+      "ui_verification": "User reinstated sex question25/11. First afterwelcome, defaultother requires explicitchoice forfreshprofile; known preference retained. Female goals+inclineguide sampled. Age/height still removed.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-EXPERIENCE",
+      "name": "Kinh nghiệm tập — thời gian",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ExperienceStep.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-physique-2026-11-25/C259-experience.png",
+        "rebuild/verification/v2-onboarding-polish-2026-11-25/C288-experience-calendar-icons.png",
+        "rebuild/verification/v2-calendar-reward-2026-11-25/C339-experience-3d-readable.png",
+        "rebuild/verification/v2-calendar-reward-2026-11-25/C342-main-installed.png"
+      ],
+      "ui_verification": "Replaced arbitrary crunch/pullup/bench photos with<6/6–24/24+month badges, same profileLevel factors. ExplicitNext, Backretains new selection. Latest25/11: timebadge now nativecalendar withbindingrings; buildpassed, nativecheckpendingunlock. Final25/11 C288–290: real calendar badge silhouettes with binding rings; experienced→history direct, Backretained. Factors unchanged. Latest25/11 12:23: user-requested3D experience calendars rendered in Blender from accepted weekly scene;96pt frame,600px assets,tighter3.35camera,larger/brighter SF numeral/month. C338 initialdim superseded by C339. QA level selection->history observed; same factors. Main install pending user reply about unfinished onboarding. Final12:26 supersedes pendinginstall: user approved restart; same finalQA binary installedmain/C342welcome. Main515byteJSON exact,0history,QAremoved. Inner new screens sampledQA only.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-CONTEXT-STORIES",
+      "name": "Minh họa theo nội dung",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ContextStory.swift",
+        "DopafitV2/DopafitV2/Media.swift",
+        "DopafitV2/DopafitV2/StartingLoadCard.swift",
+        "DopafitV2/DopafitV2/ContextRecommendations.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C310-time-specific-story.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C311-plan-specific-story.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C312-experience-starting-load-story.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C313-pain-specific-story.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C346-story-after.png",
+        "rebuild/verification/v2-plate-story-2026-11-25/C355-story-baseline-recapture.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C398-starting-load-card.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/starting-load-motion.mp4",
+        "rebuild/verification/v2-count-promise-2026-11-25/count-0-20.mp4",
+        "rebuild/verification/v2-count-promise-2026-11-25/count-reduce-motion.mp4",
+        "rebuild/verification/v2-count-promise-2026-11-25/C420-count-reduce-motion.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C424-lower-back-suggestions.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C425-motivation-exercises.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C426-reviewed-female-returning.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/ui-run.json",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C435-two-regions-filtered.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C436-female-suggestion-guide.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C437-pain-before.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C439-pain-grouped-after.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/C440-pain-details-expanded.png",
+        "rebuild/verification/v2-pain-home-gift-2026-11-25/pain-before-after.html"
+      ],
+      "ui_verification": "Native answer/plan-specific timer/load/exercise/joint/etc previews replace repeating AI scene. Four branches sampled; others partial. Final25/11 only unknown-plan story heading first, concise copy, exact motion thumbnail/name/set hierarchy with actual plan summary. Next->potential observed. Other stories unchanged. DEBUG QA legacy comparator for accurate baseline; no production route. Latest25/11 chart-motion: Actual first prescription in graphite/wave/ruler card; finite decorative motion;37.5kg native sample and2benefits. No fake counting or algorithm change; bodyweight alternate source-only. See chart-motion ui-run for build/main preservation and remaining limits. Latest25/11 17:42: actual starting load Animatable count0→20 Smith native-recorded,1.25s after300ms; ruler/wave synchronized. Exact fractional target retained; ReduceMotion target37.5 observed. Bodyweight/lb/alltargets not live-sampled; no prescription change. Latest25/11 context revision SOURCE/BUILD ONLY: ContextRecommendations pain/motivation with actual draft joints, pain-first dedupe, exactthumb+guide and draftsex override.308models; native/before-after pending Mac unlock. Reference mobbin-references.json. Do not call it UI-verified. Superseding checkpoint: C424 lowerback suggestions and guide, C425 actual plan motivation rows native sampled; review female/returning Save→Home and QA one-session→stats/relaunch observed. Final309model checks/45progress; main install pending lockedMac again. Full multi-joint/empty/RM/female-guide asset coverage not verified. Superseding final25/11 20:48: Lowerback and female shoulder+lowerback selections show correct regions and eligible suggestions; guide opens female clip. Pain-first/dedupe and plan-based motivation sampled. Nojoint/empty source/model only; no clinical safety certification. Latest25/11 pain/home/gift refinement: Pain-only selected regions/movement Card and expandable instructions/NHS; groupedcompact3exercise rows fit before CTA on Max; guide opens. Existing filters/sex/plan and motivation preserved. Equinox+/Gymshark examples. Multi-joint/empty newlayout not all native-retapped.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-ACTIVE-MEDIA",
+      "name": "Video người thật trong buổi tập",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ContextStory.swift",
+        "DopafitV2/DopafitV2/Media.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C315-active-incline-real-video.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C316-active-rear-delt-real-video.png",
+        "rebuild/verification/v2-arm-proportion-2026-11-25/C317-active-shrug-real-video.png"
+      ],
+      "ui_verification": "Three exact real local clips, main/pager switching verified in isolated female-profile QA.0logged/0history. Arnold unavailable; other existing exact media retained, not all replaced.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03"
+      ]
+    },
+    {
+      "id": "V2-BODY-RESULTS",
+      "name": "Cơ thể — kết quả",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/ProgressTab.swift",
+        "DopafitV2/DopafitV2/BodyInsights.swift",
+        "DopafitV2/DopafitV2/Analytics.swift",
+        "DopafitV2/DopafitV2/ChartReveal.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C367-v2-results.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C394-results-benchmark-final.png"
+      ],
+      "ui_verification": "D13 D42; groups/benchmark selected. dSTRENGTH unavailable; real logged weighted1RM only. Latest25/11 chart-motion: 1RM chartplot reveal added in source; calculation/domain/actual records unchanged. Not all benchmark charts newly live-tested. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-RECOVERY-LIST",
+      "name": "Danh sách và chi tiết hồi phục",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/BodyInsights.swift",
+        "DopafitV2/DopafitV2/ProgressTab.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C364-v2-recovery.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C365-v2-all-muscles.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C366-v2-muscle-detail.png"
+      ],
+      "ui_verification": "R64–69 D14 D40–41;13muscles/detail recentsets. R67manualoverride absent; existing recoveryengine unchanged.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-WEEKLY-GOALS",
+      "name": "Mục tiêu tuần và lịch sử",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/InsightsViews.swift",
+        "DopafitV2/DopafitV2/Analytics.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C371-v2-goals.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C372-v2-goal-muscles.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C373-v2-goal-previous-week.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C392-goals-capped-final.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C431-goals-after-one-set.png"
+      ],
+      "ui_verification": "D15 D38–39; weeks/expansion/history sampled. C392 supersedes uncapped numerator C371. LocalV2targets/currentgoal history. Latest25/11 chart-motion: Ring finite0→actual ratio on appearance/value changes, honors ReduceMotion in source. Existing cap/weekly arithmetic unchanged; ring-specific live comparison not exhaustive. See chart-motion ui-run for build/main preservation and remaining limits. Superseding final25/11 20:48: One native QA Arnold set contributes1.5effective sets and1/3training days; progress persisted after reinstall/relaunch.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-JOURNAL",
+      "name": "Nhật ký tuần tháng và thời lượng",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/LogTab.swift",
+        "DopafitV2/DopafitV2/Analytics.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C374-v2-journal.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C380-v2-duration-zero-disabled.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C381-v2-duration-saved.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C393-journal-duration-final.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C432-journal-after-one-set.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C433-report-one-set.png"
+      ],
+      "ui_verification": "D16 D37 R46 R59 R71; calendar/history;0disabled/40save sample, C393exactclock. Superseding final25/11 20:48: One saved QA session100kg/1set/65sec seen in Journal/report; history preserved after reinstall/relaunch. DisposableQA subsequently removed.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-WORKOUT-REPORT",
+      "name": "Báo cáo tập luyện",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/InsightsViews.swift",
+        "DopafitV2/DopafitV2/Analytics.swift",
+        "DopafitV2/DopafitV2/ChartReveal.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C375-v2-report-month.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C376-v2-report-week.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C402-report-motion-week.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/C404-report-visible-bars.png",
+        "rebuild/verification/v2-chart-motion-2026-11-25/report-chart-visible-preview.mp4"
+      ],
+      "ui_verification": "D45–47; month12→week3session aggregate sampled.180day/year/custom are source/model, not allUItested. Latest25/11 chart-motion: Actual QA12demo report30days/7days sampled; final bars reveal when scrolling into viewport. Data/range unchanged; domains/labels fixed. Final recording contact sequence confirms growth. See chart-motion ui-run for build/main preservation and remaining limits.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-MILESTONES",
+      "name": "Cột mốc tập luyện",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/InsightsViews.swift",
+        "DopafitV2/DopafitV2/Analytics.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C377-v2-milestones.png"
+      ],
+      "ui_verification": "Useroriginalscreenshot +RebuildC361. Localtiers/actualvolume+count; missingcalorie unknown. No original3Dbadge/parityclaim.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-MEASUREMENTS",
+      "name": "Thành phần và số đo cơ thể",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/BodyMeasurements.swift",
+        "DopafitV2/DopafitV2/Analytics.swift",
+        "DopafitV2/DopafitV2/ChartReveal.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C368-v2-measurement-empty.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C369-v2-measurement-saved.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C370-v2-measurement-chart.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C395-measurement-axis-final.png",
+        "rebuild/verification/v2-review-2026-11-25/C412-measurement-endpoint-labels.png"
+      ],
+      "ui_verification": "Userbodycompositionreference;5+7metrics. UIadd/dateedit/secondrecord observed before finalQAreset. C395 seededfixture finalaxis; rightendpointlabel narrowwidth remains partial. Latest25/11 chart-motion: Metric/unit/record-keyed chartplot reveal;20pt endpoint padding source. Small-width date label still partial; no new measurement mutation in main. See chart-motion ui-run for build/main preservation and remaining limits. Latestreview: separate endpoint date labels replace autoaxislabels, C412 native2record24/11–25/11 bothvisible atsmallphone. Same-day branch source-only; fullwidth/date-span/a11y testing stillpartial.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-HEALTH-PROFILE",
+      "name": "Hồ sơ sức khỏe nhập tay",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/BodyMeasurements.swift",
+        "DopafitV2/DopafitV2/Settings.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-progress-journal-2026-11-25/C378-v2-health-profile.png",
+        "rebuild/verification/v2-progress-journal-2026-11-25/C379-v2-health-status.png"
+      ],
+      "ui_verification": "D48; optionalbirth/height/profile/manualentry. Healthnotconnected, no auth/read/write requested. Not restored onboarding age/height.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G04"
+      ]
+    },
+    {
+      "id": "V2-ANSWER-REVIEW",
+      "name": "Xem lại và sửa đáp án trước khi lưu",
+      "implementation": "partial",
+      "source_files": [
+        "DopafitV2/DopafitV2/SetupReviewStep.swift",
+        "DopafitV2/DopafitV2/Onboarding.swift",
+        "DopafitV2/DopafitV2/OnboardingParts.swift"
+      ],
+      "evidence": [
+        "rebuild/verification/v2-review-2026-11-25/C408-review-returning-required.png",
+        "rebuild/verification/v2-review-2026-11-25/C409-review-plan-updated.png",
+        "rebuild/verification/v2-review-2026-11-25/C411-review-final-top.png",
+        "rebuild/verification/v2-review-2026-11-25/C413-review-middle.png",
+        "rebuild/verification/v2-review-2026-11-25/C414-review-final-schedule.png",
+        "rebuild/verification/v2-review-2026-11-25/C415-review-cancel-branch.png",
+        "rebuild/verification/v2-review-2026-11-25/C416-selected-answer-accessibility.png",
+        "rebuild/verification/v2-review-2026-11-25/qa-saved-review.json",
+        "rebuild/verification/v2-review-2026-11-25/qa-saved-datetime.json",
+        "rebuild/verification/v2-review-2026-11-25/qa-final-saved.json",
+        "rebuild/verification/v2-review-2026-11-25/C417-main-installed.png",
+        "rebuild/verification/v2-gift-reference-audit-2026-11-25/C426-reviewed-female-returning.png"
+      ],
+      "ui_verification": "18 current V2 answers grouped into3sections. Native sampled sex Apply/Cancel; returning requires break; obstacles branch returns review; place/schedule rebuildactualplan5/~40→4/~30;desires2; date26Nov/hour08; activitydefaultlight. Save→Pro thenclosegift→Home; saved answers persist after relaunch. No purchase/notificationOSrequest. Other editor routes source-wired, not all18live-edited. Final CheckRow traits sampled. Preview fixtures bypass earlier questions, so screenshots show currentShape unselected in QA, not an actual completed-full-onboarding audit. Original fullreview remains partial until missing original questions exist. MainfullJSONfresh equal; noreset/demo. Superseding final25/11 20:48: Female and returning-over3months edited, Apply disabled without break, final Save→Pro→Home; schedule draft not prematurely persisted.",
+      "open_gaps": [
+        "V2-G01",
+        "V2-G02",
+        "V2-G03",
+        "V2-G04"
+      ]
+    }
+  ],
+  "latest_audit": {
+    "date": "2026-11-25",
+    "evidence": "rebuild/verification/v2-pain-home-gift-2026-11-25/ui-run.json",
+    "main_installed": true,
+    "limits": [
+      "Reference mechanics adapted to graphite/lime app, not identical source color/product/cuts or everyframe",
+      "No measured FPS/peak memory/VoiceOver/allviewport/allmedicalbranch certification",
+      "New multi-joint grid/empty layout source branches not all retapped this UI-only pass; prior logic tests remain",
+      "Gift inactive/resume restarts current segment; not full lifecycle timing audit",
+      "Comparison board uses actual Max captures with different desktop window scale; not pixel-parity measurement",
+      "Board delivered self-contained HTML. Native Chrome readback; no full high-resolution isolated board PNG. Rect-less template runtime guard added rather than inventing bounds."
+    ]
+  }
+}

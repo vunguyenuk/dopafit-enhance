@@ -1,0 +1,94 @@
+{
+  "source": "Authored locally in Blender4.0.2 with scripts/blender/build-onboarding-plates.py; no AI equipment geometry",
+  "blend": "onboarding-plates.blend",
+  "geometry": "geometry.json",
+  "states": [
+    {
+      "state": "plates-3-0",
+      "sha256": "12ff8d02216eca7db72c17ec869f2afa83951918106e1c2b8bc6b6f032629208",
+      "asset": "blender-plates-3-0"
+    },
+    {
+      "state": "plates-3-1",
+      "sha256": "00e7c143c171ce16563d42b6cd2e67e3f59e0fec791f88e877e710a881d29abd",
+      "asset": "blender-plates-3-1"
+    },
+    {
+      "state": "plates-3-2",
+      "sha256": "b84dcd2feadecd0e163ef57736b2efbc026248329ee7d849559fe6d6b5274144",
+      "asset": "blender-plates-3-2"
+    },
+    {
+      "state": "plates-3-3",
+      "sha256": "83e307404f9ca343765848fa38b6e13cb373c18eb5d3616dd7e8749d68d442e4",
+      "asset": "blender-plates-3-3"
+    },
+    {
+      "state": "plates-5-0",
+      "sha256": "1927dc98b4822211fbfa9aa2e645511c4676eb2be136f658334403a2bbdb271d",
+      "asset": "blender-plates-5-0"
+    },
+    {
+      "state": "plates-5-1",
+      "sha256": "1a2583b4556eb5545365a982398d3ebb76d75f8bf76175c1c6728f76cf3ea6ca",
+      "asset": "blender-plates-5-1"
+    },
+    {
+      "state": "plates-5-2",
+      "sha256": "4a89bfc2d0ae050708be635a636b07a6573d48a0928c793e049173e3d4d64cb3",
+      "asset": "blender-plates-5-2"
+    },
+    {
+      "state": "plates-5-3",
+      "sha256": "2ce33b0033203cb658ca8abc6554c7fb48be3421fd960e388cea8fdf6ce52dcd",
+      "asset": "blender-plates-5-3"
+    },
+    {
+      "state": "plates-5-4",
+      "sha256": "c04bd68ff6e01daf08de69665a25fe6f078013b3dec5a251f5c7ed88fe61b500",
+      "asset": "blender-plates-5-4"
+    },
+    {
+      "state": "plates-5-5",
+      "sha256": "2fa95a2e2bfbd9942bde94026a1685be9f7ab4871e43739130485c766894c652",
+      "asset": "blender-plates-5-5"
+    },
+    {
+      "state": "plates-6-0",
+      "sha256": "f9742264157194527debfc0b16810b4d32494b00ade43370f439edc3cf1d3200",
+      "asset": "blender-plates-6-0"
+    },
+    {
+      "state": "plates-6-1",
+      "sha256": "d7dd070050767feaaddc34489e480601a03efb2a9ffbddd259aa718c320f0ca1",
+      "asset": "blender-plates-6-1"
+    },
+    {
+      "state": "plates-6-2",
+      "sha256": "67393c50fcb7a2efc403ccd0c14b55c8acefea206436396b9e7cb526b986ec3b",
+      "asset": "blender-plates-6-2"
+    },
+    {
+      "state": "plates-6-3",
+      "sha256": "c1672b1378db27bed9c15fad931604244d9bff7eb2ff884e7c25b05b1d6a1daf",
+      "asset": "blender-plates-6-3"
+    },
+    {
+      "state": "plates-6-4",
+      "sha256": "a7c9b2d46e9400b699a75cae619eac3de3f3777dfcef0afc81454b7fa5c390d2",
+      "asset": "blender-plates-6-4"
+    },
+    {
+      "state": "plates-6-5",
+      "sha256": "604b64ae86c7f379ded7194421a96d9b6c7e824d5ffc2aa4c3816befc86abd85",
+      "asset": "blender-plates-6-5"
+    },
+    {
+      "state": "plates-6-6",
+      "sha256": "b5663b20c8187cef9f204a23e0d11cb7c2dd6bfb3faaff37e9a057ac6f110399",
+      "asset": "blender-plates-6-6"
+    }
+  ],
+  "render": "Cycles48samples, transparent1080×600; 3/5/6slots",
+  "limits": "Visual equipment is illustrative, not density/mass certified; each UIincrement preserves2kgperside/4kgtotal. Offline stateimages, not a live3Drenderer or continuousmesh animation."
+}

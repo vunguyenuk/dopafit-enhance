@@ -1,0 +1,114 @@
+{
+  "assets": [
+    {
+      "asset": "male-body-realistic",
+      "sha256": "87d26a9dd8785613fa6185658953649a525994d80a24df7aacefb1594eb29fbd",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "female-body-realistic",
+      "sha256": "5fe96799ed0f745c36f70c6d81e1b9c3f7dff2369315781ebc7d80573d15c88a",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "male-goals-actions",
+      "sha256": "dd3b2ab66d6c60f39f71a641a24803cbfadf8a1ed733c87121c109e2814ce9db",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "female-goals-actions",
+      "sha256": "14ec0e578b6b5a8e5c4bae0e44954ba0f5f1790d92778452b9d05931a030b5f3",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "female-desire-sheet",
+      "sha256": "3ca734e9c11cd7fd089c4657dfa0e19fe60c844b1687d38c859dd76881a8bb3e",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "onboarding-activity-sheet",
+      "sha256": "9c38e6d36f9a3792f9a648bb8d8412af13218ff2f5cca4e37c33163522bcae20",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "female-activity-sheet",
+      "sha256": "d732c4ba209bea3a8e6f8bb8a886bad320bad8500c109e9c6e79836703859a94",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "onboarding-reward-sheet",
+      "sha256": "bda7fd084688abbbd17bc71b2d9a0a354b46f6f71f844b45c45abab19f2328ac",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "female-lifestyle-sheet",
+      "sha256": "75da701a3e38bb36ae0c9e503715cb95dcbd5b53597d1993dcfe381302a3f84e",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-person-attractive",
+      "sha256": "a131b8f79d9d8d04a80ac6495d041c65fa6a7340ad1310c5f8f7e9b2a02b4b1d",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-person-confident",
+      "sha256": "326bccf2e97b03a89e371c054156c16900bcb6d3ff6df6229f2cbcf5d0522958",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-person-back",
+      "sha256": "6f160be278044c5aa60376312952b86f40e83867be6da994a75f2fe4e40477ae",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-person-sleep",
+      "sha256": "ef1744c62a00f84ae1f1f21350f0493ea7060d86530fdfa45d77f00ef0e3fc6b",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-male-full-gym",
+      "sha256": "02864289f110be82382daaa382389c71f59884bcb848e3a1dab27fbd0d1ae3ce",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-male-small-gym",
+      "sha256": "30b5430fb9ba96a4f02b04a7844864e1572aaf3f5c8413ef212770b731e37916",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-male-home",
+      "sha256": "cb9855ef55b0c9ce305fc3ac86b8bedf19afef27a60e50ed86cc67c5aeeb0155",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-female-full-gym",
+      "sha256": "002943d4e9d6bba22e9c42c87b97eaf17c569141d36d97159b9fceb6b07838b4",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-female-small-gym",
+      "sha256": "2129e99037e2a1c06533c027fe3717197c6586e6c29b1534dd37304a7c26026d",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    },
+    {
+      "asset": "vn-female-home",
+      "sha256": "e9fb2a4e67aaebabddb7bf1d5afcae1eb6074f60ed137ef1befe9978a38a074b",
+      "review": "Source visual inspected; fictionalAIphotographic illustration, no new editing this turn"
+    }
+  ],
+  "body_cell_order": [
+    "average",
+    "soft waist",
+    "slim",
+    "moderately trained",
+    "lean",
+    "round abdomen"
+  ],
+  "rules": [
+    "Current selection supplies baseline; old belly only for legacy explicit callers",
+    "Target maintain or sameactualcell displays one portrait",
+    "Balanced target retains alreadyaverage/trainedbody",
+    "Female choice selects explicit female sibling for illustrations; exerciseguides retain exactvariant policy"
+  ],
+  "not_claimed": "Not clinical bodyfat inference, measured outcome, or full liveUI review of everybranch"
+}

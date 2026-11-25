@@ -1,0 +1,25 @@
+{
+  "isPro": false,
+  "sawPro": false,
+  "added": [],
+  "onboarded": false,
+  "history": [],
+  "gentle": false,
+  "checkIn": {
+    "fine": {}
+  },
+  "swaps": {},
+  "profile": {
+    "name": "",
+    "place": "fullGym",
+    "bodyKg": 70,
+    "goal": "muscle",
+    "unit": "kg",
+    "minutes": 45,
+    "sex": "female",
+    "level": "some",
+    "daysPerWeek": 3
+  },
+  "textScale": 1,
+  "removed": []
+}

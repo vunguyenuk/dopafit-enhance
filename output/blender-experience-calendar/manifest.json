@@ -1,0 +1,49 @@
+{
+  "sourceScene": "output/blender-calendar/calendar.blend",
+  "generator": "scripts/blender/build-experience-calendar.py",
+  "render": "600px RGBA Cycles32; SF font, same camera direction/light rig; tighter3.35 framing and brighter numeral materials",
+  "assets": [
+    {
+      "name": "experience-calendar-new",
+      "value": "<6",
+      "unit": "tháng",
+      "selected": false,
+      "sha256": "4c00e655399fff54d4d1626fc0210e9c797631e45cefbf9e0b99abbcdd276b63"
+    },
+    {
+      "name": "experience-calendar-new-selected",
+      "value": "<6",
+      "unit": "tháng",
+      "selected": true,
+      "sha256": "5d8ece30fa9eb94a19ecac8b61234962c02e971f97b0e9b9941f0b5e6229b959"
+    },
+    {
+      "name": "experience-calendar-experienced",
+      "value": "6–24",
+      "unit": "tháng",
+      "selected": false,
+      "sha256": "98e440cf24742a1e096ae09d8dcc1ed7b681de6571c6e493e9609ad453e773f6"
+    },
+    {
+      "name": "experience-calendar-experienced-selected",
+      "value": "6–24",
+      "unit": "tháng",
+      "selected": true,
+      "sha256": "3da4f31a99a35b7a4022402a9259ce3b5371c0386e0c1787bf7be315a86905b7"
+    },
+    {
+      "name": "experience-calendar-advanced",
+      "value": "24+",
+      "unit": "tháng",
+      "selected": false,
+      "sha256": "a53327c49c7c3b4a956c17cdf8beff8239a4a444b305ffe095d5fbb4d596be25"
+    },
+    {
+      "name": "experience-calendar-advanced-selected",
+      "value": "24+",
+      "unit": "tháng",
+      "selected": true,
+      "sha256": "4831acc8dad9ca1417960d202b4b587ea7dff54998fb3360cdbb7ef2661297aa"
+    }
+  ]
+}

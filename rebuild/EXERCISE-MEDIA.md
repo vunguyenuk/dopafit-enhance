@@ -1,3 +1,8 @@
+## Latest25/11 — V2 user-supplied real exercise clips
+Three exact-variant pins from `/Users/vunguyen/Downloads/Excercises/`: incline barbell bench press→incline, machine rear-delt fly→machinefly (Reverse Pec Deck), standing bilateral dumbbell shrug→shrug. Three source poses per clip reviewed; all6guide/thumb files decoded. Guide MP4s preserve1280×720source bytes/timing/colors/audio track; player remains muted.480px-wide thumbs are derived without grading/AI/timing interpolation. Manifest/hash/review: `third_party/user-exercises-2026-11-25/manifest.json`. Source rights/release clearance unresolved; user-supplied local prototype only. No nationality/sex identity claims from appearance.
+
+Only these3IDs override corresponding V2 Zenith/ExerciseDB siblings for both profile branches. Arnoldpress absent; do not substitute generic shoulderpress. Other named folder variants (frontsquat/Smithstiffleg/cablehammer/bandlat) are not equivalent to current catalog; not imported. V2 player now preserves source color, pauses when scene inactive and cleans up players/observers. No measuredFPS claim. Active guide+pager sampleUI C315–317 in `verification/v2-arm-proportion-2026-11-25`; fixture0logged/0history, no Healthwrite. Home/overview first use an actual planned filmed exercise; if none, may use a clearly labelled “Minh họa” catalog clip sharing a primary muscle AND gear already in the plan. This never changes prescriptions or exact guide mapping. Decorative heroes pause under Reduce Motion; fallback remains exact planned guide.
+
 # Exercise media — current local prototype, 10/11/2026
 
 ## Latest11/11 — reviewed Zenith demo overlay

@@ -1,0 +1,54 @@
+PASS: legacy main JSON roundtrip retains all values
+PASS: old profiles decode without new answers
+PASS: legacy state has no invented offer or selected subscription
+PASS: offer deadline persists without resetting
+PASS: demo plan selection persists
+PASS: fresh setup invents no age or height
+PASS: break question conditional for nil
+PASS: activity follows comparison
+PASS: current weight precedes goal
+PASS: break question conditional for Optional(checks.Profile.Recent.regular)
+PASS: activity follows comparison
+PASS: current weight precedes goal
+PASS: break question conditional for Optional(checks.Profile.Recent.onOff)
+PASS: activity follows comparison
+PASS: current weight precedes goal
+PASS: break question conditional for Optional(checks.Profile.Recent.returning)
+PASS: duration follows return answer
+PASS: activity follows comparison
+PASS: current weight precedes goal
+PASS: at most two follow-up stories
+PASS: required requested surface focus
+PASS: required requested surface currentShape
+PASS: required requested surface targetShape
+PASS: required requested surface targetWeight
+PASS: required requested surface belly
+PASS: required requested surface intensity
+PASS: required requested surface potential
+PASS: required requested surface reward
+PASS: required requested surface schedule
+PASS: required requested surface building
+PASS: required requested surface forecast
+PASS: required requested surface ready
+PASS: required requested surface reveal
+PASS: required requested surface reminder
+PASS: duration roundtrip weeks2to4
+PASS: duration roundtrip months1to3
+PASS: duration roundtrip over3months
+PASS: all new choices persist together
+PASS: weight unit roundtrip
+PASS: plan exists for easy
+PASS: easy caps sets at two
+PASS: no duplicate exercise easy
+PASS: plan exists for steady
+PASS: steady caps sets at three
+PASS: no duplicate exercise steady
+PASS: plan exists for challenging
+PASS: no duplicate exercise challenging
+PASS: arm priority reorders within push day
+PASS: focus preserves chest in split
+PASS: preview respects selected place without state mutation
+PASS: preview did not save local answers
+PASS: real AppState persistence stores answers
+PASS: conservative ankle filter covers leg exercises
+53 V2 onboarding checks passed. Not UI or original rebuild parity evidence.

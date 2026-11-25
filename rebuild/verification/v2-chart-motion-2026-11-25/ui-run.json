@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-25",
+  "scope": "V2 chart motion, starting-load visual, defined physique cell3",
+  "build": {
+    "log": ".build/v2-chart-visible-final.log",
+    "result": "BUILD SUCCEEDED",
+    "intermediate_failure": "iOS18 onScrollVisibilityChange missing availability guard, fixed; deployment stays iOS17"
+  },
+  "source": [
+    "ChartReveal.swift",
+    "StartingLoadCard.swift",
+    "AlignedPortrait.swift",
+    "PotentialProgressCard.swift",
+    "ProgressTab.swift",
+    "BodyMeasurements.swift",
+    "InsightsViews.swift",
+    "OnboardingChoices.swift",
+    "ContextStory.swift",
+    "Onboarding.swift"
+  ],
+  "native_qa": {
+    "device": "iPhone18Pro/iOS27.3",
+    "samples": [
+      "C396 male defined target",
+      "C397 female defined target",
+      "C398 actual37.5kg starting load with staggeredbenefits",
+      "potential final .95s finite reveal recording",
+      "forecast70→68 reveal",
+      "ReduceMotionpotential static final/restoredoff",
+      "report30days/7days recorded",
+      "final bars reveal after scroll entersviewport",
+      "C405 finalpotential complete",
+      "C406 finalforecast complete"
+    ],
+    "disposable_history_count": 12,
+    "removed": true,
+    "newly_booted_device_shutdown": true
+  },
+  "main": {
+    "bundle": "com.local.dopafit.v2",
+    "device": "iPhone18ProMax",
+    "before_ui": "welcome/no activeworkout",
+    "after_ui": "C407-main-installed.png welcome",
+    "installed": true,
+    "reset_or_demo": false,
+    "fresh_full_json_equal": true,
+    "onboarded": false,
+    "history_count": 0,
+    "baseline": "main-preinstall.json",
+    "final": "main-final.json",
+    "note": "User reset/completed main concurrently across prior turns. Do not restore15:22 female/home snapshot."
+  },
+  "media_manifest": "output/onboarding-defined-2026-11-25/manifest.json",
+  "limits": [
+    "Not all charts/ranges/lifecycle/DynamicType/VoiceOver/FPS live tested",
+    "iOS17 fallback uses onAppear; not viewport trigger; no live17 test",
+    "Dateaxis20pt padding source; narrow endpoint label not fully closed",
+    "Bodyweight startingload alternate source-only",
+    "Only bodycell3 replaced; not a fresh audit of entireNam/Nu image matrix",
+    "FictionalAI target, not client transformation",
+    "No modelchecks rerun for UI-only change; prior37/179results remain prior evidence"
+  ],
+  "external_mutations": "None: originalMirroring unsavedsetup, Rebuild, Figma140, Health/auth/payment unchanged",
+  "recordings": {
+    "potential": "potential-chart-motion-final.mp4",
+    "ruler": "starting-load-motion.mp4",
+    "forecast": "weight-chart-motion.mp4",
+    "reduce_motion": "chart-reduce-motion.mp4",
+    "viewport_bars": "report-chart-visible-final.mp4",
+    "bars_preview": "report-chart-visible-preview.mp4"
+  },
+  "caveat": "C399/C400 and potential final recording precede visibility-only amendment; C405/C406 confirm final visual. Final report recording proves viewport amendment. Earlier report initial recording is historical."
+}

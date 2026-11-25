@@ -1,0 +1,211 @@
+{
+  "date": "2026-11-25",
+  "queries": [
+    {
+      "query": "Weight goal onboarding with a progress chart",
+      "mode": "deep",
+      "platform": "ios",
+      "previewsViewed": true,
+      "screens": [
+        {
+          "index": 0,
+          "id": "bf318134-6272-4173-aa73-e60f3f2b39d0",
+          "image_url": "https://mobbin.com/api/mcp/short/u4tRc1XS",
+          "mobbin_url": "https://mobbin.com/screens/bf318134-6272-4173-aa73-e60f3f2b39d0?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Cal AI",
+          "platform": "ios"
+        },
+        {
+          "index": 1,
+          "id": "f1b987b2-5724-4e00-9280-1a44525bda32",
+          "image_url": "https://mobbin.com/api/mcp/short/a8gcgtzU",
+          "mobbin_url": "https://mobbin.com/screens/f1b987b2-5724-4e00-9280-1a44525bda32?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Noom",
+          "platform": "ios"
+        },
+        {
+          "index": 2,
+          "id": "06dc81da-8575-4971-a790-73df7bc8b3cb",
+          "image_url": "https://mobbin.com/api/mcp/short/9qpRBnnZ",
+          "mobbin_url": "https://mobbin.com/screens/06dc81da-8575-4971-a790-73df7bc8b3cb?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "BitePal",
+          "platform": "ios"
+        },
+        {
+          "index": 3,
+          "id": "9375fa7e-7052-472f-a9a7-08ed899a4ef2",
+          "image_url": "https://mobbin.com/api/mcp/short/fjVQv1kz",
+          "mobbin_url": "https://mobbin.com/screens/9375fa7e-7052-472f-a9a7-08ed899a4ef2?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Ro",
+          "platform": "ios"
+        },
+        {
+          "index": 4,
+          "id": "8ccfe909-2d08-4c96-9302-e6debb08ca38",
+          "image_url": "https://mobbin.com/api/mcp/short/3HXUr8Ez",
+          "mobbin_url": "https://mobbin.com/screens/8ccfe909-2d08-4c96-9302-e6debb08ca38?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Withings Health Mate",
+          "platform": "ios"
+        },
+        {
+          "index": 5,
+          "id": "dacfdf79-4ef1-45ee-9cd4-34afd717baa8",
+          "image_url": "https://mobbin.com/api/mcp/short/Zd5dZ6RT",
+          "mobbin_url": "https://mobbin.com/screens/dacfdf79-4ef1-45ee-9cd4-34afd717baa8?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "MacroFactor",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "Workout plan preview with an exercise list",
+      "mode": "deep",
+      "platform": "ios",
+      "previewsViewed": true,
+      "screens": [
+        {
+          "index": 0,
+          "id": "854ba102-3ced-4c97-9c89-f577e6805922",
+          "image_url": "https://mobbin.com/api/mcp/short/cYoMqSlB",
+          "mobbin_url": "https://mobbin.com/screens/854ba102-3ced-4c97-9c89-f577e6805922?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Peloton Strength+",
+          "platform": "ios"
+        },
+        {
+          "index": 1,
+          "id": "03e3ffa0-81a5-42a6-8f64-7e2fc063b2f4",
+          "image_url": "https://mobbin.com/api/mcp/short/FNAGGFJi",
+          "mobbin_url": "https://mobbin.com/screens/03e3ffa0-81a5-42a6-8f64-7e2fc063b2f4?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Centr",
+          "platform": "ios"
+        },
+        {
+          "index": 2,
+          "id": "358aff92-c42b-459f-bd80-79b551c7987a",
+          "image_url": "https://mobbin.com/api/mcp/short/Za8lLlz5",
+          "mobbin_url": "https://mobbin.com/screens/358aff92-c42b-459f-bd80-79b551c7987a?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Ladder",
+          "platform": "ios"
+        },
+        {
+          "index": 3,
+          "id": "f1249a22-06ae-4bee-8350-40cabca371c2",
+          "image_url": "https://mobbin.com/api/mcp/short/Twu1HUl2",
+          "mobbin_url": "https://mobbin.com/screens/f1249a22-06ae-4bee-8350-40cabca371c2?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Hevy",
+          "platform": "ios"
+        },
+        {
+          "index": 4,
+          "id": "367a27d1-c757-4720-8ebf-7ed4cbf81993",
+          "image_url": "https://mobbin.com/api/mcp/short/T7e6Maqn",
+          "mobbin_url": "https://mobbin.com/screens/367a27d1-c757-4720-8ebf-7ed4cbf81993?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Bevel",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "Personalized workout plan generation loading progress and ready summary",
+      "mode": "deep",
+      "platform": "ios",
+      "previewsViewed": true,
+      "screens": [
+        {
+          "index": 0,
+          "id": "84412bcd-5df2-4e55-a18f-d4a303c766ca",
+          "image_url": "https://mobbin.com/api/mcp/short/tNXldcRW",
+          "mobbin_url": "https://mobbin.com/screens/84412bcd-5df2-4e55-a18f-d4a303c766ca?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Apple Fitness",
+          "platform": "ios"
+        },
+        {
+          "index": 1,
+          "id": "d8c29db8-7813-4abd-a525-2287ee532e6d",
+          "image_url": "https://mobbin.com/api/mcp/short/pU0wCRN7",
+          "mobbin_url": "https://mobbin.com/screens/d8c29db8-7813-4abd-a525-2287ee532e6d?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Equinox+",
+          "platform": "ios"
+        },
+        {
+          "index": 2,
+          "id": "6278cbc4-c0f7-48e2-a867-7e741d136f06",
+          "image_url": "https://mobbin.com/api/mcp/short/YWhX5ssU",
+          "mobbin_url": "https://mobbin.com/screens/6278cbc4-c0f7-48e2-a867-7e741d136f06?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Runna",
+          "platform": "ios"
+        },
+        {
+          "index": 3,
+          "id": "68e8e2ca-4a2d-4fb1-bac9-1e89b598ebfd",
+          "image_url": "https://mobbin.com/api/mcp/short/kgEet5jb",
+          "mobbin_url": "https://mobbin.com/screens/68e8e2ca-4a2d-4fb1-bac9-1e89b598ebfd?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Tempo",
+          "platform": "ios"
+        },
+        {
+          "index": 4,
+          "id": "37832c51-89c8-48d8-b7a7-e13bb894f363",
+          "image_url": "https://mobbin.com/api/mcp/short/OGTATUwg",
+          "mobbin_url": "https://mobbin.com/screens/37832c51-89c8-48d8-b7a7-e13bb894f363?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Liven",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "Fitness onboarding generating a personalized plan loading screen",
+      "mode": "deep",
+      "platform": "ios",
+      "previewsViewed": true,
+      "screens": [
+        {
+          "index": 0,
+          "id": "f9128f3d-58bf-47a2-9a70-03cee23d9c28",
+          "image_url": "https://mobbin.com/api/mcp/short/39i0nZcX",
+          "mobbin_url": "https://mobbin.com/screens/f9128f3d-58bf-47a2-9a70-03cee23d9c28?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Bevel",
+          "platform": "ios"
+        },
+        {
+          "index": 1,
+          "id": "41372309-48bb-45ea-b9bf-31e08c7ced31",
+          "image_url": "https://mobbin.com/api/mcp/short/FAAEdsW4",
+          "mobbin_url": "https://mobbin.com/screens/41372309-48bb-45ea-b9bf-31e08c7ced31?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Garmin Connect",
+          "platform": "ios"
+        },
+        {
+          "index": 2,
+          "id": "692ad6ef-8427-4e45-88f9-cd7fd2df8390",
+          "image_url": "https://mobbin.com/api/mcp/short/vaV7uHsX",
+          "mobbin_url": "https://mobbin.com/screens/692ad6ef-8427-4e45-88f9-cd7fd2df8390?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Peloton Strength+",
+          "platform": "ios"
+        },
+        {
+          "index": 3,
+          "id": "96ac6812-b174-4dc5-8a8f-e23364e36989",
+          "image_url": "https://mobbin.com/api/mcp/short/KpioliLX",
+          "mobbin_url": "https://mobbin.com/screens/96ac6812-b174-4dc5-8a8f-e23364e36989?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Life Reset",
+          "platform": "ios"
+        },
+        {
+          "index": 4,
+          "id": "37832c51-89c8-48d8-b7a7-e13bb894f363",
+          "image_url": "https://mobbin.com/api/mcp/short/NTEsbdDz",
+          "mobbin_url": "https://mobbin.com/screens/37832c51-89c8-48d8-b7a7-e13bb894f363?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Liven",
+          "platform": "ios"
+        }
+      ]
+    }
+  ],
+  "moves": {
+    "chart": "BitePal direct endpoint weights + Cal AI contained chart, no dates/statistics/comparison line",
+    "story": "Bevel and Hevy actual workout summary + exercise thumbnail/name/set hierarchy",
+    "review": "Equinox+ selected responses + Apple Fitness explicit continue/create CTA; synchronous local generator does not need staged timer",
+    "dropped": "Loading screens show async processes, unlike this local synchronous generator. Runna verbose summary, Tempo metrics, Noom/Ro clinical claims omitted."
+  }
+}

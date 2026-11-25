@@ -21,7 +21,11 @@ struct RootView: View {
     var body: some View {
         T.scale = CGFloat(state.data.textScale)
         return Group {
-            if !state.data.onboarded {
+            if isPaywallPreview {
+                ProPaywall(firstTime: true)
+            } else if isDesignPreview {
+                MainTabs()
+            } else if !state.data.onboarded {
                 OnboardingFlow()
             } else if !state.data.sawPro {
                 ProPaywall(firstTime: true)
@@ -33,6 +37,22 @@ struct RootView: View {
         .lineSpacing(3 * T.scale) // mặc định cho mọi đoạn chữ nhiều dòng
         .overlay { if splash { LaunchSplash { splash = false }.transition(.opacity) } }
         .onChange(of: phase) { _, p in if p == .active { state.resetDailyIfNeeded() } }
+    }
+
+    private var isPaywallPreview: Bool {
+        #if DEBUG
+        Bundle.main.bundleIdentifier?.hasSuffix(".designqa") == true && ProcessInfo.processInfo.arguments.contains("--preview-paywall")
+        #else
+        false
+        #endif
+    }
+
+    private var isDesignPreview: Bool {
+        #if DEBUG
+        Bundle.main.bundleIdentifier?.hasSuffix(".designqa") == true && ProcessInfo.processInfo.arguments.contains("--preview-home")
+        #else
+        false
+        #endif
     }
 }
 
@@ -46,11 +66,14 @@ struct MainTabs: View {
                 .tabItem { Label("Buổi tập", systemImage: "dumbbell") }
                 .tag(0)
             ProgressTab()
-                .tabItem { Label("Tiến bộ", systemImage: "chart.line.uptrend.xyaxis") }
+                .tabItem { Label("Cơ thể", systemImage: "figure.stand") }
                 .tag(1)
+            WeeklyGoalsScreen()
+                .tabItem { Label("Mục tiêu", systemImage: "target") }
+                .tag(2)
             LogTab()
                 .tabItem { Label("Nhật ký", systemImage: "calendar") }
-                .tag(2)
+                .tag(3)
         }
         .fullScreenCover(isPresented: Binding(get: { state.active != nil }, set: { if !$0 { state.active = nil } })) {
             ActiveWorkoutView()

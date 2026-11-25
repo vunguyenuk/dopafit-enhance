@@ -1,0 +1,6 @@
+· Carbon Training is a style Echo can apply, on its dark device.
+· The accent #B5F53D comes out as #75A400: Echo holds every accent to one lightness, so a lit cap reads the same in every style.
+  Readability: dim text (#b1b1b1) reads at APCA Lc 55 on the cap (#2f2f31); small text reads well from 60.
+  Font: SF Pro (sans), from System font: https://developer.apple.com/fonts/
+  Kept on purpose, by the builder: near-black with one acid colour (User: “tao làm màu đen thôi không làm màu trắng”; persistent project instruction: “Preserve original Dopafit primary lime RGB(0.71,0.96,0.24)”.)
+  Kept on purpose, by the builder: one stock face, for everything (Persistent user project instruction: “Preserve original Dopafit primary lime ... and SF fonts/weights/case.” Native SF remains the explicit brand requirement.)

@@ -1,0 +1,79 @@
+{
+  "sawPro": true,
+  "onboarded": true,
+  "profile": {
+    "daysPerWeek": 4,
+    "injuries": [],
+    "focusAreas": [
+      "shoulders"
+    ],
+    "sex": "male",
+    "minutes": 45,
+    "place": "fullGym",
+    "firstDay": 817232400,
+    "currentShape": "average",
+    "targetShape": "muscular",
+    "targetKg": 70,
+    "recent": "regular",
+    "goal": "lean",
+    "age": 28,
+    "name": "",
+    "unit": "kg",
+    "desires": [
+      "Ng\u1ee7 ngon, \u0111\u1ea7u \u00f3c nh\u1eb9"
+    ],
+    "activity": "high",
+    "obstacles": [
+      "Thi\u1ebfu \u0111\u1ed9ng l\u1ef1c"
+    ],
+    "level": "experienced",
+    "bodyKg": 70
+  },
+  "isPro": true,
+  "swaps": {},
+  "added": [],
+  "checkInDate": 817273772.135399,
+  "demoProPlan": "year",
+  "checkIn": {
+    "fine": {}
+  },
+  "removed": [
+    "incline",
+    "smith-bench",
+    "pushup",
+    "closebench",
+    "db-shoulder-press",
+    "arnold",
+    "lateral",
+    "frontraise",
+    "bandpress",
+    "tricep",
+    "skull",
+    "tbar",
+    "db-row",
+    "bent-row",
+    "machinefly",
+    "rearfly",
+    "shrug",
+    "ez-curl",
+    "db-curl",
+    "incline-curl",
+    "hammer",
+    "wristcurl",
+    "squat",
+    "goblet",
+    "bodysquat",
+    "rdl",
+    "goodmorning",
+    "thruster",
+    "adductor",
+    "calf",
+    "kneelsquat",
+    "crunch",
+    "deadbug"
+  ],
+  "gentle": false,
+  "history": [],
+  "textScale": 1,
+  "planDate": 817273943.56043
+}

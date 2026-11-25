@@ -8,16 +8,18 @@ struct ProgressTab: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                Text("Tiến bộ").font(T.font(28, .bold)).foregroundStyle(T.text).padding(.top, 8).oneLineTitle()
-                SegmentedPills(titles: ["Hồi phục", "Sức mạnh", "Tuần này"], selection: $segment)
+                Text("Cơ thể").font(T.font(28, .bold)).foregroundStyle(T.text).padding(.top, 8).oneLineTitle()
+                SegmentedPills(titles: ["Kết quả", "Hồi phục"], selection: $segment)
                 switch segment {
-                case 0: RecoveryView()
-                case 1: StrengthView()
-                default: WeekGoalsView()
+                case 0:
+                    StrengthOverview()
+                    StrengthView()
+                    BodyCompositionSection()
+                default: RecoveryView()
                 }
             }
             .padding(.horizontal, T.pad)
-            .padding(.bottom, 24)
+            .padding(.bottom, 100)
         }
         .scrollIndicators(.hidden)
         .screenBackground()
@@ -29,6 +31,7 @@ struct ProgressTab: View {
 
 struct RecoveryView: View {
     @EnvironmentObject var state: AppState
+    @State private var allMuscles = false
     var body: some View {
         let muscles = Muscle.allCases.sorted { state.readiness($0) < state.readiness($1) }
         let resting = muscles.filter { state.readiness($0) < 0.8 }
@@ -48,7 +51,10 @@ struct RecoveryView: View {
                         legend(Color.white.opacity(0.72), "Sẵn sàng tập")
                         legend(T.rest, "Đang hồi phục")
                     }
-                    Text("Tính từ số set bạn đã tập cho mỗi nhóm cơ trong 3 ngày gần nhất.").font(T.font(13)).foregroundStyle(T.faint)
+                    Text("Tính từ set đã hoàn thành trong 72 giờ gần nhất.").font(T.font(13)).foregroundStyle(T.sub)
+                    Button { allMuscles = true } label: {
+                        Text("Xem tất cả nhóm cơ").font(T.font(15, .semibold)).foregroundStyle(T.lime).frame(maxWidth: .infinity, minHeight: 44)
+                    }.buttonStyle(.plain)
                 }
             }
             if !resting.isEmpty {
@@ -66,7 +72,7 @@ struct RecoveryView: View {
                     }
                 }
             }
-        }
+        }.sheet(isPresented: $allMuscles) { RecoveryMuscleListScreen() }
     }
     private func legend(_ c: Color, _ t: String) -> some View {
         HStack(spacing: 6) {
@@ -80,14 +86,24 @@ struct RecoveryView: View {
 
 struct StrengthView: View {
     @EnvironmentObject var state: AppState
+    @State private var selectedID: String?
     var body: some View {
         let lifts = state.trackedLifts
         VStack(alignment: .leading, spacing: 14) {
-            InfoLine(icon: "info.circle", text: "Con số chính là mức tạ ước tính bạn nâng được 1 lần, tính từ set tốt nhất của mỗi buổi. Không cần thử tạ tối đa.")
+            HStack {
+                SectionTitle(title: "Bài đo sức mạnh")
+                Spacer()
+                if !lifts.isEmpty {
+                    Menu {
+                        ForEach(lifts) { exercise in Button(exercise.name) { selectedID = exercise.id } }
+                    } label: { Label("Đổi bài", systemImage: "arrow.left.arrow.right").font(T.font(13, .medium)).foregroundStyle(T.sub).frame(minHeight: 44) }
+                }
+            }
+            Text("1RM ước tính từ set tốt nhất của mỗi buổi.").font(T.font(13)).foregroundStyle(T.sub)
             if lifts.isEmpty {
                 Card { EmptyState(icon: "chart.line.uptrend.xyaxis", title: "Chưa có số liệu", message: "Sau buổi tập đầu tiên, sức mạnh của từng bài sẽ hiện ở đây.") }
             }
-            ForEach(lifts) { ex in LiftCard(exercise: ex) }
+            if let exercise = lifts.first(where: { $0.id == selectedID }) ?? lifts.first { LiftCard(exercise: exercise) }
         }
     }
 }
@@ -124,6 +140,9 @@ struct LiftCard: View {
                             PointMark(x: .value("Ngày", p.0), y: .value("Tạ", unit.fromKg(p.1)))
                                 .foregroundStyle(Color.white).symbolSize(18)
                         }
+                    }
+                    .chartPlotStyle { plot in
+                        plot.modifier(ChartReveal(key: exercise.id + unit.rawValue + series.map { "\($0.0.timeIntervalSinceReferenceDate):\($0.1)" }.joined(separator: ",")))
                     }
                     .chartYScale(domain: yDomain(series.map { unit.fromKg($0.1) }))
                     .chartYAxis {

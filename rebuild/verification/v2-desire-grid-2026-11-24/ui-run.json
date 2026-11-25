@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-24",
+  "mainBundle": "com.local.dopafit.v2",
+  "savedStateSemanticallyUnchanged": true,
+  "qaBundleRemoved": true,
+  "mainUIObserved": "Installed V2 desire grid observed via CUA after --skip-welcome, four cards/no selection/disabled Next. No main choice persisted.",
+  "build": "Debug iPhone 18 Pro Max build succeeded",
+  "uiChecks": [
+    "empty Next disabled",
+    "first and second choices selected",
+    "third choice replaces oldest, max2 retained",
+    "tap selected choice deselects",
+    "Next opens Goal",
+    "Back retains choice",
+    "final geometry empty and first-selected/enabled Next"
+  ],
+  "evidence": {
+    "C196": "First-pass empty geometry; superseded C198",
+    "C197": "QA Back retains selection; earlier geometry",
+    "C198": "Final QA empty grid",
+    "C199": "Final QA first selected and lime Next"
+  },
+  "notClaimed": [
+    "pixel-perfect equality",
+    "original cutout bytes",
+    "original illustration release rights",
+    "small-screen/system accessibility completeness",
+    "new model-suite result"
+  ],
+  "assets": {
+    "rebuild/verification/v2-desire-grid-2026-11-24/user-reference.png": {
+      "sha256": "1365bbe2fae1e6dcd4fdf6d8283cec366da9648623ecd5b339edc746f377484d",
+      "bytes": 371064
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/main-state-after.json": {
+      "sha256": "5c756210cb00906479738c58cbd4f2b52b57dd8c7828183948d1f8b169209827",
+      "bytes": 382
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/C199-grid-selected-final.png": {
+      "sha256": "a3382c4d5728d9d15ac2b0977df398a0837affe669fe33a736806e0e4238027a",
+      "bytes": 267767
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/C197-grid-back-retains-choice.png": {
+      "sha256": "2f29a810476c868a2f97a8e97b7db56472f41e83246ee1e0ad5032b2992b0dc4",
+      "bytes": 260697
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/C196-grid-first-pass.png": {
+      "sha256": "cdff259255b0764a1af1c66fd4784f14e4744275d6c81ef7dc551ae994404523",
+      "bytes": 242929
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/C198-grid-empty-final.png": {
+      "sha256": "75102f5089877b868b48eacc34e76829cfcc26ebafb5c3753d621170795de7f3",
+      "bytes": 251672
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/main-state-before.json": {
+      "sha256": "42c37c0c0a1fabebdd7171323a7a473003d0ec9bef214a426a9321d24f9de89d",
+      "bytes": 382
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/illustration-provenance.json": {
+      "sha256": "ab3a62d26e8f1585992c780f2a54f3ed887e8b23369dfbe3d64cda67f6e9cebe",
+      "bytes": 963
+    },
+    "rebuild/verification/v2-desire-grid-2026-11-24/build.log": {
+      "sha256": "ce91f44beeb001d95c848b5dcef5284473217f2dd2bb1f774af875f6624fd5ff",
+      "bytes": 40951
+    }
+  }
+}

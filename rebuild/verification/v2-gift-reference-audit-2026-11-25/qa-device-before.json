@@ -1,0 +1,12 @@
+{
+  "dataPath": "/Users/vunguyen/Library/Developer/CoreSimulator/Devices/E1506FD5-5CFB-4B7A-ABD1-EF7D5558A352/data",
+  "dataPathSize": 6013661184,
+  "logPath": "/Users/vunguyen/Library/Logs/CoreSimulator/E1506FD5-5CFB-4B7A-ABD1-EF7D5558A352",
+  "udid": "E1506FD5-5CFB-4B7A-ABD1-EF7D5558A352",
+  "lastUsedAt": "2026-11-25T10:29:32Z",
+  "isAvailable": true,
+  "logPathSize": 356352,
+  "deviceTypeIdentifier": "com.apple.CoreSimulator.SimDeviceType.iPhone-18-Pro",
+  "state": "Shutdown",
+  "name": "iPhone 18 Pro"
+}

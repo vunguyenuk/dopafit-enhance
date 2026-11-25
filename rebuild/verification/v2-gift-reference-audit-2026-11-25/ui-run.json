@@ -1,0 +1,74 @@
+{
+  "status": "final candidate installed on main; native sampled QA completed and disposable QA cleaned",
+  "date": "2026-11-25",
+  "build": ".build/v2-context-gift-final.log",
+  "checks": {
+    "onboarding": 309,
+    "progress": 45,
+    "scope": "model evidence, not screen count"
+  },
+  "native_verified": [
+    "Lower-back selection shows lower-back glyph/label, gentle movement and eligible exercise suggestions; guide opens",
+    "Pain story is first and deduplicated; motivation shows actual plan exercise rows",
+    "Schedule preview does not persist before final Save",
+    "Loading 0 to ready; female and returning-over-three-months edit before final Save; Save reaches Pro then Home",
+    "Gift loops without opening; explicit Open shows lid/light fan then balanced offer; expiry nil before opening",
+    "One disposable QA Arnold set: 5 kg per hand, 10 reps, 100 kg volume",
+    "Body estimated 1RM 6.7 kg; Goals 1.5 effective sets and 1 of 3 days; Journal/report one session",
+    "QA saved profile/history survived final binary reinstall and relaunch",
+    "Reduce Motion on: gift static; Open reaches offer; Reduce Motion restored off (C434)",
+    "Female preview selects shoulder plus lower back: both glyphs/labels, filtered two suggestions (C435); actual female adductor guide opens (C436)",
+    "Final set controls expose button role; initially unselected, selected after completion, unselected after undo; disposable zero-set workout discarded",
+    "Main prior expired offer/no active workout observed; final install no reset/demo; Pro closed to main Home; actual priority arms/chest matches push exercise list"
+  ],
+  "evidence": [
+    "C424-lower-back-suggestions.png",
+    "C425-motivation-exercises.png",
+    "C426-reviewed-female-returning.png",
+    "C427-offer-balanced.png",
+    "C428-home-after-onboarding.png",
+    "C429-qa-one-set-result.png",
+    "C430-strength-after-one-set.png",
+    "C431-goals-after-one-set.png",
+    "C432-journal-after-one-set.png",
+    "C433-report-one-set.png",
+    "C434-gift-reduce-motion.png",
+    "C435-two-regions-filtered.png",
+    "C436-female-suggestion-guide.png",
+    "native-gift-loop-open.mp4"
+  ],
+  "not_verified": [
+    "No-joint and no-eligible native screens (model branches passed)",
+    "Gift inactive/resume lifecycle, measured FPS/peak memory",
+    "All 18 review editors/all routes/VoiceOver/DynamicType/viewports",
+    "Same-viewport before/after board: old user capture and QA Pro are different viewports; native captures supplied, no pixel-match claim",
+    "All female exact exercise siblings; existing exact-variant fallback remains"
+  ],
+  "preservation": {
+    "main_latest_read": "main-lock-check.json",
+    "main_history": 0,
+    "main_onboarded": true,
+    "main_isPro": false,
+    "main_installed_this_pass": true,
+    "qa_history": 1,
+    "qa_profile_history_equal_after_relaunch": true,
+    "original_setup_saved": false,
+    "health_write": false,
+    "purchase": false,
+    "figma_mutation": false,
+    "main_preinstall_equals_afterinstall": true,
+    "main_final_full_json_equal": false,
+    "main_only_change": {
+      "sawPro": {
+        "before": false,
+        "after": true
+      }
+    },
+    "main_profile_history_all_other_keys_equal": true,
+    "qa_removed": true,
+    "task_booted_QA_device_shutdown": true
+  },
+  "blocker": null,
+  "cleanup_pending": null,
+  "qa_fixture_note": "For multi-joint preview only, toggled disposable QA onboarded false then true; no saved profile/history changed. QA final matches one-session profile/history."
+}

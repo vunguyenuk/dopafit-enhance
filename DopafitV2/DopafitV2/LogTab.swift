@@ -5,22 +5,47 @@ struct LogTab: View {
     @State private var month = Date()
     @State private var selectedDay: Date? = nil
     @State private var detail: Session? = nil
+    @State private var expandedCalendar = false
+    @State private var report = false
+    @State private var milestones = false
+    @State private var profile = false
+    @State private var adding = false
 
     var body: some View {
         let sessions = state.sortedHistory.filter { s in
             if let d = selectedDay { return Calendar.current.isDate(s.started, inSameDayAs: d) }
-            return Calendar.vn.isDate(s.started, equalTo: month, toGranularity: .month)
+            return Calendar.vn.isDate(s.started, equalTo: month, toGranularity: expandedCalendar ? .month : .weekOfYear)
         }
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                Text("Nhật ký").font(T.font(28, .bold)).foregroundStyle(T.text).padding(.top, 8).oneLineTitle()
-                Card { MonthCalendar(month: $month, selected: $selectedDay) }
                 HStack {
-                    Text(selectedDay.map { Fmt.day($0) } ?? "Các buổi trong tháng").font(T.font(20, .bold)).foregroundStyle(T.text)
+                    Text("Nhật ký").font(T.font(28, .bold)).foregroundStyle(T.text)
+                    Spacer()
+                    IconButton(icon: "chart.bar.xaxis", label: "Báo cáo tập luyện") { report = true }
+                    IconButton(icon: "person.crop.circle", label: "Hồ sơ sức khỏe") { profile = true }
+                }.padding(.top, 8)
+                HStack(alignment: .top, spacing: 20) {
+                    BigStat(value: "\(state.completedSessions().count)", label: "buổi đã lưu", size: 28)
+                    Spacer()
+                    Button { milestones = true } label: {
+                        VStack(alignment: .leading, spacing: 9) {
+                            Text("Cột mốc").font(T.font(13)).foregroundStyle(T.sub)
+                            HStack(spacing: 6) { ForEach(state.milestones()) { MilestoneBadgeView(milestone: $0, size: 30) } }
+                        }
+                    }.buttonStyle(.plain).accessibilityLabel("Xem cột mốc tập luyện")
+                }
+                HStack(spacing: 28) {
+                    Label("\(state.trainedDays(inWeekOf: Date()))/\(state.data.profile.daysPerWeek) ngày tuần này", systemImage: "calendar")
+                    Label("\(state.weeklyStreak()) tuần liên tiếp", systemImage: "flame")
+                }.font(T.font(13)).foregroundStyle(T.sub)
+                Card(padding: 14) { MonthCalendar(month: $month, selected: $selectedDay, expanded: $expandedCalendar) }
+                HStack {
+                    Text(selectedDay.map { Fmt.day($0) } ?? (expandedCalendar ? "Các buổi trong tháng" : "Các buổi trong tuần")).font(T.font(20, .bold)).foregroundStyle(T.text)
                     Spacer()
                     if selectedDay != nil {
-                        Button("Cả tháng") { selectedDay = nil }.font(T.font(15, .medium)).foregroundStyle(T.sub)
+                        Button("Xem hết") { selectedDay = nil }.font(T.font(14, .medium)).foregroundStyle(T.sub)
                     }
+                    IconButton(icon: "plus", label: "Ghi buổi tập mới") { adding = true }
                 }
                 if sessions.isEmpty {
                     Card { EmptyState(icon: "calendar", title: "Chưa có buổi tập", message: selectedDay == nil ? "Các buổi bạn lưu sẽ hiện ở đây, theo từng ngày." : "Ngày này bạn chưa tập.") }
@@ -29,12 +54,25 @@ struct LogTab: View {
                     Button { detail = s } label: { SessionRow(session: s) }.buttonStyle(.plain)
                 }
             }
-            .padding(.horizontal, T.pad).padding(.bottom, 24)
+            .padding(.horizontal, T.pad).padding(.bottom, 100)
         }
         .scrollIndicators(.hidden)
         .screenBackground()
         .statusBarScrim()
         .sheet(item: $detail) { s in SessionDetail(session: s).environmentObject(state) }
+        .sheet(isPresented: $report) { WorkoutReportScreen() }
+        .sheet(isPresented: $milestones) { MilestonesScreen() }
+        .sheet(isPresented: $profile) { HealthProfileScreen() }
+        .sheet(isPresented: $adding) {
+            VStack(alignment: .leading, spacing: 22) {
+                SheetHeader(title: "Ghi buổi tập mới") { adding = false }
+                Text("Bắt đầu buổi tập theo kế hoạch hiện tại. Các set chỉ được thêm vào nhật ký khi bạn hoàn thành và lưu.").font(T.font(16)).foregroundStyle(T.sub).padding(.horizontal, T.pad)
+                Spacer()
+                PrimaryButton(title: "Bắt đầu ghi buổi tập", enabled: state.active == nil && !state.plan.items.isEmpty) {
+                    adding = false; state.start(state.plan)
+                }.padding(T.pad)
+            }.background(T.bg.ignoresSafeArea()).presentationDetents([.medium])
+        }
     }
 }
 
@@ -47,7 +85,7 @@ struct SessionRow: View {
                 HStack {
                     Text(Fmt.day(session.started)).font(T.font(13, .medium)).foregroundStyle(T.sub)
                     Spacer()
-                    Text(Fmt.minutes(session.seconds)).font(T.font(13, .medium)).foregroundStyle(T.sub)
+                    Text(Fmt.duration(session.seconds)).font(T.font(13, .medium)).foregroundStyle(T.sub)
                 }
                 Text(session.name).font(T.font(18, .bold)).foregroundStyle(T.text)
                 HStack(spacing: 22) {
@@ -64,23 +102,30 @@ struct MonthCalendar: View {
     @EnvironmentObject var state: AppState
     @Binding var month: Date
     @Binding var selected: Date?
+    @Binding var expanded: Bool
 
     var body: some View {
         let cal = Calendar.vn
         let interval = cal.dateInterval(of: .month, for: month)!
         let firstWeekday = (cal.component(.weekday, from: interval.start) + 5) % 7 // thứ Hai = 0
         let count = cal.range(of: .day, in: .month, for: month)?.count ?? 30
-        let cells: [Date?] = Array(repeating: nil, count: firstWeekday) + (0..<count).map { cal.date(byAdding: .day, value: $0, to: interval.start) }
-        let trainedCount = state.data.history.filter { cal.isDate($0.started, equalTo: month, toGranularity: .month) }.count
+        let weekStart = cal.dateInterval(of: .weekOfYear, for: month)!.start
+        let cells: [Date?] = expanded ? Array(repeating: nil, count: firstWeekday) + (0..<count).map { cal.date(byAdding: .day, value: $0, to: interval.start) } : (0..<7).map { cal.date(byAdding: .day, value: $0, to: weekStart) }
+        let trainedCount = state.completedSessions().filter { cal.isDate($0.started, equalTo: month, toGranularity: expanded ? .month : .weekOfYear) }.count
         VStack(spacing: 12) {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(Fmt.monthFormatter.string(from: month)).font(T.font(17, .semibold)).foregroundStyle(T.text)
+                    Button { expanded.toggle(); selected = nil } label: {
+                        HStack(spacing: 5) {
+                            Text(Fmt.monthFormatter.string(from: month))
+                            Image(systemName: expanded ? "chevron.up" : "chevron.down").font(T.font(11))
+                        }.font(T.font(17, .semibold)).foregroundStyle(T.text).frame(minHeight: 44)
+                    }.buttonStyle(.plain).accessibilityLabel(expanded ? "Thu gọn lịch tháng" : "Mở rộng lịch tháng")
                     Text("\(trainedCount) buổi").font(T.num(13, .semibold)).foregroundStyle(T.sub)
                 }
                 Spacer()
-                IconButton(icon: "chevron.left", label: "Tháng trước") { shift(-1) }
-                IconButton(icon: "chevron.right", label: "Tháng sau") { shift(1) }
+                IconButton(icon: "chevron.left", label: expanded ? "Tháng trước" : "Nhật ký tuần trước") { shift(-1) }
+                IconButton(icon: "chevron.right", label: expanded ? "Tháng sau" : "Nhật ký tuần sau") { shift(1) }
             }
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 6) {
                 ForEach(["T2", "T3", "T4", "T5", "T6", "T7", "CN"], id: \.self) { d in
@@ -108,7 +153,7 @@ struct MonthCalendar: View {
         }
     }
     private func shift(_ n: Int) {
-        if let d = Calendar.vn.date(byAdding: .month, value: n, to: month) { month = d; selected = nil }
+        if let d = Calendar.vn.date(byAdding: expanded ? .month : .weekOfYear, value: n, to: month) { month = d; selected = nil }
     }
 }
 
@@ -117,10 +162,12 @@ struct SessionDetail: View {
     @Environment(\.dismiss) private var dismiss
     var session: Session
     @State private var confirmDelete = false
+    @State private var editDuration = false
 
     var body: some View {
+        let session = state.data.history.first { $0.id == self.session.id } ?? self.session
         VStack(spacing: 0) {
-            SheetHeader(title: session.name, subtitle: Fmt.day(session.started) + " · " + Fmt.minutes(session.seconds)) { dismiss() }
+            SheetHeader(title: session.name, subtitle: Fmt.day(session.started) + " · " + Fmt.duration(session.seconds)) { dismiss() }
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                     Card {
@@ -129,6 +176,9 @@ struct SessionDetail: View {
                             BigStat(value: Fmt.n(state.unit.fromKg(session.volumeKg), digits: 0), unit: state.unit.label, label: "tổng khối lượng", accent: true, size: 28)
                         }
                     }
+                    Button { editDuration = true } label: {
+                        InsightRow(title: "Thời lượng buổi tập", detail: Fmt.duration(session.seconds), icon: "clock")
+                    }.buttonStyle(.plain)
                     ForEach(session.items) { it in
                         Card(padding: 14) {
                             HStack(alignment: .top, spacing: 12) {
@@ -155,6 +205,7 @@ struct SessionDetail: View {
             }
         }
         .background(T.bg.ignoresSafeArea())
+        .sheet(isPresented: $editDuration) { SavedSessionDurationEditor(sessionID: session.id) }
         .alert("Xóa buổi tập này?", isPresented: $confirmDelete) {
             Button("Xóa", role: .destructive) {
                 state.data.history.removeAll { $0.id == session.id }
@@ -162,5 +213,34 @@ struct SessionDetail: View {
             }
             Button("Giữ lại", role: .cancel) {}
         } message: { Text("Số liệu sức mạnh và hồi phục sẽ tính lại. Không hoàn tác được.") }
+    }
+}
+
+struct SavedSessionDurationEditor: View {
+    @EnvironmentObject var state: AppState
+    @Environment(\.dismiss) private var dismiss
+    var sessionID: UUID
+    @State private var minutes = ""
+    @State private var seconds = ""
+    private var total: Int? {
+        guard let m = Int(minutes), let s = Int(seconds), m >= 0, (0...59).contains(s), (1...86_400).contains(m * 60 + s) else { return nil }
+        return m * 60 + s
+    }
+    var body: some View {
+        VStack(spacing: 24) {
+            SheetHeader(title: "Sửa thời lượng") { dismiss() }
+            HStack(spacing: 20) {
+                VStack { TextField("0", text: $minutes).accessibilityLabel("Số phút"); Text("phút").font(T.font(14)).foregroundStyle(T.sub) }
+                Text(":")
+                VStack { TextField("0", text: $seconds).accessibilityLabel("Số giây"); Text("giây").font(T.font(14)).foregroundStyle(T.sub) }
+            }.font(T.num(38)).keyboardType(.numberPad).multilineTextAlignment(.center).padding(T.pad)
+            Spacer()
+            PrimaryButton(title: "Lưu thời lượng", enabled: total != nil) {
+                if let total, state.updateSessionDuration(sessionID, seconds: total) { dismiss() }
+            }.padding(T.pad)
+        }.background(T.bg.ignoresSafeArea()).onAppear {
+            let duration = state.data.history.first { $0.id == sessionID }?.seconds ?? 0
+            minutes = String(duration / 60); seconds = String(duration % 60)
+        }
     }
 }

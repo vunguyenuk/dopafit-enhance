@@ -1,0 +1,41 @@
+{
+  "generator": "scripts/blender/build-onboarding-calendar.py",
+  "states": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "blender": "4.0.2",
+  "font": "//../../../../../../System/Library/Fonts/SFNS.ttf",
+  "purpose": "Weekly frequency selection, not dates or completed sessions",
+  "render": "600px transparent Cycles32",
+  "assets": [
+    {
+      "number": 2,
+      "source": "output/blender-calendar/calendar-2.png",
+      "sha256": "4fc514716bceb1813c7928e89ca14d1e5325de259e8659751ea3a01884a89ae6"
+    },
+    {
+      "number": 3,
+      "source": "output/blender-calendar/calendar-3.png",
+      "sha256": "d52cad12a617b17d790e77a363ed9313b8eaa26b0794190933b86c47102a4aba"
+    },
+    {
+      "number": 4,
+      "source": "output/blender-calendar/calendar-4.png",
+      "sha256": "67e9cb6201dd95d3e32aa148967adcb530653676033b1dbae2bc420fc3d407da"
+    },
+    {
+      "number": 5,
+      "source": "output/blender-calendar/calendar-5.png",
+      "sha256": "f1afec2fc54a1de317fd7b113f40ba6ea94a9bf0be48d16b109864cdbd308986"
+    },
+    {
+      "number": 6,
+      "source": "output/blender-calendar/calendar-6.png",
+      "sha256": "74751bceda17484958476d99c3926a4bd27ac0ae79191bba147d261d11634c69"
+    }
+  ]
+}

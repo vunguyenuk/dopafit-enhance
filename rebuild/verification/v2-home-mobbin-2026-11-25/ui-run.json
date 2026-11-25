@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-25",
+  "scope": "User resumed Mobbin-backed targeted Workout Home simplification; existing DopafitV2 native project only",
+  "research": {
+    "file": "mobbin-research.json",
+    "searches": 4,
+    "preview_images_examined": 23,
+    "anchors": [
+      {
+        "app": "Bevel",
+        "mobbin_url": "https://mobbin.com/screens/deedeeba-dd65-4aa1-9a3b-5f568c34d628",
+        "take": "Compact workout name/counts then exercise rows and Start"
+      },
+      {
+        "app": "Withings Health Mate",
+        "mobbin_url": "https://mobbin.com/screens/9dc9f0fb-a0d3-4230-bac0-d3fa4e781b01",
+        "take": "Compact workout text/duration beside image"
+      }
+    ],
+    "no_account_saves_comments_collections": true,
+    "connection_restored": true
+  },
+  "source_changes": [
+    "WorkoutTab Home-only horizontal session name/focus/metrics and128x86fit preview; truthful video/illustration caption below",
+    "Shorten two specific initial-plan reasons, retaining actual selected focus names. Other dynamic reasons verbatim",
+    "List title Bài tập avoids duplicate count; actual count remains in metadata",
+    "Non-fine reason appears once in existing Undo banner, not again above calendar",
+    "No-workout view hides inherited4minute estimate/load reason; disabledStart preserved",
+    "Media.heroExercise extracted from PlanMotionHero without selection changes; onboarding overview still full width. No new media/dependencies/colors or plan algorithm changes"
+  ],
+  "validation": {
+    "build": "BUILD SUCCEEDED .build/v2-home-mobbin.log",
+    "model_checks": "74 existing V2 checks passed .build/v2-home-models.log; not UI/original parity",
+    "ui": {
+      "C325": "Main baseline before change; same profile/data/viewport as final",
+      "C326": "First compact QA; superseded by final type/hit-area polish",
+      "C327": "Final normal layout before later conditional empty/tired copy refinement;3complete exercise rows first view",
+      "C328": "Actual menu45->30,4items/12sets/32minute estimate; inherited estimate is not a strict budget guarantee",
+      "C329": "45restored then home->fullgym; plan and filmed hero update correctly",
+      "C330": "Tired applied;2sets/10total,10%load reduction. Duplicated explanation exposed and fixed after this capture",
+      "C331": "Start opens actual Thân trên A/5exercise active session; no set logged; discarded QA through UI",
+      "C332": "Final tired state single summary in Undo banner; full numeric reason retained",
+      "C333": "Initial empty fixture;4minute model estimate exposed; source presentation fixed",
+      "C334": "Concurrent user navigation to Log tab,0history; not an empty Home capture. Reobserved before further action",
+      "C335": "Final empty Home0items/0sets, no estimated time/load reason, no fake preview, Start disabled",
+      "C336": "Final installed main Home, actual5exercise/15set/40minute plan; three rows visible immediately"
+    },
+    "additional_routes": "Add sheet opens/closes; Arnold guide opens/closes; tired Undo restores5x3sets; duration45 restored. No actual Add/Replace/logging required in this copy/layout pass",
+    "limitations": [
+      "Same sampled iPhone18ProMax viewport only; no full DynamicType/VoiceOver/small-device audit",
+      "No measuredFPS claim; decorative ReduceMotion pause retained, system toggle not exercised",
+      "Calendar source behavior/calculations unchanged; no new date browsing/history navigation claim",
+      "Footage exact-variant gaps/rights and integrations remain open"
+    ]
+  },
+  "preservation": {
+    "before": "main-before.json",
+    "fresh_preinstall": "main-fresh-preinstall.json",
+    "after": "main-final.json",
+    "saved_json_equal_fresh": true,
+    "saved_json_equal_turnstart": true,
+    "history_count": 0,
+    "profile": "male/home/experienced/lean/shoulders/4days/45minutes retained",
+    "restore_snapshot": false,
+    "main_reset_demo": false,
+    "qa_history_count": 0,
+    "qa_removed": true,
+    "qa_fixture": "qa-empty-fixture.json, removed with QA only",
+    "no_original_account_figma_health_purchase_auth_actions": true
+  },
+  "board": {
+    "file": "before-after.html",
+    "template_unmodified_except_data": true,
+    "embedded_images": 2,
+    "panes": [
+      "before.png",
+      "after.png"
+    ],
+    "exact_crop": "CGImage0,0,559,1195 from raw CUA captures; removes white padding only",
+    "rects": "Whole captured viewport measured at0,0,100%,100%; no guessed component bounds",
+    "readback": "board-native-readback.png shows actual loaded panes/crops/links; capture partial at native browser scale, so HTML is full comparison deliverable",
+    "browser": "Only new local board tab opened. User switched to their Saltmere tab during readback; that tab left untouched, board remains available. No user tab closed."
+  }
+}

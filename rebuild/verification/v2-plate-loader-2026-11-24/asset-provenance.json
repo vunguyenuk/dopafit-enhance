@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-24",
+  "reference": "user-reference.png",
+  "output": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-plate-hero.imageset/hero.png",
+  "sha256": "126c30168a5b0a57bdbe487be6e44a4a1ef2378ac6784150ef9b831ad84c87a3",
+  "source": "Built-in imagegen; equipment illustration composed from user-supplied rendered UI reference; not stock photography or original Dopafit artwork.",
+  "scope": "Only equipment hero on onboarding echo. Other five real stock photo assets unchanged. Interactive plates below are live SwiftUI code, not a baked UI image.",
+  "nativeInteraction": "Each mounted plate represents 2kg on each side, +4kg total per increment. Original slices and 34pt drag quantization retained."
+}

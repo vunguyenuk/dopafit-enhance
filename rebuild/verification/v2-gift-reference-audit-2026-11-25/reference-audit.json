@@ -1,0 +1,56 @@
+{
+  "reference_file": "/Users/vunguyen/Downloads/From Klickpin.com- Fun Crochet Project Ideas for a Cozy Vibe-pin-id-918523286542495952.mp4",
+  "archived_as": "reference.mp4",
+  "sha256": "113072a1aa19211da2cbcda1725f2b93013a4faf3b4aeed19f35138b06900fdb",
+  "fps": 24,
+  "duration_seconds": 13.589002,
+  "reviewed_contact_sheets": [
+    "reference-0-1.jpg",
+    "reference-1-2.jpg",
+    "reference-2-3.jpg"
+  ],
+  "observations": [
+    {
+      "seconds": [
+        0,
+        0.34
+      ],
+      "motion": "Gift descends and squashes against floor; ribbon/tag trail the impact."
+    },
+    {
+      "seconds": [
+        0.34,
+        1.16
+      ],
+      "motion": "Two small irregular settling/tremor beats; base stays grounded."
+    },
+    {
+      "seconds": [
+        1.16,
+        1.76
+      ],
+      "motion": "Gift lifts, leans right and expands toward camera; glow strengthens."
+    },
+    {
+      "seconds": [
+        1.8,
+        2.65
+      ],
+      "motion": "Harder forward push, cut into open box, bright light fan and flying content."
+    },
+    {
+      "seconds": [
+        2.65,
+        3
+      ],
+      "motion": "Next headphone/product scene. Not used in Dopafit offer."
+    }
+  ],
+  "implementation_mapping": {
+    "idle": "48 Blender frames at24fps. Grounded nonuniform squash/recovery, tremor, true3D tilt/lift/thrust then authored return, no automatic lid opening. First descent omitted from repeating anticipation.",
+    "open": "21 Blender frames at24fps:press0.12s→thrust0.25s→lid separates/rotates0.28–0.83s, interior light and code light fan.Offer transition after1.025s.",
+    "visual_preservation": "Existing graphite/lime Dopafit Blender gift and black background; no red brand/headphone/tag imported.",
+    "limits": "Adapted motion choreography, not frame-identical source shot. Original shot has camera cuts and product reveal; Dopafit keeps gift/offer flow."
+  },
+  "supersedes": "Previous claim reference video unavailable: found by filename/mtime in Downloads during this turn. Previous ±2.5degree flat image oscillation replaced."
+}

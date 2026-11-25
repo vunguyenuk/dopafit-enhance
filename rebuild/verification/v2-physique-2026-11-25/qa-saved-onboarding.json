@@ -1,0 +1,34 @@
+{
+  "onboarded": true,
+  "isPro": false,
+  "profile": {
+    "sex": "female",
+    "daysPerWeek": 3,
+    "unit": "kg",
+    "goal": "muscle",
+    "injuries": [],
+    "desires": [],
+    "minutes": 45,
+    "bodyKg": 70,
+    "place": "fullGym",
+    "currentShape": "round",
+    "name": "",
+    "firstDay": 817232400,
+    "obstacles": [],
+    "targetShape": "balanced",
+    "targetKg": 67,
+    "level": "some"
+  },
+  "added": [],
+  "checkIn": {
+    "fine": {}
+  },
+  "gentle": false,
+  "swaps": {},
+  "textScale": 1,
+  "sawOffer": true,
+  "offerExpiresAt": 817263598.073953,
+  "history": [],
+  "removed": [],
+  "sawPro": false
+}

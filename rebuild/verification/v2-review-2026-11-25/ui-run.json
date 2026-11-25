@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-25",
+  "scope": "Continue missing V2 screens: collected-answer review and smallphone chart date labels",
+  "build": {
+    "result": "BUILD SUCCEEDED",
+    "log": ".build/v2-review-final.log"
+  },
+  "model_checks": {
+    "suite": "V2 onboarding",
+    "passed": 179,
+    "log": ".build/v2-review-models.log",
+    "meaning": "Model/route checks, not UI/parity. No model files changed this turn."
+  },
+  "source_files": [
+    "Onboarding.swift",
+    "SetupReviewStep.swift",
+    "OnboardingParts.swift",
+    "OnboardingPortraitSteps.swift",
+    "BodyMeasurements.swift"
+  ],
+  "native_qa": {
+    "device": "iPhone18Pro/iOS27.3",
+    "edits": [
+      "sex other→female Apply, male Cancel preserves female",
+      "recent nil→returning: Apply disabled until break over3months",
+      "place fullGym→home, auto-next stayseditor",
+      "duration45→30: actualpreview5/~40→4/~30",
+      "desires attractive+sleep",
+      "obstacle unknownplan adds story but returnsreview",
+      "startday26Nov2026",
+      "reminder08:00",
+      "activitydefaultlight Apply"
+    ],
+    "persisted_after_save_and_relaunch": true,
+    "saved_files": [
+      "qa-saved-review.json",
+      "qa-saved-datetime.json",
+      "qa-final-saved.json"
+    ],
+    "history": 0,
+    "measurements": "2 disposable weight records imported from earlierQA fixture; no main writes",
+    "cleaned": true,
+    "newly_booted_pro_shutdown": true
+  },
+  "main": {
+    "bundle": "com.local.dopafit.v2",
+    "ui_before": "welcome/noactive",
+    "ui_after": "C417-main-installed.png welcome",
+    "installed": true,
+    "reset_or_demo": false,
+    "fresh_full_json_equal": true,
+    "onboarded": false,
+    "history": 0
+  },
+  "observations": [
+    "ReviewAX exposes18buttons with labelledvalues andeditidentifiers",
+    "C413/414 compactwindow real scroll/drag showsmiddle/end andstickySave",
+    "CheckRow icon checkmark.seal inheritedselectedtrait fixed; final C416 onlyactualselectedrows",
+    "C412 endpointdates24/11,25/11 stable/visible, commaYaxis70→68",
+    "Defaultactivitylight nowstored when viewappears, Cancel restores snapshot",
+    "Reminders scheduled at finalSave rather than reminderNext, QA skips OSrequest",
+    "DEBUG savedprofile hydration routeindex fixed and finalbinaryreview sampled"
+  ],
+  "limits": [
+    "Not all18editors physically edited; reused screens sourcewired",
+    "Previewfixtures bypass earlierquestions; currentShape remainsnil in QA",
+    "No fullVoiceOver/DynamicType/performance/iOS17/everyviewport certification",
+    "Same-day measurementlabel path source-only; crossyear/largedatespans untested",
+    "Notification permission/delivery/denied/error/previouspending cleanup notlive-tested",
+    "Originalreview stillpartial because gear/sports/acquisition/exact4week/Healthonboarding missing"
+  ],
+  "external_mutations": "None; OriginalMirroring unsavedsetup and Rebuild preserved, noFigma/Health/auth/purchase",
+  "tool_notes": "Fullhub coordinate noWindowsAvailable; compactwindow restored coordinate taps/drag. NoMaclock blocker thisrun. No screenshotbypass."
+}

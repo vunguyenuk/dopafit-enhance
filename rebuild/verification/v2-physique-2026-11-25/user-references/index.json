@@ -1,0 +1,32 @@
+[
+  {
+    "reference": 1,
+    "file": "rebuild/verification/v2-physique-2026-11-25/user-references/ref-1.png",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-17436db0-2685-454f-b663-c99cca1862e1.png",
+    "sha256": "3faa9ab11b8ce3c1f12ef3d70979d332181b65be3cb25b8ada0c992392850b24"
+  },
+  {
+    "reference": 2,
+    "file": "rebuild/verification/v2-physique-2026-11-25/user-references/ref-2.png",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-e98f2f53-8b4b-482c-b6a2-3ede78ed842b.png",
+    "sha256": "2fe71ba8e0d6171b358ef74511d693d0b7d48cb4622b13c1b8ec4256873f4bc7"
+  },
+  {
+    "reference": 3,
+    "file": "rebuild/verification/v2-physique-2026-11-25/user-references/ref-3.png",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-9245b88b-1cc2-4bbc-a78b-8cb8e9798a7f.png",
+    "sha256": "61dfdaf9a780675a03e456188143cb0f9b06fdde8f485e46af83e731e799e4c1"
+  },
+  {
+    "reference": 4,
+    "file": "rebuild/verification/v2-physique-2026-11-25/user-references/ref-4.png",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-ceb954c4-e1ac-492c-a4f5-44fd4cdb16c5.png",
+    "sha256": "3ceba6cca9bd04141e5c6d7abc647d4cbf3f43d9b5ebbabf47c4a16a7c17b6e5"
+  },
+  {
+    "reference": 5,
+    "file": "rebuild/verification/v2-physique-2026-11-25/user-references/ref-5.png",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-01c7229e-154b-42f6-86ae-840d244cbe08.png",
+    "sha256": "38bc785e03e1bec57fc9362d3d4d47a1edfe9d421bdb710f54e289dd903d7fec"
+  }
+]

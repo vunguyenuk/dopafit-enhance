@@ -1,0 +1,25 @@
+{
+  "onboarded": false,
+  "sawPro": false,
+  "gentle": false,
+  "profile": {
+    "daysPerWeek": 3,
+    "bodyKg": 70,
+    "name": "",
+    "goal": "muscle",
+    "minutes": 45,
+    "place": "fullGym",
+    "level": "some",
+    "sex": "male",
+    "unit": "kg"
+  },
+  "removed": [],
+  "isPro": false,
+  "textScale": 1,
+  "added": [],
+  "history": [],
+  "swaps": {},
+  "checkIn": {
+    "fine": {}
+  }
+}

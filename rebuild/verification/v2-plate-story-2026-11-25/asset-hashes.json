@@ -1,0 +1,78 @@
+[
+  {
+    "asset": "blender-plates-3-0.imageset",
+    "sha256": "7a6f57ab3f620701a94d0f25a18d1d0a0368376b46d6eb699977f4a35552e1fb"
+  },
+  {
+    "asset": "blender-plates-3-1.imageset",
+    "sha256": "1618774b9a454ff131aac5f0c5827c015de69e716935dd1a6001d50548c70bc8"
+  },
+  {
+    "asset": "blender-plates-3-2.imageset",
+    "sha256": "311774dd374a4961db37175b2b4bd6da87409483af4ea35c9257bbca676ca2d5"
+  },
+  {
+    "asset": "blender-plates-3-3.imageset",
+    "sha256": "228a2655c52640516c27ed9b60f0d9a74fbbf73aca04da1c08e8a3fb5bacd58f"
+  },
+  {
+    "asset": "blender-plates-5-0.imageset",
+    "sha256": "bbac7e2682c8695c3c05bd7ea3c7568333d1a40c63d5980638b6ca5669a25570"
+  },
+  {
+    "asset": "blender-plates-5-1.imageset",
+    "sha256": "a3694e2d306956d0246798b4cf5397a2f93ebd9c0f99005644af2ac3b2bd6b20"
+  },
+  {
+    "asset": "blender-plates-5-2.imageset",
+    "sha256": "438e364d06699c0e846bd157fec2050e28babe5b05544bb12fa7b42c3d6bc907"
+  },
+  {
+    "asset": "blender-plates-5-3.imageset",
+    "sha256": "0ef26db86aa669876ea40b7ec9213fc9cc83118beb2d0336584d740dac5326cf"
+  },
+  {
+    "asset": "blender-plates-5-4.imageset",
+    "sha256": "0a4e41de1eb2f5276ab3e2cace7078268417d20c478f88cd24ec25d8929a9b72"
+  },
+  {
+    "asset": "blender-plates-5-5.imageset",
+    "sha256": "aa9ba51b88bed325f6488cb2d662dc65268d782161d95f45d582b686e2798136"
+  },
+  {
+    "asset": "blender-plates-6-0.imageset",
+    "sha256": "7cdf9f35bf02d392ee52718ba1710860b957b6545be4797f80cf3f1ec031a3d7"
+  },
+  {
+    "asset": "blender-plates-6-1.imageset",
+    "sha256": "8c9dffe751569ac2aacaba65e6ae869c85c9647ad90ceb3b5412ed923bb3837e"
+  },
+  {
+    "asset": "blender-plates-6-2.imageset",
+    "sha256": "082972eb0d6e78622d0fe33b6ed88bbfe9b556d31fee7f75fa1273ed3fdc133b"
+  },
+  {
+    "asset": "blender-plates-6-3.imageset",
+    "sha256": "0c21b1193437c7f272e214390b2ea773ae116974c0394735494ad40fc2045563"
+  },
+  {
+    "asset": "blender-plates-6-4.imageset",
+    "sha256": "2d2be752364ac70116f17650d57247d3bfbd1fa272f62eb7a7b9809b921b4243"
+  },
+  {
+    "asset": "blender-plates-6-5.imageset",
+    "sha256": "c2ced9382c6e09010593fc18435e6e3b63f17526167a359af88ce07ff03f7ee1"
+  },
+  {
+    "asset": "blender-plates-6-6.imageset",
+    "sha256": "2d8d38f5cf6a135f2753d1297f32d60b169388a0282a58bc37d0a2ea5aafbf0a"
+  },
+  {
+    "asset": "pro-gift-base.imageset",
+    "sha256": "219ae926333b7cbf7848ea7f10a2582658052b8eb532b31c9a6518d1ec1929d2"
+  },
+  {
+    "asset": "pro-gift-lid.imageset",
+    "sha256": "9fb22030e2e091596a6fddc18664b85cee298a79e66869a78374a2bded1df79f"
+  }
+]

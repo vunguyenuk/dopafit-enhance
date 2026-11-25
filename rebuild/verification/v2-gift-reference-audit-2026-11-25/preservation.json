@@ -1,0 +1,18 @@
+{
+  "mainFullJSONEqual": false,
+  "mainOnlyChange": {
+    "sawPro": {
+      "before": false,
+      "after": true
+    }
+  },
+  "mainProfileHistoryAllOtherKeysEqual": true,
+  "mainHistoryCount": 0,
+  "mainOnboarded": true,
+  "mainIsPro": false,
+  "qaProfileHistoryPreserved": true,
+  "qaHistoryCountBeforeRemoval": 1,
+  "qaRemoved": true,
+  "onlyTaskBootedQADeviceShutdown": true,
+  "deviceErased": false
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-24",
+  "authorization": "User24/11 16:35 explicitly allows AI generated Vietnamese people to unify onboarding. Supersedes noAI rule only for these onboarding illustrations; actual exercise motion and discovery photos unchanged.",
+  "sharedReuse": {
+    "person-health": "vn-person-attractive",
+    "person-fit": "vn-person-confident"
+  },
+  "prompts": "prompts.json",
+  "assets": [
+    {
+      "asset": "vn-person-attractive",
+      "source": "output/onboarding-vietnamese/attractive.png",
+      "sourceSHA256": "15a48e9a55c4c366fda5962256a38e9daa61574612e89e71579fceadab7dc7e4",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-attractive.imageset/person.png",
+      "outputSHA256": "a131b8f79d9d8d04a80ac6495d041c65fa6a7340ad1310c5f8f7e9b2a02b4b1d",
+      "topCropFraction": 0.85,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-confident",
+      "source": "output/onboarding-vietnamese/confident.png",
+      "sourceSHA256": "6ff503169262ccb05c028ee09adc5bf27db580ef04dbf51993d1179233f97af3",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-confident.imageset/person.png",
+      "outputSHA256": "326bccf2e97b03a89e371c054156c16900bcb6d3ff6df6229f2cbcf5d0522958",
+      "topCropFraction": 1,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-muscle",
+      "source": "output/onboarding-vietnamese/muscle-alpha.png",
+      "sourceSHA256": "510edd454bac64f2b60f58aeb6f9ec0a6f1e63c27aa75b40615efba550dd0ff5",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-muscle.imageset/person.png",
+      "outputSHA256": "f6e54d88d69b9733fa6b75e5bfbdc018f1eb4ab8ca88bb90fe0e866ce5de7940",
+      "topCropFraction": 0.82,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-back",
+      "source": "output/onboarding-vietnamese/back.png",
+      "sourceSHA256": "235b5941cf89d780e9cbcfe6b3da423d33508cd9347a7af33744f240b934518e",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-back.imageset/person.png",
+      "outputSHA256": "6f160be278044c5aa60376312952b86f40e83867be6da994a75f2fe4e40477ae",
+      "topCropFraction": 0.75,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-sleep",
+      "source": "output/onboarding-vietnamese/sleep.png",
+      "sourceSHA256": "13f76f977d5616a0b53b341ca60dd8f28f7e55146e982a2f80366d29f9c73af9",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-sleep.imageset/person.png",
+      "outputSHA256": "ef1744c62a00f84ae1f1f21350f0493ea7060d86530fdfa45d77f00ef0e3fc6b",
+      "topCropFraction": 1,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-lift",
+      "source": "output/onboarding-vietnamese/lift.png",
+      "sourceSHA256": "eaf0d3fcee21eda649bf56100018a1c5af0a03abbceb3fece9761ade52223d10",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-lift.imageset/person.png",
+      "outputSHA256": "9478a973108c2b8d3e5d4563f863a5e4c612ff3444733aaafade5c1245f99dff",
+      "topCropFraction": 0.84,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-seated",
+      "source": "output/onboarding-vietnamese/seated.png",
+      "sourceSHA256": "dd629d079920d17df181bc8b84c8a7b9f54cd1b890bbdf8b52237da87808d572",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-seated.imageset/person.png",
+      "outputSHA256": "f77d5ae5c27fac56c18883e3c21e3566006613d1df8ef435167f786755343d45",
+      "topCropFraction": 1,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-walk",
+      "source": "output/onboarding-vietnamese/walk.png",
+      "sourceSHA256": "19f0a216b85d2800b3c4d3b180855449e4113b618bc632788dc65302fd6db9b1",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-walk.imageset/person.png",
+      "outputSHA256": "62e36cc8ae07c6e9efa2ed1c83187be4128bfc2298d58d3dd0a64dac5bcb5eb7",
+      "topCropFraction": 1,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-person-run",
+      "source": "output/onboarding-vietnamese/run.png",
+      "sourceSHA256": "cb51da81f8a665c2ec0ea66f7320e83f995b2e43f43359a426f48cd411767f9a",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-run.imageset/person.png",
+      "outputSHA256": "5093eb55c26ce428df3a138b4f33ece60ea3408d3e3667f00a739d42eb5bc093",
+      "topCropFraction": 1,
+      "provenance": "Built-in image_gen; fictional Vietnamese adult, shared identity reference. Alpha trim/crop only after generation; not photographed stock."
+    },
+    {
+      "asset": "vn-onboarding-hero",
+      "output": "DopafitV2/DopafitV2/Assets.xcassets/vn-onboarding-hero.imageset/hero.png",
+      "outputSHA256": "fc8f9cbff7c07fe600efa08f64edfbf45a8a910ab3621e935c8b0acea045b285",
+      "provenance": "Built-in image_gen pose revision: existingfictionalVietnameseidentity + stockphoto pose/compositiononlyreference; not realphotography.",
+      "revisions": [
+        {
+          "date": "2026-11-24 before17:49",
+          "raw": "output/onboarding-vietnamese/hero.png",
+          "outputSHA256": "6f61acdb7225b1c871a0f9bc0094a15448dc9ccce87c91dcaefe38daacbfbd10",
+          "status": "Superseded: user rejected stiff forward-facing pose"
+        }
+      ],
+      "source": "output/onboarding-vietnamese/hero-action.png",
+      "sourceSHA256": "fc8f9cbff7c07fe600efa08f64edfbf45a8a910ab3621e935c8b0acea045b285",
+      "prompt": "output/onboarding-vietnamese/hero-action-prompt.txt"
+    }
+  ]
+}

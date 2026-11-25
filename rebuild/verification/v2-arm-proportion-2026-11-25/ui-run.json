@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-25",
+  "scope": "DopafitV2 only; direct user corrections to anatomy, repeated visuals, red joint markers, forecast, duplicate ready page and user-supplied exercise footage. New potential reference and disconnected Mobbin Home research follow-up included.",
+  "build": ".build/v2-potential-reference.log",
+  "model_checks": {
+    "count": 74,
+    "log": ".build/v2-final-model-checks.log",
+    "level": "Model/route checks, not UI or original parity"
+  },
+  "ui": {
+    "C304": "Male muscular-goal illustration with reduced arms",
+    "C305": "Same pose/scale round current -> moderate target comparison",
+    "C306": "All seven red joint rings and shoulder selection, before pulse follow-up",
+    "C307": "Maintenance forecast 70kg without flat curve or long card",
+    "C308": "Actual tap forecast -> overview directly, filmed incline hero and its actual plan row",
+    "C309": "70->67 reduced-copy illustrative forecast",
+    "C310": "Time obstacle timer illustration; no repeated AI portrait",
+    "C311": "Unknown-plan story with actual preview plan exercises/sets/reps",
+    "C312": "Returning reassurance with actual 32.5kg starting load, auto-advance then Back observed",
+    "C313": "Pain-specific joint preview, female branch; static marker before pulse follow-up",
+    "C314": "Isolated female-profile 3-exercise QA fixture Home/Thân trên A filmed hero",
+    "C315": "Start QA workout; incline actual video and 3 distinct filmed thumbnails",
+    "C316": "Tap rear-delt pager; exact reverse pec-deck footage",
+    "C317": "Tap shrug pager; exact standing bilateral DB shrug footage",
+    "C318": "Final pulse binary Home before QA reset; capture is Home, not a glow capture",
+    "C319": "Large joint marker expansion phase A",
+    "C320": "Large joint marker expansion phase B",
+    "C321": "Potential first pass from direct user reference; missing fourth x-axis label superseded by C322",
+    "C322": "Final native potential card all four session labels, endpoint glow, three habits; no upper-right dumbbell",
+    "C323": "Tap potential Next -> reward, route retained",
+    "C324": "Final main installed Home observed with user’s actual 5-exercise at-home plan and labelled same-muscle/same-gear shrug hero"
+  },
+  "limitations": [
+    "No measured FPS benchmark or exhaustive low-memory/background test",
+    "Reduce Motion static branch inspected in source; system setting not toggled live",
+    "Other obstacle variants beyond time/plan/pain and all physique cells not exhaustively tapped",
+    "Three user clips only: Arnold press is absent in the provided folder; existing exact source remains",
+    "File-folder source rights not established for release",
+    "Mobbin tools absent; plugin search returned empty. Requested Home research pending reconnection, no new search/reference claim"
+  ],
+  "media_manifest": "third_party/user-exercises-2026-11-25/manifest.json",
+  "arm_manifest": "output/onboarding-arm-proportion-2026-11-25/manifest.json",
+  "preservation": {
+    "turnstart": "main-before.json",
+    "user_concurrent_setup": "main-current.json",
+    "fresh_preinstall": "main-fresh-preinstall.json",
+    "postinstall": "main-final.json",
+    "fresh_saved_json_semantically_equal": true,
+    "turnstart_not_equal_due_user_completed_setup": true,
+    "main_history_count": 0,
+    "active_test_session_closed": "User explicitly approved closing unsaved Thân trên A for update; runtime session is not persisted",
+    "snapshot_restore": false,
+    "qa_history_count": 0,
+    "qa_removed": true,
+    "final_graph_preinstall": "main-chart-preinstall.json",
+    "first_update_after": "main-first-update.json",
+    "qa_final": "qa-final.json"
+  },
+  "pending": [
+    "User explicitly chose to wait for Mobbin reconnection before Home UX/copy research/redesign. No new search performed.",
+    "Small screen, full accessibility/system ReduceMotion setting/performance and all story branches remain partial."
+  ],
+  "user_followup": "User25/11 chose wait for Mobbin; do not silently redesign Home from memory."
+}

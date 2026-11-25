@@ -1,0 +1,285 @@
+{
+  "generator": "scripts/blender/build-calendar-flip.py",
+  "transitions": [
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "frames": 16,
+  "size": 400,
+  "duration": 0.288,
+  "decreasing": "reverse same physical sequence",
+  "reduceMotion": "static selected digit",
+  "note": "authored raster sequence, not runtime mesh or measured display FPS",
+  "assets": [
+    {
+      "name": "calendar-flip-2-00",
+      "sha256": "80b0a24c592ae7e10bf2e92c0bccb1fa241f20647909050a51bd2c93d01d186a"
+    },
+    {
+      "name": "calendar-flip-2-01",
+      "sha256": "de3604127fab41df0436f9cc1f686fa07b0b8f448c61c32e1bac609667f8e43b"
+    },
+    {
+      "name": "calendar-flip-2-02",
+      "sha256": "90a157ae884acc042c3b2b345cb3dba7395b4a6622e61c0e207178a0a2a67e94"
+    },
+    {
+      "name": "calendar-flip-2-03",
+      "sha256": "97eeac968e81c14715fcf27e10e4216ac1958b184879fd32c4852cd27cadddca"
+    },
+    {
+      "name": "calendar-flip-2-04",
+      "sha256": "8fee5ad0880f5a2d03a5f347a9c6c46a1e02b737829a26474ef39536f906809d"
+    },
+    {
+      "name": "calendar-flip-2-05",
+      "sha256": "ae66ceb278da49469d635e4de282d51ab582207127a94edb1886d9c77981599c"
+    },
+    {
+      "name": "calendar-flip-2-06",
+      "sha256": "23f28d79c2e6b399756ee5166944ca4d84de4b0dd6460d8c62656c25c9685bff"
+    },
+    {
+      "name": "calendar-flip-2-07",
+      "sha256": "0866b1042432de6facf4dcef77fb82e31e1f383279cd7972f9be78cbe2aef637"
+    },
+    {
+      "name": "calendar-flip-2-08",
+      "sha256": "9bf45fa837d532225c8c90197e3e93cf95d23d892cb3f5b3865513d004a077a7"
+    },
+    {
+      "name": "calendar-flip-2-09",
+      "sha256": "e1b7d3faf6c19ddb3b4d4383892ee918f0df523880a1abeb5d0899ab3fd6dfb6"
+    },
+    {
+      "name": "calendar-flip-2-10",
+      "sha256": "8eb99e748e677403ed79ce1da3f65b27ccd13ddb053e6256cb5e6340dbe3be4a"
+    },
+    {
+      "name": "calendar-flip-2-11",
+      "sha256": "6ced641ea8f95a0f06bd4682e404e728b3a3796d71d8d8a6a312ea6f9ba66611"
+    },
+    {
+      "name": "calendar-flip-2-12",
+      "sha256": "b613223489f21121df235359c4b37bf84dbd721f283617b853facbf43d016333"
+    },
+    {
+      "name": "calendar-flip-2-13",
+      "sha256": "f0d2517c6f3554dced803532ce7e8ba6ee0a601e98524ff4e88508c56430c896"
+    },
+    {
+      "name": "calendar-flip-2-14",
+      "sha256": "83ad6933dc593a506cb6dc997770fc309dc27d3926413ed4e58f65535b49136f"
+    },
+    {
+      "name": "calendar-flip-2-15",
+      "sha256": "d532375e9f848260f8a2bcf8a717f343fa666709ed536c1e45aa42caa2cf97f4"
+    },
+    {
+      "name": "calendar-flip-3-00",
+      "sha256": "8298eaa0bf9461beb248ba691190a270fc5abd126b5e92765cb6f334576dfbc7"
+    },
+    {
+      "name": "calendar-flip-3-01",
+      "sha256": "12ca902b528a9492b5177f9c941fcd6a52d6eb6fa5cbadcaedd95e92eac38e5e"
+    },
+    {
+      "name": "calendar-flip-3-02",
+      "sha256": "712dc7928e031df320c9bbf7123f3fae29204a27c4efc294c5cd2979729fff19"
+    },
+    {
+      "name": "calendar-flip-3-03",
+      "sha256": "942fcd71267a54f7bd957510f79837c8601534e5864cbd9c0e63dae404c72dd9"
+    },
+    {
+      "name": "calendar-flip-3-04",
+      "sha256": "7afbb43b09a4c616dffb65f5f971ee4a7b63dce73ca587f02a8126a8f56e79e1"
+    },
+    {
+      "name": "calendar-flip-3-05",
+      "sha256": "74a976f39bbbc5e6a0ad4d98a8aabdf3d8d868d60c534c4d777667eb13725953"
+    },
+    {
+      "name": "calendar-flip-3-06",
+      "sha256": "85c4a085374eee057be9b1ae27ea56aa98555063a551623beedac654d0b789d1"
+    },
+    {
+      "name": "calendar-flip-3-07",
+      "sha256": "62bb61abf485985324db4c0bad04f7040fb1e3e74abf63c9a579268b877217c4"
+    },
+    {
+      "name": "calendar-flip-3-08",
+      "sha256": "052a4caa64476f58f36fc761a2814945b1d64fa16b519836da6e6c7223de05dd"
+    },
+    {
+      "name": "calendar-flip-3-09",
+      "sha256": "4855a0e1991d45a0a3c847c1c47e1d1cef731376c76547d0c3b02e9ee0a4dc7e"
+    },
+    {
+      "name": "calendar-flip-3-10",
+      "sha256": "a3aaa823002d17bb2de727ea535304e2a28e2b3a3ce1c191d5a7ecc4c89f862f"
+    },
+    {
+      "name": "calendar-flip-3-11",
+      "sha256": "cbd3ef8917fc00530c185a0c90caef77b27b64c0ec776210d94cbfe3b77a4dbc"
+    },
+    {
+      "name": "calendar-flip-3-12",
+      "sha256": "56bfbaff1d70cec7fc38454eeecb355771b69f57ae84e2e2ebc79e6978c799ad"
+    },
+    {
+      "name": "calendar-flip-3-13",
+      "sha256": "bcde2c0fee0cbd647822bc7942174524f87a955c8df900344f21d8c1f0f40c56"
+    },
+    {
+      "name": "calendar-flip-3-14",
+      "sha256": "3c467d8a48a3594c2688dcd6c2642034d76ce49bbff2da8781181cda1b76f054"
+    },
+    {
+      "name": "calendar-flip-3-15",
+      "sha256": "7ea64ff964dd8554a63de49f1babcf0c2b293752d4d3d5eaa1d988f066701b14"
+    },
+    {
+      "name": "calendar-flip-4-00",
+      "sha256": "3e03b6924e3d0d86e8cdee5f462ada529e666279b2f3e39a61ad211d16fb7626"
+    },
+    {
+      "name": "calendar-flip-4-01",
+      "sha256": "cbe7f3dcd6729a4a17933d9b6d603bfc03c3d24597affab8bd2157093a059bdb"
+    },
+    {
+      "name": "calendar-flip-4-02",
+      "sha256": "2d05b47d021cc4a312c34d96a4c025d743c0bfb6aa85c427aacc8781a86fa52a"
+    },
+    {
+      "name": "calendar-flip-4-03",
+      "sha256": "457d1620162e18e5c32a5504172af82014d22b01401bb554d2c5dc2011167ca2"
+    },
+    {
+      "name": "calendar-flip-4-04",
+      "sha256": "0a63e6c2288bbecab857792a6246179a8a3b115967444b4ab48ff707996d0443"
+    },
+    {
+      "name": "calendar-flip-4-05",
+      "sha256": "8c0c5a3e2369ba1e57f7f32bde6a6ac080c75e4af2396ebfed2069d7fd52e486"
+    },
+    {
+      "name": "calendar-flip-4-06",
+      "sha256": "294cf725e4087bcb8839bd3b02ee9b8fc5e44424a952f78e60b3fa3c5100ba51"
+    },
+    {
+      "name": "calendar-flip-4-07",
+      "sha256": "a4916f303d9437fc519646e498ae9a4d0c919ea67a8238e59c06e71cf1eee297"
+    },
+    {
+      "name": "calendar-flip-4-08",
+      "sha256": "6a9ef011dc85a6217e3e04d1a54efc11d451345db0f3a562dcb1b28de2dbc798"
+    },
+    {
+      "name": "calendar-flip-4-09",
+      "sha256": "5bf3dc1261c9a9c355367205b124e406731a033e5a40b5271f34b7745ae849a6"
+    },
+    {
+      "name": "calendar-flip-4-10",
+      "sha256": "1f662157ba29091b4c100b17588541da86ea65acb5d331773995e8876a80912f"
+    },
+    {
+      "name": "calendar-flip-4-11",
+      "sha256": "da265d4e4c60fc0374ad3d4cadfc2ab8b78713547692e7aa1d5ffc4575bca3dc"
+    },
+    {
+      "name": "calendar-flip-4-12",
+      "sha256": "aac062c96e856b88d84d2221e194914f4e2dff033939e3ad31164cb49ff833e3"
+    },
+    {
+      "name": "calendar-flip-4-13",
+      "sha256": "665735d6b74ecd27276bb3200cd12c9aa0df31e577e3c6ce23effe0eb1207ede"
+    },
+    {
+      "name": "calendar-flip-4-14",
+      "sha256": "65ea08f33a410d3c9ae55cea7b69ebfa3264061ee4d20c5f9e5659e01320770f"
+    },
+    {
+      "name": "calendar-flip-4-15",
+      "sha256": "5f62f4c2fbaffacf4fb370c1ba50750284391e50156f84f74fad749b276dca01"
+    },
+    {
+      "name": "calendar-flip-5-00",
+      "sha256": "0b4c2c0d3a155614e923d2af8b994d0550876483443a76cb8d34ec8f8db694ba"
+    },
+    {
+      "name": "calendar-flip-5-01",
+      "sha256": "faca54f5308c662b74c0e430ee1361b88453eb89aca28a3c4bd5c1cee85ac332"
+    },
+    {
+      "name": "calendar-flip-5-02",
+      "sha256": "b4c4279b5fd82cbef176d3965a6e58368e5de8cedfacf4930ed159e178bdd9a9"
+    },
+    {
+      "name": "calendar-flip-5-03",
+      "sha256": "ad6b839011c96db0acf8d0167b0fcdb3e511779f5b1bab6c409dda10aa226099"
+    },
+    {
+      "name": "calendar-flip-5-04",
+      "sha256": "b851cefbe5af9c1f5bfb69bd7cc8ef2f3b7baf9d889054a15b268a115a67205b"
+    },
+    {
+      "name": "calendar-flip-5-05",
+      "sha256": "00a08be40d619e0594fff3a3f6daecb8ce471e19ac44c8996798d0595565f182"
+    },
+    {
+      "name": "calendar-flip-5-06",
+      "sha256": "4ef63685dbefa08934f28417aab63e8192cc992e8c14b00363d01d05da10926e"
+    },
+    {
+      "name": "calendar-flip-5-07",
+      "sha256": "0363638ee2d0778d1839b7a151f81fef05075e6fa1dac4785890b7105358fb11"
+    },
+    {
+      "name": "calendar-flip-5-08",
+      "sha256": "a17fcc28fba49c0ccbadbb96701e16964c9b96d2aed683f538fceb0af6d698ab"
+    },
+    {
+      "name": "calendar-flip-5-09",
+      "sha256": "01c0a9992e2ac6f325124309e558a81477450b7abe176b23926b1afac3c1bf82"
+    },
+    {
+      "name": "calendar-flip-5-10",
+      "sha256": "42e6b8b4d1fc50cae64a8b858f3a6e56826fd992751ae089e12b5434802a3da4"
+    },
+    {
+      "name": "calendar-flip-5-11",
+      "sha256": "eb9e8117f13023ab4b1f19d8d16914fea4c1a1037975d14f5a280444b397a4ef"
+    },
+    {
+      "name": "calendar-flip-5-12",
+      "sha256": "9fc78279ae16a106efc4b9df978c8408661783c6451228ac4ddded065c50f349"
+    },
+    {
+      "name": "calendar-flip-5-13",
+      "sha256": "a8ca8ebc4707ef936f4a1dd7e01fd5bce7ef4458ef9e805e8e4fa452db88c63a"
+    },
+    {
+      "name": "calendar-flip-5-14",
+      "sha256": "9ad61a75ee4bf15250352eb3c64b4412900fe169fe03d240f8dac498dc211fe2"
+    },
+    {
+      "name": "calendar-flip-5-15",
+      "sha256": "e8e7c1f31cfaec8226d37a4fffe75405d05b4a9aaaaf7ad7cf5c2a880c388d49"
+    }
+  ]
+}

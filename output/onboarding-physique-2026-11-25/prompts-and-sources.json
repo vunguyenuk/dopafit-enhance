@@ -1,0 +1,131 @@
+{
+  "created": "2026-11-25",
+  "mode": "built-in image_gen",
+  "active": [
+    {
+      "name": "male-body-realistic",
+      "key": "male-body-realistic-alpha",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-e5b968ed-edae-4121-97dc-cfc881bbf895.png",
+      "workspace": "output/onboarding-arm-proportion-2026-11-25/male-body-natural-arms.png",
+      "sha256": "87d26a9dd8785613fa6185658953649a525994d80a24df7aacefb1594eb29fbd",
+      "history": [
+        {
+          "name": "male-body-realistic",
+          "key": "male-body-realistic-alpha",
+          "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-1d7a2382-3f24-4110-8250-9ee8213084f3.png",
+          "workspace": "output/onboarding-physique-2026-11-25/male-body-realistic.png",
+          "sha256": "1fa67df464f4a17c81466ab637da10302c34b06ce40f9bb5f892f223de731372"
+        }
+      ],
+      "editPrompt": "Use case: precise-object-edit. Asset: existing six-cell transparent sprite sheet used for Dopafit Vietnamese fitness onboarding. Edit the supplied image, keeping exactly the same 3-column by 2-row grid with SIX equal square cells, one head-to-mid-thigh adult Vietnamese man per cell. Primary correction: EVERY man's arms are abnormally inflated compared with the chest and neck. Make BOTH upper arms and BOTH forearms visibly slimmer and anatomically ordinary. Reduce biceps/triceps and forearm thickness about 20–25%, natural elbows, clear gentle taper to normal slender wrists; hands retain normal size. The lower-left balanced and lower-middle moderately trained variants especially must have realistic recreational-exerciser arms, NOT bodybuilder arms, not pumped, no balloon forearm bulges. Keep the SIX body categories distinguishable: top-left average, top-middle soft waist, top-right slender, lower-left balanced healthy ordinary, lower-middle modestly toned with mild definition, lower-right round obese abdomen. Do not shrink the obese abdomen or flatten those distinctions. Invariants: SAME fictional face, head size, height, standing relaxed pose, dark grey shorts, cell centers, head/shorts baseline, same consistent camera distance, natural skin texture/lighting. Edit anatomy of arms only. Preserve gentle moderate torso muscle definition, no exaggerated sixpack. Transparent background with actual alpha around all six people, clean hair/finger edges, no tan background/glow/halo, no text, no labels or objects. Keep identical 3:2 canvas composition; each of the six cells must remain square and all six subjects equally scaled."
+    },
+    {
+      "name": "female-body-realistic",
+      "key": "female-body-realistic-alpha",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-ea72d019-ef7e-4548-b9c3-4c83272eddd3.png",
+      "workspace": "output/onboarding-physique-2026-11-25/female-body-realistic.png",
+      "sha256": "5fe96799ed0f745c36f70c6d81e1b9c3f7dff2369315781ebc7d80573d15c88a"
+    },
+    {
+      "name": "male-goals-actions",
+      "key": "genderImage_male-goals-actions",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-19c7d442-807e-4024-83c9-e6ee8d5bce8a.png",
+      "workspace": "output/onboarding-physique-2026-11-25/male-goals-actions.png",
+      "sha256": "dd3b2ab66d6c60f39f71a641a24803cbfadf8a1ed733c87121c109e2814ce9db",
+      "history": [
+        {
+          "name": "male-goals-actions",
+          "key": "genderImage_male-goals-actions",
+          "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-71346ef1-dd17-4d89-af51-4263a8d78663.png",
+          "workspace": "output/onboarding-physique-2026-11-25/history/male-goals-actions-0.png",
+          "sha256": "240cc6c7cf67b9b15321423131f4f58adaee648b5f93e9f5f95015f9ec0aed04"
+        }
+      ],
+      "editPrompt": "Reduce excessive bulk and deep sixpack, manageable weight plates; retain identity, four actions, framing and transparency."
+    },
+    {
+      "name": "female-goals-actions",
+      "key": "female-goals-actions-alpha",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-9eddff67-d84c-46fb-84c2-de4b1c896d67.png",
+      "workspace": "output/onboarding-physique-2026-11-25/female-goals-actions.png",
+      "sha256": "14ec0e578b6b5a8e5c4bae0e44954ba0f5f1790d92778452b9d05931a030b5f3"
+    },
+    {
+      "name": "female-activity-sheet",
+      "key": "female-activity-sheet",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-2b8d23bf-ad14-4bed-bb1a-326cad221fad.png",
+      "workspace": "output/onboarding-physique-2026-11-25/female-activity-sheet.png",
+      "sha256": "d732c4ba209bea3a8e6f8bb8a886bad320bad8500c109e9c6e79836703859a94"
+    },
+    {
+      "name": "female-lifestyle-sheet",
+      "key": "female-lifestyle-sheet-alpha",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-481eca32-f8a7-4383-8234-4dcb61a910eb.png",
+      "workspace": "output/onboarding-physique-2026-11-25/female-lifestyle-sheet.png",
+      "sha256": "75da701a3e38bb36ae0c9e503715cb95dcbd5b53597d1993dcfe381302a3f84e"
+    },
+    {
+      "name": "female-desire-sheet",
+      "key": "female-desire-sheet",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-86f47c87-3a40-4204-8bb5-f8ce2fe5dead.png",
+      "workspace": "output/onboarding-physique-2026-11-25/female-desire-sheet.png",
+      "sha256": "3ca734e9c11cd7fd089c4657dfa0e19fe60c844b1687d38c859dd76881a8bb3e",
+      "history": [
+        {
+          "name": "female-desire-sheet",
+          "key": "female-desire-sheet",
+          "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-52e81a6e-ca86-4573-b8ad-01276cfca0e4.png",
+          "workspace": "output/onboarding-physique-2026-11-25/history/female-desire-sheet-0.png",
+          "sha256": "629cd5a932ad480cc2f50fad61b254effc3081c4e8adf46c945b875a3a936cbb"
+        }
+      ],
+      "editPrompt": "Remove background and all grid lines; retain figures, poses and same grid positions. Built-in image_gen, transparent_background=true."
+    }
+  ],
+  "bodyPrompts": [
+    {
+      "name": "male-body-realistic",
+      "prompt": "Use case: photorealistic-natural. Asset: transparent six-cell sprite for a fitness onboarding app. Make a 3 columns × 2 rows contact sheet of ONE fictional Vietnamese man aged 35, short neat black hair, slightly rounded friendly face, no beard, distinctly different from a young fitness model. Each cell exactly square, same scale head to mid-thigh, top of head at same y, hem at same y, front-facing relaxed arms with slight gap to waist, no flexing, neutral expression. Identical soft studio lighting and camera 85mm, natural skin. Shirtless, plain charcoal gym shorts. Exact row-major physiques: 0 balanced average healthy body, soft natural abdomen no visible sixpack; 1 visibly fuller soft waist and belly, thicker arms, no abs; 2 slender build narrow shoulders thin limbs, no muscular definition; 3 moderately trained body with slightly stronger shoulders and arms, natural anatomy, NO bodybuilding proportions, NO deep sixpack; 4 lean toned natural waist with subtle definition only; 5 clearly obese rounded abdomen with broad waist, realistic chest fat and fuller arms/thighs, dignified neutral posture. The large round belly in cell5 must be clearly distinct from the small soft belly cell1. Keep SAME person facial identity, height, pose, framing, clothing, lighting for all six. These are independent illustrative physique examples, not documented before/after photographs. Every silhouette separated, nothing overlaps cells, no text/logos/arrows/shadows/backdrop. Real transparent alpha, crisp natural edges."
+    },
+    {
+      "name": "female-body-realistic",
+      "prompt": "Use case: photorealistic-natural. Asset: transparent six-cell sprite for a fitness onboarding app. Make a 3 columns × 2 rows contact sheet of ONE fictional Vietnamese woman aged 32, black ponytail. Each cell exactly square, same scale head to mid-thigh, top of head at same y, hem at same y, front-facing relaxed arms with slight gap to waist, no flexing, neutral expression. Identical soft studio lighting and camera 85mm, natural skin. Plain slate sports bra and charcoal mid-thigh exercise shorts. Exact row-major physiques: 0 balanced average healthy body, soft natural abdomen no visible sixpack; 1 visibly fuller soft waist and belly, thicker arms, no abs; 2 slender build narrow shoulders thin limbs, no muscular definition; 3 moderately trained body with slightly stronger shoulders and arms, natural anatomy, NO bodybuilding proportions, NO deep sixpack; 4 lean toned natural waist with subtle definition only; 5 clearly obese rounded abdomen with broad waist, realistic chest fat and fuller arms/thighs, dignified neutral posture. The large round belly in cell5 must be clearly distinct from the small soft belly cell1. Keep SAME person facial identity, height, pose, framing, clothing, lighting for all six. These are independent illustrative physique examples, not documented before/after photographs. Every silhouette separated, nothing overlaps cells, no text/logos/arrows/shadows/backdrop. Real transparent alpha, crisp natural edges."
+    }
+  ],
+  "femaleScenes": [
+    {
+      "name": "female-goals-actions",
+      "prompt": "Transparent 2x2 square-cell photographic cutout sheet, one fictional adult Vietnamese woman32, black ponytail, natural fit build with moderate muscle, consistent head-to-hips scale and soft studio lighting. Top left: slate sports bra, three-quarter pose doing a relaxed biceps flex, normal athletic physique. Top right: black tank, looking down doing controlled two-hand compact EZ bar curl, correct hands on grip, manageable weights. Bottom left: side three-quarter view, slate sports bra measuring waist with white tape, both hands holding tape. Bottom right: slate T-shirt, doing active cross-body shoulder stretch, one arm extended across chest and other supporting it. Four visibly different actions. No text/logos, no bodybuilding or cartoon anatomy, equal square cell boundaries, all hands/equipment inside cell. True transparent alpha, separate figures."
+    },
+    {
+      "name": "female-activity-sheet",
+      "prompt": "Transparent photographic cutout sprite 2 columns x 2 rows, equally sized square cells, same fictional Vietnamese adult woman32 black ponytail, natural ordinary active build. Four full-body actions, all head to shoes same size and baseline, natural studio light, charcoal sportswear. Top left: sitting at laptop on chair, typing, small desk retained. Top right: casually walking in sports clothes and sneakers, side-three-quarter, arms natural stride. Bottom left: jogging wearing slate top and shorts and sneakers, running stride. Bottom right: standing black tank and leggings doing dumbbell curl, gaze down toward working arm. Realistic anatomy and hands, no logos, no text, no background, no cell overlaps. Transparent alpha."
+    },
+    {
+      "name": "female-lifestyle-sheet",
+      "prompt": "Transparent photographic contact sheet 3 columns x 2 rows of ONE fictional Vietnamese adult woman32, black ponytail, natural proportions, consistent soft studio light. Each square cell head to hips at identical scale, all hands/props inside. 0 trying on charcoal lightweight jacket and smiling. 1 holding white gift box with muted lime ribbon. 2 wearing backpack and holding folded hiking map. 3 smiling taking selfie holding smartphone. 4 relaxed holding warm mug with both hands, eyes softly closed. 5 smiling proudly with one hand resting on heart. Simple neutral casual sports clothes, six different actions, no text/logos, true transparent alpha, no backdrop or fake checkerboard, no overlap."
+    }
+  ],
+  "femaleDesirePrompt": "Transparent 2x2 square cell photographic cutout sheet, same fictional Vietnamese woman32 black ponytail, normal healthy body, consistent natural studio lighting. Equal head-to-hips scale. Top left smiling in neat slate button-up shirt trying on jacket, confidence. Top right gray athletic T-shirt smiling and giving thumbs up, energy. Bottom left seated at laptop in slate shirt, one hand on lower back, mild discomfort after sitting; retain small desk edge and laptop. Bottom right peacefully sleeping lying sideways with head on gray pillow, eyes closed, arm around pillow, plain light gray T-shirt. All four realistic, dignified, distinct actions, no exaggerated expressions, no text, no logos, no anatomy distortion. True transparent alpha, clean edges, separate cells, every prop inside respective square.",
+  "initialJobs": [
+    {
+      "name": "male-goals-actions",
+      "prompt": "Create ONE premium photorealistic 2x2 transparent sprite sheet for a Vietnamese fitness app. Same fictional Vietnamese man identity as reference, natural short black hair, natural neutral lighting. Exactly FOUR equal SQUARE cells, no gutters, no borders, NO text, no scene backgrounds. Every cell EXACT SAME head-to-hip camera distance, crown top y and shorts waistband y; no legs or feet. Every panel is a DISTINCT ACTION, NOT a standing portrait changing shirts.\nTOP LEFT (muscle growth): muscular shirtless man performing a single-arm side-chest/bodybuilding flex, torso 3/4 angled to camera, one forearm curled tight, clearly rounded large deltoids, thick biceps and full projecting chest. Physique mass clearly larger than other models.\nTOP RIGHT (strength): man in black training tank top holding a SHORT heavily loaded steel EZ bar at upper abdomen with TWO hands during standing curl, two large black weight discs visible at EACH end, jaw focused and forearms engaged, looking toward bar. Entire compact loaded implement must fit inside cell and be visible at small 130px scale. Do NOT use one little dumbbell or generic relaxed upright portrait.\nBOTTOM LEFT (lean / fat loss): lean toned shirtless man in three-quarter SIDE VIEW, head turned slightly down toward own abdomen, wrapping a WHITE measuring tape around his trim waist, both hands clearly handling tape at front, waist must be visible. Narrower shoulders and slimmer arms than muscular man. Do NOT use hands on hips, shirts hiding the waist, or standing face-forward.\nBOTTOM RIGHT (healthy movement): everyday-fit man in soft slate T-shirt doing an ACTIVE cross-body shoulder stretch, one arm fully across chest, other hand holding upper arm, torso slightly rotated, relaxed expression looking toward stretch. Clearly distinct silhouette and pose, NOT arms crossed at rest.\nSame photographer/lens/light/age/skin tone, actions readable in silhouette at thumbnail size, all subjects/props inside own cell. Neutral charcoal shorts, no belts, no logos, natural anatomy. True transparent alpha around each isolated person. Faces not the main message: body action and props communicate goal. Do not draw a UI or labels.",
+      "refs": [
+        "/Users/vunguyen/Desktop/dopafit-enhance/DopafitV2/DopafitV2/Assets.xcassets/vn-person-attractive.imageset/person.png"
+      ]
+    },
+    {
+      "name": "male-body-distinct",
+      "prompt": "Photorealistic body-type SPRITE SHEET, exactly THREE equal square columns by TWO equal square rows, no gutters/borders/text. Same fictional Vietnamese adult male as reference. Use the face, hair, skin tone and charcoal drawstring training shorts as identity/wardrobe only. IDENTICAL relaxed FRONT pose, hands slightly away from thighs, identical crown-to-mid-thigh crop, same head size, head top, waistline and shorts hem heights in ALL SIX square cells. Never feet or knees. Consistent natural soft neutral studio lighting, true transparent background.\nSix physiques must be CLEARLY different at 150px size by skeleton/muscle/waist silhouette, NOT just ab lines:\nTOP LEFT AVERAGE: ordinary untrained man, medium narrow shoulder width, normal modest arms, soft flat-ish abdomen, no visible sixpack.\nTOP MIDDLE SOFT: distinctly thicker wide waist and ROUND relaxed belly bulging outward, natural love handles and soft chest/upper arms, no visible abs. Waist substantially wider than average.\nTOP RIGHT SLIM: narrow shoulders/small ribcage/THIN arms/skinny thighs, very little muscle, narrow waist. Keep head the same size as other figures; do NOT shrink the whole person.\nBOTTOM LEFT MUSCULAR: noticeably large V-shaped upper body, shoulders about 35% wider than average, bulky round deltoids, thick biceps/triceps and projecting pectoral mass, large thighs and clear natural ab definition. Healthy trained muscular man, NOT competition bodybuilder.\nBOTTOM MIDDLE LEAN: slim runner/swimmer physique, a very NARROW trim waist, clearly defined but modest flat abdominal muscles, smaller chest and arms than muscular, visibly slender silhouette, lean athletic thighs.\nBOTTOM RIGHT BALANCED FIT: healthy everyday moderately fit build, medium shoulder width and medium arms, flat but UNDEFINED abdomen without sixpack, fuller waist than lean and smaller muscles than muscular. This is not the muscular body reused with abs erased.\nAll six must retain exactly same lens, crop, head scale, identity, upright pose and clothing. No fake before-after claims, no percentages, no measurement labels, no exaggeration of ribs. True isolated cutout alpha, no halos/backdrop/floor shadow.",
+      "refs": [
+        "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-comparison/baseline.png"
+      ]
+    },
+    {
+      "name": "female-body-distinct",
+      "prompt": "Create a premium photorealistic transparent body-type SPRITE SHEET for an adult Vietnamese women's fitness app. Exactly THREE equal SQUARE columns x TWO equal SQUARE rows, no gutters/borders/text. One fictional Vietnamese adult woman age28-35, dark brown eyes, dark black hair in tidy ponytail, neutral expression, natural skin. All six are the SAME woman. Plain slate-grey SUPPORTIVE SPORTS BRA and charcoal high-waist gym shorts in all cells, normal practical athletic coverage. Nonsexual clinical-style fitness visualization, respectful everyday bodies, no glamour pose.\nIDENTICAL relaxed FRONT standing pose, arms slightly away from sides, same crown-to-mid-thigh crop, same head size, head top y, bra hem, waistline and shorts hem y. No knees/feet. Same natural neutral soft studio lighting, no props.\nSix CLEARLY distinct body builds that stay readable at 150px:\nTOP LEFT average: regular everyday untrained woman, medium frame, soft natural abdomen with no ab definition, modest arms/thighs.\nTOP MIDDLE soft: noticeably round relaxed lower abdomen, thicker waist, softer upper arms and fuller thighs, natural skin folds, not extreme obesity.\nTOP RIGHT slim: narrow frame/shoulders, very thin arms and slender thighs, little muscle, no visible abs; same head size and adult height.\nBOTTOM LEFT muscular: athletic strength trainee with noticeably broader shoulders, strong developed deltoids/biceps, substantial quad muscle and thicker trained arms, full muscular torso with defined core; not exaggerated bodybuilder and not masculine face.\nBOTTOM MIDDLE lean athletic: trim narrow waist, visible modest core definition, lean toned arms/legs but MUCH smaller muscles than muscular state, slim athletic silhouette.\nBOTTOM RIGHT balanced fit: healthy moderate everyday fitness, medium shoulders and arms, naturally flat but UNDEFINED abdomen, medium thighs, fuller waist and less definition than lean.\nDo not repeat the same body merely changing skin shading. Mass, shoulder and waist silhouettes must differ clearly. No body-fat percentages, no labels, no before-after timeline. True transparent alpha around figures; no background, floor shadow, halo or random pose changes. Photographed natural skin texture and accurate anatomy, no cosmetic retouch sheen."
+    }
+  ],
+  "note": "AI illustrations, not real before/after photographs. Earlier male body job deliberately rejected; exaggerated muscular old identity superseded. Alpha visual previews may expose RGB beneath transparency; check native compositing."
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-24",
+  "bundleQA": "com.local.dopafit.v2.designqa",
+  "observedUI": [
+    "Macunlockedconfirmed byliveCUA; DeviceHub resized, freshAX+screenshot used",
+    "6slot plates:0→drag8→drag4→longdrag24→tapReset0; actualrendertracksnumericcount",
+    "Healthgoal selected→Next→3slots0→longdragclamps12",
+    "Echo→Transformation→Activity→Age→Back retainshighactivity",
+    "All4activitylevels: actualVNimages+copyvisible",
+    "DesireemptyNextdisabled→select1enabled→Goal; finalsleepcrop visible",
+    "Goal4cutouts shown; Healthselection trait+Next route verified"
+  ],
+  "screens": {
+    "C214-blender-empty.png": "Sixslot empty Blender scene",
+    "C215-blender-8kg.png": "Drag0→8, two loaded discs",
+    "C216-blender-full-24kg.png": "Drag clamped24; tap resets0",
+    "C217-vietnamese-target-pair.png": "FictionalAI targetpair with explicitlabel",
+    "C218-activity-walk.png": "Lightactivity nativealphacutout",
+    "C219-activity-seated.png": "Sedentary photochange",
+    "C220-activity-run.png": "Moderatephotochange",
+    "C221-activity-lift.png": "Highphotochange",
+    "C222-desire-vietnamese-final.png": "Finalsleepcrop, emptydisabledNext",
+    "C223-goals-vietnamese.png": "Fourgoalcutouts andexplicitselection",
+    "C224-blender-three-full-12kg.png": "Healthroute3slots clampsat12",
+    "C225-main-hero-action.png": "Finalmainwelcome, naturalangledcurl/gazedown"
+  },
+  "heroRevision": {
+    "raw": "output/onboarding-vietnamese/hero-action.png",
+    "prompt": "output/onboarding-vietnamese/hero-action-prompt.txt",
+    "mode": "built-in image_gen",
+    "change": "SamefictionalVietnameseidentity; naturalangledcurl, gaze towardworkingarm; newassetonly",
+    "build": "build-hero-action.log BUILD SUCCEEDED",
+    "installedMain": true,
+    "finalLiveUI": "C225 maininstalled welcome observedaftersecondmanualunlock: actionpose visible, face/dumbbell/headline/button readable andunclipped in sampledviewport."
+  },
+  "mainState": {
+    "semanticMatchTurnStart": true,
+    "semanticMatchPreinstall": true,
+    "semanticMatchAfterFinalUI": true
+  },
+  "limits": [
+    "17offlineassetstates are not17screens orfullallstateUIcertification",
+    "No VO/systemDynamicType/ReduceMotion audit; sampledviewportonly",
+    "3/6slot livebehaviorchecked;5slot staticbundlehasheschecked, no separatefull5slotgesturetest",
+    "No fullonboardingfinish/settingssavedactivityUItest",
+    "No authentication/payment/Health/notificationwrite",
+    "Mobbin references only; no additional onboardingquestion implemented"
+  ],
+  "qaRemoved": true
+}

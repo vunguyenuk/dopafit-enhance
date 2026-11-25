@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-25",
+  "scope": "Native V2 onboarding UI plus sampled old app and archived original inventory. Not a full live traversal or parity certification.",
+  "original_live_observed": [
+    "welcome",
+    "intro",
+    "goal",
+    "obstacles"
+  ],
+  "original_temporary_choices": [
+    "muscle goal",
+    "does not know what to train obstacle"
+  ],
+  "original_final": "Back to welcome; no completion/save/login/purchase/Health action. Backend persistence not inspected, do not claim exact original-account snapshot unchanged.",
+  "items": [
+    {
+      "original": "User ref1 / R26–R27",
+      "screen": "Vùng cơ ưu tiên",
+      "status": "implemented_partial",
+      "v2": "BodyFocusStep",
+      "note": "Chọn tối đa3 hoặc toàn thân, flat body map theo sex; khác giới hạn2 của original theo thiết kế V2 mới. Final branch not retapped this turn."
+    },
+    {
+      "original": "User ref2 / R30–R32",
+      "screen": "Số buổi/tuần và lịch, thời lượng",
+      "status": "implemented_partial",
+      "v2": "schedule",
+      "evidence": [
+        "../v2-comparison-flow-2026-11-24/C245-schedule-four-days.png"
+      ],
+      "note": "Calendar + days and duration exist. Prior live sample, not rechecked every option this turn."
+    },
+    {
+      "original": "User ref3",
+      "screen": "Chỗ đau gần đây",
+      "status": "implemented_partial",
+      "v2": "injuriesStep",
+      "note": "None/shoulder/wrist/knee/ankle/lower back choices; previous C241. Prototype filtering, not clinical clearance."
+    },
+    {
+      "original": "User ref4 / R21",
+      "screen": "Apple Health hoặc tự nhập",
+      "status": "missing_ui_and_integration",
+      "v2": null,
+      "note": "No HealthKit import/request route in V2. No connection button pretending to work."
+    },
+    {
+      "original": "User ref5 / R20",
+      "screen": "Quyền riêng tư Health trước xin quyền",
+      "status": "missing_ui",
+      "v2": null,
+      "note": "No dedicated onboarding Health privacy surface. No Health permission granted or writes performed."
+    },
+    {
+      "original": "R41 + 3 user Pro references",
+      "screen": "Chọn plan → quà → ưu đãi",
+      "status": "implemented_ui_service_demo",
+      "v2": "ProPaywall",
+      "evidence": [
+        "C275-pro-plans-audit.png",
+        "C276-pro-gift-audit.png",
+        "C277-pro-offer-audit.png",
+        "C282-onboarding-save-to-pro.png"
+      ],
+      "note": "Native plans close→gift→open→offer and local onboarding save→plans verified. StoreKit/purchase/restore are not connected."
+    },
+    {
+      "original": "R40",
+      "screen": "Cam kết",
+      "status": "implemented_partial",
+      "v2": "promise",
+      "evidence": [
+        "C280-commitment-audit.png",
+        "C281-commitment-to-reminder.png"
+      ],
+      "note": "1300ms hold→wave→reminder verified. Notification skipped; no OS grant requested."
+    },
+    {
+      "original": "User chart references",
+      "screen": "Biểu đồ tiềm năng / cân mục tiêu",
+      "status": "implemented_partial",
+      "v2": "PotentialStep / WeightDirectionStep",
+      "evidence": [
+        "C278-potential-chart-audit.png",
+        "C279-weight-chart-audit.png"
+      ],
+      "note": "Potential text no longer overlaps. Goal70→67 curve uses chosen numbers; illustration, no forecast date or guaranteed result."
+    },
+    {
+      "original": "R29",
+      "screen": "Chọn riêng từng dụng cụ onboarding",
+      "status": "missing_ui",
+      "v2": "place preset only",
+      "note": "Gym/fullGym/home preset exists; no individual gear checklist."
+    },
+    {
+      "original": "R34–R35",
+      "screen": "Môn vận động ngoài gym + chi tiết",
+      "status": "missing_ui",
+      "v2": "general activity slider only",
+      "note": "Four movement levels do not collect sport type, day, frequency and intensity."
+    },
+    {
+      "original": "R36–R37",
+      "screen": "Xem lại toàn bộ câu trả lời trước lưu",
+      "status": "partial",
+      "v2": "reveal + save",
+      "note": "Plan overview and local save summary exist, but no single editable all-answer review."
+    },
+    {
+      "original": "R06",
+      "screen": "Nguồn biết tới Dopafit",
+      "status": "missing_ui",
+      "v2": null,
+      "note": "Acquisition question absent; no user instruction yet to restore it."
+    },
+    {
+      "original": "R09",
+      "screen": "Tần suất tập trong4tuần qua",
+      "status": "partial",
+      "v2": "recent + activity",
+      "note": "V2 asks training journey/general activity, not exact retrospective gym frequency."
+    },
+    {
+      "original": "R01–R02/R10–R19",
+      "screen": "Các intro/pain-point/giải thích",
+      "status": "consolidated_partial",
+      "v2": "welcome,desire,echo,reassure,story,potential",
+      "note": "Functions combined, not one-to-one original frames; not claim of complete original parity."
+    },
+    {
+      "original": "R22/R24",
+      "screen": "Tuổi / chiều cao",
+      "status": "removed_by_user",
+      "note": "Still intentionally absent. Optional saved values retained."
+    },
+    {
+      "original": "User removed belly question",
+      "screen": "Vùng bụng riêng",
+      "status": "merged_by_user",
+      "v2": "CurrentShapeStep",
+      "evidence": [
+        "C272-current-five-faceless-final.png",
+        "C271-merged-current-to-comparison.png"
+      ],
+      "note": "Latest request: one current-shape question, faceless five choices, including round. Current answer directly supplies comparison left. Belly raw field kept for decoding older data only."
+    },
+    {
+      "original": "User reintroduced sex",
+      "screen": "Nam / Nữ đầu onboarding",
+      "status": "implemented_partial",
+      "v2": "SexSetupStep",
+      "evidence": [
+        "C263-sex-empty.png",
+        "C264-female-goals.png",
+        "C284-main-first-sex-question.png"
+      ],
+      "note": "First question after welcome; main known preference retained, no sex inferred from appearance. Sex, goals, level, days, gear and injuries influence relevant existing prototype behavior."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-25",
+  "bundle": "com.local.dopafit.v2",
+  "qaBundle": "com.local.dopafit.v2.designqa",
+  "device": "iPhone18ProMax / iOS27.3",
+  "build": "Debug simulator BUILD SUCCEEDED; build.log",
+  "model_checks": 73,
+  "model_log": "model-checks.txt",
+  "evidence_range": "C259–C284",
+  "latest_current_shape": "C272-current-five-faceless-final.png",
+  "superseded": [
+    "C260–C262: separate belly selection was subsequently removed by user",
+    "C267: face-visible current choice superseded by C272",
+    "C268: first compacting pass superseded by C272",
+    "C266: goals actor was subsequently reduced in bulk; final asset hash in prompts-and-sources.json",
+    "C273: before final2pt native sprite-cell edge inset; that cosmetic adjustment only source/build verified"
+  ],
+  "checked": [
+    "experience selected/Next/Back retains selection",
+    "round belly maps to left, then latest merged current round→target→weight→targetweight→comparison; no duplicate belly step",
+    "male/female goal action sprites",
+    "female round→balanced comparison",
+    "sex empty disabledNext→female→female desire/goals",
+    "male target balanced→moderately trained→balanced",
+    "potential layout and70→67weight chart",
+    "plans→close→gift→open→offer",
+    "forecast→ready→overview→promise→1300ms hold→reminder→local save→Pro plans",
+    "female incline guide and female load sample",
+    "selected ChoiceRadio tick in intensity",
+    "main latest installed without reset/demo, welcome→sex observed"
+  ],
+  "female_media": "19 exact existing reviewed Zenith female siblings /38MP4 copied byte-for-byte; female-media.json; other exact base variants retained. Only incline route UI sampled. Localdemo media rights unresolved.",
+  "main_preservation": "preservation.json: full JSON equal since start and fresh preinstall; no snapshot restored",
+  "qa_mutations": "temporary female home fixture, local plan answers saved through onboarding, offer opened/deadline created; no Pro activation this turn,0history/no logged sets. QA then reset for tick sample and removed.",
+  "original_audit": "coverage-audit.json; sampled mirrored onboarding first4states, returned welcome. No140-state re-audit, no Figma mutation.",
+  "no_actions": [
+    "Health permissions/writes",
+    "StoreKit/purchase",
+    "external account login",
+    "original reset",
+    "simulator erase"
+  ],
+  "remaining": [
+    "missing Health onboarding2UI + integration",
+    "individual gear selection",
+    "other sports/detail",
+    "all-answer editable review",
+    "acquisition question/exact previous4week frequency",
+    "small screens/system DynamicType/VoiceOver/ReduceMotion/fullbranch/service testing",
+    "female activity/reward and final focus/settings not all retapped this turn"
+  ],
+  "qaRemoved": true,
+  "mainFinalObserved": "C284-main-first-sex-question.png; selectedNam has blacktick/limecircle. Left main at first sex question without finishing setup.",
+  "audit": "coverage-audit.json; latest five user references archived with hashes"
+}

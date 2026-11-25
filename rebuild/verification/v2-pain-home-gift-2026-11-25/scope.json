@@ -1,0 +1,33 @@
+{
+  "request": [
+    "Pain recommendations UX/UI using Mobbin",
+    "Gift drop and stronger correctly angled open burst matching reference",
+    "Home blocks based on current Dopafit Rebuild"
+  ],
+  "preserve": [
+    "SF/lime/neutral theme",
+    "Actual injury/gear/sex filtering and exact guides",
+    "Existing Home duration/place/check-in/Add/guide/start/calendar data",
+    "Main account data/original unsaved setup/Health/payment/Figma untouched"
+  ],
+  "mobbin_queries": [
+    "fitness app personalized exercise recommendations for pain"
+  ],
+  "selected_references": [
+    {
+      "app": "Equinox+",
+      "url": "https://mobbin.com/screens/4a8a80f0-c5a4-46ef-93ae-a992f937001c",
+      "decision": "Expandable preparation instructions inside grouped exercise content"
+    },
+    {
+      "app": "Gymshark Training and Fitness",
+      "url": "https://mobbin.com/screens/abf703ec-8664-4529-b544-b430d4a59e10",
+      "decision": "Compact grouped exercise list with motion previews"
+    }
+  ],
+  "baseline": [
+    "C437-pain-before.png",
+    "C438-home-before.png"
+  ],
+  "mode": "targeted changes authorized directly by user"
+}

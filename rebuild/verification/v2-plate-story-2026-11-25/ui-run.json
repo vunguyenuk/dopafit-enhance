@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-25",
+  "scope": "V2 chart, personal plan story, shorter/taller plate loader, plan review/overview, trial-to-gift unboxing",
+  "build": ".build/v2-final-tall-plates.log: BUILD SUCCEEDED",
+  "models": ".build/v2-final-models.log: 74 V2 onboarding checks passed; not UI or original parity evidence",
+  "screens": {
+    "C343": "Old decreasing chart70->68,3days45. Before capture for chart board.",
+    "C344": "Story baseline caught splash. Invalid for visual comparison, superseded C355.",
+    "C345": "New decreasing chart70->68 with direct endpoint values, delta, filled region, card. No fabricated dates/measurements.",
+    "C346": "Story headline first, real plan5ex/~40min,3exact thumbnail rows plus2remaining, sets/reps. Next->potential observed.",
+    "C347": "Plans trial tap->closed Blender gift, no activation alert.",
+    "C348": "Mid-unbox native capture, distinct lid lifted/rotated, open interior, lime glow/sparkles, disabled opening CTA.",
+    "C349": "Unboxing automatically reaches offer,39.99/year demo and real local15min countdown. No offer activation performed.",
+    "C350": "Final taller380pt scene, shorter sleeve410mm vs580mm, camera1.08 centered,1080x800renders;5loaded=20kg; tap full->0 observed. Native slider click0->4->16->20 samples; no new coordinate-drag audit.",
+    "C351": "Plan review grid, selected actual4profile attributes, explicit Xem kế hoạch. Replaces staged checklist timer; local plan computation synchronous.",
+    "C352": "Xem kế hoạch->maintenance70kg without invented flat trend.",
+    "C353": "Next->shorter overview,Tuần đầu của bạn,3actual metrics,actual planned incline real video/caption and exercise rows. No fake new media mapping.",
+    "C354": "Increasing70->72 chart, AX target/current verified; saved screenshot. Unit conversion uses existing Fmt.w.",
+    "C355": "Old story source branch recaptured after splash via DEBUG QA-only --preview-legacy-story. Same profile/viewport. SupersedesC344; iOS clock/back-to-app badge differs outside product.",
+    "C356": "Main installed/launched without reset/demo after explicit permission to discard current in-memory trial workout. Home shown, current profilehome/experienced/5days45/arms. New inner flows verified on QA, not retapped through main onboarding."
+  },
+  "mobbin": "4queries21previews,20unique iOS screens,all previews rendered. No collection/comment/save mutations. Sources/moves/dropped in mobbin-research.json.",
+  "boards": "Unmodified Mobbin HTML template with embedded same559x1195 viewport crops, full-viewport measured rects. Readback in native Chrome. Full board raster at sufficiently readable2000px not produced; deliver self-contained HTML + after.png. Both panes read; OS clock/focus/window colors differ.",
+  "main": {
+    "authorization": "User: Đóng buổi thử này và cài bản mới. New sessionhad markedsets; closed only after this reply.",
+    "preservation": "main-fresh-preinstall.json == main-after-install.json byte-for-byte and semantically. No snapshot restore. Current main changed by user since12:26 baseline.",
+    "current": "male/home/experienced/5days45/body70/target68/arms/muscle/rewardgift,0history,onboarded/sawPro/isProtrue already before install. Existing Pro demo preference preserved, not activated by agent."
+  },
+  "qa": "0history,isProfalse; only QA reset fixture (onboardedtrue at start), never main reset. QA-only comparator flag has no production effect. Final0history fixture uninstalled.",
+  "limits": [
+    "iPhone18ProMax sampled. No exhaustive smallscreen/DynamicType/VoiceOver/ReduceMotion live test. ReduceMotion source path removes animated lid rotation/translation and uses the immediate opened state and shortens transition; no FPS measurement.",
+    "No original Mirroring/Figma/Health/purchase/auth changes. No new library mapping; existing media/rights gaps remain.",
+    "Current sleeve/plate dimensions illustrative, not mass certification. Rendered layers animate in native UI, not runtime physics."
+  ]
+}

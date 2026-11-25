@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-24",
+  "scope": "User explicitly requested the four illustrated 2x2 desire choices in their supplied reference, on dark existing style; supersedes text-only desire rows only. Other stock-photo policy unchanged.",
+  "reference": "rebuild/verification/v2-desire-grid-2026-11-24/user-reference.png",
+  "asset": "DopafitV2/DopafitV2/Assets.xcassets/desire-reference-figures.imageset/figures.png",
+  "sha256": "8a295641205e99f2ff059a02f4b5f4a2d2a86795ca56df04f16b09545500a6bb",
+  "process": "Built-in imagegen reference edit: extract four figures with transparent background; second pass alpha-edge cleanup. Derived illustration, not byte-identical original cutouts or real stock photography.",
+  "quadrants": [
+    "appearance",
+    "confidence",
+    "seated-back-discomfort",
+    "sleep"
+  ],
+  "license": "User-supplied visual reference; original asset license not established; local demo reference derivative, no release clearance claimed."
+}

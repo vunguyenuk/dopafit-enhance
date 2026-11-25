@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-25",
+  "output_destination": "code",
+  "results": [
+    {
+      "query": "fitness app onboarding workout intensity question",
+      "screens": [
+        {
+          "id": "ad0d69b2-0a6c-4a0f-8631-d40b021d4360",
+          "image_url": "https://mobbin.com/api/mcp/short/RlpXCLxh",
+          "mobbin_url": "https://mobbin.com/screens/ad0d69b2-0a6c-4a0f-8631-d40b021d4360?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Fitbit",
+          "platform": "ios"
+        },
+        {
+          "id": "f64beb4f-4623-4961-b52a-06a0afdf249f",
+          "image_url": "https://mobbin.com/api/mcp/short/lswKcWDQ",
+          "mobbin_url": "https://mobbin.com/screens/f64beb4f-4623-4961-b52a-06a0afdf249f?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Ladder",
+          "platform": "ios"
+        },
+        {
+          "id": "30242300-b142-4a0b-a9d3-d487d1311043",
+          "image_url": "https://mobbin.com/api/mcp/short/pZANRry1",
+          "mobbin_url": "https://mobbin.com/screens/30242300-b142-4a0b-a9d3-d487d1311043?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "pliability",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "fitness app onboarding target body shape selection",
+      "screens": [
+        {
+          "id": "e9b0da95-4ee5-4e68-a43b-838f0dd9d6b5",
+          "image_url": "https://mobbin.com/api/mcp/short/tjwMj189",
+          "mobbin_url": "https://mobbin.com/screens/e9b0da95-4ee5-4e68-a43b-838f0dd9d6b5?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "MacroFactor",
+          "platform": "ios"
+        },
+        {
+          "id": "ec7e5464-ac0e-40fb-a832-e87e47e2ca8f",
+          "image_url": "https://mobbin.com/api/mcp/short/gAVk9FkS",
+          "mobbin_url": "https://mobbin.com/screens/ec7e5464-ac0e-40fb-a832-e87e47e2ca8f?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "HBX",
+          "platform": "ios"
+        },
+        {
+          "id": "d5df2b94-4872-4484-8853-01073bbf264c",
+          "image_url": "https://mobbin.com/api/mcp/short/NBLSDG1a",
+          "mobbin_url": "https://mobbin.com/screens/d5df2b94-4872-4484-8853-01073bbf264c?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "WhatsApp",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "fitness app training reminder setup",
+      "screens": [
+        {
+          "id": "96c48da3-a75f-4fd7-a7a3-d312ea6b2222",
+          "image_url": "https://mobbin.com/api/mcp/short/Lur5Ryy6",
+          "mobbin_url": "https://mobbin.com/screens/96c48da3-a75f-4fd7-a7a3-d312ea6b2222?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "stoic.",
+          "platform": "ios"
+        },
+        {
+          "id": "245a5aa3-46dd-4364-8d34-f58c1e318bf4",
+          "image_url": "https://mobbin.com/api/mcp/short/8NMq1Dpa",
+          "mobbin_url": "https://mobbin.com/screens/245a5aa3-46dd-4364-8d34-f58c1e318bf4?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Slack",
+          "platform": "ios"
+        },
+        {
+          "id": "083cc63f-4506-4dd8-9fc4-b20c2dba4f77",
+          "image_url": "https://mobbin.com/api/mcp/short/a1GAQtZq",
+          "mobbin_url": "https://mobbin.com/screens/083cc63f-4506-4dd8-9fc4-b20c2dba4f77?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "BitePal",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "fitness app personalized workout plan overview",
+      "screens": [
+        {
+          "id": "efdc147e-aa4b-41cf-9019-da909e5012b8",
+          "image_url": "https://mobbin.com/api/mcp/short/WSgPhuIB",
+          "mobbin_url": "https://mobbin.com/screens/efdc147e-aa4b-41cf-9019-da909e5012b8?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "ClassPass",
+          "platform": "ios"
+        },
+        {
+          "id": "37142d11-0f83-40b0-950f-f2c6b85b2f58",
+          "image_url": "https://mobbin.com/api/mcp/short/XA0gB4l5",
+          "mobbin_url": "https://mobbin.com/screens/37142d11-0f83-40b0-950f-f2c6b85b2f58?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "WHOOP",
+          "platform": "ios"
+        },
+        {
+          "id": "f01b41a2-91da-4f86-84b9-7b50505ae88c",
+          "image_url": "https://mobbin.com/api/mcp/short/1EinlKRD",
+          "mobbin_url": "https://mobbin.com/screens/f01b41a2-91da-4f86-84b9-7b50505ae88c?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "BitePal",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "fitness app onboarding plan generation progress",
+      "screens": [
+        {
+          "id": "96ac6812-b174-4dc5-8a8f-e23364e36989",
+          "image_url": "https://mobbin.com/api/mcp/short/vMqGaZLa",
+          "mobbin_url": "https://mobbin.com/screens/96ac6812-b174-4dc5-8a8f-e23364e36989?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Life Reset",
+          "platform": "ios"
+        },
+        {
+          "id": "d4dc7322-949c-4cdf-910c-f4ec8e1529ca",
+          "image_url": "https://mobbin.com/api/mcp/short/aGlqBIUC",
+          "mobbin_url": "https://mobbin.com/screens/d4dc7322-949c-4cdf-910c-f4ec8e1529ca?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Garmin Connect",
+          "platform": "ios"
+        },
+        {
+          "id": "6e23aa19-c964-4009-b436-7a5e5b5c9824",
+          "image_url": "https://mobbin.com/api/mcp/short/87em3exg",
+          "mobbin_url": "https://mobbin.com/screens/6e23aa19-c964-4009-b436-7a5e5b5c9824?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "BitePal",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "fitness app onboarding motivation selection",
+      "screens": [
+        {
+          "id": "554b1986-d873-4d4b-8bb3-a777cd35eb13",
+          "image_url": "https://mobbin.com/api/mcp/short/PnV2lOUI",
+          "mobbin_url": "https://mobbin.com/screens/554b1986-d873-4d4b-8bb3-a777cd35eb13?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Noom",
+          "platform": "ios"
+        },
+        {
+          "id": "7ed32a51-3672-4334-a10d-bbdc05a60276",
+          "image_url": "https://mobbin.com/api/mcp/short/1qXjXhyo",
+          "mobbin_url": "https://mobbin.com/screens/7ed32a51-3672-4334-a10d-bbdc05a60276?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Yazio",
+          "platform": "ios"
+        },
+        {
+          "id": "6bf8f742-662f-4008-8951-f7b9138b03dc",
+          "image_url": "https://mobbin.com/api/mcp/short/6TumsUJQ",
+          "mobbin_url": "https://mobbin.com/screens/6bf8f742-662f-4008-8951-f7b9138b03dc?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Equinox+",
+          "platform": "ios"
+        }
+      ]
+    }
+  ],
+  "adopted": {
+    "intensity": "Fitbit: three labeled levels with descriptions, explicit continue; Ladder: neutral dark thin borders",
+    "body": "MacroFactor and HBX: visually distinct body categories with consistent framing; no inferred fat percentage",
+    "reminder": "stoic.: preview the notification beside editable time selection",
+    "generation": "Garmin and Life Reset: visible plan summary/progress context; no invented member counts or remote computation",
+    "motivation": "Noom: personal reason/reward choices; Equinox: multiple selectable goals"
+  },
+  "rejected": [
+    "Unrelated ClassPass promo hub and WhatsApp avatar picker",
+    "Unsupported 89% claim, guaranteed date/4-week physique, 4–6% body-fat label, causal alcohol/stress belly diagnoses"
+  ],
+  "user_explicit_reference": "Three-screen Pro/gift/year-discount sequence comes from user's supplied screenshots, not attributed to Mobbin"
+}

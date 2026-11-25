@@ -114,5 +114,18 @@ for s in output:
  if s['rebuild_evidence']:tests+='<br>'+' '.join(f'[C{i+1}]({Path(f).relative_to("rebuild")})' for i,f in enumerate(s['rebuild_evidence']))
  lines.append(f"| {s['id']} · {esc(s['name'])}<br>**partial** | [gốc](../{s['path']}) · [Figma]({s['figma_url']}) | {sources} | {tests} | {', '.join(s['open_gap_ids'])} |")
 lines+=['','## Quy tắc cập nhật','','Chỉ thêm trạng thái đã thực sự quan sát; ảnh mới giữ ID mới, không thay ảnh bằng rebuild. Muốn đóng một dòng: đối chiếu ảnh cùng viewport, kiểm đủ chính/phụ/flow/disabled/cancel/persistence và ghi evidence. Build/model checks không thay thế UI. Các nhóm chưa quan sát nằm trong OPEN-GAPS.md, không biến thành màn đã audit.','']
+# Approved V2 redesign samples live beside the original parity ledger. They never
+# count toward the original evidence-state total or close an original parity row.
+v2_path=ROOT/'rebuild/V2-DESIGN-COVERAGE.json'
+if v2_path.exists():
+ v2=json.loads(v2_path.read_text())
+ result['v2_design_review']=v2
+ (ROOT/'rebuild/SCREEN-COVERAGE.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+ lines+=['',f"## DopafitV2 — visual review {v2.get('updated', '2026-11-24')}",'','User-approved redesign, separate from the 140 original parity states. Sampled V2 surfaces remain partial. See V2-DESIGN-COVERAGE.json; V2-G01–G04 remain open; historical removed/merged rows retain stable IDs.','','| ID / surface | Evidence | UI sample |','| --- | --- | --- |']
+ for screen in v2['screens']:
+  for f in screen['source_files']+screen['evidence']: assert (ROOT/f).is_file(),f
+  evidence=' '.join(f'[{Path(f).stem}]({Path(f).relative_to("rebuild")})' for f in screen['evidence'])
+  status="removed/merged" if screen.get("lifecycle")=="removed_from_new_flow" else "partial"
+  lines.append(f"| {screen['id']} · {screen['name']} — {status} | {evidence} | {screen['ui_verification']} |")
 (ROOT/'rebuild/SCREEN-COVERAGE.md').write_text('\n'.join(lines))
 print(f'{len(output)} rows; all original paths, Figma IDs, source paths and evidence paths verified')

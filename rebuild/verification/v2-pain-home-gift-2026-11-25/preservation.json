@@ -1,0 +1,12 @@
+{
+  "mainFullJSONPreservedAcrossInstallAndLaunch": true,
+  "onboarded": false,
+  "historyCount": 0,
+  "isPro": false,
+  "unsavedOnboardingRestartAuthorized": true,
+  "qaRemoved": true,
+  "qaHistoryBeforeRemoval": 0,
+  "deviceErased": false,
+  "deviceShutdown": false,
+  "note": "QA shared already-running main Max simulator; no device booted or shut down this pass."
+}

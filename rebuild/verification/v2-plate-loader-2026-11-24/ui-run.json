@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-24",
+  "scope": "V2 user-requested dark/lime onboarding; not original parity",
+  "build": "build-final.log: BUILD SUCCEEDED",
+  "qaBundle": "com.local.dopafit.v2.designqa",
+  "checks": [
+    "Goal explicit selection remains on page; selected trait and Next→strength echo observed in final build",
+    "Plate full24kg→tapReset0; drag0→8 and back8→4 sampled before final purely visual arrow/seam pass; finaltap0→4→8 passed",
+    "Echo→Transformation replaces old sex question; Next→Activity→Age; Back retains activitymoderate",
+    "Activity all4levels description/image samples, light/high screenshots, middle selected retained",
+    "Real desire grid empty disables Next; first choice enables; Next→Goal",
+    "Profile Codable: legacy missingactivity decodes and4newvalues roundtrip with existingfemale preference"
+  ],
+  "evidence": {
+    "C200": "User-supplied before image; not live UI",
+    "C201": "Firstpass empty plate UI, superseded",
+    "C202": "full24 prefinal arrow/seam visualpass",
+    "C203": "packed8 prefinal arrow/seam pass",
+    "C204": "Real stock goal illustration; no actual before/after claim",
+    "C205": "Activitylight, native4stopslider",
+    "C206": "Activityhigh",
+    "C207": "Desire realcutouts firstpass, sleepmask superseded",
+    "C208": "Goal realcutouts preAXbuttontraitfix",
+    "C209": "Final goal selectedstrength; explicitNext",
+    "C210": "Finalplate8 includingarrow",
+    "C211": "Final real desire cutouts on installed main, refined sleep pillowmask"
+  },
+  "limits": [
+    "No guarantee of4weekbodychange; separate stockmodels clearly labeled",
+    "Backcutout shows real lowerbackhold, not exact seateddeskpose",
+    "Activity is saved/descriptiveprofile data, no new weightprescription algorithm",
+    "No full VO/DynamicType/smallviewportaudit",
+    "No main workout/Healthwrite; no auth/payment/notificationpermission",
+    "No allgoalbranch or fullonboardingcompletionUI certification"
+  ],
+  "mainInstall": {
+    "bundle": "com.local.dopafit.v2",
+    "resetOrDemo": false,
+    "observed": "Welcome→Desire refined real sleep cutout C211→Goal→muscleEcho5slots→Transformation→Activitylight. Main left onActivity for user review.",
+    "savedJSONSemanticallyUnchanged": true,
+    "historyCount": 0
+  },
+  "qaRemoved": true,
+  "original140RowsUnchanged": true
+}

@@ -1,0 +1,170 @@
+{
+  "date": "2026-11-25",
+  "tool": "built-in image_gen",
+  "purpose": "Fictional Vietnamese onboarding illustrations; not actual before-after results",
+  "latest_user_correction": "same framing across variants, meaningful physique/action differences",
+  "active_sources_unmodified": true,
+  "native_cropping": "SheetPortrait shared crop at view render time; no independent PNG trimming",
+  "assets": [
+    {
+      "file": "output/onboarding-comparison/average.png",
+      "sha256": "45fe0a18360d05eb886023866a32821c9aa0ab7c01c99c273cd1615ceb1ba58c",
+      "generated": true,
+      "fictional": true,
+      "active": false,
+      "prompt": "output/onboarding-comparison/average-prompt.txt",
+      "width": 1024,
+      "height": 1536,
+      "rgba": true
+    },
+    {
+      "file": "output/onboarding-comparison/baseline.png",
+      "sha256": "9ea38eb3b89a49eb8109164332e74e46c526bfd10a78a801d610638c8510a08f",
+      "generated": true,
+      "fictional": true,
+      "active": false,
+      "prompt": "output/onboarding-comparison/baseline-prompt.txt",
+      "width": 1024,
+      "height": 1536,
+      "rgba": true
+    },
+    {
+      "file": "output/onboarding-comparison/health.png",
+      "sha256": "70c4c19c82da435268ad33bbf55e62d2ecbe6435a35da4feda72a1bd3bdc4213",
+      "generated": true,
+      "fictional": true,
+      "active": false,
+      "prompt": "output/onboarding-comparison/health-prompt.txt",
+      "width": 1024,
+      "height": 1536,
+      "rgba": true
+    },
+    {
+      "file": "output/onboarding-comparison/lean.png",
+      "sha256": "d960b3ee2150ecd3baac0a8c21c7cd699c8e5d36fd417da161357642eac76673",
+      "generated": true,
+      "fictional": true,
+      "active": false,
+      "prompt": "output/onboarding-comparison/lean-prompt.txt",
+      "width": 1024,
+      "height": 1536,
+      "rgba": true
+    },
+    {
+      "file": "output/onboarding-comparison/muscle.png",
+      "sha256": "7334290eeacb7cc5e4ea1bd4dd42761a45423db81e1d4814b55d6ca6c089d1d3",
+      "generated": true,
+      "fictional": true,
+      "active": false,
+      "prompt": "output/onboarding-comparison/muscle-prompt.txt",
+      "width": 1024,
+      "height": 1536,
+      "rgba": true
+    },
+    {
+      "file": "output/onboarding-comparison/onboarding-activity-sheet.png",
+      "sha256": "9c38e6d36f9a3792f9a648bb8d8412af13218ff2f5cca4e37c33163522bcae20",
+      "generated": true,
+      "fictional": true,
+      "active": true,
+      "prompt": "output/onboarding-comparison/onboarding-activity-sheet-prompt.txt",
+      "width": 1247,
+      "height": 1261,
+      "rgba": true,
+      "bundle": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-activity-sheet.imageset/sheet.png",
+      "columns": 2,
+      "rows": 2
+    },
+    {
+      "file": "output/onboarding-comparison/onboarding-belly-sheet.png",
+      "sha256": "d8349562321294ca759323879032f122390f8bb7f72b18ca78d2f1f26c0728a7",
+      "generated": true,
+      "fictional": true,
+      "active": true,
+      "prompt": "output/onboarding-comparison/onboarding-belly-sheet-prompt.txt",
+      "width": 2172,
+      "height": 724,
+      "rgba": true,
+      "bundle": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-belly-sheet.imageset/sheet.png",
+      "columns": 3,
+      "rows": 1
+    },
+    {
+      "file": "output/onboarding-comparison/onboarding-body-sheet.png",
+      "sha256": "d321ae8c236bd35460f7608b11062639df18701c1b16a9bc566cd521d03f0f63",
+      "generated": true,
+      "fictional": true,
+      "active": true,
+      "prompt": "output/onboarding-comparison/onboarding-body-sheet-prompt.txt",
+      "width": 1536,
+      "height": 1024,
+      "rgba": true,
+      "bundle": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-body-sheet.imageset/sheet.png",
+      "columns": 3,
+      "rows": 2
+    },
+    {
+      "file": "output/onboarding-comparison/onboarding-goal-sheet.png",
+      "sha256": "4691ee20356df6c85d62867fc1a2b5e7e8befe4b20379751358a6af318eced46",
+      "generated": true,
+      "fictional": true,
+      "active": true,
+      "prompt": "output/onboarding-comparison/onboarding-goal-sheet-prompt.txt",
+      "width": 1247,
+      "height": 1261,
+      "rgba": true,
+      "bundle": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-goal-sheet.imageset/sheet.png",
+      "columns": 2,
+      "rows": 2
+    },
+    {
+      "file": "output/onboarding-comparison/onboarding-reward-sheet.png",
+      "sha256": "bda7fd084688abbbd17bc71b2d9a0a354b46f6f71f844b45c45abab19f2328ac",
+      "generated": true,
+      "fictional": true,
+      "active": true,
+      "prompt": "output/onboarding-comparison/onboarding-reward-sheet-prompt.txt",
+      "width": 1536,
+      "height": 1024,
+      "rgba": true,
+      "bundle": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-reward-sheet.imageset/sheet.png",
+      "columns": 3,
+      "rows": 2
+    },
+    {
+      "file": "output/onboarding-comparison/pro-gift.png",
+      "sha256": "79ef88a55a0a8b9108abcbd61950475371e528f420f5929d3f441146b42881fb",
+      "generated": true,
+      "fictional": true,
+      "active": true,
+      "prompt": "output/onboarding-comparison/pro-gift-prompt.txt",
+      "width": 1254,
+      "height": 1254,
+      "rgba": true,
+      "bundle": "DopafitV2/DopafitV2/Assets.xcassets/onboarding-pro-gift.imageset/gift.png",
+      "columns": 1,
+      "rows": 1
+    },
+    {
+      "file": "output/onboarding-comparison/slim.png",
+      "sha256": "676d7e09dcf17e34c67b0048f8b757719af7f88953e02df24b4ea97187d71921",
+      "generated": true,
+      "fictional": true,
+      "active": false,
+      "prompt": "output/onboarding-comparison/slim-prompt.txt",
+      "width": 1024,
+      "height": 1536,
+      "rgba": true
+    }
+  ],
+  "references": [
+    {
+      "file": "output/onboarding-comparison/baseline.png",
+      "sha256": "9ea38eb3b89a49eb8109164332e74e46c526bfd10a78a801d610638c8510a08f"
+    },
+    {
+      "file": "DopafitV2/DopafitV2/Assets.xcassets/vn-person-attractive.imageset/person.png",
+      "sha256": "a131b8f79d9d8d04a80ac6495d041c65fa6a7340ad1310c5f8f7e9b2a02b4b1d"
+    }
+  ]
+}

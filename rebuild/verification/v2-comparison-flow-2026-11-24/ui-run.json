@@ -1,0 +1,83 @@
+{
+  "updated": "2026-11-25",
+  "status": "source built; sampled UI verified; final additional UI pending manual Mac unlock",
+  "bundles": {
+    "main": "com.local.dopafit.v2",
+    "qa": "com.local.dopafit.v2.designqa",
+    "untouched_original": "com.local.dopafit.rebuild"
+  },
+  "build": "Final Debug build succeeded; only expected no-AppIntents metadata notice",
+  "model_tests": {
+    "script": "scripts/check-v2-onboarding.sh",
+    "passed": 53,
+    "scope": "V2 Models/Catalog, extracted actual Profile enums and Step/makeSteps route; not original rebuild suite or UI certification"
+  },
+  "ui_verified": [
+    "C229 common current-body crop and distinct silhouettes, empty/soft selection",
+    "C230 target selector balanced→muscular",
+    "C231 ruler drag and kg/lb conversion; synthetic42kg is not a recommended goal",
+    "C232 belly empty disabled→soft selected→comparison",
+    "C233 matching soft/muscular pair, before final compact-frame polish",
+    "C234–C237 all4 full-activity illustrations/descriptions/slider",
+    "C238 intensity empty disabled→easy selected→journey",
+    "C239–C240 returning→duration, Back/reselect retained months1to3",
+    "C241 shoulder selection clears None; None clears parts",
+    "C242 three obstacles selected; fourth ignored; deselect/skip",
+    "C243 potential illustration→reward",
+    "C244 six reward actions, gift selected/persisted to ready",
+    "C245 selected4days/60minute budget→actual plan6exercises×2sets≈34minute estimate",
+    "C246 synchronous built plan followed by summary checklist→direction",
+    "C247 actual chosen weights and decreasing illustration",
+    "C248 actual ready plan metadata and chosen reward",
+    "C249 actual first-session rows/gear2 and≈34minutes→commitment",
+    "1300ms hold with tomorrow date→reminder, select18→local save; no QA notification authorization",
+    "C250 reminder earlier60minute-budget preview; final source uses actual plan minutes",
+    "C257 annual/monthly selectable, visible face/working arm/dumbbell and whole price rows",
+    "C252 first close→gift→open offer",
+    "C254 full offer price card visible; persisted deadline retained after reinstall/relaunch",
+    "C255 CTA opens explicit local-demo confirmation; cancel returns",
+    "Restore explicitly says App Store unconnected",
+    "C256 expired-date fixture only in QA shows00:00 and disabled CTA",
+    "C258 monthly demo activation→Home; qa-pro-month-activated.json proves demoProPlan=month"
+  ],
+  "pending_ui": [
+    "final goal sprite after latest image correction",
+    "focus flat muscle map/three-choice limit/full-body reset",
+    "new Settings profile review menus",
+    "final compact comparison frame/copy and actual-duration reminder",
+    "postinstall main UI sample",
+    "before/after HTML visual readback/capture",
+    "potential description rows after fixed-height overlap correction found in offline C243 review",
+    "same-appearance/maintain/health-balanced single-portrait branch and goal-driven default body target"
+  ],
+  "qa_mutations": [
+    "isolated QA selected bodysoft/targetmuscular,42kg ruler result, lb, activityhigh, levelexperienceSome/intensityeasy, returning/months1to3, bellysoft, gift reward,4days/60minute budget, firstDay25Nov/reminder18",
+    "no sets logged, no workout started/finished, no Health write",
+    "local monthly Pro demo flag activated, no StoreKit request",
+    "offer deadline temporarily set0 only in QA to test expired CTA, restored recorded deadline before monthly test",
+    "QA --reset after profile/Pro JSON evidence archived, to prepare final focus preview"
+  ],
+  "main": {
+    "vs_turn_start": true,
+    "vs_preinstall": true,
+    "main_history_count": 0,
+    "restored_any_snapshot": false,
+    "original_app_bundle_untouched": true,
+    "ui_pending_manual_unlock": true,
+    "original_140_rows_unchanged": true,
+    "vs_final_preinstall": true,
+    "final_vs_turn_start": true,
+    "final_binary_installed": true
+  },
+  "original_evidence": "140 original rows unchanged; no new original screenshots/Figma mutation",
+  "current_blocker": "Mac locked at final focus check; user asked once via async to unlock. No bypass or auto-lock changes.",
+  "limitations": [
+    "Other devices/system DynamicType/VoiceOver/ReduceMotion/lifecycle not fully tested",
+    "No auth/cloud/StoreKit/paid entitlement integration; only first-session notification scheduling; permission/delivery not tested",
+    "Body/weight images and curves illustrate preferences, no measured body-fat or clinical/diet projection",
+    "Local exercise rules remain prototype; ankle filtering conservative, not clinically reviewed"
+  ],
+  "qa_cleaned": true,
+  "qa_ready_package": ".build/DopafitV2DesignQA.app",
+  "next_after_unlock": "Install prepared QA package, launch --preview-step desire; inspect goal→echo→focus, then direct previews for potential/transformation/reminder and Settings. Return to main, observe and compare fresh JSON. No reset on main."
+}

@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-25",
+  "status": "final installed and observed on main; disposable QA removed",
+  "requests": [
+    "Mobbin UX/UI redesign of pain-aware recommendations",
+    "Gift must drop like reference; correct camera and stronger light when opening",
+    "Home needs grouped blocks based on current Rebuild"
+  ],
+  "build": ".build/v2-pain-home-final.log",
+  "changes": {
+    "pain": "Pain-only layout with selected-region card and expandable movement guidance/NHS link, shared compact3exercise group, actual filtering/guides/sex mapping unchanged; motivation layout retained",
+    "home": "Existing Card token wraps actual plan and WeekStrip; roomier individual exercise surfaces, real controls/routes/data retained",
+    "gift": "24one-shot drop frames→48frame idle loop;21frame explicitOpen. Lower front camera, lid flies out of shot, camera pushes toward interior, white/lime perspective emission shafts/bloom. Removes obsolete flat fan and camera pullback. CADisplayLink chooses source24fps frames with decoded first image, holds last after one shot; weak target proxy and cleanup; drop completion callback enters idle. Explicit300frame/intrinsic sizezero prevents overflow into copy. Gift entry has no crossfade covering first drop."
+  },
+  "native_samples": [
+    "C437 baseline pain and C438 baseline Home on same Max device; window scale later changed",
+    "C439 collapsed pain: all3eligible exercise rows visible before CTA; C440 expanded guidance and NHS link; actual incline guide opened",
+    "C441 current Rebuild Home read-only observation",
+    "C442 final Home blocks, menu duration opened/dismissed; no value change",
+    "native-gift-final-player.mp4: Plans→Trial navigation→fall/impact/rebound→several idle loops→Open press/lidflight/perspectiveburst→offer; no purchase or Proactivation",
+    "C445 final player ReduceMotion static gift, Open→offer; setting restoredoff",
+    "C446 final main welcome after authorized installation; no demo/reset arguments"
+  ],
+  "evidence": [
+    "C437-pain-before.png",
+    "C438-home-before.png",
+    "C439-pain-grouped-after.png",
+    "C440-pain-details-expanded.png",
+    "C441-rebuild-home-reference.png",
+    "C442-home-blocks-after.png",
+    "C443-gift-low-angle.png",
+    "C444-offer-after-final-open.png",
+    "C445-gift-reduce-motion-final.png",
+    "C446-main-updated-welcome.png",
+    "native-gift-final-player.mp4",
+    "player-drop-contact.jpg",
+    "player-open-contact.jpg",
+    "gift-preview-edited.mp4",
+    "pain-before-after.html"
+  ],
+  "source_reference": "rebuild/verification/v2-gift-reference-audit-2026-11-25/reference.mp4",
+  "reference_sha256": "113072a1aa19211da2cbcda1725f2b93013a4faf3b4aeed19f35138b06900fdb",
+  "frame_manifest": "output/blender-pro-gift-motion/bundle-manifest.json",
+  "frame_count": 93,
+  "bundle_hashes_verified": true,
+  "model_tests": "Not rerun: this pass changes UI/motion only; previous309onboarding+45progress counts are historical, not new evidence. Build/native routes/hash checks are current.",
+  "preservation": "preservation.json: final full main JSON equals fresh preinstall; onboardedfalse/0history/isProfalse. User explicitly approved restarting unsaved onboarding64→57kg before install. No saved profile restoration. QA0history archived/removed; no device erased/shutdown. Original Mirroring unsaved setup not touched; Rebuild only launched/read, no setup/Health/payment/Figma mutations.",
+  "limits": [
+    "Reference mechanics adapted to graphite/lime app, not identical source color/product/cuts or everyframe",
+    "No measured FPS/peak memory/VoiceOver/allviewport/allmedicalbranch certification",
+    "New multi-joint grid/empty layout source branches not all retapped this UI-only pass; prior logic tests remain",
+    "Gift inactive/resume restarts current segment; not full lifecycle timing audit",
+    "Comparison board uses actual Max captures with different desktop window scale; not pixel-parity measurement",
+    "Board delivered self-contained HTML. Native Chrome readback; no full high-resolution isolated board PNG. Rect-less template runtime guard added rather than inventing bounds."
+  ],
+  "intermediates": "Earlier gift captures, plane/volume experiments and player modes superseded by native-gift-final-player.mp4 and current93hashes."
+}

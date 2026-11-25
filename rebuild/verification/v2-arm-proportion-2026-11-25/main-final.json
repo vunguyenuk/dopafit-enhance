@@ -1,0 +1,43 @@
+{
+  "demoProPlan": "year",
+  "textScale": 1,
+  "gentle": false,
+  "isPro": true,
+  "onboarded": true,
+  "swaps": {},
+  "removed": [],
+  "added": [],
+  "history": [],
+  "profile": {
+    "recent": "regular",
+    "injuries": [],
+    "sex": "male",
+    "place": "home",
+    "activity": "high",
+    "minutes": 45,
+    "focusAreas": [
+      "shoulders"
+    ],
+    "obstacles": [
+      "Thi\u1ebfu \u0111\u1ed9ng l\u1ef1c"
+    ],
+    "desires": [
+      "Ng\u1ee7 ngon, \u0111\u1ea7u \u00f3c nh\u1eb9"
+    ],
+    "unit": "kg",
+    "targetShape": "muscular",
+    "level": "experienced",
+    "goal": "lean",
+    "bodyKg": 70,
+    "currentShape": "average",
+    "name": "",
+    "daysPerWeek": 4,
+    "age": 28,
+    "firstDay": 817232400,
+    "targetKg": 70
+  },
+  "checkIn": {
+    "fine": {}
+  },
+  "sawPro": true
+}

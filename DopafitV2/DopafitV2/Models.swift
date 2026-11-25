@@ -92,12 +92,12 @@ enum Gear: String, Codable, CaseIterable {
 }
 
 enum Joint: String, Codable, CaseIterable, Identifiable {
-    case neck, shoulder, elbow, wrist, lowerBack, knee
+    case neck, shoulder, elbow, wrist, lowerBack, knee, ankle
     var id: String { rawValue }
     var name: String {
         switch self {
         case .neck: "Cổ"; case .shoulder: "Vai"; case .elbow: "Khuỷu tay"
-        case .wrist: "Cổ tay"; case .lowerBack: "Lưng dưới"; case .knee: "Đầu gối"
+        case .wrist: "Cổ tay"; case .lowerBack: "Lưng dưới"; case .knee: "Đầu gối"; case .ankle: "Cổ chân"
         }
     }
 }
@@ -122,6 +122,17 @@ struct Exercise: Identifiable, Hashable {
     var isBarbell: Bool { gear == .barbell || gear == .smith }
     var bodyweightOnly: Bool { gear == .bodyweight || gear == .band }
     var restSeconds: Int { compound ? 120 : 75 }
+    // Conservative local filter: ankle discomfort deprioritizes leg exercises.
+    var constrainedJoints: Set<Joint> {
+        var joints = Set(loads)
+        // Conservative equipment/contact constraints, not a clinical safety rating.
+        if primary.group == .legs { joints.insert(.ankle) }
+        if primary.group == .push || primary.group == .pull {
+            joints.formUnion([.shoulder, .elbow, .wrist])
+        }
+        if ["db-row", "goblet", "bodysquat", "thruster", "crunch", "deadbug"].contains(id) { joints.insert(.lowerBack) }
+        return joints
+    }
     var weightNote: String? {
         if perSide { return "mỗi tay" }
         if gear == .barbell { return "gồm thanh đòn 20 kg" }
@@ -155,6 +166,7 @@ struct Session: Codable, Identifiable, Hashable {
     var started: Date
     var seconds: Int
     var items: [WorkoutItem]
+    var caloriesKcal: Double? = nil
     var doneSets: [(WorkoutItem, LoggedSet)] {
         items.flatMap { item in item.sets.filter(\.done).map { (item, $0) } }
     }
@@ -200,14 +212,62 @@ struct Profile: Codable, Equatable {
     var daysPerWeek = 3
     var minutes = 45
     var sex: Sex = .male
-    var age = 28
+    var age: Int? = nil
+    var birthDate: Date? = nil
     var bodyKg: Double = 70
     var unit: WeightUnit = .kg
     // Thêm ở bản thiết lập mới (để Optional cho dữ liệu cũ vẫn đọc được)
+    // Optional so existing saved profiles decode unchanged.
+    var activity: Activity? = nil
+    enum Activity: String, Codable, CaseIterable {
+        case sedentary, light, moderate, high
+        var name: String { switch self {
+        case .sedentary: "Ít vận động"
+        case .light: "Vận động nhẹ"
+        case .moderate: "Khá tích cực"
+        case .high: "Rất tích cực"
+        } }
+        var detail: String { switch self {
+        case .sedentary: "Tôi ngồi nhiều và ít khi tập thể dục."
+        case .light: "Tôi thỉnh thoảng tập thể dục hoặc đi bộ khoảng 30 phút."
+        case .moderate: "Tôi thường vận động hoặc tập thể dục 3–4 ngày mỗi tuần."
+        case .high: "Tôi vận động nhiều và tập luyện hầu hết các ngày trong tuần."
+        } }
+        var photo: String { switch self {
+        case .sedentary: "vn-person-seated"
+        case .light: "vn-person-walk"
+        case .moderate: "vn-person-run"
+        case .high: "vn-person-lift"
+        } }
+    }
     var recent: Recent? = nil
+    var trainingBreak: TrainingBreak? = nil
+    enum TrainingBreak: String, Codable, CaseIterable {
+        case weeks2to4, months1to3, over3months
+        var name: String { switch self {
+        case .weeks2to4: "2–4 tuần"
+        case .months1to3: "1–3 tháng"
+        case .over3months: "Hơn 3 tháng"
+        } }
+        var sentence: String { switch self {
+        case .weeks2to4: "2–4 tuần"
+        case .months1to3: "1–3 tháng"
+        case .over3months: "hơn 3 tháng"
+        } }
+    }
     var obstacles: [String]? = nil
     var reminderHour: Int? = nil
     var firstDay: Date? = nil
+    var desires: [String]? = nil
+    var heightCm: Int? = nil
+    var injuries: [Joint]? = nil
+    var currentShape: BodyShape? = nil
+    var targetShape: BodyGoal? = nil
+    var targetKg: Double? = nil
+    var bellyShape: BellyShape? = nil
+    var intensity: Intensity? = nil
+    var focusAreas: [FocusArea]? = nil
+    var reward: Reward? = nil
 
     enum Recent: String, Codable, CaseIterable { case regular, onOff, returning
         var name: String { switch self { case .regular: "Đang tập đều"; case .onOff: "Lúc tập lúc nghỉ"; case .returning: "Đang nghỉ, muốn tập lại" } }
@@ -248,6 +308,10 @@ struct AppData: Codable {
     var added: [String] = []              // bài người dùng thêm
     var planDate: Date? = nil
     var sawOffer: Bool? = nil
+    var offerExpiresAt: Date? = nil
+    var demoProPlan: String? = nil
+    var bodyMeasurements: [BodyMeasurement]? = nil
+    var dismissedHealthTip: Bool? = nil
 }
 
 struct PlannedWorkout {
@@ -256,6 +320,21 @@ struct PlannedWorkout {
     var reasons: [String]
     var items: [WorkoutItem]
     var minutes: Int { items.reduce(0) { $0 + $1.sets.count * ($1.exercise.restSeconds + 45) } / 60 + 4 }
+
+    /// Same adjustment for the daily check-in and its read-only onboarding preview.
+    /// Estimates retain at least two exercises and two sets; never promise an exact duration.
+    func shortened(to budget: Int) -> PlannedWorkout {
+        var result = self
+        var trimmed = 0
+        while result.minutes > budget && result.items.count > 2 {
+            result.items.removeLast(); trimmed += 1
+        }
+        while result.minutes > budget, let i = result.items.firstIndex(where: { $0.sets.count > 2 }) {
+            result.items[i].sets.removeLast(); result.items[i].change = "Bớt 1 set"
+        }
+        result.reasons = ["Gói gọn trong \(budget) phút" + (trimmed > 0 ? ", bỏ \(trimmed) bài cuối" : "")]
+        return result
+    }
 }
 
 struct ActiveWorkout {
@@ -275,13 +354,15 @@ final class AppState: ObservableObject {
     @Published var active: ActiveWorkout? = nil
     @Published var lastFinished: Session? = nil
 
-    private let url: URL = {
+    private let url: URL
+    private static func defaultStorageURL() -> URL {
         let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("DopafitV2", isDirectory: true)
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("state.json")
-    }()
+    }
 
-    init() {
+    init(storageURL: URL? = nil) {
+        url = storageURL ?? Self.defaultStorageURL()
         let args = ProcessInfo.processInfo.arguments
         if args.contains("--reset") {
             try? FileManager.default.removeItem(at: url)
@@ -335,7 +416,7 @@ final class AppState: ObservableObject {
 
     /// 1RM ước tính (công thức Epley), giới hạn 1–12 rep để tránh số vô lý.
     static func e1rm(_ w: Double, _ reps: Int) -> Double {
-        guard w > 0, reps > 0 else { return 0 }
+        guard w.isFinite, w > 0, reps > 0 else { return 0 }
         let r = Double(min(reps, 12))
         return reps == 1 ? w : w * (1 + r / 30)
     }
@@ -349,15 +430,16 @@ final class AppState: ObservableObject {
         return best
     }
     func e1rmSeries(_ exerciseID: String) -> [(Date, Double)] {
-        data.history.sorted { $0.started < $1.started }.compactMap { s in
-            let v = s.items.filter { $0.exerciseID == exerciseID }.flatMap(\.sets).filter(\.done).map { Self.e1rm($0.weightKg, $0.reps) }.max()
+        data.history.filter { $0.started <= Date() }.sorted { $0.started < $1.started }.compactMap { s in
+            let v = s.items.filter { $0.exerciseID == exerciseID && !$0.exercise.bodyweightOnly }.flatMap(\.sets)
+                .filter { $0.done && $0.weightKg.isFinite && $0.weightKg > 0 && $0.reps > 0 }.map { Self.e1rm($0.weightKg, $0.reps) }.max()
             return v.map { (s.started, $0) }
         }
     }
     var trackedLifts: [Exercise] {
         var counts: [String: Int] = [:]
-        for s in data.history { for it in s.items where it.exercise.gear != .bodyweight && it.sets.contains(where: \.done) { counts[it.exerciseID, default: 0] += 1 } }
-        return counts.filter { $0.value >= 1 }.sorted { $0.value > $1.value }.prefix(6).compactMap { Catalog.byID[$0.key] }
+        for s in completedSessions() { for it in s.items where !it.exercise.bodyweightOnly && it.sets.contains(where: { $0.done && $0.weightKg.isFinite && $0.weightKg > 0 && $0.reps > 0 }) { counts[it.exerciseID, default: 0] += 1 } }
+        return counts.filter { $0.value >= 1 }.sorted { $0.value == $1.value ? $0.key < $1.key : $0.value > $1.value }.compactMap { Catalog.byID[$0.key] }
     }
 
     // MARK: Hồi phục
@@ -396,8 +478,9 @@ final class AppState: ObservableObject {
 
     // MARK: Lên buổi tập hôm nay
 
-    var templates: [(String, String, [Muscle])] {
-        switch data.profile.daysPerWeek {
+    var templates: [(String, String, [Muscle])] { templates(for: data.profile) }
+    private func templates(for profile: Profile) -> [(String, String, [Muscle])] {
+        switch profile.daysPerWeek {
         case ...2: return [("Toàn thân A", "Toàn thân", [.quads, .chest, .back, .shoulders, .hamstrings, .biceps, .abs]),
                            ("Toàn thân B", "Toàn thân", [.hamstrings, .back, .chest, .glutes, .shoulders, .triceps, .abs])]
         case 3: return [("Ngày đẩy", "Ngực · vai · tay sau", [.chest, .chest, .shoulders, .shoulders, .triceps, .triceps, .abs]),
@@ -415,22 +498,26 @@ final class AppState: ObservableObject {
         }
     }
 
-    var availableGear: Set<Gear> {
-        var g = data.profile.place.gear
+    var availableGear: Set<Gear> { availableGear(for: data.profile) }
+    private func availableGear(for profile: Profile) -> Set<Gear> {
+        var g = profile.place.gear
         if data.gentle { g.remove(.barbell); g.remove(.smith); g.remove(.tbar) }
         return g
     }
 
-    func alternatives(for ex: Exercise, avoiding joints: [Joint] = []) -> [Exercise] {
-        Catalog.all.filter { $0.id != ex.id && $0.primary == ex.primary && availableGear.contains($0.gear) && Set($0.loads).isDisjoint(with: joints) }
+    func alternatives(for ex: Exercise, avoiding joints: [Joint] = [], profile: Profile? = nil) -> [Exercise] {
+        let p = profile ?? data.profile
+        let avoided = Array(Set(joints + (p.injuries ?? [])))
+        return Catalog.all.filter { $0.id != ex.id && $0.primary == ex.primary && availableGear(for: p).contains($0.gear) && $0.constrainedJoints.isDisjoint(with: avoided) }
             .sorted { ($0.gear != ex.gear ? 0 : 1, $0.name) < ($1.gear != ex.gear ? 0 : 1, $1.name) }
     }
 
-    func startingWeight(_ ex: Exercise) -> Double {
+    func startingWeight(_ ex: Exercise, profile: Profile? = nil) -> Double {
+        let profile = profile ?? data.profile
         if ex.bodyweightOnly { return 0 }
-        var w = ex.weightKg * data.profile.level.factor
-        if data.profile.sex == .female { w *= 0.7 }
-        if data.profile.place == .home && ex.gear == .dumbbell { w = min(w, 20) }
+        var w = ex.weightKg * profile.level.factor
+        if profile.sex == .female { w *= 0.7 }
+        if profile.place == .home && ex.gear == .dumbbell { w = min(w, 20) }
         return Self.round(w, ex)
     }
     static func round(_ w: Double, _ ex: Exercise) -> Double {
@@ -441,9 +528,10 @@ final class AppState: ObservableObject {
 
     var plan: PlannedWorkout { buildPlan() }
 
-    func buildPlan(now: Date = Date()) -> PlannedWorkout {
-        let p = data.profile
-        let t = templates[data.history.count % templates.count]
+    func buildPlan(profile: Profile? = nil, now: Date = Date()) -> PlannedWorkout {
+        let p = profile ?? data.profile
+        let choices = templates(for: p)
+        let t = choices[data.history.count % choices.count]
         var reasons: [String] = []
         let maxCount: Int = {
             var n = p.minutes <= 30 ? 4 : (p.minutes <= 45 ? 5 : (p.minutes <= 60 ? 6 : 7))
@@ -452,8 +540,15 @@ final class AppState: ObservableObject {
         }()
         var used = Set<String>()
         var items: [WorkoutItem] = []
-        for m in t.2 where items.count < maxCount {
-            let candidates = Catalog.all.filter { $0.primary == m && availableGear.contains($0.gear) && !used.contains($0.id) }
+        let focus = Set((p.focusAreas ?? []).flatMap(\.muscles))
+        // Keep the split and its balance; prioritize selected muscles within today's template.
+        let muscleOrder = t.2.enumerated().sorted {
+            let a = focus.contains($0.element), b = focus.contains($1.element)
+            return a == b ? $0.offset < $1.offset : a && !b
+        }.map(\.element)
+        for m in muscleOrder where items.count < maxCount {
+            let candidates = Catalog.all.filter { $0.primary == m && availableGear(for: p).contains($0.gear) && !used.contains($0.id)
+                && $0.constrainedJoints.isDisjoint(with: p.injuries ?? []) }
             // người mới ưu tiên máy/tạ đơn; người có kinh nghiệm ưu tiên bài nhiều khớp
             let sorted = candidates.sorted { a, b in
                 func score(_ e: Exercise) -> Int {
@@ -462,6 +557,7 @@ final class AppState: ObservableObject {
                     if p.place != .home && e.bodyweightOnly { s -= 4 }
                     if p.level == .new && (e.gear == .machine || e.gear == .dumbbell || e.gear == .smith) { s += 3 }
                     if p.level != .new && e.gear == .barbell { s += 2 }
+                    if let inj = p.injuries, !e.constrainedJoints.isDisjoint(with: inj) { s -= 6 }
                     return s
                 }
                 return score(a) == score(b) ? a.id < b.id : score(a) > score(b)
@@ -469,12 +565,12 @@ final class AppState: ObservableObject {
             guard var ex = sorted.first else { continue }
             var hops = 0
             while hops < 5, let swapID = data.swaps[ex.id], let s = Catalog.byID[swapID] { ex = s; hops += 1 }
-            if data.removed.contains(ex.id) { used.insert(ex.id); continue }
+            if data.removed.contains(ex.id) || !ex.constrainedJoints.isDisjoint(with: p.injuries ?? []) { used.insert(ex.id); continue }
             used.insert(ex.id)
-            items.append(makeItem(ex))
+            items.append(makeItem(ex, profile: p))
         }
         for id in data.added where !used.contains(id) {
-            if let ex = Catalog.byID[id] { items.append(makeItem(ex)); used.insert(id) }
+            if let ex = Catalog.byID[id], ex.constrainedJoints.isDisjoint(with: p.injuries ?? []) { items.append(makeItem(ex, profile: p)); used.insert(id) }
         }
 
         // lý do một dòng
@@ -495,21 +591,39 @@ final class AppState: ObservableObject {
             reasons = ["Bạn nghỉ \(d) ngày: tạ giảm 20%, sẽ tăng dần lại"]
         }
         if data.gentle { reasons.append("chế độ nhẹ nhàng") }
+        if let intensity = p.intensity { reasons.append(intensity.planNote) }
+        if items.contains(where: { focus.contains($0.exercise.primary) }) { reasons.append("ưu tiên nhóm cơ bạn chọn trong lịch hôm nay") }
 
         // Check-in hôm nay
         var result = PlannedWorkout(name: t.0, focus: t.1, reasons: reasons, items: items)
-        applyCheckIn(&result)
+        applyCheckIn(&result, profile: p)
         return result
     }
 
-    private func makeItem(_ ex: Exercise) -> WorkoutItem {
-        let p = data.profile
+    func onboardingSuggestions(profile: Profile, limit: Int = 3) -> [Exercise] {
+        let focus = Set((profile.focusAreas ?? []).flatMap(\.muscles))
+        let avoided = profile.injuries ?? []
+        let planIDs = Set(buildPlan(profile: profile).items.map(\.exerciseID))
+        return Array(Catalog.all.filter {
+            availableGear(for: profile).contains($0.gear) && $0.constrainedJoints.isDisjoint(with: avoided)
+        }.sorted { a, b in
+            func rank(_ e: Exercise) -> Int {
+                (focus.contains(e.primary) ? 100 : 0) + (planIDs.contains(e.id) ? 10 : 0)
+            }
+            return rank(a) == rank(b) ? a.name < b.name : rank(a) > rank(b)
+        }.prefix(limit))
+    }
+
+    private func makeItem(_ ex: Exercise, profile: Profile? = nil) -> WorkoutItem {
+        let p = profile ?? data.profile
         var reps = ex.reps
         if p.level == .new { reps = max(reps, 10) }
         if p.goal == .strength && ex.compound { reps = min(reps, 6) }
         var sets = data.gentle ? 2 : ex.sets
         if p.level == .new { sets = min(sets, 3) }
-        var w = startingWeight(ex)
+        if p.intensity == .easy { sets = min(sets, 2) }
+        if p.intensity == .steady { sets = min(sets, 3) }
+        var w = startingWeight(ex, profile: p)
         var change: String? = nil
         if let last = lastItem(for: ex.id) {
             let done = last.sets.filter(\.done)
@@ -534,7 +648,7 @@ final class AppState: ObservableObject {
         for j in item.sets.indices { item.sets[j].weightKg = AppState.round(item.sets[j].weightKg * f, ex) }
     }
 
-    func applyCheckIn(_ w: inout PlannedWorkout) {
+    func applyCheckIn(_ w: inout PlannedWorkout, profile: Profile? = nil) {
         switch data.checkIn {
         case .fine: break
         case .tired:
@@ -548,8 +662,8 @@ final class AppState: ObservableObject {
             var swapped = 0
             for i in w.items.indices {
                 let ex = w.items[i].exercise
-                guard !Set(ex.loads).isDisjoint(with: joints) else { continue }
-                if let alt = alternatives(for: ex, avoiding: joints).first {
+                guard !ex.constrainedJoints.isDisjoint(with: joints) else { continue }
+                if let alt = alternatives(for: ex, avoiding: joints, profile: profile).first {
                     var item = makeItem(alt)
                     item.change = "Đổi từ \(ex.name.lowercased()) để tránh \(joints.map { $0.name.lowercased() }.joined(separator: ", "))"
                     w.items[i] = item
@@ -561,12 +675,7 @@ final class AppState: ObservableObject {
             }
             w.reasons = [swapped == 0 ? "Không bài nào dồn lực vào chỗ đau" : "Đã đổi hoặc giảm \(swapped) bài để tránh chỗ đau"]
         case .short(let minutes):
-            var trimmed = 0
-            while w.minutes > minutes && w.items.count > 2 { w.items.removeLast(); trimmed += 1 }
-            while w.minutes > minutes, let i = w.items.firstIndex(where: { $0.sets.count > 2 }) {
-                w.items[i].sets.removeLast(); w.items[i].change = "Bớt 1 set"
-            }
-            w.reasons = ["Gói gọn trong \(minutes) phút" + (trimmed > 0 ? ", bỏ \(trimmed) bài cuối" : "")]
+            w = w.shortened(to: minutes)
         }
     }
 

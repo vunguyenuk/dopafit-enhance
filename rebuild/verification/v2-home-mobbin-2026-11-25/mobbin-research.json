@@ -1,0 +1,183 @@
+[
+  {
+    "query": "strength training app workout home screen with today's session and weekly calendar",
+    "screens": [
+      {
+        "id": "79a622bd-392f-4ab4-9eb7-18e3a85fcc5c",
+        "image_url": "https://mobbin.com/api/mcp/short/u2dJcnH0",
+        "mobbin_url": "https://mobbin.com/screens/79a622bd-392f-4ab4-9eb7-18e3a85fcc5c?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Hevy",
+        "platform": "ios"
+      },
+      {
+        "id": "465dd336-bce3-440b-9eab-729509be482c",
+        "image_url": "https://mobbin.com/api/mcp/short/vkk3AcWV",
+        "mobbin_url": "https://mobbin.com/screens/465dd336-bce3-440b-9eab-729509be482c?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Centr",
+        "platform": "ios"
+      },
+      {
+        "id": "4f017180-d1d8-46e4-ad71-7035c16c8242",
+        "image_url": "https://mobbin.com/api/mcp/short/hxgSQnco",
+        "mobbin_url": "https://mobbin.com/screens/4f017180-d1d8-46e4-ad71-7035c16c8242?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Ladder",
+        "platform": "ios"
+      },
+      {
+        "id": "7bfd20ab-2add-4401-96bc-e002c0fb0ff8",
+        "image_url": "https://mobbin.com/api/mcp/short/rxfIb656",
+        "mobbin_url": "https://mobbin.com/screens/7bfd20ab-2add-4401-96bc-e002c0fb0ff8?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Garmin Connect",
+        "platform": "ios"
+      },
+      {
+        "id": "f97dc968-1dc0-4f91-863c-69fe70e88140",
+        "image_url": "https://mobbin.com/api/mcp/short/4b2EgeGR",
+        "mobbin_url": "https://mobbin.com/screens/f97dc968-1dc0-4f91-863c-69fe70e88140?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Equinox+",
+        "platform": "ios"
+      },
+      {
+        "id": "2d33804b-c137-4f11-b057-fbf984ca16f7",
+        "image_url": "https://mobbin.com/api/mcp/short/xF066bKb",
+        "mobbin_url": "https://mobbin.com/screens/2d33804b-c137-4f11-b057-fbf984ca16f7?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Tempo",
+        "platform": "ios"
+      }
+    ]
+  },
+  {
+    "query": "strength training workout overview with exercise list and duration",
+    "screens": [
+      {
+        "id": "f20968aa-1f43-4ea1-8462-077041f2cf53",
+        "image_url": "https://mobbin.com/api/mcp/short/OCXMOiMv",
+        "mobbin_url": "https://mobbin.com/screens/f20968aa-1f43-4ea1-8462-077041f2cf53?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Hevy",
+        "platform": "ios"
+      },
+      {
+        "id": "43de8eec-8c62-4729-b740-a8d76296edd3",
+        "image_url": "https://mobbin.com/api/mcp/short/vtW5FbnQ",
+        "mobbin_url": "https://mobbin.com/screens/43de8eec-8c62-4729-b740-a8d76296edd3?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Peloton Strength+",
+        "platform": "ios"
+      },
+      {
+        "id": "818e42db-0b83-4d29-8f03-3421bb5f8705",
+        "image_url": "https://mobbin.com/api/mcp/short/4n4Y13P5",
+        "mobbin_url": "https://mobbin.com/screens/818e42db-0b83-4d29-8f03-3421bb5f8705?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Runna",
+        "platform": "ios"
+      },
+      {
+        "id": "e6aed8cf-92c8-43c9-aef2-128aa6c598ea",
+        "image_url": "https://mobbin.com/api/mcp/short/EIIWm2kF",
+        "mobbin_url": "https://mobbin.com/screens/e6aed8cf-92c8-43c9-aef2-128aa6c598ea?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Gymshark Training and Fitness",
+        "platform": "ios"
+      },
+      {
+        "id": "9dcab6d1-881d-446d-b49e-eaa0e417f2bb",
+        "image_url": "https://mobbin.com/api/mcp/short/jyDB5WUK",
+        "mobbin_url": "https://mobbin.com/screens/9dcab6d1-881d-446d-b49e-eaa0e417f2bb?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Bevel",
+        "platform": "ios"
+      },
+      {
+        "id": "32f1224d-1e4f-4e1a-adc2-e8db3785162a",
+        "image_url": "https://mobbin.com/api/mcp/short/zMd8h9Ad",
+        "mobbin_url": "https://mobbin.com/screens/32f1224d-1e4f-4e1a-adc2-e8db3785162a?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Google Health (Fitbit)",
+        "platform": "ios"
+      }
+    ]
+  },
+  {
+    "query": "strength training workout plan screen before starting a session",
+    "screens": [
+      {
+        "id": "1073d491-0836-4d4a-b2bb-0080d069989a",
+        "image_url": "https://mobbin.com/api/mcp/short/v0Yih3cU",
+        "mobbin_url": "https://mobbin.com/screens/1073d491-0836-4d4a-b2bb-0080d069989a?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Runna",
+        "platform": "ios"
+      },
+      {
+        "id": "883961d5-a496-407b-b2df-df64ad6e4329",
+        "image_url": "https://mobbin.com/api/mcp/short/gtYaEKKi",
+        "mobbin_url": "https://mobbin.com/screens/883961d5-a496-407b-b2df-df64ad6e4329?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Peloton Strength+",
+        "platform": "ios"
+      },
+      {
+        "id": "f2d0956c-e3ff-4c3e-af30-5e667c8ff511",
+        "image_url": "https://mobbin.com/api/mcp/short/tgPn7MuR",
+        "mobbin_url": "https://mobbin.com/screens/f2d0956c-e3ff-4c3e-af30-5e667c8ff511?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Hevy",
+        "platform": "ios"
+      },
+      {
+        "id": "deedeeba-dd65-4aa1-9a3b-5f568c34d628",
+        "image_url": "https://mobbin.com/api/mcp/short/cUdy7xJQ",
+        "mobbin_url": "https://mobbin.com/screens/deedeeba-dd65-4aa1-9a3b-5f568c34d628?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Bevel",
+        "platform": "ios"
+      },
+      {
+        "id": "3d80614d-8b41-4807-abfc-5f6dd9f0a8bb",
+        "image_url": "https://mobbin.com/api/mcp/short/RxCYTS3r",
+        "mobbin_url": "https://mobbin.com/screens/3d80614d-8b41-4807-abfc-5f6dd9f0a8bb?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Gymshark Training and Fitness",
+        "platform": "ios"
+      },
+      {
+        "id": "19771ea4-b466-4192-9e0b-b9e4cf2291bb",
+        "image_url": "https://mobbin.com/api/mcp/short/rx63j77j",
+        "mobbin_url": "https://mobbin.com/screens/19771ea4-b466-4192-9e0b-b9e4cf2291bb?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Nike Training Club",
+        "platform": "ios"
+      }
+    ]
+  },
+  {
+    "query": "strength training workout home with adjustable duration and equipment",
+    "screens": [
+      {
+        "id": "7aa191ee-563e-433f-9f26-d86f251a1327",
+        "image_url": "https://mobbin.com/api/mcp/short/KtJvEPKZ",
+        "mobbin_url": "https://mobbin.com/screens/7aa191ee-563e-433f-9f26-d86f251a1327?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Gymshark Training and Fitness",
+        "platform": "ios"
+      },
+      {
+        "id": "97db12ef-150f-437e-a687-25ddd76f8d9b",
+        "image_url": "https://mobbin.com/api/mcp/short/3ufgquIH",
+        "mobbin_url": "https://mobbin.com/screens/97db12ef-150f-437e-a687-25ddd76f8d9b?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Ultrahuman",
+        "platform": "ios"
+      },
+      {
+        "id": "9dc9f0fb-a0d3-4230-bac0-d3fa4e781b01",
+        "image_url": "https://mobbin.com/api/mcp/short/UGHIyCL8",
+        "mobbin_url": "https://mobbin.com/screens/9dc9f0fb-a0d3-4230-bac0-d3fa4e781b01?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Withings Health Mate",
+        "platform": "ios"
+      },
+      {
+        "id": "17370017-7a17-48d8-9be4-c2c24f292b2f",
+        "image_url": "https://mobbin.com/api/mcp/short/LX7A6o05",
+        "mobbin_url": "https://mobbin.com/screens/17370017-7a17-48d8-9be4-c2c24f292b2f?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Runna",
+        "platform": "ios"
+      },
+      {
+        "id": "6898836d-eb84-4b21-888f-e2ffb820195d",
+        "image_url": "https://mobbin.com/api/mcp/short/HShuIIW8",
+        "mobbin_url": "https://mobbin.com/screens/6898836d-eb84-4b21-888f-e2ffb820195d?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Equinox+",
+        "platform": "ios"
+      }
+    ]
+  }
+]

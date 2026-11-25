@@ -1,0 +1,57 @@
+[
+  {
+    "asset": "vn-male-full-gym",
+    "source_equals_bundle": true,
+    "sha256": "02864289f110be82382daaa382389c71f59884bcb848e3a1dab27fbd0d1ae3ce"
+  },
+  {
+    "asset": "vn-male-small-gym",
+    "source_equals_bundle": true,
+    "sha256": "30b5430fb9ba96a4f02b04a7844864e1572aaf3f5c8413ef212770b731e37916"
+  },
+  {
+    "asset": "vn-male-home",
+    "source_equals_bundle": true,
+    "sha256": "cb9855ef55b0c9ce305fc3ac86b8bedf19afef27a60e50ed86cc67c5aeeb0155"
+  },
+  {
+    "asset": "vn-female-full-gym",
+    "source_equals_bundle": true,
+    "sha256": "002943d4e9d6bba22e9c42c87b97eaf17c569141d36d97159b9fceb6b07838b4"
+  },
+  {
+    "asset": "vn-female-small-gym",
+    "source_equals_bundle": true,
+    "sha256": "2129e99037e2a1c06533c027fe3717197c6586e6c29b1534dd37304a7c26026d"
+  },
+  {
+    "asset": "vn-female-home",
+    "source_equals_bundle": true,
+    "sha256": "e9fb2a4e67aaebabddb7bf1d5afcae1eb6074f60ed137ef1befe9978a38a074b"
+  },
+  {
+    "asset": "onboarding-calendar-2",
+    "source_equals_bundle": true,
+    "sha256": "4fc514716bceb1813c7928e89ca14d1e5325de259e8659751ea3a01884a89ae6"
+  },
+  {
+    "asset": "onboarding-calendar-3",
+    "source_equals_bundle": true,
+    "sha256": "d52cad12a617b17d790e77a363ed9313b8eaa26b0794190933b86c47102a4aba"
+  },
+  {
+    "asset": "onboarding-calendar-4",
+    "source_equals_bundle": true,
+    "sha256": "67e9cb6201dd95d3e32aa148967adcb530653676033b1dbae2bc420fc3d407da"
+  },
+  {
+    "asset": "onboarding-calendar-5",
+    "source_equals_bundle": true,
+    "sha256": "f1afec2fc54a1de317fd7b113f40ba6ea94a9bf0be48d16b109864cdbd308986"
+  },
+  {
+    "asset": "onboarding-calendar-6",
+    "source_equals_bundle": true,
+    "sha256": "74751bceda17484958476d99c3926a4bd27ac0ae79191bba147d261d11634c69"
+  }
+]

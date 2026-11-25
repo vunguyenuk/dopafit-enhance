@@ -1,0 +1,18 @@
+[
+  {
+    "asset": "incline",
+    "sourceGuideBytesEqual": true
+  },
+  {
+    "asset": "machinefly",
+    "sourceGuideBytesEqual": true
+  },
+  {
+    "asset": "shrug",
+    "sourceGuideBytesEqual": true
+  },
+  {
+    "asset": "male-body-realistic",
+    "generatedBundleBytesEqual": true
+  }
+]

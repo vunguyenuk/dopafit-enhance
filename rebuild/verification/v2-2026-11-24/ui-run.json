@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-24",
+  "bundle": "com.local.dopafit.v2",
+  "stateJSONEqual": true,
+  "stateBytesEqual": false,
+  "beforeSha256": "7c48318d3f3bf56a007175999c1bb82db921c9d2b264eec5e19ebfd207953cc7",
+  "afterSha256": "42c37c0c0a1fabebdd7171323a7a473003d0ec9bef214a426a9321d24f9de89d",
+  "qaBundle": "com.local.dopafit.v2.designqa",
+  "qaRemoved": true,
+  "mainFinalUI": "C195-main-v2-installed.png",
+  "uiChecks": [
+    "welcome Start -> desires",
+    "desires empty Continue disabled",
+    "1 and 2 selections update count/selected AX",
+    "Continue -> goal with four real photographs",
+    "promise choose tomorrow -> date label/selected AX",
+    "450ms release stays on promise",
+    "1300ms hold -> reminder",
+    "back retains date and resets completion",
+    "second full hold advances once",
+    "home exercise name opens expected guide and closes",
+    "Home Start -> Active (no set logging/finish)",
+    "promise at app textScale1.2 fits sample viewport"
+  ],
+  "notVerified": [
+    "all onboarding branches",
+    "all V2 screens",
+    "small viewport",
+    "system Dynamic Type",
+    "full VoiceOver",
+    "system Reduce Motion runtime",
+    "background interruption",
+    "notification permission or actual scheduling",
+    "model/progression/service parity",
+    "render FPS"
+  ],
+  "evidenceCaveats": {
+    "C179": "before change: stale promised shows reminder with commitment footer on Back",
+    "C180": "same before-change stale reentry bug; not a clean untouched promise comparison",
+    "C182": "first screenshot after hold already shows reminder, not a captured wave",
+    "C185": "earlier welcome before final top scrim/source-byte replacement; superseded C190/C195",
+    "C186": "derived recording frame shows initial hold progress, not wave",
+    "C187": "derived recording frame shows hold progress, not wave",
+    "C188": "first Home pass with clipped gym capsule, superseded C189",
+    "wave-contact.png": "derived contact sheet from actual CUA native Device Hub recording; contains progress and lime transition",
+    "hold-wave-ui.mp4": "actual native UI recording; no FPS/performance assertion",
+    "C189": "final Home uses local QA demo fixture, not user history",
+    "C190": "final QA welcome with natural source photo",
+    "C191": "final desires with two selections",
+    "C192": "final goal photographs",
+    "C194": "QA app scale1.2; not full system Dynamic Type certification",
+    "C195": "installed main V2 welcome, no reset/demo arguments"
+  },
+  "original140RowsUnchanged": true,
+  "artifacts": {
+    "rebuild/verification/v2-2026-11-24/C195-main-v2-installed.png": {
+      "bytes": 285830,
+      "sha256": "bd2df3fcca8a312f94a4d1b7d954f0b5c21561db6f7280203ea367ab778646b1"
+    },
+    "rebuild/verification/v2-2026-11-24/figma-commitment-248-3218.png": {
+      "bytes": 159671,
+      "sha256": "9ef3629e9d29ff042174e7c4182015fe4bef2d54215379b1b8ac94ca0ca05651"
+    },
+    "rebuild/verification/v2-2026-11-24/OnboardingParts.swift.before": {
+      "bytes": 22373,
+      "sha256": "a889c3cc4bcd603714f072371bf5b3dfc6516dc3aad6b7d9a3f0b0ce68e2e01a"
+    },
+    "rebuild/verification/v2-2026-11-24/C184-promise-back-reset.png": {
+      "bytes": 196223,
+      "sha256": "599af4e0cf1ce669184540aaba291532d2340b37437eaf177bf7e4d22bb16aca"
+    },
+    "rebuild/verification/v2-2026-11-24/figma-section-248-3230.png": {
+      "bytes": 747351,
+      "sha256": "cab97d8b80f93dbee4b744be9f459afc77a88bdc5c65d56f2d65d54165fb6220"
+    },
+    "rebuild/verification/v2-2026-11-24/C188-home-first-pass.png": {
+      "bytes": 282834,
+      "sha256": "acf040742440051a042a454262b812fc6e184091bc9e1611f6eeb46847a4624c"
+    },
+    "rebuild/verification/v2-2026-11-24/figma-promise-248-3215.png": {
+      "bytes": 205942,
+      "sha256": "3654f372af017ae7cffdcc3efc7db3c25b13122e6af38c0b1f075a5b6b1a3129"
+    },
+    "rebuild/verification/v2-2026-11-24/C194-promise-text-120.png": {
+      "bytes": 211400,
+      "sha256": "208b66f8097195fea7ace649e9e811910556377356f19db49235dcc0b83052cd"
+    },
+    "rebuild/verification/v2-2026-11-24/C183-reminder-after-hold.png": {
+      "bytes": 188021,
+      "sha256": "a6ca8121527e2d20c74136b22321e16bef8adeebb339cc0d176ed21d7ea64976"
+    },
+    "rebuild/verification/v2-2026-11-24/C179-before-promise-back-bug.png": {
+      "bytes": 189125,
+      "sha256": "4d403dfae524c25a8d7464092c3197f8cabdf36211430efc6be92b26e08be01b"
+    },
+    "rebuild/verification/v2-2026-11-24/v2-state-before.json": {
+      "bytes": 382,
+      "sha256": "7c48318d3f3bf56a007175999c1bb82db921c9d2b264eec5e19ebfd207953cc7"
+    },
+    "rebuild/verification/v2-2026-11-24/hold-wave-ui.mp4": {
+      "bytes": 5210314,
+      "sha256": "cb05a890bba1c083357ab8e729863c8b89c7003b24ffa5194d71cf86d1435483"
+    },
+    "rebuild/verification/v2-2026-11-24/C191-desire-final.png": {
+      "bytes": 212467,
+      "sha256": "484df3af2ce69e220b87ef3cf6b3ef85453bc6c816c79cc2c8117a36365e28b3"
+    },
+    "rebuild/verification/v2-2026-11-24/wave-contact.png": {
+      "bytes": 302960,
+      "sha256": "78677ccd0000b0d9bae8322baaf578cfbcd8860fcce18e108e43808323c0980b"
+    },
+    "rebuild/verification/v2-2026-11-24/C190-welcome-final.png": {
+      "bytes": 286514,
+      "sha256": "67d4ae5e4996e11fdee402210eb43b9709ff4260d0da6a4f635638abc5678323"
+    },
+    "rebuild/verification/v2-2026-11-24/C181-promise-new.png": {
+      "bytes": 194986,
+      "sha256": "d13312377c2c2cb0bd6fb6bb742ef5f279262c7e7b9d375de555623615b76468"
+    },
+    "rebuild/verification/v2-2026-11-24/C182-wave-live.png": {
+      "bytes": 188021,
+      "sha256": "a6ca8121527e2d20c74136b22321e16bef8adeebb339cc0d176ed21d7ea64976"
+    },
+    "rebuild/verification/v2-2026-11-24/C193-wave-confirmed-frame.png": {
+      "bytes": 321291,
+      "sha256": "71791846206a39bf9b436a7a59fada11bd43002fa08502e8f382cca6f0be648e"
+    },
+    "rebuild/verification/v2-2026-11-24/Onboarding.swift.before": {
+      "bytes": 57917,
+      "sha256": "b91bfe6c53b267566b416536c3a75d33b82913d9c97c3e25ca9838eda1c2a631"
+    },
+    "rebuild/verification/v2-2026-11-24/C185-welcome.png": {
+      "bytes": 290216,
+      "sha256": "0bfb0ab764e979fb0babe60d264d9de36092e39889c2f746e2c30cee3129824c"
+    },
+    "rebuild/verification/v2-2026-11-24/v2-state-after.json": {
+      "bytes": 382,
+      "sha256": "42c37c0c0a1fabebdd7171323a7a473003d0ec9bef214a426a9321d24f9de89d"
+    },
+    "rebuild/verification/v2-2026-11-24/C186-wave-frame.png": {
+      "bytes": 348361,
+      "sha256": "2dd7a30f4087e474f4b6c96e9762e79ce1b1425ca69eca5abe86d429990c6f1c"
+    },
+    "rebuild/verification/v2-2026-11-24/C180-before-promise.png": {
+      "bytes": 188957,
+      "sha256": "fe29c9464405965d0992ddc868c63c2c15d9164a9ad226bedd6dbcda1c9f1509"
+    },
+    "rebuild/verification/v2-2026-11-24/C189-home-final.png": {
+      "bytes": 278612,
+      "sha256": "b46b087b9ec1adcf72da81c976b34efa6880dd95bcbd7179c04c257358808231"
+    },
+    "rebuild/verification/v2-2026-11-24/echo-style-check.txt": {
+      "bytes": 840,
+      "sha256": "87cf0efa1a88ac6200d5f2393223bd46c7e63280a37429c4a8a9de0d243c76c3"
+    },
+    "rebuild/verification/v2-2026-11-24/Theme.swift.before": {
+      "bytes": 29682,
+      "sha256": "12c8d8407a7df6eab2cf91db0cc657d41d8a56423eab08ee79378864bb74db56"
+    },
+    "rebuild/verification/v2-2026-11-24/C192-goal-real-photos.png": {
+      "bytes": 251642,
+      "sha256": "6f3565064a12e6977ae39af643b3435ff38ff45576aeb44ece5862ac80a80193"
+    },
+    "rebuild/verification/v2-2026-11-24/C187-wave-mid-transition.png": {
+      "bytes": 287827,
+      "sha256": "27a15866987897c75eba590b3cd62d1e473965c937969611fcb456dd60e82fa4"
+    },
+    "rebuild/verification/v2-2026-11-24/build.log": {
+      "bytes": 42626,
+      "sha256": "6d680195fc45cbbffff17fba2872e200309a1e51d07d8900389fcea033af2cec"
+    }
+  }
+}

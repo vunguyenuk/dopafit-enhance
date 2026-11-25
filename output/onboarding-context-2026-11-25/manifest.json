@@ -1,0 +1,67 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-11-25",
+  "scope": "Fictional Vietnamese onboarding editorial illustrations only; not exercise motion or client testimonials.",
+  "photos": [
+    {
+      "name": "vn-male-full-gym",
+      "sex": "male",
+      "scene": "full-gym",
+      "prompt": "Use case: photorealistic-natural. Asset type: natural fitness editorial image for a dark Vietnamese fitness app. Create one wide landscape photograph, 3:2 composition. Reference sheet is identity guide ONLY: use the balanced ordinary adult Vietnamese man in its top-left cell, dressed in a plain charcoal tank top and dark shorts. Seated dumbbell shoulder press in a well-equipped Vietnamese urban gym. Both weights level just above the shoulders, wrists neutral, stable upright spine on an upright bench, anatomically sound ordinary effort. Broad view showing strength machines and squat rack behind, weights not obstructing face. Subject positioned at right-center of composition, whole head and working limbs visible with breathing room for aspect cropping. Medium-wide camera from slight side angle, natural proportions and moderate trained physique, no bodybuilding bulk, no shredded abs. Realistic facial expression looking toward the exercise, not at camera, detailed hands correct finger count. Soft natural light, authentic environment, natural skin colors, dark neutral equipment without colored lighting/tints. No text, branding, watermark, UI, collage, border, or vignetting. Scene must clearly depict the actual environment rather than replacing only clothes. This is a fictional AI illustration, not a testimonial.",
+      "ref": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-physique-2026-11-25/male-body-realistic.png",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-1672db1d-d4ec-4b01-9d3d-25f96809f196.png",
+      "workspace": "output/onboarding-context-2026-11-25/vn-male-full-gym.png",
+      "sha256": "02864289f110be82382daaa382389c71f59884bcb848e3a1dab27fbd0d1ae3ce"
+    },
+    {
+      "name": "vn-male-small-gym",
+      "sex": "male",
+      "scene": "small-gym",
+      "prompt": "Use case: photorealistic-natural. Asset type: natural fitness editorial image for a dark Vietnamese fitness app. Create one wide landscape photograph, 3:2 composition. Reference sheet is identity guide ONLY: use the balanced ordinary adult Vietnamese man in its top-left cell, dressed in a plain charcoal tank top and dark shorts. One-arm dumbbell row with opposite hand supported on an adjustable bench in a compact modest training studio. Correct flat back, neck aligned, pulling elbow beside torso. One bench and a small dumbbell rack clearly visible, no huge leg-press machine. Subject positioned at right-center of composition, whole head and working limbs visible with breathing room for aspect cropping. Medium-wide camera from slight side angle, natural proportions and moderate trained physique, no bodybuilding bulk, no shredded abs. Realistic facial expression looking toward the exercise, not at camera, detailed hands correct finger count. Soft natural light, authentic environment, natural skin colors, dark neutral equipment without colored lighting/tints. No text, branding, watermark, UI, collage, border, or vignetting. Scene must clearly depict the actual environment rather than replacing only clothes. This is a fictional AI illustration, not a testimonial.",
+      "ref": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-physique-2026-11-25/male-body-realistic.png",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-5a0d449b-d055-46c6-88a3-ddab43b395ca.png",
+      "workspace": "output/onboarding-context-2026-11-25/vn-male-small-gym.png",
+      "sha256": "30b5430fb9ba96a4f02b04a7844864e1572aaf3f5c8413ef212770b731e37916"
+    },
+    {
+      "name": "vn-male-home",
+      "sex": "male",
+      "scene": "home",
+      "prompt": "Use case: photorealistic-natural. Asset type: natural fitness editorial image for a dark Vietnamese fitness app. Create one wide landscape photograph, 3:2 composition. Reference sheet is identity guide ONLY: use the balanced ordinary adult Vietnamese man in its top-left cell, dressed in a plain charcoal tank top and dark shorts. Doing a controlled bodyweight squat at home beside a small exercise mat, light dumbbells and resistance band on the floor. Vietnamese apartment living room, uncluttered wood floor and a houseplant, no gym equipment machines or mirrored commercial gym. Subject positioned at right-center of composition, whole head and working limbs visible with breathing room for aspect cropping. Medium-wide camera from slight side angle, natural proportions and moderate trained physique, no bodybuilding bulk, no shredded abs. Realistic facial expression looking toward the exercise, not at camera, detailed hands correct finger count. Soft natural light, authentic environment, natural skin colors, dark neutral equipment without colored lighting/tints. No text, branding, watermark, UI, collage, border, or vignetting. Scene must clearly depict the actual environment rather than replacing only clothes. This is a fictional AI illustration, not a testimonial.",
+      "ref": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-physique-2026-11-25/male-body-realistic.png",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-15e35093-6a61-4f20-80a3-2fc21f5731c0.png",
+      "workspace": "output/onboarding-context-2026-11-25/vn-male-home.png",
+      "sha256": "cb9855ef55b0c9ce305fc3ac86b8bedf19afef27a60e50ed86cc67c5aeeb0155"
+    },
+    {
+      "name": "vn-female-full-gym",
+      "sex": "female",
+      "scene": "full-gym",
+      "prompt": "Use case: photorealistic-natural. Asset type: natural fitness editorial image for a dark Vietnamese fitness app. Create one wide landscape photograph, 3:2 composition. Reference sheet is identity guide ONLY: use the balanced ordinary adult Vietnamese woman in its top-left cell, dressed in a plain charcoal athletic T-shirt and leggings. Seated dumbbell shoulder press in a well-equipped Vietnamese urban gym. Both weights level just above the shoulders, wrists neutral, stable upright spine on an upright bench, anatomically sound ordinary effort. Broad view showing strength machines and squat rack behind, weights not obstructing face. Subject positioned at right-center of composition, whole head and working limbs visible with breathing room for aspect cropping. Medium-wide camera from slight side angle, natural proportions and moderate trained physique, no bodybuilding bulk, no shredded abs. Realistic facial expression looking toward the exercise, not at camera, detailed hands correct finger count. Soft natural light, authentic environment, natural skin colors, dark neutral equipment without colored lighting/tints. No text, branding, watermark, UI, collage, border, or vignetting. Scene must clearly depict the actual environment rather than replacing only clothes. This is a fictional AI illustration, not a testimonial.",
+      "ref": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-physique-2026-11-25/female-body-realistic.png",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-fc1cea32-b0f8-4962-9565-ee9e1eb8e962.png",
+      "workspace": "output/onboarding-context-2026-11-25/vn-female-full-gym.png",
+      "sha256": "002943d4e9d6bba22e9c42c87b97eaf17c569141d36d97159b9fceb6b07838b4"
+    },
+    {
+      "name": "vn-female-small-gym",
+      "sex": "female",
+      "scene": "small-gym",
+      "prompt": "Use case: photorealistic-natural. Asset type: natural fitness editorial image for a dark Vietnamese fitness app. Create one wide landscape photograph, 3:2 composition. Reference sheet is identity guide ONLY: use the balanced ordinary adult Vietnamese woman in its top-left cell, dressed in a plain charcoal athletic T-shirt and leggings. One-arm dumbbell row with opposite hand supported on an adjustable bench in a compact modest training studio. Correct flat back, neck aligned, pulling elbow beside torso. One bench and a small dumbbell rack clearly visible, no huge leg-press machine. Subject positioned at right-center of composition, whole head and working limbs visible with breathing room for aspect cropping. Medium-wide camera from slight side angle, natural proportions and moderate trained physique, no bodybuilding bulk, no shredded abs. Realistic facial expression looking toward the exercise, not at camera, detailed hands correct finger count. Soft natural light, authentic environment, natural skin colors, dark neutral equipment without colored lighting/tints. No text, branding, watermark, UI, collage, border, or vignetting. Scene must clearly depict the actual environment rather than replacing only clothes. This is a fictional AI illustration, not a testimonial.",
+      "ref": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-physique-2026-11-25/female-body-realistic.png",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-9edc8564-0719-4b1e-9f6d-e9cb1f65ddcf.png",
+      "workspace": "output/onboarding-context-2026-11-25/vn-female-small-gym.png",
+      "sha256": "2129e99037e2a1c06533c027fe3717197c6586e6c29b1534dd37304a7c26026d"
+    },
+    {
+      "name": "vn-female-home",
+      "sex": "female",
+      "scene": "home",
+      "prompt": "Use case: photorealistic-natural. Asset type: natural fitness editorial image for a dark Vietnamese fitness app. Create one wide landscape photograph, 3:2 composition. Reference sheet is identity guide ONLY: use the balanced ordinary adult Vietnamese woman in its top-left cell, dressed in a plain charcoal athletic T-shirt and leggings. Doing a controlled bodyweight squat at home beside a small exercise mat, light dumbbells and resistance band on the floor. Vietnamese apartment living room, uncluttered wood floor and a houseplant, no gym equipment machines or mirrored commercial gym. Subject positioned at right-center of composition, whole head and working limbs visible with breathing room for aspect cropping. Medium-wide camera from slight side angle, natural proportions and moderate trained physique, no bodybuilding bulk, no shredded abs. Realistic facial expression looking toward the exercise, not at camera, detailed hands correct finger count. Soft natural light, authentic environment, natural skin colors, dark neutral equipment without colored lighting/tints. No text, branding, watermark, UI, collage, border, or vignetting. Scene must clearly depict the actual environment rather than replacing only clothes. This is a fictional AI illustration, not a testimonial.",
+      "ref": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-physique-2026-11-25/female-body-realistic.png",
+      "source": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-5204d566-b505-40f3-b3a1-264e83629dd2.png",
+      "workspace": "output/onboarding-context-2026-11-25/vn-female-home.png",
+      "sha256": "e9fb2a4e67aaebabddb7bf1d5afcae1eb6074f60ed137ef1befe9978a38a074b"
+    }
+  ]
+}

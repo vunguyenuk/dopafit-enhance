@@ -31,7 +31,7 @@ struct ActiveWorkoutView: View {
             pager(a)
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    if let g = Media.guide(ex) {
+                    if let g = Media.guide(ex, female: state.data.profile.sex == .female) {
                         BWLoopVideo(file: g, gravity: .resizeAspect)
                             .frame(height: 230).frame(maxWidth: .infinity)
                             .background(Color.white)
@@ -171,8 +171,12 @@ struct ActiveWorkoutView: View {
                     .frame(width: 52, height: 52)
                     .background(s.done ? T.lime : T.raised)
                     .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    .accessibilityHidden(true)
             }
             .buttonStyle(.plain)
+            .accessibilityElement(children: .ignore)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAddTraits(s.done ? .isSelected : [])
             .accessibilityLabel(s.done ? "Bỏ đánh dấu set \(j + 1)" : "Xong set \(j + 1)")
         }
         .padding(8)

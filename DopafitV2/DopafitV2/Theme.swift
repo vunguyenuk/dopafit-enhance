@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 
-/// Hệ màu hướng B: ảnh đen trắng, con số làm điểm nhấn.
+/// Nền graphite, SF và lime Dopafit. Ảnh giữ màu nguồn.
 /// Mỗi màu chỉ mang MỘT nghĩa:
 ///  - lime    = hành động chính, con số quan trọng, "đã xong / sẵn sàng"
 ///  - lavender = đang hồi phục / cần nghỉ
@@ -13,8 +13,8 @@ enum T {
     static let raised = Color(red: 0.13, green: 0.13, blue: 0.14)
     static let line = Color.white.opacity(0.08)
     static let text = Color.white
-    static let sub = Color(red: 0.62, green: 0.62, blue: 0.65)
-    static let faint = Color(red: 0.40, green: 0.40, blue: 0.43)
+    static let sub = Color(red: 0.69, green: 0.69, blue: 0.71)
+    static let faint = Color(red: 0.51, green: 0.51, blue: 0.54)
     static let lime = Color(red: 0.71, green: 0.96, blue: 0.24)
     static let rest = Color(red: 0.62, green: 0.56, blue: 1.0)
     static let warn = Color(red: 0.96, green: 0.73, blue: 0.30)
@@ -177,11 +177,11 @@ struct Chip: View {
     var body: some View {
         HStack(spacing: 6) {
             Image(systemName: icon).font(T.font(13, .semibold))
-            Text(title).font(T.font(14, .medium)).lineLimit(1)
+            Text(title).font(T.font(13, .medium)).lineLimit(1)
             Image(systemName: "chevron.down").font(T.font(10, .bold)).foregroundStyle(T.faint)
         }
         .foregroundStyle(highlighted ? T.lime : T.text)
-        .padding(.horizontal, 12).frame(height: 36)
+        .padding(.horizontal, 10).frame(height: 36)
         .background(T.raised)
         .clipShape(Capsule())
         .overlay(Capsule().stroke(highlighted ? T.lime.opacity(0.5) : Color.clear))
@@ -258,20 +258,11 @@ extension View {
     func screenBackground() -> some View { background(T.bg.ignoresSafeArea()) }
 }
 
-/// Ảnh thật cùng một tông kiểu điện ảnh (tham khảo pliability.com): màu trầm, tối, tương phản mềm.
-/// Mọi ảnh đi qua đúng một bộ chỉnh này để ảnh từ nhiều nguồn trông như cùng một buổi chụp.
-/// Muốn quay về đen trắng tuyệt đối: đặt `Photo.saturation = 0`.
-enum Photo {
-    static var saturation: Double = 0.42
-    static var contrast: Double = 1.06
-    static var brightness: Double = -0.04
-}
+/// Giữ tên component để tương thích callsite; ảnh thật giữ màu tự nhiên.
 struct BWPhoto: View {
     var name: String
     var body: some View {
         Image(decorative: name).resizable().scaledToFill()
-            .saturation(Photo.saturation).contrast(Photo.contrast).brightness(Photo.brightness)
-            .overlay(RadialGradient(colors: [.clear, .black.opacity(0.45)], center: .center, startRadius: 120, endRadius: 520))
             .accessibilityHidden(true).allowsHitTesting(false)
     }
 }
@@ -282,11 +273,12 @@ struct PhotoBox: View {
     var height: CGFloat
     var focus: Alignment = .center   // ảnh dọc: dùng .top để không mất đầu người
     var body: some View {
-        Color.clear
-            .frame(maxWidth: .infinity)
-            .frame(height: height)
-            .overlay(alignment: focus) { BWPhoto(name: name) }
-            .clipped()
+        GeometryReader { geometry in
+            BWPhoto(name: name)
+                .frame(width: geometry.size.width, height: height, alignment: focus)
+                .clipped()
+        }
+        .frame(height: height)
     }
 }
 
@@ -384,7 +376,7 @@ struct FullBleedStory<Footer: View>: View {
             ZStack(alignment: .bottomLeading) {
                 VStack(spacing: 0) {
                     Color.clear.frame(height: g.size.height * 0.62)
-                        .overlay { BWPhoto(name: photo) }
+                        .overlay { PhotoBox(name: photo, height: g.size.height * 0.62, focus: photo.hasPrefix("vn-") ? .trailing : .center) }
                         .clipped()
                         .overlay(LinearGradient(colors: [.clear, .clear, T.bg], startPoint: .top, endPoint: .bottom))
                     Spacer(minLength: 0)
@@ -401,15 +393,21 @@ struct FullBleedStory<Footer: View>: View {
     }
 }
 
-/// Dòng "Dopafit xử lý" có vạch xanh mảnh bên trái.
+/// Thẻ "Dopafit xử lý": biểu tượng tròn xanh và câu trả lời, cùng kiểu với danh sách trấn an.
 struct FixLine: View {
     var text: String
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            Rectangle().fill(T.lime).frame(width: 2)
-            Text(text).font(T.font(16, .medium)).foregroundStyle(T.text).bodyLines(16).fixedSize(horizontal: false, vertical: true)
+            Image(systemName: "checkmark").font(T.font(11, .heavy)).foregroundStyle(.black)
+                .frame(width: 24, height: 24).background(Circle().fill(T.lime))
+            Text(text).font(T.font(15, .medium)).foregroundStyle(T.text).bodyLines(15)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
         }
-        .fixedSize(horizontal: false, vertical: true)
+        .padding(14)
+        .background(T.surface.opacity(0.92))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(T.line))
         .padding(.top, 4)
     }
 }
@@ -468,187 +466,5 @@ struct ScaleCard: View {
             try? await Task.sleep(nanoseconds: 250_000_000)
             shown = progress
         }
-    }
-}
-
-/// Cảnh lắp tạ cận cảnh: một đầu thanh đòn 20 kg gác trên móc của giá squat, đòn để trống.
-/// Chồng bánh tạ đen 2 kg nằm dưới sàn; vuốt sang trái để lắp từng bánh, vuốt phải để tháo.
-/// Mỗi lần lắp là một bánh mỗi đầu (hai đầu như nhau), con số là tổng tạ đã lắp, chưa tính đòn.
-struct PlateLoaderCard: View {
-    var title: String              // tên bài, ví dụ "Squat"
-    var slices: Int                // số bánh 2 kg mỗi đầu sẽ lắp sau 4 tuần
-    @State private var loaded = 0
-    @State private var dragBase: Int? = nil
-    @State private var hint = false
-    @Namespace private var ns
-
-    private let plateKg: Double = 2
-    private var total: Double { 2 * plateKg * Double(loaded) }
-    private var full: Bool { loaded >= slices }
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            scene
-                .frame(height: 220)
-                .contentShape(Rectangle())
-                .gesture(
-                    DragGesture(minimumDistance: 4)
-                        .onChanged { v in
-                            let b = dragBase ?? loaded
-                            dragBase = b
-                            // vuốt phải = đưa bánh từ chồng tạ lên đòn; vuốt trái = tháo ra
-                            set(min(slices, max(0, b + Int((v.translation.width / 34).rounded()))))
-                        }
-                        .onEnded { _ in dragBase = nil }
-                )
-                .onTapGesture { set(full ? 0 : loaded + 1) }
-                .accessibilityElement()
-                .accessibilityLabel("\(title): đã lắp \(Fmt.n(total)) ki lô gam tạ")
-                .accessibilityAdjustableAction { dir in
-                    switch dir {
-                    case .increment: set(min(slices, loaded + 1))
-                    case .decrement: set(max(0, loaded - 1))
-                    default: break
-                    }
-                }
-            HStack(spacing: 10) {
-                if full {
-                    Image(systemName: "checkmark.circle.fill").foregroundStyle(T.lime)
-                    Text("Sau 4 tuần").foregroundStyle(T.text)
-                } else {
-                    Text("Vuốt sang phải để lắp tạ").foregroundStyle(T.text.opacity(0.85))
-                    Image(systemName: "arrow.right").offset(x: hint ? 6 : 0)
-                }
-                Spacer()
-                HStack(spacing: 4) {
-                    ForEach(0..<slices, id: \.self) { i in
-                        Capsule().fill(i < loaded ? T.text : T.raised).frame(width: 12, height: 4)
-                    }
-                }
-            }
-            .font(T.font(14, .medium))
-            .padding(.horizontal, 18).frame(height: 50)
-            .onAppear { withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) { hint = true } }
-        }
-        .background(T.surface)
-        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: 22, style: .continuous).stroke(T.line))
-    }
-
-    private func set(_ n: Int) {
-        guard n != loaded else { return }
-        let adding = n > loaded
-        withAnimation(.spring(response: 0.38, dampingFraction: 0.75)) { loaded = n }
-        if n == slices && adding {
-            UINotificationFeedbackGenerator().notificationOccurred(.success)
-        } else {
-            UIImpactFeedbackGenerator(style: adding ? .rigid : .soft).impactOccurred()
-        }
-    }
-
-    // MARK: Cảnh
-
-    private var steel: LinearGradient {
-        LinearGradient(colors: [Color(white: 0.82), Color(white: 0.45), Color(white: 0.64)], startPoint: .top, endPoint: .bottom)
-    }
-
-    private var scene: some View {
-        GeometryReader { g in
-            let W = g.size.width, H = g.size.height
-            let barY = H * 0.63
-            let floorY = H - 2
-            let rackX = W * 0.88
-            let collarX = W * 0.75
-            let plateW: CGFloat = 15, gap: CGFloat = 1.5
-            let plateH = H * 0.46
-            let sleeveLen = CGFloat(slices) * (plateW + gap) + 14     // vừa đủ chỗ cho số bánh cần lắp
-            let tipX = collarX - 11 - sleeveLen
-            ZStack(alignment: .topLeading) {
-                Rectangle().fill(T.line).frame(width: W, height: 1).offset(y: floorY)
-                // trụ giá (nằm sau đòn)
-                RoundedRectangle(cornerRadius: 3).fill(Color(white: 0.16))
-                    .frame(width: 16, height: floorY - 16).offset(x: rackX, y: 16)
-                ForEach(0..<7, id: \.self) { k in
-                    Circle().fill(Color.black.opacity(0.55)).frame(width: 5, height: 5)
-                        .offset(x: rackX + 5.5, y: 30 + CGFloat(k) * 30)
-                }
-                // đòn tay cầm chạy qua giá
-                Rectangle().fill(steel).frame(width: W - collarX, height: 9).offset(x: collarX, y: barY - 4.5)
-                // ống lắp tạ ngắn + khóa chặn + nắp đầu ống
-                RoundedRectangle(cornerRadius: 3).fill(steel)
-                    .frame(width: sleeveLen, height: 16).offset(x: tipX, y: barY - 8)
-                RoundedRectangle(cornerRadius: 3).fill(steel)
-                    .frame(width: 11, height: 40).offset(x: collarX - 11, y: barY - 20)
-                RoundedRectangle(cornerRadius: 2).fill(steel)
-                    .frame(width: 6, height: 22).offset(x: tipX - 3, y: barY - 11)
-                // móc chữ J ôm lấy đòn, nằm trước đòn như nhìn thẳng vào giá
-                ZStack(alignment: .top) {
-                    RoundedRectangle(cornerRadius: 3).fill(Color(white: 0.24))
-                    RoundedRectangle(cornerRadius: 1).fill(Color(white: 0.34)).frame(height: 2).padding(.horizontal, 3).padding(.top, 3)
-                }
-                .frame(width: 24, height: 30)
-                .offset(x: rackX - 4, y: barY - 18)
-
-                // bánh đã lắp: bánh đầu sát khóa chặn
-                ForEach(0..<loaded, id: \.self) { i in
-                    blackPlate(w: plateW, h: plateH)
-                        .matchedGeometryEffect(id: i, in: ns)
-                        .offset(x: collarX - 11 - CGFloat(i + 1) * (plateW + gap), y: barY - plateH / 2)
-                }
-                // chồng bánh dưới sàn
-                ForEach(Array((0..<slices).reversed()), id: \.self) { i in
-                    if i >= loaded {
-                        let level = CGFloat(slices - 1 - i)
-                        flatPlate(w: 76, h: 10)
-                            .matchedGeometryEffect(id: i, in: ns)
-                            .offset(x: 16, y: floorY - 11 - level * 11)
-                    }
-                }
-
-                VStack(alignment: .leading, spacing: 4) {
-                    HStack(alignment: .firstTextBaseline, spacing: 6) {
-                        Text("+" + Fmt.n(total))
-                            .font(T.num(38, .bold)).foregroundStyle(loaded == 0 ? T.faint : T.text)
-                            .contentTransition(.numericText(value: total))
-                        Text("kg").font(T.font(15)).foregroundStyle(T.sub)
-                    }
-                    Text(title)
-                        .font(T.font(13, .medium)).foregroundStyle(T.sub)
-                }
-                .padding(.leading, 18).padding(.top, 14)
-            }
-        }
-    }
-
-    // Bánh tạ gang ánh xanh: thân xanh rêu đậm, vành xanh sáng nhẹ để nổi trên nền tối.
-    private let plateBody = Color(red: 0.2, green: 0.29, blue: 0.06)
-    private let plateDeep = Color(red: 0.1, green: 0.15, blue: 0.03)
-    private let plateRim = Color(red: 0.55, green: 0.76, blue: 0.18)
-
-    /// Bánh tạ nhìn ngang: vành sáng, mặt lõm tối.
-    private func blackPlate(w: CGFloat, h: CGFloat) -> some View {
-        let outer = RoundedRectangle(cornerRadius: 5, style: .continuous)
-        return outer
-            .fill(LinearGradient(colors: [plateBody, plateDeep], startPoint: .leading, endPoint: .trailing))
-            .overlay(
-                RoundedRectangle(cornerRadius: 3, style: .continuous)
-                    .fill(plateDeep)
-                    .padding(.horizontal, w * 0.28).padding(.vertical, 7)
-            )
-            .overlay(outer.stroke(plateRim.opacity(0.7), lineWidth: 1))
-            .frame(width: w, height: h)
-    }
-
-    /// Bánh nằm dưới sàn.
-    private func flatPlate(w: CGFloat, h: CGFloat) -> some View {
-        let shape = RoundedRectangle(cornerRadius: 4, style: .continuous)
-        return shape
-            .fill(LinearGradient(colors: [plateBody, plateDeep], startPoint: .top, endPoint: .bottom))
-            .overlay(
-                RoundedRectangle(cornerRadius: 2).fill(plateDeep)
-                    .padding(.horizontal, 7).padding(.vertical, h * 0.3)
-            )
-            .overlay(shape.stroke(plateRim.opacity(0.7), lineWidth: 1))
-            .frame(width: w, height: h)
     }
 }

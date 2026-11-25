@@ -1,0 +1,42 @@
+{
+  "upstreamRevision": "4604afe95443d6f0e4bd7c513f99829328a8cc1e",
+  "pinnedRevision": "14ae9d2dad18fcee251f4b06333b492a2a41d2ed",
+  "files": [
+    {
+      "file": "DistortionWave.swift",
+      "matchesCurrentUpstream": true,
+      "localSHA": "a114c2bea02af7a54f77f99f8fcb0afd909f0b17d35f1da59e7e22e1989a41da",
+      "upstreamSHA": "a114c2bea02af7a54f77f99f8fcb0afd909f0b17d35f1da59e7e22e1989a41da"
+    },
+    {
+      "file": "DistortionWaveStyle.swift",
+      "matchesCurrentUpstream": true,
+      "localSHA": "93b02fae79afe841184f85553213b316e3009318d26b9233f221661a6296ae33",
+      "upstreamSHA": "93b02fae79afe841184f85553213b316e3009318d26b9233f221661a6296ae33"
+    },
+    {
+      "file": "DistortionWaveShaders.metal",
+      "matchesCurrentUpstream": true,
+      "localSHA": "54b68315aceeca328fbe0f4c9a60c3a7a8d752492e67f975d54de9a141ef7308",
+      "upstreamSHA": "54b68315aceeca328fbe0f4c9a60c3a7a8d752492e67f975d54de9a141ef7308"
+    },
+    {
+      "file": "WaveFront.swift",
+      "matchesCurrentUpstream": true,
+      "localSHA": "a7e928b83e3c3f4195674923d7d4a21e82878ae1cc5533f25df2d41e9488c4af",
+      "upstreamSHA": "a7e928b83e3c3f4195674923d7d4a21e82878ae1cc5533f25df2d41e9488c4af"
+    },
+    {
+      "file": "WaveRim.swift",
+      "matchesCurrentUpstream": true,
+      "localSHA": "2a17cd52727b1141f5d8873b1476571c3482ac46fcd3f622cd2118ea38b72ca5",
+      "upstreamSHA": "2a17cd52727b1141f5d8873b1476571c3482ac46fcd3f622cd2118ea38b72ca5"
+    },
+    {
+      "file": "WaveParticles.swift",
+      "matchesCurrentUpstream": true,
+      "localSHA": "1a425152b5d050e619513eb91f51eb85a14112056192fa3b6f69fcf1118f1e62",
+      "upstreamSHA": "1a425152b5d050e619513eb91f51eb85a14112056192fa3b6f69fcf1118f1e62"
+    }
+  ]
+}

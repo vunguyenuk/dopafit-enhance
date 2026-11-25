@@ -1,0 +1,78 @@
+{
+  "gentle": false,
+  "profile": {
+    "place": "home",
+    "goal": "muscle",
+    "minutes": 30,
+    "reward": "gift",
+    "name": "",
+    "daysPerWeek": 3,
+    "focusAreas": [
+      "back"
+    ],
+    "obstacles": [
+      "Thiếu động lực"
+    ],
+    "level": "some",
+    "unit": "kg",
+    "injuries": [
+      "lowerBack"
+    ],
+    "recent": "returning",
+    "sex": "female",
+    "bodyKg": 70,
+    "trainingBreak": "over3months",
+    "firstDay": 817232400,
+    "desires": []
+  },
+  "checkIn": {
+    "fine": {}
+  },
+  "swaps": {},
+  "removed": [],
+  "sawPro": true,
+  "history": [
+    {
+      "id": "01B1FD22-4822-4B85-8A9F-1D07F08078D1",
+      "seconds": 65,
+      "name": "Ngày đẩy",
+      "items": [
+        {
+          "targetReps": 10,
+          "id": "EF2D5F16-C6F3-455D-A3FD-2AFC45FA5F97",
+          "sets": [
+            {
+              "reps": 10,
+              "done": true,
+              "id": "CF12A8E4-26D9-4E1D-B85E-E427FD5959FF",
+              "weightKg": 5,
+              "edited": false
+            },
+            {
+              "reps": 10,
+              "done": false,
+              "id": "F2B52E32-FD30-49CC-A954-0205FD85951F",
+              "weightKg": 5,
+              "edited": false
+            },
+            {
+              "reps": 10,
+              "done": false,
+              "id": "484A6E72-FDF0-45D0-A98D-8171F6642C3D",
+              "weightKg": 5,
+              "edited": false
+            }
+          ],
+          "exerciseID": "arnold"
+        }
+      ],
+      "started": 817306406.317545
+    }
+  ],
+  "sawOffer": true,
+  "offerExpiresAt": 817307219.235964,
+  "onboarded": true,
+  "textScale": 1,
+  "isPro": false,
+  "added": []
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-24",
+  "build": "build-final.log: BUILD SUCCEEDED",
+  "assets": "10generatedassets;17uniqueBlenderstates; asset-check.txt",
+  "qaBundle": "com.local.dopafit.v2.designqa",
+  "observed": [
+    "C212welcomeVietnamesehero",
+    "Inline desire4Vietnamesecutoutsfirstpassbeforefinalsleepcrop; C213save abortedbylock, nofile exists"
+  ],
+  "currentUIStatus": "Maclocked; useraskedmanualunlock viaasync; no bypass/auto-lockchanges. FinalUIverification pending.",
+  "modelTests": "Not rerun; no weightlogic/Codablemodel changes. Renderbounds/hashcheck is not UItest.",
+  "mainInstall": {
+    "installed": true,
+    "launchWithoutResetOrDemo": true,
+    "bundle": "com.local.dopafit.v2",
+    "semanticallyUnchangedFromTurnStart": true,
+    "semanticallyUnchangedFromPreinstall": true,
+    "finalUI": "Still unverified: Mac locked. CLI build/install success is not live UIverification."
+  },
+  "scope": "Onlyrequestedonboardingimages + plateBlenderillustration. Exercise/challenge/Bodymeshunchanged.",
+  "qaRemoved": true,
+  "supersededBy": "../v2-final-qa-2026-11-24/ui-run.json",
+  "latestUIStatus": "Postunlock C214–C224 verifiedBlender3/6gestures/4activitylevels/targetpair/desire/goal; C225 finalmainheroposerevision observedaftersecondunlock. QAremoved, mainJSONpreserved. Otherlimitsremain."
+}

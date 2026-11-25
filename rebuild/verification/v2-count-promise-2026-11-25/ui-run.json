@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-25",
+  "scope": [
+    "actual starting-load count-up",
+    "promise retains UI during wave",
+    "gift idle anticipation and explicit unbox"
+  ],
+  "build": {
+    "result": "BUILD SUCCEEDED",
+    "log": ".build/v2-motion-final.log"
+  },
+  "model_checks": "Not rerun; UI-only changes. Previous179 checks belong to prior review task.",
+  "native_evidence": {
+    "starting_load": "count-0-20.mp4;0→20 Smith, target held",
+    "reduce_motion": "C420-count-reduce-motion.png/count-reduce-motion.mp4;actual37.5 target",
+    "promise": "promise-wave-keeps-ui.mp4;heading/calendar remain;AX confirmation→reminder",
+    "gift": "gift-idle-unbox.mp4;multiple idle cycles then explicit Open→lid/sparkles→offer",
+    "preview_derivation": "gift-preview.mp4 trimmed8–19s/scaled390w from native recording; no synthetic frames"
+  },
+  "main": {
+    "device": "54B67C9B-28C9-4698-98A3-968BA4AB75B6",
+    "bundle": "com.local.dopafit.v2",
+    "installed": true,
+    "observed": "C423-main-gift-installed.png",
+    "before_after_install_byte_equal": true,
+    "before_final_json_equal": true,
+    "final_byte_equal": false,
+    "note": "Serialization order changed; no semantic fields differ. User completed onboarding this turn; no stale restore. Trial button only navigated demo gift; no activation.",
+    "history": 0,
+    "isPro": false
+  },
+  "qa": {
+    "device": "E1506FD5-5CFB-4B7A-ABD1-EF7D5558A352",
+    "bundle": "com.local.dopafit.v2.designqa",
+    "history": 0,
+    "isPro": false,
+    "offer_expiry_before_open": null,
+    "offer_expiry_created_after_open": true,
+    "reduce_motion_restored_off": true,
+    "uninstalled": true,
+    "newly_booted_device_shutdown": true,
+    "erased": false
+  },
+  "unchanged": [
+    "OriginalMirroring unsaved review",
+    "old Rebuild",
+    "Figma original140cards",
+    "Health/auth/payment"
+  ],
+  "limitations": [
+    "Reference video not attached; animation based on user timing description",
+    "No measuredFPS/allviewport/VoiceOver certification",
+    "Gift ReduceMotion/background static guard source-only; count ReduceMotion sampled",
+    "Physical1.2s hold not re-audited this turn; AX confirmation used",
+    "No new model or algorithm certification",
+    "No StoreKit integration or commercial purchase"
+  ]
+}

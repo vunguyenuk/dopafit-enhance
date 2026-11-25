@@ -1,0 +1,50 @@
+{
+  "sawOffer": false,
+  "isPro": false,
+  "sawPro": false,
+  "textScale": 1,
+  "checkIn": {
+    "fine": {}
+  },
+  "added": [],
+  "history": [],
+  "profile": {
+    "unit": "kg",
+    "minutes": 45,
+    "desires": [
+      "Ng\u1ee7 ngon, \u0111\u1ea7u \u00f3c nh\u1eb9",
+      "Tr\u00f4ng g\u1ecdn v\u00e0 s\u0103n h\u01a1n"
+    ],
+    "recent": "regular",
+    "bodyKg": 70,
+    "obstacles": [
+      "Thi\u1ebfu \u0111\u1ed9ng l\u1ef1c",
+      "\u0110au m\u1ecfi ho\u1eb7c ch\u1ea5n th\u01b0\u01a1ng",
+      "Kh\u00f4ng \u0111\u1ee7 d\u1ee5ng c\u1ee5"
+    ],
+    "reward": "gift",
+    "targetKg": 65,
+    "activity": "sedentary",
+    "name": "",
+    "daysPerWeek": 3,
+    "level": "some",
+    "firstDay": 817232400,
+    "injuries": [
+      "lowerBack"
+    ],
+    "targetShape": "muscular",
+    "focusAreas": [
+      "arms",
+      "chest",
+      "abs"
+    ],
+    "place": "smallGym",
+    "sex": "male",
+    "goal": "muscle",
+    "currentShape": "average"
+  },
+  "swaps": {},
+  "removed": [],
+  "gentle": false,
+  "onboarded": false
+}

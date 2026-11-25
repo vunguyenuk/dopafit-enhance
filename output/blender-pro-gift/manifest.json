@@ -1,0 +1,14 @@
+{
+  "generator": "scripts/blender/build-pro-gift.py",
+  "render": "640x640 RGBA, Cycles32, aligned base/lid layers",
+  "assets": [
+    {
+      "name": "pro-gift-base",
+      "sha256": "219ae926333b7cbf7848ea7f10a2582658052b8eb532b31c9a6518d1ec1929d2"
+    },
+    {
+      "name": "pro-gift-lid",
+      "sha256": "9fb22030e2e091596a6fddc18664b85cee298a79e66869a78374a2bded1df79f"
+    }
+  ]
+}

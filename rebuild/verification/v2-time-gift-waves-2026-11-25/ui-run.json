@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-25",
+  "status": "source + build + QA observed; installed on main 23:19, full JSON preserved, QA removed",
+  "requests": [
+    "22:36 Time-adaptation UI does not express its role; improve visual",
+    "22:38 Gift light must spread over the whole screen, not inside a fixed block",
+    "22:40-22:42 Waves must match libraries.dev/waves 100% (more colors, distorts UI)",
+    "22:48 Green like the app is acceptable",
+    "22:50 Still a square at light rays; open a bit slower"
+  ],
+  "build": ".build/v2-time-gift-waves-final.log",
+  "evidence": ["C447-time-20.png","C448-time-30.png","C449-time-full.png","C450-promise-before-wave.png","C451-wave-native-mid.png","C452-wave-full-stage-mid.png","C453-gift-fullscreen-object-only.png","C454-gift-offer-after-light.png","C455-green-wave-live.png","native-wave-colorful-full.mp4","native-wave-green.mp4","native-gift-fullscreen-slow.mp4","waves-upstream-audit.json"],
+  "notVerified": ["FPS/memory","VoiceOver/DynamicType","ReduceMotion live for gift/wave","small viewports"],
+  "mainInstall": "done 23:19 via scripts/install-v2-main-time-gift-waves.sh; see preservation.json"
+}

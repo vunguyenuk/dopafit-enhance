@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-11-25",
+  "male": {
+    "prompt": "Use case: identity-preserve. Asset: high resolution fitness onboarding goal cutout. Input is a 3-column 2-row reference sheet. Derive ONLY the person in the BOTTOM LEFT cell, not the whole sheet. Output ONE SINGLE isolated person, portrait canvas, transparent background. Subject: Vietnamese adult man, bare torso and the same charcoal gym shorts. Keep their face, hairstyle, skin tone, neutral front-facing pose, camera angle and outfit consistent with that cell. Head top at 2% height, shorts ending and mid-thigh crop at 98% height; centered, same apparent anatomical head-to-torso proportions. Improve the target physique so 'stronger and more defined' is visually unmistakable at phone size: clearly defined natural deltoids and chest, visibly firmer flat waist with realistic moderate abdominal definition, athletic everyday gym physique. Arms must remain natural, slim-to-moderate in size, NO swollen biceps/forearms, NO bodybuilder bulk or extreme striations. Retain natural anatomy, correct symmetry and hands. Crisp high-detail skin and fabric, natural soft neutral studio light, no harsh glow, no skin smoothing or plastic retouching. Avoid tiny subject, avoid zoomed close-up, avoid multiple figures, no text, no labels, no accessories. Actual transparent alpha outside the person.",
+    "refinement": "Edit this single fictional Vietnamese adult fitness model cutout. Change only muscle definition on the TORSO: make the chest visibly trained with a clear pectoral lower boundary, and make a clearly readable natural SIX-PACK abdomen with six shallow rectus abdominis segments and subtle oblique lines. This is the 'stronger and more defined' target, so abdominal definition must be visible even in a 290-point phone preview. Athletic, realistic, moderate fitness physique, not competition/bodybuilder anatomy. Keep upper arms and forearms EXACTLY the current size; no enlargement. Keep same face, hair, pose, camera, charcoal shorts, proportions, hands, skin texture, image framing. No text, no added accessories. Transparent background with clean true alpha, no opaque studio background. High resolution crisp detail.",
+    "path": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-f8a589e5-79ca-4a8a-b023-e0b146574a04.png",
+    "saved_path": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-defined-2026-11-25/male-defined.png",
+    "sha256": "8a8f91f9f020ee17b7a08b2006937b786110b94c987c2d67da43fa10041ca0ab",
+    "bundled_path": "DopafitV2/DopafitV2/Assets.xcassets/male-body-defined.imageset/portrait.png",
+    "native_size": [
+      1024,
+      1536
+    ],
+    "native_evidence": "rebuild/verification/v2-chart-motion-2026-11-25/C396-male-defined-target.png"
+  },
+  "female": {
+    "prompt": "Use case: identity-preserve. Asset: high resolution fitness onboarding goal cutout. Input is a 3-column 2-row reference sheet. Derive ONLY the person in the BOTTOM LEFT cell, not the whole sheet. Output ONE SINGLE isolated person, portrait canvas, transparent background. Subject: Vietnamese adult woman, same charcoal sports bra and charcoal gym shorts. Keep their face, hairstyle, skin tone, neutral front-facing pose, camera angle and outfit consistent with that cell. Head top at 2% height, shorts ending and mid-thigh crop at 98% height; centered, same apparent anatomical head-to-torso proportions. Improve the target physique so 'stronger and more defined' is visually unmistakable at phone size: clearly defined natural deltoids and chest, visibly firmer flat waist with realistic moderate abdominal definition, athletic everyday gym physique. Arms must remain natural, slim-to-moderate in size, NO swollen biceps/forearms, NO bodybuilder bulk or extreme striations. Retain natural anatomy, correct symmetry and hands. Crisp high-detail skin and fabric, natural soft neutral studio light, no harsh glow, no skin smoothing or plastic retouching. Avoid tiny subject, avoid zoomed close-up, avoid multiple figures, no text, no labels, no accessories. Actual transparent alpha outside the person.",
+    "path": "/Users/vunguyen/.codex/generated_images/01a20c16-13c0-7ef0-b593-85bb24a03eab/exec-5c856b8a-863b-4712-99bb-edf5403ae425.png",
+    "saved_path": "/Users/vunguyen/Desktop/dopafit-enhance/output/onboarding-defined-2026-11-25/female-defined.png",
+    "sha256": "b3598881947389462ee7e9e79f729d9480bca8aab0ec735c52bae4f9f9d7561d",
+    "bundled_path": "DopafitV2/DopafitV2/Assets.xcassets/female-body-defined.imageset/portrait.png",
+    "native_size": [
+      1024,
+      1536
+    ],
+    "native_evidence": "rebuild/verification/v2-chart-motion-2026-11-25/C397-female-defined-target.png"
+  },
+  "caveat": "Fictional AI target illustration, not a real transformation or result guarantee. Only body cell 3 replaced; other atlas cells retained. No mesh work."
+}

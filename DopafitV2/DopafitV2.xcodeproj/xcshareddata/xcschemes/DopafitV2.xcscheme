@@ -15,6 +15,10 @@
          <BuildableReference BuildableIdentifier = "primary" BlueprintIdentifier = "058DE92451763E137316DF3A" BuildableName = "DopafitV2.app" BlueprintName = "DopafitV2" ReferencedContainer = "container:DopafitV2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument argument = "--reset" isEnabled = "NO">
+         </CommandLineArgument>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction buildConfiguration = "Release" shouldUseLaunchSchemeArgsEnv = "YES" savedToolIdentifier = "" useCustomWorkingDirectory = "NO" debugDocumentVersioning = "YES">
    </ProfileAction>

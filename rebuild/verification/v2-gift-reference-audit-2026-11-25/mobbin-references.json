@@ -1,0 +1,96 @@
+{
+  "onboarding": {
+    "query": "fitness app onboarding personalized workout recommendations",
+    "screens": [
+      {
+        "id": "c9d024c6-209c-400e-b96a-87ffe5caf4d6",
+        "image_url": "https://mobbin.com/api/mcp/short/QPErvsyD",
+        "mobbin_url": "https://mobbin.com/screens/c9d024c6-209c-400e-b96a-87ffe5caf4d6?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Fitbit",
+        "platform": "ios"
+      },
+      {
+        "id": "50353d8c-03df-4c3b-bd96-9ac7c8d85ba4",
+        "image_url": "https://mobbin.com/api/mcp/short/RFjRVZSt",
+        "mobbin_url": "https://mobbin.com/screens/50353d8c-03df-4c3b-bd96-9ac7c8d85ba4?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Equinox+",
+        "platform": "ios"
+      },
+      {
+        "id": "326e3548-6542-4575-9117-96bd9d4891f0",
+        "image_url": "https://mobbin.com/api/mcp/short/dtv2loj6",
+        "mobbin_url": "https://mobbin.com/screens/326e3548-6542-4575-9117-96bd9d4891f0?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Peloton Strength+",
+        "platform": "ios"
+      },
+      {
+        "id": "84412bcd-5df2-4e55-a18f-d4a303c766ca",
+        "image_url": "https://mobbin.com/api/mcp/short/glU0pKzB",
+        "mobbin_url": "https://mobbin.com/screens/84412bcd-5df2-4e55-a18f-d4a303c766ca?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Apple Fitness",
+        "platform": "ios"
+      },
+      {
+        "id": "8ec4223a-27ab-42f5-b211-d51bb497872f",
+        "image_url": "https://mobbin.com/api/mcp/short/5sJy6mhm",
+        "mobbin_url": "https://mobbin.com/screens/8ec4223a-27ab-42f5-b211-d51bb497872f?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Strava",
+        "platform": "ios"
+      },
+      {
+        "id": "0bf4bce1-c249-4387-9339-d55baeffe7f5",
+        "image_url": "https://mobbin.com/api/mcp/short/Jy9duj7Y",
+        "mobbin_url": "https://mobbin.com/screens/0bf4bce1-c249-4387-9339-d55baeffe7f5?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "pliability",
+        "platform": "ios"
+      }
+    ]
+  },
+  "pain": {
+    "query": "fitness app exercise recommendations for pain areas",
+    "screens": [
+      {
+        "id": "1a1e28d9-d220-4f01-a372-585b55e5cccf",
+        "image_url": "https://mobbin.com/api/mcp/short/XJzP5Odd",
+        "mobbin_url": "https://mobbin.com/screens/1a1e28d9-d220-4f01-a372-585b55e5cccf?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Alan",
+        "platform": "ios"
+      },
+      {
+        "id": "fc404a31-09fb-4061-bc52-8fd0096cea8f",
+        "image_url": "https://mobbin.com/api/mcp/short/y4Ye2QxG",
+        "mobbin_url": "https://mobbin.com/screens/fc404a31-09fb-4061-bc52-8fd0096cea8f?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Peloton Strength+",
+        "platform": "ios"
+      },
+      {
+        "id": "0c3dc832-927b-4999-862e-cc6a985426df",
+        "image_url": "https://mobbin.com/api/mcp/short/P5A553ft",
+        "mobbin_url": "https://mobbin.com/screens/0c3dc832-927b-4999-862e-cc6a985426df?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Equinox+",
+        "platform": "ios"
+      },
+      {
+        "id": "6f2e3b6a-889d-42ea-81cb-7cbcfda545a1",
+        "image_url": "https://mobbin.com/api/mcp/short/rKGlVQ5h",
+        "mobbin_url": "https://mobbin.com/screens/6f2e3b6a-889d-42ea-81cb-7cbcfda545a1?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Tempo",
+        "platform": "ios"
+      },
+      {
+        "id": "b460ce02-8251-4624-bafe-6a5a5e380677",
+        "image_url": "https://mobbin.com/api/mcp/short/qgJGmW1m",
+        "mobbin_url": "https://mobbin.com/screens/b460ce02-8251-4624-bafe-6a5a5e380677?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "Centr",
+        "platform": "ios"
+      },
+      {
+        "id": "11876bdc-f587-40a7-af06-dd3470b83319",
+        "image_url": "https://mobbin.com/api/mcp/short/QgY04YT5",
+        "mobbin_url": "https://mobbin.com/screens/11876bdc-f587-40a7-af06-dd3470b83319?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+        "app_name": "pliability",
+        "platform": "ios"
+      }
+    ]
+  }
+}

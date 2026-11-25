@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7A1C0D2E3F4051627384A5B6 /* DistortionWavesKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B2D1E3F405162738495A6B7 /* DistortionWavesKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D2A57DC1D883FD21FB995169 /* DopafitV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DopafitV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1C0D2E3F4051627384A5B6 /* DistortionWavesKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = DopafitV2;
 			packageProductDependencies = (
+				8B2D1E3F405162738495A6B7 /* DistortionWavesKit */,
 			);
 			productName = DopafitV2;
 			productReference = D2A57DC1D883FD21FB995169 /* DopafitV2.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = FAD58DE7366495DB4650CFEF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9C3E2F40516273849506B7C8 /* XCRemoteSwiftPackageReference "Libraries" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D6E4A9B6646C62FC48BAA6DD /* Products */;
 			projectDirPath = "";
@@ -239,6 +248,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C3E2F40516273849506B7C8 /* XCRemoteSwiftPackageReference "Libraries" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jakubantalik/Libraries.dev";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B2D1E3F405162738495A6B7 /* DistortionWavesKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3E2F40516273849506B7C8 /* XCRemoteSwiftPackageReference "Libraries" */;
+			productName = DistortionWavesKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4DC844ABCCFC0D132D087C1C /* Project object */;
 }

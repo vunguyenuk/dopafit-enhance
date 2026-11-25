@@ -1,0 +1,16 @@
+{
+  "blender": "4.0.2",
+  "units": "metres",
+  "outsideDiameter": 0.45,
+  "boreDiameter": 0.0508,
+  "sleeveDiameter": 0.05,
+  "sleeveLength": 0.41,
+  "sleeveLeftEnd": -0.465,
+  "sleeveChange": "Shortened170mm from original580mm sleeve; plate/rack positions unchanged; camera centered and tightened to1.08 for taller stage",
+  "plateThickness": 0.036,
+  "pitch": 0.038,
+  "allStates": 17,
+  "render": "1080x800 transparent Cycles48samples",
+  "weightSemantics": "Each slot adds2kgper side=4kg total; visual geometry not mass/density certification",
+  "model": "onboarding-plates.blend"
+}

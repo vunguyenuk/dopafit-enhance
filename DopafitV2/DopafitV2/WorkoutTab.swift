@@ -13,14 +13,14 @@ struct WorkoutTab: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 header
-                WeekStrip()
-                hero(plan)
+                Card { hero(plan) }
+                Card(padding: 14) { WeekStrip() }
                 if let d = state.daysSinceLast, (3...13).contains(d), state.data.checkIn == .fine {
                     comeback(d)
                 }
-                if state.data.checkIn != .fine { adjustedBanner }
-                SectionTitle(title: "\(plan.items.count) bài hôm nay", trailing: "Thêm bài") { showAdd = true }
-                VStack(spacing: 10) {
+                if state.data.checkIn != .fine { adjustedBanner(plan) }
+                SectionTitle(title: "Bài tập", trailing: "Thêm bài") { showAdd = true }
+                LazyVStack(spacing: 10) {
                     ForEach(plan.items) { item in
                         ExerciseRow(item: item, unit: state.unit,
                                     onGuide: { guide = item.exercise },
@@ -52,9 +52,9 @@ struct WorkoutTab: View {
 
     private var header: some View {
         HStack(alignment: .center) {
-            VStack(alignment: .leading, spacing: 2) {
-                Text(Fmt.day(Date())).font(T.font(14, .medium)).foregroundStyle(T.sub)
-                Text(state.data.profile.name.isEmpty ? "Buổi tập" : "Chào \(state.data.profile.name)").font(T.font(28, .bold)).foregroundStyle(T.text).oneLineTitle()
+            HStack(spacing: 8) {
+                DopafitMark().fill(T.lime).frame(width: 28, height: 18)
+                Text("Dopafit").font(T.font(23, .bold)).foregroundStyle(T.text)
             }
             Spacer()
             IconButton(icon: "gearshape", label: "Cài đặt") { showSettings = true }
@@ -63,48 +63,72 @@ struct WorkoutTab: View {
     }
 
     private func hero(_ plan: PlannedWorkout) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            ZStack(alignment: .bottomLeading) {
-                PhotoBox(name: coverPhoto(for: plan.name), height: 190)
-                    .overlay(LinearGradient(colors: [.clear, T.surface], startPoint: .top, endPoint: .bottom))
-                VStack(alignment: .leading, spacing: 4) {
-                    Eyebrow(text: "Hôm nay")
-                    Text(plan.name).font(T.font(30, .bold)).foregroundStyle(.white)
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(alignment: .center, spacing: 16) {
+                VStack(alignment: .leading, spacing: 7) {
+                    Text(state.data.profile.name.isEmpty ? "Hôm nay" : "Hôm nay của \(state.data.profile.name)")
+                        .font(T.font(13, .medium)).foregroundStyle(T.sub)
+                    Text(plan.name).font(T.font(28, .bold)).foregroundStyle(T.text)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(plan.focus).font(T.font(13)).foregroundStyle(T.sub)
+                    Text((plan.items.isEmpty ? "" : "~\(plan.minutes) phút · ") + "\(plan.items.count) bài · \(plan.items.reduce(0) { $0 + $1.sets.count }) set")
+                        .font(T.font(14, .medium)).foregroundStyle(T.sub)
+                        .fixedSize(horizontal: false, vertical: true)
+                }.frame(maxWidth: .infinity, alignment: .leading)
+                if let exercise = Media.heroExercise(plan, female: state.data.profile.sex == .female) {
+                    HomeMotionPreview(exercise: exercise, female: state.data.profile.sex == .female)
                 }
-                .padding(.horizontal, 16).padding(.bottom, 4)
             }
-            VStack(alignment: .leading, spacing: 14) {
-                HStack(spacing: 22) {
-                    BigStat(value: "\(plan.items.count)", label: "bài", size: 26)
-                    BigStat(value: "\(plan.items.reduce(0) { $0 + $1.sets.count })", label: "set", size: 26)
-                    BigStat(value: "~\(plan.minutes)", label: "phút", size: 26)
-                }
-                Text(plan.focus).font(T.font(14)).foregroundStyle(T.sub)
-                InfoLine(icon: "sparkles", text: plan.reasons.joined(separator: " · ").capitalizedFirst, color: T.text)
-                ScrollView(.horizontal) {
-                    HStack(spacing: 8) {
-                        Button { showCheckIn = true } label: {
-                            Chip(icon: state.data.checkIn.icon, title: state.data.checkIn == .fine ? "Hôm nay thế nào?" : state.data.checkIn.title, highlighted: state.data.checkIn != .fine)
-                        }.buttonStyle(.plain)
-                        Menu {
-                            ForEach([30, 45, 60, 75], id: \.self) { m in
-                                Button("\(m) phút") { state.data.profile.minutes = m }
-                            }
-                        } label: { Chip(icon: "clock", title: "\(state.data.profile.minutes) phút") }
-                        Menu {
-                            ForEach(Profile.Place.allCases, id: \.self) { p in
-                                Button(p.name) { state.data.profile.place = p }
-                            }
-                        } label: { Chip(icon: state.data.profile.place.icon, title: state.data.profile.place.name) }
-                    }
-                }
-                .scrollIndicators(.hidden)
+            if let exercise = Media.heroExercise(plan, female: state.data.profile.sex == .female) {
+                Text((plan.items.contains { $0.exerciseID == exercise.id } ? "Video · " : "Minh họa · ") + exercise.name)
+                    .font(T.font(13)).foregroundStyle(T.sub)
+                    .fixedSize(horizontal: false, vertical: true)
             }
-            .padding(16)
+            ScrollView(.horizontal) {
+                HStack(spacing: 8) {
+                    Button { showCheckIn = true } label: {
+                        Chip(icon: state.data.checkIn.icon, title: state.data.checkIn.title, highlighted: state.data.checkIn != .fine)
+                            .frame(minHeight: 44).contentShape(Rectangle())
+                    }.buttonStyle(.plain).accessibilityLabel("Hôm nay thế nào? " + state.data.checkIn.title)
+                    Menu {
+                        ForEach([30, 45, 60, 75], id: \.self) { m in
+                            Button("\(m) phút") { state.data.profile.minutes = m }
+                        }
+                    } label: { Chip(icon: "clock", title: "\(state.data.profile.minutes) phút").frame(minHeight: 44).contentShape(Rectangle()) }
+                    Menu {
+                        ForEach(Profile.Place.allCases, id: \.self) { p in
+                            Button(p.name) { state.data.profile.place = p }
+                        }
+                    } label: { Chip(icon: state.data.profile.place.icon, title: placeLabel).frame(minHeight: 44).contentShape(Rectangle()) }
+                }
+            }.scrollIndicators(.hidden)
+            if state.data.checkIn == .fine && !plan.items.isEmpty {
+                Rectangle().fill(T.line).frame(height: 1)
+                Text(shortReasons(plan)).font(T.font(13)).foregroundStyle(T.sub)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
-        .background(T.surface)
-        .clipShape(RoundedRectangle(cornerRadius: T.radius, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: T.radius, style: .continuous).stroke(T.line))
+    }
+
+    /// Copy-only shortening; preserve the plan's actual reasons and numeric values.
+    private func shortReasons(_ plan: PlannedWorkout) -> String {
+        plan.reasons.map { reason in
+            if reason == "tạ khởi điểm theo kinh nghiệm của bạn" { return "Tạ theo kinh nghiệm" }
+            if reason == "ưu tiên nhóm cơ bạn chọn trong lịch hôm nay" {
+                let muscles = Set(plan.items.map { $0.exercise.primary })
+                let names = (state.data.profile.focusAreas ?? []).filter { !muscles.isDisjoint(with: $0.muscles) }.map { $0.name.lowercased() }
+                return names.isEmpty ? "Theo vùng cơ ưu tiên" : "Ưu tiên " + names.joined(separator: ", ")
+            }
+            return reason.capitalizedFirst
+        }.joined(separator: " · ")
+    }
+
+    private var placeLabel: String {
+        switch state.data.profile.place {
+        case .fullGym: "Gym đầy đủ"
+        case .smallGym: "Gym nhỏ"
+        case .home: "Ở nhà"
+        }
     }
 
     private func comeback(_ d: Int) -> some View {
@@ -122,10 +146,10 @@ struct WorkoutTab: View {
         }
     }
 
-    private var adjustedBanner: some View {
+    private func adjustedBanner(_ plan: PlannedWorkout) -> some View {
         HStack(spacing: 10) {
             Image(systemName: state.data.checkIn.icon).foregroundStyle(T.lime)
-            Text("Đã chỉnh theo “\(state.data.checkIn.title.lowercased())”. Những bài thay đổi có vạch xanh.")
+            Text(shortReasons(plan))
                 .font(T.font(14)).foregroundStyle(T.text)
             Spacer(minLength: 4)
             Button("Hoàn tác") { withAnimation { state.setCheckIn(.fine) } }
@@ -143,6 +167,21 @@ struct WorkoutTab: View {
     }
 }
 
+/// A Home-only compact preview; the full-width overview and exercise guides stay unchanged.
+private struct HomeMotionPreview: View {
+    var exercise: Exercise
+    var female: Bool
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    var body: some View {
+        if let file = Media.guide(exercise, female: female) {
+            BWLoopVideo(file: file, gravity: .resizeAspect, playing: !reduceMotion)
+                .frame(width: 128, height: 86).background(Color.black)
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .accessibilityHidden(true)
+        }
+    }
+}
+
 // MARK: - Hàng bài tập
 
 struct ExerciseRow: View {
@@ -155,9 +194,15 @@ struct ExerciseRow: View {
     var body: some View {
         let ex = item.exercise
         HStack(spacing: 14) {
-            Button(action: onGuide) { ExerciseTile(exercise: ex, size: 64) }.buttonStyle(.plain)
+            if Media.thumb(ex) != nil {
+                Button(action: onGuide) { ExerciseTile(exercise: ex, size: 64) }
+                    .buttonStyle(.plain).accessibilityLabel("Hướng dẫn " + ex.name)
+            }
             VStack(alignment: .leading, spacing: 4) {
-                Text(ex.name).font(T.font(16, .semibold)).foregroundStyle(T.text).lineLimit(2)
+                Button(action: onGuide) {
+                    Text(ex.name).font(T.font(16, .semibold)).foregroundStyle(T.text)
+                        .multilineTextAlignment(.leading).lineLimit(2)
+                }.buttonStyle(.plain)
                 Text(prescription).font(T.num(14, .semibold)).foregroundStyle(T.sub)
                 if let c = item.change {
                     Text(c).font(T.font(13, .medium)).foregroundStyle(T.lime).lineLimit(2)
@@ -174,13 +219,10 @@ struct ExerciseRow: View {
             }
             .accessibilityLabel("Tùy chọn bài " + ex.name)
         }
-        .padding(12)
-        .background(T.surface)
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .overlay(alignment: .leading) {
-            if item.change != nil { Capsule().fill(T.lime).frame(width: 3).padding(.vertical, 14) }
-        }
-        .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(T.line))
+        .padding(14)
+        .background(T.surface, in: RoundedRectangle(cornerRadius: T.radius, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: T.radius, style: .continuous).stroke(T.line, lineWidth: 1))
+
     }
 
     private var prescription: String {
@@ -205,17 +247,17 @@ struct WeekStrip: View {
         let goal = state.data.profile.daysPerWeek
         VStack(alignment: .leading, spacing: 12) {
             HStack(alignment: .firstTextBaseline, spacing: 6) {
-                Text("\(done)").font(T.num(22)).foregroundStyle(done >= goal ? T.lime : T.text)
+                Text("\(done)").font(T.num(20, .semibold)).foregroundStyle(done >= goal ? T.lime : T.text)
                 Text("/ \(goal) buổi tuần này").font(T.font(14, .medium)).foregroundStyle(T.sub)
             }
-            HStack(spacing: 6) {
+            HStack(spacing: 4) {
                 ForEach(days, id: \.self) { d in
                     let trained = state.trained(on: d)
                     let today = cal.isDateInToday(d)
                     VStack(spacing: 6) {
-                        Text(weekday(d)).font(T.font(12, .medium)).foregroundStyle(today ? T.text : T.faint)
+                        Text(weekday(d)).font(T.font(12, .medium)).foregroundStyle(today ? T.text : T.sub)
                         ZStack {
-                            Circle().fill(trained ? T.lime : T.raised)
+                            Circle().fill(trained ? T.lime : .clear)
                             if trained {
                                 Image(systemName: "checkmark").font(T.font(13, .bold)).foregroundStyle(.black)
                             } else {
@@ -449,8 +491,8 @@ struct AddExerciseSheet: View {
     private func filterChip(_ m: Muscle?, _ title: String) -> some View {
         Button { muscle = m } label: {
             Text(title).font(T.font(14, .semibold)).padding(.horizontal, 14).frame(height: 36)
-                .foregroundStyle(muscle == m ? Color.black : T.text)
-                .background(muscle == m ? Color.white : T.raised).clipShape(Capsule())
+                .foregroundStyle(muscle == m ? T.lime : T.text)
+                .background(muscle == m ? T.raised : T.surface).clipShape(Capsule())
         }.buttonStyle(.plain)
     }
 }
@@ -461,13 +503,14 @@ struct GuideSheet: View {
     @EnvironmentObject var state: AppState
     @Environment(\.dismiss) private var dismiss
     var exercise: Exercise
+    var femaleOverride: Bool? = nil
 
     var body: some View {
         VStack(spacing: 0) {
             SheetHeader(title: exercise.name, subtitle: exercise.english) { dismiss() }
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
-                    if let g = Media.guide(exercise) {
+                    if let g = Media.guide(exercise, female: femaleOverride ?? (state.data.profile.sex == .female)) {
                         BWLoopVideo(file: g, gravity: .resizeAspect)
                             .aspectRatio(1, contentMode: .fit)
                             .background(Color.white)

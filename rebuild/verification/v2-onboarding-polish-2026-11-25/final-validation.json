@@ -1,0 +1,8 @@
+{
+  "qa_removed": true,
+  "main_binary_matches_final_build": true,
+  "main_json_semantically_equal_fresh_preinstall": true,
+  "models": 74,
+  "original_cards_preserved": 140,
+  "ui_evidence": "ui-run.json"
+}

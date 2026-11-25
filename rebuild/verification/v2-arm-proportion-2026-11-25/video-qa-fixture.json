@@ -1,0 +1,63 @@
+{
+  "removed": [
+    "smith-bench",
+    "pushup",
+    "closebench",
+    "db-shoulder-press",
+    "arnold",
+    "lateral",
+    "frontraise",
+    "bandpress",
+    "tricep",
+    "skull",
+    "tbar",
+    "db-row",
+    "bent-row",
+    "rearfly",
+    "ez-curl",
+    "db-curl",
+    "incline-curl",
+    "hammer",
+    "wristcurl",
+    "squat",
+    "goblet",
+    "bodysquat",
+    "rdl",
+    "goodmorning",
+    "thruster",
+    "adductor",
+    "calf",
+    "kneelsquat",
+    "crunch",
+    "deadbug"
+  ],
+  "isPro": false,
+  "onboarded": true,
+  "textScale": 1,
+  "profile": {
+    "minutes": 45,
+    "place": "fullGym",
+    "focusAreas": [
+      "shoulders"
+    ],
+    "daysPerWeek": 4,
+    "bodyKg": 70,
+    "level": "some",
+    "goal": "muscle",
+    "name": "",
+    "sex": "female",
+    "unit": "kg"
+  },
+  "swaps": {},
+  "added": [
+    "incline",
+    "machinefly",
+    "shrug"
+  ],
+  "checkIn": {
+    "fine": {}
+  },
+  "history": [],
+  "gentle": false,
+  "sawPro": true
+}

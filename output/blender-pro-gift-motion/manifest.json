@@ -1,0 +1,390 @@
+{
+  "reference": "rebuild/verification/v2-gift-reference-audit-2026-11-25/reference.mp4",
+  "referenceSha256": "113072a1aa19211da2cbcda1725f2b93013a4faf3b4aeed19f35138b06900fdb",
+  "sourceScene": "output/blender-pro-gift/pro-gift.blend",
+  "generator": "scripts/blender/build-pro-gift-motion.py",
+  "fps": 24,
+  "dropFrames": 24,
+  "idleFrames": 48,
+  "openFrames": 21,
+  "canvas": [
+    512,
+    512
+  ],
+  "render": "Cycles16+denoise,RGBA object-only open pass; no baked ray planes or compositor bloom; full-screen SwiftUI light",
+  "adaptation": "Near-front camera; one-shot fall/impact/rebound then anticipation loop; explicit open thrust/lid flight with uncropped box silhouette. Rays moved to full-screen SwiftUI canvas to avoid alpha-tile seams. No reference headphone/red palette imported.",
+  "frames": [
+    {
+      "name": "gift-drop-00.png",
+      "sha256": "be00eacb095fd7c6e5dad8f783a8d923fc9a2347fa3a50a59006e186b966b989"
+    },
+    {
+      "name": "gift-drop-01.png",
+      "sha256": "37382691389a0405eb27e729b5af835514aefbeb7eb5cee23d9f2048fe04e19e"
+    },
+    {
+      "name": "gift-drop-02.png",
+      "sha256": "7a3a23677f5c30b7651bcc91250d2f919d73b7996c14b6f1b73a6f66ac29cbd5"
+    },
+    {
+      "name": "gift-drop-03.png",
+      "sha256": "f67b0877d502feba24229dcec7f2eaa3b7f75c1aa087041e040797bd3b7651e5"
+    },
+    {
+      "name": "gift-drop-04.png",
+      "sha256": "a365544a299000e25e6458a5c5ba05f32e8b25d369adbb2526cedc286b0d7189"
+    },
+    {
+      "name": "gift-drop-05.png",
+      "sha256": "52c874f31ed6503d8d7f30cbb0ecc1c22ad24b2a59428fd741b8ba7725e3d370"
+    },
+    {
+      "name": "gift-drop-06.png",
+      "sha256": "985de5aad851539553a44cb79a6ca03da846504c73453ce158f9687608410a3f"
+    },
+    {
+      "name": "gift-drop-07.png",
+      "sha256": "11972053a3f8a3e4fab52b40096cb67709aeed11ec6f68d2bb749a9e52b29948"
+    },
+    {
+      "name": "gift-drop-08.png",
+      "sha256": "11af31561a2ec9ffde387e1d052fbbb2d726acb6c843d243e45f6a852147aff1"
+    },
+    {
+      "name": "gift-drop-09.png",
+      "sha256": "144debeb55d2c0a8320a3bfcdd0e172e627d34d50dd2f21754867e189243a1d0"
+    },
+    {
+      "name": "gift-drop-10.png",
+      "sha256": "5b1d27aa5a89106992a9e42f598512d4d546f591ee52f148d8b25c7eab479a2a"
+    },
+    {
+      "name": "gift-drop-11.png",
+      "sha256": "46040d85a81eaef4f71a7996f62ce1d7c73a09453205d581dc9f4dce71ea2222"
+    },
+    {
+      "name": "gift-drop-12.png",
+      "sha256": "8b1ee5db8fbf72208a56406b42407e8a702fab51013655dac93ca6453a17725c"
+    },
+    {
+      "name": "gift-drop-13.png",
+      "sha256": "0b07e1a9d23ca61d1db62c456e39b595c012d5c62b8b9cdeb3e3ea375a885a12"
+    },
+    {
+      "name": "gift-drop-14.png",
+      "sha256": "eefd49ea9eadebd5c26fd14e6c627f2ed06bf42ff401aa8603029e0bdce81e3c"
+    },
+    {
+      "name": "gift-drop-15.png",
+      "sha256": "4a2a507421f44373f9ede198793e8bbc53b7fa3b5725881cfd143b389125d5ba"
+    },
+    {
+      "name": "gift-drop-16.png",
+      "sha256": "2b25eac12ea13a663de76622c451413a274a9d6b785e880beb944734fe28e728"
+    },
+    {
+      "name": "gift-drop-17.png",
+      "sha256": "c1dd5d1b0c69005d07782f937e5ad76f9f8a2574e463bb499bdf26b3c6e015c5"
+    },
+    {
+      "name": "gift-drop-18.png",
+      "sha256": "182d5b879dd686032527050ad37d8b758ad66cf8ae0bbe7ecd61a91d9b6b74f4"
+    },
+    {
+      "name": "gift-drop-19.png",
+      "sha256": "149fbdab80324ece032ae8f9a136e077295e7b7aa11398842bd8bb23b12f4f52"
+    },
+    {
+      "name": "gift-drop-20.png",
+      "sha256": "723c64dfeffcd7952aaf24b570ecb31108e04123d19c14cbbc58080a642d8186"
+    },
+    {
+      "name": "gift-drop-21.png",
+      "sha256": "256b197c8d5302c64851cbe7dee25c51ac516b6a10efeb3809c11cee7f4f0a76"
+    },
+    {
+      "name": "gift-drop-22.png",
+      "sha256": "bb6ceb30ff1a8f689cc3be8e724111c9a32ea4ad6e04852f4e2bf2938069442d"
+    },
+    {
+      "name": "gift-drop-23.png",
+      "sha256": "41445cc41a9b081954a7613f909bef87eeebfb03aa4931597071da1ae8bae551"
+    },
+    {
+      "name": "gift-idle-00.png",
+      "sha256": "2fb9f0ecdd752e26bff10c643ba529aaaee540251ad2bac6d136ae329119dabc"
+    },
+    {
+      "name": "gift-idle-01.png",
+      "sha256": "75837b66b9be39f03d9db43088e9b2d060c9cafe535b226a39c1b2d9069b351f"
+    },
+    {
+      "name": "gift-idle-02.png",
+      "sha256": "f29f16347ba80515773bc80fe6b994952312561e81c908d2a8fefd6f0dc08361"
+    },
+    {
+      "name": "gift-idle-03.png",
+      "sha256": "45b07c4af41dde8944952303823c3aa29fbce89f6fb65a74a9a6b28f59e4e080"
+    },
+    {
+      "name": "gift-idle-04.png",
+      "sha256": "31ec2d1f47cbb685e96faf7c7d33be5792154c6c1e307b47da04628938b39e81"
+    },
+    {
+      "name": "gift-idle-05.png",
+      "sha256": "d4819e734e14e01eb4771ce738e4b790cc2b31bdde61af2702e46e0c6031299b"
+    },
+    {
+      "name": "gift-idle-06.png",
+      "sha256": "f39e257ba957ea13ce117227686e47009ea648a96c8556f9cb5cc240b5eda193"
+    },
+    {
+      "name": "gift-idle-07.png",
+      "sha256": "620ea2e6a6ca4ea0f7c1ddd5ce937a6f1ea4f91c86d8ca960f988353cf25b8df"
+    },
+    {
+      "name": "gift-idle-08.png",
+      "sha256": "500987efd86d0bf12abcaf9a2f739bb1e15496725d5bc054f026d13295704914"
+    },
+    {
+      "name": "gift-idle-09.png",
+      "sha256": "3c02099ce44d538a9637393871016a0b25ae17470fc724a63c03e49fe14e585a"
+    },
+    {
+      "name": "gift-idle-10.png",
+      "sha256": "e4578607ffe8738029ff8b798be92eba1b1def7e5aaad03784c4e8288eda0adf"
+    },
+    {
+      "name": "gift-idle-11.png",
+      "sha256": "194e4b5b4c8d200382767a6052ac5b7ade3ba0cf84a8c6ce87ef2b16a512397a"
+    },
+    {
+      "name": "gift-idle-12.png",
+      "sha256": "0559d6bcec46399261d61752dfd8cc1a82a0c82a69f117b994de3727ac2e6228"
+    },
+    {
+      "name": "gift-idle-13.png",
+      "sha256": "89d99c0e5bfde8235422471eb10b6937930f56487e36764c4429e02da2b2e47c"
+    },
+    {
+      "name": "gift-idle-14.png",
+      "sha256": "cd63a8b0b416971b61ee7d1df204d439bf5db685e75679a4c7955d4fac94248d"
+    },
+    {
+      "name": "gift-idle-15.png",
+      "sha256": "2fac88722834111d245e522a068ae8113b16debead7a20e9226338b7d93efb55"
+    },
+    {
+      "name": "gift-idle-16.png",
+      "sha256": "57e7d31786d13ea78b7ac4145b3b41928f5b2caeb9ba5f231b1156402267d126"
+    },
+    {
+      "name": "gift-idle-17.png",
+      "sha256": "031c27afab122ac29f7e781e2e2d8d7e0763c271630b3306c3bd87825be5092a"
+    },
+    {
+      "name": "gift-idle-18.png",
+      "sha256": "6e5f6b596fb26570906807959f0c67270d486495950ab5e2ca76db67e7b96cb6"
+    },
+    {
+      "name": "gift-idle-19.png",
+      "sha256": "75ce7d082db74aded8ef83a49e63098b05a16bb2f4195885326064c9de735f8d"
+    },
+    {
+      "name": "gift-idle-20.png",
+      "sha256": "a536cb01ebd4cc2c7edd7c8a713bc9042e1313b95dbd208391fd62503a6e52a7"
+    },
+    {
+      "name": "gift-idle-21.png",
+      "sha256": "475f90a761a8a3dd129d032523548f518824f5018a7c9137d49a8c51fca3a3e2"
+    },
+    {
+      "name": "gift-idle-22.png",
+      "sha256": "08d6429603fd7bd693f76977a8a06114bb8e7fcd512d190ce279366a0e8abb62"
+    },
+    {
+      "name": "gift-idle-23.png",
+      "sha256": "2233a53a3b6f88f94f1c5c2a16513cba6ef75b51eb4f2f24c480724edd7040b8"
+    },
+    {
+      "name": "gift-idle-24.png",
+      "sha256": "8824ccacc684cd24474d5d0bd18247c7bb9e35dbb238621857b10217c3e03c21"
+    },
+    {
+      "name": "gift-idle-25.png",
+      "sha256": "ff376504edf3dc3f481a776e33cd3dd789be29b7b0f43282167d3a3c2bc4f3da"
+    },
+    {
+      "name": "gift-idle-26.png",
+      "sha256": "d9920d92d12e5ba9c6480e97b2d22b7b82b6d91713fb79cf1d18dcafecc20e9c"
+    },
+    {
+      "name": "gift-idle-27.png",
+      "sha256": "fb0c11051afb732b283e4531fd845c402bb5a9465f076b0774ee1dc09030f8da"
+    },
+    {
+      "name": "gift-idle-28.png",
+      "sha256": "e6be0233a66088c3b3cfd858795f67b0942d24ff763084f467c120c4297b8081"
+    },
+    {
+      "name": "gift-idle-29.png",
+      "sha256": "b660d1d5a61a5ec082dae726c655911002667a2acdfede073168b07b118a7963"
+    },
+    {
+      "name": "gift-idle-30.png",
+      "sha256": "a8c6f2de084a686db7a80a3e0ed3eaa3490caf0b03fd3e3d8cd01afaf4bc53ff"
+    },
+    {
+      "name": "gift-idle-31.png",
+      "sha256": "1b96b10adaaf958dae5b9d89e9dc5c8eee8e60bda60ff828405f37b802ae1ca0"
+    },
+    {
+      "name": "gift-idle-32.png",
+      "sha256": "1962c9c2550a9548a40ad38c583ad60aeca17c5a3e08072310844251d264e09d"
+    },
+    {
+      "name": "gift-idle-33.png",
+      "sha256": "7df6572191ef316d3c787dbc29d59aeff7817f5c138d9411860ddc40a10386f8"
+    },
+    {
+      "name": "gift-idle-34.png",
+      "sha256": "3559881e8d2c4b795e48046cdf235386b45ac94eb45326f7f738529c2145bf29"
+    },
+    {
+      "name": "gift-idle-35.png",
+      "sha256": "4e8b7faf21776db7dd9e3ba746177ca2dad4e1ceb308adc4e7fa22f546ebb313"
+    },
+    {
+      "name": "gift-idle-36.png",
+      "sha256": "1d4d8c384acc8a3ca99df0228a9ac2dbcdfa383ffd5e63abd0cd74452d50d915"
+    },
+    {
+      "name": "gift-idle-37.png",
+      "sha256": "7846c08261b7a2018ad5cb50367f97713cfb8902af8a6cc7200bb28ab4a606a8"
+    },
+    {
+      "name": "gift-idle-38.png",
+      "sha256": "94dfdc13eeb5acf2dc0c2c68164c8c76c9e57c1e427a2ae8e4ea34d0c9e1a045"
+    },
+    {
+      "name": "gift-idle-39.png",
+      "sha256": "b09db8d299169d1f9cb81dbe53a3c9544d95e7af54d94b4798f1a472ce13d479"
+    },
+    {
+      "name": "gift-idle-40.png",
+      "sha256": "9c6cd71419df4ac52a8e7e0187990d9355cc6364ad4d2926bd07ae48a4c38ae8"
+    },
+    {
+      "name": "gift-idle-41.png",
+      "sha256": "7b5e6c7e9206d878dec79580f6ba0b861abb7708de077990b8af98020a887a74"
+    },
+    {
+      "name": "gift-idle-42.png",
+      "sha256": "54c1a74d28fd0533bf4238ef123a461c954e3e10be35fef7f58f2215d15e3b6d"
+    },
+    {
+      "name": "gift-idle-43.png",
+      "sha256": "3c4750c5a8fa2f937a776c79cd5da8027a4785bb2dc84120d1bcb0f9166adc32"
+    },
+    {
+      "name": "gift-idle-44.png",
+      "sha256": "9b7625b7a0ec70d2038e821a07076f96425f7d28266feb61c167f3d9bfe8d68d"
+    },
+    {
+      "name": "gift-idle-45.png",
+      "sha256": "380743a1c2e68dfe9a5c9108dec0341b2350ae9ba7bd27a7fb40576c771a2c92"
+    },
+    {
+      "name": "gift-idle-46.png",
+      "sha256": "65ef89ff9bcd378066b47faf08532157c7b32b0aef23ec285a621901afdd5e05"
+    },
+    {
+      "name": "gift-idle-47.png",
+      "sha256": "37aa61e05608fa40080bc59570089c9220a33f10ccf5f86ad1cee2db58ec3e27"
+    },
+    {
+      "name": "gift-open-00.png",
+      "sha256": "9e1390d8f4aed86bc02541fcd641ea04fe592cd19e88652ef77d6d17e3e71099"
+    },
+    {
+      "name": "gift-open-01.png",
+      "sha256": "64f1229e2d0be3f69bca368d406a37c64d7ef01060e8ccc43bbd707f21d59492"
+    },
+    {
+      "name": "gift-open-02.png",
+      "sha256": "12f632f61b14e28f2584290b7053a8e68a7ac70441f537d840014f4d0f1c9e3c"
+    },
+    {
+      "name": "gift-open-03.png",
+      "sha256": "6022b223c09162f801e8149a016b6a8f556f50dcea00cfa05bedd905f0d66a2c"
+    },
+    {
+      "name": "gift-open-04.png",
+      "sha256": "2ca6f1b0774be43d1d5c9c7c836ce0a76b05b612adfca117c82861c76aead1ea"
+    },
+    {
+      "name": "gift-open-05.png",
+      "sha256": "13cc2ead6d22f38e0c35507ae9c2d1e9f6afc24bf35d7d39a5c39ddcfa4fe83b"
+    },
+    {
+      "name": "gift-open-06.png",
+      "sha256": "a936e797e5521f7b558f94ad979545731120104e0a492cbb187f6378adb7a960"
+    },
+    {
+      "name": "gift-open-07.png",
+      "sha256": "bb948a4e3de55c1a6c4e36c5662ec82789dcb743053644d530f7561111dbd726"
+    },
+    {
+      "name": "gift-open-08.png",
+      "sha256": "71420269aa32af5523c6513428260c48925956bcc9ab3232b274895c8df56325"
+    },
+    {
+      "name": "gift-open-09.png",
+      "sha256": "308a3b8413a7e5a7de2548983067d098f16ae1e6b4a10f845724d6cc2fb117a7"
+    },
+    {
+      "name": "gift-open-10.png",
+      "sha256": "4216bf5dcb5bda86d9d0805043d45e7c72ac5f1f298cd18d503ed0ffa1c2d39a"
+    },
+    {
+      "name": "gift-open-11.png",
+      "sha256": "f43ba062430205cc98869f66a849d2151e2fbdbccc58cd69e43887bbd0f944d2"
+    },
+    {
+      "name": "gift-open-12.png",
+      "sha256": "547f89e5afde0398f14319db01516b083a1c5f717a98416c4c3ea0d1035f1ea2"
+    },
+    {
+      "name": "gift-open-13.png",
+      "sha256": "42cfe2d1a70bb5a9c9ac4ac62daf433fb8f75ab4b8c30aedd3f2f985c6ed2f22"
+    },
+    {
+      "name": "gift-open-14.png",
+      "sha256": "21a77721be886ec390fff4a5cca8268d0447cd130f394cf261fb0e6663242ce6"
+    },
+    {
+      "name": "gift-open-15.png",
+      "sha256": "1b016e617ce1746e3a2f1ef2de107e8b7ab870ed3648cabcce44723b056f395e"
+    },
+    {
+      "name": "gift-open-16.png",
+      "sha256": "8f57206eed87264241d1b9d58254d44ee7d42d3ca981e88204ae9388ca8f1f7b"
+    },
+    {
+      "name": "gift-open-17.png",
+      "sha256": "6447d279d63232c0935142a62756752146b1ae88a885780eb59069a07f670221"
+    },
+    {
+      "name": "gift-open-18.png",
+      "sha256": "abe7ab4d1083ae9da509cd5709b8b3ddb85e4902b634f3df368346bfdb76512d"
+    },
+    {
+      "name": "gift-open-19.png",
+      "sha256": "4ecd812219c8b3dd928b83291ef8e77226c1dec46b04ea13f77eb07629cafafb"
+    },
+    {
+      "name": "gift-open-20.png",
+      "sha256": "d2827a251ecc0f7a100e53d04b017bb125601191b3307228d9f4f00cdb747a03"
+    }
+  ]
+}

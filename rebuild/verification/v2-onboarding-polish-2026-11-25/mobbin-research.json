@@ -1,0 +1,71 @@
+{
+  "scope": "Targeted replacement of PotentialStep in existing SwiftUI onboarding. Preserve SF, original lime/dark neutral, heading/supporting three behaviors/Next route; data-free progress curve is replaced, no fake outcome metrics.",
+  "references": [
+    {
+      "query": "fitness app onboarding explaining how a training plan helps you progress",
+      "screens": [
+        {
+          "id": "7bac6f01-4822-4e44-abc7-8631520a7517",
+          "image_url": "https://mobbin.com/api/mcp/short/iTwyg1OO",
+          "mobbin_url": "https://mobbin.com/screens/7bac6f01-4822-4e44-abc7-8631520a7517?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Runna",
+          "platform": "ios"
+        },
+        {
+          "id": "02618577-1b06-4d55-a025-83a4417bd4ef",
+          "image_url": "https://mobbin.com/api/mcp/short/1wgnsLcj",
+          "mobbin_url": "https://mobbin.com/screens/02618577-1b06-4d55-a025-83a4417bd4ef?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Centr",
+          "platform": "ios"
+        },
+        {
+          "id": "a0f3e344-7fef-4a70-89f7-05fe6183e6fd",
+          "image_url": "https://mobbin.com/api/mcp/short/3Cqtk3F0",
+          "mobbin_url": "https://mobbin.com/screens/a0f3e344-7fef-4a70-89f7-05fe6183e6fd?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Tempo",
+          "platform": "ios"
+        },
+        {
+          "id": "50353d8c-03df-4c3b-bd96-9ac7c8d85ba4",
+          "image_url": "https://mobbin.com/api/mcp/short/A6eB2a65",
+          "mobbin_url": "https://mobbin.com/screens/50353d8c-03df-4c3b-bd96-9ac7c8d85ba4?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Equinox+",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "query": "fitness app onboarding encouragement screen",
+      "screens": [
+        {
+          "id": "3d3bf3d7-6dca-4b85-8fcd-20d83687bc43",
+          "image_url": "https://mobbin.com/api/mcp/short/342bTn6Z",
+          "mobbin_url": "https://mobbin.com/screens/3d3bf3d7-6dca-4b85-8fcd-20d83687bc43?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Ladder",
+          "platform": "ios"
+        },
+        {
+          "id": "3c525324-30d7-4160-aa02-325b11019581",
+          "image_url": "https://mobbin.com/api/mcp/short/z7wO0SrP",
+          "mobbin_url": "https://mobbin.com/screens/3c525324-30d7-4160-aa02-325b11019581?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "How We Feel",
+          "platform": "ios"
+        },
+        {
+          "id": "59302e66-8988-40fa-9e94-618d461fc053",
+          "image_url": "https://mobbin.com/api/mcp/short/OM5xP5hd",
+          "mobbin_url": "https://mobbin.com/screens/59302e66-8988-40fa-9e94-618d461fc053?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "Cal AI",
+          "platform": "ios"
+        },
+        {
+          "id": "8a903c05-c6b9-48a9-ac4e-a9fd51284574",
+          "image_url": "https://mobbin.com/api/mcp/short/EBClaLE0",
+          "mobbin_url": "https://mobbin.com/screens/8a903c05-c6b9-48a9-ac4e-a9fd51284574?utm_source=chatgpt&utm_medium=ai-assistant&utm_source_platform=mcp",
+          "app_name": "WHOOP",
+          "platform": "ios"
+        }
+      ]
+    }
+  ]
+}

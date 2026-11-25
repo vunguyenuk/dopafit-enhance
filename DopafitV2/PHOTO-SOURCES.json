@@ -1,0 +1,52 @@
+[
+  {
+    "v2Asset": "photo-curl",
+    "originalAsset": "challenge-dumbbell-30",
+    "sha256": "5cdbc6cad6eb2794ac094d2c95b86b64b5c99112d2b65368495a3fafb4199e3e",
+    "source": "https://www.pexels.com/photo/muscular-man-exercises-his-biceps-with-dumbbell-18060118/",
+    "author": "@marcuschanmedia | IG",
+    "license": "https://www.pexels.com/license/",
+    "sourceBytesUnmodified": true,
+    "colorFilters": "none"
+  },
+  {
+    "v2Asset": "photo-deadlift",
+    "originalAsset": "challenge-physique-28",
+    "sha256": "e88a5bc6bae566834f3ad5fd7e8e8e706d6fb77a01a21662c3af83c1d33b88ee",
+    "source": "https://www.pexels.com/photo/a-man-using-barbell-11433060/",
+    "author": "Marius Aholou",
+    "license": "https://www.pexels.com/license/",
+    "sourceBytesUnmodified": true,
+    "colorFilters": "none"
+  },
+  {
+    "v2Asset": "photo-row",
+    "originalAsset": "challenge-fullbody-28",
+    "sha256": "1d1deef34a5def842ae7c08091b29874c191e177dc313b493f2e5d63b7707096",
+    "source": "https://www.pexels.com/photo/a-man-using-a-rowing-machine-6389079/",
+    "author": "Tima Miroshnichenko",
+    "license": "https://www.pexels.com/license/",
+    "sourceBytesUnmodified": true,
+    "colorFilters": "none"
+  },
+  {
+    "v2Asset": "photo-pushup",
+    "originalAsset": "challenge-consistent-14",
+    "sha256": "dd517ceb17a0c12a3fa00bf50b3f083c39e3205cd5fa57cfd3faa39e92f99236",
+    "source": "https://unsplash.com/photos/a-man-doing-push-ups-in-a-gym-qlid9Lys8r0",
+    "author": "Gard Pro",
+    "license": "https://unsplash.com/license",
+    "sourceBytesUnmodified": true,
+    "colorFilters": "none"
+  },
+  {
+    "v2Asset": "photo-press",
+    "originalAsset": "challenge-upper-28",
+    "sha256": "a63fb6d28c2b9ed120909a515520cbdbab3f587db4a13cc3f1a5920db37fe3ed",
+    "source": "https://unsplash.com/photos/a-man-in-a-gym-lifting-a-pair-of-dumbbells-Pv97-3sdjdY",
+    "author": "Samuel Girven",
+    "license": "https://unsplash.com/license",
+    "sourceBytesUnmodified": true,
+    "colorFilters": "none"
+  }
+]

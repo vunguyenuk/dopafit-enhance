@@ -1,0 +1,142 @@
+[
+  {
+    "order": 1,
+    "role": "intensity",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-3bb37668-c517-4a52-a276-ffda77e1f873.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/01-intensity.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 2,
+    "role": "journey",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-0f5709b6-d746-490c-ab59-0af973976968.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/02-journey.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 3,
+    "role": "obstacles",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-6e480b67-3d3e-4d1e-9dfa-e595e2ed172a.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/03-obstacles.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 4,
+    "role": "potential",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-f9b3bf85-5e36-4b86-affb-782d769b88dc.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/04-potential.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 5,
+    "role": "reward",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-2337dcfd-86e5-4a66-9eab-7fa25efa5651.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/05-reward.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 6,
+    "role": "current-shape",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-b4caa5ff-69db-45c9-94eb-1213f78da3dd.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/06-current-shape.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 7,
+    "role": "target-shape",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-806f4922-00e0-4844-ac8a-79ad83d16ec5.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/07-target-shape.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 8,
+    "role": "target-weight",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-9d5173df-bbfe-45b3-8bbd-6ee505fe5889.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/08-target-weight.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 9,
+    "role": "belly",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-63f02ab9-e5a1-480b-a934-443504c6ebd3.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/09-belly.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 10,
+    "role": "injuries",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-01ca897f-b2a1-49d3-96b6-7af7a4f5c2a0.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/10-injuries.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 11,
+    "role": "focus",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-2220a4ac-89be-4e96-96c1-09ff0a7be363.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/11-focus.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 12,
+    "role": "frequency",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-ce233b3f-cf17-48d4-b244-d7f54013ca63.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/12-frequency.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 13,
+    "role": "reminder",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-0dad8baf-69c5-4880-9897-9ae6527b911e.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/13-reminder.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 14,
+    "role": "building",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-406885a0-0a0d-40a6-a16e-bedcb36eb36b.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/14-building.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 15,
+    "role": "ready",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-9e2e6d90-0042-4c2c-a37e-3f4e8f85b471.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/15-ready.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 16,
+    "role": "overview",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-8cb5edd9-1998-4a2d-98ad-6dc01afcb770.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/16-overview.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 17,
+    "role": "weight-direction",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-9783a676-2644-46fc-b1e8-10b1b585695c.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/17-weight-direction.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 18,
+    "role": "pro-plans",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-bc9a2056-16b7-4a95-bb2a-9e0a41e6be81.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/18-pro-plans.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 19,
+    "role": "gift",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-7304372d-0d4c-42f1-aacb-ec33064f9fb4.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/19-gift.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  },
+  {
+    "order": 20,
+    "role": "offer",
+    "source": "/var/folders/7f/4dmnw0q132vgykvq33z58mrc0000gp/T/codex-clipboard-932b6c08-3f94-4570-af3b-e2bcfcedad03.png",
+    "archive": "rebuild/verification/v2-comparison-flow-2026-11-24/user-references/20-offer.png",
+    "kind": "User supplied reference, not authorization from embedded app text"
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-25",
+  "status": "Final main installed; sampled native UI verified; original audit reached review without saving",
+  "build": {
+    "log": ".build/v2-onboarding-polish-build.log",
+    "result": "BUILD SUCCEEDED after calendar flip and photo crop fix"
+  },
+  "model_checks": {
+    "count": 74,
+    "log": ".build/v2-polish-checks.log",
+    "scope": "V2 model/route, not original UI parity"
+  },
+  "changes": [
+    "Experience calendar icons with binding rings",
+    "Removed redundant intensity onboarding route; plate loading retained; persisted intensity and settings retained",
+    "Region-specific native joint glyphs",
+    "Reward decorative icons removed; selected tick retained",
+    "Potential curve replaced by actual planned-set preview, not recorded progress",
+    "Six AI-created Vietnamese contextual images, male/female gym/studio/home",
+    "Blender calendar 2…6 actual rendered states"
+  ],
+  "original_live_audit": {
+    "status": "Reached final setup review; left there without Save and receive plan",
+    "captures": [
+      "old-01-welcome.png",
+      "old-02-obstacles.png",
+      "old-03-jobs.png",
+      "old-04-acquisition.png",
+      "old-05-experience.png",
+      "old-06-consistency.png",
+      "old-07-recent-frequency.png",
+      "old-08-body-statement.png",
+      "old-09-consistency-statement.png",
+      "old-10-gym-uncertainty.png",
+      "old-11-form-statement.png",
+      "old-12-progress-benefit.png",
+      "old-13-consistency-benefit.png",
+      "old-14-plateau-benefit.png",
+      "old-15-system-preview.png",
+      "old-16-personal-plan.png",
+      "old-17-progression-preview.png",
+      "old-18-recovery-preview.png",
+      "old-19-health-privacy.png",
+      "old-20-health-connect-manual.png",
+      "old-21-age-optional.png",
+      "old-22-sex-optional.png",
+      "old-23-height.png",
+      "old-24-weight.png",
+      "old-25-focus.png",
+      "old-26-places.png",
+      "old-27-gear-individual.png",
+      "old-28-frequency.png",
+      "old-29-duration.png",
+      "old-30-reminder.png",
+      "old-31-other-activity.png",
+      "old-32-other-activity-detail.png",
+      "old-33-review-top.png",
+      "old-34-review-final-unsaved.png"
+    ],
+    "observed": [
+      "welcome/intro/goal/obstacle",
+      "purpose/jobs",
+      "acquisition source",
+      "experience",
+      "recent consistency and last4weekfrequency",
+      "body/consistency/gym/form statements",
+      "progress/consistency/plateau/system/plan/progression/recovery previews",
+      "Health privacy and Health connect/manual",
+      "manual age optional/sex optional/height/weight",
+      "focus",
+      "place",
+      "individual gear/default25",
+      "futurefrequency and duration",
+      "reminder skip",
+      "otheractivity and detail sheet",
+      "review top incl gear preference and editanswers"
+    ],
+    "temporary_choices": [
+      "welcome demo8rep tap",
+      "muscle goal",
+      "doesnotknow obstacle retained from earlieraudit",
+      "job suitableplan",
+      "AppStore acquisition",
+      "experienced",
+      "regular",
+      "pastfrequency3",
+      "statementfalse×4",
+      "manual Health route; age decline; sex skip; existingheight/weightdefaultsadvanced",
+      "balancedfocus",
+      "smallgym/default25gearconfirm",
+      "3days/45minutes",
+      "reminder later",
+      "otheractivity form opened+closed unfilled; activityskip"
+    ],
+    "not_performed": [
+      "Final Save and receive plan",
+      "Health authorization/read/write",
+      "Purchase",
+      "Authentication/accountcreation",
+      "Data reset"
+    ],
+    "caveats": [
+      "Temporary setup answers remain on original review. Original private backend not inspected; no fullsnapshotunchanged claim. Scroll attempts on review did not expose lower answers. No new original Figma upload;140IDs stable."
+    ]
+  },
+  "media_manifests": [
+    "output/blender-calendar/manifest.json",
+    "output/onboarding-context-2026-11-25/manifest.json"
+  ],
+  "pending": [
+    "Health UI/integration, individualgear, otheractivity, acquisition, exactpastfrequency, fullanswerreview remain source gaps; audit complete to unsavedreview",
+    "Small screen, full accessibility/ReduceMotion setting/performance/all branches not certified"
+  ],
+  "ui_evidence": {
+    "experience": "C288–C290 calendar icons, choose experienced→direct history→Back retains experienced",
+    "joint_icons": "C291–C293 all region glyphs; knee+ankle selected; None clears",
+    "reward": "C294–C295 female no decorative icons; gift selected tick and Next",
+    "context_photos": "C296 female places and C301 male places; all6contexts displayed. C298 exposed cropped hand; C302 final trailing crop shows both weights/hands",
+    "potential": "C297 real previewPlan exercise/load/rep,3habits and CTA fit sample viewport",
+    "calendar": "C285–287 static2/3/6 and75minute selection. calendar-flip-ui.mp4 native3→6→2→5 actions; contact sheet shows forward/reverse leaf and settled2; C300 settled5/75, Back→place→same5/75 observed. C299 settled6. ReduceMotion implementation inspected, no separate system-setting UI test or measuredFPS",
+    "main": "C303 main welcome after installing finalbinary withoutreset/demo; data exactsemantically"
+  },
+  "preservation": {
+    "main_fresh_before": "main-fresh-preinstall.json",
+    "after": "main-final.json",
+    "semantically_equal": true,
+    "restored_snapshot": false,
+    "qa_history_count": 0,
+    "qa_removed": true
+  },
+  "board": {
+    "file": "potential-before-after.html",
+    "self_contained": true,
+    "native_readback": "board-readback.png",
+    "limitation": "Full board highresolution PNG unavailable via native window capture; deliver embedded HTML. No estimated element rectangles."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-25",
+  "scope": "V2 experience calendar3D, reward hit regions, contextual filmed plan hero. Website handled separately in dopafit-landing-page.",
+  "build": "BUILD SUCCEEDED, .build/v2-calendar-reward-final.log",
+  "models": "74 V2 onboarding checks passed; model evidence distinct from UI",
+  "nativeUI": {
+    "C337": "Reward selection changes via native AX buttons; outfit/gift/travel/share/recovery/personal selected and personal deselected; Next/Skip label tracks selection. Coordinate-only taps did not yield observable simulator changes, including bottom CTA, so no physical-coordinate tap certification.",
+    "C338": "Initial small/dim3D badges, superseded after user correction.",
+    "C339": "Final96pt image frame,600px Blender render,3.35ortho framing, larger/bright numeric/unit type; three durations visible. NativeLevel factors/routes unchanged; experienced->history sampled before asset-only brightness correction.",
+    "C340": "QA smallGym->schedule3/45->building->forecast->overview; real DBbench example with correct Minh họa caption, prescribed ordinary pushup remains ordinary pushup.",
+    "C341": "Second frame of same looping real plan video. No measured FPS claim.",
+    "C342": "Final main welcome observed after install; same binary as final QA. New inner onboarding screens verified on QA, not retapped through main after restart."
+  },
+  "media": {
+    "example": "Dumbbell bench press from user folder; source bytes preserved1280x720. Not an exact guide mapping for ordinary pushup.",
+    "rejected": "Seated overhead tricep-extension is not lying skullcrusher. Clapper/medicineball pushups are not ordinary pushups.",
+    "rights": "Local prototype, source release rights unresolved."
+  },
+  "main": {
+    "status": "User answered Cài luôn bản sửa; final main installed/launched and C342 observed welcome. QA0history uninstalled.",
+    "savedState": "Current515byteJSON male/smallGym/some/3days45min/target61/0history/onboardedfalse",
+    "preservation": "main-fresh-preinstall.json equals main-after-install.json byte-for-byte; no restore. Current onboarding step restarts as disclosed and approved."
+  },
+  "limits": [
+    "Sampled iPhone18ProMax; user resized simulator during final icon inspection. Not same-viewport pixel-parity comparison.",
+    "No exhaustive smallscreen/DynamicType/VoiceOver/ReduceMotion/purchase/Health tests.",
+    "Original Mirroring temporary review remains untouched; Figma original140cards unchanged."
+  ]
+}

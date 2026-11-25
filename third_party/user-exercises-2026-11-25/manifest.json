@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-25",
+  "scope": "User-supplied local prototype footage; source copyright/release rights not established",
+  "missingRequestedVariant": "Arnold press absent; existing exact clip retained. No seated generic press substituted.",
+  "priority": "These three exact pins before existing sex-specific Zenith/ExerciseDB. The same real actor clip is used for either profile.",
+  "assets": [
+    {
+      "exerciseID": "incline",
+      "source": "/Users/vunguyen/Downloads/Excercises/barbell-incline-bench-press-4418687e-angle-2.mp4",
+      "sourceSHA256": "a0bd6c94b0afbfd392200e99f68051096d8ff72e5f19bd4115f7a8183e8ec046",
+      "guide": "DopafitV2/DopafitV2/Media/user-incline-guide.mp4",
+      "guideBytesUnmodified": true,
+      "thumb": "DopafitV2/DopafitV2/Media/user-incline-thumb.mp4",
+      "thumbSHA256": "2278ab930636272a8c40d4de533ad0e5ee565cde5929a9f0fd972b1f066a142f",
+      "derivation": "480px wide, original aspect ratio/timing/colors; no audio; no AI frames",
+      "review": "Three evenly spaced original frames reviewed; exact equipment and variant. Incline bench angle; reverse pec deck with chest against pad; bilateral standing dumbbell shrug."
+    },
+    {
+      "exerciseID": "machinefly",
+      "source": "/Users/vunguyen/Downloads/Excercises/machine-rear-delt-fly-bfbabeec-angle-1.mp4",
+      "sourceSHA256": "df993ab17ada44681f136aba860fe9182ab1971f1e56ae99745a064348479516",
+      "guide": "DopafitV2/DopafitV2/Media/user-rear-delt-guide.mp4",
+      "guideBytesUnmodified": true,
+      "thumb": "DopafitV2/DopafitV2/Media/user-rear-delt-thumb.mp4",
+      "thumbSHA256": "b9e547c6960798bcb897d53df83e460a700383d1638dd9e3818d38df6e83e7d3",
+      "derivation": "480px wide, original aspect ratio/timing/colors; no audio; no AI frames",
+      "review": "Three evenly spaced original frames reviewed; exact equipment and variant. Incline bench angle; reverse pec deck with chest against pad; bilateral standing dumbbell shrug."
+    },
+    {
+      "exerciseID": "shrug",
+      "source": "/Users/vunguyen/Downloads/Excercises/dumbbell-shrug-45c0c5e1-angle-2.mp4",
+      "sourceSHA256": "cfc8b39b1e2b453807c8cca5c7efc36e83ff7ae7eae58fb958bbd9a64a3ce22f",
+      "guide": "DopafitV2/DopafitV2/Media/user-shrug-guide.mp4",
+      "guideBytesUnmodified": true,
+      "thumb": "DopafitV2/DopafitV2/Media/user-shrug-thumb.mp4",
+      "thumbSHA256": "9f35cbeb775b1092bcf0c5001ae987fdc21477746385b9fde0d43763187729c9",
+      "derivation": "480px wide, original aspect ratio/timing/colors; no audio; no AI frames",
+      "review": "Three evenly spaced original frames reviewed; exact equipment and variant. Incline bench angle; reverse pec deck with chest against pad; bilateral standing dumbbell shrug."
+    }
+  ],
+  "onboardingPlanExamples": [
+    {
+      "source": "/Users/vunguyen/Downloads/Excercises/dumbbell-bench-press-e2d3567e-angle-1.mp4",
+      "sourceSHA256": "40df94d0da0a72a5818dd10839e117332e8a76d0e2b45167114a7ba35c92f36e",
+      "bundle": "DopafitV2/DopafitV2/Media/plan-dumbbell-bench.mp4",
+      "bundleSHA256": "40df94d0da0a72a5818dd10839e117332e8a76d0e2b45167114a7ba35c92f36e",
+      "bytesUnmodified": true,
+      "purpose": "Illustrative chest preview only when the plan has chest work and dumbbell equipment. Caption explicitly says Minh họa. Does not replace a prescribed push-up or any exact guide.",
+      "review": "Original frames1s/3s reviewed: flat dumbbell bench press. Seated overhead tricep extension rejected for lying skullcrusher. Folder clapper/medicineball pushups rejected for ordinary push-up.",
+      "rights": "User-supplied prototype footage; release rights unresolved."
+    }
+  ]
+}

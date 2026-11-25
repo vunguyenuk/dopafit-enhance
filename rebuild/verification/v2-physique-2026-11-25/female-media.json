@@ -1,0 +1,192 @@
+[
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/adductor-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/adductor-f-guide.mp4",
+    "sha256": "e6c699c317f910e683ce1e8d798ec03a8f0e5fd0fb5c73c535305aaf704fceb2"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/adductor-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/adductor-f-thumb.mp4",
+    "sha256": "b5d6cd11e25db5591da67a16ff64406d227da0d8e37b448408d09d418a3b8e36"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/arnold-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/arnold-f-guide.mp4",
+    "sha256": "091b4e6c668046f2c21110280dc57fc4cc73b285cc2023e4aa898391bdfc67ca"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/arnold-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/arnold-f-thumb.mp4",
+    "sha256": "67882da0fb591074c5987d632d7670eebbf41965008ebc5e693964cb6393a5d0"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/discovery-bodysquat-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/discovery-bodysquat-f-guide.mp4",
+    "sha256": "87d29c0bf5a5512664dfae5f49afd5986cb4f2606608540ca456134e01400731"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/discovery-bodysquat-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/discovery-bodysquat-f-thumb.mp4",
+    "sha256": "55466cf7cf571e708ffdb055d36b9fdc3211c5b7308a29f7a05372ae6dd6aabf"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/discovery-pushup-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/discovery-pushup-f-guide.mp4",
+    "sha256": "bc3a224e31ebb5d565f66d1e976b25786b78a57186f27ec5943752e6912c6057"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/discovery-pushup-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/discovery-pushup-f-thumb.mp4",
+    "sha256": "a748f8224786e3557e68f9df841ae54042e6cf0d302f88a926d66c387840d7d3"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/discovery-wristcurl-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/discovery-wristcurl-f-guide.mp4",
+    "sha256": "751471339e6997bb2f81a92066c0de722f8b5fdbb3819cfd1a07148c429ea517"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/discovery-wristcurl-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/discovery-wristcurl-f-thumb.mp4",
+    "sha256": "e62792e33ca6fddc6d687b49aac0fcb858b93ad567d8471a5ed16e0f0f11437a"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-curl-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-curl-f-guide.mp4",
+    "sha256": "5a756c0e11126965e3f9da2720eee7973564cb8308fb41552958bd229b675226"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-curl-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-curl-f-thumb.mp4",
+    "sha256": "7486bd76bf4284bb169937499b29426e0367ca30a546df294234cc00b85afa43"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-lateral-raise-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-lateral-raise-f-guide.mp4",
+    "sha256": "df86fee814cc88e34dd733139105aa2a96fb13294e6ac7b959522135476404f8"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-lateral-raise-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-lateral-raise-f-thumb.mp4",
+    "sha256": "0be3ec3f86d6bec235628416bfe9ace803c5bd0bb088928b834ae93e594062f6"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-row-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-row-f-guide.mp4",
+    "sha256": "b48110a0d45cac03b4494cb970aa9299e6d0e227fa8ed93984113daa2f44161e"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-row-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-row-f-thumb.mp4",
+    "sha256": "00b86c5f71b8740fb7bd9323284e2d9f1f4a30ba253c91ccf7aa09d41205e842"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-shrug-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-shrug-f-guide.mp4",
+    "sha256": "ed8b5bdca31ede1d4d358ad3f386cae9872ca71404cca85a786933804afc0db4"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-shrug-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-shrug-f-thumb.mp4",
+    "sha256": "7ae81ce0d4defd7ca979c973350ea766612e8c5d56483a6d2ff45a260345b41c"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-skullcrusher-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-skullcrusher-f-guide.mp4",
+    "sha256": "080d5627002fe0568d3326e2040a6eb6ee6a7d9eab481ae232ec93851499fefd"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/dumbbell-skullcrusher-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/dumbbell-skullcrusher-f-thumb.mp4",
+    "sha256": "e4e929ccb9ea7a736710aedfdcafe18c8724447aaad5b5e16d0c45bf02848aa4"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/ez-curl-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/ez-curl-f-guide.mp4",
+    "sha256": "c48ff84098685315d6aa7ec41449b3e59b7cff5778048a64ae8e3572c52e6f9a"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/ez-curl-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/ez-curl-f-thumb.mp4",
+    "sha256": "94a5526ce05cd7918c3b1eb1c69ce994d2deaeee7a39d6503429bb2ef64cce8f"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/frontraise-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/frontraise-f-guide.mp4",
+    "sha256": "bae00844baa87be05386e7203742fcce80b27905f7f5ddeb27d2e5bd3067c389"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/frontraise-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/frontraise-f-thumb.mp4",
+    "sha256": "7d3fdf9d0a5406baeec0cb540a38cb99ed2ef46692f46fd16577e73334d88643"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/goblet-squat-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/goblet-squat-f-guide.mp4",
+    "sha256": "ef88c79fdbc84a44657b5725433592e53772d73ebdcf179774255f0960bac83a"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/goblet-squat-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/goblet-squat-f-thumb.mp4",
+    "sha256": "fb44423edc45bda24638b7b64e3df9f717824387a92bc8c969eb4324632399cb"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/incline-dumbbell-curl-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/incline-dumbbell-curl-f-guide.mp4",
+    "sha256": "38dcf4d7f2c331b657b2a5a46fc54d9567bf7b516a446d64b988930bb4a7cf6b"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/incline-dumbbell-curl-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/incline-dumbbell-curl-f-thumb.mp4",
+    "sha256": "d086f75b9d857817c37ea0e0b1c766f90db743fb52727666dc0527fc04473ac6"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/incline-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/incline-f-guide.mp4",
+    "sha256": "9471495384366303fd230a277105a7e526dcc3dadc422895ecf70df1f74338df"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/incline-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/incline-f-thumb.mp4",
+    "sha256": "90d2a3a21f046dc20843a1391723c494fa05b90fedfb851a3b2e8f3d6e4cd3dc"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/machinefly-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/machinefly-f-guide.mp4",
+    "sha256": "f3dadf59936b5698bfcdd7c616920e4a1944d8df15f107a973c5157e64fbb1d7"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/machinefly-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/machinefly-f-thumb.mp4",
+    "sha256": "af1d5bbe530bf980ec26d8c03761b031087e49f878edf328c0f0f87bb32eed8c"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/squat-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/squat-f-guide.mp4",
+    "sha256": "3b6bbf6002e718aac3936c3d97cf9d81633e87701b36d9bda3ba178971088044"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/squat-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/squat-f-thumb.mp4",
+    "sha256": "8df5cebe218fc1ea439750fbf7c38c6a4c6623c8c1ece283611eb2a7f70398c0"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/tbar-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/tbar-f-guide.mp4",
+    "sha256": "208ac63bf5f32edaefb855b776c17d6a84ad456b5775a1f0db11db2b2d7772cd"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/tbar-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/tbar-f-thumb.mp4",
+    "sha256": "aba509e6458415c314c2f5c2c179b4bfa00149df54844fdebcb0d3b35d2893c5"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/tricep-f-guide.mp4",
+    "target": "DopafitV2/DopafitV2/Media/tricep-f-guide.mp4",
+    "sha256": "3756970d31d6c82c48157f47b95982d33a6f9cbd5f4997d7251fe3340641d3c3"
+  },
+  {
+    "source": "DopafitRebuild/ExerciseMedia/zenith/tricep-f-thumb.mp4",
+    "target": "DopafitV2/DopafitV2/Media/tricep-f-thumb.mp4",
+    "sha256": "c4b8201f2de52ae74dcffafb94e5a2d303e523121dc2e88c2574dc306d6e8725"
+  }
+]
