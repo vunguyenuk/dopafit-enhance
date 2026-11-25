@@ -85,7 +85,12 @@ struct PromiseHoldControl: View {
                 if confirmed {
                     Image(systemName: "checkmark").font(T.font(30, .semibold)).foregroundStyle(T.lime)
                 } else {
-                    DopafitMark().fill(pressing ? T.lime : T.text).frame(width: 44, height: 27)
+                    // Fingerprint = “hold to confirm” (user request 26/11); was the Dopafit mark.
+                    Image(systemName: "touchid")
+                        .font(.system(size: 46, weight: .light))
+                        .foregroundStyle(pressing ? T.lime : T.text)
+                        .symbolEffect(.pulse, options: .repeating, isActive: pressing && !reduceMotion)
+                        .accessibilityHidden(true)
                 }
             }
             .frame(width: 104, height: 104)
@@ -193,11 +198,17 @@ struct CheckRow: View {
     var title: String
     var on: Bool
     var joint: Joint? = nil
+    /// Template asset drawn like JointGlyph (44 pt, T.sub), e.g. “joint-none” in the injury list.
+    var asset: String? = nil
     var action: () -> Void
     var body: some View {
         Button(action: action) {
             HStack(spacing: 14) {
-                if let joint { JointGlyph(joint: joint, selected: on).frame(width: 32) }
+                if let joint { JointGlyph(joint: joint, selected: on) }
+                else if let asset {
+                    Image(asset).resizable().renderingMode(.template).scaledToFit()
+                        .foregroundStyle(T.sub).frame(width: 44, height: 44).accessibilityHidden(true)
+                }
                 else { Image(systemName: icon).font(T.font(19, .medium)).foregroundStyle(on ? T.lime : T.sub).frame(width: 32) }
                 Text(title).font(T.font(16, .medium)).foregroundStyle(T.text)
                 Spacer()

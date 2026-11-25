@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 /// Local demo of the requested three-screen offer. No StoreKit product or charge.
 struct ProPaywall: View {
@@ -123,59 +124,71 @@ struct ProPaywall: View {
         }
     }
 
+    /// Offer layout after Mobbin refs: Sunlitt 0c960695 (one focal price, small strikethrough,
+    /// per-month line), QUITTR 09ef2499 (big discount + compact timer + single "lowest price" plan),
+    /// Pillow 06cd6479 / Nibble 8add0191 (discount rising from an illustrated gift) and
+    /// Vocabulary d5dd533b (three short benefits). Prices/timer/activation logic unchanged.
     private var offer: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Ưu đãi demo · giữ trong 15 phút").font(T.font(12, .medium)).foregroundStyle(T.lime)
-                    Text("Quà của bạn đã mở.").font(T.font(27, .bold)).foregroundStyle(T.text).lineSpacing(2)
-                }.padding(.top, 4).padding(.trailing, 48)
-                HStack(alignment: .center, spacing: 20) {
-                    Text("−50%").font(T.num(46, .bold)).foregroundStyle(T.lime)
-                        .minimumScaleFactor(0.8).lineLimit(1)
-                    Rectangle().fill(T.line).frame(width: 1, height: 44)
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text("Quà dành cho bạn").font(T.font(12, .medium)).foregroundStyle(T.sub)
-                        Text("Pro · Năm").font(T.font(18, .semibold)).foregroundStyle(T.text)
-                    }
-                    Spacer(minLength: 0)
-                }.padding(.horizontal, 24).padding(.vertical, 22)
-                    .frame(maxWidth: .infinity)
-                    .background(T.surface, in: RoundedRectangle(cornerRadius: 24))
-                    .overlay(RoundedRectangle(cornerRadius: 24).stroke(T.lime.opacity(0.45)))
+            VStack(spacing: 18) {
+                OfferHero()
+                VStack(spacing: 6) {
+                    Text("Pro cả năm, chỉ còn một nửa.").font(T.font(24, .bold)).foregroundStyle(T.text)
+                    Text("Ưu đãi một lần, chỉ dành cho bạn.").font(T.font(15)).foregroundStyle(T.sub)
+                }.multilineTextAlignment(.center).fixedSize(horizontal: false, vertical: true)
                 TimelineView(.periodic(from: .now, by: 1)) { context in
-                    VStack(spacing: 10) {
-                        Text("Ưu đãi kết thúc sau").font(T.font(13)).foregroundStyle(T.sub)
-                        let remaining = max(0, Int((state.data.offerExpiresAt ?? context.date).timeIntervalSince(context.date)))
-                        HStack(alignment: .top, spacing: 10) {
-                            timerUnit(remaining / 60, label: "phút")
-                            Text(":").font(T.num(32)).foregroundStyle(T.text).padding(.top, 6)
-                            timerUnit(remaining % 60, label: "giây")
-                        }
-                    }.frame(maxWidth: .infinity)
+                    let remaining = max(0, Int((state.data.offerExpiresAt ?? context.date).timeIntervalSince(context.date)))
+                    HStack(spacing: 8) {
+                        Image(systemName: "clock").foregroundStyle(T.lime).accessibilityHidden(true)
+                        Text("Hết hạn sau").foregroundStyle(T.sub)
+                        Text(String(format: "%02d:%02d", remaining / 60, remaining % 60))
+                            .font(T.num(16, .semibold)).foregroundStyle(T.text)
+                            .contentTransition(.numericText(countsDown: true))
+                    }.font(T.font(14, .medium))
+                        .padding(.horizontal, 16).padding(.vertical, 10)
+                        .background(T.surface, in: Capsule())
+                        .overlay(Capsule().stroke(T.line))
+                        .accessibilityElement(children: .combine)
                 }
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Giá tốt nhất trong bản demo").font(T.font(12, .semibold)).foregroundStyle(T.bg)
-                        .frame(maxWidth: .infinity).padding(.vertical, 10).background(T.lime)
-                    VStack(alignment: .leading, spacing: 12) {
-                        HStack(alignment: .firstTextBaseline) {
-                            Text("Pro · Năm").font(T.font(17, .semibold)).foregroundStyle(T.text)
-                            Spacer(minLength: 8)
-                            Text("39,99 US$").font(T.num(29, .bold)).foregroundStyle(T.text)
-                            Text("/ năm").font(T.font(14)).foregroundStyle(T.sub)
-                        }
-                        Text("79,99 US$").strikethrough().font(T.num(15, .medium)).foregroundStyle(T.sub)
-                        Text("≈ 3,33 US$/tháng · 0,77 US$/tuần").font(T.font(14)).foregroundStyle(T.sub)
-                        Text("Tiết kiệm khoảng 67% so với trả theo tháng").font(T.font(14, .medium)).foregroundStyle(T.text)
-                        Rectangle().fill(T.line).frame(height: 1)
-                        Label("Giá gia hạn minh họa: 39,99 US$/năm", systemImage: "arrow.trianglehead.2.clockwise.rotate.90")
-                            .font(T.font(13)).foregroundStyle(T.sub)
-                    }.padding(16)
-                }.background(T.surface, in: RoundedRectangle(cornerRadius: 23))
-                    .clipShape(RoundedRectangle(cornerRadius: 23))
-                    .overlay(RoundedRectangle(cornerRadius: 23).stroke(T.lime.opacity(0.6)))
+                HStack(alignment: .center, spacing: 12) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Pro · Năm").font(T.font(18, .semibold)).foregroundStyle(T.text)
+                        Text("≈ 3,33 US$/tháng").font(T.font(14)).foregroundStyle(T.sub)
+                    }
+                    Spacer(minLength: 8)
+                    VStack(alignment: .trailing, spacing: 2) {
+                        Text("79,99 US$").strikethrough().font(T.num(14, .medium)).foregroundStyle(T.faint)
+                        HStack(alignment: .firstTextBaseline, spacing: 3) {
+                            Text("39,99 US$").font(T.num(28, .bold)).foregroundStyle(T.text)
+                            Text("/năm").font(T.font(13)).foregroundStyle(T.sub)
+                        }.lineLimit(1).minimumScaleFactor(0.8)
+                    }
+                }.padding(.horizontal, 18).padding(.top, 26).padding(.bottom, 18)
+                    .frame(maxWidth: .infinity)
+                    .background(T.surface, in: RoundedRectangle(cornerRadius: 22))
+                    .overlay(RoundedRectangle(cornerRadius: 22).stroke(T.lime.opacity(0.7), lineWidth: 1.5))
+                    .overlay(alignment: .top) {
+                        Text("Giá thấp nhất").font(T.font(12, .bold)).foregroundStyle(T.bg)
+                            .padding(.horizontal, 12).padding(.vertical, 5)
+                            .background(T.lime, in: Capsule()).offset(y: -12)
+                    }
+                    .padding(.top, 8)
+                    .accessibilityElement(children: .combine)
+                VStack(alignment: .leading, spacing: 12) {
+                    offerBenefit("Tự tăng tạ khi đủ rep, điều chỉnh khi mệt hoặc đau.")
+                    offerBenefit("Theo dõi sức mạnh từng bài và hồi phục nhóm cơ.")
+                    offerBenefit("Đổi bài trong một chạm khi máy đang có người.")
+                }.frame(maxWidth: .infinity, alignment: .leading).padding(.horizontal, 4)
+                Text("Gia hạn minh họa 39,99 US$/năm · Hủy bất cứ lúc nào")
+                    .font(T.font(12)).foregroundStyle(T.sub).multilineTextAlignment(.center)
             }.padding(.horizontal, 20).padding(.bottom, 20)
         }.scrollIndicators(.hidden)
+    }
+    private func offerBenefit(_ text: String) -> some View {
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: "checkmark").font(.system(size: 14, weight: .bold)).foregroundStyle(T.lime).padding(.top, 2)
+            Text(text).font(T.font(15)).foregroundStyle(T.sub).fixedSize(horizontal: false, vertical: true)
+        }
     }
 
     private var bottom: some View {
@@ -248,3 +261,30 @@ struct ProPaywall: View {
     }
 }
 
+
+
+/// The gift is already open on the previous page, so no box here: the discount
+/// itself is the hero, lit by the lime glow left from the unboxing. Entrance once;
+/// Reduce Motion shows the end state.
+private struct OfferHero: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var risen = false
+    var body: some View {
+        ZStack {
+            Circle().fill(T.lime.opacity(0.22)).frame(width: 240, height: 240).blur(radius: 70)
+                .scaleEffect(risen ? 1 : 0.6).opacity(risen ? 1 : 0)
+            VStack(spacing: 4) {
+                Text("Quà của bạn").font(T.font(14, .semibold)).foregroundStyle(T.lime)
+                Text("−50%").font(T.num(104, .heavy)).foregroundStyle(T.lime)
+                    .lineLimit(1).minimumScaleFactor(0.6)
+                    .shadow(color: T.lime.opacity(0.45), radius: 30)
+                    .scaleEffect(risen ? 1 : 0.7).opacity(risen ? 1 : 0)
+            }
+        }
+        .frame(maxWidth: .infinity).frame(height: 230).padding(.top, 36)
+        .accessibilityElement(children: .ignore).accessibilityLabel("Quà của bạn: giảm 50%")
+        .onAppear {
+            if reduceMotion { risen = true } else { withAnimation(.spring(response: 0.6, dampingFraction: 0.7).delay(0.1)) { risen = true } }
+        }
+    }
+}

@@ -23,6 +23,8 @@ struct OnboardingFlow: View {
     @State private var showAccountNote = false
     @State private var showLoginNote = false
     @State private var lastAdvance = Date.distantPast
+    /// Transformation auto-advances once; coming back shows the normal button.
+    @State private var transformationSeen = false
     @State private var editingAnswer: Step?
     @State private var answerSnapshot: AnswerSnapshot?
 
@@ -218,6 +220,15 @@ struct OnboardingFlow: View {
             lastAdvance = Date()
             index += 1
         }
+        // Màn hình mục tiêu (Hôm nay → Mục tiêu): xem vài giây rồi tự sang màn sau (chỉ lần đầu).
+        .task(id: index) {
+            guard step == .transformation, !transformationSeen, editingAnswer == nil else { return }
+            try? await Task.sleep(for: .seconds(Self.transformationHold))
+            guard !Task.isCancelled, step == .transformation, editingAnswer == nil else { return }
+            transformationSeen = true
+            lastAdvance = Date()
+            index += 1
+        }
         .alert("Bản demo chưa kết nối tài khoản", isPresented: $showAccountNote) {
             Button("Tiếp tục") { finish() }
         } message: { Text("Plan của bạn được lưu trên máy này. Khi có tài khoản thật, plan sẽ được đồng bộ.") }
@@ -258,6 +269,7 @@ struct OnboardingFlow: View {
 
     /// Thanh tiến độ 3 chặng như app cũ, nhưng nhích nhanh ở đầu để người dùng thấy mình đi được xa.
     private static let phases = ["Mục tiêu", "Cơ thể", "Tập luyện", "Kế hoạch"]
+    static let transformationHold: Double = 3.5
 
     private var header: some View {
         let cur = Self.phases.firstIndex(of: step.phase) ?? 0
@@ -291,7 +303,13 @@ struct OnboardingFlow: View {
         switch step {
         case .welcome, .building, .recent, .place, .statement:
             EmptyView() // chọn là tự đi tiếp
-        case .goal, .transformation, .activity, .focus, .targetShape, .targetWeight, .potential:
+        case .transformation:
+            if transformationSeen || editingAnswer != nil {
+                BottomBar { PrimaryButton(title: "Tiếp theo") { next() } }
+            } else {
+                AutoAdvanceBar(duration: Self.transformationHold).id(index)
+            }
+        case .goal, .activity, .focus, .targetShape, .targetWeight, .potential:
             BottomBar { PrimaryButton(title: "Tiếp theo") { next() } }
         case .sex:
             BottomBar { PrimaryButton(title: "Tiếp theo", enabled: p.sex != .other) { next() } }
@@ -631,6 +649,14 @@ struct OnboardingFlow: View {
             PersonalPlanStory(profile: contextProfile, plan: previewPlan)
         } else if o == "Không có thời gian" {
             TimeAdaptationStory(plan: previewPlan)
+        } else if o == "Không thấy mình tiến bộ" {
+            ProgressTrackingStory(profile: contextProfile, plan: previewPlan)
+        } else if o == "Không đủ dụng cụ" {
+            EquipmentAdaptationStory(profile: contextProfile) { place in
+                var profile = contextProfile
+                profile.place = place
+                return state.buildPlan(profile: profile)
+            }
         } else {
             ContextStoryPage(eyebrow: o, title: d.1, detail: d.2) {
                 ContextStoryVisual(kind: o, profile: contextProfile, plan: previewPlan)
@@ -754,7 +780,7 @@ struct OnboardingFlow: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
                 QuestionTitle(title: "Gần đây bạn [đau] chỗ nào?", subtitle: "Plan sẽ ưu tiên bài không dồn lực vào chỗ đó. Không đau thì bấm nút bên dưới.")
-                CheckRow(icon: "checkmark.shield", title: "Không có", on: injured.isEmpty) { injured = [] }
+                CheckRow(icon: "checkmark.shield", title: "Không có", on: injured.isEmpty, asset: "joint-none") { injured = [] }
                 ForEach(Joint.allCases) { j in
                     let on = injured.contains(j)
                     CheckRow(icon: "", title: j.name, on: on, joint: j) {
@@ -843,13 +869,11 @@ struct OnboardingFlow: View {
     private func promiseContent(chosen: Date, compact: Bool) -> some View {
         VStack(alignment: .leading, spacing: compact ? 18 : 28) {
             VStack(alignment: .leading, spacing: 12) {
-                Text("Bắt đầu từ một lời hứa.")
-                    .font(T.font(compact ? 29 : 34, .bold)).foregroundStyle(T.text)
+                // One text block, same style/size as QuestionTitle headings (no extra gap between lines).
+                HighlightTitle("Bắt đầu từ một lời hứa.\n[Với chính mình.]", size: compact ? 28 : 30)
                     .fixedSize(horizontal: false, vertical: true)
-                Text("Với chính mình.")
-                    .font(T.font(compact ? 29 : 34, .bold)).foregroundStyle(T.lime)
                 Text("Không cần hoàn hảo. Chỉ cần bắt đầu.")
-                    .font(T.font(16)).foregroundStyle(T.sub).padding(.top, 2)
+                    .font(T.font(15)).foregroundStyle(T.sub)
             }
             VStack(alignment: .leading, spacing: 16) {
                 HStack {
@@ -1296,5 +1320,33 @@ struct AutoFixList: View {
                 if Task.isCancelled { return }
             }
         }
+    }
+}
+
+
+/// Thin bar that fills while a story page waits to advance by itself; replaces the button
+/// so the user knows the screen moves on. Reduce Motion: static label, same timing.
+struct AutoAdvanceBar: View {
+    var duration: Double
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var filled = false
+    var body: some View {
+        VStack(spacing: 10) {
+            if !reduceMotion {
+                GeometryReader { g in
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(T.raised)
+                        Capsule().fill(T.lime).frame(width: filled ? g.size.width : 0)
+                    }
+                }.frame(width: 120, height: 4)
+            }
+            Text("Tự chuyển tiếp…").font(T.font(13, .medium)).foregroundStyle(T.sub)
+        }.frame(maxWidth: .infinity).frame(height: 58).padding(.horizontal, T.pad).padding(.vertical, 14)
+            .accessibilityElement(children: .combine)
+            .onAppear {
+                filled = false
+                guard !reduceMotion else { return }
+                withAnimation(.linear(duration: duration)) { filled = true }
+            }
     }
 }

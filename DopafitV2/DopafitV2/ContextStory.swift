@@ -142,7 +142,7 @@ struct ContextStoryVisual: View {
     }
     private var pain: some View {
         VStack(spacing: 25) {
-            JointGlyph(joint: profile.injuries?.first ?? .shoulder, selected: true).scaleEffect(3).frame(height: 100)
+            JointGlyph(joint: profile.injuries?.first ?? .shoulder, selected: true, size: 100).frame(height: 100)
             Text(profile.injuries?.first?.name ?? "Chọn vùng cần tránh dồn lực")
                 .font(T.font(20, .semibold)).foregroundStyle(T.text)
             Text("Có thể đổi bài hoặc giảm tải").font(T.font(14)).foregroundStyle(T.sub)

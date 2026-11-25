@@ -1,3 +1,24 @@
+## 25/11 23:55 — Màn rào cản “tiến bộ”/“dụng cụ”, màn ưu đãi theo Mobbin, icon “Không có”, tiêu đề lời hứa; chờ build/cài main
+
+Theo yêu cầu 23:45–23:48.
+- **Rào cản (23:45 “UI quá xấu, người dùng không hiểu; xem các lựa chọn khác”):** rà 6 lựa chọn. Thời gian/không biết tập gì/đau/thiếu động lực đã có màn riêng; “Không thấy mình tiến bộ” và “Không đủ dụng cụ” còn khuôn cũ (eyebrow + visual + FixLine, card Set/Tạ/Rep toàn gạch ngang) nên làm lại trong `ObstacleStories.swift`, cùng ngôn ngữ với TimeAdaptationStory/PersonalPlanStory. `ProgressTrackingStory`: “Thấy rõ mình [mạnh lên].”, card buổi đầu với thumbnail + bảng set/mức tạ/rep từ prescription thật (bodyweight hiện “Không tạ”), 3 bước ghi set → so lần trước → đường sức mạnh, chú thích “mức khởi điểm, chưa phải kết quả”. `EquipmentAdaptationStory`: “Có gì tập nấy, [vẫn đủ bài].”, chọn Gym đầy đủ/Gym nhỏ/Ở nhà → plan xem thử build lại bằng `state.buildPlan` với place đó (cache, không lưu profile), chip dụng cụ + 3 bài có thumbnail và dụng cụ; câu hỏi nơi tập thật vẫn ở bước sau. ContextStoryVisual `log`/`equipment` cũ không còn được dùng.
+- **Icon “Không có” (23:45, 23:55):** thay SF Symbol bằng Hugeicons `security-check` (khiên + dấu tích, MIT) làm asset template `joint-none`, CheckRow thêm `asset:` vẽ 44pt màu T.sub giống JointGlyph để cùng style/size với icon vùng đau. Các CheckRow khác trả về 19pt/32pt như trước lượt icon.
+- **Tiêu đề lời hứa (23:46, giãn dòng):** hai Text tách (cỡ 34, cách 12pt) gộp thành một `HighlightTitle("Bắt đầu từ một lời hứa.\n[Với chính mình.]", 30)` như QuestionTitle; phụ đề 15pt.
+- **Màn ưu đãi (23:47–23:48, Mobbin):** tham khảo Sunlitt 0c960695, QUITTR 09ef2499, Pillow 06cd6479, Nibble 8add0191, Vocabulary d5dd533b. Bỏ khối −50% + “Pro · Năm” lặp, đồng hồ 2 ô lớn và card giá 5 dòng. Mới: hero chỉ là “Quà của bạn” + “−50%” 104pt trên quầng sáng lime mờ (spring 1 lần, ReduceMotion tĩnh); 23:52 user nhắc quà đã mở ở màn trước nên bỏ hình hộp quà/luồng sáng khỏi màn ưu đãi; tiêu đề “Pro cả năm, chỉ còn một nửa.”; đồng hồ dạng pill “Hết hạn sau mm:ss”; một card gói duy nhất có nhãn “Giá thấp nhất”, giá cũ gạch nhỏ + 39,99 US$/năm + ≈3,33 US$/tháng; 3 quyền lợi Pro; dòng gia hạn minh họa. Giá/đồng hồ/kích hoạt demo không đổi. Bản cũ `output/ProPaywall-before-offer-2026-11-25.swift`.
+
+- **Nút “Giữ để hứa” (00:06):** thay logo Dopafit trong vòng tròn bằng SF Symbol `touchid` (vân tay) 46pt light, trắng → lime + pulse khi đang giữ (ReduceMotion không pulse); thời gian giữ 1,2s, vòng tiến độ, checkmark khi xong và VoiceOver action không đổi.
+- **Màn Hôm nay → Mục tiêu tự chuyển (23:54):** `.transformation` không còn nút “Tiếp theo” ở lần đầu; giữ 3,5s rồi tự sang màn sau (cùng cơ chế màn trấn an: chỉ một lần, `transformationSeen`; không chạy trong editor review). Trong lúc chờ có `AutoAdvanceBar` (thanh lime mảnh chạy 3,5s + “Tự chuyển tiếp…”, ReduceMotion chỉ chữ). Quay lại màn này sẽ thấy nút “Tiếp theo” như cũ.
+
+Chỉ kiểm bằng mock HTML cùng màu/cỡ chữ (không phải ảnh native). Chưa build: máy Claude không có Xcode. Build + cài: `scripts/build-install-v2-main.sh v2-obstacle-offer-2026-11-25`.
+
+## 25/11 23:40 — Icon vùng đau đổi sang icon thư viện, to hơn; chờ build/cài main
+
+Theo yêu cầu 23:29 + 23:33 (“dùng icon cho thẩm mỹ, không tự generate”). Bản tự vẽ lúc 23:35 đã bỏ. Icon lấy nguyên hình từ thư viện qua npm `@iconify-json`: **Hugeicons (MIT)** cho Vai `shoulder`, Khuỷu tay `body-part-muscle`, Cổ tay `hand`, Lưng dưới `back-muscle-body`, Đầu gối `body-part-leg`; Hugeicons không có cổ/cổ chân nên dùng **Health Icons (MIT/CC0)** `head-outline` (Cổ) và `foot-outline` (Cổ chân). Không sửa hình; riêng 2 icon Health Icons thêm viền cùng màu 1pt trên lưới 48 để nét khớp Hugeicons 1,5/24. Đưa vào `Assets.xcassets/joint-<vùng>.imageset` dạng PDF vector template (đổi màu theo T.sub). Nguồn/giấy phép/vị trí chấm: `output/joint-icons-2026-11-25/SOURCES.json`.
+
+`JointGlyph.swift` vẽ icon thư viện + chấm đỏ tại vị trí khớp. Hiệu ứng đau giữ nguyên: chấm đỏ glow + 2 sóng lan, dừng khi khuất/inactive, ReduceMotion tĩnh; chỉ phóng theo cỡ icon. Cỡ icon 32→44pt ở hàng chọn (hàng 60pt; icon “Không có” 44pt cho thẳng hàng); story vùng đau vẽ thẳng 100pt thay vì scaleEffect(3). Bản code cũ lưu `output/joint-icons-2026-11-25/JointGlyph-before.swift`.
+
+Chưa build/cài: máy làm việc của Claude không có Xcode. Build + cài bằng `scripts/build-install-v2-main.sh v2-joint-icons-2026-11-25` (dừng nếu build lỗi; so state.json trước/sau).
+
 ## 25/11 23:20 — Màn ít thời gian, quà phủ toàn màn hình, sóng đúng thư viện Waves; đã cài main
 
 Theo yêu cầu 22:36–22:50 (Codex dừng 22:54 vì hết lượt dùng; Claude soát lại và ghi checkpoint này).

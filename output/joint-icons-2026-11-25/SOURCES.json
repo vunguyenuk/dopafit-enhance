@@ -1,0 +1,92 @@
+{
+  "note": "Library icons, unmodified geometry; Health Icons outlines given a 1pt same-colour stroke on the 48 grid to match Hugeicons 1.5/24 weight.",
+  "icons": {
+    "neck": {
+      "library": "Health Icons",
+      "icon": "head-outline",
+      "license": "MIT",
+      "via": "@iconify-json/healthicons",
+      "weightMatchedStroke": true
+    },
+    "shoulder": {
+      "library": "Hugeicons",
+      "icon": "shoulder",
+      "license": "MIT",
+      "via": "@iconify-json/hugeicons",
+      "weightMatchedStroke": false
+    },
+    "elbow": {
+      "library": "Hugeicons",
+      "icon": "body-part-muscle",
+      "license": "MIT",
+      "via": "@iconify-json/hugeicons",
+      "weightMatchedStroke": false
+    },
+    "wrist": {
+      "library": "Hugeicons",
+      "icon": "hand",
+      "license": "MIT",
+      "via": "@iconify-json/hugeicons",
+      "weightMatchedStroke": false
+    },
+    "lowerBack": {
+      "library": "Hugeicons",
+      "icon": "back-muscle-body",
+      "license": "MIT",
+      "via": "@iconify-json/hugeicons",
+      "weightMatchedStroke": false
+    },
+    "knee": {
+      "library": "Hugeicons",
+      "icon": "body-part-leg",
+      "license": "MIT",
+      "via": "@iconify-json/hugeicons",
+      "weightMatchedStroke": false
+    },
+    "ankle": {
+      "library": "Health Icons",
+      "icon": "foot-outline",
+      "license": "MIT",
+      "via": "@iconify-json/healthicons",
+      "weightMatchedStroke": true
+    },
+    "none": {
+      "library": "Hugeicons",
+      "icon": "security-check",
+      "license": "MIT",
+      "via": "@iconify-json/hugeicons",
+      "weightMatchedStroke": false,
+      "usedFor": "“Không có” row in injury list"
+    }
+  },
+  "anchors": {
+    "neck": [
+      0.45,
+      0.7
+    ],
+    "shoulder": [
+      0.33,
+      0.38
+    ],
+    "elbow": [
+      0.84,
+      0.76
+    ],
+    "wrist": [
+      0.5,
+      0.84
+    ],
+    "lowerBack": [
+      0.5,
+      0.8
+    ],
+    "knee": [
+      0.83,
+      0.43
+    ],
+    "ankle": [
+      0.7,
+      0.52
+    ]
+  }
+}
